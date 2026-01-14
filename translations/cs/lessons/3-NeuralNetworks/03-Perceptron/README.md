@@ -1,17 +1,17 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "0c37770bba4fff3c71dc00eb261ee61b",
-  "translation_date": "2025-08-25T23:56:55+00:00",
+  "original_hash": "c34cbba802058b6fa267e1a294d4e510",
+  "translation_date": "2025-09-23T11:28:09+00:00",
   "source_file": "lessons/3-NeuralNetworks/03-Perceptron/README.md",
   "language_code": "cs"
 }
 -->
 # Úvod do neuronových sítí: Perceptron
 
-## [Kvíz před přednáškou](https://red-field-0a6ddfd03.1.azurestaticapps.net/quiz/103)
+## [Kvíz před lekcí](https://ff-quizzes.netlify.app/en/ai/quiz/5)
 
-Jedním z prvních pokusů o implementaci něčeho podobného moderní neuronové síti provedl Frank Rosenblatt z Cornell Aeronautical Laboratory v roce 1957. Jednalo se o hardwarovou implementaci nazvanou "Mark-1", která byla navržena k rozpoznávání primitivních geometrických tvarů, jako jsou trojúhelníky, čtverce a kruhy.
+Jedním z prvních pokusů o implementaci něčeho podobného moderní neuronové síti byl projekt Franka Rosenblatta z Cornell Aeronautical Laboratory v roce 1957. Šlo o hardwarovou implementaci nazvanou "Mark-1", která byla navržena k rozpoznávání primitivních geometrických tvarů, jako jsou trojúhelníky, čtverce a kruhy.
 
 |      |      |
 |--------------|-----------|
@@ -19,15 +19,15 @@ Jedním z prvních pokusů o implementaci něčeho podobného moderní neuronov�
 
 > Obrázky [z Wikipedie](https://en.wikipedia.org/wiki/Perceptron)
 
-Vstupní obraz byl reprezentován maticí 20x20 fotobuněk, takže neuronová síť měla 400 vstupů a jeden binární výstup. Jednoduchá síť obsahovala jeden neuron, který se také nazývá **jednotka logického prahu**. Váhy neuronové sítě fungovaly jako potenciometry, které bylo nutné manuálně upravit během fáze učení.
+Vstupní obraz byl reprezentován maticí 20x20 fotobuněk, takže neuronová síť měla 400 vstupů a jeden binární výstup. Jednoduchá síť obsahovala jeden neuron, který se také nazývá **jednotka logického prahu**. Váhy neuronové sítě fungovaly jako potenciometry, které bylo nutné manuálně upravovat během fáze učení.
 
 > ✅ Potenciometr je zařízení, které umožňuje uživateli upravit odpor v obvodu.
 
-> The New York Times tehdy o perceptronu napsal: *zárodek elektronického počítače, od kterého [námořnictvo] očekává, že bude schopen chodit, mluvit, vidět, psát, reprodukovat se a být si vědom své existence.*
+> New York Times tehdy o perceptronu napsaly: *embryo elektronického počítače, od kterého [námořnictvo] očekává, že bude schopné chodit, mluvit, vidět, psát, reprodukovat se a být si vědomo své existence.*
 
 ## Model perceptronu
 
-Předpokládejme, že máme N vlastností v našem modelu, v takovém případě by vstupní vektor byl vektor o velikosti N. Perceptron je model **binární klasifikace**, tj. dokáže rozlišit mezi dvěma třídami vstupních dat. Předpokládáme, že pro každý vstupní vektor x bude výstup našeho perceptronu buď +1, nebo -1, v závislosti na třídě. Výstup bude vypočítán podle vzorce:
+Předpokládejme, že máme N vlastností v našem modelu, v takovém případě by vstupní vektor měl velikost N. Perceptron je model **binární klasifikace**, tj. dokáže rozlišit mezi dvěma třídami vstupních dat. Předpokládáme, že pro každý vstupní vektor x bude výstup našeho perceptronu buď +1, nebo -1, v závislosti na třídě. Výstup se vypočítá podle vzorce:
 
 y(x) = f(w<sup>T</sup>x)
 
@@ -40,20 +40,20 @@ kde f je aktivační funkce typu schod.
 
 Abychom perceptron natrénovali, musíme najít vektor vah w, který klasifikuje většinu hodnot správně, tj. vede k nejmenší **chybě**. Tato chyba E je definována pomocí **kritéria perceptronu** následujícím způsobem:
 
-E(w) = -∑w<sup>T</sup>x<sub>i</sub>t<sub>i</sub>
+E(w) = -&sum;w<sup>T</sup>x<sub>i</sub>t<sub>i</sub>
 
 kde:
 
-* součet se bere přes ty body trénovacích dat i, které vedou k nesprávné klasifikaci
+* součet se bere přes ty tréninkové datové body i, které vedou k nesprávné klasifikaci
 * x<sub>i</sub> je vstupní data a t<sub>i</sub> je buď -1 nebo +1 pro negativní a pozitivní příklady.
 
-Toto kritérium je považováno za funkci vah w, kterou musíme minimalizovat. Často se používá metoda nazvaná **gradientní sestup**, při které začneme s nějakými počátečními váhami w<sup>(0)</sup> a poté v každém kroku aktualizujeme váhy podle vzorce:
+Toto kritérium je považováno za funkci vah w, kterou je třeba minimalizovat. Často se používá metoda **gradientního sestupu**, při které začneme s počátečními váhami w<sup>(0)</sup> a v každém kroku aktualizujeme váhy podle vzorce:
 
-w<sup>(t+1)</sup> = w<sup>(t)</sup> - η∇E(w)
+w<sup>(t+1)</sup> = w<sup>(t)</sup> - &eta;&nabla;E(w)
 
-Zde η je tzv. **rychlost učení** a ∇E(w) označuje **gradient** E. Po výpočtu gradientu získáme:
+Zde &eta; je tzv. **rychlost učení** a &nabla;E(w) označuje **gradient** E. Po výpočtu gradientu získáme:
 
-w<sup>(t+1)</sup> = w<sup>(t)</sup> + ∑ηx<sub>i</sub>t<sub>i</sub>
+w<sup>(t+1)</sup> = w<sup>(t)</sup> + &sum;&eta;x<sub>i</sub>t<sub>i</sub>
 
 Algoritmus v Pythonu vypadá takto:
 
@@ -85,20 +85,20 @@ V této lekci jste se naučili o perceptronu, což je model binární klasifikac
 
 Pokud si chcete zkusit vytvořit vlastní perceptron, zkuste [tento lab na Microsoft Learn](https://docs.microsoft.com/en-us/azure/machine-learning/component-reference/two-class-averaged-perceptron?WT.mc_id=academic-77998-cacaste), který využívá [Azure ML designer](https://docs.microsoft.com/en-us/azure/machine-learning/concept-designer?WT.mc_id=academic-77998-cacaste).
 
-## [Kvíz po přednášce](https://red-field-0a6ddfd03.1.azurestaticapps.net/quiz/203)
+## [Kvíz po lekci](https://ff-quizzes.netlify.app/en/ai/quiz/6)
 
 ## Přehled & Samostudium
 
-Chcete-li vidět, jak můžeme použít perceptron k řešení jednoduchého problému i reálných problémů, a pokračovat v učení, podívejte se na notebook [Perceptron](../../../../../lessons/3-NeuralNetworks/03-Perceptron/Perceptron.ipynb).
+Chcete-li vidět, jak lze perceptron použít k řešení jednoduchého problému i reálných problémů, a pokračovat v učení, podívejte se na notebook [Perceptron](Perceptron.ipynb).
 
-Zde je zajímavý [článek o perceptronech](https://towardsdatascience.com/what-is-a-perceptron-basics-of-neural-networks-c4cfea20c590).
+Zajímavý [článek o perceptronech](https://towardsdatascience.com/what-is-a-perceptron-basics-of-neural-networks-c4cfea20c590) také stojí za přečtení.
 
 ## [Úkol](lab/README.md)
 
 V této lekci jsme implementovali perceptron pro úlohu binární klasifikace a použili jsme jej k rozlišení mezi dvěma ručně psanými číslicemi. V tomto labu máte za úkol vyřešit problém klasifikace číslic kompletně, tj. určit, která číslice nejpravděpodobněji odpovídá danému obrázku.
 
 * [Instrukce](lab/README.md)
-* [Notebook](../../../../../lessons/3-NeuralNetworks/03-Perceptron/lab/PerceptronMultiClass.ipynb)
+* [Notebook](lab/PerceptronMultiClass.ipynb)
 
-**Prohlášení:**  
-Tento dokument byl přeložen pomocí služby pro automatický překlad [Co-op Translator](https://github.com/Azure/co-op-translator). Ačkoli se snažíme o přesnost, mějte prosím na paměti, že automatické překlady mohou obsahovat chyby nebo nepřesnosti. Původní dokument v jeho původním jazyce by měl být považován za autoritativní zdroj. Pro důležité informace se doporučuje profesionální lidský překlad. Neodpovídáme za žádná nedorozumění nebo nesprávné interpretace vyplývající z použití tohoto překladu.
+---
+

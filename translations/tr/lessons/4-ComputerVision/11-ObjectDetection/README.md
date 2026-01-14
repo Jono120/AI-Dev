@@ -1,17 +1,17 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "d85c8b08f6d1b48fd7f35b99f93c1138",
-  "translation_date": "2025-08-26T07:26:56+00:00",
+  "original_hash": "d76a7eda28de5210c8b1ba50a6216c69",
+  "translation_date": "2025-09-23T08:39:45+00:00",
   "source_file": "lessons/4-ComputerVision/11-ObjectDetection/README.md",
   "language_code": "tr"
 }
 -->
 # Nesne Tespiti
 
-Bugüne kadar ele aldığımız görüntü sınıflandırma modelleri, bir görüntüyü alıp MNIST problemindeki 'sayı' sınıfı gibi kategorik bir sonuç üretmiştir. Ancak, birçok durumda bir resmin nesneleri tasvir ettiğini bilmek yeterli değildir - nesnelerin tam konumlarını belirlemek isteriz. İşte **nesne tespiti** tam olarak bu noktada devreye girer.
+Bugüne kadar ele aldığımız görüntü sınıflandırma modelleri, bir görüntüyü alıp MNIST problemindeki 'sayı' sınıfı gibi kategorik bir sonuç üretiyordu. Ancak, birçok durumda bir resmin nesneleri tasvir ettiğini bilmek yeterli değildir - nesnelerin tam konumlarını belirlemek isteriz. İşte **nesne tespiti** tam olarak bu noktada devreye girer.
 
-## [Ders Öncesi Test](https://red-field-0a6ddfd03.1.azurestaticapps.net/quiz/111)
+## [Ders Öncesi Test](https://ff-quizzes.netlify.app/en/ai/quiz/21)
 
 ![Nesne Tespiti](../../../../../translated_images/Screen_Shot_2016-11-17_at_11.14.54_AM.b4bb3769353287be1b905373ed9c858102c054b16e4595c76ec3f7bba0feb549.tr.png)
 
@@ -19,42 +19,42 @@ Bugüne kadar ele aldığımız görüntü sınıflandırma modelleri, bir gör�
 
 ## Nesne Tespiti için Naif Bir Yaklaşım
 
-Bir resimde bir kediyi bulmak istediğimizi varsayalım, nesne tespiti için oldukça basit bir yaklaşım şu şekilde olabilir:
+Bir resimde bir kediyi bulmak istediğimizi varsayalım, nesne tespiti için çok basit bir yaklaşım şu şekilde olabilir:
 
-1. Resmi bir dizi kareye bölmek.
-2. Her bir karede görüntü sınıflandırması çalıştırmak.
-3. Yeterince yüksek aktivasyon veren karelerin, ilgili nesneyi içerdiği kabul edilebilir.
+1. Resmi bir dizi kareye ayırın.
+2. Her bir karede görüntü sınıflandırma işlemi gerçekleştirin.
+3. Yeterince yüksek aktivasyon veren kareler, ilgili nesneyi içeriyor olarak kabul edilebilir.
 
 ![Naif Nesne Tespiti](../../../../../translated_images/naive-detection.e7f1ba220ccd08c68a2ea8e06a7ed75c3fcc738c2372f9e00b7f4299a8659c01.tr.png)
 
-> *Görsel [Egzersiz Not Defteri](../../../../../lessons/4-ComputerVision/11-ObjectDetection/ObjectDetection-TF.ipynb) üzerinden alınmıştır.*
+> *Görsel [Egzersiz Defteri](ObjectDetection-TF.ipynb) üzerinden alınmıştır.*
 
-Ancak, bu yaklaşım ideal olmaktan uzaktır çünkü algoritmanın nesnenin sınır kutusunu çok hassas bir şekilde belirlemesine izin vermez. Daha hassas bir konum belirlemek için, sınır kutularının koordinatlarını tahmin etmek üzere bir tür **regresyon** çalıştırmamız gerekir - bunun için de özel veri setlerine ihtiyaç duyarız.
+Ancak, bu yaklaşım ideal olmaktan uzaktır çünkü algoritmanın nesnenin sınır kutusunu çok hassas bir şekilde belirlemesine izin vermez. Daha hassas bir konum belirlemek için, sınır kutularının koordinatlarını tahmin etmek üzere bir tür **regresyon** çalıştırmamız gerekir - ve bunun için özel veri setlerine ihtiyaç duyarız.
 
 ## Nesne Tespiti için Regresyon
 
-[Bu blog yazısı](https://towardsdatascience.com/object-detection-with-neural-networks-a4e2c46b4491), şekilleri tespit etmeye dair harika bir giriş sunmaktadır.
+[Bu blog yazısı](https://towardsdatascience.com/object-detection-with-neural-networks-a4e2c46b4491), şekilleri tespit etme konusunda harika bir giriş sunuyor.
 
 ## Nesne Tespiti için Veri Setleri
 
 Bu görev için aşağıdaki veri setleriyle karşılaşabilirsiniz:
 
 * [PASCAL VOC](http://host.robots.ox.ac.uk/pascal/VOC/) - 20 sınıf
-* [COCO](http://cocodataset.org/#home) - Bağlamda Yaygın Nesneler. 80 sınıf, sınır kutuları ve segmentasyon maskeleri
+* [COCO](http://cocodataset.org/#home) - Bağlamdaki Yaygın Nesneler. 80 sınıf, sınır kutuları ve segmentasyon maskeleri
 
 ![COCO](../../../../../translated_images/coco-examples.71bc60380fa6cceb7caad48bd09e35b6028caabd363aa04fee89c414e0870e86.tr.jpg)
 
 ## Nesne Tespiti Metrikleri
 
-### Kesişim Bölü Birleşim (Intersection over Union)
+### Kesişim Bölü Birleşim (IoU)
 
-Görüntü sınıflandırması için algoritmanın ne kadar iyi performans gösterdiğini ölçmek kolaydır, ancak nesne tespiti için hem sınıfın doğruluğunu hem de tahmin edilen sınır kutusu konumunun hassasiyetini ölçmemiz gerekir. İkincisi için, **Kesişim Bölü Birleşim** (IoU) adı verilen bir ölçüm kullanırız; bu, iki kutunun (veya iki rastgele alanın) ne kadar iyi örtüştüğünü ölçer.
+Görüntü sınıflandırma için algoritmanın ne kadar iyi performans gösterdiğini ölçmek kolaydır, ancak nesne tespiti için hem sınıfın doğruluğunu hem de tahmin edilen sınır kutusu konumunun hassasiyetini ölçmemiz gerekir. İkincisi için, **Kesişim Bölü Birleşim** (IoU) adı verilen bir ölçüm kullanırız, bu iki kutunun (veya iki rastgele alanın) ne kadar iyi örtüştüğünü ölçer.
 
 ![IoU](../../../../../translated_images/iou_equation.9a4751d40fff4e119ecd0a7bcca4e71ab1dc83e0d4f2a0d66ff0859736f593cf.tr.png)
 
-> *[IoU hakkında bu mükemmel blog yazısından](https://pyimagesearch.com/2016/11/07/intersection-over-union-iou-for-object-detection/) alınan Şekil 2.*
+> *[Bu harika IoU blog yazısından](https://pyimagesearch.com/2016/11/07/intersection-over-union-iou-for-object-detection/) alınan Şekil 2.*
 
-Fikir basittir - iki şekil arasındaki kesişim alanını birleşim alanına böleriz. İki özdeş alan için IoU 1 olurken, tamamen ayrık alanlar için 0 olacaktır. Diğer durumlarda 0 ile 1 arasında değişir. Genellikle IoU belirli bir değerin üzerinde olan sınır kutularını dikkate alırız.
+Fikir basittir - iki şeklin kesişim alanını birleşim alanına böleriz. İki özdeş alan için IoU 1 olurken, tamamen ayrık alanlar için 0 olur. Diğer durumlarda 0 ile 1 arasında değişir. Genellikle IoU belirli bir değerin üzerinde olan sınır kutularını dikkate alırız.
 
 ### Ortalama Hassasiyet (Average Precision)
 
@@ -68,7 +68,7 @@ Bir nesne sınıfı $C$'nin ne kadar iyi tanındığını ölçmek istediğimizi
 
 > *Görsel [NeuroWorkshop](http://github.com/shwars/NeuroWorkshop) üzerinden alınmıştır.*
 
-Belirli bir sınıf $C$ için Ortalama Hassasiyet, bu eğrinin altındaki alandır. Daha kesin olarak, Tekrar Çağırma ekseni genellikle 10 parçaya bölünür ve Hassasiyet bu noktaların tümü üzerinde ortalanır:
+Belirli bir sınıf $C$ için Ortalama Hassasiyet, bu eğrinin altındaki alandır. Daha spesifik olarak, Tekrar Çağırma ekseni genellikle 10 parçaya bölünür ve Hassasiyet bu noktaların tümü üzerinde ortalanır:
 
 $$
 AP = {1\over11}\sum_{i=0}^{10}\mbox{Precision}(\mbox{Recall}={i\over10})
@@ -76,7 +76,7 @@ $$
 
 ### AP ve IoU
 
-Sadece IoU belirli bir değerin üzerinde olan algılamaları dikkate alacağız. Örneğin, PASCAL VOC veri setinde genellikle $\mbox{IoU Threshold} = 0.5$ kabul edilirken, COCO'da AP farklı $\mbox{IoU Threshold}$ değerleri için ölçülür.
+Sadece IoU belirli bir değerin üzerinde olan algılamaları dikkate alacağız. Örneğin, PASCAL VOC veri setinde genellikle $\mbox{IoU Threshold} = 0.5$ varsayılırken, COCO'da AP farklı $\mbox{IoU Threshold}$ değerleri için ölçülür.
 
 <img src="https://github.com/shwars/NeuroWorkshop/raw/master/images/ObjDetectionPrecisionRecallIoU.png"/>
 
@@ -84,7 +84,8 @@ Sadece IoU belirli bir değerin üzerinde olan algılamaları dikkate alacağız
 
 ### Ortalama Ortalama Hassasiyet - mAP
 
-Nesne Tespiti için ana metrik **Ortalama Ortalama Hassasiyet** veya **mAP** olarak adlandırılır. Bu, tüm nesne sınıfları ve bazen de $\mbox{IoU Threshold}$ üzerinde ortalanmış Ortalama Hassasiyet değeridir. **mAP** hesaplama süreci daha ayrıntılı olarak [bu blog yazısında](https://medium.com/@timothycarlen/understanding-the-map-evaluation-metric-for-object-detection-a07fe6962cf3) ve ayrıca [kod örnekleriyle burada](https://gist.github.com/tarlen5/008809c3decf19313de216b9208f3734) açıklanmıştır.
+Nesne Tespiti için ana metrik **Ortalama Ortalama Hassasiyet** veya **mAP** olarak adlandırılır. Bu, tüm nesne sınıfları ve bazen de $\mbox{IoU Threshold}$ üzerinde ortalanmış Ortalama Hassasiyet değeridir. **mAP** hesaplama süreci daha ayrıntılı olarak
+[bu blog yazısında](https://medium.com/@timothycarlen/understanding-the-map-evaluation-metric-for-object-detection-a07fe6962cf3)) ve ayrıca [kod örnekleriyle burada](https://gist.github.com/tarlen5/008809c3decf19313de216b9208f3734) açıklanmıştır.
 
 ## Farklı Nesne Tespiti Yaklaşımları
 
@@ -126,8 +127,8 @@ Bu yaklaşımın ana fikri, ROI'leri tahmin etmek için sinir ağı kullanmaktı
 Bu algoritma, Daha Hızlı R-CNN'den bile daha hızlıdır. Ana fikir şu şekildedir:
 
 1. Özellikler ResNet-101 kullanılarak çıkarılır.
-1. Özellikler **Konum-Duyarlı Skor Haritası** tarafından işlenir. $C$ sınıflarından her bir nesne $k\times k$ bölgelere bölünür ve nesne parçalarını tahmin etmek için eğitim yapılır.
-1. $k\times k$ bölgelerden her bir parça için tüm ağlar nesne sınıfları için oy kullanır ve maksimum oyu alan nesne sınıfı seçilir.
+2. Özellikler **Pozisyon-Duyarlı Skor Haritası** tarafından işlenir. $C$ sınıflarından her bir nesne $k\times k$ bölgelere ayrılır ve nesne parçalarını tahmin etmek için eğitim yapılır.
+3. $k\times k$ bölgelerden her bir parça için tüm ağlar nesne sınıfları için oy kullanır ve maksimum oyu alan nesne sınıfı seçilir.
 
 ![r-fcn image](../../../../../translated_images/r-fcn.13eb88158b99a3da50fa2787a6be5cb310d47f0e9655cc93a1090dc7aab338d1.tr.png)
 
@@ -135,7 +136,7 @@ Bu algoritma, Daha Hızlı R-CNN'den bile daha hızlıdır. Ana fikir şu şekil
 
 ### YOLO - Sadece Bir Kez Bak
 
-YOLO, gerçek zamanlı bir tek geçiş algoritmasıdır. Ana fikir şu şekildedir:
+YOLO, gerçek zamanlı tek geçişli bir algoritmadır. Ana fikir şu şekildedir:
 
  * Görüntü $S\times S$ bölgelere ayrılır.
  * Her bölge için **CNN**, $n$ olası nesneleri, *sınır kutusu* koordinatlarını ve *güven* = *olasılık* * IoU tahmin eder.
@@ -154,26 +155,26 @@ YOLO, gerçek zamanlı bir tek geçiş algoritmasıdır. Ana fikir şu şekilded
 
 ## ✍️ Egzersizler: Nesne Tespiti
 
-Öğreniminize aşağıdaki not defterinde devam edin:
+Öğreniminize aşağıdaki defterde devam edin:
 
-[ObjectDetection.ipynb](../../../../../lessons/4-ComputerVision/11-ObjectDetection/ObjectDetection.ipynb)
+[ObjectDetection.ipynb](ObjectDetection.ipynb)
 
 ## Sonuç
 
-Bu derste, nesne tespitinin çeşitli yollarını kapsayan hızlı bir tur yaptınız!
+Bu derste, nesne tespitinin çeşitli yollarını hızlı bir şekilde gözden geçirdiniz!
 
 ## 🚀 Meydan Okuma
 
-YOLO ile ilgili bu makaleleri ve not defterlerini okuyun ve kendiniz deneyin:
+Bu makaleleri ve defterleri YOLO hakkında okuyun ve kendiniz deneyin:
 
 * [YOLO'yu açıklayan iyi bir blog yazısı](https://www.analyticsvidhya.com/blog/2018/12/practical-guide-object-detection-yolo-framewor-python/)
  * [Resmi site](https://pjreddie.com/darknet/yolo/)
- * Yolo: [Keras uygulaması](https://github.com/experiencor/keras-yolo2), [adım adım not defteri](https://github.com/experiencor/basic-yolo-keras/blob/master/Yolo%20Step-by-Step.ipynb)
- * Yolo v2: [Keras uygulaması](https://github.com/experiencor/keras-yolo2), [adım adım not defteri](https://github.com/experiencor/keras-yolo2/blob/master/Yolo%20Step-by-Step.ipynb)
+ * Yolo: [Keras uygulaması](https://github.com/experiencor/keras-yolo2), [adım adım defter](https://github.com/experiencor/basic-yolo-keras/blob/master/Yolo%20Step-by-Step.ipynb)
+ * Yolo v2: [Keras uygulaması](https://github.com/experiencor/keras-yolo2), [adım adım defter](https://github.com/experiencor/keras-yolo2/blob/master/Yolo%20Step-by-Step.ipynb)
 
-## [Ders Sonrası Test](https://red-field-0a6ddfd03.1.azurestaticapps.net/quiz/211)
+## [Ders Sonrası Test](https://ff-quizzes.netlify.app/en/ai/quiz/22)
 
-## İnceleme ve Kendi Kendine Çalışma
+## Gözden Geçirme ve Kendi Kendine Çalışma
 
 * [Nesne Tespiti](https://tjmachinelearning.com/lectures/1718/obj/) - Nikhil Sardana
 * [Nesne tespiti algoritmalarının iyi bir karşılaştırması](https://lilianweng.github.io/lil-log/2018/12/27/object-detection-part-4.html)
@@ -183,5 +184,5 @@ YOLO ile ilgili bu makaleleri ve not defterlerini okuyun ve kendiniz deneyin:
 
 ## [Ödev: Nesne Tespiti](lab/README.md)
 
-**Feragatname**:  
-Bu belge, AI çeviri hizmeti [Co-op Translator](https://github.com/Azure/co-op-translator) kullanılarak çevrilmiştir. Doğruluk için çaba göstersek de, otomatik çevirilerin hata veya yanlışlık içerebileceğini lütfen unutmayın. Belgenin orijinal dili, yetkili kaynak olarak kabul edilmelidir. Kritik bilgiler için profesyonel insan çevirisi önerilir. Bu çevirinin kullanımından kaynaklanan yanlış anlamalar veya yanlış yorumlamalar için sorumluluk kabul etmiyoruz.
+---
+

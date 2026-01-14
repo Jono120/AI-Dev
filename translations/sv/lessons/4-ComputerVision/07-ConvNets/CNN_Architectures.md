@@ -1,8 +1,8 @@
 <!--
 CO_OP_TRANSLATOR_METADATA:
 {
-  "original_hash": "2f7b97b375358cb51a1e098df306bf73",
-  "translation_date": "2025-08-28T15:13:08+00:00",
+  "original_hash": "53faab85adfcebd8c10bcd71dc2fa557",
+  "translation_date": "2025-09-23T09:16:43+00:00",
   "source_file": "lessons/4-ComputerVision/07-ConvNets/CNN_Architectures.md",
   "language_code": "sv"
 }
@@ -41,7 +41,7 @@ Google Inception-arkitekturen tar denna idé ett steg längre och bygger varje n
 
 > Bild från [Researchgate](https://www.researchgate.net/figure/Inception-module-with-dimension-reductions-left-and-schema-for-Inception-ResNet-v1_fig2_355547454)
 
-Här behöver vi betona rollen av 1x1-konvolutioner, eftersom de först inte verkar logiska. Varför skulle vi behöva köra genom bilden med ett 1x1-filter? Men du måste komma ihåg att konvolutionsfilter också arbetar med flera djupkanaler (ursprungligen - RGB-färger, i efterföljande lager - kanaler för olika filter), och 1x1-konvolution används för att blanda dessa ingångskanaler med olika träningsbara vikter. Det kan också ses som en nedsampling (pooling) över kanaldimensionen.
+Här behöver vi betona rollen av 1x1-konvolutioner, eftersom de vid första anblick inte verkar logiska. Varför skulle vi behöva köra genom bilden med ett 1x1-filter? Men du måste komma ihåg att konvolutionsfilter också arbetar med flera djupkanaler (ursprungligen - RGB-färger, i efterföljande lager - kanaler för olika filter), och 1x1-konvolution används för att blanda dessa ingångskanaler med olika träningsbara vikter. Det kan också ses som en nedsampling (pooling) över kanaldimensionen.
 
 Här är [en bra bloggpost](https://medium.com/analytics-vidhya/talented-mr-1x1-comprehensive-look-at-1x1-convolution-in-deep-learning-f6b355825578) om ämnet, och [den ursprungliga artikeln](https://arxiv.org/pdf/1312.4400.pdf).
 
@@ -53,17 +53,17 @@ Här är [en bra bloggpost om MobileNet](https://medium.com/analytics-vidhya/ima
 
 ## Slutsats
 
-I denna enhet har du lärt dig huvudkonceptet bakom neurala nätverk för datorseende - konvolutionsnätverk. Arkitekturer i verkligheten som driver bildklassificering, objektigenkänning och till och med bildgenereringsnätverk är alla baserade på CNN, bara med fler lager och några ytterligare träningsknep.
+I denna enhet har du lärt dig huvudkonceptet bakom neurala nätverk för datorseende - konvolutionsnätverk. Verkliga arkitekturer som driver bildklassificering, objektigenkänning och till och med bildgenereringsnätverk är alla baserade på CNN, bara med fler lager och några ytterligare träningsknep.
 
 ## 🚀 Utmaning
 
-I de medföljande anteckningsböckerna finns det anteckningar längst ner om hur man kan uppnå högre noggrannhet. Gör några experiment för att se om du kan uppnå högre noggrannhet.
+I de medföljande anteckningsböckerna finns det anteckningar längst ner om hur man kan uppnå högre noggrannhet. Gör några experiment för att se om du kan uppnå bättre resultat.
 
-## [Quiz efter föreläsningen](https://red-field-0a6ddfd03.1.azurestaticapps.net/quiz/207)
+## [Quiz efter föreläsningen](https://ff-quizzes.netlify.app/en/ai/quiz/14)
 
 ## Granskning & Självstudier
 
-Även om CNN oftast används för datorseende-uppgifter, är de generellt bra på att extrahera mönster av fast storlek. Till exempel, om vi arbetar med ljud, kan vi också vilja använda CNN för att leta efter specifika mönster i ljudsignalen - i vilket fall filtren skulle vara 1-dimensionella (och detta CNN skulle kallas 1D-CNN). Ibland används också 3D-CNN för att extrahera funktioner i multidimensionellt utrymme, såsom vissa händelser som inträffar på video - CNN kan fånga vissa mönster av funktioner som förändras över tid. Gör en granskning och självstudier om andra uppgifter som kan utföras med CNN.
+Även om CNN oftast används för datorseendeuppgifter, är de generellt bra på att extrahera mönster av fast storlek. Till exempel, om vi arbetar med ljud, kan vi också vilja använda CNN för att leta efter specifika mönster i ljudsignalen - i så fall skulle filtren vara 1-dimensionella (och detta CNN skulle kallas 1D-CNN). Ibland används också 3D-CNN för att extrahera funktioner i multidimensionellt utrymme, såsom vissa händelser som inträffar på video - CNN kan fånga vissa mönster av funktioner som förändras över tid. Gör en granskning och självstudier om andra uppgifter som kan utföras med CNN.
 
 ## [Uppgift](lab/README.md)
 
@@ -71,5 +71,3 @@ I detta labb ska du klassificera olika katt- och hundraser. Dessa bilder är mer
 
 ---
 
-**Ansvarsfriskrivning**:  
-Detta dokument har översatts med hjälp av AI-översättningstjänsten [Co-op Translator](https://github.com/Azure/co-op-translator). Även om vi strävar efter noggrannhet, bör du vara medveten om att automatiserade översättningar kan innehålla fel eller felaktigheter. Det ursprungliga dokumentet på dess originalspråk bör betraktas som den auktoritativa källan. För kritisk information rekommenderas professionell mänsklig översättning. Vi ansvarar inte för eventuella missförstånd eller feltolkningar som uppstår vid användning av denna översättning.
