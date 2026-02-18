@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "6568aaae7e0e4afed4b5d74b5b223700",
-  "translation_date": "2025-10-11T11:22:22+00:00",
-  "source_file": "lessons/4-ComputerVision/12-Segmentation/README.md",
-  "language_code": "et"
-}
--->
 # Segmenteerimine
 
 Oleme varem õppinud objektide tuvastamist, mis võimaldab meil leida objekte pildil, ennustades nende *piiravaid kaste*. Kuid mõnede ülesannete puhul ei vaja me ainult piiravaid kaste, vaid ka täpsemat objektide lokaliseerimist. Seda ülesannet nimetatakse **segmenteerimiseks**.
@@ -20,7 +11,7 @@ Segmenteerimist võib vaadelda kui **pikslite klassifikatsiooni**, kus **iga** p
 
 Instance segmenteerimise puhul on need lambad erinevad objektid, kuid semantilise segmenteerimise puhul esindavad kõik lambad ühte klassi.
 
-<img src="../../../../../translated_images/instance_vs_semantic.eee9812bebf8cd450cdef4caaed2d4dd9c6c3b671e0c65d8aef312758ebb7b89.et.jpeg" width="50%">
+<img src="../../../../../translated_images/et/instance_vs_semantic.eee9812bebf8cd45.webp" width="50%">
 
 > Pilt [sellest blogipostitusest](https://nirmalamurali.medium.com/image-classification-vs-semantic-segmentation-vs-instance-segmentation-625c33a08d50)
 
@@ -29,7 +20,7 @@ Segmenteerimiseks on erinevaid närvivõrkude arhitektuure, kuid neil kõigil on
 * **Kodeerija** ekstraheerib sisendpildist omadused.
 * **Dekodeerija** teisendab need omadused **maskipildiks**, millel on sama suurus ja kanalite arv, mis vastab klasside arvule.
 
-<img src="../../../../../translated_images/segm.92442f2cb42ff4fa650fee858a3a02f55cf46825d9602115130e9e95a52a8526.et.png" width="80%">
+<img src="../../../../../translated_images/et/segm.92442f2cb42ff4fa.webp" width="80%">
 
 > Pilt [sellest publikatsioonist](https://arxiv.org/pdf/2001.05566.pdf)
 
@@ -43,7 +34,7 @@ Selles õppetükis näeme segmenteerimist tegevuses, treenides võrku inimeste n
 
 > ✅ See tehnika sobib eriti hästi sellist tüüpi meditsiiniliste piltide jaoks, kuid milliseid muid reaalse maailma rakendusi võiksite ette kujutada?
 
-<img alt="navi" src="../../../../../translated_images/navi.2f20b727910110ea593fa03a2491f2ba1b25c62c97b33c692bcf01917a1f333f.et.png"/>
+<img alt="navi" src="../../../../../translated_images/et/navi.2f20b727910110ea.webp"/>
 
 > Pilt PH<sup>2</sup> andmebaasist
 

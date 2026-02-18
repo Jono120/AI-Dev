@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "b70fcf7fcee862990f848c679090943f",
-  "translation_date": "2025-10-03T14:53:14+00:00",
-  "source_file": "lessons/4-ComputerVision/07-ConvNets/lab/README.md",
-  "language_code": "ja"
-}
--->
 # ペットの顔の分類
 
 [AI for Beginners Curriculum](https://github.com/microsoft/ai-for-beginners) のラボ課題。
@@ -21,7 +12,7 @@ CO_OP_TRANSLATOR_METADATA:
 
 [Oxford-IIIT Pet Dataset](https://www.robots.ox.ac.uk/~vgg/data/pets/) を使用します。このデータセットには、37種類の犬と猫の品種の画像が含まれています。
 
-![扱うデータセット](../../../../../../translated_images/data.50b2a9d5484bdbf0f52f5765b381cec9efe2bd296a98f007f90bedb6ac67f2a8.ja.png)
+![扱うデータセット](../../../../../../translated_images/ja/data.50b2a9d5484bdbf0.webp)
 
 データセットをダウンロードするには、以下のコードスニペットを使用してください：
 

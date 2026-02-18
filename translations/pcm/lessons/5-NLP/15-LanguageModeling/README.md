@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "7ba20f54a5bfcd6521018cdfb17c7c57",
-  "translation_date": "2025-11-18T18:41:06+00:00",
-  "source_file": "lessons/5-NLP/15-LanguageModeling/README.md",
-  "language_code": "pcm"
-}
--->
 # Language Modeling
 
 Semantic embeddings like Word2Vec and GloVe na di first step wey dey lead to **language modeling** - wey mean say we dey create models wey fit *understand* (or *represent*) how language dey work.
@@ -23,7 +14,7 @@ For di examples wey we don do before, we use pre-trained semantic embeddings, bu
 * **Continuous Bag-of-Words** (CBoW), wey mean say we go predict di middle token $W_0$ for one token sequence $W_{-N}$, ..., $W_N$.
 * **Skip-gram**, wey mean say we go predict set of neighboring tokens {$W_{-N},\dots, W_{-1}, W_1,\dots, W_N$} from di middle token $W_0$.
 
-![image from paper on converting words to vectors](../../../../../translated_images/example-algorithms-for-converting-words-to-vectors.fbe9207a726922f6f0f5de66427e8a6eda63809356114e28fb1fa5f4a83ebda7.pcm.png)
+![image from paper on converting words to vectors](../../../../../translated_images/pcm/example-algorithms-for-converting-words-to-vectors.fbe9207a726922f6.webp)
 
 > Image from [this paper](https://arxiv.org/pdf/1301.3781.pdf)
 

@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "9c592c26aca16ca085d268c732284187",
-  "translation_date": "2025-10-11T11:33:12+00:00",
-  "source_file": "lessons/X-Extras/X1-MultiModal/README.md",
-  "language_code": "ta"
-}
--->
 # பல்முக வலைப்பின்னல்கள்
 
 NLP பணிகளைத் தீர்க்க டிரான்ஸ்ஃபார்மர் மாடல்கள் வெற்றிபெற்ற பிறகு, அதே அல்லது இதே போன்ற கட்டமைப்புகள் கணினி காட்சி பணிகளுக்கு பயன்படுத்தப்பட்டன. காட்சி மற்றும் இயற்கை மொழி திறன்களை *இணைக்கும்* மாடல்களை உருவாக்குவதில் அதிக ஆர்வம் உள்ளது. OpenAI இன் முயற்சிகளில் ஒன்று CLIP மற்றும் DALL.E என அழைக்கப்படுகிறது.
@@ -15,7 +6,7 @@ NLP பணிகளைத் தீர்க்க டிரான்ஸ்ஃ�
 
 CLIP இன் முக்கிய நோக்கம், உரை முன்மொழிவுகளை ஒரு படத்துடன் ஒப்பிட்டு, அந்த படம் முன்மொழிவுடன் எவ்வளவு பொருந்துகிறது என்பதைத் தீர்மானிக்க வேண்டும்.
 
-![CLIP கட்டமைப்பு](../../../../../translated_images/clip-arch.b3dbf20b4e8ed8be1c38e2bc6100fd3cc257c33cda4692b301be91f791b13ea7.ta.png)
+![CLIP கட்டமைப்பு](../../../../../translated_images/ta/clip-arch.b3dbf20b4e8ed8be.webp)
 
 > *[இந்த வலைப்பதிவில்](https://openai.com/blog/clip/) இருந்து எடுத்த படம்*
 
@@ -29,7 +20,7 @@ CLIP மாடல்/நூலகம் [OpenAI GitHub](https://github.com/opena
 
 நாம் படங்களை, உதாரணமாக, பூனைகள், நாய்கள் மற்றும் மனிதர்கள் ஆகியவற்றுக்கு இடையில் வகைப்படுத்த வேண்டும் எனக் கருதுக. இந்த நிலையில், மாடலுக்கு ஒரு படம் மற்றும் ஒரு தொடர் உரை முன்மொழிவுகளை கொடுக்கலாம்: "*ஒரு பூனையின் படம்*", "*ஒரு நாயின் படம்*", "*ஒரு மனிதனின் படம்*". 3 சாத்தியக்கூறுகளின் விளைவாக கிடைக்கும் வெக்டாரில், அதிக மதிப்புள்ள குறியீட்டை தேர்ந்தெடுக்க வேண்டும்.
 
-![பட வகைப்படுத்தலுக்கான CLIP](../../../../../translated_images/clip-class.3af42ef0b2b19369a633df5f20ddf4f5a01d6c8ffa181e9d3a0572c19f919f72.ta.png)
+![பட வகைப்படுத்தலுக்கான CLIP](../../../../../translated_images/ta/clip-class.3af42ef0b2b19369.webp)
 
 > *[இந்த வலைப்பதிவில்](https://openai.com/blog/clip/) இருந்து எடுத்த படம்*
 
@@ -53,13 +44,13 @@ VQGAN பற்றி மேலும் அறிய [Taming Transformers](http
 
 VQGAN மற்றும் பாரம்பரிய GAN களுக்கிடையிலான முக்கியமான வேறுபாடுகளில் ஒன்று, GAN எந்த உள்ளீட்டு வெக்டாரிலிருந்தும் ஒரு நல்ல படத்தை உருவாக்க முடியும், ஆனால் VQGAN ஒருங்கிணைந்த படத்தை உருவாக்க முடியாமல் போகலாம். எனவே, பட உருவாக்க செயல்முறையை மேலும் வழிநடத்த வேண்டும், இது CLIP ஐப் பயன்படுத்தி செய்ய முடியும்.
 
-![VQGAN+CLIP கட்டமைப்பு](../../../../../translated_images/vqgan.5027fe05051dfa3101950cfa930303f66e6478b9bd273e83766731796e462d9b.ta.png)
+![VQGAN+CLIP கட்டமைப்பு](../../../../../translated_images/ta/vqgan.5027fe05051dfa31.webp)
 
 ஒரு உரை முன்மொழிவுக்கு பொருந்தும் படத்தை உருவாக்க, சில சீரற்ற குறியீட்டு வெக்டாருடன் தொடங்குகிறோம், இது VQGAN வழியாக அனுப்பப்பட்டு ஒரு படத்தை உருவாக்குகிறது. பின்னர் CLIP ஒரு இழப்புக் கோட்பாட்டை உருவாக்க பயன்படுத்தப்படுகிறது, இது படம் உரை முன்மொழிவுக்கு எவ்வளவு பொருந்துகிறது என்பதை காட்டுகிறது. பின்னர் இந்த இழப்பை குறைப்பதே நோக்கம், பின்னடைவு மூலம் உள்ளீட்டு வெக்டார் அளவுருக்களை சரிசெய்தல்.
 
 VQGAN+CLIP ஐ செயல்படுத்தும் ஒரு சிறந்த நூலகம் [Pixray](http://github.com/pixray/pixray)
 
-![Pixray மூலம் உருவாக்கப்பட்ட படம்](../../../../../translated_images/a_closeup_watercolor_portrait_of_young_male_teacher_of_literature_with_a_book.2384968e9db8a0d09dc96de938b9f95bde8a7e1c721f48f286a7795bf16d56c7.ta.png) |  ![Pixray மூலம் உருவாக்கப்பட்ட படம்](../../../../../translated_images/a_closeup_oil_portrait_of_young_female_teacher_of_computer_science_with_a_computer.e0b6495f210a439077e1c32cc8afdf714e634fe24dc78dc5aa45fd2f560b0ed5.ta.png) | ![Pixray மூலம் உருவாக்கப்பட்ட படம்](../../../../../translated_images/a_closeup_oil_portrait_of_old_male_teacher_of_math.5362e67aa7fc2683b9d36a613b364deb7454760cd39205623fc1e3938fa133c0.ta.png)
+![Pixray மூலம் உருவாக்கப்பட்ட படம்](../../../../../translated_images/ta/a_closeup_watercolor_portrait_of_young_male_teacher_of_literature_with_a_book.2384968e9db8a0d0.webp) |  ![Pixray மூலம் உருவாக்கப்பட்ட படம்](../../../../../translated_images/ta/a_closeup_oil_portrait_of_young_female_teacher_of_computer_science_with_a_computer.e0b6495f210a4390.webp) | ![Pixray மூலம் உருவாக்கப்பட்ட படம்](../../../../../translated_images/ta/a_closeup_oil_portrait_of_old_male_teacher_of_math.5362e67aa7fc2683.webp)
 ----|----|----
 முன்மொழிவு *ஒரு புத்தகத்துடன் இளம் ஆண் இலக்கிய ஆசிரியரின் நெருக்கமான நீர்வண்ண உருவப்படம்* | முன்மொழிவு *ஒரு கணினியுடன் இளம் பெண் கணினி அறிவியல் ஆசிரியரின் நெருக்கமான எண்ணெய் உருவப்படம்* | முன்மொழிவு *கரும்பலகையின் முன் முதிய ஆண் கணித ஆசிரியரின் நெருக்கமான எண்ணெய் உருவப்படம்*
 
@@ -75,7 +66,7 @@ CLIP ஐ விட DALL-E உரை மற்றும் படத்தை ஒ
 DALL-E 1 மற்றும் 2 இன் முக்கியமான வேறுபாடு, இது மேலும் யதார்த்தமான படங்கள் மற்றும் கலைகளை உருவாக்குகிறது.
 
 DALL-E மூலம் உருவாக்கப்பட்ட படங்களின் உதாரணங்கள்:
-![Pixray மூலம் உருவாக்கப்பட்ட படம்](../../../../../translated_images/DALL·E%202023-06-20%2015.56.56%20-%20a%20closeup%20watercolor%20portrait%20of%20young%20male%20teacher%20of%20literature%20with%20a%20book.6c235e8271d9ed10ce985d86aeb241a58518958647973af136912116b9518fce.ta.png) |  ![Pixray மூலம் உருவாக்கப்பட்ட படம்](../../../../../translated_images/DALL·E%202023-06-20%2015.57.43%20-%20a%20closeup%20oil%20portrait%20of%20young%20female%20teacher%20of%20computer%20science%20with%20a%20computer.f21dc4166340b6c8b4d1cb57efd1e22127407f9b28c9ac7afe11344065369e64.ta.png) | ![Pixray மூலம் உருவாக்கப்பட்ட படம்](../../../../../translated_images/DALL·E%202023-06-20%2015.58.42%20-%20%20a%20closeup%20oil%20portrait%20of%20old%20male%20teacher%20of%20mathematics%20in%20front%20of%20blackboard.d331c2dfbdc3f7c46aa65c0809066f5e7ed4b49609cd259852e760df21051e4a.ta.png)
+![Pixray மூலம் உருவாக்கப்பட்ட படம்](../../../../../translated_images/ta/DALL·E%202023-06-20%2015.56.56%20-%20a%20closeup%20watercolor%20portrait%20of%20young%20male%20teacher%20of%20literature%20with%20a%20book.6c235e8271d9ed10ce985d86aeb241a58518958647973af136912116b9518fce.png) |  ![Pixray மூலம் உருவாக்கப்பட்ட படம்](../../../../../translated_images/ta/DALL·E%202023-06-20%2015.57.43%20-%20a%20closeup%20oil%20portrait%20of%20young%20female%20teacher%20of%20computer%20science%20with%20a%20computer.f21dc4166340b6c8b4d1cb57efd1e22127407f9b28c9ac7afe11344065369e64.png) | ![Pixray மூலம் உருவாக்கப்பட்ட படம்](../../../../../translated_images/ta/DALL·E%202023-06-20%2015.58.42%20-%20%20a%20closeup%20oil%20portrait%20of%20old%20male%20teacher%20of%20mathematics%20in%20front%20of%20blackboard.d331c2dfbdc3f7c46aa65c0809066f5e7ed4b49609cd259852e760df21051e4a.png)
 ----|----|----
 முன்மொழிவு *ஒரு புத்தகத்துடன் இளம் ஆண் இலக்கிய ஆசிரியரின் நெருக்கமான நீர்வண்ண உருவப்படம்* | முன்மொழிவு *ஒரு கணினியுடன் இளம் பெண் கணினி அறிவியல் ஆசிரியரின் நெருக்கமான எண்ணெய் உருவப்படம்* | முன்மொழிவு *கரும்பலகையின் முன் முதிய ஆண் கணித ஆசிரியரின் நெருக்கமான எண்ணெய் உருவப்படம்*
 

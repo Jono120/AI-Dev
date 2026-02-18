@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "f335dfcb4a993920504c387973a36957",
-  "translation_date": "2025-09-23T10:13:18+00:00",
-  "source_file": "lessons/5-NLP/18-Transformers/README.md",
-  "language_code": "nl"
-}
--->
 # Aandachtsmechanismen en Transformers
 
 ## [Pre-lecture quiz](https://ff-quizzes.netlify.app/en/ai/quiz/35)
@@ -20,13 +11,13 @@ Met RNNs wordt sequence-to-sequence geïmplementeerd door twee recurrente netwer
 
 **Aandachtsmechanismen** bieden een manier om het contextuele effect van elke invoervector op elke outputvoorspelling van de RNN te wegen. Dit wordt geïmplementeerd door shortcuts te creëren tussen de tussenliggende toestanden van de input-RNN en de output-RNN. Op deze manier nemen we bij het genereren van outputsymbool y<sub>t</sub> alle verborgen toestanden h<sub>i</sub> van de input in aanmerking, met verschillende gewichtcoëfficiënten &alpha;<sub>t,i</sub>.
 
-![Afbeelding van een encoder/decoder-model met een additieve aandachtlaag](../../../../../translated_images/encoder-decoder-attention.7a726296894fb567aa2898c94b17b3289087f6705c11907df8301df9e5eeb3de.nl.png)
+![Afbeelding van een encoder/decoder-model met een additieve aandachtlaag](../../../../../translated_images/nl/encoder-decoder-attention.7a726296894fb567.webp)
 
 > Het encoder-decoder model met additief aandachtsmechanisme in [Bahdanau et al., 2015](https://arxiv.org/pdf/1409.0473.pdf), geciteerd uit [deze blogpost](https://lilianweng.github.io/lil-log/2018/06/24/attention-attention.html)
 
 De aandachtmatrix {&alpha;<sub>i,j</sub>} vertegenwoordigt de mate waarin bepaalde invoerwoorden een rol spelen bij het genereren van een bepaald woord in de outputsequentie. Hieronder staat een voorbeeld van zo'n matrix:
 
-![Afbeelding van een voorbeelduitlijning gevonden door RNNsearch-50, afkomstig van Bahdanau - arviz.org](../../../../../translated_images/bahdanau-fig3.09ba2d37f202a6af11de6c82d2d197830ba5f4528d9ea430eb65fd3a75065973.nl.png)
+![Afbeelding van een voorbeelduitlijning gevonden door RNNsearch-50, afkomstig van Bahdanau - arviz.org](../../../../../translated_images/nl/bahdanau-fig3.09ba2d37f202a6af.webp)
 
 > Afbeelding uit [Bahdanau et al., 2015](https://arxiv.org/pdf/1409.0473.pdf) (Fig.3)
 
@@ -56,7 +47,7 @@ Het idee van positionele codering is als volgt:
 * Trainbare embedding, vergelijkbaar met tokenembedding. Dit is de aanpak die we hier beschouwen. We passen embeddinglagen toe op zowel tokens als hun posities, wat resulteert in embeddingvectoren van dezelfde dimensies, die we vervolgens bij elkaar optellen.
 * Vaste positionele coderingsfunctie, zoals voorgesteld in het oorspronkelijke artikel.
 
-<img src="images/pos-embedding.png" width="50%"/>
+<img src="../../../../../translated_images/nl/pos-embedding.e41ce9b6cf6078af.webp" width="50%"/>
 
 > Afbeelding door de auteur
 
@@ -66,7 +57,7 @@ Het resultaat dat we krijgen met positionele embedding embedt zowel het oorspron
 
 Vervolgens moeten we enkele patronen binnen onze sequentie vastleggen. Om dit te doen, gebruiken transformers een **zelf-aandachtsmechanisme**, wat in wezen aandacht is toegepast op dezelfde sequentie als input en output. Het toepassen van zelf-aandacht stelt ons in staat om **context** binnen de zin in aanmerking te nemen en te zien welke woorden met elkaar verbonden zijn. Bijvoorbeeld, het stelt ons in staat om te zien welke woorden worden verwezen door coreferenties, zoals *het*, en ook de context in aanmerking te nemen:
 
-![](../../../../../translated_images/CoreferenceResolution.861924d6d384a7d68d8d0039d06a71a151f18a796b8b1330239d3590bd4947eb.nl.png)
+![](../../../../../translated_images/nl/CoreferenceResolution.861924d6d384a7d6.webp)
 
 > Afbeelding van de [Google Blog](https://research.googleblog.com/2017/08/transformer-novel-neural-network.html)
 
@@ -91,7 +82,7 @@ Omdat elke invoerpositie onafhankelijk wordt gekoppeld aan elke uitvoerpositie, 
 
 **BERT** (Bidirectional Encoder Representations from Transformers) is een zeer groot meerlagig transformernetwerk met 12 lagen voor *BERT-base*, en 24 voor *BERT-large*. Het model wordt eerst voorgetraind op een grote corpus van tekstdata (WikiPedia + boeken) met behulp van ongesuperviseerde training (voorspellen van gemaskeerde woorden in een zin). Tijdens het voortrainen absorbeert het model aanzienlijke niveaus van taalbegrip, die vervolgens kunnen worden benut met andere datasets door middel van fine-tuning. Dit proces wordt **transfer learning** genoemd.
 
-![Afbeelding van http://jalammar.github.io/illustrated-bert/](../../../../../translated_images/jalammarBERT-language-modeling-masked-lm.34f113ea5fec4362e39ee4381aab7cad06b5465a0b5f053a0f2aa05fbe14e746.nl.png)
+![Afbeelding van http://jalammar.github.io/illustrated-bert/](../../../../../translated_images/nl/jalammarBERT-language-modeling-masked-lm.34f113ea5fec4362.webp)
 
 > Afbeelding [bron](http://jalammar.github.io/illustrated-bert/)
 

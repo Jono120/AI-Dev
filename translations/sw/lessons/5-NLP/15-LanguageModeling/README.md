@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "7ba20f54a5bfcd6521018cdfb17c7c57",
-  "translation_date": "2025-09-23T11:05:48+00:00",
-  "source_file": "lessons/5-NLP/15-LanguageModeling/README.md",
-  "language_code": "sw"
-}
--->
 # Uundaji wa Lugha
 
 Uwakilishi wa semantiki, kama Word2Vec na GloVe, ni hatua ya kwanza kuelekea **uundaji wa lugha** - kuunda mifano inayoweza *kuelewa* (au *kuwakilisha*) asili ya lugha.
@@ -23,7 +14,7 @@ Katika mifano yetu ya awali, tulitumia uwakilishi wa semantiki uliokwisha fundis
 * **Mfuko Endelevu wa Maneno** (CBoW), ambapo tunatabiri tokeni ya katikati $W_0$ katika mlolongo wa tokeni $W_{-N}$, ..., $W_N$.
 * **Skip-gram**, ambapo tunatabiri seti ya tokeni za jirani {$W_{-N},\dots, W_{-1}, W_1,\dots, W_N$} kutoka tokeni ya katikati $W_0$.
 
-![picha kutoka karatasi kuhusu kubadilisha maneno kuwa vekta](../../../../../translated_images/example-algorithms-for-converting-words-to-vectors.fbe9207a726922f6f0f5de66427e8a6eda63809356114e28fb1fa5f4a83ebda7.sw.png)
+![picha kutoka karatasi kuhusu kubadilisha maneno kuwa vekta](../../../../../translated_images/sw/example-algorithms-for-converting-words-to-vectors.fbe9207a726922f6.webp)
 
 > Picha kutoka [karatasi hii](https://arxiv.org/pdf/1301.3781.pdf)
 

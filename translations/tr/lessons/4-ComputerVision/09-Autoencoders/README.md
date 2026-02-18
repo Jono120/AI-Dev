@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "1b8d9e1b3a6f1daa864b1ff3dfc3076d",
-  "translation_date": "2025-09-23T08:40:20+00:00",
-  "source_file": "lessons/4-ComputerVision/09-Autoencoders/README.md",
-  "language_code": "tr"
-}
--->
 # Otomatik Kodlayıcılar
 
 CNN'leri eğitirken karşılaşılan sorunlardan biri, çok fazla etiketlenmiş veriye ihtiyaç duymamızdır. Görüntü sınıflandırma durumunda, görüntüleri farklı sınıflara ayırmamız gerekir ve bu manuel bir çabadır.
@@ -19,7 +10,7 @@ Ancak, CNN özellik çıkarıcılarını eğitmek için ham (etiketlenmemiş) ve
 
 Otomatik kodlayıcıyı, orijinal görüntüden mümkün olduğunca fazla bilgi yakalamak ve doğru bir şekilde yeniden oluşturmak için eğittiğimizden, ağ en iyi **gömülü temsili** bulmaya çalışır.
 
-![Otomatik Kodlayıcı Şeması](../../../../../translated_images/autoencoder_schema.5e6fc9ad98a5eb6197f3513cf3baf4dfbe1389a6ae74daebda64de9f1c99f142.tr.jpg)
+![Otomatik Kodlayıcı Şeması](../../../../../translated_images/tr/autoencoder_schema.5e6fc9ad98a5eb61.webp)
 
 > Görsel [Keras blogundan](https://blog.keras.io/building-autoencoders-in-keras.html)
 
@@ -46,7 +37,7 @@ VAE, gizli parametrelerin *istatistiksel dağılımını* tahmin etmeyi öğrene
  * N(z<sub>mean</sub>,exp(z<sub>log\_sigma</sub>)) dağılımından `sample` adlı bir vektör örneklenir
  * Kod çözücü, `sample` vektörünü giriş olarak kullanarak orijinal görüntüyü çözmeye çalışır
 
- <img src="images/vae.png" width="50%">
+ <img src="../../../../../translated_images/tr/vae.464c465a5b6a9e25.webp" width="50%">
 
 > Görsel [bu blog yazısından](https://ijdykeman.github.io/ml/2016/12/21/cvae.html) Isaak Dykeman tarafından
 
@@ -57,13 +48,13 @@ Varyasyonel otomatik kodlayıcılar, iki bölümden oluşan karmaşık bir kayı
 
 VAE'lerin önemli bir avantajı, yeni görüntüleri nispeten kolay bir şekilde oluşturabilmemize olanak tanımasıdır, çünkü gizli vektörlerin örnekleneceği dağılımı biliriz. Örneğin, MNIST üzerinde 2D gizli vektörle VAE eğitirsek, gizli vektörün bileşenlerini değiştirerek farklı rakamlar elde edebiliriz:
 
-<img alt="vaemnist" src="images/vaemnist.png" width="50%"/>
+<img alt="vaemnist" src="../../../../../translated_images/tr/vaemnist.cab9e602dc08dc50.webp" width="50%"/>
 
 > Görsel [Dmitry Soshnikov](http://soshnikov.com) tarafından
 
 Gizli parametre uzayının farklı bölümlerinden gizli vektörler almaya başladıkça, görüntülerin birbirine nasıl karıştığını gözlemleyin. Bu uzayı ayrıca 2D olarak görselleştirebiliriz:
 
-<img alt="vaemnist cluster" src="images/vaemnist-diag.png" width="50%"/> 
+<img alt="vaemnist cluster" src="../../../../../translated_images/tr/vaemnist-diag.694315f775d5d666.webp" width="50%"/> 
 
 > Görsel [Dmitry Soshnikov](http://soshnikov.com) tarafından
 

@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "1b8d9e1b3a6f1daa864b1ff3dfc3076d",
-  "translation_date": "2025-11-25T22:26:19+00:00",
-  "source_file": "lessons/4-ComputerVision/09-Autoencoders/README.md",
-  "language_code": "kn"
-}
--->
 # ಆಟೋಎನ್‌ಕೋಡರ್‌ಗಳು
 
 CNNಗಳನ್ನು ತರಬೇತುಗೊಳಿಸುವಾಗ, ಒಂದು ಸಮಸ್ಯೆ ಎಂದರೆ ನಮಗೆ ಬಹಳಷ್ಟು ಲೇಬಲ್ ಮಾಡಲಾದ ಡೇಟಾ ಬೇಕಾಗುತ್ತದೆ. ಚಿತ್ರ ವರ್ಗೀಕರಣದ ಸಂದರ್ಭದಲ್ಲಿ, ಚಿತ್ರಗಳನ್ನು ವಿಭಿನ್ನ ವರ್ಗಗಳಲ್ಲಿ ವಿಭಜಿಸುವುದು ಕೈಯಿಂದ ಮಾಡಬೇಕಾಗುತ್ತದೆ.
@@ -19,7 +10,7 @@ CNNಗಳನ್ನು ತರಬೇತುಗೊಳಿಸುವಾಗ, ಒಂದ�
 
 ನಾವು ಮೂಲ ಚಿತ್ರದಿಂದ ಸಾಧ್ಯವಾದಷ್ಟು ಮಾಹಿತಿ ಹಿಡಿಯಲು ಆಟೋಎನ್‌ಕೋಡರ್ ತರಬೇತುಗೊಳಿಸುತ್ತಿದ್ದೇವೆ, ಆದ್ದರಿಂದ ನೆಟ್‌ವರ್ಕ್ ಇನ್‌ಪುಟ್ ಚಿತ್ರಗಳ ಅರ್ಥವನ್ನು ಹಿಡಿಯಲು ಉತ್ತಮ **ಎಂಬೆಡ್ಡಿಂಗ್** ಅನ್ನು ಹುಡುಕಲು ಪ್ರಯತ್ನಿಸುತ್ತದೆ.
 
-![AutoEncoder Diagram](../../../../../translated_images/autoencoder_schema.5e6fc9ad98a5eb6197f3513cf3baf4dfbe1389a6ae74daebda64de9f1c99f142.kn.jpg)
+![AutoEncoder Diagram](../../../../../translated_images/kn/autoencoder_schema.5e6fc9ad98a5eb61.webp)
 
 > ಚಿತ್ರ [Keras ಬ್ಲಾಗ್](https://blog.keras.io/building-autoencoders-in-keras.html) ನಿಂದ
 
@@ -46,7 +37,7 @@ VAE ಒಂದು ಆಟೋಎನ್‌ಕೋಡರ್ ಆಗಿದ್ದು, ಲ
  * ನಾವು ವಿತರಣೆಯಿಂದ `sample` ಎಂಬ ವೆಕ್ಟರ್ ಅನ್ನು ಆಯ್ಕೆ ಮಾಡುತ್ತೇವೆ N(z<sub>mean</sub>,exp(z<sub>log_sigma</sub>))
  * ಡಿಕೋಡರ್ `sample` ಅನ್ನು ಇನ್‌ಪುಟ್ ವೆಕ್ಟರ್ ಆಗಿ ಬಳಸಿಕೊಂಡು ಮೂಲ ಚಿತ್ರವನ್ನು ಮರುನಿರ್ಮಿಸಲು ಪ್ರಯತ್ನಿಸುತ್ತದೆ
 
- <img src="../../../../../translated_images/vae.464c465a5b6a9e253be65a8cb3be1724832cbde57ece3912ddc962b199472a89.kn.png" width="50%">
+ <img src="../../../../../translated_images/kn/vae.464c465a5b6a9e25.webp" width="50%">
 
 > ಚಿತ್ರ [ಈ ಬ್ಲಾಗ್ ಪೋಸ್ಟ್](https://ijdykeman.github.io/ml/2016/12/21/cvae.html) ನಿಂದ, ಇಸಾಕ್ ಡೈಕೆಮನ್ ರಚನೆ
 
@@ -57,13 +48,13 @@ VAE ಒಂದು ಆಟೋಎನ್‌ಕೋಡರ್ ಆಗಿದ್ದು, ಲ
 
 VAEಗಳ ಪ್ರಮುಖ ಲಾಭವೆಂದರೆ, ನಾವು ಲ್ಯಾಟೆಂಟ್ ವೆಕ್ಟರ್‌ಗಳನ್ನು ಯಾವ ವಿತರಣೆಯಿಂದ ಆಯ್ಕೆ ಮಾಡಬೇಕೆಂದು ತಿಳಿದಿರುವುದರಿಂದ, ಹೊಸ ಚಿತ್ರಗಳನ್ನು ಸುಲಭವಾಗಿ ರಚಿಸಬಹುದು. ಉದಾಹರಣೆಗೆ, 2D ಲ್ಯಾಟೆಂಟ್ ವೆಕ್ಟರ್‌ನೊಂದಿಗೆ MNIST ಮೇಲೆ VAE ತರಬೇತಿಗೊಳಿಸಿದರೆ, ಲ್ಯಾಟೆಂಟ್ ವೆಕ್ಟರ್‌ನ ಅಂಶಗಳನ್ನು ಬದಲಾಯಿಸಿ ವಿಭಿನ್ನ ಅಂಕಿಗಳನ್ನು ಪಡೆಯಬಹುದು:
 
-<img alt="vaemnist" src="../../../../../translated_images/vaemnist.cab9e602dc08dc5066ce14e005889d6b53ca5bcaf16e35c28dbf8cd40c304de1.kn.png" width="50%"/>
+<img alt="vaemnist" src="../../../../../translated_images/kn/vaemnist.cab9e602dc08dc50.webp" width="50%"/>
 
 > ಚಿತ್ರ [ಡ್ಮಿತ್ರಿ ಸೋಶ್ನಿಕೋವ್](http://soshnikov.com) ರಚನೆ
 
 ಲ್ಯಾಟೆಂಟ್ ಪರಿಮಾಣ ಸ್ಥಳದ ವಿಭಿನ್ನ ಭಾಗಗಳಿಂದ ಲ್ಯಾಟೆಂಟ್ ವೆಕ್ಟರ್‌ಗಳನ್ನು ಪಡೆಯಲು ಪ್ರಾರಂಭಿಸಿದಂತೆ ಚಿತ್ರಗಳು ಪರಸ್ಪರ ಮಿಶ್ರಣವಾಗುತ್ತಿರುವುದನ್ನು ಗಮನಿಸಿ. ನಾವು ಈ ಸ್ಥಳವನ್ನು 2Dಯಲ್ಲಿ ದೃಶ್ಯೀಕರಿಸಬಹುದು:
 
-<img alt="vaemnist cluster" src="../../../../../translated_images/vaemnist-diag.694315f775d5d666b02fb54f8fc7c64db65a9d126a16c2fdb8683cf9726f9ff5.kn.png" width="50%"/> 
+<img alt="vaemnist cluster" src="../../../../../translated_images/kn/vaemnist-diag.694315f775d5d666.webp" width="50%"/> 
 
 > ಚಿತ್ರ [ಡ್ಮಿತ್ರಿ ಸೋಶ್ನಿಕೋವ್](http://soshnikov.com) ರಚನೆ
 

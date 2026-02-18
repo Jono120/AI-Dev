@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "e2273cc150380a5e191903cea858f021",
-  "translation_date": "2025-09-23T14:23:20+00:00",
-  "source_file": "lessons/5-NLP/16-RNN/README.md",
-  "language_code": "ro"
-}
--->
 # Rețele Neuronale Recurente
 
 ## [Chestionar înainte de curs](https://ff-quizzes.netlify.app/en/ai/quiz/31)
@@ -15,7 +6,7 @@ CO_OP_TRANSLATOR_METADATA:
 
 Pentru a capta sensul unei secvențe de text, trebuie să utilizăm o altă arhitectură de rețea neuronală, numită **rețea neuronală recurentă**, sau RNN. În RNN, trecem propoziția prin rețea, un simbol la un moment dat, iar rețeaua produce un **stare**, pe care o trecem din nou prin rețea împreună cu următorul simbol.
 
-![RNN](../../../../../translated_images/rnn.27f5c29c53d727b546ad3961637a267f0fe9ec5ab01f2a26a853c92fcefbb574.ro.png)
+![RNN](../../../../../translated_images/ro/rnn.27f5c29c53d727b5.webp)
 
 > Imagine realizată de autor
 
@@ -31,7 +22,7 @@ Să vedem cum este organizată o celulă RNN simplă. Aceasta acceptă starea an
 
 O celulă RNN simplă are două matrice de greutăți în interior: una transformă un simbol de intrare (să o numim W), iar cealaltă transformă o stare de intrare (H). În acest caz, ieșirea rețelei este calculată ca &sigma;(W&times;X<sub>i</sub>+H&times;S<sub>i-1</sub>+b), unde &sigma; este funcția de activare și b este un bias suplimentar.
 
-<img alt="Anatomia unei celule RNN" src="images/rnn-anatomy.png" width="50%"/>
+<img alt="Anatomia unei celule RNN" src="../../../../../translated_images/ro/rnn-anatomy.79ee3f3920b3294b.webp" width="50%"/>
 
 > Imagine realizată de autor
 
@@ -61,7 +52,7 @@ Am discutat despre rețelele recurente care operează într-o singură direcție
 
 O rețea recurentă, fie unidirecțională, fie bidirecțională, captează anumite modele dintr-o secvență și le poate stoca într-un vector de stare sau le poate transmite ca ieșire. La fel ca în cazul rețelelor convoluționale, putem construi un alt strat recurent deasupra primului pentru a capta modele de nivel superior și a construi din modelele de nivel inferior extrase de primul strat. Acest lucru ne conduce la noțiunea de **RNN multistrat**, care constă din două sau mai multe rețele recurente, unde ieșirea stratului anterior este transmisă stratului următor ca intrare.
 
-![Imagine care arată un RNN LSTM multistrat](../../../../../translated_images/multi-layer-lstm.dd975e29bb2a59fe58b429db833932d734c81f211cad2783797a9608984acb8c.ro.jpg)
+![Imagine care arată un RNN LSTM multistrat](../../../../../translated_images/ro/multi-layer-lstm.dd975e29bb2a59fe.webp)
 
 *Imagine din [acest articol minunat](https://towardsdatascience.com/from-a-lstm-cell-to-a-multilayer-lstm-network-with-pytorch-2899eb5696f3) de Fernando López*
 

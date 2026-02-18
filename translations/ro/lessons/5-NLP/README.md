@@ -1,15 +1,6 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "8ef02a9318257ea140ed3ed74442096d",
-  "translation_date": "2025-08-25T21:28:27+00:00",
-  "source_file": "lessons/5-NLP/README.md",
-  "language_code": "ro"
-}
--->
 # Procesarea Limbajului Natural
 
-![Rezumat al sarcinilor NLP într-un desen](../../../../translated_images/ai-nlp.b22dcb8ca4707ceaee8576db1c5f4089c8cac2f454e9e03ea554f07fda4556b8.ro.png)
+![Rezumat al sarcinilor NLP într-un desen](../../../../translated_images/ro/ai-nlp.b22dcb8ca4707cea.webp)
 
 În această secțiune, ne vom concentra pe utilizarea Rețelelor Neuronale pentru a rezolva sarcini legate de **Procesarea Limbajului Natural (NLP)**. Există multe probleme NLP pe care ne dorim ca calculatoarele să le poată rezolva:
 

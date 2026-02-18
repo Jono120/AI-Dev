@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "51be6057374d01d70e07dd5ec88ebc0d",
-  "translation_date": "2025-09-23T15:48:27+00:00",
-  "source_file": "lessons/5-NLP/17-GenerativeNetworks/README.md",
-  "language_code": "lt"
-}
--->
 # Generatyviniai tinklai
 
 ## [Klausimynas prieš paskaitą](https://ff-quizzes.netlify.app/en/ai/quiz/33)
@@ -19,7 +10,7 @@ RNN architektūroje, kurią aptarėme ankstesniame skyriuje, kiekvienas RNN vien
 
 Tai leidžia sukurti skirtingas neuronines architektūras, kurios parodytos žemiau esančiame paveikslėlyje:
 
-![Paveikslėlis, rodantis įprastus pasikartojančių neuroninių tinklų modelius.](../../../../../translated_images/unreasonable-effectiveness-of-rnn.541ead816778f42dce6c42d8a56c184729aa2378d059b851be4ce12b993033df.lt.jpg)
+![Paveikslėlis, rodantis įprastus pasikartojančių neuroninių tinklų modelius.](../../../../../translated_images/lt/unreasonable-effectiveness-of-rnn.541ead816778f42d.webp)
 
 > Paveikslėlis iš tinklaraščio įrašo [Unreasonable Effectiveness of Recurrent Neural Networks](http://karpathy.github.io/2015/05/21/rnn-effectiveness/) autoriaus [Andrej Karpaty](http://karpathy.github.io/)
 
@@ -32,11 +23,11 @@ Tai leidžia sukurti skirtingas neuronines architektūras, kurios parodytos žem
 
 Mes išmokysime šį RNN generuoti tekstą žingsnis po žingsnio. Kiekviename žingsnyje imsime simbolių seką, kurios ilgis yra `nchars`, ir paprašysime tinklo generuoti kitą išvesties simbolį kiekvienam įvesties simboliui:
 
-![Paveikslėlis, rodantis RNN generavimo pavyzdį su žodžiu 'HELLO'.](../../../../../translated_images/rnn-generate.56c54afb52f9781d63a7c16ea9c1b86cb70e6e1eae6a742b56b7b37468576b17.lt.png)
+![Paveikslėlis, rodantis RNN generavimo pavyzdį su žodžiu 'HELLO'.](../../../../../translated_images/lt/rnn-generate.56c54afb52f9781d.webp)
 
 Generuojant tekstą (inference metu), pradedame nuo tam tikro **pradžios taško**, kuris perduodamas per RNN ląsteles, kad būtų generuojama tarpinė būsena, o tada iš šios būsenos prasideda generavimas. Generuojame po vieną simbolį, perduodame būseną ir sugeneruotą simbolį kitai RNN ląstelei, kad sugeneruotume kitą, kol sugeneruojame pakankamai simbolių.
 
-<img src="images/rnn-generate-inf.png" width="60%"/>
+<img src="../../../../../translated_images/lt/rnn-generate-inf.5168dc65e0370eea.webp" width="60%"/>
 
 > Paveikslėlis autoriaus
 

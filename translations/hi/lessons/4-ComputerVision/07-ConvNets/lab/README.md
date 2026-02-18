@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "b70fcf7fcee862990f848c679090943f",
-  "translation_date": "2025-10-03T14:53:30+00:00",
-  "source_file": "lessons/4-ComputerVision/07-ConvNets/lab/README.md",
-  "language_code": "hi"
-}
--->
 # पालतू जानवरों के चेहरों का वर्गीकरण
 
 [AI for Beginners Curriculum](https://github.com/microsoft/ai-for-beginners) से लैब असाइनमेंट।
@@ -21,7 +12,7 @@ CO_OP_TRANSLATOR_METADATA:
 
 हम [Oxford-IIIT Pet Dataset](https://www.robots.ox.ac.uk/~vgg/data/pets/) का उपयोग करेंगे, जिसमें कुत्तों और बिल्लियों की 37 विभिन्न नस्लों की छवियां शामिल हैं।
 
-![हम जिस डेटासेट पर काम करेंगे](../../../../../../translated_images/data.50b2a9d5484bdbf0f52f5765b381cec9efe2bd296a98f007f90bedb6ac67f2a8.hi.png)
+![हम जिस डेटासेट पर काम करेंगे](../../../../../../translated_images/hi/data.50b2a9d5484bdbf0.webp)
 
 डेटासेट डाउनलोड करने के लिए, इस कोड स्निपेट का उपयोग करें:
 

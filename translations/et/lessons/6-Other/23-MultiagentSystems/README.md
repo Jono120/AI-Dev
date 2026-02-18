@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "38a1185ae3d54b180378bbd71ae3ef16",
-  "translation_date": "2025-10-11T11:46:31+00:00",
-  "source_file": "lessons/6-Other/23-MultiagentSystems/README.md",
-  "language_code": "et"
-}
--->
 # Multiagent süsteemid
 
 Üks võimalik viis intelligentsuse saavutamiseks on nn **emergentne** (või **sünergeetiline**) lähenemine, mis põhineb faktil, et paljude suhteliselt lihtsate agentide kombineeritud käitumine võib viia süsteemi kui terviku keerukama (või intelligentsema) käitumiseni. Teoreetiliselt põhineb see [kollektiivse intelligentsuse](https://en.wikipedia.org/wiki/Collective_intelligence), [emergentismi](https://en.wikipedia.org/wiki/Global_brain) ja [evolutsioonilise küberneetika](https://en.wikipedia.org/wiki/Global_brain) põhimõtetel, mis väidavad, et kõrgema taseme süsteemid saavutavad teatud lisaväärtuse, kui need on õigesti kombineeritud madalama taseme süsteemidest (nn *metasüsteemi ülemineku põhimõte*).
@@ -60,7 +51,7 @@ NetLogo saate [alla laadida](https://ccl.northwestern.edu/netlogo/download.shtml
 
 NetLogo suurepärane omadus on see, et see sisaldab töötavate mudelite raamatukogu, mida saate proovida. Minge **File &rightarrow; Models Library**, ja teil on palju mudelikategooriaid, mille vahel valida.
 
-<img alt="NetLogo mudelite raamatukogu" src="../../../../../translated_images/NetLogo-ModelLib.efe023afb4763c059704a8ac0e2cd5e51889b117e8eac02aaa5334cfe1c52c13.et.png" width="60%"/>
+<img alt="NetLogo mudelite raamatukogu" src="../../../../../translated_images/et/NetLogo-ModelLib.efe023afb4763c05.webp" width="60%"/>
 
 > Mudelite raamatukogu ekraanipilt Dmitry Soshnikovilt
 
@@ -70,7 +61,7 @@ Saate avada ühe mudeli, näiteks **Biology &rightarrow; Flocking**.
 
 Pärast mudeli avamist jõuate NetLogo põhiekraanile. Siin on näidis, mis kirjeldab huntide ja lammaste populatsiooni piiratud ressursside (rohu) tingimustes.
 
-![NetLogo põhiekraan](../../../../../translated_images/NetLogo-Main.32653711ec1a01b3cab22ec0b148e64193d0b979b055285bef329d5e3d6958c5.et.png)
+![NetLogo põhiekraan](../../../../../translated_images/et/NetLogo-Main.32653711ec1a01b3.webp)
 
 > Ekraanipilt Dmitry Soshnikovilt
 

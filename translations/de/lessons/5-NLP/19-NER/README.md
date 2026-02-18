@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "6522312ff835796ca34136a9462fafb2",
-  "translation_date": "2025-09-23T12:23:56+00:00",
-  "source_file": "lessons/5-NLP/19-NER/README.md",
-  "language_code": "de"
-}
--->
 # Named Entity Recognition
 
 Bis jetzt haben wir uns hauptsächlich auf eine NLP-Aufgabe konzentriert – die Klassifikation. Es gibt jedoch auch andere NLP-Aufgaben, die mit neuronalen Netzwerken gelöst werden können. Eine dieser Aufgaben ist **[Named Entity Recognition](https://wikipedia.org/wiki/Named-entity_recognition)** (NER), die sich mit der Erkennung spezifischer Entitäten im Text befasst, wie Orte, Personennamen, Zeitintervalle, chemische Formeln und vieles mehr.
@@ -17,7 +8,7 @@ Bis jetzt haben wir uns hauptsächlich auf eine NLP-Aufgabe konzentriert – die
 
 Angenommen, Sie möchten einen natürlichen Sprach-Chatbot entwickeln, ähnlich wie Amazon Alexa oder Google Assistant. Intelligente Chatbots funktionieren, indem sie *verstehen*, was der Benutzer möchte, indem sie eine Textklassifikation auf den Eingabesatz anwenden. Das Ergebnis dieser Klassifikation ist die sogenannte **Intent**, die bestimmt, was der Chatbot tun soll.
 
-<img alt="Bot NER" src="images/bot-ner.png" width="50%"/>
+<img alt="Bot NER" src="../../../../../translated_images/de/bot-ner.4b09235dbb0ad275.webp" width="50%"/>
 
 > Bild vom Autor
 
@@ -57,7 +48,7 @@ Säugling | O
 
 Da wir eine Eins-zu-Eins-Korrespondenz zwischen Tokens und Klassen herstellen müssen, können wir ein rechtsbasiertes **Many-to-Many**-Neuralnetzwerkmodell aus diesem Bild trainieren:
 
-![Bild zeigt gängige Muster von rekurrenten neuronalen Netzwerken.](../../../../../translated_images/unreasonable-effectiveness-of-rnn.541ead816778f42dce6c42d8a56c184729aa2378d059b851be4ce12b993033df.de.jpg)
+![Bild zeigt gängige Muster von rekurrenten neuronalen Netzwerken.](../../../../../translated_images/de/unreasonable-effectiveness-of-rnn.541ead816778f42d.webp)
 
 > *Bild aus [diesem Blogbeitrag](http://karpathy.github.io/2015/05/21/rnn-effectiveness/) von [Andrej Karpathy](http://karpathy.github.io/). NER-Token-Klassifikationsmodelle entsprechen der rechtsbasierten Netzwerkarchitektur auf diesem Bild.*
 

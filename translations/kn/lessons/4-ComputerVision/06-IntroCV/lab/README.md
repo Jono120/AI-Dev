@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "3d53d6409f80970f7281a45dee35328a",
-  "translation_date": "2025-11-25T22:41:27+00:00",
-  "source_file": "lessons/4-ComputerVision/06-IntroCV/lab/README.md",
-  "language_code": "kn"
-}
--->
 # ಆಪ್ಟಿಕಲ್ ಫ್ಲೋ ಬಳಸಿ ಚಲನೆಗಳನ್ನು ಪತ್ತೆಹಚ್ಚುವುದು
 
 [AI for Beginners Curriculum](https://aka.ms/ai-beginners) ನಿಂದ ಪ್ರಯೋಗಾಲಯ ಕಾರ್ಯ.
@@ -15,7 +6,7 @@ CO_OP_TRANSLATOR_METADATA:
 
 [ಈ ವೀಡಿಯೋ](../../../../../../lessons/4-ComputerVision/06-IntroCV/lab/palm-movement.mp4) ಯನ್ನು ಪರಿಗಣಿಸಿ, ಇದರಲ್ಲಿ ಒಬ್ಬ ವ್ಯಕ್ತಿಯ ಹಸ್ತದ ತೊಡೆಯು ಸ್ಥಿರ ಹಿನ್ನೆಲೆಯ ಮೇಲೆ ಎಡಕ್ಕೆ/ಬಲಕ್ಕೆ/ಮೇಲಕ್ಕೆ/ಕೆಳಗೆ ಚಲಿಸುತ್ತದೆ.
 
-<img src="../../../../../../translated_images/palm-movement.341495f0e9c47da39cc1f99626822a1d20203aa33ff89a86a068f14bea133e84.kn.png" width="30%" alt="ಹಸ್ತದ ಚಲನೆ ಫ್ರೇಮ್"/>
+<img src="../../../../../../translated_images/kn/palm-movement.341495f0e9c47da3.webp" width="30%" alt="ಹಸ್ತದ ಚಲನೆ ಫ್ರೇಮ್"/>
 
 **ನಿಮ್ಮ ಗುರಿ** ಆಪ್ಟಿಕಲ್ ಫ್ಲೋ ಬಳಸಿ ವೀಡಿಯೋದಲ್ಲಿ ಯಾವ ಭಾಗಗಳಲ್ಲಿ ಮೇಲಕ್ಕೆ/ಕೆಳಗೆ/ಎಡಕ್ಕೆ/ಬಲಕ್ಕೆ ಚಲನೆಗಳಿವೆ ಎಂದು ನಿರ್ಧರಿಸುವುದು.
 

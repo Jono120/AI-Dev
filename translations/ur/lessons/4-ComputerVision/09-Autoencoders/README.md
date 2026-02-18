@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "1b8d9e1b3a6f1daa864b1ff3dfc3076d",
-  "translation_date": "2025-09-23T06:43:22+00:00",
-  "source_file": "lessons/4-ComputerVision/09-Autoencoders/README.md",
-  "language_code": "ur"
-}
--->
 # آٹو اینکوڈرز
 
 جب ہم CNNs کو تربیت دیتے ہیں، تو ایک مسئلہ یہ ہوتا ہے کہ ہمیں بہت زیادہ لیبل شدہ ڈیٹا کی ضرورت ہوتی ہے۔ تصویر کی درجہ بندی کے معاملے میں، ہمیں تصاویر کو مختلف کلاسز میں تقسیم کرنا پڑتا ہے، جو ایک دستی کوشش ہے۔
@@ -19,7 +10,7 @@ CO_OP_TRANSLATOR_METADATA:
 
 چونکہ ہم آٹو اینکوڈر کو اصل تصویر سے زیادہ سے زیادہ معلومات حاصل کرنے کے لیے تربیت دے رہے ہیں تاکہ درست تعمیر نو ہو سکے، نیٹ ورک ان پٹ تصاویر کی بہترین **ایمبیڈنگ** تلاش کرنے کی کوشش کرتا ہے تاکہ معنی کو حاصل کیا جا سکے۔
 
-![آٹو اینکوڈر ڈایاگرام](../../../../../translated_images/autoencoder_schema.5e6fc9ad98a5eb6197f3513cf3baf4dfbe1389a6ae74daebda64de9f1c99f142.ur.jpg)
+![آٹو اینکوڈر ڈایاگرام](../../../../../translated_images/ur/autoencoder_schema.5e6fc9ad98a5eb61.webp)
 
 > تصویر [Keras بلاگ](https://blog.keras.io/building-autoencoders-in-keras.html) سے لی گئی ہے
 
@@ -46,7 +37,7 @@ VAE ایک آٹو اینکوڈر ہے جو لیٹنٹ پیرامیٹرز کی *�
 * ہم تقسیم N(z<sub>mean</sub>,exp(z<sub>log\_sigma</sub>)) سے ایک ویکٹر `sample` لیتے ہیں
 * ڈیکوڈر `sample` کو ان پٹ ویکٹر کے طور پر استعمال کرتے ہوئے اصل تصویر کو دوبارہ بنانے کی کوشش کرتا ہے
 
-<img src="images/vae.png" width="50%">
+<img src="../../../../../translated_images/ur/vae.464c465a5b6a9e25.webp" width="50%">
 
 > تصویر [اس بلاگ پوسٹ](https://ijdykeman.github.io/ml/2016/12/21/cvae.html) سے لی گئی ہے، از: Isaak Dykeman
 
@@ -57,13 +48,13 @@ VAE ایک آٹو اینکوڈر ہے جو لیٹنٹ پیرامیٹرز کی *�
 
 VAEs کا ایک اہم فائدہ یہ ہے کہ وہ ہمیں نئی تصاویر نسبتا آسانی سے بنانے کی اجازت دیتے ہیں، کیونکہ ہمیں معلوم ہوتا ہے کہ لیٹنٹ ویکٹرز کو کس تقسیم سے نمونہ لینا ہے۔ مثال کے طور پر، اگر ہم MNIST پر 2D لیٹنٹ ویکٹر کے ساتھ VAE کو تربیت دیتے ہیں، تو ہم لیٹنٹ ویکٹر کے اجزاء کو مختلف کر کے مختلف ہندسے حاصل کر سکتے ہیں:
 
-<img alt="vaemnist" src="images/vaemnist.png" width="50%"/>
+<img alt="vaemnist" src="../../../../../translated_images/ur/vaemnist.cab9e602dc08dc50.webp" width="50%"/>
 
 > تصویر از: [Dmitry Soshnikov](http://soshnikov.com)
 
 مشاہدہ کریں کہ تصاویر ایک دوسرے میں کیسے ضم ہو رہی ہیں، جیسے ہی ہم لیٹنٹ پیرامیٹر اسپیس کے مختلف حصوں سے لیٹنٹ ویکٹرز حاصل کرتے ہیں۔ ہم اس اسپیس کو 2D میں بھی تصور کر سکتے ہیں:
 
-<img alt="vaemnist cluster" src="images/vaemnist-diag.png" width="50%"/> 
+<img alt="vaemnist cluster" src="../../../../../translated_images/ur/vaemnist-diag.694315f775d5d666.webp" width="50%"/> 
 
 > تصویر از: [Dmitry Soshnikov](http://soshnikov.com)
 

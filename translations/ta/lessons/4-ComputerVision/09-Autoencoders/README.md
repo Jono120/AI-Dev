@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "1b8d9e1b3a6f1daa864b1ff3dfc3076d",
-  "translation_date": "2025-10-11T11:24:22+00:00",
-  "source_file": "lessons/4-ComputerVision/09-Autoencoders/README.md",
-  "language_code": "ta"
-}
--->
 # ஆட்டோஎன்கோடர்கள்
 
 CNNகளை பயிற்சி செய்யும்போது, ஒரு முக்கியமான சிக்கல் என்னவென்றால், நமக்கு அதிக அளவில் லேபிள் செய்யப்பட்ட தரவுகள் தேவைப்படும். படங்களை வகைப்படுத்தும் போது, படங்களை வெவ்வேறு வகைகளாக பிரிக்க வேண்டும், இது கையேடு மூலம் செய்யப்படும் முயற்சியாகும்.
@@ -19,7 +10,7 @@ CNNகளை பயிற்சி செய்யும்போது, ஒர�
 
 ஆட்டோஎன்கோடரை அசல் படத்தின் தகவல்களை சரியாக மீண்டும் உருவாக்குவதற்காக அதிகமாக பிடிக்க பயிற்சி செய்யும் போது, நெட்வொர்க் சிறந்த **embedding** ஐ கண்டறிந்து, உள்ளீட்டு படங்களின் அர்த்தத்தை பிடிக்க முயற்சிக்கிறது.
 
-![ஆட்டோஎன்கோடர் வரைபடம்](../../../../../translated_images/autoencoder_schema.5e6fc9ad98a5eb6197f3513cf3baf4dfbe1389a6ae74daebda64de9f1c99f142.ta.jpg)
+![ஆட்டோஎன்கோடர் வரைபடம்](../../../../../translated_images/ta/autoencoder_schema.5e6fc9ad98a5eb61.webp)
 
 > படம் [Keras வலைப்பதிவு](https://blog.keras.io/building-autoencoders-in-keras.html) மூலம்
 
@@ -46,7 +37,7 @@ VAE என்பது latent அளவுருக்களின் *புள
  * N(z<sub>mean</sub>,exp(z<sub>log\_sigma</sub>)) விநியோகத்திலிருந்து `sample` வெக்டரை எடுக்கிறோம்
  * டிகோடர் `sample` ஐ உள்ளீட்டு வெக்டராக பயன்படுத்தி அசல் படத்தை டிகோடு செய்ய முயற்சிக்கிறது
 
- <img src="../../../../../translated_images/vae.464c465a5b6a9e253be65a8cb3be1724832cbde57ece3912ddc962b199472a89.ta.png" width="50%">
+ <img src="../../../../../translated_images/ta/vae.464c465a5b6a9e25.webp" width="50%">
 
 > படம் [இந்த வலைப்பதிவு](https://ijdykeman.github.io/ml/2016/12/21/cvae.html) மூலம் Isaak Dykeman
 
@@ -57,13 +48,13 @@ VAE என்பது latent அளவுருக்களின் *புள
 
 VAEs இன் ஒரு முக்கியமான நன்மை என்னவென்றால், புதிய படங்களை எளிதாக உருவாக்க முடியும், ஏனெனில் latent வெக்டர்களை எடுக்க வேண்டிய விநியோகத்தை நாங்கள் அறிந்திருக்கிறோம். உதாரணமாக, 2D latent வெக்டருடன் MNIST-ல் VAE ஐ பயிற்சி செய்தால், latent வெக்டரின் கூறுகளை மாறி வெவ்வேறு எண்களை பெறலாம்:
 
-<img alt="vaemnist" src="../../../../../translated_images/vaemnist.cab9e602dc08dc5066ce14e005889d6b53ca5bcaf16e35c28dbf8cd40c304de1.ta.png" width="50%"/>
+<img alt="vaemnist" src="../../../../../translated_images/ta/vaemnist.cab9e602dc08dc50.webp" width="50%"/>
 
 > படம் [Dmitry Soshnikov](http://soshnikov.com) மூலம்
 
 latent அளவுரு இடத்தின் வெவ்வேறு பகுதிகளில் இருந்து latent வெக்டர்களை எடுக்க தொடங்கும்போது, படங்கள் ஒருவருக்கொருவர் கலக்க ஆரம்பிக்கின்றன என்பதை கவனிக்கவும். இந்த இடத்தை 2D-ல் காட்சிப்படுத்தவும் முடியும்:
 
-<img alt="vaemnist cluster" src="../../../../../translated_images/vaemnist-diag.694315f775d5d666b02fb54f8fc7c64db65a9d126a16c2fdb8683cf9726f9ff5.ta.png" width="50%"/> 
+<img alt="vaemnist cluster" src="../../../../../translated_images/ta/vaemnist-diag.694315f775d5d666.webp" width="50%"/> 
 
 > படம் [Dmitry Soshnikov](http://soshnikov.com) மூலம்
 

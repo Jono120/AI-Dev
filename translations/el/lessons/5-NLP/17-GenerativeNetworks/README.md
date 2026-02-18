@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "51be6057374d01d70e07dd5ec88ebc0d",
-  "translation_date": "2025-09-23T08:57:58+00:00",
-  "source_file": "lessons/5-NLP/17-GenerativeNetworks/README.md",
-  "language_code": "el"
-}
--->
 # Γενετικά Δίκτυα
 
 ## [Προ-διάλεξης κουίζ](https://ff-quizzes.netlify.app/en/ai/quiz/33)
@@ -19,7 +10,7 @@ CO_OP_TRANSLATOR_METADATA:
 
 Αυτό επιτρέπει διαφορετικές νευρωνικές αρχιτεκτονικές, όπως φαίνεται στην παρακάτω εικόνα:
 
-![Εικόνα που δείχνει κοινά μοτίβα επαναληπτικών νευρωνικών δικτύων.](../../../../../translated_images/unreasonable-effectiveness-of-rnn.541ead816778f42dce6c42d8a56c184729aa2378d059b851be4ce12b993033df.el.jpg)
+![Εικόνα που δείχνει κοινά μοτίβα επαναληπτικών νευρωνικών δικτύων.](../../../../../translated_images/el/unreasonable-effectiveness-of-rnn.541ead816778f42d.webp)
 
 > Εικόνα από το blog post [Unreasonable Effectiveness of Recurrent Neural Networks](http://karpathy.github.io/2015/05/21/rnn-effectiveness/) του [Andrej Karpaty](http://karpathy.github.io/)
 
@@ -32,11 +23,11 @@ CO_OP_TRANSLATOR_METADATA:
 
 Θα εκπαιδεύσουμε αυτό το RNN να δημιουργεί κείμενο βήμα προς βήμα. Σε κάθε βήμα, θα πάρουμε μια ακολουθία χαρακτήρων μήκους `nchars` και θα ζητήσουμε από το δίκτυο να παράγει τον επόμενο χαρακτήρα εξόδου για κάθε χαρακτήρα εισόδου:
 
-![Εικόνα που δείχνει ένα παράδειγμα RNN που δημιουργεί τη λέξη 'HELLO'.](../../../../../translated_images/rnn-generate.56c54afb52f9781d63a7c16ea9c1b86cb70e6e1eae6a742b56b7b37468576b17.el.png)
+![Εικόνα που δείχνει ένα παράδειγμα RNN που δημιουργεί τη λέξη 'HELLO'.](../../../../../translated_images/el/rnn-generate.56c54afb52f9781d.webp)
 
 Κατά τη δημιουργία κειμένου (κατά την πρόβλεψη), ξεκινάμε με κάποιο **προτροπή**, η οποία περνά μέσα από τα RNN cells για να δημιουργήσει την ενδιάμεση κατάσταση, και στη συνέχεια από αυτή την κατάσταση ξεκινά η δημιουργία. Παράγουμε έναν χαρακτήρα τη φορά και περνάμε την κατάσταση και τον παραγόμενο χαρακτήρα σε άλλο RNN cell για να δημιουργήσουμε τον επόμενο, μέχρι να δημιουργήσουμε αρκετούς χαρακτήρες.
 
-<img src="images/rnn-generate-inf.png" width="60%"/>
+<img src="../../../../../translated_images/el/rnn-generate-inf.5168dc65e0370eea.webp" width="60%"/>
 
 > Εικόνα από τον συγγραφέα
 

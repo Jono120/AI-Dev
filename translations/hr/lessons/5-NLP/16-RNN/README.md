@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "e2273cc150380a5e191903cea858f021",
-  "translation_date": "2025-09-23T14:59:20+00:00",
-  "source_file": "lessons/5-NLP/16-RNN/README.md",
-  "language_code": "hr"
-}
--->
 # Rekurentne neuronske mreže
 
 ## [Kviz prije predavanja](https://ff-quizzes.netlify.app/en/ai/quiz/31)
@@ -15,7 +6,7 @@ U prethodnim odjeljcima koristili smo bogate semantičke reprezentacije teksta i
 
 Kako bismo uhvatili značenje sekvenci teksta, trebamo koristiti drugu arhitekturu neuronske mreže, koja se naziva **rekurentna neuronska mreža** ili RNN. U RNN-u, rečenicu prosljeđujemo kroz mrežu jedan simbol po simbol, a mreža proizvodi određeno **stanje**, koje zatim ponovno prosljeđujemo mreži s idućim simbolom.
 
-![RNN](../../../../../translated_images/rnn.27f5c29c53d727b546ad3961637a267f0fe9ec5ab01f2a26a853c92fcefbb574.hr.png)
+![RNN](../../../../../translated_images/hr/rnn.27f5c29c53d727b5.webp)
 
 > Slika autora
 
@@ -31,7 +22,7 @@ Pogledajmo kako je organizirana jednostavna RNN ćelija. Ona prihvaća prethodno
 
 Jednostavna RNN ćelija ima dvije matrice težina unutar sebe: jedna transformira ulazni simbol (nazovimo je W), a druga transformira ulazno stanje (H). U ovom slučaju izlaz mreže se računa kao &sigma;(W&times;X<sub>i</sub>+H&times;S<sub>i-1</sub>+b), gdje je &sigma; funkcija aktivacije, a b dodatna pristranost.
 
-<img alt="Anatomija RNN ćelije" src="images/rnn-anatomy.png" width="50%"/>
+<img alt="Anatomija RNN ćelije" src="../../../../../translated_images/hr/rnn-anatomy.79ee3f3920b3294b.webp" width="50%"/>
 
 > Slika autora
 
@@ -61,7 +52,7 @@ Razgovarali smo o rekurentnim mrežama koje djeluju u jednom smjeru, od početka
 
 Rekurentna mreža, bilo jednosmjerna ili dvosmjerna, hvata određene uzorke unutar sekvence i može ih pohraniti u vektor stanja ili proslijediti u izlaz. Kao i kod konvolucijskih mreža, možemo izgraditi drugi rekurentni sloj na vrhu prvog kako bismo uhvatili uzorke višeg nivoa i izgradili na temelju uzoraka nižeg nivoa koje je izvukao prvi sloj. To nas dovodi do pojma **višeslojnog RNN-a**, koji se sastoji od dva ili više rekurentnih mreža, gdje se izlaz prethodnog sloja prosljeđuje sljedećem sloju kao ulaz.
 
-![Slika koja prikazuje višeslojni LSTM RNN](../../../../../translated_images/multi-layer-lstm.dd975e29bb2a59fe58b429db833932d734c81f211cad2783797a9608984acb8c.hr.jpg)
+![Slika koja prikazuje višeslojni LSTM RNN](../../../../../translated_images/hr/multi-layer-lstm.dd975e29bb2a59fe.webp)
 
 *Slika iz [ovog izvrsnog posta](https://towardsdatascience.com/from-a-lstm-cell-to-a-multilayer-lstm-network-with-pytorch-2899eb5696f3) Fernanda Lópeza*
 

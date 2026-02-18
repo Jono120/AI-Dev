@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "a560d5b845962cf33dc102266e409568",
-  "translation_date": "2025-09-23T15:14:13+00:00",
-  "source_file": "lessons/4-ComputerVision/07-ConvNets/README.md",
-  "language_code": "my"
-}
--->
 # Convolutional Neural Networks
 
 မကြာသေးမီက ကျွန်တော်တို့ neural networks တွေဟာ ပုံတွေကို ကောင်းကောင်းကိုင်တွယ်နိုင်ပြီး၊ တစ်လွှာတည်းသော perceptron ကတောင် MNIST dataset ထဲက လက်ရေးအက္ခရာဂဏန်းတွေကို တော်တော်လေးတိကျမှုရှိရှိနဲ့ မှတ်မိနိုင်တယ်ဆိုတာကို မြင်ခဲ့ပါတယ်။ သို့သော်လည်း MNIST dataset ဟာ အထူးတလည်ဖြစ်ပြီး၊ အက္ခရာဂဏန်းတွေဟာ ပုံထဲမှာ အလယ်မှာထားရှိထားတာကြောင့် အလုပ်ကို ပိုမိုလွယ်ကူစေပါတယ်။
@@ -17,14 +8,14 @@ CO_OP_TRANSLATOR_METADATA:
 
 Patterns တွေကို ရှာဖွေဖို့ **convolutional filters** ဆိုတဲ့ အယူအဆကို အသုံးပြုပါမယ်။ သင်သိပြီးသားဖြစ်တဲ့အတိုင်း၊ ပုံတစ်ပုံဟာ 2D-matrix, ဒါမှမဟုတ် color depth ပါတဲ့ 3D-tensor အနေနဲ့ ဖော်ပြထားပါတယ်။ Filter ကို အသုံးပြုတဲ့အခါမှာ **filter kernel** matrix လေးတစ်ခုကို ယူပြီး၊ မူရင်းပုံထဲက pixel တစ်ခုစီအတွက် အနီးအနားမှာရှိတဲ့ point တွေနဲ့ weighted average ကိုတွက်ချက်ပါတယ်။ ဒါကို ပုံတစ်ပုံလုံးကို sliding လုပ်ပြီး၊ filter kernel matrix ထဲက weight တွေအတိုင်း pixel တွေကို averaging လုပ်နေတဲ့ window လေးတစ်ခုလိုမျိုး မြင်နိုင်ပါတယ်။
 
-![Vertical Edge Filter](../../../../../translated_images/filter-vert.b7148390ca0bc356ddc7e55555d2481819c1e86ddde9dce4db5e71a69d6f887f.my.png) | ![Horizontal Edge Filter](../../../../../translated_images/filter-horiz.59b80ed4feb946efbe201a7fe3ca95abb3364e266e6fd90820cb893b4d3a6dda.my.png)
+![Vertical Edge Filter](../../../../../translated_images/my/filter-vert.b7148390ca0bc356.webp) | ![Horizontal Edge Filter](../../../../../translated_images/my/filter-horiz.59b80ed4feb946ef.webp)
 ----|----
 
 > Image by Dmitry Soshnikov
 
 ဥပမာ၊ MNIST digits တွေကို 3x3 vertical edge နဲ့ horizontal edge filters တွေကို အသုံးပြုရင်၊ မူရင်းပုံထဲမှာ vertical နဲ့ horizontal edges ရှိတဲ့နေရာတွေမှာ highlight (ဥပမာ high values) တွေကို ရနိုင်ပါတယ်။ ဒါကြောင့် အဲဒီ filter နှစ်ခုကို edges တွေကို "ရှာဖွေ"ဖို့ အသုံးပြုနိုင်ပါတယ်။ အဲဒီလိုပဲ၊ အခြား low-level patterns တွေကို ရှာဖွေဖို့ filter တွေကို design လုပ်နိုင်ပါတယ်။
 
-<img src="images/lmfilters.jpg" width="500" align="center"/>
+<img src="../../../../../translated_images/my/lmfilters.ea9e4868a82cf74c.webp" width="500" align="center"/>
 
 > Image of [Leung-Malik Filter Bank](https://www.robots.ox.ac.uk/~vgg/research/texclass/filters.html)
 
@@ -38,7 +29,7 @@ CNN တွေဟာ အောက်ပါ အရေးကြီးတဲ့ အ�
 * Filters တွေကို အလိုအလျောက် သင်ယူနိုင်အောင် network ကို design လုပ်နိုင်တယ်
 * မူရင်းပုံထဲမှာသာမက၊ high-level features တွေထဲမှာ patterns တွေကို ရှာဖွေနိုင်ဖို့ အတူတူပုံစံကို အသုံးပြုနိုင်တယ်။ ဒါကြောင့် CNN feature extraction ဟာ low-level pixel combinations တွေကနေ စပြီး၊ ပုံရဲ့ အပိုင်းပိုင်းတွေကို ပေါင်းစပ်ထားတဲ့ higher-level features တွေထိ hierarchy အတိုင်း အလုပ်လုပ်ပါတယ်။
 
-![Hierarchical Feature Extraction](../../../../../translated_images/FeatureExtractionCNN.d9b456cbdae7cb643fde3032b81b2940e3cf8be842e29afac3f482725ba7f95c.my.png)
+![Hierarchical Feature Extraction](../../../../../translated_images/my/FeatureExtractionCNN.d9b456cbdae7cb64.webp)
 
 > Image from [a paper by Hislop-Lynch](https://www.semanticscholar.org/paper/Computer-vision-based-pedestrian-trajectory-Hislop-Lynch/26e6f74853fc9bbb7487b06dc2cf095d36c9021d), based on [their research](https://dl.acm.org/doi/abs/10.1145/1553374.1553453)
 
@@ -55,9 +46,9 @@ Convolutional neural networks တွေ ဘယ်လိုအလုပ်လု�
 
 ဥပမာအနေနဲ့၊ VGG-16 ရဲ့ architecture ကို ကြည့်ကြမယ်၊ ဒီ network ဟာ 2014 မှာ ImageNet ရဲ့ top-5 classification မှာ 92.7% accuracy ရရှိခဲ့ပါတယ်-
 
-![ImageNet Layers](../../../../../translated_images/vgg-16-arch1.d901a5583b3a51baeaab3e768567d921e5d54befa46e1e642616c5458c934028.my.jpg)
+![ImageNet Layers](../../../../../translated_images/my/vgg-16-arch1.d901a5583b3a51ba.webp)
 
-![ImageNet Pyramid](../../../../../translated_images/vgg-16-arch.64ff2137f50dd49fdaa786e3f3a975b3f22615efd13efb19c5d22f12e01451a1.my.jpg)
+![ImageNet Pyramid](../../../../../translated_images/my/vgg-16-arch.64ff2137f50dd49f.webp)
 
 > Image from [Researchgate](https://www.researchgate.net/figure/Vgg16-model-structure-To-get-the-VGG-NIN-model-we-replace-the-2-nd-4-th-6-th-7-th_fig2_335194493)
 

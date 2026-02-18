@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "b70fcf7fcee862990f848c679090943f",
-  "translation_date": "2025-10-03T14:55:29+00:00",
-  "source_file": "lessons/4-ComputerVision/07-ConvNets/lab/README.md",
-  "language_code": "da"
-}
--->
 # Klassifikation af kæledyrs ansigter
 
 Laboratorieopgave fra [AI for Beginners Curriculum](https://github.com/microsoft/ai-for-beginners).
@@ -21,7 +12,7 @@ Du skal træne et konvolutionelt neuralt netværk til at klassificere forskellig
 
 Vi vil bruge [Oxford-IIIT Pet Dataset](https://www.robots.ox.ac.uk/~vgg/data/pets/), som indeholder billeder af 37 forskellige racer af hunde og katte.
 
-![Datasæt vi skal arbejde med](../../../../../../translated_images/data.50b2a9d5484bdbf0f52f5765b381cec9efe2bd296a98f007f90bedb6ac67f2a8.da.png)
+![Datasæt vi skal arbejde med](../../../../../../translated_images/da/data.50b2a9d5484bdbf0.webp)
 
 For at downloade datasættet, brug denne kode:
 

@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "b708c9b85b833864c73c6281f1e6b96e",
-  "translation_date": "2025-09-23T11:31:14+00:00",
-  "source_file": "lessons/5-NLP/14-Embeddings/README.md",
-  "language_code": "cs"
-}
--->
 # Vektorizace slov (Embeddings)
 
 ## [Kvíz před přednáškou](https://ff-quizzes.netlify.app/en/ai/quiz/27)
@@ -19,7 +10,7 @@ Vrstva embedding tedy přijme slovo jako vstup a vytvoří výstupní vektor o s
 
 Použitím vrstvy embedding jako první vrstvy v naší klasifikační síti můžeme přejít od modelu bag-of-words k modelu **embedding bag**, kde nejprve převedeme každé slovo v textu na odpovídající embedding a poté vypočítáme nějakou agregační funkci nad všemi těmito embeddingy, například `sum`, `average` nebo `max`.
 
-![Obrázek znázorňující klasifikátor s embeddingy pro pět slov v sekvenci.](../../../../../translated_images/embedding-classifier-example.b77f021a7ee67eeec8e68bfe11636c5b97d6eaa067515a129bfb1d0034b1ac5b.cs.png)
+![Obrázek znázorňující klasifikátor s embeddingy pro pět slov v sekvenci.](../../../../../translated_images/cs/embedding-classifier-example.b77f021a7ee67eee.webp)
 
 > Obrázek od autora
 
@@ -40,7 +31,7 @@ K tomu je třeba předtrénovat model embedding na velké kolekci textů specifi
 
 CBoW je rychlejší, zatímco skip-gram je pomalejší, ale lépe reprezentuje méně častá slova.
 
-![Obrázek znázorňující algoritmy CBoW a Skip-Gram pro převod slov na vektory.](../../../../../translated_images/example-algorithms-for-converting-words-to-vectors.fbe9207a726922f6f0f5de66427e8a6eda63809356114e28fb1fa5f4a83ebda7.cs.png)
+![Obrázek znázorňující algoritmy CBoW a Skip-Gram pro převod slov na vektory.](../../../../../translated_images/cs/example-algorithms-for-converting-words-to-vectors.fbe9207a726922f6.webp)
 
 > Obrázek z [tohoto článku](https://arxiv.org/pdf/1301.3781.pdf)
 

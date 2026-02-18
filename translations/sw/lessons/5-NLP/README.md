@@ -1,15 +1,6 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "8ef02a9318257ea140ed3ed74442096d",
-  "translation_date": "2025-08-25T20:48:39+00:00",
-  "source_file": "lessons/5-NLP/README.md",
-  "language_code": "sw"
-}
--->
 # Usindikaji wa Lugha Asilia
 
-![Muhtasari wa kazi za NLP katika mchoro](../../../../translated_images/ai-nlp.b22dcb8ca4707ceaee8576db1c5f4089c8cac2f454e9e03ea554f07fda4556b8.sw.png)
+![Muhtasari wa kazi za NLP katika mchoro](../../../../translated_images/sw/ai-nlp.b22dcb8ca4707cea.webp)
 
 Katika sehemu hii, tutazingatia kutumia Mitandao ya Neural kushughulikia kazi zinazohusiana na **Usindikaji wa Lugha Asilia (NLP)**. Kuna matatizo mengi ya NLP ambayo tunataka kompyuta iweze kuyatatua:
 

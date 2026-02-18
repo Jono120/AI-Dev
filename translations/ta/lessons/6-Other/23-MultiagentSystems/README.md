@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "38a1185ae3d54b180378bbd71ae3ef16",
-  "translation_date": "2025-10-11T11:45:52+00:00",
-  "source_file": "lessons/6-Other/23-MultiagentSystems/README.md",
-  "language_code": "ta"
-}
--->
 # பல்கூறு முகவர் அமைப்புகள்
 
 உளவுத்திறனை அடையக்கூடிய வழிகளில் ஒன்றாக **தோன்றும்** (அல்லது **சக்தி**) அணுகுமுறை உள்ளது, இது பல எளிய முகவர்களின் இணைந்த செயல்பாடு, மொத்த அமைப்பின் முழுமையான சிக்கலான (அல்லது புத்திசாலியான) செயல்பாட்டை உருவாக்க முடியும் என்பதை அடிப்படையாகக் கொண்டது. இது தத்துவ ரீதியாக [கூட்டு உளவுத்திறன்](https://en.wikipedia.org/wiki/Collective_intelligence), [தோன்றும் தத்துவம்](https://en.wikipedia.org/wiki/Global_brain) மற்றும் [மாறும் சைபர்நெடிக்ஸ்](https://en.wikipedia.org/wiki/Global_brain) ஆகியவற்றின் கோட்பாடுகளின் அடிப்படையில் உள்ளது, இது உயர் நிலை அமைப்புகள் தகுந்த முறையில் கீழ்நிலை அமைப்புகளிலிருந்து இணைக்கப்பட்டால் கூடுதல் மதிப்பை பெறுகின்றன என்று கூறுகிறது (*மெட்டாசிஸ்டம் மாற்றத்தின் கோட்பாடு*).
@@ -60,7 +51,7 @@ NetLogo ஐ [பதிவிறக்கம்](https://ccl.northwestern.edu/net
 
 NetLogo இன் சிறப்பம்சம், இது நீங்கள் முயற்சிக்கக்கூடிய செயல்படும் மாதிரிகளின் நூலகத்தை கொண்டுள்ளது. **File &rightarrow; Models Library** க்கு செல்லவும், மேலும் நீங்கள் தேர்ந்தெடுக்க பல வகைகளின் மாதிரிகள் உள்ளன.
 
-<img alt="NetLogo Models Library" src="../../../../../translated_images/NetLogo-ModelLib.efe023afb4763c059704a8ac0e2cd5e51889b117e8eac02aaa5334cfe1c52c13.ta.png" width="60%"/>
+<img alt="NetLogo Models Library" src="../../../../../translated_images/ta/NetLogo-ModelLib.efe023afb4763c05.webp" width="60%"/>
 
 > NetLogo மாதிரிகள் நூலகத்தின் ஸ்கிரீன்ஷாட் - Dmitry Soshnikov
 
@@ -70,7 +61,7 @@ NetLogo இன் சிறப்பம்சம், இது நீங்க�
 
 மாதிரியைத் திறந்த பிறகு, நீங்கள் NetLogo இன் முக்கிய திரைக்கு கொண்டு செல்லப்படுகிறீர்கள். இங்கு முடிவான வளங்கள் (பசுமை) கொண்ட ஓநாய்கள் மற்றும் செம்மறியாடுகளின் மக்கள் தொகையை விவரிக்கும் மாதிரி உள்ளது.
 
-![NetLogo Main Screen](../../../../../translated_images/NetLogo-Main.32653711ec1a01b3cab22ec0b148e64193d0b979b055285bef329d5e3d6958c5.ta.png)
+![NetLogo Main Screen](../../../../../translated_images/ta/NetLogo-Main.32653711ec1a01b3.webp)
 
 > Dmitry Soshnikov இன் ஸ்கிரீன்ஷாட்
 

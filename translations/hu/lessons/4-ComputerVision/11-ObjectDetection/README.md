@@ -1,19 +1,10 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "d76a7eda28de5210c8b1ba50a6216c69",
-  "translation_date": "2025-09-23T11:11:43+00:00",
-  "source_file": "lessons/4-ComputerVision/11-ObjectDetection/README.md",
-  "language_code": "hu"
-}
--->
 # Objektumfelismerés
 
 Az eddig tárgyalt képosztályozási modellek egy képet vettek bemenetként, és egy kategóriát adtak eredményül, például az 'szám' osztályt az MNIST problémában. Azonban sok esetben nem elég, hogy tudjuk, egy kép tárgyakat ábrázol - szeretnénk meghatározni azok pontos helyét is. Ez az **objektumfelismerés** célja.
 
 ## [Előadás előtti kvíz](https://ff-quizzes.netlify.app/en/ai/quiz/21)
 
-![Objektumfelismerés](../../../../../translated_images/Screen_Shot_2016-11-17_at_11.14.54_AM.b4bb3769353287be1b905373ed9c858102c054b16e4595c76ec3f7bba0feb549.hu.png)
+![Objektumfelismerés](../../../../../translated_images/hu/Screen_Shot_2016-11-17_at_11.14.54_AM.b4bb3769353287be.webp)
 
 > Kép a [YOLO v2 weboldaláról](https://pjreddie.com/darknet/yolov2/)
 
@@ -25,7 +16,7 @@ Tegyük fel, hogy egy képen szeretnénk megtalálni egy macskát. Egy nagyon eg
 2. Képosztályozást futtatunk minden csempén.
 3. Azok a csempék, amelyeknél elég magas aktivációt kapunk, tartalmazhatják a keresett objektumot.
 
-![Naiv objektumfelismerés](../../../../../translated_images/naive-detection.e7f1ba220ccd08c68a2ea8e06a7ed75c3fcc738c2372f9e00b7f4299a8659c01.hu.png)
+![Naiv objektumfelismerés](../../../../../translated_images/hu/naive-detection.e7f1ba220ccd08c6.webp)
 
 > *Kép az [Exercise Notebook](ObjectDetection-TF.ipynb)-ból*
 
@@ -42,7 +33,7 @@ Az alábbi adatállományokkal találkozhatsz ezen a területen:
 * [PASCAL VOC](http://host.robots.ox.ac.uk/pascal/VOC/) - 20 osztály
 * [COCO](http://cocodataset.org/#home) - Közönséges tárgyak kontextusban. 80 osztály, körvonalak és szegmentációs maszkok
 
-![COCO](../../../../../translated_images/coco-examples.71bc60380fa6cceb7caad48bd09e35b6028caabd363aa04fee89c414e0870e86.hu.jpg)
+![COCO](../../../../../translated_images/hu/coco-examples.71bc60380fa6cceb.webp)
 
 ## Objektumfelismerési metrikák
 
@@ -50,7 +41,7 @@ Az alábbi adatállományokkal találkozhatsz ezen a területen:
 
 Míg a képosztályozásnál könnyű mérni az algoritmus teljesítményét, az objektumfelismerésnél nemcsak az osztály helyességét kell mérni, hanem az előre jelzett körvonal helyének pontosságát is. Ehhez az úgynevezett **Metszet az unióhoz viszonyítva** (IoU) metrikát használjuk, amely azt méri, hogy két doboz (vagy két tetszőleges terület) mennyire fedik egymást.
 
-![IoU](../../../../../translated_images/iou_equation.9a4751d40fff4e119ecd0a7bcca4e71ab1dc83e0d4f2a0d66ff0859736f593cf.hu.png)
+![IoU](../../../../../translated_images/hu/iou_equation.9a4751d40fff4e11.webp)
 
 > *2. ábra [ebből a kiváló blogbejegyzésből az IoU-ról](https://pyimagesearch.com/2016/11/07/intersection-over-union-iou-for-object-detection/)*
 
@@ -98,11 +89,11 @@ Az objektumfelismerési algoritmusoknak két fő típusa van:
 
 Az [R-CNN](http://islab.ulsan.ac.kr/files/announcement/513/rcnn_pami.pdf) a [Szelektív Keresést](http://www.huppelen.nl/publications/selectiveSearchDraft.pdf) használja, hogy hierarchikus ROI régiókat generáljon, amelyeket aztán CNN jellemzőkivonókon és SVM-osztályozókon futtatunk, hogy meghatározzuk az objektum osztályát, valamint lineáris regresszióval a *körvonal* koordinátáit. [Hivatalos tanulmány](https://arxiv.org/pdf/1506.01497v1.pdf)
 
-![RCNN](../../../../../translated_images/rcnn1.cae407020dfb1d1fb572656e44f75cd6c512cc220591c116c506652c10e47f26.hu.png)
+![RCNN](../../../../../translated_images/hu/rcnn1.cae407020dfb1d1f.webp)
 
 > *Kép van de Sande et al. ICCV’11*
 
-![RCNN-1](../../../../../translated_images/rcnn2.2d9530bb83516484ec65b250c22dbf37d3d23244f32864ebcb91d98fe7c3112c.hu.png)
+![RCNN-1](../../../../../translated_images/hu/rcnn2.2d9530bb83516484.webp)
 
 > *Képek [ebből a blogból](https://towardsdatascience.com/r-cnn-fast-r-cnn-faster-r-cnn-yolo-object-detection-algorithms-36d53571365e)*
 
@@ -110,7 +101,7 @@ Az [R-CNN](http://islab.ulsan.ac.kr/files/announcement/513/rcnn_pami.pdf) a [Sze
 
 Ez a megközelítés hasonló az R-CNN-hez, de a régiókat a konvolúciós rétegek alkalmazása után határozzuk meg.
 
-![FRCNN](../../../../../translated_images/f-rcnn.3cda6d9bb41888754037d2d9763e2298a96de5d9bc2a21db3147357aa5da9b1a.hu.png)
+![FRCNN](../../../../../translated_images/hu/f-rcnn.3cda6d9bb4188875.webp)
 
 > Kép a [Hivatalos tanulmányból](https://www.cv-foundation.org/openaccess/content_iccv_2015/papers/Girshick_Fast_R-CNN_ICCV_2015_paper.pdf), [arXiv](https://arxiv.org/pdf/1504.08083.pdf), 2015
 
@@ -118,7 +109,7 @@ Ez a megközelítés hasonló az R-CNN-hez, de a régiókat a konvolúciós rét
 
 Ennek a megközelítésnek az alapötlete, hogy neurális hálózatot használunk az ROI-k előrejelzésére - az úgynevezett *Régiójavasló Hálózat*. [Tanulmány](https://arxiv.org/pdf/1506.01497.pdf), 2016
 
-![FasterRCNN](../../../../../translated_images/faster-rcnn.8d46c099b87ef30ab2ea26dbc4bdd85b974a57ba8eb526f65dc4cd0a4711de30.hu.png)
+![FasterRCNN](../../../../../translated_images/hu/faster-rcnn.8d46c099b87ef30a.webp)
 
 > Kép a [hivatalos tanulmányból](https://arxiv.org/pdf/1506.01497.pdf)
 
@@ -130,7 +121,7 @@ Ez az algoritmus még gyorsabb, mint a Gyorsabb R-CNN. Az alapötlet a következ
 2. A jellemzőket **Pozíció-Érzékeny Pontszám Térképen** dolgozzuk fel. Minden objektumot $C$ osztályból $k\times k$ régiókra osztunk, és az objektumok részeinek előrejelzésére tanítjuk a hálózatot.
 3. Minden részre a $k\times k$ régiókból a hálózatok szavaznak az objektumosztályokra, és a maximális szavazatot kapó osztályt választjuk.
 
-![r-fcn kép](../../../../../translated_images/r-fcn.13eb88158b99a3da50fa2787a6be5cb310d47f0e9655cc93a1090dc7aab338d1.hu.png)
+![r-fcn kép](../../../../../translated_images/hu/r-fcn.13eb88158b99a3da.webp)
 
 > Kép a [hivatalos tanulmányból](https://arxiv.org/abs/1605.06409)
 
@@ -141,7 +132,7 @@ A YOLO egy valós idejű egyszeri futtatású algoritmus. Az alapötlet a követ
  * A képet $S\times S$ régiókra osztjuk.
  * Minden régióra **CNN** előrejelzi $n$ lehetséges objektumot, *körvonal* koordinátákat és *bizalmi szintet*=*valószínűség* * IoU.
 
- ![YOLO](../../../../../translated_images/yolo.a2648ec82ee8bb4ea27537677adb482fd4b733ca1705c561b6a24a85102dced5.hu.png)
+ ![YOLO](../../../../../translated_images/hu/yolo.a2648ec82ee8bb4e.webp)
 
 > Kép a [hivatalos tanulmányból](https://arxiv.org/abs/1506.02640)
 

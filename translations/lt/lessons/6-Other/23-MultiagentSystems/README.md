@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "38a1185ae3d54b180378bbd71ae3ef16",
-  "translation_date": "2025-09-23T15:40:36+00:00",
-  "source_file": "lessons/6-Other/23-MultiagentSystems/README.md",
-  "language_code": "lt"
-}
--->
 # Daugiagentės sistemos
 
 Vienas iš galimų būdų pasiekti intelektą yra vadinamasis **emergentinis** (arba **sinerginis**) požiūris, kuris remiasi faktu, kad daugelio palyginti paprastų agentų bendras elgesys gali sukurti sudėtingesnį (arba intelektualesnį) visos sistemos elgesį. Teoriškai tai grindžiama [kolektyvinio intelekto](https://en.wikipedia.org/wiki/Collective_intelligence), [emergentizmo](https://en.wikipedia.org/wiki/Global_brain) ir [evoliucinės kibernetikos](https://en.wikipedia.org/wiki/Global_brain) principais, kurie teigia, kad aukštesnio lygio sistemos įgyja tam tikrą pridėtinę vertę, kai tinkamai sujungiamos iš žemesnio lygio sistemų (*metasistemos perėjimo principas*).
@@ -60,7 +51,7 @@ Galite [atsisiųsti](https://ccl.northwestern.edu/netlogo/download.shtml) ir įd
 
 Puikus dalykas apie NetLogo yra tai, kad ji turi veikiančių modelių biblioteką, kurią galite išbandyti. Eikite į **File &rightarrow; Models Library**, ir turėsite daugybę modelių kategorijų, iš kurių galite rinktis.
 
-<img alt="NetLogo Modelių biblioteka" src="images/NetLogo-ModelLib.png" width="60%"/>
+<img alt="NetLogo Modelių biblioteka" src="../../../../../translated_images/lt/NetLogo-ModelLib.efe023afb4763c05.webp" width="60%"/>
 
 > Dmitry Soshnikov modelių bibliotekos ekrano kopija
 
@@ -70,7 +61,7 @@ Galite atidaryti vieną iš modelių, pavyzdžiui, **Biology &rightarrow; Flocki
 
 Atidarius modelį, būsite nukreipti į pagrindinį NetLogo ekraną. Čia pateikiamas pavyzdinis modelis, aprašantis vilkų ir avių populiaciją, turint ribotus išteklius (žolę).
 
-![NetLogo Pagrindinis ekranas](../../../../../translated_images/NetLogo-Main.32653711ec1a01b3cab22ec0b148e64193d0b979b055285bef329d5e3d6958c5.lt.png)
+![NetLogo Pagrindinis ekranas](../../../../../translated_images/lt/NetLogo-Main.32653711ec1a01b3.webp)
 
 > Dmitry Soshnikov ekrano kopija
 

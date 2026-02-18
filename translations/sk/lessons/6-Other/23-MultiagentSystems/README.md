@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "38a1185ae3d54b180378bbd71ae3ef16",
-  "translation_date": "2025-09-23T14:01:17+00:00",
-  "source_file": "lessons/6-Other/23-MultiagentSystems/README.md",
-  "language_code": "sk"
-}
--->
 # Multi-agentné systémy
 
 Jedným z možných spôsobov dosiahnutia inteligencie je tzv. **emergentný** (alebo **synergetický**) prístup, ktorý je založený na skutočnosti, že kombinované správanie mnohých relatívne jednoduchých agentov môže viesť k celkovo zložitejšiemu (alebo inteligentnejšiemu) správaniu systému ako celku. Teoreticky je to založené na princípoch [kolektívnej inteligencie](https://en.wikipedia.org/wiki/Collective_intelligence), [emergentizmu](https://en.wikipedia.org/wiki/Global_brain) a [evolučnej kybernetiky](https://en.wikipedia.org/wiki/Global_brain), ktoré tvrdia, že systémy na vyššej úrovni získavajú určitú pridanú hodnotu, keď sú správne kombinované zo systémov na nižšej úrovni (tzv. *princíp prechodu metasystému*).
@@ -60,7 +51,7 @@ Môžete si [stiahnuť](https://ccl.northwestern.edu/netlogo/download.shtml) a n
 
 Skvelou vecou na NetLogo je, že obsahuje knižnicu funkčných modelov, ktoré si môžete vyskúšať. Prejdite na **File &rightarrow; Models Library**, kde máte na výber mnoho kategórií modelov.
 
-<img alt="NetLogo Models Library" src="images/NetLogo-ModelLib.png" width="60%"/>
+<img alt="NetLogo Models Library" src="../../../../../translated_images/sk/NetLogo-ModelLib.efe023afb4763c05.webp" width="60%"/>
 
 > Snímka obrazovky knižnice modelov od Dmitry Soshnikov
 
@@ -70,7 +61,7 @@ Môžete otvoriť jeden z modelov, napríklad **Biology &rightarrow; Flocking**.
 
 Po otvorení modelu sa dostanete na hlavnú obrazovku NetLogo. Tu je ukážkový model, ktorý popisuje populáciu vlkov a oviec, pričom zdroje (tráva) sú obmedzené.
 
-![NetLogo Main Screen](../../../../../translated_images/NetLogo-Main.32653711ec1a01b3cab22ec0b148e64193d0b979b055285bef329d5e3d6958c5.sk.png)
+![NetLogo Main Screen](../../../../../translated_images/sk/NetLogo-Main.32653711ec1a01b3.webp)
 
 > Snímka obrazovky od Dmitry Soshnikov
 

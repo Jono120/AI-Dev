@@ -1,15 +1,6 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "8ef02a9318257ea140ed3ed74442096d",
-  "translation_date": "2025-08-25T21:30:03+00:00",
-  "source_file": "lessons/5-NLP/README.md",
-  "language_code": "sl"
-}
--->
 # Obdelava naravnega jezika
 
-![Povzetek nalog NLP v skici](../../../../translated_images/ai-nlp.b22dcb8ca4707ceaee8576db1c5f4089c8cac2f454e9e03ea554f07fda4556b8.sl.png)
+![Povzetek nalog NLP v skici](../../../../translated_images/sl/ai-nlp.b22dcb8ca4707cea.webp)
 
 V tem poglavju se bomo osredotočili na uporabo nevronskih mrež za reševanje nalog, povezanih z **obdelavo naravnega jezika (NLP)**. Obstaja veliko NLP problemov, ki jih želimo, da jih računalniki rešujejo:
 

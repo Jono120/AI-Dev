@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "f335dfcb4a993920504c387973a36957",
-  "translation_date": "2025-09-23T15:24:18+00:00",
-  "source_file": "lessons/5-NLP/18-Transformers/README.md",
-  "language_code": "my"
-}
--->
 # အာရုံစိုက်မှု Mechanisms နှင့် Transformers
 
 ## [Pre-lecture quiz](https://ff-quizzes.netlify.app/en/ai/quiz/35)
@@ -20,13 +11,13 @@ RNNs အသုံးပြု၍ sequence-to-sequence ကို **encoder** န�
 
 **Attention Mechanisms** သည် RNN ၏ output prediction အပေါ် input vector တစ်ခုချင်းစီ၏ context သက်ရောက်မှုကို အလေးပေးရန် နည်းလမ်းတစ်ခုဖြစ်သည်။ ဒီနည်းလမ်းကို input RNN ၏ intermediate states နှင့် output RNN အကြား shortcut များဖန်တီးခြင်းဖြင့် အကောင်အထည်ဖော်သည်။ ထို့ကြောင့် output symbol y<sub>t</sub> ကို ဖန်တီးသောအခါ input hidden states h<sub>i</sub> အားလုံးကို အလေးပေး coefficient &alpha;<sub>t,i</sub> များဖြင့် ထည့်သွင်းစဉ်းစားမည်။
 
-![Image showing an encoder/decoder model with an additive attention layer](../../../../../translated_images/encoder-decoder-attention.7a726296894fb567aa2898c94b17b3289087f6705c11907df8301df9e5eeb3de.my.png)
+![Image showing an encoder/decoder model with an additive attention layer](../../../../../translated_images/my/encoder-decoder-attention.7a726296894fb567.webp)
 
 > Encoder-decoder မော်ဒယ်နှင့် additive attention mechanism ကို [Bahdanau et al., 2015](https://arxiv.org/pdf/1409.0473.pdf) မှ ရယူထားသည်။ [ဒီ blog post](https://lilianweng.github.io/lil-log/2018/06/24/attention-attention.html) မှာလည်း ရှင်းပြထားသည်။
 
 Attention matrix {&alpha;<sub>i,j</sub>} သည် output sequence အတွင်း စကားလုံးတစ်ခုကို ဖန်တီးရာတွင် input စကားလုံးတစ်ခုချင်းစီ၏ သက်ရောက်မှုကို ကိုယ်စားပြုသည်။ အောက်တွင် matrix ၏ ဥပမာတစ်ခုကို ဖော်ပြထားသည်-
 
-![Image showing a sample alignment found by RNNsearch-50, taken from Bahdanau - arviz.org](../../../../../translated_images/bahdanau-fig3.09ba2d37f202a6af11de6c82d2d197830ba5f4528d9ea430eb65fd3a75065973.my.png)
+![Image showing a sample alignment found by RNNsearch-50, taken from Bahdanau - arviz.org](../../../../../translated_images/my/bahdanau-fig3.09ba2d37f202a6af.webp)
 
 > [Bahdanau et al., 2015](https://arxiv.org/pdf/1409.0473.pdf) မှာပါရှိသော (Fig.3) ပုံ
 
@@ -56,7 +47,7 @@ Positional encoding ၏ အယူအဆမှာ အောက်ပါအတိ�
 * Token embedding ကဲ့သို့ trainable embedding ကို အသုံးပြုခြင်း။ ဒီနည်းလမ်းကို ဒီမှာ သုံးပါမည်။ Token နှင့် position နှစ်ခုစလုံးကို embedding layers တွင် ထည့်သွင်းပြီး၊ အချင်းချင်းတူညီသော dimension ရရှိသော embedding vectors ကို ထည့်ပေါင်းပါသည်။
 * Original paper တွင် အကြံပြုထားသော fixed position encoding function ကို အသုံးပြုခြင်း။
 
-<img src="images/pos-embedding.png" width="50%"/>
+<img src="../../../../../translated_images/my/pos-embedding.e41ce9b6cf6078af.webp" width="50%"/>
 
 > ပုံကို အတောအတွင်းရေးသားသူမှ ဖန်တီးထားသည်
 
@@ -66,7 +57,7 @@ Positional embedding ရလဒ်သည် original token နှင့် sequen
 
 ထို့နောက် sequence အတွင်း pattern များကို ဖမ်းဆီးရန်လိုအပ်သည်။ Transformers တွင် **self-attention** mechanism ကို အသုံးပြုသည်။ Self-attention သည် input နှင့် output အဖြစ် တူညီသော sequence အပေါ် attention ကို အသုံးပြုခြင်းဖြစ်သည်။ Self-attention ကို အသုံးပြုခြင်းဖြင့် sentence အတွင်း context ကို စဉ်းစားနိုင်ပြီး၊ စကားလုံးများ၏ inter-relationship ကို တွေ့နိုင်သည်။ ဥပမာ- *it* ကဲ့သို့သော coreferences ကို ရှာဖွေနိုင်သည်။
 
-![](../../../../../translated_images/CoreferenceResolution.861924d6d384a7d68d8d0039d06a71a151f18a796b8b1330239d3590bd4947eb.my.png)
+![](../../../../../translated_images/my/CoreferenceResolution.861924d6d384a7d6.webp)
 
 > [Google Blog](https://research.googleblog.com/2017/08/transformer-novel-neural-network.html) မှ ပုံ
 
@@ -91,7 +82,7 @@ Input position တစ်ခုချင်းစီကို output position တ
 
 **BERT** (Bidirectional Encoder Representations from Transformers) သည် *BERT-base* အတွက် 12 layers နှင့် *BERT-large* အတွက် 24 layers ပါဝင်သော အလွန်ကြီးမားသော multi-layer transformer network ဖြစ်သည်။ မော်ဒယ်ကို WikiPedia နှင့် books ကဲ့သို့သော text data အကြီးအကျယ်ကို unsupervised training (sentence အတွင်း masked words များကို ခန့်မှန်းခြင်း) ဖြင့် ပထမဦးဆုံး pre-train လုပ်သည်။ Pre-training အတွင်း မော်ဒယ်သည် language understanding အဆင့်များကို စွမ်းဆောင်နိုင်ပြီး၊ အခြား datasets များနှင့် fine-tuning ဖြင့် အသုံးပြုနိုင်သည်။ ဒီလုပ်ငန်းစဉ်ကို **transfer learning** ဟု ခေါ်သည်။
 
-![picture from http://jalammar.github.io/illustrated-bert/](../../../../../translated_images/jalammarBERT-language-modeling-masked-lm.34f113ea5fec4362e39ee4381aab7cad06b5465a0b5f053a0f2aa05fbe14e746.my.png)
+![picture from http://jalammar.github.io/illustrated-bert/](../../../../../translated_images/my/jalammarBERT-language-modeling-masked-lm.34f113ea5fec4362.webp)
 
 > ပုံ [source](http://jalammar.github.io/illustrated-bert/)
 

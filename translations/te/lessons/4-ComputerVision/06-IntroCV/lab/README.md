@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "3d53d6409f80970f7281a45dee35328a",
-  "translation_date": "2025-11-25T22:40:37+00:00",
-  "source_file": "lessons/4-ComputerVision/06-IntroCV/lab/README.md",
-  "language_code": "te"
-}
--->
 # ఆప్టికల్ ఫ్లో ఉపయోగించి కదలికలను గుర్తించడం
 
 [AI for Beginners Curriculum](https://aka.ms/ai-beginners) నుండి ల్యాబ్ అసైన్‌మెంట్.
@@ -15,7 +6,7 @@ CO_OP_TRANSLATOR_METADATA:
 
 [ఈ వీడియో](../../../../../../lessons/4-ComputerVision/06-IntroCV/lab/palm-movement.mp4)ను పరిశీలించండి, ఇందులో ఒక వ్యక్తి చేతి తలుపు స్థిరమైన నేపథ్యంపై ఎడమ/కుడి/పై/కింద కదులుతుంది.
 
-<img src="../../../../../../translated_images/palm-movement.341495f0e9c47da39cc1f99626822a1d20203aa33ff89a86a068f14bea133e84.te.png" width="30%" alt="Palm Movement Frame"/>
+<img src="../../../../../../translated_images/te/palm-movement.341495f0e9c47da3.webp" width="30%" alt="Palm Movement Frame"/>
 
 **మీ లక్ష్యం** ఆప్టికల్ ఫ్లో ఉపయోగించి వీడియోలో ఎక్కడ ఎడమ/కుడి/పై/కింద కదలికలు ఉన్నాయో గుర్తించడం.
 

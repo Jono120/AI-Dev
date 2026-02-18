@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "b708c9b85b833864c73c6281f1e6b96e",
-  "translation_date": "2025-09-23T14:23:51+00:00",
-  "source_file": "lessons/5-NLP/14-Embeddings/README.md",
-  "language_code": "ro"
-}
--->
 # Încapsulări
 
 ## [Chestionar înainte de lecție](https://ff-quizzes.netlify.app/en/ai/quiz/27)
@@ -19,7 +10,7 @@ Astfel, stratul de încapsulare ar lua un cuvânt ca intrare și ar produce un v
 
 Folosind un strat de încapsulare ca prim strat în rețeaua noastră de clasificare, putem trece de la un model bag-of-words la un model **embedding bag**, unde mai întâi convertim fiecare cuvânt din textul nostru în încapsularea corespunzătoare, și apoi calculăm o funcție agregată peste toate aceste încapsulări, cum ar fi `sum`, `average` sau `max`.
 
-![Imagine care arată un clasificator bazat pe încapsulări pentru cinci cuvinte dintr-o secvență.](../../../../../translated_images/embedding-classifier-example.b77f021a7ee67eeec8e68bfe11636c5b97d6eaa067515a129bfb1d0034b1ac5b.ro.png)
+![Imagine care arată un clasificator bazat pe încapsulări pentru cinci cuvinte dintr-o secvență.](../../../../../translated_images/ro/embedding-classifier-example.b77f021a7ee67eee.webp)
 
 > Imagine realizată de autor
 
@@ -40,7 +31,7 @@ Pentru a face acest lucru, trebuie să pre-antrenăm modelul de încapsulare pe 
 
 CBoW este mai rapid, în timp ce skip-gram este mai lent, dar face o treabă mai bună în reprezentarea cuvintelor rare.
 
-![Imagine care arată algoritmii CBoW și Skip-Gram pentru conversia cuvintelor în vectori.](../../../../../translated_images/example-algorithms-for-converting-words-to-vectors.fbe9207a726922f6f0f5de66427e8a6eda63809356114e28fb1fa5f4a83ebda7.ro.png)
+![Imagine care arată algoritmii CBoW și Skip-Gram pentru conversia cuvintelor în vectori.](../../../../../translated_images/ro/example-algorithms-for-converting-words-to-vectors.fbe9207a726922f6.webp)
 
 > Imagine din [acest articol](https://arxiv.org/pdf/1301.3781.pdf)
 

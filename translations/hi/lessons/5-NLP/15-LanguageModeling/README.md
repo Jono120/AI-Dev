@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "7ba20f54a5bfcd6521018cdfb17c7c57",
-  "translation_date": "2025-09-23T13:35:37+00:00",
-  "source_file": "lessons/5-NLP/15-LanguageModeling/README.md",
-  "language_code": "hi"
-}
--->
 # भाषा मॉडलिंग
 
 सिमेंटिक एम्बेडिंग्स, जैसे Word2Vec और GloVe, वास्तव में **भाषा मॉडलिंग** की दिशा में पहला कदम हैं - ऐसे मॉडल बनाना जो किसी तरह भाषा की प्रकृति को *समझते* (या *प्रतिनिधित्व करते*) हैं।
@@ -23,7 +14,7 @@ CO_OP_TRANSLATOR_METADATA:
 * **कंटीन्युअस बैग-ऑफ-वर्ड्स** (CBoW), जिसमें हम टोकन अनुक्रम $W_{-N}$, ..., $W_N$ में मध्य टोकन $W_0$ की भविष्यवाणी करते हैं।
 * **स्किप-ग्राम**, जिसमें हम मध्य टोकन $W_0$ से पड़ोसी टोकन {$W_{-N},\dots, W_{-1}, W_1,\dots, W_N$} का सेट भविष्यवाणी करते हैं।
 
-![शब्दों को वेक्टर में बदलने के लिए पेपर से छवि](../../../../../translated_images/example-algorithms-for-converting-words-to-vectors.fbe9207a726922f6f0f5de66427e8a6eda63809356114e28fb1fa5f4a83ebda7.hi.png)
+![शब्दों को वेक्टर में बदलने के लिए पेपर से छवि](../../../../../translated_images/hi/example-algorithms-for-converting-words-to-vectors.fbe9207a726922f6.webp)
 
 > छवि [इस पेपर](https://arxiv.org/pdf/1301.3781.pdf) से
 

@@ -1,15 +1,6 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "8ef02a9318257ea140ed3ed74442096d",
-  "translation_date": "2025-08-28T19:58:00+00:00",
-  "source_file": "lessons/5-NLP/README.md",
-  "language_code": "he"
-}
--->
 # עיבוד שפה טבעית
 
-![סיכום משימות NLP בציור](../../../../translated_images/ai-nlp.b22dcb8ca4707ceaee8576db1c5f4089c8cac2f454e9e03ea554f07fda4556b8.he.png)
+![סיכום משימות NLP בציור](../../../../translated_images/he/ai-nlp.b22dcb8ca4707cea.webp)
 
 בפרק זה נתמקד בשימוש ברשתות נוירונים לטיפול במשימות הקשורות ל**עיבוד שפה טבעית (NLP)**. ישנם הרבה בעיות NLP שאנו רוצים שמחשבים יוכלו לפתור:
 

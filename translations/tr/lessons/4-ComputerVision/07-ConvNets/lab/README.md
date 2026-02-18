@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "b70fcf7fcee862990f848c679090943f",
-  "translation_date": "2025-10-03T14:54:50+00:00",
-  "source_file": "lessons/4-ComputerVision/07-ConvNets/lab/README.md",
-  "language_code": "tr"
-}
--->
 # Evcil Hayvan Yüzlerinin Sınıflandırılması
 
 [AI for Beginners Müfredatı](https://github.com/microsoft/ai-for-beginners) kapsamında bir laboratuvar görevi.
@@ -21,7 +12,7 @@ Bir evcil hayvan yuvası için tüm evcil hayvanları kataloglamak amacıyla bir
 
 [Oxford-IIIT Pet Dataset](https://www.robots.ox.ac.uk/~vgg/data/pets/) veri setini kullanacağız. Bu veri seti, 37 farklı köpek ve kedi cinsine ait görüntüler içerir.
 
-![Çalışacağımız veri seti](../../../../../../translated_images/data.50b2a9d5484bdbf0f52f5765b381cec9efe2bd296a98f007f90bedb6ac67f2a8.tr.png)
+![Çalışacağımız veri seti](../../../../../../translated_images/tr/data.50b2a9d5484bdbf0.webp)
 
 Veri setini indirmek için şu kod parçacığını kullanın:
 

@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "6522312ff835796ca34136a9462fafb2",
-  "translation_date": "2025-09-23T10:55:44+00:00",
-  "source_file": "lessons/5-NLP/19-NER/README.md",
-  "language_code": "ms"
-}
--->
 # Pengenalan Entiti Bernama
 
 Sehingga kini, kita kebanyakannya menumpukan pada satu tugas NLP - klasifikasi. Walau bagaimanapun, terdapat juga tugas NLP lain yang boleh diselesaikan dengan rangkaian neural. Salah satu tugas tersebut ialah **[Pengenalan Entiti Bernama](https://wikipedia.org/wiki/Named-entity_recognition)** (NER), yang berkaitan dengan mengenal pasti entiti tertentu dalam teks, seperti tempat, nama orang, selang masa, formula kimia, dan sebagainya.
@@ -17,7 +8,7 @@ Sehingga kini, kita kebanyakannya menumpukan pada satu tugas NLP - klasifikasi. 
 
 Bayangkan anda ingin membangunkan bot sembang bahasa semula jadi, seperti Amazon Alexa atau Google Assistant. Cara bot sembang pintar berfungsi adalah dengan *memahami* apa yang pengguna mahukan melalui klasifikasi teks pada ayat input. Hasil klasifikasi ini dikenali sebagai **niat**, yang menentukan apa yang bot sembang perlu lakukan.
 
-<img alt="Bot NER" src="images/bot-ner.png" width="50%"/>
+<img alt="Bot NER" src="../../../../../translated_images/ms/bot-ner.4b09235dbb0ad275.webp" width="50%"/>
 
 > Imej oleh penulis
 
@@ -58,7 +49,7 @@ infant | O
 
 Oleh kerana kita perlu membina korespondensi satu-ke-satu antara token dan kelas, kita boleh melatih model rangkaian neural **banyak-ke-banyak** paling kanan daripada gambar ini:
 
-![Imej menunjukkan corak rangkaian neural berulang yang biasa.](../../../../../translated_images/unreasonable-effectiveness-of-rnn.541ead816778f42dce6c42d8a56c184729aa2378d059b851be4ce12b993033df.ms.jpg)
+![Imej menunjukkan corak rangkaian neural berulang yang biasa.](../../../../../translated_images/ms/unreasonable-effectiveness-of-rnn.541ead816778f42d.webp)
 
 > *Imej daripada [blog post ini](http://karpathy.github.io/2015/05/21/rnn-effectiveness/) oleh [Andrej Karpathy](http://karpathy.github.io/). Model klasifikasi token NER sepadan dengan seni bina rangkaian paling kanan dalam gambar ini.*
 

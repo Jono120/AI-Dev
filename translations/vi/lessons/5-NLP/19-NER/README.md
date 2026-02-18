@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "6522312ff835796ca34136a9462fafb2",
-  "translation_date": "2025-09-23T10:35:24+00:00",
-  "source_file": "lessons/5-NLP/19-NER/README.md",
-  "language_code": "vi"
-}
--->
 # Nhận diện Thực thể Được đặt tên
 
 Cho đến nay, chúng ta chủ yếu tập trung vào một nhiệm vụ NLP - phân loại. Tuy nhiên, còn có nhiều nhiệm vụ NLP khác có thể được thực hiện bằng mạng nơ-ron. Một trong những nhiệm vụ đó là **[Nhận diện Thực thể Được đặt tên](https://wikipedia.org/wiki/Named-entity_recognition)** (NER), nhiệm vụ này liên quan đến việc nhận diện các thực thể cụ thể trong văn bản, chẳng hạn như địa điểm, tên người, khoảng thời gian, công thức hóa học, và nhiều hơn nữa.
@@ -17,7 +8,7 @@ Cho đến nay, chúng ta chủ yếu tập trung vào một nhiệm vụ NLP - 
 
 Giả sử bạn muốn phát triển một chatbot ngôn ngữ tự nhiên, tương tự như Amazon Alexa hoặc Google Assistant. Cách các chatbot thông minh hoạt động là *hiểu* người dùng muốn gì bằng cách thực hiện phân loại văn bản trên câu đầu vào. Kết quả của việc phân loại này là cái gọi là **ý định**, xác định chatbot nên làm gì.
 
-<img alt="Bot NER" src="images/bot-ner.png" width="50%"/>
+<img alt="Bot NER" src="../../../../../translated_images/vi/bot-ner.4b09235dbb0ad275.webp" width="50%"/>
 
 > Hình ảnh của tác giả
 
@@ -58,7 +49,7 @@ infant | O
 
 Vì chúng ta cần xây dựng một sự tương ứng một-một giữa các token và các lớp, chúng ta có thể huấn luyện một mô hình mạng nơ-ron **nhiều-đến-nhiều** từ hình ảnh này:
 
-![Hình ảnh hiển thị các mẫu mạng nơ-ron hồi quy phổ biến.](../../../../../translated_images/unreasonable-effectiveness-of-rnn.541ead816778f42dce6c42d8a56c184729aa2378d059b851be4ce12b993033df.vi.jpg)
+![Hình ảnh hiển thị các mẫu mạng nơ-ron hồi quy phổ biến.](../../../../../translated_images/vi/unreasonable-effectiveness-of-rnn.541ead816778f42d.webp)
 
 > *Hình ảnh từ [bài viết blog này](http://karpathy.github.io/2015/05/21/rnn-effectiveness/) của [Andrej Karpathy](http://karpathy.github.io/). Các mô hình phân loại token NER tương ứng với kiến trúc mạng ở phía bên phải của hình ảnh này.*
 

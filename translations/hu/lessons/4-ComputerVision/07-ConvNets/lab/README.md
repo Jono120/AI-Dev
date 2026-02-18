@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "b70fcf7fcee862990f848c679090943f",
-  "translation_date": "2025-10-03T14:56:53+00:00",
-  "source_file": "lessons/4-ComputerVision/07-ConvNets/lab/README.md",
-  "language_code": "hu"
-}
--->
 # Háziállatok arcainak osztályozása
 
 Laborfeladat az [AI for Beginners Curriculum](https://github.com/microsoft/ai-for-beginners) alapján.
@@ -21,7 +12,7 @@ Egy konvolúciós neurális hálózatot kell betanítanod, amely képes különb
 
 Az [Oxford-IIIT Pet Dataset](https://www.robots.ox.ac.uk/~vgg/data/pets/) adathalmazt fogjuk használni, amely 37 különböző kutya- és macskafajta képeit tartalmazza.
 
-![Az adathalmaz, amellyel dolgozni fogunk](../../../../../../translated_images/data.50b2a9d5484bdbf0f52f5765b381cec9efe2bd296a98f007f90bedb6ac67f2a8.hu.png)
+![Az adathalmaz, amellyel dolgozni fogunk](../../../../../../translated_images/hu/data.50b2a9d5484bdbf0.webp)
 
 Az adathalmaz letöltéséhez használd az alábbi kódrészletet:
 

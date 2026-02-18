@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "e2273cc150380a5e191903cea858f021",
-  "translation_date": "2025-09-23T10:04:31+00:00",
-  "source_file": "lessons/5-NLP/16-RNN/README.md",
-  "language_code": "fi"
-}
--->
 # Toistuvat Neuronaaliverkot
 
 ## [Ennakkokysely](https://ff-quizzes.netlify.app/en/ai/quiz/31)
@@ -15,7 +6,7 @@ Aiemmissa osioissa olemme käyttäneet tekstin semanttisia esityksiä ja yksinke
 
 Tekstijonon merkityksen vangitsemiseksi meidän on käytettävä toisenlaista neuronaaliverkkoarkkitehtuuria, jota kutsutaan **toistuvaksi neuronaaliverkoksi** eli RNN:ksi. RNN:ssä syötämme lauseen verkon läpi yksi symboli kerrallaan, ja verkko tuottaa jonkin **tilan**, jonka syötämme verkkoon uudelleen seuraavan symbolin kanssa.
 
-![RNN](../../../../../translated_images/rnn.27f5c29c53d727b546ad3961637a267f0fe9ec5ab01f2a26a853c92fcefbb574.fi.png)
+![RNN](../../../../../translated_images/fi/rnn.27f5c29c53d727b5.webp)
 
 > Kuva: kirjoittaja
 
@@ -31,7 +22,7 @@ Katsotaan, miten yksinkertainen RNN-solu on järjestetty. Se ottaa syötteenä e
 
 Yksinkertaisessa RNN-solussa on kaksi painomatriisia: yksi muuntaa syötesymbolin (kutsutaan sitä W:ksi) ja toinen muuntaa syötetilan (H). Tässä tapauksessa verkon ulostulo lasketaan kaavalla &sigma;(W&times;X<sub>i</sub>+H&times;S<sub>i-1</sub>+b), missä &sigma; on aktivointifunktio ja b on lisäbias.
 
-<img alt="RNN-solun anatomia" src="images/rnn-anatomy.png" width="50%"/>
+<img alt="RNN-solun anatomia" src="../../../../../translated_images/fi/rnn-anatomy.79ee3f3920b3294b.webp" width="50%"/>
 
 > Kuva: kirjoittaja
 
@@ -61,7 +52,7 @@ Olemme käsitelleet toistuvia verkkoja, jotka toimivat yhteen suuntaan, jaksosta
 
 Toistuva verkko, joko yksisuuntainen tai kaksisuuntainen, tunnistaa tiettyjä kuvioita jaksossa ja voi tallentaa ne tilavektoriin tai välittää ulostuloon. Kuten konvoluutiokerroksissa, voimme rakentaa toisen toistuvan kerroksen ensimmäisen päälle tunnistaaksemme korkeamman tason kuvioita ja rakentaaksemme matalan tason kuvioista, jotka ensimmäinen kerros on tunnistanut. Tämä johtaa käsitteeseen **monikerroksinen RNN**, joka koostuu kahdesta tai useammasta toistuvasta verkosta, joissa edellisen kerroksen ulostulo syötetään seuraavaan kerrokseen.
 
-![Kuva, joka esittää monikerroksisen pitkäkestoisen muistiyksikön RNN:n](../../../../../translated_images/multi-layer-lstm.dd975e29bb2a59fe58b429db833932d734c81f211cad2783797a9608984acb8c.fi.jpg)
+![Kuva, joka esittää monikerroksisen pitkäkestoisen muistiyksikön RNN:n](../../../../../translated_images/fi/multi-layer-lstm.dd975e29bb2a59fe.webp)
 
 *Kuva [tästä upeasta artikkelista](https://towardsdatascience.com/from-a-lstm-cell-to-a-multilayer-lstm-network-with-pytorch-2899eb5696f3) kirjoittanut Fernando López*
 

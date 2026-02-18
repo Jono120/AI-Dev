@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "6522312ff835796ca34136a9462fafb2",
-  "translation_date": "2025-09-23T11:18:54+00:00",
-  "source_file": "lessons/5-NLP/19-NER/README.md",
-  "language_code": "hu"
-}
--->
 # Névelem Felismerés
 
 Eddig főként egy NLP feladatra, a klasszifikációra koncentráltunk. Azonban vannak más NLP feladatok is, amelyeket neurális hálózatokkal meg lehet oldani. Az egyik ilyen feladat a **[Névelem Felismerés](https://wikipedia.org/wiki/Named-entity_recognition)** (NER), amely azzal foglalkozik, hogy azonosítsa a szövegben található konkrét entitásokat, például helyeket, személyneveket, dátum-idő intervallumokat, kémiai képleteket és így tovább.
@@ -17,7 +8,7 @@ Eddig főként egy NLP feladatra, a klasszifikációra koncentráltunk. Azonban 
 
 Tegyük fel, hogy egy természetes nyelvi chatbotot szeretnél fejleszteni, hasonlóan az Amazon Alexa vagy a Google Assistant megoldásaihoz. Az intelligens chatbotok úgy működnek, hogy *megértik*, mit szeretne a felhasználó, azáltal hogy szövegklasszifikációt végeznek a bemeneti mondaton. Ennek a klasszifikációnak az eredménye az úgynevezett **intenció**, amely meghatározza, mit kell tennie a chatbotnak.
 
-<img alt="Bot NER" src="images/bot-ner.png" width="50%"/>
+<img alt="Bot NER" src="../../../../../translated_images/hu/bot-ner.4b09235dbb0ad275.webp" width="50%"/>
 
 > Kép a szerzőtől
 
@@ -57,7 +48,7 @@ csecsemőben | O
 
 Mivel egy-egy megfeleltetést kell létrehoznunk a tokenek és osztályok között, egy **sok-sokhoz** neurális hálózati modellt tudunk tanítani az alábbi ábráról:
 
-![Kép, amely a gyakori rekurzív neurális hálózati mintákat mutatja.](../../../../../translated_images/unreasonable-effectiveness-of-rnn.541ead816778f42dce6c42d8a56c184729aa2378d059b851be4ce12b993033df.hu.jpg)
+![Kép, amely a gyakori rekurzív neurális hálózati mintákat mutatja.](../../../../../translated_images/hu/unreasonable-effectiveness-of-rnn.541ead816778f42d.webp)
 
 > *Kép [ebből a blogbejegyzésből](http://karpathy.github.io/2015/05/21/rnn-effectiveness/) [Andrej Karpathy](http://karpathy.github.io/) tollából. A NER token klasszifikációs modellek megfelelnek az ábra jobb szélső hálózati architektúrájának.*
 

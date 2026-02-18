@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "7ba20f54a5bfcd6521018cdfb17c7c57",
-  "translation_date": "2025-09-23T08:45:09+00:00",
-  "source_file": "lessons/5-NLP/15-LanguageModeling/README.md",
-  "language_code": "tr"
-}
--->
 # Dil Modellemesi
 
 Word2Vec ve GloVe gibi anlamsal gömmeler aslında **dil modellemesi**ne doğru atılmış ilk adımlardır - dilin doğasını bir şekilde *anlayan* (veya *temsil eden*) modeller oluşturmak.
@@ -23,7 +14,7 @@ Dil modellemesinin temel fikri, modelleri etiketlenmemiş veri kümeleri üzerin
 * **Continuous Bag-of-Words** (CBoW), burada bir token dizisindeki $W_{-N}$, ..., $W_N$ arasında ortadaki token $W_0$'ı tahmin ederiz.
 * **Skip-gram**, burada ortadaki token $W_0$'dan komşu tokenlerin bir setini {$W_{-N},\dots, W_{-1}, W_1,\dots, W_N$} tahmin ederiz.
 
-![Kelimeyi vektöre dönüştürme algoritmalarına dair makaleden görsel](../../../../../translated_images/example-algorithms-for-converting-words-to-vectors.fbe9207a726922f6f0f5de66427e8a6eda63809356114e28fb1fa5f4a83ebda7.tr.png)
+![Kelimeyi vektöre dönüştürme algoritmalarına dair makaleden görsel](../../../../../translated_images/tr/example-algorithms-for-converting-words-to-vectors.fbe9207a726922f6.webp)
 
 > Görsel [bu makaleden](https://arxiv.org/pdf/1301.3781.pdf)
 

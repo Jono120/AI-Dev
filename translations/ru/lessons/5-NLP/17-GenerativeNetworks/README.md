@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "51be6057374d01d70e07dd5ec88ebc0d",
-  "translation_date": "2025-09-23T08:02:21+00:00",
-  "source_file": "lessons/5-NLP/17-GenerativeNetworks/README.md",
-  "language_code": "ru"
-}
--->
 # Генеративные сети
 
 ## [Тест перед лекцией](https://ff-quizzes.netlify.app/en/ai/quiz/33)
@@ -19,7 +10,7 @@ CO_OP_TRANSLATOR_METADATA:
 
 Это позволяет создавать различные нейронные архитектуры, которые показаны на изображении ниже:
 
-![Изображение, показывающее распространенные паттерны рекуррентных нейронных сетей.](../../../../../translated_images/unreasonable-effectiveness-of-rnn.541ead816778f42dce6c42d8a56c184729aa2378d059b851be4ce12b993033df.ru.jpg)
+![Изображение, показывающее распространенные паттерны рекуррентных нейронных сетей.](../../../../../translated_images/ru/unreasonable-effectiveness-of-rnn.541ead816778f42d.webp)
 
 > Изображение из статьи [Unreasonable Effectiveness of Recurrent Neural Networks](http://karpathy.github.io/2015/05/21/rnn-effectiveness/) Андрея Карпати ([Andrej Karpathy](http://karpathy.github.io/))
 
@@ -32,11 +23,11 @@ CO_OP_TRANSLATOR_METADATA:
 
 Мы будем обучать эту RNN генерировать текст шаг за шагом. На каждом шаге мы будем брать последовательность символов длиной `nchars` и просить сеть сгенерировать следующий символ для каждого входного символа:
 
-![Изображение, показывающее пример генерации слова 'HELLO' с помощью RNN.](../../../../../translated_images/rnn-generate.56c54afb52f9781d63a7c16ea9c1b86cb70e6e1eae6a742b56b7b37468576b17.ru.png)
+![Изображение, показывающее пример генерации слова 'HELLO' с помощью RNN.](../../../../../translated_images/ru/rnn-generate.56c54afb52f9781d.webp)
 
 При генерации текста (во время инференса) мы начинаем с некоторого **запроса**, который передается через ячейки RNN для генерации промежуточного состояния, а затем из этого состояния начинается генерация. Мы генерируем по одному символу за раз, передаем состояние и сгенерированный символ в следующую ячейку RNN для генерации следующего символа, пока не будет сгенерировано достаточное количество символов.
 
-<img src="images/rnn-generate-inf.png" width="60%"/>
+<img src="../../../../../translated_images/ru/rnn-generate-inf.5168dc65e0370eea.webp" width="60%"/>
 
 > Изображение автора
 

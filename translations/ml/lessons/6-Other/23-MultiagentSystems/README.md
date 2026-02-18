@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "38a1185ae3d54b180378bbd71ae3ef16",
-  "translation_date": "2025-11-25T23:36:41+00:00",
-  "source_file": "lessons/6-Other/23-MultiagentSystems/README.md",
-  "language_code": "ml"
-}
--->
 # മൾട്ടി-ഏജന്റ് സിസ്റ്റങ്ങൾ
 
 ബുദ്ധിമുട്ട് നേടാനുള്ള ഒരു സാധ്യതയുള്ള മാർഗ്ഗം **എമർജന്റ്** (അഥവാ **സിനർജറ്റിക്**) സമീപനമാണ്, ഇത് അടിസ്ഥാനമാക്കുന്നത് പലതരം ലളിതമായ ഏജന്റുകളുടെ സംയുക്ത പെരുമാറ്റം സമ്പൂർണ്ണമായും കൂടുതൽ സങ്കീർണ്ണമായ (അഥവാ ബുദ്ധിമുട്ടുള്ള) സിസ്റ്റത്തിന്റെ പെരുമാറ്റമായി മാറാൻ കഴിയും എന്ന സത്യത്തിൽ. സിദ്ധാന്തപരമായി, ഇത് [കോളക്റ്റീവ് ഇന്റലിജൻസ്](https://en.wikipedia.org/wiki/Collective_intelligence), [എമർജന്റിസം](https://en.wikipedia.org/wiki/Global_brain) എന്നിവയുടെ സിദ്ധാന്തങ്ങളിലാണ് അടിസ്ഥാനമാക്കിയിരിക്കുന്നത്, കൂടാതെ [എവല്യൂഷണറി സൈബർനെറ്റിക്സ്](https://en.wikipedia.org/wiki/Global_brain) എന്നത് താഴ്ന്ന തലത്തിലുള്ള സിസ്റ്റങ്ങൾ ശരിയായി സംയോജിപ്പിക്കുമ്പോൾ ഉയർന്ന തലത്തിലുള്ള സിസ്റ്റങ്ങൾ ചില അധിക മൂല്യം നേടുന്നു എന്ന് പറയുന്നു (ഇത് *മെറ്റാസിസ്റ്റം ട്രാൻസിഷൻ സിദ്ധാന്തം* എന്നറിയപ്പെടുന്നു).
@@ -61,7 +52,7 @@ ask turtles [
 
 നെറ്റ്‌ലോഗോയുടെ മികച്ച പ്രത്യേകത ഇതിൽ പ്രവർത്തനക്ഷമമായ മോഡലുകളുടെ ലൈബ്രറി ഉള്ളതാണ്. **File → Models Library** എന്ന വഴി പോകുക, അവിടെ നിരവധി മോഡൽ വിഭാഗങ്ങൾ തിരഞ്ഞെടുക്കാം.
 
-<img alt="NetLogo Models Library" src="../../../../../translated_images/NetLogo-ModelLib.efe023afb4763c059704a8ac0e2cd5e51889b117e8eac02aaa5334cfe1c52c13.ml.png" width="60%"/>
+<img alt="NetLogo Models Library" src="../../../../../translated_images/ml/NetLogo-ModelLib.efe023afb4763c05.webp" width="60%"/>
 
 > മോഡൽ ലൈബ്രറിയുടെ സ്ക്രീൻഷോട്ട് - Dmitry Soshnikov
 
@@ -71,7 +62,7 @@ ask turtles [
 
 മോഡൽ തുറന്ന ശേഷം, നിങ്ങൾ പ്രധാന നെറ്റ്‌ലോഗോ സ്ക്രീനിലേക്ക് എത്തും. ഇവിടെ finite resources (പുല്ല്) ഉള്ള ഒരു വുൾഫ്-ഷീപ്പ് ജനസംഖ്യയെ വിവരിക്കുന്ന ഒരു മാതൃകയാണ്.
 
-![NetLogo Main Screen](../../../../../translated_images/NetLogo-Main.32653711ec1a01b3cab22ec0b148e64193d0b979b055285bef329d5e3d6958c5.ml.png)
+![NetLogo Main Screen](../../../../../translated_images/ml/NetLogo-Main.32653711ec1a01b3.webp)
 
 > സ്ക്രീൻഷോട്ട് - Dmitry Soshnikov
 

@@ -1,19 +1,10 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "d76a7eda28de5210c8b1ba50a6216c69",
-  "translation_date": "2025-09-23T15:30:31+00:00",
-  "source_file": "lessons/4-ComputerVision/11-ObjectDetection/README.md",
-  "language_code": "uk"
-}
--->
 # Виявлення об'єктів
 
 Моделі класифікації зображень, з якими ми працювали раніше, брали зображення і видавали категоріальний результат, наприклад, клас "число" у задачі MNIST. Однак у багатьох випадках нам недостатньо просто знати, що на зображенні є об'єкти — ми хочемо визначити їх точне розташування. Саме це є метою **виявлення об'єктів**.
 
 ## [Квіз перед лекцією](https://ff-quizzes.netlify.app/en/ai/quiz/21)
 
-![Виявлення об'єктів](../../../../../translated_images/Screen_Shot_2016-11-17_at_11.14.54_AM.b4bb3769353287be1b905373ed9c858102c054b16e4595c76ec3f7bba0feb549.uk.png)
+![Виявлення об'єктів](../../../../../translated_images/uk/Screen_Shot_2016-11-17_at_11.14.54_AM.b4bb3769353287be.webp)
 
 > Зображення з [веб-сайту YOLO v2](https://pjreddie.com/darknet/yolov2/)
 
@@ -25,7 +16,7 @@ CO_OP_TRANSLATOR_METADATA:
 2. Запустити класифікацію зображень для кожної плитки.
 3. Ті плитки, які дають достатньо високу активацію, можна вважати такими, що містять потрібний об'єкт.
 
-![Наївне виявлення об'єктів](../../../../../translated_images/naive-detection.e7f1ba220ccd08c68a2ea8e06a7ed75c3fcc738c2372f9e00b7f4299a8659c01.uk.png)
+![Наївне виявлення об'єктів](../../../../../translated_images/uk/naive-detection.e7f1ba220ccd08c6.webp)
 
 > *Зображення з [зошита вправ](ObjectDetection-TF.ipynb)*
 
@@ -42,7 +33,7 @@ CO_OP_TRANSLATOR_METADATA:
 * [PASCAL VOC](http://host.robots.ox.ac.uk/pascal/VOC/) — 20 класів
 * [COCO](http://cocodataset.org/#home) — Загальні об'єкти в контексті. 80 класів, межові рамки та маски сегментації
 
-![COCO](../../../../../translated_images/coco-examples.71bc60380fa6cceb7caad48bd09e35b6028caabd363aa04fee89c414e0870e86.uk.jpg)
+![COCO](../../../../../translated_images/uk/coco-examples.71bc60380fa6cceb.webp)
 
 ## Метрики для виявлення об'єктів
 
@@ -50,7 +41,7 @@ CO_OP_TRANSLATOR_METADATA:
 
 Для класифікації зображень легко виміряти, наскільки добре працює алгоритм, але для виявлення об'єктів потрібно оцінити як правильність класу, так і точність визначення розташування межової рамки. Для останнього використовується так звана **Перетин над об'єднанням** (IoU), яка вимірює, наскільки добре дві рамки (або дві довільні області) перекриваються.
 
-![IoU](../../../../../translated_images/iou_equation.9a4751d40fff4e119ecd0a7bcca4e71ab1dc83e0d4f2a0d66ff0859736f593cf.uk.png)
+![IoU](../../../../../translated_images/uk/iou_equation.9a4751d40fff4e11.webp)
 
 > *Рисунок 2 з [цієї чудової статті про IoU](https://pyimagesearch.com/2016/11/07/intersection-over-union-iou-for-object-detection/)*
 
@@ -98,11 +89,11 @@ $$
 
 [R-CNN](http://islab.ulsan.ac.kr/files/announcement/513/rcnn_pami.pdf) використовує [Selective Search](http://www.huppelen.nl/publications/selectiveSearchDraft.pdf) для створення ієрархічної структури регіонів ROI, які потім проходять через CNN для вилучення ознак і SVM-класифікатори для визначення класу об'єкта, а також лінійну регресію для визначення координат *межової рамки*. [Офіційна стаття](https://arxiv.org/pdf/1506.01497v1.pdf)
 
-![RCNN](../../../../../translated_images/rcnn1.cae407020dfb1d1fb572656e44f75cd6c512cc220591c116c506652c10e47f26.uk.png)
+![RCNN](../../../../../translated_images/uk/rcnn1.cae407020dfb1d1f.webp)
 
 > *Зображення з van de Sande et al. ICCV’11*
 
-![RCNN-1](../../../../../translated_images/rcnn2.2d9530bb83516484ec65b250c22dbf37d3d23244f32864ebcb91d98fe7c3112c.uk.png)
+![RCNN-1](../../../../../translated_images/uk/rcnn2.2d9530bb83516484.webp)
 
 > *Зображення з [цієї статті](https://towardsdatascience.com/r-cnn-fast-r-cnn-faster-r-cnn-yolo-object-detection-algorithms-36d53571365e)*
 
@@ -110,7 +101,7 @@ $$
 
 Цей підхід схожий на R-CNN, але регіони визначаються після застосування шарів згортки.
 
-![FRCNN](../../../../../translated_images/f-rcnn.3cda6d9bb41888754037d2d9763e2298a96de5d9bc2a21db3147357aa5da9b1a.uk.png)
+![FRCNN](../../../../../translated_images/uk/f-rcnn.3cda6d9bb4188875.webp)
 
 > Зображення з [офіційної статті](https://www.cv-foundation.org/openaccess/content_iccv_2015/papers/Girshick_Fast_R-CNN_ICCV_2015_paper.pdf), [arXiv](https://arxiv.org/pdf/1504.08083.pdf), 2015
 
@@ -118,7 +109,7 @@ $$
 
 Основна ідея цього підходу полягає у використанні нейронної мережі для прогнозування ROI — так званої *мережі пропозицій регіонів*. [Стаття](https://arxiv.org/pdf/1506.01497.pdf), 2016
 
-![FasterRCNN](../../../../../translated_images/faster-rcnn.8d46c099b87ef30ab2ea26dbc4bdd85b974a57ba8eb526f65dc4cd0a4711de30.uk.png)
+![FasterRCNN](../../../../../translated_images/uk/faster-rcnn.8d46c099b87ef30a.webp)
 
 > Зображення з [офіційної статті](https://arxiv.org/pdf/1506.01497.pdf)
 
@@ -130,7 +121,7 @@ $$
 2. Ознаки обробляються **картою оцінок, чутливою до позиції**. Кожен об'єкт із $C$ класів ділиться на $k\times k$ регіонів, і ми навчаємося прогнозувати частини об'єктів.
 3. Для кожної частини з $k\times k$ регіонів усі мережі голосують за класи об'єктів, і вибирається клас об'єкта з максимальним голосом.
 
-![r-fcn image](../../../../../translated_images/r-fcn.13eb88158b99a3da50fa2787a6be5cb310d47f0e9655cc93a1090dc7aab338d1.uk.png)
+![r-fcn image](../../../../../translated_images/uk/r-fcn.13eb88158b99a3da.webp)
 
 > Зображення з [офіційної статті](https://arxiv.org/abs/1605.06409)
 
@@ -141,7 +132,7 @@ YOLO — це алгоритм реального часу з одним про�
  * Зображення ділиться на $S\times S$ регіони.
  * Для кожного регіону **CNN** прогнозує $n$ можливих об'єктів, координати *межової рамки* та *довіру*=*ймовірність* * IoU.
 
- ![YOLO](../../../../../translated_images/yolo.a2648ec82ee8bb4ea27537677adb482fd4b733ca1705c561b6a24a85102dced5.uk.png)
+ ![YOLO](../../../../../translated_images/uk/yolo.a2648ec82ee8bb4e.webp)
 
 > Зображення з [офіційної статті](https://arxiv.org/abs/1506.02640)
 

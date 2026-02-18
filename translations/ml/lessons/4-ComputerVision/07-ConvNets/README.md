@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "a560d5b845962cf33dc102266e409568",
-  "translation_date": "2025-11-25T22:06:14+00:00",
-  "source_file": "lessons/4-ComputerVision/07-ConvNets/README.md",
-  "language_code": "ml"
-}
--->
 # കോൺവല്യൂഷണൽ ന്യൂറൽ നെറ്റ്വർക്കുകൾ
 
 നാം മുമ്പ് കണ്ടതുപോലെ, ന്യൂറൽ നെറ്റ്വർക്കുകൾ ചിത്രങ്ങൾ കൈകാര്യം ചെയ്യുന്നതിൽ വളരെ നല്ലതാണ്, ഒറ്റ ലെയർ പെർസെപ്ട്രോൺ പോലും MNIST ഡാറ്റാസെറ്റിൽ നിന്നുള്ള കൈയെഴുത്ത് അക്കങ്ങൾ യുക്തിസഹമായ കൃത്യതയോടെ തിരിച്ചറിയാൻ കഴിയും. എന്നാൽ, MNIST ഡാറ്റാസെറ്റ് വളരെ പ്രത്യേകമാണ്, എല്ലാ അക്കങ്ങളും ചിത്രത്തിന്റെ മദ്ധ്യത്തിൽ സജ്ജീകരിച്ചിരിക്കുന്നു, ഇത് ജോലി എളുപ്പമാക്കുന്നു.
@@ -17,14 +8,14 @@ CO_OP_TRANSLATOR_METADATA:
 
 പാറ്റേണുകൾ എടുക്കാൻ, നാം **കോൺവല്യൂഷണൽ ഫിൽട്ടറുകൾ** എന്ന ആശയം ഉപയോഗിക്കും. നിങ്ങൾക്ക് അറിയാമല്ലോ, ഒരു ചിത്രം 2D-മാട്രിക്സ് അല്ലെങ്കിൽ നിറത്തിന്റെ ആഴമുള്ള 3D-ടെൻസർ ആയി പ്രതിനിധീകരിക്കപ്പെടുന്നു. ഒരു ഫിൽട്ടർ പ്രയോഗിക്കുന്നത് അർത്ഥമാക്കുന്നത്, നാം ചെറിയ **ഫിൽട്ടർ കർണൽ** മാട്രിക്സ് എടുത്ത്, യഥാർത്ഥ ചിത്രത്തിലെ ഓരോ പിക്‌സലിനും സമീപമുള്ള പോയിന്റുകളുമായി ഭാരിത ശരാശരി കണക്കാക്കുകയാണ്. ഇത് ഒരു ചെറിയ വിൻഡോ മുഴുവൻ ചിത്രത്തിലൂടെ സ്ലൈഡ് ചെയ്യുന്നതുപോലെ കാണാം, ഫിൽട്ടർ കർണൽ മാട്രിക്സിലെ ഭാരങ്ങൾ അനുസരിച്ച് എല്ലാ പിക്‌സലുകളും ശരാശരി ചെയ്യുന്നു.
 
-![Vertical Edge Filter](../../../../../translated_images/filter-vert.b7148390ca0bc356ddc7e55555d2481819c1e86ddde9dce4db5e71a69d6f887f.ml.png) | ![Horizontal Edge Filter](../../../../../translated_images/filter-horiz.59b80ed4feb946efbe201a7fe3ca95abb3364e266e6fd90820cb893b4d3a6dda.ml.png)
+![Vertical Edge Filter](../../../../../translated_images/ml/filter-vert.b7148390ca0bc356.webp) | ![Horizontal Edge Filter](../../../../../translated_images/ml/filter-horiz.59b80ed4feb946ef.webp)
 ----|----
 
 > ചിത്രം: Dmitry Soshnikov
 
 ഉദാഹരണത്തിന്, 3x3 വെർട്ടിക്കൽ എഡ്ജ്, ഹോരിസോണ്ടൽ എഡ്ജ് ഫിൽട്ടറുകൾ MNIST അക്കങ്ങളിൽ പ്രയോഗിച്ചാൽ, യഥാർത്ഥ ചിത്രത്തിലെ വെർട്ടിക്കൽ, ഹോരിസോണ്ടൽ എഡ്ജുകൾ ഉള്ള സ്ഥലങ്ങളിൽ ഹൈലൈറ്റുകൾ (ഉയർന്ന മൂല്യങ്ങൾ) ലഭിക്കും. അതിനാൽ ആ രണ്ട് ഫിൽട്ടറുകൾ എഡ്ജുകൾ "തിരയാൻ" ഉപയോഗിക്കാം. അതുപോലെ, നാം മറ്റ് താഴ്ന്ന തലത്തിലുള്ള പാറ്റേണുകൾ കണ്ടെത്താൻ വ്യത്യസ്ത ഫിൽട്ടറുകൾ രൂപകൽപ്പന ചെയ്യാം:
 
-<img src="../../../../../translated_images/lmfilters.ea9e4868a82cf74cdca05121b1128f0122297cf2879501cd06956beb88ff96a2.ml.jpg" width="500" align="center"/>
+<img src="../../../../../translated_images/ml/lmfilters.ea9e4868a82cf74c.webp" width="500" align="center"/>
 
 > [Leung-Malik Filter Bank](https://www.robots.ox.ac.uk/~vgg/research/texclass/filters.html) ചിത്രം
 
@@ -38,7 +29,7 @@ CNN-കൾ പ്രവർത്തിക്കുന്നത് താഴെ�
 * ഫിൽട്ടറുകൾ സ്വയം പരിശീലിക്കപ്പെടുന്ന വിധത്തിൽ നെറ്റ്വർക്ക് രൂപകൽപ്പന ചെയ്യാം
 * നാം ഈ സമീപനം ഉപയോഗിച്ച് ഉയർന്ന തലത്തിലുള്ള ഫീച്ചറുകളിലും പാറ്റേണുകൾ കണ്ടെത്താം, യഥാർത്ഥ ചിത്രത്തിൽ മാത്രമല്ല. അതായത് CNN ഫീച്ചർ എക്സ്ട്രാക്ഷൻ പിക്‌സൽ സംയോജനങ്ങളിൽ നിന്നാരംഭിച്ച് ചിത്രഭാഗങ്ങളുടെ ഉയർന്ന തലത്തിലുള്ള സംയോജനങ്ങളിലേക്കുള്ള ഫീച്ചറുകളുടെ ഹയർആർക്കിയിൽ പ്രവർത്തിക്കുന്നു.
 
-![Hierarchical Feature Extraction](../../../../../translated_images/FeatureExtractionCNN.d9b456cbdae7cb643fde3032b81b2940e3cf8be842e29afac3f482725ba7f95c.ml.png)
+![Hierarchical Feature Extraction](../../../../../translated_images/ml/FeatureExtractionCNN.d9b456cbdae7cb64.webp)
 
 > [Hislop-Lynch](https://www.semanticscholar.org/paper/Computer-vision-based-pedestrian-trajectory-Hislop-Lynch/26e6f74853fc9bbb7487b06dc2cf095d36c9021d) എന്ന പേപ്പറിൽ നിന്നുള്ള ചിത്രം, അവരുടെ [ഗവേഷണത്തെ അടിസ്ഥാനമാക്കി](https://dl.acm.org/doi/abs/10.1145/1553374.1553453)
 
@@ -55,9 +46,9 @@ CNN-കൾ പ്രവർത്തിക്കുന്നത് താഴെ�
 
 ഉദാഹരണമായി, 2014-ൽ ImageNet ടോപ്പ്-5 ക്ലാസിഫിക്കേഷനിൽ 92.7% കൃത്യത നേടിയ VGG-16 നെറ്റ്വർക്ക് ആർക്കിടെക്ചർ നോക്കാം:
 
-![ImageNet Layers](../../../../../translated_images/vgg-16-arch1.d901a5583b3a51baeaab3e768567d921e5d54befa46e1e642616c5458c934028.ml.jpg)
+![ImageNet Layers](../../../../../translated_images/ml/vgg-16-arch1.d901a5583b3a51ba.webp)
 
-![ImageNet Pyramid](../../../../../translated_images/vgg-16-arch.64ff2137f50dd49fdaa786e3f3a975b3f22615efd13efb19c5d22f12e01451a1.ml.jpg)
+![ImageNet Pyramid](../../../../../translated_images/ml/vgg-16-arch.64ff2137f50dd49f.webp)
 
 > [Researchgate](https://www.researchgate.net/figure/Vgg16-model-structure-To-get-the-VGG-NIN-model-we-replace-the-2-nd-4-th-6-th-7-th_fig2_335194493) നിന്നുള്ള ചിത്രം
 

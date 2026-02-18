@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "f335dfcb4a993920504c387973a36957",
-  "translation_date": "2025-09-23T08:34:51+00:00",
-  "source_file": "lessons/5-NLP/18-Transformers/README.md",
-  "language_code": "it"
-}
--->
 # Meccanismi di Attenzione e Transformers
 
 ## [Quiz pre-lezione](https://ff-quizzes.netlify.app/en/ai/quiz/35)
@@ -20,13 +11,13 @@ Con gli RNN, il sequence-to-sequence viene implementato da due reti ricorrenti, 
 
 I **Meccanismi di Attenzione** forniscono un mezzo per pesare l'impatto contestuale di ciascun vettore di input su ciascuna previsione di output dell'RNN. Questo viene implementato creando scorciatoie tra gli stati intermedi dell'RNN di input e l'RNN di output. In questo modo, quando si genera il simbolo di output y<sub>t</sub>, si prendono in considerazione tutti gli stati nascosti di input h<sub>i</sub>, con diversi coefficienti di peso &alpha;<sub>t,i</sub>.
 
-![Immagine che mostra un modello encoder/decoder con uno strato di attenzione additiva](../../../../../translated_images/encoder-decoder-attention.7a726296894fb567aa2898c94b17b3289087f6705c11907df8301df9e5eeb3de.it.png)
+![Immagine che mostra un modello encoder/decoder con uno strato di attenzione additiva](../../../../../translated_images/it/encoder-decoder-attention.7a726296894fb567.webp)
 
 > Il modello encoder-decoder con meccanismo di attenzione additiva in [Bahdanau et al., 2015](https://arxiv.org/pdf/1409.0473.pdf), citato da [questo blog post](https://lilianweng.github.io/lil-log/2018/06/24/attention-attention.html)
 
 La matrice di attenzione {&alpha;<sub>i,j</sub>} rappresenta il grado in cui alcune parole di input influenzano la generazione di una determinata parola nella sequenza di output. Di seguito è riportato un esempio di tale matrice:
 
-![Immagine che mostra un allineamento di esempio trovato da RNNsearch-50, tratto da Bahdanau - arviz.org](../../../../../translated_images/bahdanau-fig3.09ba2d37f202a6af11de6c82d2d197830ba5f4528d9ea430eb65fd3a75065973.it.png)
+![Immagine che mostra un allineamento di esempio trovato da RNNsearch-50, tratto da Bahdanau - arviz.org](../../../../../translated_images/it/bahdanau-fig3.09ba2d37f202a6af.webp)
 
 > Figura da [Bahdanau et al., 2015](https://arxiv.org/pdf/1409.0473.pdf) (Fig.3)
 
@@ -56,7 +47,7 @@ L'idea della codifica posizionale è la seguente.
 * Embedding addestrabile, simile all'embedding dei token. Questo è l'approccio che consideriamo qui. Applichiamo strati di embedding sia sui token che sulle loro posizioni, ottenendo vettori di embedding delle stesse dimensioni, che poi sommiamo.
 * Funzione di codifica posizionale fissa, come proposto nel paper originale.
 
-<img src="images/pos-embedding.png" width="50%"/>
+<img src="../../../../../translated_images/it/pos-embedding.e41ce9b6cf6078af.webp" width="50%"/>
 
 > Immagine dell'autore
 
@@ -66,7 +57,7 @@ Il risultato che otteniamo con l'embedding posizionale incorpora sia il token or
 
 Successivamente, dobbiamo catturare alcuni schemi all'interno della nostra sequenza. Per fare ciò, i transformers utilizzano un meccanismo di **auto-attenzione**, che è essenzialmente attenzione applicata alla stessa sequenza come input e output. Applicare l'auto-attenzione ci consente di tenere conto del **contesto** all'interno della frase e vedere quali parole sono interconnesse. Ad esempio, ci consente di vedere quali parole sono riferite da coreferenze, come *it*, e di considerare il contesto:
 
-![](../../../../../translated_images/CoreferenceResolution.861924d6d384a7d68d8d0039d06a71a151f18a796b8b1330239d3590bd4947eb.it.png)
+![](../../../../../translated_images/it/CoreferenceResolution.861924d6d384a7d6.webp)
 
 > Immagine dal [Blog di Google](https://research.googleblog.com/2017/08/transformer-novel-neural-network.html)
 
@@ -91,7 +82,7 @@ Poiché ogni posizione di input viene mappata indipendentemente a ogni posizione
 
 **BERT** (Bidirectional Encoder Representations from Transformers) è una rete transformer multi-strato molto grande con 12 strati per *BERT-base* e 24 per *BERT-large*. Il modello viene prima pre-addestrato su un ampio corpus di dati testuali (Wikipedia + libri) utilizzando un addestramento non supervisionato (predizione di parole mascherate in una frase). Durante il pre-addestramento, il modello acquisisce livelli significativi di comprensione del linguaggio che possono poi essere sfruttati con altri dataset utilizzando il fine tuning. Questo processo è chiamato **transfer learning**.
 
-![immagine da http://jalammar.github.io/illustrated-bert/](../../../../../translated_images/jalammarBERT-language-modeling-masked-lm.34f113ea5fec4362e39ee4381aab7cad06b5465a0b5f053a0f2aa05fbe14e746.it.png)
+![immagine da http://jalammar.github.io/illustrated-bert/](../../../../../translated_images/it/jalammarBERT-language-modeling-masked-lm.34f113ea5fec4362.webp)
 
 > Immagine [fonte](http://jalammar.github.io/illustrated-bert/)
 

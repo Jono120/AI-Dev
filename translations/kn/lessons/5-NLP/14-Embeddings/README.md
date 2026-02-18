@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "b708c9b85b833864c73c6281f1e6b96e",
-  "translation_date": "2025-11-25T22:58:04+00:00",
-  "source_file": "lessons/5-NLP/14-Embeddings/README.md",
-  "language_code": "kn"
-}
--->
 # ಎम्बೆಡ್ಡಿಂಗ್ಸ್
 
 ## [ಪೂರ್ವ-ವ್ಯಾಖ್ಯಾನ ಕ್ವಿಜ್](https://ff-quizzes.netlify.app/en/ai/quiz/27)
@@ -19,7 +10,7 @@ BoW ಅಥವಾ TF/IDF ಆಧಾರಿತ ವರ್ಗೀಕರಣಗಳನ್�
 
 ನಮ್ಮ ವರ್ಗೀಕರಣ ಜಾಲದಲ್ಲಿ ಮೊದಲ ಲೇಯರ್ ಆಗಿ ಎम्बೆಡ್ಡಿಂಗ್ ಲೇಯರ್ ಬಳಸಿ, ನಾವು ಬ್ಯಾಗ್-ಆಫ್-ವರ್ಡ್ಸ್‌ನಿಂದ **ಎಂಬೆಡ್ಡಿಂಗ್ ಬ್ಯಾಗ್** ಮಾದರಿಗೆ ಬದಲಾಗಬಹುದು, ಅಲ್ಲಿ ಮೊದಲಿಗೆ ನಮ್ಮ ಪಠ್ಯದಲ್ಲಿನ ಪ್ರತಿ ಪದವನ್ನು ಸಂಬಂಧಿತ ಎम्बೆಡ್ಡಿಂಗ್‌ಗೆ ಪರಿವರ್ತಿಸಿ, ನಂತರ ಆ ಎಲ್ಲ ಎम्बೆಡ್ಡಿಂಗ್‌ಗಳ ಮೇಲೆ `sum`, `average` ಅಥವಾ `max` ಮುಂತಾದ ಸಂಗ್ರಹ ಕಾರ್ಯವನ್ನು ಲೆಕ್ಕಹಾಕುತ್ತೇವೆ.
 
-![ಐದು ಕ್ರಮ ಪದಗಳಿಗಾಗಿ ಎम्बೆಡ್ಡಿಂಗ್ ವರ್ಗೀಕರಣವನ್ನು ತೋರಿಸುವ ಚಿತ್ರ.](../../../../../translated_images/embedding-classifier-example.b77f021a7ee67eeec8e68bfe11636c5b97d6eaa067515a129bfb1d0034b1ac5b.kn.png)
+![ಐದು ಕ್ರಮ ಪದಗಳಿಗಾಗಿ ಎम्बೆಡ್ಡಿಂಗ್ ವರ್ಗೀಕರಣವನ್ನು ತೋರಿಸುವ ಚಿತ್ರ.](../../../../../translated_images/kn/embedding-classifier-example.b77f021a7ee67eee.webp)
 
 > ಚಿತ್ರ ಲೇಖಕರಿಂದ
 
@@ -40,7 +31,7 @@ BoW ಅಥವಾ TF/IDF ಆಧಾರಿತ ವರ್ಗೀಕರಣಗಳನ್�
 
 CBoW ವೇಗವಾಗಿ ಕಾರ್ಯನಿರ್ವಹಿಸುತ್ತದೆ, ಆದರೆ ಸ್ಕಿಪ್-ಗ್ರಾಮ್ ನಿಧಾನವಾಗಿದ್ದು, ಅಪರೂಪದ ಪದಗಳನ್ನು ಉತ್ತಮವಾಗಿ ಪ್ರತಿನಿಧಿಸುತ್ತದೆ.
 
-![ಪದಗಳನ್ನು ವೆಕ್ಟರ್‌ಗಳಿಗೆ ಪರಿವರ್ತಿಸುವ CBoW ಮತ್ತು ಸ್ಕಿಪ್-ಗ್ರಾಮ್ ಆಲ್ಗಾರಿಥಮ್‌ಗಳನ್ನು ತೋರಿಸುವ ಚಿತ್ರ.](../../../../../translated_images/example-algorithms-for-converting-words-to-vectors.fbe9207a726922f6f0f5de66427e8a6eda63809356114e28fb1fa5f4a83ebda7.kn.png)
+![ಪದಗಳನ್ನು ವೆಕ್ಟರ್‌ಗಳಿಗೆ ಪರಿವರ್ತಿಸುವ CBoW ಮತ್ತು ಸ್ಕಿಪ್-ಗ್ರಾಮ್ ಆಲ್ಗಾರಿಥಮ್‌ಗಳನ್ನು ತೋರಿಸುವ ಚಿತ್ರ.](../../../../../translated_images/kn/example-algorithms-for-converting-words-to-vectors.fbe9207a726922f6.webp)
 
 > ಚಿತ್ರ [ಈ ಪೇಪರ್](https://arxiv.org/pdf/1301.3781.pdf) ನಿಂದ
 

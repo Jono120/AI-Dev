@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "178c0b5ee5395733eb18aec51e71a0a9",
-  "translation_date": "2025-09-23T10:07:19+00:00",
-  "source_file": "lessons/4-ComputerVision/08-TransferLearning/README.md",
-  "language_code": "nl"
-}
--->
 # Voorgetrainde Netwerken en Transfer Learning
 
 Het trainen van CNN's kan veel tijd kosten en vereist een grote hoeveelheid data. Veel tijd wordt besteed aan het leren van de beste laag-niveau filters die een netwerk kan gebruiken om patronen uit afbeeldingen te halen. Een logische vraag is: kunnen we een neuraal netwerk dat op één dataset is getraind gebruiken en aanpassen om andere afbeeldingen te classificeren zonder een volledig trainingsproces?
@@ -29,7 +20,7 @@ Zowel Keras als PyTorch bevatten functies om eenvoudig voorgetrainde neurale net
 
 Hier zijn voorbeeldkenmerken die door een VGG-16 netwerk uit een afbeelding van een kat zijn gehaald:
 
-![Kenmerken geëxtraheerd door VGG-16](../../../../../translated_images/features.6291f9c7ba3a0b951af88fc9864632b9115365410765680680d30c927dd67354.nl.png)
+![Kenmerken geëxtraheerd door VGG-16](../../../../../translated_images/nl/features.6291f9c7ba3a0b95.webp)
 
 ## Cats vs. Dogs Dataset
 
@@ -48,19 +39,19 @@ Een voorgetraind neuraal netwerk bevat verschillende patronen in zijn *brein*, w
 
 Een aanpak die we kunnen nemen is om te beginnen met een willekeurige afbeelding en vervolgens de techniek van **gradient descent optimalisatie** te gebruiken om die afbeelding zo aan te passen dat het netwerk begint te denken dat het een kat is.
 
-![Afbeelding Optimalisatie Loop](../../../../../translated_images/ideal-cat-loop.999fbb8ff306e044f997032f4eef9152b453e6a990e449bbfb107de2493cc37e.nl.png)
+![Afbeelding Optimalisatie Loop](../../../../../translated_images/nl/ideal-cat-loop.999fbb8ff306e044.webp)
 
 Als we dit doen, krijgen we echter iets dat erg lijkt op willekeurige ruis. Dit komt omdat *er veel manieren zijn om een netwerk te laten denken dat de invoerafbeelding een kat is*, inclusief enkele die visueel geen zin hebben. Hoewel deze afbeeldingen veel patronen bevatten die typisch zijn voor een kat, is er niets dat hen dwingt visueel onderscheidend te zijn.
 
 Om het resultaat te verbeteren, kunnen we een andere term toevoegen aan de verliesfunctie, genaamd **variation loss**. Dit is een maatstaf die aangeeft hoe vergelijkbaar naburige pixels van de afbeelding zijn. Het minimaliseren van variation loss maakt de afbeelding gladder en verwijdert ruis, waardoor meer visueel aantrekkelijke patronen zichtbaar worden. Hier is een voorbeeld van dergelijke "ideale" afbeeldingen, die met hoge waarschijnlijkheid als kat en als zebra worden geclassificeerd:
 
-![Ideale Kat](../../../../../translated_images/ideal-cat.203dd4597643d6b0bd73038b87f9c0464322725e3a06ab145d25d4a861c70592.nl.png) | ![Ideale Zebra](../../../../../translated_images/ideal-zebra.7f70e8b54ee15a7a314000bb5df38a6cfe086ea04d60df4d3ef313d046b98a2b.nl.png)
+![Ideale Kat](../../../../../translated_images/nl/ideal-cat.203dd4597643d6b0.webp) | ![Ideale Zebra](../../../../../translated_images/nl/ideal-zebra.7f70e8b54ee15a7a.webp)
 -----|-----
  *Ideale Kat* | *Ideale Zebra*
 
 Een soortgelijke aanpak kan worden gebruikt om zogenaamde **adversarial attacks** op een neuraal netwerk uit te voeren. Stel dat we een neuraal netwerk willen misleiden en een hond eruit willen laten zien als een kat. Als we een afbeelding van een hond nemen, die door een netwerk wordt herkend als een hond, kunnen we deze vervolgens een beetje aanpassen met behulp van gradient descent optimalisatie, totdat het netwerk deze begint te classificeren als een kat:
 
-![Afbeelding van een Hond](../../../../../translated_images/original-dog.8f68a67d2fe0911f33041c0f7fce8aa4ea919f9d3917ec4b468298522aeb6356.nl.png) | ![Afbeelding van een hond geclassificeerd als een kat](../../../../../translated_images/adversarial-dog.d9fc7773b0142b89752539bfbf884118de845b3851c5162146ea0b8809fc820f.nl.png)
+![Afbeelding van een Hond](../../../../../translated_images/nl/original-dog.8f68a67d2fe0911f.webp) | ![Afbeelding van een hond geclassificeerd als een kat](../../../../../translated_images/nl/adversarial-dog.d9fc7773b0142b89.webp)
 -----|-----
 *Originele afbeelding van een hond* | *Afbeelding van een hond geclassificeerd als een kat*
 

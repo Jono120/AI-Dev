@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "e2273cc150380a5e191903cea858f021",
-  "translation_date": "2025-09-23T10:55:59+00:00",
-  "source_file": "lessons/5-NLP/16-RNN/README.md",
-  "language_code": "ms"
-}
--->
 # Rangkaian Neural Berulang
 
 ## [Kuiz Pra-Kuliah](https://ff-quizzes.netlify.app/en/ai/quiz/31)
@@ -15,7 +6,7 @@ Dalam bahagian sebelum ini, kita telah menggunakan representasi semantik teks ya
 
 Untuk menangkap makna urutan teks, kita perlu menggunakan seni bina rangkaian neural lain, yang dipanggil **rangkaian neural berulang**, atau RNN. Dalam RNN, kita lalui ayat kita melalui rangkaian satu simbol pada satu masa, dan rangkaian menghasilkan beberapa **keadaan**, yang kemudian kita lalui semula ke rangkaian bersama simbol seterusnya.
 
-![RNN](../../../../../translated_images/rnn.27f5c29c53d727b546ad3961637a267f0fe9ec5ab01f2a26a853c92fcefbb574.ms.png)
+![RNN](../../../../../translated_images/ms/rnn.27f5c29c53d727b5.webp)
 
 > Gambar oleh penulis
 
@@ -31,7 +22,7 @@ Mari kita lihat bagaimana sel RNN ringkas diatur. Ia menerima keadaan sebelumnya
 
 Sel RNN ringkas mempunyai dua matriks berat di dalamnya: satu mengubah simbol input (kita panggil ia W), dan satu lagi mengubah keadaan input (H). Dalam kes ini, output rangkaian dikira sebagai &sigma;(W&times;X<sub>i</sub>+H&times;S<sub>i-1</sub>+b), di mana &sigma; adalah fungsi pengaktifan dan b adalah bias tambahan.
 
-<img alt="Anatomi Sel RNN" src="images/rnn-anatomy.png" width="50%"/>
+<img alt="Anatomi Sel RNN" src="../../../../../translated_images/ms/rnn-anatomy.79ee3f3920b3294b.webp" width="50%"/>
 
 > Gambar oleh penulis
 
@@ -61,7 +52,7 @@ Kita telah membincangkan rangkaian berulang yang beroperasi dalam satu arah, dar
 
 Rangkaian berulang, sama ada satu arah atau dua arah, menangkap corak tertentu dalam urutan, dan boleh menyimpannya ke dalam vektor keadaan atau menghantarnya ke output. Seperti rangkaian konvolusi, kita boleh membina lapisan berulang lain di atas yang pertama untuk menangkap corak tahap lebih tinggi dan membina daripada corak tahap rendah yang diekstrak oleh lapisan pertama. Ini membawa kita kepada konsep **RNN berlapis** yang terdiri daripada dua atau lebih rangkaian berulang, di mana output lapisan sebelumnya dihantar ke lapisan seterusnya sebagai input.
 
-![Gambar menunjukkan RNN LSTM berlapis pelbagai](../../../../../translated_images/multi-layer-lstm.dd975e29bb2a59fe58b429db833932d734c81f211cad2783797a9608984acb8c.ms.jpg)
+![Gambar menunjukkan RNN LSTM berlapis pelbagai](../../../../../translated_images/ms/multi-layer-lstm.dd975e29bb2a59fe.webp)
 
 *Gambar daripada [post yang hebat ini](https://towardsdatascience.com/from-a-lstm-cell-to-a-multilayer-lstm-network-with-pytorch-2899eb5696f3) oleh Fernando López*
 

@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "04395657fc01648f8f70484d0e55ab67",
-  "translation_date": "2025-10-11T11:47:44+00:00",
-  "source_file": "lessons/6-Other/22-DeepRL/README.md",
-  "language_code": "et"
-}
--->
 # Sügav Tugevdusõpe
 
 Tugevdusõpe (RL) on üks põhilisi masinõppe paradigmasid, kõrvuti juhendatud ja juhendamata õppega. Kui juhendatud õppes tugineb õpe teadaolevate tulemustega andmekogule, siis RL põhineb **õppimisel läbi tegutsemise**. Näiteks, kui me esimest korda näeme arvutimängu, hakkame seda mängima, isegi kui me reegleid ei tea, ja peagi suudame oma oskusi parandada lihtsalt mängimise ja käitumise kohandamise kaudu.
@@ -34,7 +25,7 @@ Tõenäoliselt olete näinud kaasaegseid tasakaalustusseadmeid, nagu *Segway* v�
 
 Lihtsustatud versioon tasakaalustamisest on tuntud kui **CartPole** probleem. CartPole maailmas on meil horisontaalne liugur, mis saab liikuda vasakule või paremale, ja eesmärk on tasakaalustada vertikaalne post liuguri peal, kui see liigub.
 
-<img alt="cartpole" src="../../../../../translated_images/cartpole.f52a67f27e058170c25efc1bca8375b60906570ea757fe8d7ef04ae8e53df29d.et.png" width="200"/>
+<img alt="cartpole" src="../../../../../translated_images/et/cartpole.f52a67f27e058170.webp" width="200"/>
 
 Selle keskkonna loomiseks ja kasutamiseks on vaja paar rida Python koodi:
 

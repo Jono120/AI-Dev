@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "7ba20f54a5bfcd6521018cdfb17c7c57",
-  "translation_date": "2025-11-25T22:59:57+00:00",
-  "source_file": "lessons/5-NLP/15-LanguageModeling/README.md",
-  "language_code": "kn"
-}
--->
 # ಭಾಷಾ ಮಾದರೀಕರಣ
 
 ಶಬ್ದಾರ್ಥ ಸಂಯೋಜನೆಗಳು, ಉದಾಹರಣೆಗೆ Word2Vec ಮತ್ತು GloVe, ವಾಸ್ತವದಲ್ಲಿ **ಭಾಷಾ ಮಾದರೀಕರಣ**ದ ಮೊದಲ ಹಂತವಾಗಿದೆ - ಭಾಷೆಯ ಸ್ವಭಾವವನ್ನು ಹೇಗೆಂದರೆ *ಅರ್ಥಮಾಡಿಕೊಳ್ಳುವ* (ಅಥವಾ *ಪ್ರತಿನಿಧಿಸುವ*) ಮಾದರಿಗಳನ್ನು ರಚಿಸುವುದು.
@@ -23,7 +14,7 @@ CO_OP_TRANSLATOR_METADATA:
 * **ಕಂಟಿನ್ಯೂಯಸ್ ಬ್ಯಾಗ್-ಆಫ್-ವರ್ಡ್ಸ್** (CBoW), ಇಲ್ಲಿ ನಾವು ಟೋಕನ್ ಸರಣಿಯಲ್ಲಿ ಮಧ್ಯದ ಟೋಕನ್ $W_0$ ಅನ್ನು ಊಹಿಸುತ್ತೇವೆ $W_{-N}$, ..., $W_N$.
 * **ಸ್ಕಿಪ್-ಗ್ರಾಮ್**, ಇಲ್ಲಿ ನಾವು ಮಧ್ಯದ ಟೋಕನ್ $W_0$ ರಿಂದ ಸುತ್ತಲೂ ಇರುವ ಟೋಕನ್‌ಗಳ ಸಮೂಹ {$W_{-N},\dots, W_{-1}, W_1,\dots, W_N$} ಅನ್ನು ಊಹಿಸುತ್ತೇವೆ.
 
-![ಪದಗಳನ್ನು ವೆಕ್ಟರ್‌ಗಳಿಗೆ ಪರಿವರ್ತಿಸುವ ಕುರಿತು ಪೇಪರ್‌ನ ಚಿತ್ರ](../../../../../translated_images/example-algorithms-for-converting-words-to-vectors.fbe9207a726922f6f0f5de66427e8a6eda63809356114e28fb1fa5f4a83ebda7.kn.png)
+![ಪದಗಳನ್ನು ವೆಕ್ಟರ್‌ಗಳಿಗೆ ಪರಿವರ್ತಿಸುವ ಕುರಿತು ಪೇಪರ್‌ನ ಚಿತ್ರ](../../../../../translated_images/kn/example-algorithms-for-converting-words-to-vectors.fbe9207a726922f6.webp)
 
 > ಚಿತ್ರ [ಈ ಪೇಪರ್](https://arxiv.org/pdf/1301.3781.pdf) ನಿಂದ
 

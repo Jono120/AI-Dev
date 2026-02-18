@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "ddd216f558a255260a9374008002c971",
-  "translation_date": "2025-09-23T07:38:08+00:00",
-  "source_file": "lessons/3-NeuralNetworks/05-Frameworks/README.md",
-  "language_code": "pa"
-}
--->
 # ਨਿਊਰਲ ਨੈਟਵਰਕ ਫ੍ਰੇਮਵਰਕਸ
 
 ਜਿਵੇਂ ਕਿ ਅਸੀਂ ਪਹਿਲਾਂ ਹੀ ਸਿੱਖ ਚੁੱਕੇ ਹਾਂ, ਨਿਊਰਲ ਨੈਟਵਰਕਸ ਨੂੰ ਪ੍ਰਭਾਵਸ਼ਾਲੀ ਢੰਗ ਨਾਲ ਟ੍ਰੇਨ ਕਰਨ ਲਈ ਸਾਨੂੰ ਦੋ ਗੱਲਾਂ ਕਰਨ ਦੀ ਲੋੜ ਹੈ:
@@ -58,7 +49,7 @@ High-level API| [Keras](IntroKeras.ipynb) | *PyTorch Lightning*
 
 ਹੇਠਾਂ ਦਿੱਤੇ ਸਮੱਸਿਆ ਨੂੰ ਵਿਚਾਰੋ ਜਿਸ ਵਿੱਚ 5 ਬਿੰਦੂਆਂ ਨੂੰ ਅਨੁਮਾਨਿਤ ਕਰਨਾ ਹੈ (ਗ੍ਰਾਫ ਵਿੱਚ `x` ਨਾਲ ਦਰਸਾਇਆ ਗਿਆ ਹੈ):
 
-![linear](../../../../../translated_images/overfit1.f24b71c6f652e59e6bed7245ffbeaecc3ba320e16e2221f6832b432052c4da43.pa.jpg) | ![overfit](../../../../../translated_images/overfit2.131f5800ae10ca5e41d12a411f5f705d9ee38b1b10916f284b787028dd55cc1c.pa.jpg)
+![linear](../../../../../translated_images/pa/overfit1.f24b71c6f652e59e.webp) | ![overfit](../../../../../translated_images/pa/overfit2.131f5800ae10ca5e.webp)
 -------------------------|--------------------------
 **ਲਿਨੀਅਰ ਮਾਡਲ, 2 ਪੈਰਾਮੀਟਰ** | **ਨਾਨ-ਲਿਨੀਅਰ ਮਾਡਲ, 7 ਪੈਰਾਮੀਟਰ**
 ਟ੍ਰੇਨਿੰਗ ਐਰਰ = 5.3 | ਟ੍ਰੇਨਿੰਗ ਐਰਰ = 0
@@ -79,7 +70,7 @@ High-level API| [Keras](IntroKeras.ipynb) | *PyTorch Lightning*
 
 ਜਿਵੇਂ ਕਿ ਉੱਪਰ ਦਿੱਤੇ ਗ੍ਰਾਫ ਤੋਂ ਦਿਖਾਈ ਦਿੰਦਾ ਹੈ, ਓਵਰਫਿਟਿੰਗ ਦੀ ਪਛਾਣ ਬਹੁਤ ਘੱਟ ਟ੍ਰੇਨਿੰਗ ਐਰਰ ਅਤੇ ਉੱਚੇ ਵੈਲੀਡੇਸ਼ਨ ਐਰਰ ਦੁਆਰਾ ਕੀਤੀ ਜਾ ਸਕਦੀ ਹੈ। ਆਮ ਤੌਰ 'ਤੇ ਟ੍ਰੇਨਿੰਗ ਦੌਰਾਨ ਅਸੀਂ ਦੋਵੇਂ ਟ੍ਰੇਨਿੰਗ ਅਤੇ ਵੈਲੀਡੇਸ਼ਨ ਐਰਰ ਨੂੰ ਘਟਦੇ ਹੋਏ ਦੇਖਾਂਗੇ, ਅਤੇ ਫਿਰ ਕਿਸੇ ਸਮੇਂ ਵੈਲੀਡੇਸ਼ਨ ਐਰਰ ਘਟਣਾ ਬੰਦ ਕਰ ਸਕਦਾ ਹੈ ਅਤੇ ਵਧਣਾ ਸ਼ੁਰੂ ਕਰ ਸਕਦਾ ਹੈ। ਇਹ ਓਵਰਫਿਟਿੰਗ ਦਾ ਸੰਕੇਤ ਹੋਵੇਗਾ, ਅਤੇ ਇਹ ਦਰਸਾਵੇਗਾ ਕਿ ਸਾਨੂੰ ਇਸ ਸਮੇਂ ਟ੍ਰੇਨਿੰਗ ਰੋਕ ਦੇਣੀ ਚਾਹੀਦੀ ਹੈ (ਜਾਂ ਘੱਟੋ-ਘੱਟ ਮਾਡਲ ਦਾ ਸਨੈਪਸ਼ਾਟ ਲੈਣਾ ਚਾਹੀਦਾ ਹੈ)।
 
-![overfitting](../../../../../translated_images/Overfitting.408ad91cd90b4371d0a81f4287e1409c359751adeb1ae450332af50e84f08c3e.pa.png)
+![overfitting](../../../../../translated_images/pa/Overfitting.408ad91cd90b4371.webp)
 
 ## ਓਵਰਫਿਟਿੰਗ ਨੂੰ ਰੋਕਣ ਦੇ ਤਰੀਕੇ
 

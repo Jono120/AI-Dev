@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "b708c9b85b833864c73c6281f1e6b96e",
-  "translation_date": "2025-09-23T13:37:40+00:00",
-  "source_file": "lessons/5-NLP/14-Embeddings/README.md",
-  "language_code": "hi"
-}
--->
 # एम्बेडिंग्स
 
 ## [प्री-लेक्चर क्विज़](https://ff-quizzes.netlify.app/en/ai/quiz/27)
@@ -19,7 +10,7 @@ CO_OP_TRANSLATOR_METADATA:
 
 हमारे क्लासिफायर नेटवर्क में एम्बेडिंग लेयर को पहली लेयर के रूप में उपयोग करके, हम बैग-ऑफ-वर्ड्स से **एम्बेडिंग बैग** मॉडल में स्विच कर सकते हैं, जहां हम पहले अपने टेक्स्ट में प्रत्येक शब्द को संबंधित एम्बेडिंग में बदलते हैं और फिर उन सभी एम्बेडिंग्स पर कुछ समग्र फ़ंक्शन की गणना करते हैं, जैसे `sum`, `average` या `max`।  
 
-![पांच अनुक्रम शब्दों के लिए एम्बेडिंग क्लासिफायर दिखाने वाली छवि।](../../../../../translated_images/embedding-classifier-example.b77f021a7ee67eeec8e68bfe11636c5b97d6eaa067515a129bfb1d0034b1ac5b.hi.png)
+![पांच अनुक्रम शब्दों के लिए एम्बेडिंग क्लासिफायर दिखाने वाली छवि।](../../../../../translated_images/hi/embedding-classifier-example.b77f021a7ee67eee.webp)
 
 > लेखक द्वारा बनाई गई छवि
 
@@ -40,7 +31,7 @@ CO_OP_TRANSLATOR_METADATA:
 
 CBoW तेज है, जबकि स्किप-ग्राम धीमा है, लेकिन यह दुर्लभ शब्दों को बेहतर तरीके से रिप्रेजेंट करता है।
 
-![CBoW और स्किप-ग्राम एल्गोरिदम को शब्दों को वेक्टर में बदलने के लिए दिखाने वाली छवि।](../../../../../translated_images/example-algorithms-for-converting-words-to-vectors.fbe9207a726922f6f0f5de66427e8a6eda63809356114e28fb1fa5f4a83ebda7.hi.png)
+![CBoW और स्किप-ग्राम एल्गोरिदम को शब्दों को वेक्टर में बदलने के लिए दिखाने वाली छवि।](../../../../../translated_images/hi/example-algorithms-for-converting-words-to-vectors.fbe9207a726922f6.webp)
 
 > [इस पेपर](https://arxiv.org/pdf/1301.3781.pdf) से ली गई छवि
 

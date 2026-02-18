@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "b70fcf7fcee862990f848c679090943f",
-  "translation_date": "2025-10-03T14:56:35+00:00",
-  "source_file": "lessons/4-ComputerVision/07-ConvNets/lab/README.md",
-  "language_code": "tl"
-}
--->
 # Pag-uuri ng Mukha ng Alagang Hayop
 
 Takdang-Aralin mula sa [AI for Beginners Curriculum](https://github.com/microsoft/ai-for-beginners).
@@ -21,7 +12,7 @@ Kailangan mong sanayin ang isang convolutional neural network upang uriin ang ib
 
 Gagamitin natin ang [Oxford-IIIT Pet Dataset](https://www.robots.ox.ac.uk/~vgg/data/pets/), na naglalaman ng mga larawan ng 37 iba't ibang lahi ng aso at pusa.
 
-![Dataset na gagamitin natin](../../../../../../translated_images/data.50b2a9d5484bdbf0f52f5765b381cec9efe2bd296a98f007f90bedb6ac67f2a8.tl.png)
+![Dataset na gagamitin natin](../../../../../../translated_images/tl/data.50b2a9d5484bdbf0.webp)
 
 Upang i-download ang dataset, gamitin ang code snippet na ito:
 

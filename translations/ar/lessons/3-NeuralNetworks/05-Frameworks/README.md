@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "ddd216f558a255260a9374008002c971",
-  "translation_date": "2025-09-23T06:36:40+00:00",
-  "source_file": "lessons/3-NeuralNetworks/05-Frameworks/README.md",
-  "language_code": "ar"
-}
--->
 # أطر الشبكات العصبية
 
 كما تعلمنا بالفعل، لكي نتمكن من تدريب الشبكات العصبية بكفاءة، نحتاج إلى القيام بأمرين:
@@ -58,7 +49,7 @@ CO_OP_TRANSLATOR_METADATA:
 
 لننظر إلى المشكلة التالية لتقريب 5 نقاط (ممثلة بـ `x` على الرسوم البيانية أدناه):
 
-![linear](../../../../../translated_images/overfit1.f24b71c6f652e59e6bed7245ffbeaecc3ba320e16e2221f6832b432052c4da43.ar.jpg) | ![overfit](../../../../../translated_images/overfit2.131f5800ae10ca5e41d12a411f5f705d9ee38b1b10916f284b787028dd55cc1c.ar.jpg)
+![linear](../../../../../translated_images/ar/overfit1.f24b71c6f652e59e.webp) | ![overfit](../../../../../translated_images/ar/overfit2.131f5800ae10ca5e.webp)
 -------------------------|--------------------------
 **نموذج خطي، 2 معلمات** | **نموذج غير خطي، 7 معلمات**
 خطأ التدريب = 5.3 | خطأ التدريب = 0
@@ -79,7 +70,7 @@ CO_OP_TRANSLATOR_METADATA:
 
 كما ترى من الرسم البياني أعلاه، يمكن اكتشاف الإفراط في التكيف من خلال خطأ تدريب منخفض جدًا وخطأ تحقق عالي. عادةً أثناء التدريب، سنرى كلا من أخطاء التدريب والتحقق تبدأ في الانخفاض، ثم في مرحلة ما قد يتوقف خطأ التحقق عن الانخفاض ويبدأ في الارتفاع. سيكون هذا علامة على الإفراط في التكيف، ومؤشرًا على أنه يجب علينا على الأرجح التوقف عن التدريب في هذه المرحلة (أو على الأقل أخذ لقطة للنموذج).
 
-![overfitting](../../../../../translated_images/Overfitting.408ad91cd90b4371d0a81f4287e1409c359751adeb1ae450332af50e84f08c3e.ar.png)
+![overfitting](../../../../../translated_images/ar/Overfitting.408ad91cd90b4371.webp)
 
 ## كيفية منع الإفراط في التكيف
 

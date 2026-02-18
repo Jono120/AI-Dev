@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "1b8d9e1b3a6f1daa864b1ff3dfc3076d",
-  "translation_date": "2025-09-23T09:18:34+00:00",
-  "source_file": "lessons/4-ComputerVision/09-Autoencoders/README.md",
-  "language_code": "sv"
-}
--->
 # Autoencoders
 
 När vi tränar CNNs är ett av problemen att vi behöver mycket märkt data. När det gäller bildklassificering måste vi dela upp bilder i olika klasser, vilket är en manuell process.
@@ -19,7 +10,7 @@ Men vi kanske vill använda rå (omärkt) data för att träna CNN-funktionsextr
 
 Eftersom vi tränar en autoencoder för att fånga så mycket information som möjligt från den ursprungliga bilden för en korrekt rekonstruktion, försöker nätverket hitta den bästa **embedding** av inmatningsbilder för att fånga dess betydelse.
 
-![AutoEncoder Diagram](../../../../../translated_images/autoencoder_schema.5e6fc9ad98a5eb6197f3513cf3baf4dfbe1389a6ae74daebda64de9f1c99f142.sv.jpg)
+![AutoEncoder Diagram](../../../../../translated_images/sv/autoencoder_schema.5e6fc9ad98a5eb61.webp)
 
 > Bild från [Keras blog](https://blog.keras.io/building-autoencoders-in-keras.html)
 
@@ -46,7 +37,7 @@ Sammanfattningsvis:
  * Vi samplar en vektor `sample` från fördelningen N(z<sub>mean</sub>,exp(z<sub>log\_sigma</sub>))
  * Decodern försöker avkoda den ursprungliga bilden med `sample` som inmatningsvektor
 
- <img src="images/vae.png" width="50%">
+ <img src="../../../../../translated_images/sv/vae.464c465a5b6a9e25.webp" width="50%">
 
 > Bild från [denna blogginlägg](https://ijdykeman.github.io/ml/2016/12/21/cvae.html) av Isaak Dykeman
 
@@ -57,13 +48,13 @@ Variational autoencoders använder en komplex förlustfunktion som består av tv
 
 En viktig fördel med VAEs är att de gör det relativt enkelt att generera nya bilder, eftersom vi vet vilken fördelning vi ska sampla latenta vektorer från. Till exempel, om vi tränar en VAE med en 2D latent vektor på MNIST, kan vi sedan variera komponenterna i den latenta vektorn för att få olika siffror:
 
-<img alt="vaemnist" src="images/vaemnist.png" width="50%"/>
+<img alt="vaemnist" src="../../../../../translated_images/sv/vaemnist.cab9e602dc08dc50.webp" width="50%"/>
 
 > Bild av [Dmitry Soshnikov](http://soshnikov.com)
 
 Observera hur bilderna smälter samman när vi börjar få latenta vektorer från olika delar av det latenta parameterutrymmet. Vi kan också visualisera detta utrymme i 2D:
 
-<img alt="vaemnist cluster" src="images/vaemnist-diag.png" width="50%"/> 
+<img alt="vaemnist cluster" src="../../../../../translated_images/sv/vaemnist-diag.694315f775d5d666.webp" width="50%"/> 
 
 > Bild av [Dmitry Soshnikov](http://soshnikov.com)
 

@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "b708c9b85b833864c73c6281f1e6b96e",
-  "translation_date": "2025-09-23T06:50:12+00:00",
-  "source_file": "lessons/5-NLP/14-Embeddings/README.md",
-  "language_code": "ur"
-}
--->
 # ایمبیڈنگز
 
 ## [لیکچر سے پہلے کا کوئز](https://ff-quizzes.netlify.app/en/ai/quiz/27)
@@ -19,7 +10,7 @@ CO_OP_TRANSLATOR_METADATA:
 
 ایمبیڈنگ لیئر کو ہمارے کلاسیفائر نیٹ ورک کی پہلی لیئر کے طور پر استعمال کرکے، ہم بیگ آف ورڈز ماڈل سے **ایمبیڈنگ بیگ** ماڈل میں تبدیل ہو سکتے ہیں، جہاں ہم پہلے اپنے متن کے ہر لفظ کو متعلقہ ایمبیڈنگ میں تبدیل کرتے ہیں، اور پھر ان تمام ایمبیڈنگز پر کوئی مجموعی فنکشن جیسے `sum`، `average` یا `max` کا حساب لگاتے ہیں۔
 
-![پانچ سیکوئنس الفاظ کے لیے ایک ایمبیڈنگ کلاسیفائر کی تصویر۔](../../../../../translated_images/embedding-classifier-example.b77f021a7ee67eeec8e68bfe11636c5b97d6eaa067515a129bfb1d0034b1ac5b.ur.png)
+![پانچ سیکوئنس الفاظ کے لیے ایک ایمبیڈنگ کلاسیفائر کی تصویر۔](../../../../../translated_images/ur/embedding-classifier-example.b77f021a7ee67eee.webp)
 
 > تصویر مصنف کی جانب سے
 
@@ -40,7 +31,7 @@ CO_OP_TRANSLATOR_METADATA:
 
 CBoW تیز ہے، جبکہ اسکیپ-گرام سست ہے، لیکن کم استعمال ہونے والے الفاظ کی بہتر نمائندگی کرتا ہے۔
 
-![CBoW اور اسکیپ-گرام الگورتھمز کی تصویر جو الفاظ کو ویکٹرز میں تبدیل کرتے ہیں۔](../../../../../translated_images/example-algorithms-for-converting-words-to-vectors.fbe9207a726922f6f0f5de66427e8a6eda63809356114e28fb1fa5f4a83ebda7.ur.png)
+![CBoW اور اسکیپ-گرام الگورتھمز کی تصویر جو الفاظ کو ویکٹرز میں تبدیل کرتے ہیں۔](../../../../../translated_images/ur/example-algorithms-for-converting-words-to-vectors.fbe9207a726922f6.webp)
 
 > تصویر [اس مقالے](https://arxiv.org/pdf/1301.3781.pdf) سے
 

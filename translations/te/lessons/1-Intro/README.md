@@ -1,15 +1,6 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "f57e8aa46141fd220b16ffed8f11aec7",
-  "translation_date": "2025-11-25T20:52:23+00:00",
-  "source_file": "lessons/1-Intro/README.md",
-  "language_code": "te"
-}
--->
 # AI పరిచయం
 
-![AI పరిచయ విషయాల సారాంశం ఒక డ్రాయింగ్‌లో](../../../../translated_images/ai-intro.bf28d1ac4235881c096f0ffdb320ba4102940eafcca4e9d7a55a03914361f8f3.te.png)
+![AI పరిచయ విషయాల సారాంశం ఒక డ్రాయింగ్‌లో](../../../../translated_images/te/ai-intro.bf28d1ac4235881c.webp)
 
 > స్కెచ్‌నోట్: [Tomomi Imura](https://twitter.com/girlie_mac)
 
@@ -19,7 +10,7 @@ CO_OP_TRANSLATOR_METADATA:
 
 మూలంగా, కంప్యూటర్లు [చార్లెస్ బాబేజ్](https://en.wikipedia.org/wiki/Charles_Babbage) చేత సంఖ్యలపై ఒక సుస్పష్టమైన ప్రక్రియను అనుసరించి పనిచేయడానికి ఆవిష్కరించబడ్డాయి - ఒక అల్గోరిథం. ఆధునిక కంప్యూటర్లు, 19వ శతాబ్దంలో ప్రతిపాదించిన మోడల్ కంటే చాలా అభివృద్ధి చెందినప్పటికీ, ఇంకా నియంత్రిత గణనలను అనుసరిస్తాయి. కాబట్టి, లక్ష్యాన్ని సాధించడానికి అవసరమైన ఖచ్చితమైన దశలను మనం తెలుసుకుంటే, కంప్యూటర్‌ను ప్రోగ్రామ్ చేయడం సాధ్యం.
 
-![వ్యక్తి ఫోటో](../../../../translated_images/dsh_age.d212a30d4e54fb5f68b94a624aad64bc086124bcbbec9561ae5bd5da661e22d8.te.png)
+![వ్యక్తి ఫోటో](../../../../translated_images/te/dsh_age.d212a30d4e54fb5f.webp)
 
 > ఫోటో: [Vickie Soshnikova](http://twitter.com/vickievalerie)
 
@@ -46,7 +37,7 @@ CO_OP_TRANSLATOR_METADATA:
 
 **[మేధస్సు](https://en.wikipedia.org/wiki/Intelligence)** అనే పదం స్పష్టమైన నిర్వచనం లేకపోవడం ఒక సమస్య. మేధస్సు అనేది **సారాంశ ఆలోచన** లేదా **స్వీయ అవగాహన**కి సంబంధించినదని వాదించవచ్చు, కానీ దీన్ని సరైన రీతిలో నిర్వచించలేము.
 
-![పిల్లి ఫోటో](../../../../translated_images/photo-cat.8c8e8fb760ffe45725c5b9f6b0d954e9bf114475c01c55adf0303982851b7eae.te.jpg)
+![పిల్లి ఫోటో](../../../../translated_images/te/photo-cat.8c8e8fb760ffe457.webp)
 
 > ఫోటో: [Amber Kipp](https://unsplash.com/@sadmax) నుండి Unsplash
 
@@ -98,13 +89,13 @@ AGI గురించి మాట్లాడేటప్పుడు ని�
 
 > | ML గురించి ఏమిటి?         |      |
 > |--------------|-----------|
-> | డేటా ఆధారంగా సమస్య పరిష్కరించడానికి కంప్యూటర్ నేర్చుకునే కృత్రిమ మేధస్సు భాగం **మిషన్ లెర్నింగ్** అని పిలవబడుతుంది. ఈ కోర్సులో క్లాసికల్ మిషన్ లెర్నింగ్ చర్చించము - మీరు ప్రత్యేక [Machine Learning for Beginners](http://aka.ms/ml-beginners) పాఠ్యాంశాన్ని చూడండి. |   ![ML for Beginners](../../../../translated_images/ml-for-beginners.9e4fed176fd5817d7d1f7d358302515186579cbf09b2a6c5bd8092b345da7f22.te.png)    |
+> | డేటా ఆధారంగా సమస్య పరిష్కరించడానికి కంప్యూటర్ నేర్చుకునే కృత్రిమ మేధస్సు భాగం **మిషన్ లెర్నింగ్** అని పిలవబడుతుంది. ఈ కోర్సులో క్లాసికల్ మిషన్ లెర్నింగ్ చర్చించము - మీరు ప్రత్యేక [Machine Learning for Beginners](http://aka.ms/ml-beginners) పాఠ్యాంశాన్ని చూడండి. |   ![ML for Beginners](../../../../translated_images/te/ml-for-beginners.9e4fed176fd5817d.webp)    |
 
 ## AI చరిత్ర సంక్షిప్తంగా
 
 కృత్రిమ మేధస్సు 20వ శతాబ్ద మధ్యలో ఒక రంగంగా ప్రారంభమైంది. మొదట, సింబాలిక్ తర్కం ప్రాచుర్యం పొందింది, ఇది నిపుణుల వ్యవస్థలు వంటి విజయాలను తీసుకువచ్చింది – కొన్ని పరిమిత సమస్యల పరిధిలో నిపుణులుగా పనిచేసే కంప్యూటర్ ప్రోగ్రాములు. కానీ ఈ దృక్పథం విస్తరించలేదని స్పష్టమైంది. నిపుణుల నుండి జ్ఞానాన్ని సేకరించడం, కంప్యూటర్‌లో ప్రతినిధ్యం చేయడం, జ్ఞానాన్ని సరిగ్గా ఉంచడం చాలా క్లిష్టమైన పని మరియు చాలా ఖరీదైనది. ఇది 1970లలో [AI వింటర్](https://en.wikipedia.org/wiki/AI_winter)కి దారితీసింది.
 
-<img alt="AI చరిత్ర సంక్షిప్తం" src="../../../../translated_images/history-of-ai.7e83efa70b537f5a0264357672b0884cf3a220fbafe35c65d70b2c3805f7bf5e.te.png" width="70%"/>
+<img alt="AI చరిత్ర సంక్షిప్తం" src="../../../../translated_images/te/history-of-ai.7e83efa70b537f5a.webp" width="70%"/>
 
 > చిత్రం: [Dmitry Soshnikov](http://soshnikov.com)
 

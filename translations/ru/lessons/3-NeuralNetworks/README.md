@@ -1,15 +1,6 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "f862a99d88088163df12270e2f2ad6c3",
-  "translation_date": "2025-10-03T12:41:53+00:00",
-  "source_file": "lessons/3-NeuralNetworks/README.md",
-  "language_code": "ru"
-}
--->
 # Введение в нейронные сети
 
-![Краткое содержание введения в нейронные сети в виде рисунка](../../../../translated_images/ai-neuralnetworks.1c687ae40bc86e834f497844866a26d3e0886650a67a4bbe29442e2f157d3b18.ru.png)
+![Краткое содержание введения в нейронные сети в виде рисунка](../../../../translated_images/ru/ai-neuralnetworks.1c687ae40bc86e83.webp)
 
 Как мы обсуждали во введении, один из способов достижения интеллекта — это обучение **компьютерной модели** или **искусственного мозга**. С середины XX века исследователи пробовали различные математические модели, и в последние годы этот подход оказался чрезвычайно успешным. Такие математические модели мозга называются **нейронными сетями**.
 
@@ -36,13 +27,13 @@ CO_OP_TRANSLATOR_METADATA:
 
 Из биологии мы знаем, что наш мозг состоит из нейронных клеток (нейронов), каждая из которых имеет несколько "входов" (дендритов) и один "выход" (аксон). И дендриты, и аксоны могут проводить электрические сигналы, а соединения между ними — известные как синапсы — могут демонстрировать различные степени проводимости, которые регулируются нейромедиаторами.
 
-![Модель нейрона](../../../../translated_images/synapse-wikipedia.ed20a9e4726ea1c6a3ce8fec51c0b9bec6181946dca0fe4e829bc12fa3bacf01.ru.jpg) | ![Модель нейрона](../../../../translated_images/artneuron.1a5daa88d20ebe6f5824ddb89fba0bdaaf49f67e8230c1afbec42909df1fc17e.ru.png)
+![Модель нейрона](../../../../translated_images/ru/synapse-wikipedia.ed20a9e4726ea1c6.webp) | ![Модель нейрона](../../../../translated_images/ru/artneuron.1a5daa88d20ebe6f.webp)
 ----|----
 Реальный нейрон *([Изображение](https://en.wikipedia.org/wiki/Synapse#/media/File:SynapseSchematic_lines.svg) из Википедии)* | Искусственный нейрон *(Изображение автора)*
 
 Таким образом, самая простая математическая модель нейрона содержит несколько входов X<sub>1</sub>, ..., X<sub>N</sub> и один выход Y, а также ряд весов W<sub>1</sub>, ..., W<sub>N</sub>. Выход вычисляется как:
 
-<img src="../../../../translated_images/netout.1eb15eb76fd767313e067719f400cec4b0e5090239c3e997c29f6789d4c3c263.ru.png" alt="Y = f\left(\sum_{i=1}^N X_iW_i\right)" width="131" height="53" align="center"/>
+<img src="../../../../translated_images/ru/netout.1eb15eb76fd76731.webp" alt="Y = f\left(\sum_{i=1}^N X_iW_i\right)" width="131" height="53" align="center"/>
 
 где f — это некоторая нелинейная **функция активации**.
 

@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "6522312ff835796ca34136a9462fafb2",
-  "translation_date": "2025-09-23T12:13:52+00:00",
-  "source_file": "lessons/5-NLP/19-NER/README.md",
-  "language_code": "es"
-}
--->
 # Reconocimiento de Entidades Nombradas
 
 Hasta ahora, nos hemos concentrado principalmente en una tarea de PLN: la clasificación. Sin embargo, existen otras tareas de PLN que pueden realizarse con redes neuronales. Una de esas tareas es **[Reconocimiento de Entidades Nombradas](https://wikipedia.org/wiki/Named-entity_recognition)** (NER), que se ocupa de identificar entidades específicas dentro del texto, como lugares, nombres de personas, intervalos de tiempo, fórmulas químicas, entre otros.
@@ -17,7 +8,7 @@ Hasta ahora, nos hemos concentrado principalmente en una tarea de PLN: la clasif
 
 Supongamos que quieres desarrollar un chatbot de lenguaje natural, similar a Amazon Alexa o Google Assistant. La forma en que funcionan los chatbots inteligentes es *entendiendo* lo que el usuario quiere mediante la clasificación de texto en la frase de entrada. El resultado de esta clasificación es el llamado **intento**, que determina lo que el chatbot debe hacer.
 
-<img alt="Bot NER" src="images/bot-ner.png" width="50%"/>
+<img alt="Bot NER" src="../../../../../translated_images/es/bot-ner.4b09235dbb0ad275.webp" width="50%"/>
 
 > Imagen del autor
 
@@ -58,7 +49,7 @@ infant | O
 
 Dado que necesitamos construir una correspondencia uno a uno entre tokens y clases, podemos entrenar un modelo neuronal **muchos a muchos** como el que se muestra en esta imagen:
 
-![Imagen que muestra patrones comunes de redes neuronales recurrentes.](../../../../../translated_images/unreasonable-effectiveness-of-rnn.541ead816778f42dce6c42d8a56c184729aa2378d059b851be4ce12b993033df.es.jpg)
+![Imagen que muestra patrones comunes de redes neuronales recurrentes.](../../../../../translated_images/es/unreasonable-effectiveness-of-rnn.541ead816778f42d.webp)
 
 > *Imagen tomada de [este artículo](http://karpathy.github.io/2015/05/21/rnn-effectiveness/) de [Andrej Karpathy](http://karpathy.github.io/). Los modelos de clasificación de tokens NER corresponden a la arquitectura de red más a la derecha en esta imagen.*
 

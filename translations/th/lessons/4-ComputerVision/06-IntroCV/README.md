@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "feeca98225cb420afc89415f24f63d92",
-  "translation_date": "2025-09-23T09:04:26+00:00",
-  "source_file": "lessons/4-ComputerVision/06-IntroCV/README.md",
-  "language_code": "th"
-}
--->
 # บทนำสู่การมองเห็นด้วยคอมพิวเตอร์
 
 [Computer Vision](https://wikipedia.org/wiki/Computer_vision) เป็นสาขาหนึ่งที่มีเป้าหมายเพื่อให้คอมพิวเตอร์สามารถเข้าใจภาพดิจิทัลในระดับสูงได้ คำว่า *เข้าใจ* ในที่นี้มีความหมายกว้างมาก เช่น การค้นหาวัตถุในภาพ (**object detection**), การเข้าใจเหตุการณ์ที่เกิดขึ้น (**event detection**), การอธิบายภาพด้วยข้อความ หรือการสร้างฉากในรูปแบบ 3D นอกจากนี้ยังมีงานเฉพาะที่เกี่ยวข้องกับภาพมนุษย์ เช่น การประมาณอายุและอารมณ์, การตรวจจับและระบุตัวตนใบหน้า, และการประมาณท่าทางในรูปแบบ 3D เป็นต้น
@@ -73,14 +64,14 @@ im = cv2.cvtColor(im,cv2.COLOR_BGR2RGB)
 
 * **การประมวลผลภาพถ่ายของหนังสือเบรลล์** เรามุ่งเน้นที่การใช้ thresholding, การตรวจจับคุณลักษณะ, การแปลงมุมมอง และการปรับอาร์เรย์ NumPy เพื่อแยกสัญลักษณ์เบรลล์แต่ละตัวสำหรับการจำแนกผลลัพธ์โดยเครือข่ายประสาทเทียม
 
-![Braille Image](../../../../../translated_images/braille.341962ff76b1bd7044409371d3de09ced5028132aef97344ea4b7468c1208126.th.jpeg) | ![Braille Image Pre-processed](../../../../../translated_images/braille-result.46530fea020b03c76aac532d7d6eeef7f6fb35b55b1001cd21627907dabef3ed.th.png) | ![Braille Symbols](../../../../../translated_images/braille-symbols.0159185ab69d533909dc4d7d26a1971b51401c6a80eb3a5584f250ea880af88b.th.png)
+![Braille Image](../../../../../translated_images/th/braille.341962ff76b1bd70.webp) | ![Braille Image Pre-processed](../../../../../translated_images/th/braille-result.46530fea020b03c7.webp) | ![Braille Symbols](../../../../../translated_images/th/braille-symbols.0159185ab69d5339.webp)
 ----|-----|-----
 
 > ภาพจาก [OpenCV.ipynb](OpenCV.ipynb)
 
 * **การตรวจจับการเคลื่อนไหวในวิดีโอโดยใช้ความแตกต่างของเฟรม** หากกล้องอยู่ในตำแหน่งคงที่ เฟรมจากกล้องควรมีความคล้ายคลึงกันมาก โดยเฟรมที่แสดงผลเป็นอาร์เรย์ เพียงแค่ลบอาร์เรย์ของเฟรมสองเฟรมที่ต่อเนื่องกัน คุณจะได้ความแตกต่างของพิกเซล ซึ่งควรต่ำสำหรับเฟรมที่นิ่ง และสูงขึ้นเมื่อมีการเคลื่อนไหวในภาพ
 
-![Image of video frames and frame differences](../../../../../translated_images/frame-difference.706f805491a0883c938e16447bf5eb2f7d69e812c7f743cbe7d7c7645168f81f.th.png)
+![Image of video frames and frame differences](../../../../../translated_images/th/frame-difference.706f805491a0883c.webp)
 
 > ภาพจาก [OpenCV.ipynb](OpenCV.ipynb)
 
@@ -89,7 +80,7 @@ im = cv2.cvtColor(im,cv2.COLOR_BGR2RGB)
    - **Dense Optical Flow** คำนวณสนามเวกเตอร์ที่แสดงว่าพิกเซลแต่ละตัวเคลื่อนที่ไปที่ใด
    - **Sparse Optical Flow** ใช้คุณลักษณะเด่นในภาพ (เช่น ขอบ) และสร้างเส้นทางการเคลื่อนที่ของมันจากเฟรมหนึ่งไปยังอีกเฟรมหนึ่ง
 
-![Image of Optical Flow](../../../../../translated_images/optical.1f4a94464579a83a10784f3c07fe7228514714b96782edf50e70ccd59d2d8c4f.th.png)
+![Image of Optical Flow](../../../../../translated_images/th/optical.1f4a94464579a83a.webp)
 
 > ภาพจาก [OpenCV.ipynb](OpenCV.ipynb)
 
@@ -115,7 +106,7 @@ im = cv2.cvtColor(im,cv2.COLOR_BGR2RGB)
 
 ในห้องปฏิบัติการนี้ คุณจะถ่ายวิดีโอที่มีท่าทางง่าย ๆ และเป้าหมายของคุณคือการดึงการเคลื่อนไหวขึ้น/ลง/ซ้าย/ขวาโดยใช้ optical flow
 
-<img src="images/palm-movement.png" width="30%" alt="Palm Movement Frame"/>
+<img src="../../../../../translated_images/th/palm-movement.341495f0e9c47da3.webp" width="30%" alt="Palm Movement Frame"/>
 
 ---
 

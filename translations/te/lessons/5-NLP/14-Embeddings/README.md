@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "b708c9b85b833864c73c6281f1e6b96e",
-  "translation_date": "2025-11-25T22:55:15+00:00",
-  "source_file": "lessons/5-NLP/14-Embeddings/README.md",
-  "language_code": "te"
-}
--->
 # ఎంబెడ్డింగ్స్
 
 ## [ప్రీ-లెక్చర్ క్విజ్](https://ff-quizzes.netlify.app/en/ai/quiz/27)
@@ -19,7 +10,7 @@ BoW లేదా TF/IDF ఆధారంగా క్లాసిఫైయర్�
 
 మన క్లాసిఫైయర్ నెట్‌వర్క్‌లో మొదటి లేయర్‌గా ఎంబెడ్డింగ్ లేయర్ ఉపయోగించడం ద్వారా, మేము బాగ్-ఆఫ్-వర్డ్స్ నుండి **ఎంబెడ్డింగ్ బాగ్** మోడల్‌కు మారవచ్చు, ఇక్కడ మేము మొదట మన టెక్స్ట్‌లోని ప్రతి పదాన్ని సంబంధిత ఎంబెడ్డింగ్‌గా మార్చి, ఆ ఎంబెడ్డింగ్స్‌పై `sum`, `average` లేదా `max` వంటి ఏదైనా సమాహార ఫంక్షన్‌ను లెక్కిస్తాము.
 
-![ఐదు వరుస పదాల కోసం ఎంబెడ్డింగ్ క్లాసిఫైయర్ చూపిస్తున్న చిత్రం.](../../../../../translated_images/embedding-classifier-example.b77f021a7ee67eeec8e68bfe11636c5b97d6eaa067515a129bfb1d0034b1ac5b.te.png)
+![ఐదు వరుస పదాల కోసం ఎంబెడ్డింగ్ క్లాసిఫైయర్ చూపిస్తున్న చిత్రం.](../../../../../translated_images/te/embedding-classifier-example.b77f021a7ee67eee.webp)
 
 > చిత్రాన్ని రచయిత అందించారు
 
@@ -40,7 +31,7 @@ BoW లేదా TF/IDF ఆధారంగా క్లాసిఫైయర్�
 
 CBoW వేగంగా ఉంటుంది, స్కిప్-గ్రామ్ మందగిస్తుంది, కానీ అరుదైన పదాలను బాగా ప్రాతినిధ్యం చేస్తుంది.
 
-![పదాలను వెక్టర్లుగా మార్చడానికి CBoW మరియు స్కిప్-గ్రామ్ అల్గోరిథమ్స్ చూపిస్తున్న చిత్రం.](../../../../../translated_images/example-algorithms-for-converting-words-to-vectors.fbe9207a726922f6f0f5de66427e8a6eda63809356114e28fb1fa5f4a83ebda7.te.png)
+![పదాలను వెక్టర్లుగా మార్చడానికి CBoW మరియు స్కిప్-గ్రామ్ అల్గోరిథమ్స్ చూపిస్తున్న చిత్రం.](../../../../../translated_images/te/example-algorithms-for-converting-words-to-vectors.fbe9207a726922f6.webp)
 
 > చిత్రం [ఈ పేపర్](https://arxiv.org/pdf/1301.3781.pdf) నుండి
 

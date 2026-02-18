@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "51be6057374d01d70e07dd5ec88ebc0d",
-  "translation_date": "2025-09-23T08:34:23+00:00",
-  "source_file": "lessons/5-NLP/17-GenerativeNetworks/README.md",
-  "language_code": "it"
-}
--->
 # Reti Generative
 
 ## [Quiz pre-lezione](https://ff-quizzes.netlify.app/en/ai/quiz/33)
@@ -19,7 +10,7 @@ Nell'architettura RNN discussa nell'unità precedente, ogni unità RNN produceva
 
 Questo consente diverse architetture neurali, come mostrato nell'immagine seguente:
 
-![Immagine che mostra i modelli comuni di reti neurali ricorrenti.](../../../../../translated_images/unreasonable-effectiveness-of-rnn.541ead816778f42dce6c42d8a56c184729aa2378d059b851be4ce12b993033df.it.jpg)
+![Immagine che mostra i modelli comuni di reti neurali ricorrenti.](../../../../../translated_images/it/unreasonable-effectiveness-of-rnn.541ead816778f42d.webp)
 
 > Immagine tratta dal post del blog [Unreasonable Effectiveness of Recurrent Neural Networks](http://karpathy.github.io/2015/05/21/rnn-effectiveness/) di [Andrej Karpaty](http://karpathy.github.io/)
 
@@ -32,11 +23,11 @@ In questa unità, ci concentreremo su modelli generativi semplici che ci aiutano
 
 Addestreremo questa RNN per generare testo passo dopo passo. A ogni passo, prenderemo una sequenza di caratteri di lunghezza `nchars` e chiederemo alla rete di generare il carattere successivo per ciascun carattere di input:
 
-![Immagine che mostra un esempio di generazione RNN della parola 'HELLO'.](../../../../../translated_images/rnn-generate.56c54afb52f9781d63a7c16ea9c1b86cb70e6e1eae6a742b56b7b37468576b17.it.png)
+![Immagine che mostra un esempio di generazione RNN della parola 'HELLO'.](../../../../../translated_images/it/rnn-generate.56c54afb52f9781d.webp)
 
 Durante la generazione del testo (in fase di inferenza), iniziamo con un **prompt**, che viene passato attraverso le celle RNN per generare il suo stato intermedio, e da questo stato inizia la generazione. Generiamo un carattere alla volta, passando lo stato e il carattere generato a un'altra cella RNN per generare il successivo, fino a quando non abbiamo generato un numero sufficiente di caratteri.
 
-<img src="images/rnn-generate-inf.png" width="60%"/>
+<img src="../../../../../translated_images/it/rnn-generate-inf.5168dc65e0370eea.webp" width="60%"/>
 
 > Immagine dell'autore
 

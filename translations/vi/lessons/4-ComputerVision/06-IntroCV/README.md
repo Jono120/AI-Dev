@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "feeca98225cb420afc89415f24f63d92",
-  "translation_date": "2025-09-23T10:27:56+00:00",
-  "source_file": "lessons/4-ComputerVision/06-IntroCV/README.md",
-  "language_code": "vi"
-}
--->
 # Giới thiệu về Thị giác Máy tính
 
 [Thị giác Máy tính](https://wikipedia.org/wiki/Computer_vision) là một lĩnh vực nhằm giúp máy tính đạt được khả năng hiểu biết ở mức cao về hình ảnh kỹ thuật số. Đây là một định nghĩa khá rộng, bởi vì *hiểu biết* có thể mang nhiều ý nghĩa khác nhau, bao gồm việc tìm một đối tượng trong hình ảnh (**phát hiện đối tượng**), hiểu điều gì đang xảy ra (**phát hiện sự kiện**), mô tả hình ảnh bằng văn bản, hoặc tái tạo một cảnh trong không gian 3D. Ngoài ra còn có các nhiệm vụ đặc biệt liên quan đến hình ảnh con người: ước tính tuổi và cảm xúc, phát hiện và nhận diện khuôn mặt, và ước tính tư thế 3D, chỉ là một vài ví dụ.
@@ -73,14 +64,14 @@ Trong [OpenCV Notebook](OpenCV.ipynb), chúng tôi đưa ra một số ví dụ 
 
 * **Tiền xử lý một bức ảnh của sách chữ Braille**. Chúng tôi tập trung vào cách sử dụng ngưỡng, phát hiện đặc điểm, biến đổi phối cảnh và thao tác NumPy để tách các ký hiệu Braille riêng lẻ để phân loại thêm bằng mạng nơ-ron.
 
-![Hình ảnh Braille](../../../../../translated_images/braille.341962ff76b1bd7044409371d3de09ced5028132aef97344ea4b7468c1208126.vi.jpeg) | ![Hình ảnh Braille đã tiền xử lý](../../../../../translated_images/braille-result.46530fea020b03c76aac532d7d6eeef7f6fb35b55b1001cd21627907dabef3ed.vi.png) | ![Ký hiệu Braille](../../../../../translated_images/braille-symbols.0159185ab69d533909dc4d7d26a1971b51401c6a80eb3a5584f250ea880af88b.vi.png)
+![Hình ảnh Braille](../../../../../translated_images/vi/braille.341962ff76b1bd70.webp) | ![Hình ảnh Braille đã tiền xử lý](../../../../../translated_images/vi/braille-result.46530fea020b03c7.webp) | ![Ký hiệu Braille](../../../../../translated_images/vi/braille-symbols.0159185ab69d5339.webp)
 ----|-----|-----
 
 > Hình ảnh từ [OpenCV.ipynb](OpenCV.ipynb)
 
 * **Phát hiện chuyển động trong video bằng sự khác biệt giữa các khung hình**. Nếu camera cố định, thì các khung hình từ luồng camera sẽ khá giống nhau. Vì các khung hình được biểu diễn dưới dạng mảng, chỉ cần trừ các mảng của hai khung hình liên tiếp, chúng ta sẽ nhận được sự khác biệt pixel, điều này sẽ thấp đối với các khung hình tĩnh và trở nên cao hơn khi có chuyển động đáng kể trong hình ảnh.
 
-![Hình ảnh các khung hình video và sự khác biệt giữa các khung hình](../../../../../translated_images/frame-difference.706f805491a0883c938e16447bf5eb2f7d69e812c7f743cbe7d7c7645168f81f.vi.png)
+![Hình ảnh các khung hình video và sự khác biệt giữa các khung hình](../../../../../translated_images/vi/frame-difference.706f805491a0883c.webp)
 
 > Hình ảnh từ [OpenCV.ipynb](OpenCV.ipynb)
 
@@ -89,7 +80,7 @@ Trong [OpenCV Notebook](OpenCV.ipynb), chúng tôi đưa ra một số ví dụ 
    - **Dòng Quang học Dày đặc** tính toán trường vector cho thấy mỗi pixel đang di chuyển đến đâu.
    - **Dòng Quang học Thưa** dựa trên việc lấy một số đặc điểm nổi bật trong hình ảnh (ví dụ: các cạnh) và xây dựng quỹ đạo của chúng từ khung hình này sang khung hình khác.
 
-![Hình ảnh Dòng Quang học](../../../../../translated_images/optical.1f4a94464579a83a10784f3c07fe7228514714b96782edf50e70ccd59d2d8c4f.vi.png)
+![Hình ảnh Dòng Quang học](../../../../../translated_images/vi/optical.1f4a94464579a83a.webp)
 
 > Hình ảnh từ [OpenCV.ipynb](OpenCV.ipynb)
 
@@ -115,7 +106,7 @@ Xem [video này](https://docs.microsoft.com/shows/ai-show/ai-show--2021-opencv-a
 
 Trong bài thực hành này, bạn sẽ quay một video với các cử chỉ đơn giản, và mục tiêu của bạn là trích xuất các chuyển động lên/xuống/trái/phải bằng dòng quang học.
 
-<img src="images/palm-movement.png" width="30%" alt="Khung hình chuyển động lòng bàn tay"/>
+<img src="../../../../../translated_images/vi/palm-movement.341495f0e9c47da3.webp" width="30%" alt="Khung hình chuyển động lòng bàn tay"/>
 
 ---
 

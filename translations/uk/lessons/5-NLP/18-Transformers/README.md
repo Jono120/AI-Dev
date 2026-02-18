@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "f335dfcb4a993920504c387973a36957",
-  "translation_date": "2025-09-23T15:37:46+00:00",
-  "source_file": "lessons/5-NLP/18-Transformers/README.md",
-  "language_code": "uk"
-}
--->
 # Механізми уваги та трансформери
 
 ## [Тест перед лекцією](https://ff-quizzes.netlify.app/en/ai/quiz/35)
@@ -20,13 +11,13 @@ CO_OP_TRANSLATOR_METADATA:
 
 **Механізми уваги** забезпечують спосіб зважування контекстуального впливу кожного вхідного вектора на кожне передбачення виходу RNN. Це реалізується шляхом створення "коротких шляхів" між проміжними станами вхідної RNN та вихідної RNN. Таким чином, при генерації вихідного символу y<sub>t</sub>, ми враховуємо всі приховані стани h<sub>i</sub> вхідної мережі з різними коефіцієнтами ваги &alpha;<sub>t,i</sub>.
 
-![Зображення моделі кодер/декодер з додатковим шаром уваги](../../../../../translated_images/encoder-decoder-attention.7a726296894fb567aa2898c94b17b3289087f6705c11907df8301df9e5eeb3de.uk.png)
+![Зображення моделі кодер/декодер з додатковим шаром уваги](../../../../../translated_images/uk/encoder-decoder-attention.7a726296894fb567.webp)
 
 > Модель кодер-декодер з механізмом додаткової уваги у [Bahdanau et al., 2015](https://arxiv.org/pdf/1409.0473.pdf), цитовано з [цього блогу](https://lilianweng.github.io/lil-log/2018/06/24/attention-attention.html)
 
 Матриця уваги {&alpha;<sub>i,j</sub>} представляє ступінь, до якого певні слова у вході впливають на генерацію конкретного слова у вихідній послідовності. Нижче наведено приклад такої матриці:
 
-![Зображення прикладу вирівнювання, знайденого RNNsearch-50, взято з Bahdanau - arviz.org](../../../../../translated_images/bahdanau-fig3.09ba2d37f202a6af11de6c82d2d197830ba5f4528d9ea430eb65fd3a75065973.uk.png)
+![Зображення прикладу вирівнювання, знайденого RNNsearch-50, взято з Bahdanau - arviz.org](../../../../../translated_images/uk/bahdanau-fig3.09ba2d37f202a6af.webp)
 
 > Рисунок з [Bahdanau et al., 2015](https://arxiv.org/pdf/1409.0473.pdf) (Рис.3)
 
@@ -56,7 +47,7 @@ CO_OP_TRANSLATOR_METADATA:
 * Навчуване вбудовування, схоже на вбудовування токенів. Це підхід, який ми розглядаємо тут. Ми застосовуємо шари вбудовування як до токенів, так і до їх позицій, отримуючи вектори вбудовування однакових розмірів, які потім додаємо.
 * Фіксована функція позиційного кодування, як запропоновано в оригінальній статті.
 
-<img src="images/pos-embedding.png" width="50%"/>
+<img src="../../../../../translated_images/uk/pos-embedding.e41ce9b6cf6078af.webp" width="50%"/>
 
 > Зображення автора
 
@@ -66,7 +57,7 @@ CO_OP_TRANSLATOR_METADATA:
 
 Далі нам потрібно захопити певні шаблони в нашій послідовності. Для цього трансформери використовують механізм **самоуваги**, який, по суті, є увагою, застосованою до тієї ж послідовності як до входу, так і до виходу. Застосування самоуваги дозволяє враховувати **контекст** у реченні та бачити, які слова взаємопов'язані. Наприклад, це дозволяє бачити, до яких слів відносяться кореференції, такі як *це*, а також враховувати контекст:
 
-![](../../../../../translated_images/CoreferenceResolution.861924d6d384a7d68d8d0039d06a71a151f18a796b8b1330239d3590bd4947eb.uk.png)
+![](../../../../../translated_images/uk/CoreferenceResolution.861924d6d384a7d6.webp)
 
 > Зображення з [блогу Google](https://research.googleblog.com/2017/08/transformer-novel-neural-network.html)
 
@@ -91,7 +82,7 @@ CO_OP_TRANSLATOR_METADATA:
 
 **BERT** (Bidirectional Encoder Representations from Transformers) — це дуже велика багатошарова трансформерна мережа з 12 шарами для *BERT-base* і 24 для *BERT-large*. Модель спочатку проходить попереднє навчання на великому корпусі текстових даних (WikiPedia + книги) за допомогою ненаглядуваного навчання (передбачення замаскованих слів у реченні). Під час попереднього навчання модель засвоює значний рівень розуміння мови, який потім можна використовувати з іншими наборами даних за допомогою тонкого налаштування. Цей процес називається **трансферним навчанням**.
 
-![зображення з http://jalammar.github.io/illustrated-bert/](../../../../../translated_images/jalammarBERT-language-modeling-masked-lm.34f113ea5fec4362e39ee4381aab7cad06b5465a0b5f053a0f2aa05fbe14e746.uk.png)
+![зображення з http://jalammar.github.io/illustrated-bert/](../../../../../translated_images/uk/jalammarBERT-language-modeling-masked-lm.34f113ea5fec4362.webp)
 
 > Зображення [джерело](http://jalammar.github.io/illustrated-bert/)
 

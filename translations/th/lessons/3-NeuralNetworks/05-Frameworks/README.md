@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "ddd216f558a255260a9374008002c971",
-  "translation_date": "2025-09-23T09:11:23+00:00",
-  "source_file": "lessons/3-NeuralNetworks/05-Frameworks/README.md",
-  "language_code": "th"
-}
--->
 # เฟรมเวิร์กของโครงข่ายประสาทเทียม
 
 จากที่เราได้เรียนรู้ไปแล้ว การฝึกโครงข่ายประสาทเทียมให้มีประสิทธิภาพนั้นต้องทำสองสิ่งนี้:
@@ -58,7 +49,7 @@ Overfitting เป็นแนวคิดที่สำคัญมากใ�
 
 ลองพิจารณาปัญหาการประมาณค่าจุด 5 จุด (แสดงด้วย `x` ในกราฟด้านล่าง):
 
-![linear](../../../../../translated_images/overfit1.f24b71c6f652e59e6bed7245ffbeaecc3ba320e16e2221f6832b432052c4da43.th.jpg) | ![overfit](../../../../../translated_images/overfit2.131f5800ae10ca5e41d12a411f5f705d9ee38b1b10916f284b787028dd55cc1c.th.jpg)
+![linear](../../../../../translated_images/th/overfit1.f24b71c6f652e59e.webp) | ![overfit](../../../../../translated_images/th/overfit2.131f5800ae10ca5e.webp)
 -------------------------|--------------------------
 **โมเดลเชิงเส้น, 2 พารามิเตอร์** | **โมเดลไม่เชิงเส้น, 7 พารามิเตอร์**
 Training error = 5.3 | Training error = 0
@@ -79,7 +70,7 @@ Validation error = 5.1 | Validation error = 20
 
 จากกราฟด้านบน เราสามารถตรวจจับ overfitting ได้จาก training error ที่ต่ำมาก และ validation error ที่สูง โดยปกติระหว่างการฝึก เราจะเห็นทั้ง training และ validation error ลดลง แต่ในบางจุด validation error อาจหยุดลดลงและเริ่มเพิ่มขึ้น นี่เป็นสัญญาณของ overfitting และเป็นตัวบ่งชี้ว่าเราควรหยุดการฝึกในจุดนี้ (หรืออย่างน้อยควรบันทึกสถานะของโมเดล)
 
-![overfitting](../../../../../translated_images/Overfitting.408ad91cd90b4371d0a81f4287e1409c359751adeb1ae450332af50e84f08c3e.th.png)
+![overfitting](../../../../../translated_images/th/Overfitting.408ad91cd90b4371.webp)
 
 ## วิธีป้องกัน overfitting
 

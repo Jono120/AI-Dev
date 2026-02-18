@@ -1,23 +1,14 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "53faab85adfcebd8c10bcd71dc2fa557",
-  "translation_date": "2025-09-23T13:18:11+00:00",
-  "source_file": "lessons/4-ComputerVision/07-ConvNets/CNN_Architectures.md",
-  "language_code": "ko"
-}
--->
 # 잘 알려진 CNN 아키텍처
 
 ### VGG-16
 
 VGG-16은 2014년 ImageNet의 top-5 분류에서 92.7%의 정확도를 달성한 네트워크입니다. 이 네트워크는 다음과 같은 계층 구조를 가지고 있습니다:
 
-![ImageNet Layers](../../../../../translated_images/vgg-16-arch1.d901a5583b3a51baeaab3e768567d921e5d54befa46e1e642616c5458c934028.ko.jpg)
+![ImageNet Layers](../../../../../translated_images/ko/vgg-16-arch1.d901a5583b3a51ba.webp)
 
 보시다시피, VGG는 전통적인 피라미드 아키텍처를 따르며, 이는 컨볼루션-풀링 계층의 연속입니다.
 
-![ImageNet Pyramid](../../../../../translated_images/vgg-16-arch.64ff2137f50dd49fdaa786e3f3a975b3f22615efd13efb19c5d22f12e01451a1.ko.jpg)
+![ImageNet Pyramid](../../../../../translated_images/ko/vgg-16-arch.64ff2137f50dd49f.webp)
 
 > 이미지 출처: [Researchgate](https://www.researchgate.net/figure/Vgg16-model-structure-To-get-the-VGG-NIN-model-we-replace-the-2-nd-4-th-6-th-7-th_fig2_335194493)
 
@@ -25,7 +16,7 @@ VGG-16은 2014년 ImageNet의 top-5 분류에서 92.7%의 정확도를 달성한
 
 ResNet은 2015년 Microsoft Research에서 제안한 모델 계열입니다. ResNet의 핵심 아이디어는 **잔차 블록(residual blocks)**을 사용하는 것입니다:
 
-<img src="images/resnet-block.png" width="300"/>
+<img src="../../../../../translated_images/ko/resnet-block.aba4ccbcc0944434.webp" width="300"/>
 
 > 이미지 출처: [이 논문](https://arxiv.org/pdf/1512.03385.pdf)
 
@@ -37,7 +28,7 @@ ResNet은 2015년 Microsoft Research에서 제안한 모델 계열입니다. Res
 
 Google Inception 아키텍처는 이 아이디어를 한 단계 더 발전시켜, 각 네트워크 계층을 여러 경로의 조합으로 구성합니다:
 
-<img src="images/inception.png" width="400"/>
+<img src="../../../../../translated_images/ko/inception.a6605b85bcbc6f52.webp" width="400"/>
 
 > 이미지 출처: [Researchgate](https://www.researchgate.net/figure/Inception-module-with-dimension-reductions-left-and-schema-for-Inception-ResNet-v1_fig2_355547454)
 

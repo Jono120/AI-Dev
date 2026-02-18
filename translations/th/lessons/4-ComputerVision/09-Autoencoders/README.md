@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "1b8d9e1b3a6f1daa864b1ff3dfc3076d",
-  "translation_date": "2025-09-23T09:05:59+00:00",
-  "source_file": "lessons/4-ComputerVision/09-Autoencoders/README.md",
-  "language_code": "th"
-}
--->
 # ออโตเอนโคเดอร์
 
 เมื่อฝึก CNN หนึ่งในปัญหาคือเราต้องการข้อมูลที่มีการติดป้ายกำกับจำนวนมาก ในกรณีของการจำแนกภาพ เราต้องแยกภาพออกเป็นคลาสต่าง ๆ ซึ่งเป็นงานที่ต้องทำด้วยมือ
@@ -19,7 +10,7 @@ CO_OP_TRANSLATOR_METADATA:
 
 เนื่องจากเรากำลังฝึกออโตเอนโคเดอร์เพื่อจับข้อมูลจากภาพต้นฉบับให้ได้มากที่สุดเพื่อการสร้างใหม่ที่แม่นยำ เครือข่ายจึงพยายามค้นหา **การฝังตัว** ที่ดีที่สุดของภาพอินพุตเพื่อจับความหมายของภาพ
 
-![AutoEncoder Diagram](../../../../../translated_images/autoencoder_schema.5e6fc9ad98a5eb6197f3513cf3baf4dfbe1389a6ae74daebda64de9f1c99f142.th.jpg)
+![AutoEncoder Diagram](../../../../../translated_images/th/autoencoder_schema.5e6fc9ad98a5eb61.webp)
 
 > ภาพจาก [บล็อก Keras](https://blog.keras.io/building-autoencoders-in-keras.html)
 
@@ -46,7 +37,7 @@ VAE คือออโตเอนโคเดอร์ที่เรียน�
 * เราสุ่มเวกเตอร์ `sample` จากการแจกแจง N(z<sub>mean</sub>,exp(z<sub>log\_sigma</sub>))
 * ดีโคเดอร์พยายามถอดรหัสภาพต้นฉบับโดยใช้ `sample` เป็นเวกเตอร์อินพุต
 
-<img src="images/vae.png" width="50%">
+<img src="../../../../../translated_images/th/vae.464c465a5b6a9e25.webp" width="50%">
 
 > ภาพจาก [บล็อกโพสต์นี้](https://ijdykeman.github.io/ml/2016/12/21/cvae.html) โดย Isaak Dykeman
 
@@ -57,13 +48,13 @@ VAE คือออโตเอนโคเดอร์ที่เรียน�
 
 ข้อดีสำคัญของ VAE คือมันช่วยให้เราสร้างภาพใหม่ได้ง่ายขึ้น เพราะเรารู้ว่าควรสุ่มเวกเตอร์แฝงจากการแจกแจงใด ตัวอย่างเช่น หากเราฝึก VAE ด้วยเวกเตอร์แฝง 2 มิติบน MNIST เราสามารถเปลี่ยนแปลงองค์ประกอบของเวกเตอร์แฝงเพื่อให้ได้ตัวเลขต่าง ๆ:
 
-<img alt="vaemnist" src="images/vaemnist.png" width="50%"/>
+<img alt="vaemnist" src="../../../../../translated_images/th/vaemnist.cab9e602dc08dc50.webp" width="50%"/>
 
 > ภาพโดย [Dmitry Soshnikov](http://soshnikov.com)
 
 สังเกตว่าภาพผสมกันอย่างไร เมื่อเราเริ่มได้เวกเตอร์แฝงจากส่วนต่าง ๆ ของพื้นที่พารามิเตอร์แฝง เราสามารถแสดงภาพพื้นที่นี้ใน 2 มิติได้เช่นกัน:
 
-<img alt="vaemnist cluster" src="images/vaemnist-diag.png" width="50%"/> 
+<img alt="vaemnist cluster" src="../../../../../translated_images/th/vaemnist-diag.694315f775d5d666.webp" width="50%"/> 
 
 > ภาพโดย [Dmitry Soshnikov](http://soshnikov.com)
 

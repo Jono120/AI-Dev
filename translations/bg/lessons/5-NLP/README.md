@@ -1,15 +1,6 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "8ef02a9318257ea140ed3ed74442096d",
-  "translation_date": "2025-08-25T21:28:50+00:00",
-  "source_file": "lessons/5-NLP/README.md",
-  "language_code": "bg"
-}
--->
 # Обработка на естествен език
 
-![Обобщение на задачите в NLP в рисунка](../../../../translated_images/ai-nlp.b22dcb8ca4707ceaee8576db1c5f4089c8cac2f454e9e03ea554f07fda4556b8.bg.png)
+![Обобщение на задачите в NLP в рисунка](../../../../translated_images/bg/ai-nlp.b22dcb8ca4707cea.webp)
 
 В тази секция ще се фокусираме върху използването на невронни мрежи за решаване на задачи, свързани с **обработката на естествен език (NLP)**. Съществуват много NLP проблеми, които искаме компютрите да могат да решават:
 

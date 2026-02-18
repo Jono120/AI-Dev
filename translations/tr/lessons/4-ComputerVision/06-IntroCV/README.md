@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "feeca98225cb420afc89415f24f63d92",
-  "translation_date": "2025-09-23T08:39:22+00:00",
-  "source_file": "lessons/4-ComputerVision/06-IntroCV/README.md",
-  "language_code": "tr"
-}
--->
 # Bilgisayarlı Görüye Giriş
 
 [Bilgisayarlı Görü](https://wikipedia.org/wiki/Computer_vision), bilgisayarların dijital görüntüleri yüksek seviyede anlamasını sağlamayı amaçlayan bir disiplindir. Bu oldukça geniş bir tanımdır çünkü *anlama* birçok farklı şeyi ifade edebilir; bir resimdeki nesneyi bulmak (**nesne tespiti**), ne olduğunu anlamak (**olay tespiti**), bir resmi metinle açıklamak veya bir sahneyi 3D olarak yeniden oluşturmak gibi. İnsan görüntüleriyle ilgili özel görevler de vardır: yaş ve duygu tahmini, yüz tespiti ve tanımlama, 3D duruş tahmini gibi.
@@ -73,14 +64,14 @@ Bir görüntüyü sinir ağına beslemeden önce, birkaç ön işleme adımı uy
 
 * **Braille kitabının bir fotoğrafını ön işleme**. Eşikleme, özellik tespiti, perspektif dönüşümü ve NumPy manipülasyonlarını kullanarak bireysel Braille sembollerini bir sinir ağı tarafından daha fazla sınıflandırma için ayırmaya odaklanıyoruz.
 
-![Braille Görüntüsü](../../../../../translated_images/braille.341962ff76b1bd7044409371d3de09ced5028132aef97344ea4b7468c1208126.tr.jpeg) | ![Braille Görüntüsü Ön İşlenmiş](../../../../../translated_images/braille-result.46530fea020b03c76aac532d7d6eeef7f6fb35b55b1001cd21627907dabef3ed.tr.png) | ![Braille Sembolleri](../../../../../translated_images/braille-symbols.0159185ab69d533909dc4d7d26a1971b51401c6a80eb3a5584f250ea880af88b.tr.png)
+![Braille Görüntüsü](../../../../../translated_images/tr/braille.341962ff76b1bd70.webp) | ![Braille Görüntüsü Ön İşlenmiş](../../../../../translated_images/tr/braille-result.46530fea020b03c7.webp) | ![Braille Sembolleri](../../../../../translated_images/tr/braille-symbols.0159185ab69d5339.webp)
 ----|-----|-----
 
 > Görüntü [OpenCV.ipynb](OpenCV.ipynb) dosyasından alınmıştır.
 
 * **Video içinde hareketi kare farkı kullanarak tespit etme**. Kamera sabit ise, kamera akışından gelen kareler birbirine oldukça benzer olmalıdır. Kareler diziler olarak temsil edildiğinden, iki ardışık kare için bu dizileri çıkararak piksel farkını elde edebiliriz; bu fark statik kareler için düşük olmalı ve görüntüde önemli bir hareket olduğunda artmalıdır.
 
-![Video kareleri ve kare farkları görüntüsü](../../../../../translated_images/frame-difference.706f805491a0883c938e16447bf5eb2f7d69e812c7f743cbe7d7c7645168f81f.tr.png)
+![Video kareleri ve kare farkları görüntüsü](../../../../../translated_images/tr/frame-difference.706f805491a0883c.webp)
 
 > Görüntü [OpenCV.ipynb](OpenCV.ipynb) dosyasından alınmıştır.
 
@@ -89,7 +80,7 @@ Bir görüntüyü sinir ağına beslemeden önce, birkaç ön işleme adımı uy
    - **Yoğun Optik Akış**, her pikselin nereye hareket ettiğini gösteren vektör alanını hesaplar.
    - **Seyrek Optik Akış**, görüntüdeki bazı belirgin özellikleri (örneğin kenarları) alır ve bunların kareden kareye olan hareket yolunu oluşturur.
 
-![Optik Akış Görüntüsü](../../../../../translated_images/optical.1f4a94464579a83a10784f3c07fe7228514714b96782edf50e70ccd59d2d8c4f.tr.png)
+![Optik Akış Görüntüsü](../../../../../translated_images/tr/optical.1f4a94464579a83a.webp)
 
 > Görüntü [OpenCV.ipynb](OpenCV.ipynb) dosyasından alınmıştır.
 
@@ -115,7 +106,7 @@ Optik akış hakkında daha fazla bilgi edinmek için [bu harika eğitimi](https
 
 Bu laboratuvarda, basit jestlerle bir video çekeceksiniz ve amacınız optik akış kullanarak yukarı/aşağı/sol/sağ hareketlerini çıkarmaktır.
 
-<img src="images/palm-movement.png" width="30%" alt="Avuç İçi Hareketi Kare"/>
+<img src="../../../../../translated_images/tr/palm-movement.341495f0e9c47da3.webp" width="30%" alt="Avuç İçi Hareketi Kare"/>
 
 ---
 

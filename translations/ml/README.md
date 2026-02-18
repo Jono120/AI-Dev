@@ -1,174 +1,176 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "4ed9993bca581850c983c95d5a3f57eb",
-  "translation_date": "2025-12-25T02:17:03+00:00",
-  "source_file": "README.md",
-  "language_code": "ml"
-}
--->
-[![GitHub ലൈസൻസ്](https://img.shields.io/github/license/microsoft/AI-For-Beginners.svg)](https://github.com/microsoft/AI-For-Beginners/blob/main/LICENSE)
-[![GitHub സംഭാവകർ](https://img.shields.io/github/contributors/microsoft/AI-For-Beginners.svg)](https://GitHub.com/microsoft/AI-For-Beginners/graphs/contributors/)
-[![GitHub പ്രശ്നങ്ങൾ](https://img.shields.io/github/issues/microsoft/AI-For-Beginners.svg)](https://GitHub.com/microsoft/AI-For-Beginners/issues/)
-[![GitHub പുൾ-റിക്വസ്റ്റുകൾ](https://img.shields.io/github/issues-pr/microsoft/AI-For-Beginners.svg)](https://GitHub.com/microsoft/AI-For-Beginners/pulls/)
-[![PRs സ്വാഗതം](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
+[![GitHub license](https://img.shields.io/github/license/microsoft/AI-For-Beginners.svg)](https://github.com/microsoft/AI-For-Beginners/blob/main/LICENSE)
+[![GitHub contributors](https://img.shields.io/github/contributors/microsoft/AI-For-Beginners.svg)](https://GitHub.com/microsoft/AI-For-Beginners/graphs/contributors/)
+[![GitHub issues](https://img.shields.io/github/issues/microsoft/AI-For-Beginners.svg)](https://GitHub.com/microsoft/AI-For-Beginners/issues/)
+[![GitHub pull-requests](https://img.shields.io/github/issues-pr/microsoft/AI-For-Beginners.svg)](https://GitHub.com/microsoft/AI-For-Beginners/pulls/)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 
-[![GitHub കാണുന്നവർ](https://img.shields.io/github/watchers/microsoft/AI-For-Beginners.svg?style=social&label=Watch)](https://GitHub.com/microsoft/AI-For-Beginners/watchers/)
-[![GitHub ഫോർക്ക്‌സ്](https://img.shields.io/github/forks/microsoft/AI-For-Beginners.svg?style=social&label=Fork)](https://GitHub.com/microsoft/AI-For-Beginners/network/)
-[![GitHub നക്ഷത്രങ്ങൾ](https://img.shields.io/github/stars/microsoft/AI-For-Beginners.svg?style=social&label=Star)](https://GitHub.com/microsoft/AI-For-Beginners/stargazers/)
+[![GitHub watchers](https://img.shields.io/github/watchers/microsoft/AI-For-Beginners.svg?style=social&label=Watch)](https://GitHub.com/microsoft/AI-For-Beginners/watchers/)
+[![GitHub forks](https://img.shields.io/github/forks/microsoft/AI-For-Beginners.svg?style=social&label=Fork)](https://GitHub.com/microsoft/AI-For-Beginners/network/)
+[![GitHub stars](https://img.shields.io/github/stars/microsoft/AI-For-Beginners.svg?style=social&label=Star)](https://GitHub.com/microsoft/AI-For-Beginners/stargazers/)
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/microsoft/ai-for-beginners/HEAD)
 [![Gitter](https://badges.gitter.im/Microsoft/ai-for-beginners.svg)](https://gitter.im/Microsoft/ai-for-beginners?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
-[![Microsoft Foundry ഡിസ്കോർഡ്](https://dcbadge.limes.pink/api/server/nTYy5BXMWG)](https://discord.gg/nTYy5BXMWG)
+[![Microsoft Foundry Discord](https://dcbadge.limes.pink/api/server/nTYy5BXMWG)](https://discord.gg/nTYy5BXMWG)
 
-# Artificial Intelligence for Beginners - A Curriculum
+# ന്യൂകരുതലിന്റെ പരിചയം - ഒരു പാഠ്യപദ്ധതി
 
-|![സ്കെറ്റ്ച്നോട്ട് - @girlie_mac https://twitter.com/girlie_mac](../../translated_images/ai-overview.0857791951d19500d0ef8b803d77110c738dcafc52306e6d68724742cd4af167.ml.png)|
+|![Sketchnote by @girlie_mac https://twitter.com/girlie_mac](../../translated_images/ml/ai-overview.0857791951d19500.webp)|
 |:---:|
-| AI For Beginners - _സ്കെറ്റ്ച്നോട്ട് by [@girlie_mac](https://twitter.com/girlie_mac)_ |
+| ന്യൂകരുതൽ ഫോർ ബിഗിനേഴ്സ് - _സ്കെച്ച്നോട്ട് [@girlie_mac](https://twitter.com/girlie_mac) എന്നതിലൂടെ_ |
 
-12 ആഴ്‌ചകൾ, 24 പാഠങ്ങൾ എന്നിവയുള്ള നമ്മുടെ പാഠ്യക്രമത്തിലൂടെ **ആർട്ടിഫിഷ്യൽ ഇന്റലിജൻസ്** (AI) ലോകത്തെ അന്വേഷിക്കൂ! ഇതിൽ പ്രായോഗിക പാഠങ്ങൾ, ക്വിസുകൾ, ലാബ് പ്രവർത്തനങ്ങൾ എന്നിവ അടങ്ങിയിരിക്കുന്നു. പാഠ്യക്രമം തുടക്കക്കാർക്ക് അനുയോജ്യമാണ് കൂടാതെ TensorFlow, PyTorch പോലുള്ള ടൂളുകൾക്കും AI നിൽക്കുന്നത് സംബന്ധിച്ച നൈതികതക്കും ഉൾക്കൊള്ളുന്നു
+**ന്യൂകരുതലിന്റെ (Artificial Intelligence)** ലോകം 12 ആഴ്ചകൾ, 24 പാഠങ്ങൾ ഉള്ള പാഠ്യപദ്ധതിയുമായി പരിശോധിക്കുക!  ഇതിൽ പ്രായോഗിക പാഠങ്ങൾ, ചോദ്യാവലികൾ, ലബുകൾ ഉൾപ്പെടുത്തിയിരിക്കുന്നു. ഈ പാഠ്യപദ്ധതി തുടക്കക്കാർക്ക് അനുയോജ്യമായതാണും TensorFlow, PyTorch പോലെയുള്ള ഉപകരണങ്ങളെയും AI-യിലെ നയതന്ത്രങ്ങളെയും ഉൾക്കൊള്ളുന്നു.
 
-### 🌐 ബഹുഭാഷಾ പിന്തുണ
 
-#### GitHub Action മുഖേന പിന്തുണ (സ്വയകാരികവും ഏപ്പോഴും അപ്-ടു-ഡേറ്റ് ആയതിനാൽ)
+### 🌐 ബഹുഭാഷാ പിന്തുണ
+
+#### ഗിറ്റ്‌ഹബ് ആക്ഷൻ വഴി പിന്തുണ ( സ്വയം പ്രവർത്തിക്കുന്നതും എപ്പോഴും പുതുക്കുന്നതും)
 
 <!-- CO-OP TRANSLATOR LANGUAGES TABLE START -->
-[അറബി](../ar/README.md) | [ബംഗാളി](../bn/README.md) | [ബൾഗേറിയൻ](../bg/README.md) | [ബർമീസ് (മ്യാൻമാർ)](../my/README.md) | [ചൈനീസ് (സിംപ്ലിഫൈഡ്)](../zh/README.md) | [ചൈനീസ് (പരമ്പരാഗതം, ഹോങ്കോങ്)](../hk/README.md) | [ചൈനീസ് (പരമ്പരാഗതം, മക്കാവോ)](../mo/README.md) | [ചൈനീസ് (പരമ്പരാഗതം, തൈവാൻ)](../tw/README.md) | [ക്രൊയേഷ്യൻ](../hr/README.md) | [ചെക്ക്](../cs/README.md) | [ഡാനിഷ്](../da/README.md) | [ഡച്ചുഭാഷ](../nl/README.md) | [എസ്റ്റോണിയൻ](../et/README.md) | [ഫിനിഷ്](../fi/README.md) | [ഫ്രഞ്ച്](../fr/README.md) | [ജർമ്മൻ](../de/README.md) | [ഗ്രീക്ക്](../el/README.md) | [ഹീബ്രു](../he/README.md) | [ഹിന്ദി](../hi/README.md) | [ഹംഗേറിയൻ](../hu/README.md) | [ഇന്തോനേഷ്യൻ](../id/README.md) | [ഇറ്റാലിയൻ](../it/README.md) | [ജാപ്പനീസ്](../ja/README.md) | [ಕನ್ನಡ](../kn/README.md) | [കൊറിയൻ](../ko/README.md) | [ലിതുവേനിയൻ](../lt/README.md) | [മലേ](../ms/README.md) | [മലയാളം](./README.md) | [മറാത്തി](../mr/README.md) | [नेपाली](../ne/README.md) | [നൈജീരിയൻ പിഡ്ജിൻ](../pcm/README.md) | [നോർവീജിയൻ](../no/README.md) | [പെർഷ്യൻ (ഫാർസി)](../fa/README.md) | [പോളിഷ്](../pl/README.md) | [പോർതുഗീസ് (ബ്രസീൽ)](../br/README.md) | [പോർതുഗീസ് (പോർച്ചുഗൽ)](../pt/README.md) | [പഞ്ചാബി (ഗੁਰുമുഖി)](../pa/README.md) | [റൊമാനിയൻ](../ro/README.md) | [റഷ്യൻ](../ru/README.md) | [സർബിയൻ (സിറില്ലിക്)](../sr/README.md) | [സ്ലോവാക്](../sk/README.md) | [സ്ലൊവേനിയൻ](../sl/README.md) | [സ്പാനിഷ്](../es/README.md) | [സ്വാഹിലി](../sw/README.md) | [സ്വീഡിഷ്](../sv/README.md) | [തഗാലോഗ് (ഫിലിപ്പിനോ)](../tl/README.md) | [தமிழ്](../ta/README.md) | [తెలుగు](../te/README.md) | [തായ്](../th/README.md) | [ടർക്കിഷ്](../tr/README.md) | [യുക്രെയ്നിയൻ](../uk/README.md) | [ഉർദു](../ur/README.md) | [വിയറ്റ്നാമീസ്](../vi/README.md)
+[Arabic](../ar/README.md) | [Bengali](../bn/README.md) | [Bulgarian](../bg/README.md) | [Burmese (Myanmar)](../my/README.md) | [Chinese (Simplified)](../zh-CN/README.md) | [Chinese (Traditional, Hong Kong)](../zh-HK/README.md) | [Chinese (Traditional, Macau)](../zh-MO/README.md) | [Chinese (Traditional, Taiwan)](../zh-TW/README.md) | [Croatian](../hr/README.md) | [Czech](../cs/README.md) | [Danish](../da/README.md) | [Dutch](../nl/README.md) | [Estonian](../et/README.md) | [Finnish](../fi/README.md) | [French](../fr/README.md) | [German](../de/README.md) | [Greek](../el/README.md) | [Hebrew](../he/README.md) | [Hindi](../hi/README.md) | [Hungarian](../hu/README.md) | [Indonesian](../id/README.md) | [Italian](../it/README.md) | [Japanese](../ja/README.md) | [Kannada](../kn/README.md) | [Korean](../ko/README.md) | [Lithuanian](../lt/README.md) | [Malay](../ms/README.md) | [Malayalam](./README.md) | [Marathi](../mr/README.md) | [Nepali](../ne/README.md) | [Nigerian Pidgin](../pcm/README.md) | [Norwegian](../no/README.md) | [Persian (Farsi)](../fa/README.md) | [Polish](../pl/README.md) | [Portuguese (Brazil)](../pt-BR/README.md) | [Portuguese (Portugal)](../pt-PT/README.md) | [Punjabi (Gurmukhi)](../pa/README.md) | [Romanian](../ro/README.md) | [Russian](../ru/README.md) | [Serbian (Cyrillic)](../sr/README.md) | [Slovak](../sk/README.md) | [Slovenian](../sl/README.md) | [Spanish](../es/README.md) | [Swahili](../sw/README.md) | [Swedish](../sv/README.md) | [Tagalog (Filipino)](../tl/README.md) | [Tamil](../ta/README.md) | [Telugu](../te/README.md) | [Thai](../th/README.md) | [Turkish](../tr/README.md) | [Ukrainian](../uk/README.md) | [Urdu](../ur/README.md) | [Vietnamese](../vi/README.md)
+
+> **പ്രാദേശികമായി ക്ലോൺ ചെയ്യാനാഗ്രഹമുണ്ടോ?**
+
+> ഈ റിപ്പോസിടറിയിൽ 50+ ഭാഷാ വിവർത്തനങ്ങൾ ഉൾപ്പെടുത്തിയതാണ്, ഇത് ഡൗൺലോഡ് വലിപ്പം വളരെ വർദ്ധിപ്പിക്കുന്നു. വിവർത്തനങ്ങൾ ഇല്ലാതെ ക്ലോൺ ചെയ്യാൻ sparse checkout ഉപയോഗിക്കാം:
+> ```bash
+> git clone --filter=blob:none --sparse https://github.com/microsoft/AI-For-Beginners.git
+> cd AI-For-Beginners
+> git sparse-checkout set --no-cone '/*' '!translations' '!translated_images'
+> ```
+> ഇത് കോഴ്സ് പൂർത്തിയാക്കാൻ ആവശ്യമായ എല്ലാ വസ്തുക്കളും വളരെ വേഗത്തിൽ ഡൗൺലോഡ് ചെയ്യാൻ നിങ്ങളെ സഹായിക്കും.
 <!-- CO-OP TRANSLATOR LANGUAGES TABLE END -->
 
-**കൂടുതൽ തരംഭാഷാ പിന്തുണ ചേർക്കണമെങ്കിൽ പിന്തുണ ചെയ്യപ്പെടുന്ന ഭാഷകളുടെ ലിസ്റ്റ് [ഇവിടെ](https://github.com/Azure/co-op-translator/blob/main/getting_started/supported-languages.md) കാണാം**
+**കൂടുതൽ വിവർത്തന ഭാഷകൾ സപ്പോർട്ട് ചെയ്യാൻ ആഗ്രഹിക്കുന്നുവെങ്കിൽ അവ ഇവിടെ ലിസ്റ്റ് ചെയ്തിരിക്കുന്നു [here](https://github.com/Azure/co-op-translator/blob/main/getting_started/supported-languages.md)**
 
-## കമ്മ്യൂണിറ്റിയിൽ ചേർക്കുക
-[![Microsoft Foundry ഡിസ്കോർഡ്](https://dcbadge.limes.pink/api/server/nTYy5BXMWG)](https://discord.gg/nTYy5BXMWG)
+## കമ്മ്യൂണിറ്റിയിൽ ചേരൂ
+[![Microsoft Foundry Discord](https://dcbadge.limes.pink/api/server/nTYy5BXMWG)](https://discord.gg/nTYy5BXMWG)
 
-## നിങ്ങൾ എന്ത് പഠിക്കും
+## നിങ്ങൾ പഠിക്കാൻ പോകുന്നത്
 
-**[കോഴ്‌സിന്റെ മൈൻഡ്‌മാപ്പ്](http://soshnikov.com/courses/ai-for-beginners/mindmap.html)**
+**[കോഴ്സിന്റെ മൈൻഡ് മാപ്പ്](http://soshnikov.com/courses/ai-for-beginners/mindmap.html)**
 
-ഈ പാഠ്യക്രമത്തിൽ നിങ്ങൾ താഴെപ്പറയുന്നവയെ പഠിക്കും:
+ഈ പാഠ്യപദ്ധതിയിൽ നിങ്ങൾ പഠിക്കാൻ പോകുന്നത്:
 
-* ആർട്ടിഫിഷ്യൽ ഇന്റലിജൻസിന്റെ വ്യത്യസ്ത സമീപനങ്ങൾ, അതിൽ "പാരമ്പര്യ" സിംബോളിക് സമീപനവും **ജ്ഞാന പ്രതിനിധീകരണം** (Knowledge Representation) மற்றும் ന്യായീകരണവും ഉൾപ്പെടുന്നു ([GOFAI](https://en.wikipedia.org/wiki/Symbolic_artificial_intelligence)).
-* നൂറൽ നെറ്റ്‌വർക്ക്‌കളും **ഡി‌പ്ലേർണിംഗും**, ഇവയാണ് ആധുനിക AI യുടെ കേന്ദ്ര. ഈ പ്രധാന വിഷയങ്ങളുടെ ആശയങ്ങൾ രണ്ട് പ്രശസ്ത ഫ്രെയിംവർക്കുകളിൽ — [TensorFlow](http://Tensorflow.org) మరియు [PyTorch](http://pytorch.org) — ഉള്ള കോഡ് ഉപയോഗിച്ച് വിശദീകരിക്കും.
-* ചിത്രങ്ങളുമായി һәм ടെക്സ്റ്റുമായി പ്രവർത്തിക്കാൻ ഉപയോഗിക്കുന്ന നൂറൽ ആർക്കിടെക്ചറുകൾ. പുതിയ മോഡലുകൾ couvrir ചെയ്യും, പക്ഷേ ഏറ്റവും state-of-the-art നിലവാരത്തിൽ ചില കുറവുകൾ ഉണ്ടായിരിക്കാം.
-* കുറച്ച് പരമപ്രചാരത്തിലുള്ള AI സമീപനങ്ങൾ, ഉദാഹരണത്തിന് **ജെനെറ്റിക് ആൽഗോരിഥങ്ങൾ** (Genetic Algorithms) და **മൾട്ടി-ഏജന്റ് സിസ്റ്റങ്ങൾ** (Multi-Agent Systems).
+* വ്യത്യസ്ത കൃത്രിമ ബുദ്ധിമുട്ട് സമീപനങ്ങൾ, "നല്ല പഴയ" പ്രാതിനിധ്യരീതിയായ **Knowledge Representation** നും കാരണം കണ്ടെത്തലും ഉൾപ്പെടുന്നു ([GOFAI](https://en.wikipedia.org/wiki/Symbolic_artificial_intelligence)).
+* ആധുനിക AI-യുടെ മദ്ധ്യത്തിൽ നിന്നുള്ള **Neural Networks** ഉം **Deep Learning** ഉം. പണിമുടക്കുകൾ നോക്കിക്കാണാൻ ഞങ്ങൾ ഈ പ്രധാന വിഷയങ്ങളുടെ ആശയങ്ങൾ രണ്ട് പേരിൽ കൊണ്ട് പ്രയോഗിച്ചിരിക്കുന്നു - [TensorFlow](http://Tensorflow.org)  ഉം [PyTorch](http://pytorch.org)  ഉം.
+* ചിത്രങ്ങൾക്കും ടെക്സ്റ്റിനും വേണ്ടി പ്രവർത്തിക്കുന്ന **Neural Architectures**. പുതിയ ഇറങ്ങാഴ്ചകൾ ഉൾപ്പെടുത്തുന്നുണ്ടെങ്കിലും ഏറ്റവും പുതിയ നിലവാരത്തിൽ കുറവ് ഉണ്ടാകാം.
+* കുറെയധികം പ്രചാരത്തിലുള്ള പുതിയ AI സമീപനങ്ങൾ, ഉദാഹരണത്തിന് **Genetic Algorithms** ഉം **Multi-Agent Systems** ഉം.
 
-ഈ പാഠ്യക്രമത്തിൽ ഞങ്ങൾ ഉൾപ്പെടുത്തുകയില്ലാത്തവ:
+ഈ പാഠ്യപദ്ധതിയിൽ ഉൾപ്പെടുത്താത്ത വിഷയങ്ങൾ:
 
-> [ഈ കോഴ്സിന് ബന്ധപ്പെട്ട എല്ലാ അധിക വിഭവങ്ങളും നമ്മുടെ Microsoft Learn കളക്ഷനിൽ കണ്ടെത്തുക](https://learn.microsoft.com/en-us/collections/7w28iy2xrqzdj0?WT.mc_id=academic-77998-bethanycheum)
+> [ഈ കോഴ്സിനായുള്ള എല്ലാ അധിക സാമഗ്രികളും ഞങ്ങളുടെ Microsoft Learn ശേഖരത്തിൽ കാണുക](https://learn.microsoft.com/en-us/collections/7w28iy2xrqzdj0?WT.mc_id=academic-77998-bethanycheum)
 
-* ബിസിനസിൽ **AI ഉപയോഗിക്കുന്ന** ബിസിനസ് കേസുകൾ. ഇതിന് Microsoft Learn ൽ ഉള്ള [Introduction to AI for business users](https://docs.microsoft.com/learn/paths/introduction-ai-for-business-users/?WT.mc_id=academic-77998-bethanycheum) പഠനപഥം പരിഗണിക്കുക, അല്ലെങ്കിൽ [AI Business School](https://www.microsoft.com/ai/ai-business-school/?WT.mc_id=academic-77998-bethanycheum), [INSEAD](https://www.insead.edu/) എന്ന സ്ഥാപനവുമായി സഹകരിച്ച് വികസിപ്പിച്ചതിനെ പരിശോധിക്കുക.
-* **ക്ലാസിക് മെഷീൻ ലേണിങ്ങ്**, ഇത് നല്ല രീതിയിൽ നമ്മളുടെ [Machine Learning for Beginners Curriculum](http://github.com/Microsoft/ML-for-Beginners) ൽ വിവരിച്ചിട്ടുണ്ട്.
-* പ്രായോഗിക AI ആപ്പ്ലിക്കേഷനുകൾ **[Cognitive Services](https://azure.microsoft.com/services/cognitive-services/?WT.mc_id=academic-77998-bethanycheum)** ഉപയോഗിച്ച് നിർമ്മിക്കപ്പെട്ടവ. ഇതിന്, Microsoft Learnille ഉള്ള [vision](https://docs.microsoft.com/learn/paths/create-computer-vision-solutions-azure-cognitive-services/?WT.mc_id=academic-77998-bethanycheum), [natural language processing](https://docs.microsoft.com/learn/paths/explore-natural-language-processing/?WT.mc_id=academic-77998-bethanycheum), **[Generative AI with Azure OpenAI Service](https://learn.microsoft.com/en-us/training/paths/develop-ai-solutions-azure-openai/?WT.mc_id=academic-77998-bethanycheum)** എന്നിവയടക്കം ഉള്ള മോഡ്യൂളുകൾ തുടങ്ങാൻ ഞങ്ങൾ ശുപാർശ ചെയ്യുന്നു.
-* പ്രത്യേക ML **ക്ലൗഡ് ഫ്രെയിംവർക്കുകൾ**, ഉദാഹരണത്തിന് [Azure Machine Learning](https://azure.microsoft.com/services/machine-learning/?WT.mc_id=academic-77998-bethanycheum), [Microsoft Fabric](https://learn.microsoft.com/en-us/training/paths/get-started-fabric/?WT.mc_id=academic-77998-bethanycheum), അല്ലെങ്കിൽ [Azure Databricks](https://docs.microsoft.com/learn/paths/data-engineer-azure-databricks?WT.mc_id=academic-77998-bethanycheum). [Build and operate machine learning solutions with Azure Machine Learning](https://docs.microsoft.com/learn/paths/build-ai-solutions-with-azure-ml-service/?WT.mc_id=academic-77998-bethanycheum) և [Build and Operate Machine Learning Solutions with Azure Databricks](https://docs.microsoft.com/learn/paths/build-operate-machine-learning-solutions-azure-databricks/?WT.mc_id=academic-77998-bethanycheum) പഠനപഥങ്ങൾ പരിഗണിക്കുക.
-* **സംവാദാത്മക AI** (Conversational AI) և **ചാറ്റ് ബോട്ടുകൾ**. ഈ വിഷയത്തിനുള്ള ഒരു വേറെ [Create conversational AI solutions](https://docs.microsoft.com/learn/paths/create-conversational-ai-solutions/?WT.mc_id=academic-77998-bethanycheum) പഠനപഥം ഉണ്ട്, കൂടുതൽ വിവരങ്ങൾക്ക് നിങ്ങൾക്കിത് ([this blog post](https://soshnikov.com/azure/hello-bot-conversational-ai-on-microsoft-platform/)) പരിശോധിക്കാൻ കഴിയും.
-* ഡീപ്പ് ലേണിങിന്റെ പിന്നിലെ **ഗണിതശാസ്ത്രം**. ഇതിന് Ian Goodfellow, Yoshua Bengio, Aaron Courville എന്നിവരുടെ [Deep Learning](https://www.amazon.com/Deep-Learning-Adaptive-Computation-Machine/dp/0262035618) എന്ന പുസ്തകം ശുപാർശ ചെയ്യുന്നു, ഇത് ഓൺലൈനിൽ [https://www.deeplearningbook.org/](https://www.deeplearningbook.org/) ൽ ലഭ്യമാണ്.
+* **AI ബിസിനസിൽ** ഉപയോഗിക്കുന്ന ബിസിനസ് കേസുകൾ. ഈ വീഡിയോ കോഴ്സ് അല്ലെങ്കിൽ [Introduction to AI for business users](https://docs.microsoft.com/learn/paths/introduction-ai-for-business-users/?WT.mc_id=academic-77998-bethanycheum) എന്ന പഠന പാത മൈക്രോസോഫ്റ്റ് ലേണിൽ കാണാം, അല്ലെങ്കിൽ [AI Business School](https://www.microsoft.com/ai/ai-business-school/?WT.mc_id=academic-77998-bethanycheum), [INSEAD](https://www.insead.edu/) സംയുക്തമായി വികസിപ്പിച്ചതു.
+* **പരമ്പരാഗത മെഷീൻ ലേണിംഗ്**, ഇത് നന്നായി പ്രതിപാദിക്കുന്നതാണ് ഞങ്ങളുടെ [Machine Learning for Beginners Curriculum](http://github.com/Microsoft/ML-for-Beginners)ൽ.
+* **[Cognitive Services](https://azure.microsoft.com/services/cognitive-services/?WT.mc_id=academic-77998-bethanycheum)** ഉപയോഗിച്ച് നിർമ്മിച്ച പ്രായോഗിക AI പ്രയോഗങ്ങൾ. ഇതിനായി ഞങ്ങൾ ശുപാർശ ചെയ്യുന്നത് മൈക്രോസോഫ്റ്റ് ലേണിൽ നിന്നുള്ള [ദൃശ്യപരമായ](https://docs.microsoft.com/learn/paths/create-computer-vision-solutions-azure-cognitive-services/?WT.mc_id=academic-77998-bethanycheum), [സ്വാഭാവികഭാഷാ പ്രോസസിങ്](https://docs.microsoft.com/learn/paths/explore-natural-language-processing/?WT.mc_id=academic-77998-bethanycheum), **[Azure OpenAI സേവനത്തോടെ ജനന AI](https://learn.microsoft.com/en-us/training/paths/develop-ai-solutions-azure-openai/?WT.mc_id=academic-77998-bethanycheum)** എന്നിവയുടെ മODULEളുകൾ പ്രാരംഭമാക്കുക.
+* പ്രത്യേക ML **ക്ലൗഡ് ഫ്രെയിംവർക്ക്**കൾ, ഉദാഹരണത്തിന് [Azure Machine Learning](https://azure.microsoft.com/services/machine-learning/?WT.mc_id=academic-77998-bethanycheum), [Microsoft Fabric](https://learn.microsoft.com/en-us/training/paths/get-started-fabric/?WT.mc_id=academic-77998-bethanycheum), അല്ലെങ്കിൽ [Azure Databricks](https://docs.microsoft.com/learn/paths/data-engineer-azure-databricks?WT.mc_id=academic-77998-bethanycheum). ഇതിന് [Build and operate machine learning solutions with Azure Machine Learning](https://docs.microsoft.com/learn/paths/build-ai-solutions-with-azure-ml-service/?WT.mc_id=academic-77998-bethanycheum)  ഒപ്പം [Build and Operate Machine Learning Solutions with Azure Databricks](https://docs.microsoft.com/learn/paths/build-operate-machine-learning-solutions-azure-databricks/?WT.mc_id=academic-77998-bethanycheum) പഠന പാതകൾ ഉപയോഗിക്കുക.
+* **സംവാദ AI**യും **ചാറ്റ് ബോട്ടുകൾ**ഉം. ഇതിന് പ്രത്യേകം [Create conversational AI solutions](https://docs.microsoft.com/learn/paths/create-conversational-ai-solutions/?WT.mc_id=academic-77998-bethanycheum) എന്ന പഠന പാതയുണ്ട്, കൂടുതൽ വിശദമായി [ഈ ബ്ലോഗ് പോസ്റ്റ്](https://soshnikov.com/azure/hello-bot-conversational-ai-on-microsoft-platform/) കാണുക.
+* ഡീപ്പ് ലേണിങ്ങിന്റെ പിന്നിലെ **ഗണിതശാസ്ത്രം**. ഇതിന് ഞങ്ങൾ ശുപാർശ ചെയ്യുന്നത് Ian Goodfellow, Yoshua Bengio, Aaron Courville എഴുതിയ [Deep Learning](https://www.amazon.com/Deep-Learning-Adaptive-Computation-Machine/dp/0262035618) എന്ന പുസ്തകം; ഇത് ഓൺലൈൻ [https://www.deeplearningbook.org/](https://www.deeplearningbook.org/) ൽ ലഭ്യമാണ്.
 
-_ക്ലൗഡിലെ AI_ വിഷയങ്ങളിൽ ലഘുവഴിച്ചറിയലിനായി നിങ്ങൾക്ക് [Get started with artificial intelligence on Azure](https://docs.microsoft.com/learn/paths/get-started-with-artificial-intelligence-on-azure/?WT.mc_id=academic-77998-bethanycheum) Learning Path പരിഗണിക്കാവുന്നതാണ്.
+_ക്ലൗഡിലുളള AI_ വിഷയങ്ങളിൽ സുഗമമായ പരിചയത്തിന് [Get started with artificial intelligence on Azure](https://docs.microsoft.com/learn/paths/get-started-with-artificial-intelligence-on-azure/?WT.mc_id=academic-77998-bethanycheum) പഠന പാത സ്വീകരിക്കുക.
 
-# Content
+# ഉള്ളടക്കം
 
-|     |                                                                 പാഠത്തിന്റെ ലിങ്ക്                                                                  |                                           PyTorch/Keras/TensorFlow                                          | ലാബ്                                                            |
+|     |                                                                 പാഠം ലിങ്ക്                                                                  |                                           PyTorch/Keras/TensorFlow                                          | ലാബ്                                                            |
 | :-: | :------------------------------------------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------: | ------------------------------------------------------------------------------ |
-| 0  |                                 [കോഴ്‌സ് സെറ്റപ്പ്](./lessons/0-course-setup/setup.md)                                 |                      [താങ്കളുടെ ഡെവലപ്മെന്റ് പരിസ്ഥിതി സജ്ജമാക്കൽ](./lessons/0-course-setup/how-to-run.md)                       |   |
-| I  |               [**ആർട്ടിഫിഷ്യൽ ഇന്റലിജൻസിലേക്ക് പരിചയം**](./lessons/1-Intro/README.md)      | | |
-| 01  |       [ആർട്ടിഫിഷ്യൽ ഇന്റലിജൻസിന്റെ പരിചയം এবং ചരിത്രം](./lessons/1-Intro/README.md)       |           -                            | -  |
-| II |              **സിംബോളിക് AI**              |
-| 02  |       [ജ്ഞാന പ്രതിനിധീകരണം மற்றும் എക്സ്പർട്ട് സിസ്റ്റങ്ങൾ](./lessons/2-Symbolic/README.md)       |            [Expert Systems](./lessons/2-Symbolic/Animals.ipynb) /  [Ontology](./lessons/2-Symbolic/FamilyOntology.ipynb) /[Concept Graph](./lessons/2-Symbolic/MSConceptGraph.ipynb)                             |  |
-| III |                        [**ന്യൂറൽ നെറ്റ്‌വർക്ക്‌സിലേക്ക് പരിചയം**](./lessons/3-NeuralNetworks/README.md) |||
+| 0  |                                 [കോഴ്സ് സജ്ജീകരണം](./lessons/0-course-setup/setup.md)                                 |                      [നിങ്ങളുടെ ഡെവലപ്മെന്റ് പരിസ്ഥിതി സജ്ജീകരിക്കുക](./lessons/0-course-setup/how-to-run.md)                       |   |
+| I  |               [**AI-യിലെ പരിചയം**](./lessons/1-Intro/README.md)      | | |
+| 01  |       [AI-യുടെ പരിചയംയും ചരിത്രവും](./lessons/1-Intro/README.md)       |           -                            | -  |
+| II |              **പ്രതീകാത്മക പുതുമ**              |
+| 02  |       [Knowledge Representation and Expert Systems](./lessons/2-Symbolic/README.md)       |            [Expert Systems](./lessons/2-Symbolic/Animals.ipynb) /  [Ontology](./lessons/2-Symbolic/FamilyOntology.ipynb) /[Concept Graph](./lessons/2-Symbolic/MSConceptGraph.ipynb)                             |  |
+| III |                        [**ന്യൂറൽ നെറ്റ്‌വർക്കുകളിലേക്ക് പരിചയം**](./lessons/3-NeuralNetworks/README.md) |||
 | 03  |                [പേഴ്സെപ്ട്രോൺ](./lessons/3-NeuralNetworks/03-Perceptron/README.md)                 |                       [നോട്ട്ബുക്ക്](./lessons/3-NeuralNetworks/03-Perceptron/Perceptron.ipynb)                      | [ലാബ്](./lessons/3-NeuralNetworks/03-Perceptron/lab/README.md) |
-| 04  |                   [മൾട്ടി-ലെയേർഡ് പേറ്സെപ്ട്രോൺ‌യും നമ്മുടെ സ്വന്തം ഫ്രെയിംവർക്ക് സൃഷ്ടിക്കൽ](./lessons/3-NeuralNetworks/04-OwnFramework/README.md)                   |        [നോട്ട്ബുക്ക്](./lessons/3-NeuralNetworks/04-OwnFramework/OwnFramework.ipynb)        | [ലാബ്](./lessons/3-NeuralNetworks/04-OwnFramework/lab/README.md) |
-| 05  |            [ഫ്രെയിംവർക്കുകൾക്ക് പരിചയം (PyTorch/TensorFlow) மற்றும் ഒവർഫിറ്റിംഗ്](./lessons/3-NeuralNetworks/05-Frameworks/README.md)             |           [PyTorch](./lessons/3-NeuralNetworks/05-Frameworks/IntroPyTorch.ipynb) / [Keras](./lessons/3-NeuralNetworks/05-Frameworks/IntroKeras.ipynb) / [TensorFlow](./lessons/3-NeuralNetworks/05-Frameworks/IntroKerasTF.ipynb)             | [ലാബ്](./lessons/3-NeuralNetworks/05-Frameworks/lab/README.md) |
-| IV  |            [**കമ്പ്യൂട്ടർ വിസൻ**](./lessons/4-ComputerVision/README.md)             | [PyTorch](https://docs.microsoft.com/learn/modules/intro-computer-vision-pytorch/?WT.mc_id=academic-77998-cacaste) / [TensorFlow](https://docs.microsoft.com/learn/modules/intro-computer-vision-TensorFlow/?WT.mc_id=academic-77998-cacaste)| [Microsoft Azure-ൽ കമ്പ്യൂട്ടർ വിസൻ എക്സ്‌പ്ലോർ ചെയ്യുക](https://learn.microsoft.com/en-us/collections/7w28iy2xrqzdj0?WT.mc_id=academic-77998-bethanycheum) |
-| 06  |            [കമ്പ്യൂട്ടർ വിസനിലേക്ക് പരിചയം. OpenCV](./lessons/4-ComputerVision/06-IntroCV/README.md)             |           [നോട്ട്ബുക്ക്](./lessons/4-ComputerVision/06-IntroCV/OpenCV.ipynb)         | [ലാബ്](./lessons/4-ComputerVision/06-IntroCV/lab/README.md) |
-| 07  |            [കോൺവൊല്യൂഷണൽ ന്യുറൽ നെറ്റ്‌വർക്കുകൾ](./lessons/4-ComputerVision/07-ConvNets/README.md) &  [CNN Architectures](./lessons/4-ComputerVision/07-ConvNets/CNN_Architectures.md)             |           [PyTorch](./lessons/4-ComputerVision/07-ConvNets/ConvNetsPyTorch.ipynb) /[TensorFlow](./lessons/4-ComputerVision/07-ConvNets/ConvNetsTF.ipynb)             | [ലാബ്](./lessons/4-ComputerVision/07-ConvNets/lab/README.md) |
-| 08  |            [മുൻപരിശീലിത നെറ്റ്‌വർക്കുകൾ மற்றும் ട്രാൻസ്ഫർ ലേണിംഗ്](./lessons/4-ComputerVision/08-TransferLearning/README.md) and [Training Tricks](./lessons/4-ComputerVision/08-TransferLearning/TrainingTricks.md)             |           [PyTorch](./lessons/4-ComputerVision/08-TransferLearning/TransferLearningPyTorch.ipynb) / [TensorFlow](./lessons/3-NeuralNetworks/05-Frameworks/IntroKerasTF.ipynb)             | [ലാബ്](./lessons/4-ComputerVision/08-TransferLearning/lab/README.md) |
-| 09  |            [ഓട്ടോഎൻകോഡറുകളും VAEs](./lessons/4-ComputerVision/09-Autoencoders/README.md)             |           [PyTorch](./lessons/4-ComputerVision/09-Autoencoders/AutoEncodersPyTorch.ipynb) / [TensorFlow](./lessons/4-ComputerVision/09-Autoencoders/AutoencodersTF.ipynb)             |  |
-| 10  |            [ജനറേറ്റീവ് അഡ്വേഴ്സീരിയൽ നെറ്റ്‌വർക്കുകൾ & കലാത്മക സ്റ്റൈൽ ട്രാൻസ്ഫർ](./lessons/4-ComputerVision/10-GANs/README.md)             |           [PyTorch](./lessons/4-ComputerVision/10-GANs/GANPyTorch.ipynb) / [TensorFlow](./lessons/4-ComputerVision/10-GANs/GANTF.ipynb)             |  |
-| 11  |            [വസ്തു കണ്ടെത്തൽ](./lessons/4-ComputerVision/11-ObjectDetection/README.md)             |         [TensorFlow](./lessons/4-ComputerVision/11-ObjectDetection/ObjectDetection.ipynb)             | [ലാബ്](./lessons/4-ComputerVision/11-ObjectDetection/lab/README.md) |
-| 12  |            [സെമാന്റിക് സെഗ്മെൻറേഷൻ. U-Net](./lessons/4-ComputerVision/12-Segmentation/README.md)             |           [PyTorch](./lessons/4-ComputerVision/12-Segmentation/SemanticSegmentationPytorch.ipynb) / [TensorFlow](./lessons/4-ComputerVision/12-Segmentation/SemanticSegmentationTF.ipynb)             |  |
-| V  |            [**പ്രാകൃത ഭാഷാ പ്രോസസ്സിംഗ്**](./lessons/5-NLP/README.md)             | [PyTorch](https://docs.microsoft.com/learn/modules/intro-natural-language-processing-pytorch/?WT.mc_id=academic-77998-cacaste) /[TensorFlow](https://docs.microsoft.com/learn/modules/intro-natural-language-processing-TensorFlow/?WT.mc_id=academic-77998-cacaste) | [Microsoft Azure-ൽ പ്രാകൃത ഭാഷാ പ്രോസസ്സിംഗ് എക്സ്‌പ്ലോർ ചെയ്യുക](https://learn.microsoft.com/en-us/collections/7w28iy2xrqzdj0?WT.mc_id=academic-77998-bethanycheum)|
-| 13  |            [ടെക്സ്റ്റ് പ്രതിനിധീകരണം. Bow/TF-IDF](./lessons/5-NLP/13-TextRep/README.md)             |           [PyTorch](https://github.com/microsoft/AI-For-Beginners/blob/main/lessons/5-NLP/13-TextRep/TextRepresentationPyTorch.ipynb) / [TensorFlow](https://github.com/microsoft/AI-For-Beginners/blob/main/lessons/5-NLP/13-TextRep/TextRepresentationTF.ipynb)             | |
-| 14  |            [സെമാന്റിക് വേഡ് എംബഡിംഗുകൾ. Word2Vec and GloVe](./lessons/5-NLP/14-Embeddings/README.md)             |           [PyTorch](https://github.com/microsoft/AI-For-Beginners/blob/main/lessons/5-NLP/14-Embeddings/EmbeddingsPyTorch.ipynb) / [TensorFlow](https://github.com/microsoft/AI-For-Beginners/blob/main/lessons/5-NLP/14-Embeddings/EmbeddingsTF.ipynb)             |  |
-| 15  |            [ഭാഷാ മോഡലിംഗ്. നിങ്ങളുടെ സ്വന്തം എംബഡിങുകൾ പരിശീലിപ്പിക്കൽ](./lessons/5-NLP/15-LanguageModeling/README.md)             |           [PyTorch](https://github.com/microsoft/AI-For-Beginners/blob/main/lessons/5-NLP/15-LanguageModeling/CBoW-PyTorch.ipynb) / [TensorFlow](https://github.com/microsoft/AI-For-Beginners/blob/main/lessons/5-NLP/15-LanguageModeling/CBoW-TF.ipynb)             | [ലാബ്](./lessons/5-NLP/15-LanguageModeling/lab/README.md) |
-| 16  |            [റികറന്റ് ന്യുറൽ നെറ്റ്‌വർക്കുകൾ](./lessons/5-NLP/16-RNN/README.md)             |           [PyTorch](https://github.com/microsoft/AI-For-Beginners/blob/main/lessons/5-NLP/16-RNN/RNNPyTorch.ipynb) / [TensorFlow](https://github.com/microsoft/AI-For-Beginners/blob/main/lessons/5-NLP/16-RNN/RNNTF.ipynb)             |  |
+| 04  |                   [മൾടി-ലേയറഡ് പേഴ്സെപ്ട്രോൺയും സ്വന്തം ഫ്രെയിംവർക്ക് സൃഷ്ടിക്കലും](./lessons/3-NeuralNetworks/04-OwnFramework/README.md)                   |        [നോട്ട്ബുക്ക്](./lessons/3-NeuralNetworks/04-OwnFramework/OwnFramework.ipynb)        | [ലാബ്](./lessons/3-NeuralNetworks/04-OwnFramework/lab/README.md) |
+| 05  |            [ഫ്രെയിംവർകുകൾക്ക് പരിചയം (PyTorch/TensorFlow) ഒപ്പം ഓവർഫിറ്റിംഗ്](./lessons/3-NeuralNetworks/05-Frameworks/README.md)             |           [PyTorch](./lessons/3-NeuralNetworks/05-Frameworks/IntroPyTorch.ipynb) / [Keras](./lessons/3-NeuralNetworks/05-Frameworks/IntroKeras.ipynb) / [TensorFlow](./lessons/3-NeuralNetworks/05-Frameworks/IntroKerasTF.ipynb)             | [ലാബ്](./lessons/3-NeuralNetworks/05-Frameworks/lab/README.md) |
+| IV  |            [**കമ്പ്യൂട്ടർ വിസൻ**](./lessons/4-ComputerVision/README.md)             | [PyTorch](https://docs.microsoft.com/learn/modules/intro-computer-vision-pytorch/?WT.mc_id=academic-77998-cacaste) / [TensorFlow](https://docs.microsoft.com/learn/modules/intro-computer-vision-TensorFlow/?WT.mc_id=academic-77998-cacaste)| [മൈക്രോസോഫ്റ്റ് അസ്യൂറിൽ കമ്പ്യൂട്ടർ വിസൻ ആഴ്ചിലാഴൂ](https://learn.microsoft.com/en-us/collections/7w28iy2xrqzdj0?WT.mc_id=academic-77998-bethanycheum) |
+| 06  |            [കമ്പ്യൂട്ടർ വിസനിലേക്ക് പരിചയം. ഒപൺസിവി](./lessons/4-ComputerVision/06-IntroCV/README.md)             |           [നോട്ട്ബുക്ക്](./lessons/4-ComputerVision/06-IntroCV/OpenCV.ipynb)         | [ലാബ്](./lessons/4-ComputerVision/06-IntroCV/lab/README.md) |
+| 07  |            [കോൺവൊളൂഷണൽ ന്യൂറൽ നെറ്റ്വർക്കുകൾ](./lessons/4-ComputerVision/07-ConvNets/README.md) &  [CNN ആർക്കിടെക്ചറുകൾ](./lessons/4-ComputerVision/07-ConvNets/CNN_Architectures.md)             |           [PyTorch](./lessons/4-ComputerVision/07-ConvNets/ConvNetsPyTorch.ipynb) /[TensorFlow](./lessons/4-ComputerVision/07-ConvNets/ConvNetsTF.ipynb)             | [ലാബ്](./lessons/4-ComputerVision/07-ConvNets/lab/README.md) |
+| 08  |            [പ്രീ-ട്രെയിൻഡ് നെറ്റ്‌വർക്കുകളും ട്രാൻസ്ഫർ ലേണിംഗും](./lessons/4-ComputerVision/08-TransferLearning/README.md) and [ട്രെയിനിംഗ് ട്രിക്കുകൾ](./lessons/4-ComputerVision/08-TransferLearning/TrainingTricks.md)             |           [PyTorch](./lessons/4-ComputerVision/08-TransferLearning/TransferLearningPyTorch.ipynb) / [TensorFlow](./lessons/3-NeuralNetworks/05-Frameworks/IntroKerasTF.ipynb)             | [ലാബ്](./lessons/4-ComputerVision/08-TransferLearning/lab/README.md) |
+| 09  |            [ഓട്ടോഎൻകോഡേഴ്സ് және VAEs](./lessons/4-ComputerVision/09-Autoencoders/README.md)             |           [PyTorch](./lessons/4-ComputerVision/09-Autoencoders/AutoEncodersPyTorch.ipynb) / [TensorFlow](./lessons/4-ComputerVision/09-Autoencoders/AutoencodersTF.ipynb)             |  |
+| 10  |            [ജനറേറ്റീവ് എഡ്വേഴ്സറിയൽ നെറ്റ്‌വർക്കുകൾ & ആർട്ടിസ്റ്റിക് സ്റ്റൈൽ ട്രാൻസ്ഫർ](./lessons/4-ComputerVision/10-GANs/README.md)             |           [PyTorch](./lessons/4-ComputerVision/10-GANs/GANPyTorch.ipynb) / [TensorFlow](./lessons/4-ComputerVision/10-GANs/GANTF.ipynb)             |  |
+| 11  |            [ഓബ്ജക്റ്റ് ഡിറ്റക്ഷൻ](./lessons/4-ComputerVision/11-ObjectDetection/README.md)             |         [TensorFlow](./lessons/4-ComputerVision/11-ObjectDetection/ObjectDetection.ipynb)             | [ലാബ്](./lessons/4-ComputerVision/11-ObjectDetection/lab/README.md) |
+| 12  |            [സെമാന്റിക്ക് സെഗ്മെന്റേഷൻ. U-നെറ്റ്](./lessons/4-ComputerVision/12-Segmentation/README.md)             |           [PyTorch](./lessons/4-ComputerVision/12-Segmentation/SemanticSegmentationPytorch.ipynb) / [TensorFlow](./lessons/4-ComputerVision/12-Segmentation/SemanticSegmentationTF.ipynb)             |  |
+| V  |            [**നാച്ചുറൽ ലാംഗ്വേജ് പ്രോസസ്സിംഗ്**](./lessons/5-NLP/README.md)             | [PyTorch](https://docs.microsoft.com/learn/modules/intro-natural-language-processing-pytorch/?WT.mc_id=academic-77998-cacaste) /[TensorFlow](https://docs.microsoft.com/learn/modules/intro-natural-language-processing-TensorFlow/?WT.mc_id=academic-77998-cacaste) | [മൈക്രോസോഫ്റ്റ് അസ്യൂറിൽ നാച്ചുറൽ ലാംഗ്വേജ് പ്രോസസ്സിംഗ് പരീക്ഷിക്കുക](https://learn.microsoft.com/en-us/collections/7w28iy2xrqzdj0?WT.mc_id=academic-77998-bethanycheum)|
+| 13  |            [ടെക്സ്റ്റ് പ്രതിനിധാനം. ബോ/ടി.എഫ്-ഐ.ഡി.എഫ്](./lessons/5-NLP/13-TextRep/README.md)             |           [PyTorch](https://github.com/microsoft/AI-For-Beginners/blob/main/lessons/5-NLP/13-TextRep/TextRepresentationPyTorch.ipynb) / [TensorFlow](https://github.com/microsoft/AI-For-Beginners/blob/main/lessons/5-NLP/13-TextRep/TextRepresentationTF.ipynb)             | |
+| 14  |            [സെമാന്റിക് വേഡ് എംബെഡിങ്ങുകൾ. വേഡ്2വെക്, ഗ്ലോവ്](./lessons/5-NLP/14-Embeddings/README.md)             |           [PyTorch](https://github.com/microsoft/AI-For-Beginners/blob/main/lessons/5-NLP/14-Embeddings/EmbeddingsPyTorch.ipynb) / [TensorFlow](https://github.com/microsoft/AI-For-Beginners/blob/main/lessons/5-NLP/14-Embeddings/EmbeddingsTF.ipynb)             |  |
+| 15  |            [ഭാഷാ മോഡലിംഗ്. നിങ്ങളുടെ സ്വന്തം എംബെഡിങ്ങുകൾ പരിശീലനം](./lessons/5-NLP/15-LanguageModeling/README.md)             |           [PyTorch](https://github.com/microsoft/AI-For-Beginners/blob/main/lessons/5-NLP/15-LanguageModeling/CBoW-PyTorch.ipynb) / [TensorFlow](https://github.com/microsoft/AI-For-Beginners/blob/main/lessons/5-NLP/15-LanguageModeling/CBoW-TF.ipynb)             | [ലാബ്](./lessons/5-NLP/15-LanguageModeling/lab/README.md) |
+| 16  |            [റികറന്റ് ന്യൂറൽ നെറ്റ്‌വർക്കുകൾ](./lessons/5-NLP/16-RNN/README.md)             |           [PyTorch](https://github.com/microsoft/AI-For-Beginners/blob/main/lessons/5-NLP/16-RNN/RNNPyTorch.ipynb) / [TensorFlow](https://github.com/microsoft/AI-For-Beginners/blob/main/lessons/5-NLP/16-RNN/RNNTF.ipynb)             |  |
 | 17  |            [ജനറേറ്റീവ് റികറന്റ് നെറ്റ്‌വർക്കുകൾ](./lessons/5-NLP/17-GenerativeNetworks/README.md)             |           [PyTorch](https://github.com/microsoft/AI-For-Beginners/blob/main/lessons/5-NLP/17-GenerativeNetworks/GenerativePyTorch.ipynb) / [TensorFlow](https://github.com/microsoft/AI-For-Beginners/blob/main/lessons/5-NLP/17-GenerativeNetworks/GenerativeTF.ipynb)             | [ലാബ്](./lessons/5-NLP/17-GenerativeNetworks/lab/README.md) |
-| 18  |            [ട്രാൻസ്ഫോർമേഴ്സ്. BERT.](./lessons/5-NLP/18-Transformers/README.md)             |           [PyTorch](https://github.com/microsoft/AI-For-Beginners/blob/main/lessons/5-NLP/18-Transformers/TransformersPyTorch.ipynb) /[TensorFlow](https://github.com/microsoft/AI-For-Beginners/blob/main/lessons/5-NLP/18-Transformers/TransformersTF.ipynb)             |  |
-| 19  |            [നെയിംഡ് എന്റിറ്റി റെക്കഗ്നിഷൻ](./lessons/5-NLP/19-NER/README.md)             |           [TensorFlow](https://microsoft.github.io/AI-For-Beginners/lessons/5-NLP/19-NER/NER-TF.ipynb)             | [ലാബ്](./lessons/5-NLP/19-NER/lab/README.md) |
-| 20  |            [വലു്യമുള്ള ഭാഷാ മോഡലുകൾ, പ്രോംപ്റ്റ് പ്രോഗ്രാമിംഗ് மற்றும் Few-Shot ടാസ്കുകൾ](./lessons/5-NLP/20-LangModels/README.md)             |           [PyTorch](https://microsoft.github.io/AI-For-Beginners/lessons/5-NLP/20-LangModels/GPT-PyTorch.ipynb) | |
-| VI |            **മറ്റു AI സാങ്കേതികങ്ങൾ** || |
-| 21  |            [ജനിതക ആൽഗോരിതങ്ങൾ](./lessons/6-Other/21-GeneticAlgorithms/README.md)             |           [നോട്ട്ബുക്ക്](./lessons/6-Other/21-GeneticAlgorithms/Genetic.ipynb) | |
-| 22  |            [ഡീപ്പ് റീൻഫോഴ്‌സ്മെന്റ് ലേണിംഗ്](./lessons/6-Other/22-DeepRL/README.md)             |           [PyTorch](./lessons/6-Other/22-DeepRL/CartPole-RL-PyTorch.ipynb) /[TensorFlow](./lessons/6-Other/22-DeepRL/CartPole-RL-TF.ipynb)             | [ലാബ്](./lessons/6-Other/22-DeepRL/lab/README.md) |
-| 23  |            [മൾട്ടി-ഏജന്റ് സിസ്റ്റങ്ങൾ](./lessons/6-Other/23-MultiagentSystems/README.md)             |  | |
+| 18  |            [ട്രാൻസ്ഫോർമേഴ്‌സ്. BERT.](./lessons/5-NLP/18-Transformers/README.md)             |           [PyTorch](https://github.com/microsoft/AI-For-Beginners/blob/main/lessons/5-NLP/18-Transformers/TransformersPyTorch.ipynb) /[TensorFlow](https://github.com/microsoft/AI-For-Beginners/blob/main/lessons/5-NLP/18-Transformers/TransformersTF.ipynb)             |  |
+| 19  |            [നെയിമ്ഡ് എന്റിറ്റി റികഗ്നിഷൻ](./lessons/5-NLP/19-NER/README.md)             |           [TensorFlow](https://microsoft.github.io/AI-For-Beginners/lessons/5-NLP/19-NER/NER-TF.ipynb)             | [ലാബ്](./lessons/5-NLP/19-NER/lab/README.md) |
+| 20  |            [ലാർജ് ലാംഗ്വേജ് മോഡലുകൾ, പ്രോംപ്റ്റ് പ്രോഗ്രാമിംഗ്, ഫ്യു-ഷോട്ട് ടാസ്കുകൾ](./lessons/5-NLP/20-LangModels/README.md)             |           [PyTorch](https://microsoft.github.io/AI-For-Beginners/lessons/5-NLP/20-LangModels/GPT-PyTorch.ipynb) | |
+| VI |            **മറ്റ് AI സാങ്കേതിക വിദ്യകൾ** || |
+| 21  |            [ജനറ്റിക് ആൽഗോറിതങ്ങൾ](./lessons/6-Other/21-GeneticAlgorithms/README.md)             |           [നോട്ട്ബുക്ക്](./lessons/6-Other/21-GeneticAlgorithms/Genetic.ipynb) | |
+| 22  |            [ഡീപ് റീൻഫോഴ്സ്‌മെന്റ് ലേണിംഗ്](./lessons/6-Other/22-DeepRL/README.md)             |           [PyTorch](./lessons/6-Other/22-DeepRL/CartPole-RL-PyTorch.ipynb) /[TensorFlow](./lessons/6-Other/22-DeepRL/CartPole-RL-TF.ipynb)             | [ലാബ്](./lessons/6-Other/22-DeepRL/lab/README.md) |
+| 23  |            [മൾട്ടി-എജന്റ് സിസ്റ്റംസ്](./lessons/6-Other/23-MultiagentSystems/README.md)             |  | |
 | VII |            **AI നൈതികത** | | |
-| 24  |            [AI നൈതികതയും ഉത്തരവാദിത്വപരമായ AI](./lessons/7-Ethics/README.md)             |           [Microsoft Learn: ഉത്തരവാദിത്വപരമായ AI സിദ്ധാന്തങ്ങൾ](https://docs.microsoft.com/learn/paths/responsible-ai-business-principles/?WT.mc_id=academic-77998-cacaste) | |
-| IX  |            **കൂടുതൽ** | | |
-| 25  |            [മൾട്ടി-മോഡൽ നെറ്റ്‌വർക്കുകൾ, CLIP and VQGAN](./lessons/X-Extras/X1-MultiModal/README.md)             |           [നോട്ട്ബുക്ക്](./lessons/X-Extras/X1-MultiModal/Clip.ipynb)    | |
+| 24  |            [AI നൈതികതയും ഉത്തരവാദിത്വമുള്ള AI യും](./lessons/7-Ethics/README.md)             |           [Microsoft Learn: ഉത്തരവാദിത്വമുള്ള AI സിദ്ധാന്തങ്ങൾ](https://docs.microsoft.com/learn/paths/responsible-ai-business-principles/?WT.mc_id=academic-77998-cacaste) | |
+| IX  |            **എക്സ്ട്രാസ്** | | |
+| 25  |            [മൾട്ടി-മോഡൽ നെറ്റ്‌വർക്കുകൾ, CLIP, VQGAN](./lessons/X-Extras/X1-MultiModal/README.md)             |           [നോട്ട്ബുക്ക്](./lessons/X-Extras/X1-MultiModal/Clip.ipynb)    | |
 
-## ഓരോ പാഠവും ഉൾക്കൊള്ളുന്നത്
+## ഓരോ പാഠത്തിനും ഉൾപ്പെടുന്നു
 
-* മുൻകൂടി വായിക്കാൻ ഉള്ള സാമഗ്രി
-* പ്രവർത്തനക്ഷമമായ Jupyter നോട്ട്ബുക്ക്‌లు, ഇവ പലപ്പോഴും ഒരു ഫ്രെയിംവർക്കിന് പ്രത്യേകമായതും ആണ് (**PyTorch** അല്ലെങ്കിൽ **TensorFlow**). പ്രവർത്തനക്ഷമമായ നോട്ട്ബുക്ക് വലിയൊരു സിദ്ധാന്തപരുള്ള ഉള്ളടക്കവും ഉൾക്കൊള്ളുന്നതിനാൽ വിഷയം മനസ്സിലാക്കാൻ കുറഞ്ഞത് ഒരു പതിപ്പ് (PyTorch അല്ലെങ്കിൽ TensorFlow) ഒരിക്കല്‍ പരിശോധിക്കേണ്ടതാണ്.
-* **ലാബുകൾ** ചില വിഷയങ്ങൾക്ക് ലഭ്യത്തിലാണ്, ഇവ നിങ്ങൾ പഠിച്ച വസ്തുവിനെ ഒരു പ്രത്യേക പ്രശ്നത്തിൽ പ്രയോഗിക്കാൻ ഒരു അവസരം നൽകുന്നു.
-* ചില വിഭാഗങ്ങളിൽ ബന്ധപ്പെട്ട വിഷയങ്ങൾ ഉൾക്കൊള്ളുന്ന [**MS Learn**](https://learn.microsoft.com/en-us/collections/7w28iy2xrqzdj0?WT.mc_id=academic-77998-bethanycheum) മോഡ്യൂളുകളിലേക്കുള്ള ലിങ്കുകൾ അടങ്ങിയിരിക്കുന്നു.
+* മുൻകuron പഠന സാമഗ്രി
+* നിർവഹിക്കാവുന്ന ജൂപ്പിറ്റർ നോട്ട്ബുക്കുകൾ, സാധാരണയായി ഫ്രെയിംവർക്ക് (**PyTorch** അല്ലെങ്കിൽ **TensorFlow**) নির্দിഷ്ടമാണ്. നിർവഹിക്കാവുന്ന നോട്ട്ബുക്ക് പല തിയേറ്റിക്കൽ സാമഗ്രികളും ഉൾക്കൊള്ളുന്നു, അതിനാൽ വിഷയവും മനസ്സിലാക്കാൻ കുറഞ്ഞത് ഒരു വേർഷൻ (PyTorch അല്ലെങ്കിൽ TensorFlow) നോട്ട്ബുക്ക് പരിശോധിക്കണം.
+* ചില വിഷയങ്ങൾക്ക് ലഭ്യമായ **ലാബുകൾ**, നിങ്ങൾ പഠിച്ച സാമഗ്രികൾ ഒരു പ്രത്യേക പ്രശ്നത്തിൽ പരീക്ഷിക്കുക എന്ന അവസരം നൽകുന്നു.
+* ചില സെക്ഷനുകളിൽ ബന്ധപ്പെട്ട വിഷയങ്ങൾ കൈവരിക്കുന്ന [**MS Learn**](https://learn.microsoft.com/en-us/collections/7w28iy2xrqzdj0?WT.mc_id=academic-77998-bethanycheum) മൾഡ്യൂളുകൾക്കും ലിങ്കുകളുണ്ട്.
 
-## തുടക്കം
+## തുടങ്ങുന്നത്
 
-### 🎯 AI-യിൽ പുതുതായി? ഇവിടെ നിന്നു തുടങ്ങുക!
+### 🎯 AI-യിൽ പുതിയവർക്കു! ഇവിടെ തുടക്കം!
 
-നിങ്ങൾ AI-യിൽ പൂര്‍ണമായി പുതുതായി ആണെങ്കിൽ, ചുരുങ്ങിയതും പ്രായോഗികവുമായ ഉദാഹരണങ്ങൾ വേണമെങ്കിൽ, ഞങ്ങളുടെ [**ആദ്യകാലത്തിന് അനുയോജ്യമായ ഉദാഹരണങ്ങൾ**](./examples/README.md) കാണുക! ഇവയിൽ ഉൾപ്പെടുന്നു:
+നിങ്ങൾ AI-യിൽ പൂർണ്ണമായും പുതിയവരാണ് എങ്കിൽ, ഹസ്തപരിണാമപരമായ ഉദാഹരണങ്ങൾ തൽക്ഷണം അറിയാൻ, ഞങ്ങളുടെ [**തുടരാനിടയായ സുഹൃത്തുക്കളായ ഉദാഹരണങ്ങൾ**](./examples/README.md) കാണുക! ഇവയിൽ ഉൾപ്പെടുന്നു:
 
-- 🌟 **Hello AI World** - നിങ്ങളുടെ ആദ്യ AI പ്രോഗ്രാം (패റ്റേൺ തിരിച്ചറിവ്)
-- 🧠 **Simple Neural Network** - പ്രാരംഭം മുതൽ ഒരു ന്യുറൽ നെറ്റ്‌വർക്ക് നിർമ്മിക്കുക  
-- 🖼️ **Image Classifier** - വിശദമായ കമന്റുകളോടെ ചിത്രങ്ങൾ വർഗ്ഗീകരിക്കുക
-- 💬 **ടെക്‌സ്‌റ്റ് സെൻറിമെന്റ്** - പോസിറ്റീവ്/നെഗറ്റീവ് ടെക്‌സ്‌റ്റ് വിശകലനം ചെയ്യുക
+- 🌟 **ഹലോ AI ലോകം** - നിങ്ങളുടെ ആദ്യ AI പ്രോഗ്രാമാണ് (പാറ്റേണ്റെ തിരിച്ചറിവ്)
+- 🧠 **സിമ്പിൾ ന്യൂറൽ നെറ്റ്‌വർക്കുകൾ** - ഒരു ന്യൂറൽ നെറ്റ്വർക്ക് പൂർണ്ണമായി നിർമ്മിക്കുക
+- 🖼️ **ചിത്രവര്‍ഗ്ഗീകരണം** - വിശദമായ കമന്റുകളോടെ ചിത്രങ്ങള്‍ വര്‍ഗ്ഗീകരിക്കുക
+- 💬 **പാഠ്യഭാവം** - പോസിറ്റീവ്/നെഗറ്റീവ് പാഠ്യം വിശകലനം ചെയ്യുക
 
-These examples are designed to help you understand AI concepts before diving into the full curriculum.
+AI ആശയങ്ങള്‍ പൂര്‍ണ്ണ പാഠ്യപദ്ധതിയില്‍ മുന്‍കൂട്ടി മനസിലാക്കാന്‍ സഹായിക്കാന്‍ ഈ ഉദാഹരണങ്ങള്‍ രൂപകല്‍പ്പന ചെയ്തിരിക്കുന്നു.
 
-### 📚 Full Curriculum Setup
+### 📚 പൂര്‍ണ്ണ പാഠ്യപദ്ധതി ക്രമീകരണം
 
-- We have created a [setup lesson](./lessons/0-course-setup/setup.md) to help you with setting up your development environment. - For Educators, we have created a [curricula setup lesson](./lessons/0-course-setup/for-teachers.md) for you too!
-- How to [Run the code in a VSCode or a Codepace](./lessons/0-course-setup/how-to-run.md)
+- നിങ്ങളുടെ വികസന പരിസ്ഥിതി ക്രമീകരിക്കാന്‍ സഹായിക്കുന്നതിനായി ഞങ്ങള്‍ ഒരു [ക്രമീകരണ പാഠം](./lessons/0-course-setup/setup.md) സൃഷ്ടിച്ചിട്ടുണ്ട്. - അദ്ധ്യാപകര്‍ക്കായി ഞങ്ങള്‍ ഒരു [പാഠ്യപദ്ധതി ക്രമീകരണ പാഠം](./lessons/0-course-setup/for-teachers.md) вам തയ്യാറാക്കിയിട്ടുണ്ട്!
+- എങ്ങനെ [VSCode അല്ലെങ്കില്‍ Codespace-ല്‍ കോഡ് ഓടിക്കാം](./lessons/0-course-setup/how-to-run.md)
 
-Follow these steps:
+ഈ ഘട്ടങ്ങള്‍ പിന്തുടരുക:
 
-Fork the Repository: Click on the "Fork" button at the top-right corner of this page.
+റിപ്പോസിറ്ററി ഫോര്‍ക്ക് ചെയ്യുക: ഈ പേജിന്റെ മുകളില്‍ വലത് കോണിലുള്ള "Fork" ബട്ടണില്‍ ക്ലിക്ക് ചെയ്യുക.
 
-Clone the Repository: `git clone https://github.com/microsoft/AI-For-Beginners.git`
+റിപ്പോസിറ്ററി ക്ലോണ്‍ ചെയ്യുക: `git clone https://github.com/microsoft/AI-For-Beginners.git`
 
-Don't forget to star (🌟) this repo to find it easier later.
+പിന്നീട് എളുപ്പത്തില്‍ കണ്ടെത്താന്‍ ഈ റിപോയ്ക്ക് സ്റ്റാര്‍ (🌟) നല്‍കാന്‍ മറക്കരുത്.
 
-## Meet other Learners
+## മറ്റ് പഠിതാക്കളെ കാണൂ
 
-Join our [official AI Discord server](https://aka.ms/genai-discord?WT.mc_id=academic-105485-bethanycheum) to meet and network with other learners taking this course and get support.
+ഈ കോഴ്‌സ് ചെയ്യುತ್ತಿರುವ മറ്റ് പഠിതാക്കളുമായി കൂടിക്കാഴ്ച്ച നടത്താനും, നെറ്റ്‍വര്‍ക്കിങ് ചെയ്യാനും സഹായം തേടാനും ഞങ്ങളുടെ [അധികൃത AI Discord സര്‍വര്](https://aka.ms/genai-discord?WT.mc_id=academic-105485-bethanycheum) സന്ദര്‍ശിക്കൂ.
 
-If you have product feedback or questions whilst building visit our [Azure AI Foundry Developer Forum](https://aka.ms/foundry/forum)
+നിര്‍മ്മിക്കുന്നതിനിടെ ഉല്‍പ്പന്ന പ്രതികരണമോ ചോദ്യങ്ങളോ ഉണ്ടെങ്കില്‍ ഞങ്ങളുടെ [Azure AI Foundry Developer Forum](https://aka.ms/foundry/forum) സന്ദര്‍ശിക്കുക.
 
-## Quizzes 
+## ക്വിസുകള്‍
 
-> **A note about quizzes**: All quizzes are contained in the Quiz-app folder in etc\quiz-app, or [Online Here](https://ff-quizzes.netlify.app/) They are linked from within the lessons the quiz app can be run locally or deployed to Azure; follow the instruction in the `quiz-app` folder. They are gradually being localized.
+> **ക്വിസുകള്‍ സംബന്ധിച്ച ഒരു കുറിപ്പ്**: എല്ലാ ക്വിസുകളും etc\quiz-app എന്ന quiz-app ഡയറക്ടറിയില്‍ ഉണ്ടാകുന്നതും [ഓണ്‍ലൈനിലും ഇവിടെ](https://ff-quizzes.netlify.app/) ലഭ്യമാണ്. ക്വിസ് ആപ്പ് പാഠങ്ങളില്‍ നിന്ന് ലിങ്ക് ചെയ്യുന്നുണ്ട്, ഇത് ലോക്കലി ഓടിക്കാനും Azure-ല്‍ ഡിപ്ലോയ്ചെയ്യാനും കഴിയും; `quiz-app` ഫോള്‍ഡറിലെ നിര്‍ദ്ദേശങ്ങള്‍ പിന്തുടരുക. ഇവ ലളിതമായി ലൊക്കലൈസ് ചെയ്യുന്നു.
 
-## Help Wanted
+## സഹായം ആവശ്യമുണ്ട്
 
-Do you have suggestions or found spelling or code errors? Raise an issue or create a pull request.
+നിങ്ങള്‍ക്ക് വാക്ക് പിശകുകള്‍ അല്ലെങ്കില്‍ കോഡ് പിശകുകള്‍ കണ്ടുപിടിച്ചുവെങ്കില്‍ ഒരു ഇഷ്യു ഉയര്‍ത്തുക അല്ലെങ്കില്‍ പുൾ അഭ്യർത്ഥന സൃഷ്ടിക്കുക.
 
-## Special Thanks
+## പ്രത്യേക നന്ദി
 
-* **✍️ Primary Author:** [Dmitry Soshnikov](http://soshnikov.com), PhD
-* **🔥 Editor:** [Jen Looper](https://twitter.com/jenlooper), PhD
-* **🎨 Sketchnote illustrator:** [Tomomi Imura](https://twitter.com/girlie_mac)
-* **✅ Quiz Creator:** [Lateefah Bello](https://github.com/CinnamonXI), [MLSA](https://studentambassadors.microsoft.com/)
-* **🙏 Core Contributors:** [Evgenii Pishchik](https://github.com/Pe4enIks)
+* **✍️ പ്രാഥമിക രചയിതാവ്:** [Dmitry Soshnikov](http://soshnikov.com), PhD  
+* **🔥 എഡിറ്റര്‍:** [Jen Looper](https://twitter.com/jenlooper), PhD  
+* **🎨 സ്കെച്ച്നോട്ട് ചിത്രകാരന്‍:** [Tomomi Imura](https://twitter.com/girlie_mac)  
+* **✅ ക്വിസ് സ്രഷ്ടാവ്:** [Lateefah Bello](https://github.com/CinnamonXI), [MLSA](https://studentambassadors.microsoft.com/)  
+* **🙏 പ്രധാന സംഭാവനക്കാര്‍:** [Evgenii Pishchik](https://github.com/Pe4enIks)  
 
-## Other Curricula
+## മറ്റു പാഠ്യപദ്ധതികള്‍
 
-Our team produces other curricula! Check out:
+നമ്മുടെ ടീം മറ്റ് പാഠ്യപദ്ധതികളും സൃഷ്ടിക്കുന്നു! പരിശോധിക്കുക:
 
 <!-- CO-OP TRANSLATOR OTHER COURSES START -->
 ### LangChain
 [![LangChain4j for Beginners](https://img.shields.io/badge/LangChain4j%20for%20Beginners-22C55E?style=for-the-badge&&labelColor=E5E7EB&color=0553D6)](https://aka.ms/langchain4j-for-beginners)
 [![LangChain.js for Beginners](https://img.shields.io/badge/LangChain.js%20for%20Beginners-22C55E?style=for-the-badge&labelColor=E5E7EB&color=0553D6)](https://aka.ms/langchainjs-for-beginners?WT.mc_id=m365-94501-dwahlin)
-
+[![LangChain for Beginners](https://img.shields.io/badge/LangChain%20for%20Beginners-22C55E?style=for-the-badge&labelColor=E5E7EB&color=0553D6)](https://github.com/microsoft/langchain-for-beginners?WT.mc_id=m365-94501-dwahlin)
 ---
 
 ### Azure / Edge / MCP / Agents
@@ -204,19 +206,19 @@ Our team produces other curricula! Check out:
 [![Copilot Adventure](https://img.shields.io/badge/Copilot%20Adventure-FDE68A?style=for-the-badge&labelColor=E5E7EB&color=FDE68A)](https://github.com/microsoft/CopilotAdventures?WT.mc_id=academic-105485-koreyst)
 <!-- CO-OP TRANSLATOR OTHER COURSES END -->
 
-## Getting Help
+## സഹായം നേടുക
 
-If you get stuck or have any questions about building AI apps. Join fellow learners and experienced developers in discussions about MCP. It's a supportive community where questions are welcome and knowledge is shared freely.
+നിങ്ങൾ കുടുങ്ങുകയോ AI ആപ്ലിക്കേഷനുകൾ നിർമ്മിക്കാൻ എന്തെങ്കിലും ചോദ്യം ഉണ്ടായിരിക്കുകയോ ചെയ്താൽ MCP-യെക്കുറിച്ചുള്ള സംവാദങ്ങളിൽ കൂട്ടുകാർക്കും പരിചയസമ്പന്നരായ ഡെവലപ്പർമാർക്കും കൂടെ ചേരൂ. ചോദ്യങ്ങൾ സ്വാഗതപരമാണ്, അറിവ് സ്വതന്ത്രമായി പങ്കുവെക്കപ്പെടുന്ന ഒരു സഹായകരമായ സമൂഹമാണ് ഇത്.
 
 [![Microsoft Foundry Discord](https://dcbadge.limes.pink/api/server/nTYy5BXMWG)](https://discord.gg/nTYy5BXMWG)
 
-If you have product feedback or errors while building visit:
+നിര്‍മ്മിക്കുന്നതിനിടെ ഉല്‍പ്പന്ന പ്രതികരണങ്ങള്‍ അല്ലെങ്കില്‍ പിശകുകള്‍ ഉണ്ടെങ്കില്‍ സന്ദര്‍ശിക്കുക:
 
 [![Microsoft Foundry Developer Forum](https://img.shields.io/badge/GitHub-Microsoft_Foundry_Developer_Forum-blue?style=for-the-badge&logo=github&color=000000&logoColor=fff)](https://aka.ms/foundry/forum)
 
 ---
 
 <!-- CO-OP TRANSLATOR DISCLAIMER START -->
-നിരാകരണം:
-ഈ പ്രമാണം AI തർജ്ജമാ സേവനമായ [Co-op Translator](https://github.com/Azure/co-op-translator) ഉപയോഗിച്ച് തർജ്ജമിച്ചതാണ്. ഞങ്ങൾ കൃത്യത ഉറപ്പാക്കാൻ ശ്രമിക്കുമ്പോഴും, ഓട്ടോമേറ്റഡ് തർജ്ജമകളിൽ പിശകുകളും തെറ്റുകളും ഉണ്ടായിരിക്കാനുള്ള സാധ്യതയുണ്ട്. അതിനാൽ മാതൃഭാഷയിലെ മൗലിക പ്രമാണത്തെ പ്രാമാണിക സ്രോതസ്സായി കരുതണം. നിർണായക വിവരങ്ങൾക്ക് വിദഗ്ദ്ധ മനുഷ്യ വിവർത്തനം ശുപാർശിക്കുന്നു. ഈ തർജ്ജമ ഉപയോഗിക്കപ്പെട്ടതിൽനിന്നോ അതിൽ നിന്നുണ്ടാകുന്ന ഏതെങ്കിലും തെറ്റിദ്ധാരണകൾക്കും വ്യാഖ്യാനപ്രശ്നങ്ങൾക്കും ഞങ്ങൾ ഉത്തരവാദികളല്ല.
+**അനുമതി**:  
+ഈ രേഖ AI അനുഭവ വിവർത്തന സേവനം [Co-op Translator](https://github.com/Azure/co-op-translator) ഉപയോഗിച്ച് വിവർത്തനം ചെയ്തതാണ്. നമ്മൾ കാര്യക്ഷമതയ്ക്കായി ശ്രമിക്കുന്നുവെങ്കിലും, സ്വയംകൃത വ്യാഖ്യാനങ്ങളിൽ പിഴവുകൾ അല്ലെങ്കിൽ തെറ്റായ വിവരങ്ങൾ ഉണ്ടാകാമെന്ന് ശ്രദ്ധിക്കുക. മാതൃഭാഷയിലുള്ള യഥാർത്ഥ പത്രം അധികാരപരമായ സ്രോതസായി കണക്കാക്കണം. നിർണ്ണായകമായ വിവരങ്ങൾക്ക്, പ്രൊഫഷണൽ മനുഷ്യാവിവർത്തനം ശുപാർശ ചെയ്യുന്നു. ഈ വിവർത്തനത്തിന് ഉപയോഗിക്കുമ്പോൾ സംഭവിക്കുന്ന അർത്ഥവിലക്കുന്ന പാരാജയങ്ങൾയ്‌ക്കോ തെറ്റായ വ്യാഖ്യാനങ്ങൾക്ക് ഞങ്ങൾ ഉത്തരവാദിത്വം വഹിക്കുന്നില്ല.
 <!-- CO-OP TRANSLATOR DISCLAIMER END -->

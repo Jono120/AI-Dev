@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "b708c9b85b833864c73c6281f1e6b96e",
-  "translation_date": "2025-09-23T14:00:17+00:00",
-  "source_file": "lessons/5-NLP/14-Embeddings/README.md",
-  "language_code": "pl"
-}
--->
 # Osadzenia
 
 ## [Quiz przed wykładem](https://ff-quizzes.netlify.app/en/ai/quiz/27)
@@ -19,7 +10,7 @@ Warstwa osadzenia przyjmuje słowo jako wejście i generuje wektor wyjściowy o 
 
 Używając warstwy osadzenia jako pierwszej warstwy w naszej sieci klasyfikatora, możemy przejść od modelu bag-of-words do modelu **embedding bag**, gdzie najpierw konwertujemy każde słowo w naszym tekście na odpowiadające mu osadzenie, a następnie obliczamy pewną funkcję agregującą dla wszystkich tych osadzeń, taką jak `sum`, `average` lub `max`.
 
-![Obraz przedstawiający klasyfikator osadzeń dla pięciu słów w sekwencji.](../../../../../translated_images/embedding-classifier-example.b77f021a7ee67eeec8e68bfe11636c5b97d6eaa067515a129bfb1d0034b1ac5b.pl.png)
+![Obraz przedstawiający klasyfikator osadzeń dla pięciu słów w sekwencji.](../../../../../translated_images/pl/embedding-classifier-example.b77f021a7ee67eee.webp)
 
 > Obraz autorstwa autora
 
@@ -40,7 +31,7 @@ Aby to osiągnąć, musimy wstępnie wytrenować nasz model osadzenia na dużym 
 
 CBoW działa szybciej, podczas gdy skip-gram jest wolniejszy, ale lepiej reprezentuje rzadkie słowa.
 
-![Obraz przedstawiający algorytmy CBoW i Skip-Gram do konwersji słów na wektory.](../../../../../translated_images/example-algorithms-for-converting-words-to-vectors.fbe9207a726922f6f0f5de66427e8a6eda63809356114e28fb1fa5f4a83ebda7.pl.png)
+![Obraz przedstawiający algorytmy CBoW i Skip-Gram do konwersji słów na wektory.](../../../../../translated_images/pl/example-algorithms-for-converting-words-to-vectors.fbe9207a726922f6.webp)
 
 > Obraz z [tego artykułu](https://arxiv.org/pdf/1301.3781.pdf)
 

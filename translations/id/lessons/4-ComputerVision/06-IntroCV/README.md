@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "feeca98225cb420afc89415f24f63d92",
-  "translation_date": "2025-09-23T10:39:05+00:00",
-  "source_file": "lessons/4-ComputerVision/06-IntroCV/README.md",
-  "language_code": "id"
-}
--->
 # Pengantar Computer Vision
 
 [Computer Vision](https://wikipedia.org/wiki/Computer_vision) adalah disiplin ilmu yang bertujuan untuk memungkinkan komputer memahami gambar digital pada tingkat tinggi. Definisi ini cukup luas, karena *pemahaman* dapat berarti banyak hal, termasuk menemukan objek dalam gambar (**deteksi objek**), memahami apa yang sedang terjadi (**deteksi peristiwa**), mendeskripsikan gambar dalam teks, atau merekonstruksi sebuah adegan dalam 3D. Ada juga tugas-tugas khusus terkait gambar manusia: estimasi usia dan emosi, deteksi dan identifikasi wajah, serta estimasi pose 3D, untuk menyebut beberapa contoh.
@@ -73,14 +64,14 @@ Dalam [OpenCV Notebook](OpenCV.ipynb), kami memberikan beberapa contoh kapan com
 
 * **Pra-pemrosesan foto buku Braille**. Kami fokus pada bagaimana kami dapat menggunakan thresholding, deteksi fitur, transformasi perspektif, dan manipulasi NumPy untuk memisahkan simbol Braille individu untuk klasifikasi lebih lanjut oleh jaringan saraf.
 
-![Gambar Braille](../../../../../translated_images/braille.341962ff76b1bd7044409371d3de09ced5028132aef97344ea4b7468c1208126.id.jpeg) | ![Gambar Braille yang Diproses](../../../../../translated_images/braille-result.46530fea020b03c76aac532d7d6eeef7f6fb35b55b1001cd21627907dabef3ed.id.png) | ![Simbol Braille](../../../../../translated_images/braille-symbols.0159185ab69d533909dc4d7d26a1971b51401c6a80eb3a5584f250ea880af88b.id.png)
+![Gambar Braille](../../../../../translated_images/id/braille.341962ff76b1bd70.webp) | ![Gambar Braille yang Diproses](../../../../../translated_images/id/braille-result.46530fea020b03c7.webp) | ![Simbol Braille](../../../../../translated_images/id/braille-symbols.0159185ab69d5339.webp)
 ----|-----|-----
 
 > Gambar dari [OpenCV.ipynb](OpenCV.ipynb)
 
 * **Mendeteksi gerakan dalam video menggunakan perbedaan frame**. Jika kamera tetap, maka frame dari umpan kamera seharusnya cukup mirip satu sama lain. Karena frame direpresentasikan sebagai array, hanya dengan mengurangi array untuk dua frame berturut-turut kita akan mendapatkan perbedaan piksel, yang seharusnya rendah untuk frame statis, dan menjadi lebih tinggi ketika ada gerakan yang signifikan dalam gambar.
 
-![Gambar frame video dan perbedaan frame](../../../../../translated_images/frame-difference.706f805491a0883c938e16447bf5eb2f7d69e812c7f743cbe7d7c7645168f81f.id.png)
+![Gambar frame video dan perbedaan frame](../../../../../translated_images/id/frame-difference.706f805491a0883c.webp)
 
 > Gambar dari [OpenCV.ipynb](OpenCV.ipynb)
 
@@ -89,7 +80,7 @@ Dalam [OpenCV Notebook](OpenCV.ipynb), kami memberikan beberapa contoh kapan com
    - **Dense Optical Flow** menghitung medan vektor yang menunjukkan untuk setiap piksel ke mana ia bergerak.
    - **Sparse Optical Flow** didasarkan pada mengambil beberapa fitur khas dalam gambar (misalnya, tepi), dan membangun trajektorinya dari frame ke frame.
 
-![Gambar Optical Flow](../../../../../translated_images/optical.1f4a94464579a83a10784f3c07fe7228514714b96782edf50e70ccd59d2d8c4f.id.png)
+![Gambar Optical Flow](../../../../../translated_images/id/optical.1f4a94464579a83a.webp)
 
 > Gambar dari [OpenCV.ipynb](OpenCV.ipynb)
 
@@ -115,7 +106,7 @@ Baca lebih lanjut tentang optical flow [dalam tutorial hebat ini](https://learno
 
 Dalam lab ini, Anda akan merekam video dengan gerakan sederhana, dan tujuan Anda adalah mengekstrak gerakan atas/bawah/kiri/kanan menggunakan optical flow.
 
-<img src="images/palm-movement.png" width="30%" alt="Frame Gerakan Telapak Tangan"/>
+<img src="../../../../../translated_images/id/palm-movement.341495f0e9c47da3.webp" width="30%" alt="Frame Gerakan Telapak Tangan"/>
 
 ---
 

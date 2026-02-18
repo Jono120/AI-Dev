@@ -1,19 +1,10 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "d76a7eda28de5210c8b1ba50a6216c69",
-  "translation_date": "2025-11-25T22:34:12+00:00",
-  "source_file": "lessons/4-ComputerVision/11-ObjectDetection/README.md",
-  "language_code": "ml"
-}
--->
 # ഒബ്ജക്റ്റ് ഡിറ്റക്ഷൻ
 
 ഇതുവരെ കൈകാര്യം ചെയ്ത ഇമേജ് ക്ലാസിഫിക്കേഷൻ മോഡലുകൾ ഒരു ചിത്രം എടുത്ത് ഒരു വർഗ്ഗീയ ഫലം ഉത്പാദിപ്പിച്ചിരുന്നു, ഉദാഹരണത്തിന് MNIST പ്രശ്നത്തിലെ 'നമ്പർ' ക്ലാസ്. എന്നാൽ പലപ്പോഴും ഒരു ചിത്രത്തിൽ വസ്തുക്കൾ കാണപ്പെടുന്നുവെന്ന് അറിയുന്നതിൽ മാത്രമല്ല, അവയുടെ കൃത്യമായ സ്ഥാനം കണ്ടെത്താൻ ആഗ്രഹിക്കുന്നു. ഇതാണ് **ഒബ്ജക്റ്റ് ഡിറ്റക്ഷൻ** എന്നതിന്റെ പ്രധാന ലക്ഷ്യം.
 
 ## [പ്രീ-ലെക്ചർ ക്വിസ്](https://ff-quizzes.netlify.app/en/ai/quiz/21)
 
-![Object Detection](../../../../../translated_images/Screen_Shot_2016-11-17_at_11.14.54_AM.b4bb3769353287be1b905373ed9c858102c054b16e4595c76ec3f7bba0feb549.ml.png)
+![Object Detection](../../../../../translated_images/ml/Screen_Shot_2016-11-17_at_11.14.54_AM.b4bb3769353287be.webp)
 
 > ചിത്രം [YOLO v2 വെബ്‌സൈറ്റ്](https://pjreddie.com/darknet/yolov2/) നിന്നാണ്
 
@@ -25,7 +16,7 @@ CO_OP_TRANSLATOR_METADATA:
 2. ഓരോ ടൈലിലും ഇമേജ് ക്ലാസിഫിക്കേഷൻ നടത്തുക
 3. ഉയർന്ന ആക്ടിവേഷൻ ലഭിക്കുന്ന ടൈലുകൾ ആ വസ്തു അടങ്ങിയതായി കരുതാം
 
-![Naive Object Detection](../../../../../translated_images/naive-detection.e7f1ba220ccd08c68a2ea8e06a7ed75c3fcc738c2372f9e00b7f4299a8659c01.ml.png)
+![Naive Object Detection](../../../../../translated_images/ml/naive-detection.e7f1ba220ccd08c6.webp)
 
 > *ചിത്രം [Exercise Notebook](ObjectDetection-TF.ipynb) നിന്നാണ്*
 
@@ -42,7 +33,7 @@ CO_OP_TRANSLATOR_METADATA:
 * [PASCAL VOC](http://host.robots.ox.ac.uk/pascal/VOC/) - 20 ക്ലാസുകൾ
 * [COCO](http://cocodataset.org/#home) - Common Objects in Context. 80 ക്ലാസുകൾ, ബൗണ്ടിംഗ് ബോക്സുകളും സെഗ്മെന്റേഷൻ മാസ്കുകളും
 
-![COCO](../../../../../translated_images/coco-examples.71bc60380fa6cceb7caad48bd09e35b6028caabd363aa04fee89c414e0870e86.ml.jpg)
+![COCO](../../../../../translated_images/ml/coco-examples.71bc60380fa6cceb.webp)
 
 ## ഒബ്ജക്റ്റ് ഡിറ്റക്ഷൻ മെട്രിക്‌സ്
 
@@ -50,7 +41,7 @@ CO_OP_TRANSLATOR_METADATA:
 
 ഇമേജ് ക്ലാസിഫിക്കേഷനിൽ ആൽഗോരിതത്തിന്റെ പ്രകടനം എളുപ്പത്തിൽ അളക്കാമെങ്കിലും, ഒബ്ജക്റ്റ് ഡിറ്റക്ഷനിൽ ക്ലാസിന്റെ ശരിതത്വവും ബൗണ്ടിംഗ് ബോക്സിന്റെ കൃത്യതയും അളക്കേണ്ടതുണ്ട്. ഇതിന് **Intersection over Union** (IoU) ഉപയോഗിക്കുന്നു, ഇത് രണ്ട് ബോക്സുകൾ (അഥവാ രണ്ട് ഏരിയകൾ) എത്രമാത്രം ഒതുക്കപ്പെടുന്നുവെന്ന് അളക്കുന്നു.
 
-![IoU](../../../../../translated_images/iou_equation.9a4751d40fff4e119ecd0a7bcca4e71ab1dc83e0d4f2a0d66ff0859736f593cf.ml.png)
+![IoU](../../../../../translated_images/ml/iou_equation.9a4751d40fff4e11.webp)
 
 > *ചിത്രം [ഈ മികച്ച ബ്ലോഗ് പോസ്റ്റ്](https://pyimagesearch.com/2016/11/07/intersection-over-union-iou-for-object-detection/) നിന്നാണ്*
 
@@ -97,11 +88,11 @@ IoU ഒരു നിശ്ചിത മൂല്യത്തിന് മുക�
 
 [R-CNN](http://islab.ulsan.ac.kr/files/announcement/513/rcnn_pami.pdf) [Selective Search](http://www.huppelen.nl/publications/selectiveSearchDraft.pdf) ഉപയോഗിച്ച് ROI പ്രദേശങ്ങളുടെ ഹയർആർക്കിക്കൽ ഘടന സൃഷ്ടിക്കുന്നു, പിന്നീട് CNN ഫീച്ചർ എക്സ്ട്രാക്ടറുകളും SVM ക്ലാസിഫയറുകളും ഉപയോഗിച്ച് വസ്തു ക്ലാസ് നിർണയിക്കുന്നു, ലീനിയർ റെഗ്രഷൻ ഉപയോഗിച്ച് *ബൗണ്ടിംഗ് ബോക്സ്* കോഓർഡിനേറ്റുകൾ കണ്ടെത്തുന്നു. [അധികൃത പേപ്പർ](https://arxiv.org/pdf/1506.01497v1.pdf)
 
-![RCNN](../../../../../translated_images/rcnn1.cae407020dfb1d1fb572656e44f75cd6c512cc220591c116c506652c10e47f26.ml.png)
+![RCNN](../../../../../translated_images/ml/rcnn1.cae407020dfb1d1f.webp)
 
 > *ചിത്രം van de Sande et al. ICCV’11*
 
-![RCNN-1](../../../../../translated_images/rcnn2.2d9530bb83516484ec65b250c22dbf37d3d23244f32864ebcb91d98fe7c3112c.ml.png)
+![RCNN-1](../../../../../translated_images/ml/rcnn2.2d9530bb83516484.webp)
 
 > *ചിത്രങ്ങൾ [ഈ ബ്ലോഗ്](https://towardsdatascience.com/r-cnn-fast-r-cnn-faster-r-cnn-yolo-object-detection-algorithms-36d53571365e) നിന്നാണ്*
 
@@ -109,7 +100,7 @@ IoU ഒരു നിശ്ചിത മൂല്യത്തിന് മുക�
 
 R-CNN പോലെയാണ്, പക്ഷേ പ്രദേശങ്ങൾ കോൺവല്യൂഷൻ ലെയറുകൾ പ്രയോഗിച്ചതിന് ശേഷം നിർവചിക്കുന്നു.
 
-![FRCNN](../../../../../translated_images/f-rcnn.3cda6d9bb41888754037d2d9763e2298a96de5d9bc2a21db3147357aa5da9b1a.ml.png)
+![FRCNN](../../../../../translated_images/ml/f-rcnn.3cda6d9bb4188875.webp)
 
 > ചിത്രം [അധികൃത പേപ്പർ](https://www.cv-foundation.org/openaccess/content_iccv_2015/papers/Girshick_Fast_R-CNN_ICCV_2015_paper.pdf), [arXiv](https://arxiv.org/pdf/1504.08083.pdf), 2015
 
@@ -117,7 +108,7 @@ R-CNN പോലെയാണ്, പക്ഷേ പ്രദേശങ്ങൾ �
 
 ഈ സമീപനത്തിന്റെ പ്രധാന ആശയം ROIകൾ പ്രവചിക്കാൻ ഒരു ന്യൂറൽ നെറ്റ്‌വർക്ക് ഉപയോഗിക്കുക എന്നതാണ് - ഇതാണ് *Region Proposal Network*. [പേപ്പർ](https://arxiv.org/pdf/1506.01497.pdf), 2016
 
-![FasterRCNN](../../../../../translated_images/faster-rcnn.8d46c099b87ef30ab2ea26dbc4bdd85b974a57ba8eb526f65dc4cd0a4711de30.ml.png)
+![FasterRCNN](../../../../../translated_images/ml/faster-rcnn.8d46c099b87ef30a.webp)
 
 > ചിത്രം [അധികൃത പേപ്പർ](https://arxiv.org/pdf/1506.01497.pdf)
 
@@ -129,7 +120,7 @@ Faster R-CNN-നേക്കാൾ വേഗത്തിൽ പ്രവർത�
 2. ഫീച്ചറുകൾ **Position-Sensitive Score Map** ഉപയോഗിച്ച് പ്രോസസ്സ് ചെയ്യുന്നു. $C$ ക്ലാസുകളിലുള്ള ഓരോ വസ്തുവും $k\times k$ പ്രദേശങ്ങളായി വിഭജിച്ച്, വസ്തുവിന്റെ ഭാഗങ്ങൾ പ്രവചിക്കാൻ പരിശീലനം നൽകുന്നു.
 3. $k\times k$ പ്രദേശങ്ങളിലെ ഓരോ ഭാഗത്തിനും എല്ലാ നെറ്റ്‌വർക്കുകളും വസ്തു ക്ലാസുകൾക്ക് വോട്ട് ചെയ്യുന്നു, പരമാവധി വോട്ട് ലഭിച്ച ക്ലാസ് തിരഞ്ഞെടുക്കുന്നു.
 
-![r-fcn image](../../../../../translated_images/r-fcn.13eb88158b99a3da50fa2787a6be5cb310d47f0e9655cc93a1090dc7aab338d1.ml.png)
+![r-fcn image](../../../../../translated_images/ml/r-fcn.13eb88158b99a3da.webp)
 
 > ചിത്രം [അധികൃത പേപ്പർ](https://arxiv.org/abs/1605.06409)
 
@@ -140,7 +131,7 @@ YOLO ഒരു റിയൽടൈം ഒന്ന്-പാസ്സ് ആൽ�
  * ചിത്രം $S\times S$ പ്രദേശങ്ങളായി വിഭജിക്കുന്നു
  * ഓരോ പ്രദേശത്തിനും **CNN** $n$ സാധ്യതയുള്ള വസ്തുക്കൾ, *ബൗണ്ടിംഗ് ബോക്സ്* കോഓർഡിനേറ്റുകൾ, *confidence*=*probability* * IoU പ്രവചിക്കുന്നു.
 
- ![YOLO](../../../../../translated_images/yolo.a2648ec82ee8bb4ea27537677adb482fd4b733ca1705c561b6a24a85102dced5.ml.png)
+ ![YOLO](../../../../../translated_images/ml/yolo.a2648ec82ee8bb4e.webp)
 
 > ചിത്രം [അധികൃത പേപ്പർ](https://arxiv.org/abs/1506.02640)
 

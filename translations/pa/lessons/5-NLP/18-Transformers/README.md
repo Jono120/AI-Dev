@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "f335dfcb4a993920504c387973a36957",
-  "translation_date": "2025-09-23T07:39:41+00:00",
-  "source_file": "lessons/5-NLP/18-Transformers/README.md",
-  "language_code": "pa"
-}
--->
 # ਧਿਆਨ ਮਕੈਨਿਜ਼ਮ ਅਤੇ ਟ੍ਰਾਂਸਫਾਰਮਰ
 
 ## [ਪ੍ਰੀ-ਲੈਕਚਰ ਕਵਿਜ਼](https://ff-quizzes.netlify.app/en/ai/quiz/35)
@@ -20,13 +11,13 @@ RNNs ਨਾਲ, ਸੀਕਵੈਂਸ-ਟੂ-ਸੀਕਵੈਂਸ ਦੋ ਰਿ
 
 **ਧਿਆਨ ਮਕੈਨਿਜ਼ਮ** RNN ਦੇ ਹਰ ਆਉਟਪੁੱਟ ਅਨੁਮਾਨ 'ਤੇ ਹਰ ਇਨਪੁਟ ਵੇਕਟਰ ਦੇ ਸੰਦਰਭਕ ਪ੍ਰਭਾਵ ਨੂੰ ਵਜਨ ਦੇਣ ਦਾ ਇੱਕ ਢੰਗ ਪ੍ਰਦਾਨ ਕਰਦੇ ਹਨ। ਇਹ ਇਸ ਤਰੀਕੇ ਨਾਲ ਲਾਗੂ ਕੀਤਾ ਜਾਂਦਾ ਹੈ ਕਿ ਇਨਪੁਟ RNN ਦੇ ਮੱਧਵਰਤੀ ਸਟੇਟਾਂ ਅਤੇ ਆਉਟਪੁੱਟ RNN ਦੇ ਵਿਚਕਾਰ ਸ਼ਾਰਟਕਟ ਬਣਾਏ ਜਾਂਦੇ ਹਨ। ਇਸ ਤਰੀਕੇ ਨਾਲ, ਜਦੋਂ ਆਉਟਪੁੱਟ ਚਿੰਨ੍ਹ y<sub>t</sub> ਬਣਾਇਆ ਜਾਂਦਾ ਹੈ, ਅਸੀਂ ਸਾਰੇ ਇਨਪੁਟ ਹਿਡਨ ਸਟੇਟ h<sub>i</sub> ਨੂੰ ਵੱਖ-ਵੱਖ ਵਜਨ ਗੁਣਾਂਕ &alpha;<sub>t,i</sub> ਦੇ ਨਾਲ ਧਿਆਨ ਵਿੱਚ ਲਵਾਂਗੇ।
 
-![ਇੱਕ ਐਨਕੋਡਰ/ਡਿਕੋਡਰ ਮਾਡਲ ਨੂੰ additive attention layer ਨਾਲ ਦਿਖਾਉਂਦੀ ਚਿੱਤਰ](../../../../../translated_images/encoder-decoder-attention.7a726296894fb567aa2898c94b17b3289087f6705c11907df8301df9e5eeb3de.pa.png)
+![ਇੱਕ ਐਨਕੋਡਰ/ਡਿਕੋਡਰ ਮਾਡਲ ਨੂੰ additive attention layer ਨਾਲ ਦਿਖਾਉਂਦੀ ਚਿੱਤਰ](../../../../../translated_images/pa/encoder-decoder-attention.7a726296894fb567.webp)
 
 > [Bahdanau et al., 2015](https://arxiv.org/pdf/1409.0473.pdf) ਵਿੱਚ additive attention ਮਕੈਨਿਜ਼ਮ ਨਾਲ ਐਨਕੋਡਰ-ਡਿਕੋਡਰ ਮਾਡਲ, [ਇਸ ਬਲੌਗ ਪੋਸਟ](https://lilianweng.github.io/lil-log/2018/06/24/attention-attention.html) ਤੋਂ ਲਿਆ ਗਿਆ।
 
 Attention ਮੈਟ੍ਰਿਕਸ {&alpha;<sub>i,j</sub>} ਇਹ ਦਰਸਾਉਂਦੀ ਹੈ ਕਿ ਕੁਝ ਇਨਪੁਟ ਸ਼ਬਦਾਂ ਦਾ ਇੱਕ ਦਿੱਤੇ ਗਏ ਆਉਟਪੁੱਟ ਸੀਕਵੈਂਸ ਵਿੱਚ ਸ਼ਬਦ ਬਣਾਉਣ ਵਿੱਚ ਕਿੰਨਾ ਯੋਗਦਾਨ ਹੈ। ਹੇਠਾਂ ਇਸ ਮੈਟ੍ਰਿਕਸ ਦਾ ਇੱਕ ਉਦਾਹਰਨ ਦਿੱਤਾ ਗਿਆ ਹੈ:
 
-![Bahdanau - arviz.org ਤੋਂ ਲਿਆ ਗਿਆ RNNsearch-50 ਦੁਆਰਾ ਪਾਈ ਗਈ ਇੱਕ ਨਮੂਨਾ ਅਲਾਈਨਮੈਂਟ ਦਿਖਾਉਂਦੀ ਚਿੱਤਰ](../../../../../translated_images/bahdanau-fig3.09ba2d37f202a6af11de6c82d2d197830ba5f4528d9ea430eb65fd3a75065973.pa.png)
+![Bahdanau - arviz.org ਤੋਂ ਲਿਆ ਗਿਆ RNNsearch-50 ਦੁਆਰਾ ਪਾਈ ਗਈ ਇੱਕ ਨਮੂਨਾ ਅਲਾਈਨਮੈਂਟ ਦਿਖਾਉਂਦੀ ਚਿੱਤਰ](../../../../../translated_images/pa/bahdanau-fig3.09ba2d37f202a6af.webp)
 
 > [Bahdanau et al., 2015](https://arxiv.org/pdf/1409.0473.pdf) (Fig.3) ਤੋਂ ਚਿੱਤਰ
 
@@ -56,7 +47,7 @@ Positional encoding ਦਾ ਵਿਚਾਰ ਹੇਠਾਂ ਦਿੱਤਾ ਗ�
 * Trainable embedding, ਟੋਕਨ embedding ਦੇ ਸਮਾਨ। ਇਹ ਪਹੁੰਚ ਅਸੀਂ ਇੱਥੇ ਵਿਚਾਰ ਕਰਦੇ ਹਾਂ। ਅਸੀਂ ਟੋਕਨ ਅਤੇ ਉਨ੍ਹਾਂ ਦੇ ਸਥਾਨਾਂ ਦੋਵਾਂ 'ਤੇ embedding layers ਲਾਗੂ ਕਰਦੇ ਹਾਂ, ਜਿਸ ਨਾਲ ਇੱਕੋ ਮਾਪ ਦੇ embedding ਵੇਕਟਰ ਪ੍ਰਾਪਤ ਹੁੰਦੇ ਹਨ, ਜਿਨ੍ਹਾਂ ਨੂੰ ਅਸੀਂ ਫਿਰ ਇਕੱਠੇ ਜੋੜਦੇ ਹਾਂ।  
 * Fixed position encoding function, ਜਿਵੇਂ ਕਿ ਮੂਲ ਪੇਪਰ ਵਿੱਚ ਪ੍ਰਸਤਾਵਿਤ ਕੀਤਾ ਗਿਆ ਹੈ।  
 
-<img src="images/pos-embedding.png" width="50%"/>
+<img src="../../../../../translated_images/pa/pos-embedding.e41ce9b6cf6078af.webp" width="50%"/>
 
 > ਲੇਖਕ ਦੁਆਰਾ ਚਿੱਤਰ
 
@@ -66,7 +57,7 @@ Positional encoding ਦਾ ਵਿਚਾਰ ਹੇਠਾਂ ਦਿੱਤਾ ਗ�
 
 ਅਗਲੇ, ਸਾਨੂੰ ਆਪਣੇ ਸੀਕਵੈਂਸ ਵਿੱਚ ਕੁਝ ਪੈਟਰਨ ਕੈਪਚਰ ਕਰਨ ਦੀ ਲੋੜ ਹੈ। ਇਹ ਕਰਨ ਲਈ, ਟ੍ਰਾਂਸਫਾਰਮਰ **self-attention** ਮਕੈਨਿਜ਼ਮ ਦੀ ਵਰਤੋਂ ਕਰਦੇ ਹਨ, ਜੋ ਮੂਲ ਤੌਰ 'ਤੇ attention ਹੈ ਜੋ ਇਨਪੁਟ ਅਤੇ ਆਉਟਪੁੱਟ ਦੇ ਤੌਰ 'ਤੇ ਇੱਕੋ ਸੀਕਵੈਂਸ 'ਤੇ ਲਾਗੂ ਹੁੰਦੀ ਹੈ। Self-attention ਲਾਗੂ ਕਰਨ ਨਾਲ ਸਾਨੂੰ **context** ਨੂੰ ਵਾਕ ਵਿੱਚ ਧਿਆਨ ਵਿੱਚ ਲੈਣ ਦੀ ਆਗਿਆ ਮਿਲਦੀ ਹੈ, ਅਤੇ ਵੇਖਣ ਦੀ ਆਗਿਆ ਮਿਲਦੀ ਹੈ ਕਿ ਕਿਹੜੇ ਸ਼ਬਦ ਆਪਸ ਵਿੱਚ ਜੁੜੇ ਹੋਏ ਹਨ। ਉਦਾਹਰਨ ਲਈ, ਇਹ ਸਾਨੂੰ ਇਹ ਵੇਖਣ ਦੀ ਆਗਿਆ ਦਿੰਦਾ ਹੈ ਕਿ ਕਿਹੜੇ ਸ਼ਬਦ coreferences ਦੁਆਰਾ ਦਰਸਾਏ ਜਾਂਦੇ ਹਨ, ਜਿਵੇਂ ਕਿ *it*, ਅਤੇ context ਨੂੰ ਵੀ ਧਿਆਨ ਵਿੱਚ ਲੈਣ ਦੀ ਆਗਿਆ ਦਿੰਦਾ ਹੈ:
 
-![](../../../../../translated_images/CoreferenceResolution.861924d6d384a7d68d8d0039d06a71a151f18a796b8b1330239d3590bd4947eb.pa.png)
+![](../../../../../translated_images/pa/CoreferenceResolution.861924d6d384a7d6.webp)
 
 > [Google Blog](https://research.googleblog.com/2017/08/transformer-novel-neural-network.html) ਤੋਂ ਚਿੱਤਰ
 
@@ -91,7 +82,7 @@ Encoder-decoder attention RNNs ਵਿੱਚ ਵਰਤੇ attention ਮਕੈਨ�
 
 **BERT** (Bidirectional Encoder Representations from Transformers) ਇੱਕ ਬਹੁਤ ਵੱਡਾ multi-layer ਟ੍ਰਾਂਸਫਾਰਮਰ ਨੈਟਵਰਕ ਹੈ ਜਿਸ ਵਿੱਚ *BERT-base* ਲਈ 12 ਲੇਅਰ ਹਨ, ਅਤੇ *BERT-large* ਲਈ 24। ਮਾਡਲ ਨੂੰ ਪਹਿਲਾਂ ਇੱਕ ਵੱਡੇ ਟੈਕਸਟ ਡਾਟਾ ਕੋਰਪਸ (WikiPedia + ਕਿਤਾਬਾਂ) 'ਤੇ unsupervised training (ਵਾਕ ਵਿੱਚ masked ਸ਼ਬਦਾਂ ਦੀ ਪੇਸ਼ਕਸ਼) ਦੀ ਵਰਤੋਂ ਕਰਕੇ pre-train ਕੀਤਾ ਜਾਂਦਾ ਹੈ। Pre-training ਦੌਰਾਨ ਮਾਡਲ ਭਾਸ਼ਾ ਸਮਝਣ ਦੇ ਮਹੱਤਵਪੂਰਨ ਪੱਧਰਾਂ ਨੂੰ ਅਪਣਾਉਂਦਾ ਹੈ, ਜਿਸਨੂੰ ਫਿਰ ਹੋਰ ਡਾਟਾਸੈਟਾਂ ਨਾਲ fine-tuning ਦੁਆਰਾ leveraged ਕੀਤਾ ਜਾ ਸਕਦਾ ਹੈ। ਇਸ ਪ੍ਰਕਿਰਿਆ ਨੂੰ **transfer learning** ਕਿਹਾ ਜਾਂਦਾ ਹੈ।
 
-![http://jalammar.github.io/illustrated-bert/ ਤੋਂ ਚਿੱਤਰ](../../../../../translated_images/jalammarBERT-language-modeling-masked-lm.34f113ea5fec4362e39ee4381aab7cad06b5465a0b5f053a0f2aa05fbe14e746.pa.png)
+![http://jalammar.github.io/illustrated-bert/ ਤੋਂ ਚਿੱਤਰ](../../../../../translated_images/pa/jalammarBERT-language-modeling-masked-lm.34f113ea5fec4362.webp)
 
 > ਚਿੱਤਰ [source](http://jalammar.github.io/illustrated-bert/)
 

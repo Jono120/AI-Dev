@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "c34cbba802058b6fa267e1a294d4e510",
-  "translation_date": "2025-11-25T21:37:48+00:00",
-  "source_file": "lessons/3-NeuralNetworks/03-Perceptron/README.md",
-  "language_code": "kn"
-}
--->
 # ನ್ಯೂರಲ್ ನೆಟ್‌ವರ್ಕ್‌ಗಳಿಗೆ ಪರಿಚಯ: ಪರ್ಸೆಪ್ಟ್ರಾನ್
 
 ## [ಪೂರ್ವ-ಲೇಕ್ಚರ್ ಕ್ವಿಜ್](https://ff-quizzes.netlify.app/en/ai/quiz/5)
@@ -15,7 +6,7 @@ CO_OP_TRANSLATOR_METADATA:
 
 |      |      |
 |--------------|-----------|
-|<img src='../../../../../translated_images/Rosenblatt-wikipedia.294821b285ac796d2281a556fe3de9a7aa328e34cdd25f3ac9deefa0982ea2df.kn.jpg' alt='Frank Rosenblatt'/> | <img src='../../../../../translated_images/Mark_I_perceptron_wikipedia.1f84eaa2d4b76ec9fb32bab6ae07e40faa202be1935c0fbd8c2bc2600a87bcb1.kn.jpg' alt='The Mark 1 Perceptron' />|
+|<img src='../../../../../translated_images/kn/Rosenblatt-wikipedia.294821b285ac796d.webp' alt='Frank Rosenblatt'/> | <img src='../../../../../translated_images/kn/Mark_I_perceptron_wikipedia.1f84eaa2d4b76ec9.webp' alt='The Mark 1 Perceptron' />|
 
 > ಚಿತ್ರಗಳು [ವಿಕಿಪೀಡಿಯದಿಂದ](https://en.wikipedia.org/wiki/Perceptron)
 
@@ -34,7 +25,7 @@ y(x) = f(w<sup>T</sup>x)
 ಇಲ್ಲಿ f ಒಂದು ಸ್ಟೆಪ್ ಸಕ್ರಿಯತೆ ಕಾರ್ಯವಾಗಿದೆ
 
 <!-- img src="http://www.sciweavers.org/tex2img.php?eq=f%28x%29%20%3D%20%5Cbegin%7Bcases%7D%0A%20%20%20%20%20%20%20%20%20%2B1%20%26%20x%20%5Cgeq%200%20%5C%5C%0A%20%20%20%20%20%20%20%20%20-1%20%26%20x%20%3C%200%0A%20%20%20%20%20%20%20%5Cend%7Bcases%7D%20%5C%5C%0A&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0" align="center" border="0" alt="f(x) = \begin{cases} +1 & x \geq 0 \\ -1 & x < 0 \end{cases} \\" width="154" height="50" / -->
-<img src="../../../../../translated_images/activation-func.b4924007c7ce77648d4b1dd3e81c689453204902c096c626735c7b53688cdc63.kn.png"/>
+<img src="../../../../../translated_images/kn/activation-func.b4924007c7ce7764.webp"/>
 
 ## ಪರ್ಸೆಪ್ಟ್ರಾನ್ ತರಬೇತಿ
 

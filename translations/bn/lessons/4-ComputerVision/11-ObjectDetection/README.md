@@ -1,19 +1,10 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "d76a7eda28de5210c8b1ba50a6216c69",
-  "translation_date": "2025-09-23T07:47:00+00:00",
-  "source_file": "lessons/4-ComputerVision/11-ObjectDetection/README.md",
-  "language_code": "bn"
-}
--->
 # অবজেক্ট ডিটেকশন
 
 যে ইমেজ ক্লাসিফিকেশন মডেলগুলো আমরা এখন পর্যন্ত ব্যবহার করেছি, সেগুলো একটি ইমেজ নিয়ে একটি ক্যাটেগরিক্যাল ফলাফল তৈরি করত, যেমন MNIST সমস্যায় 'সংখ্যা' ক্লাস। তবে, অনেক ক্ষেত্রে আমরা শুধু জানতে চাই না যে একটি ছবি কোনো বস্তু প্রদর্শন করছে - আমরা তাদের সঠিক অবস্থান নির্ধারণ করতে চাই। **অবজেক্ট ডিটেকশন** ঠিক এই কাজটি করে।
 
 ## [পূর্ব-লেকচার কুইজ](https://ff-quizzes.netlify.app/en/ai/quiz/21)
 
-![অবজেক্ট ডিটেকশন](../../../../../translated_images/Screen_Shot_2016-11-17_at_11.14.54_AM.b4bb3769353287be1b905373ed9c858102c054b16e4595c76ec3f7bba0feb549.bn.png)
+![অবজেক্ট ডিটেকশন](../../../../../translated_images/bn/Screen_Shot_2016-11-17_at_11.14.54_AM.b4bb3769353287be.webp)
 
 > ছবি [YOLO v2 ওয়েবসাইট](https://pjreddie.com/darknet/yolov2/) থেকে নেওয়া
 
@@ -25,7 +16,7 @@ CO_OP_TRANSLATOR_METADATA:
 2. প্রতিটি টাইলের উপর ইমেজ ক্লাসিফিকেশন চালান।
 3. যেসব টাইল যথেষ্ট উচ্চ অ্যাক্টিভেশন দেখায়, সেগুলোতে কাঙ্ক্ষিত বস্তুটি রয়েছে বলে বিবেচনা করুন।
 
-![সাধারণ অবজেক্ট ডিটেকশন](../../../../../translated_images/naive-detection.e7f1ba220ccd08c68a2ea8e06a7ed75c3fcc738c2372f9e00b7f4299a8659c01.bn.png)
+![সাধারণ অবজেক্ট ডিটেকশন](../../../../../translated_images/bn/naive-detection.e7f1ba220ccd08c6.webp)
 
 > *ছবি [এক্সারসাইজ নোটবুক](ObjectDetection-TF.ipynb) থেকে নেওয়া*
 
@@ -42,7 +33,7 @@ CO_OP_TRANSLATOR_METADATA:
 * [PASCAL VOC](http://host.robots.ox.ac.uk/pascal/VOC/) - ২০টি ক্লাস
 * [COCO](http://cocodataset.org/#home) - সাধারণ বস্তুসমূহের প্রসঙ্গ। ৮০টি ক্লাস, বাউন্ডিং বক্স এবং সেগমেন্টেশন মাস্ক।
 
-![COCO](../../../../../translated_images/coco-examples.71bc60380fa6cceb7caad48bd09e35b6028caabd363aa04fee89c414e0870e86.bn.jpg)
+![COCO](../../../../../translated_images/bn/coco-examples.71bc60380fa6cceb.webp)
 
 ## অবজেক্ট ডিটেকশন মেট্রিকস
 
@@ -50,7 +41,7 @@ CO_OP_TRANSLATOR_METADATA:
 
 যেখানে ইমেজ ক্লাসিফিকেশনের ক্ষেত্রে অ্যালগরিদম কতটা ভালো কাজ করছে তা পরিমাপ করা সহজ, অবজেক্ট ডিটেকশনের ক্ষেত্রে আমাদের ক্লাসের সঠিকতা এবং অনুমিত বাউন্ডিং বক্সের অবস্থানের নির্ভুলতা উভয়ই পরিমাপ করতে হবে। এর জন্য আমরা **ইন্টারসেকশন ওভার ইউনিয়ন** (IoU) ব্যবহার করি, যা দুটি বক্স (বা দুটি এলাকা) কতটা ওভারল্যাপ করছে তা পরিমাপ করে।
 
-![IoU](../../../../../translated_images/iou_equation.9a4751d40fff4e119ecd0a7bcca4e71ab1dc83e0d4f2a0d66ff0859736f593cf.bn.png)
+![IoU](../../../../../translated_images/bn/iou_equation.9a4751d40fff4e11.webp)
 
 > *[এই চমৎকার ব্লগ পোস্ট](https://pyimagesearch.com/2016/11/07/intersection-over-union-iou-for-object-detection/) থেকে ফিগার ২*
 
@@ -98,11 +89,11 @@ $$
 
 [R-CNN](http://islab.ulsan.ac.kr/files/announcement/513/rcnn_pami.pdf) [Selective Search](http://www.huppelen.nl/publications/selectiveSearchDraft.pdf) ব্যবহার করে ROI অঞ্চলের একটি হায়ারারকিকাল স্ট্রাকচার তৈরি করে, যা পরে CNN ফিচার এক্সট্রাক্টর এবং SVM-ক্লাসিফায়ারগুলোর মাধ্যমে বস্তু ক্লাস নির্ধারণ করে এবং লিনিয়ার রিগ্রেশন ব্যবহার করে *বাউন্ডিং বক্স* এর কোঅর্ডিনেট নির্ধারণ করে। [অফিশিয়াল পেপার](https://arxiv.org/pdf/1506.01497v1.pdf)
 
-![RCNN](../../../../../translated_images/rcnn1.cae407020dfb1d1fb572656e44f75cd6c512cc220591c116c506652c10e47f26.bn.png)
+![RCNN](../../../../../translated_images/bn/rcnn1.cae407020dfb1d1f.webp)
 
 > *ছবি van de Sande et al. ICCV’11*
 
-![RCNN-1](../../../../../translated_images/rcnn2.2d9530bb83516484ec65b250c22dbf37d3d23244f32864ebcb91d98fe7c3112c.bn.png)
+![RCNN-1](../../../../../translated_images/bn/rcnn2.2d9530bb83516484.webp)
 
 > *ছবি [এই ব্লগ](https://towardsdatascience.com/r-cnn-fast-r-cnn-faster-r-cnn-yolo-object-detection-algorithms-36d53571365e) থেকে নেওয়া*
 
@@ -110,7 +101,7 @@ $$
 
 এই পদ্ধতি R-CNN এর মতোই, তবে রিজনগুলো কনভোলিউশন লেয়ার প্রয়োগ করার পরে নির্ধারণ করা হয়।
 
-![FRCNN](../../../../../translated_images/f-rcnn.3cda6d9bb41888754037d2d9763e2298a96de5d9bc2a21db3147357aa5da9b1a.bn.png)
+![FRCNN](../../../../../translated_images/bn/f-rcnn.3cda6d9bb4188875.webp)
 
 > ছবি [অফিশিয়াল পেপার](https://www.cv-foundation.org/openaccess/content_iccv_2015/papers/Girshick_Fast_R-CNN_ICCV_2015_paper.pdf), [arXiv](https://arxiv.org/pdf/1504.08083.pdf), ২০১৫
 
@@ -118,7 +109,7 @@ $$
 
 এই পদ্ধতির মূল ধারণাটি হল রিজন প্রেডিক্ট করতে নিউরাল নেটওয়ার্ক ব্যবহার করা - যাকে *রিজন প্রপোজাল নেটওয়ার্ক* বলা হয়। [পেপার](https://arxiv.org/pdf/1506.01497.pdf), ২০১৬
 
-![FasterRCNN](../../../../../translated_images/faster-rcnn.8d46c099b87ef30ab2ea26dbc4bdd85b974a57ba8eb526f65dc4cd0a4711de30.bn.png)
+![FasterRCNN](../../../../../translated_images/bn/faster-rcnn.8d46c099b87ef30a.webp)
 
 > ছবি [অফিশিয়াল পেপার](https://arxiv.org/pdf/1506.01497.pdf) থেকে নেওয়া
 
@@ -130,7 +121,7 @@ $$
 2. ফিচারগুলো **পজিশন-সেনসিটিভ স্কোর ম্যাপ** দ্বারা প্রক্রিয়াকৃত হয়। $C$ ক্লাসের প্রতিটি অবজেক্টকে $k\times k$ অঞ্চলে ভাগ করা হয় এবং আমরা অবজেক্টের অংশগুলো প্রেডিক্ট করতে প্রশিক্ষণ দিই।
 3. $k\times k$ অঞ্চলের প্রতিটি অংশের জন্য সমস্ত নেটওয়ার্ক অবজেক্ট ক্লাসের জন্য ভোট দেয় এবং সর্বাধিক ভোট পাওয়া অবজেক্ট ক্লাসটি নির্বাচিত হয়।
 
-![r-fcn image](../../../../../translated_images/r-fcn.13eb88158b99a3da50fa2787a6be5cb310d47f0e9655cc93a1090dc7aab338d1.bn.png)
+![r-fcn image](../../../../../translated_images/bn/r-fcn.13eb88158b99a3da.webp)
 
 > ছবি [অফিশিয়াল পেপার](https://arxiv.org/abs/1605.06409) থেকে নেওয়া
 
@@ -141,7 +132,7 @@ YOLO একটি রিয়েলটাইম ওয়ান-পাস অ�
  * ছবিটিকে $S\times S$ অঞ্চলে ভাগ করা হয়।
  * প্রতিটি অঞ্চলের জন্য, **CNN** $n$ সম্ভাব্য অবজেক্ট, *বাউন্ডিং বক্স* এর কোঅর্ডিনেট এবং *কনফিডেন্স*=*প্রোবাবিলিটি* * IoU প্রেডিক্ট করে।
 
- ![YOLO](../../../../../translated_images/yolo.a2648ec82ee8bb4ea27537677adb482fd4b733ca1705c561b6a24a85102dced5.bn.png)
+ ![YOLO](../../../../../translated_images/bn/yolo.a2648ec82ee8bb4e.webp)
 
 > ছবি [অফিশিয়াল পেপার](https://arxiv.org/abs/1506.02640) থেকে নেওয়া
 

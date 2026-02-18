@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "feeca98225cb420afc89415f24f63d92",
-  "translation_date": "2025-11-25T21:56:03+00:00",
-  "source_file": "lessons/4-ComputerVision/06-IntroCV/README.md",
-  "language_code": "te"
-}
--->
 # కంప్యూటర్ విజన్ పరిచయం
 
 [కంప్యూటర్ విజన్](https://wikipedia.org/wiki/Computer_vision) అనేది కంప్యూటర్లకు డిజిటల్ చిత్రాలపై ఉన్నత స్థాయి అవగాహన పొందేలా చేయడం లక్ష్యంగా ఉన్న శాస్త్రశాఖ. ఇది చాలా విస్తృత నిర్వచనం, ఎందుకంటే *అవగాహన* అనేది అనేక రకాల అర్థాలు కలిగి ఉండవచ్చు, ఉదాహరణకు చిత్రంలో ఒక వస్తువును కనుగొనడం (**object detection**), ఏం జరుగుతుందో అర్థం చేసుకోవడం (**event detection**), చిత్రాన్ని వచనంగా వివరించడం, లేదా సన్నివేశాన్ని 3Dలో పునర్నిర్మించడం. మానవ చిత్రాలకు సంబంధించిన ప్రత్యేక పనులు కూడా ఉన్నాయి: వయస్సు మరియు భావోద్వేగ అంచనా, ముఖ గుర్తింపు మరియు గుర్తింపు, 3D పోజ్ అంచనా వంటి కొన్ని.
@@ -75,14 +66,14 @@ OpenCV ను ఉపయోగించి వీడియోను ఫ్రే�
 
 * **బ్రెయిల్ పుస్తకం ఫోటో ప్రీ-ప్రాసెసింగ్**. thresholding, ఫీచర్ డిటెక్షన్, perspective transformation మరియు NumPy మార్పులతో వ్యక్తిగత బ్రెయిల్ చిహ్నాలను వేరుచేసి, తరువాత న్యూరల్ నెట్‌వర్క్ ద్వారా వర్గీకరణ కోసం ఎలా సిద్ధం చేయాలో మనం దృష్టి సారిస్తాము.
 
-![Braille Image](../../../../../translated_images/braille.341962ff76b1bd7044409371d3de09ced5028132aef97344ea4b7468c1208126.te.jpeg) | ![Braille Image Pre-processed](../../../../../translated_images/braille-result.46530fea020b03c76aac532d7d6eeef7f6fb35b55b1001cd21627907dabef3ed.te.png) | ![Braille Symbols](../../../../../translated_images/braille-symbols.0159185ab69d533909dc4d7d26a1971b51401c6a80eb3a5584f250ea880af88b.te.png)
+![Braille Image](../../../../../translated_images/te/braille.341962ff76b1bd70.webp) | ![Braille Image Pre-processed](../../../../../translated_images/te/braille-result.46530fea020b03c7.webp) | ![Braille Symbols](../../../../../translated_images/te/braille-symbols.0159185ab69d5339.webp)
 ----|-----|-----
 
 > చిత్రం [OpenCV.ipynb](OpenCV.ipynb) నుండి
 
 * **ఫ్రేమ్ తేడా ఉపయోగించి వీడియోలో కదలిక గుర్తించడం**. కెమెరా స్థిరంగా ఉంటే, కెమెరా ఫీడ్ నుండి ఫ్రేమ్‌లు ఒకదానితో ఒకటి చాలా సమానంగా ఉంటాయి. ఫ్రేమ్‌లు అర్రేలుగా ప్రాతినిధ్యం వహిస్తాయి, కాబట్టి రెండు వరుస ఫ్రేమ్‌ల అర్రేల మధ్య తేడాను తీసుకుంటే, స్థిరమైన ఫ్రేమ్‌లకు తేడా తక్కువగా ఉంటుంది, మరియు చిత్రంలో గణనీయమైన కదలిక ఉన్నప్పుడు ఎక్కువగా ఉంటుంది.
 
-![Image of video frames and frame differences](../../../../../translated_images/frame-difference.706f805491a0883c938e16447bf5eb2f7d69e812c7f743cbe7d7c7645168f81f.te.png)
+![Image of video frames and frame differences](../../../../../translated_images/te/frame-difference.706f805491a0883c.webp)
 
 > చిత్రం [OpenCV.ipynb](OpenCV.ipynb) నుండి
 
@@ -91,7 +82,7 @@ OpenCV ను ఉపయోగించి వీడియోను ఫ్రే�
    - **Dense Optical Flow** ప్రతి పిక్సెల్ ఎక్కడికి కదులుతుందో చూపించే వెక్టర్ ఫీల్డ్‌ను లెక్కిస్తుంది
    - **Sparse Optical Flow** చిత్రంలోని కొన్ని ప్రత్యేక లక్షణాలను (ఉదా: అంచులు) తీసుకుని, వాటి ట్రాజెక్టరీని ఫ్రేమ్ నుండి ఫ్రేమ్ వరకు నిర్మిస్తుంది.
 
-![Image of Optical Flow](../../../../../translated_images/optical.1f4a94464579a83a10784f3c07fe7228514714b96782edf50e70ccd59d2d8c4f.te.png)
+![Image of Optical Flow](../../../../../translated_images/te/optical.1f4a94464579a83a.webp)
 
 > చిత్రం [OpenCV.ipynb](OpenCV.ipynb) నుండి
 
@@ -117,7 +108,7 @@ optical flow గురించి మరింత చదవండి [ఈ అ�
 
 ఈ ల్యాబ్‌లో, మీరు సులభమైన జెస్తర్స్‌తో వీడియో తీసుకుంటారు, మరియు optical flow ఉపయోగించి పైకి/కిందకి/ఎడమ/కుడి కదలికలను వెలికి తీయడం మీ లక్ష్యం.
 
-<img src="../../../../../translated_images/palm-movement.341495f0e9c47da39cc1f99626822a1d20203aa33ff89a86a068f14bea133e84.te.png" width="30%" alt="Palm Movement Frame"/>
+<img src="../../../../../translated_images/te/palm-movement.341495f0e9c47da3.webp" width="30%" alt="Palm Movement Frame"/>
 
 ---
 

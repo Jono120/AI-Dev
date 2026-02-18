@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "7ba20f54a5bfcd6521018cdfb17c7c57",
-  "translation_date": "2025-09-23T10:34:29+00:00",
-  "source_file": "lessons/5-NLP/15-LanguageModeling/README.md",
-  "language_code": "vi"
-}
--->
 # Mô hình Ngôn ngữ
 
 Các biểu diễn ngữ nghĩa, như Word2Vec và GloVe, thực chất là bước đầu tiên hướng tới **mô hình ngôn ngữ** - tạo ra các mô hình có thể *hiểu* (hoặc *biểu diễn*) bản chất của ngôn ngữ.
@@ -23,7 +14,7 @@ Trong các ví dụ trước, chúng ta đã sử dụng các biểu diễn ng�
 * **Continuous Bag-of-Words** (CBoW), khi chúng ta dự đoán token ở giữa $W_0$ trong một chuỗi token $W_{-N}$, ..., $W_N$.
 * **Skip-gram**, nơi chúng ta dự đoán một tập hợp các token lân cận {$W_{-N},\dots, W_{-1}, W_1,\dots, W_N$} từ token ở giữa $W_0$.
 
-![hình ảnh từ bài báo về chuyển đổi từ thành vector](../../../../../translated_images/example-algorithms-for-converting-words-to-vectors.fbe9207a726922f6f0f5de66427e8a6eda63809356114e28fb1fa5f4a83ebda7.vi.png)
+![hình ảnh từ bài báo về chuyển đổi từ thành vector](../../../../../translated_images/vi/example-algorithms-for-converting-words-to-vectors.fbe9207a726922f6.webp)
 
 > Hình ảnh từ [bài báo này](https://arxiv.org/pdf/1301.3781.pdf)
 

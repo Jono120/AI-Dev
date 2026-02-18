@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "6522312ff835796ca34136a9462fafb2",
-  "translation_date": "2025-09-23T14:23:03+00:00",
-  "source_file": "lessons/5-NLP/19-NER/README.md",
-  "language_code": "ro"
-}
--->
 # Recunoașterea Entităților Denumite
 
 Până acum, ne-am concentrat în principal pe o singură sarcină NLP - clasificarea. Totuși, există și alte sarcini NLP care pot fi realizate cu ajutorul rețelelor neuronale. Una dintre aceste sarcini este **[Recunoașterea Entităților Denumite](https://wikipedia.org/wiki/Named-entity_recognition)** (NER), care se ocupă cu identificarea entităților specifice din text, cum ar fi locuri, nume de persoane, intervale de timp, formule chimice și altele.
@@ -17,7 +8,7 @@ Până acum, ne-am concentrat în principal pe o singură sarcină NLP - clasifi
 
 Să presupunem că dorești să dezvolți un chatbot de limbaj natural, similar cu Amazon Alexa sau Google Assistant. Modul în care funcționează chatbot-urile inteligente este să *înțeleagă* ce dorește utilizatorul prin clasificarea textului din propoziția de intrare. Rezultatul acestei clasificări este așa-numitul **intent**, care determină ce ar trebui să facă chatbot-ul.
 
-<img alt="Bot NER" src="images/bot-ner.png" width="50%"/>
+<img alt="Bot NER" src="../../../../../translated_images/ro/bot-ner.4b09235dbb0ad275.webp" width="50%"/>
 
 > Imagine realizată de autor
 
@@ -58,7 +49,7 @@ infant | O
 
 Deoarece trebuie să construim o corespondență unu-la-unu între token-uri și clase, putem antrena un model neuronal **many-to-many** din această imagine:
 
-![Imagine care arată modele comune de rețele neuronale recurente.](../../../../../translated_images/unreasonable-effectiveness-of-rnn.541ead816778f42dce6c42d8a56c184729aa2378d059b851be4ce12b993033df.ro.jpg)
+![Imagine care arată modele comune de rețele neuronale recurente.](../../../../../translated_images/ro/unreasonable-effectiveness-of-rnn.541ead816778f42d.webp)
 
 > *Imagine din [acest articol de blog](http://karpathy.github.io/2015/05/21/rnn-effectiveness/) de [Andrej Karpathy](http://karpathy.github.io/). Modelele de clasificare de token-uri NER corespund arhitecturii de rețea din partea dreaptă a imaginii.*
 

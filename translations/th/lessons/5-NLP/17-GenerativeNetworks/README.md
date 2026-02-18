@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "51be6057374d01d70e07dd5ec88ebc0d",
-  "translation_date": "2025-09-23T09:12:01+00:00",
-  "source_file": "lessons/5-NLP/17-GenerativeNetworks/README.md",
-  "language_code": "th"
-}
--->
 # เครือข่ายการสร้างสรรค์
 
 ## [แบบทดสอบก่อนเรียน](https://ff-quizzes.netlify.app/en/ai/quiz/33)
@@ -19,7 +10,7 @@ Recurrent Neural Networks (RNNs) และรูปแบบเซลล์ท�
 
 สิ่งนี้นำไปสู่สถาปัตยกรรมเครือข่ายประสาทที่แตกต่างกัน ซึ่งแสดงในภาพด้านล่าง:
 
-![ภาพแสดงรูปแบบเครือข่ายประสาทแบบวนซ้ำทั่วไป](../../../../../translated_images/unreasonable-effectiveness-of-rnn.541ead816778f42dce6c42d8a56c184729aa2378d059b851be4ce12b993033df.th.jpg)
+![ภาพแสดงรูปแบบเครือข่ายประสาทแบบวนซ้ำทั่วไป](../../../../../translated_images/th/unreasonable-effectiveness-of-rnn.541ead816778f42d.webp)
 
 > ภาพจากบล็อกโพสต์ [Unreasonable Effectiveness of Recurrent Neural Networks](http://karpathy.github.io/2015/05/21/rnn-effectiveness/) โดย [Andrej Karpaty](http://karpathy.github.io/)
 
@@ -32,11 +23,11 @@ Recurrent Neural Networks (RNNs) และรูปแบบเซลล์ท�
 
 เราจะฝึก RNN นี้เพื่อสร้างข้อความทีละขั้นตอน ในแต่ละขั้นตอน เราจะใช้ลำดับตัวอักษรที่มีความยาว `nchars` และให้เครือข่ายสร้างตัวอักษรถัดไปสำหรับแต่ละตัวอักษรในข้อมูลเข้า:
 
-![ภาพแสดงตัวอย่างการสร้างคำ 'HELLO' โดย RNN](../../../../../translated_images/rnn-generate.56c54afb52f9781d63a7c16ea9c1b86cb70e6e1eae6a742b56b7b37468576b17.th.png)
+![ภาพแสดงตัวอย่างการสร้างคำ 'HELLO' โดย RNN](../../../../../translated_images/th/rnn-generate.56c54afb52f9781d.webp)
 
 เมื่อสร้างข้อความ (ในระหว่างการอนุมาน) เราจะเริ่มต้นด้วย **คำเริ่มต้น** ซึ่งจะถูกส่งผ่านเซลล์ RNN เพื่อสร้างสถานะกลาง และจากสถานะนี้การสร้างข้อความจะเริ่มต้น เราจะสร้างตัวอักษรทีละตัว และส่งสถานะและตัวอักษรที่สร้างไปยังเซลล์ RNN ตัวถัดไปเพื่อสร้างตัวอักษรถัดไป จนกว่าจะสร้างข้อความครบตามที่ต้องการ
 
-<img src="images/rnn-generate-inf.png" width="60%"/>
+<img src="../../../../../translated_images/th/rnn-generate-inf.5168dc65e0370eea.webp" width="60%"/>
 
 > ภาพโดยผู้เขียน
 

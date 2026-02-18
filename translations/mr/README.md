@@ -1,222 +1,224 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "4ed9993bca581850c983c95d5a3f57eb",
-  "translation_date": "2025-12-24T23:30:46+00:00",
-  "source_file": "README.md",
-  "language_code": "mr"
-}
--->
-[![GitHub परवाना](https://img.shields.io/github/license/microsoft/AI-For-Beginners.svg)](https://github.com/microsoft/AI-For-Beginners/blob/main/LICENSE)
-[![GitHub योगदानकर्ते](https://img.shields.io/github/contributors/microsoft/AI-For-Beginners.svg)](https://GitHub.com/microsoft/AI-For-Beginners/graphs/contributors/)
-[![GitHub समस्या](https://img.shields.io/github/issues/microsoft/AI-For-Beginners.svg)](https://GitHub.com/microsoft/AI-For-Beginners/issues/)
-[![GitHub पुल-रिक्वेस्ट](https://img.shields.io/github/issues-pr/microsoft/AI-For-Beginners.svg)](https://GitHub.com/microsoft/AI-For-Beginners/pulls/)
-[![PRs स्वागत](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
+[![GitHub license](https://img.shields.io/github/license/microsoft/AI-For-Beginners.svg)](https://github.com/microsoft/AI-For-Beginners/blob/main/LICENSE)
+[![GitHub contributors](https://img.shields.io/github/contributors/microsoft/AI-For-Beginners.svg)](https://GitHub.com/microsoft/AI-For-Beginners/graphs/contributors/)
+[![GitHub issues](https://img.shields.io/github/issues/microsoft/AI-For-Beginners.svg)](https://GitHub.com/microsoft/AI-For-Beginners/issues/)
+[![GitHub pull-requests](https://img.shields.io/github/issues-pr/microsoft/AI-For-Beginners.svg)](https://GitHub.com/microsoft/AI-For-Beginners/pulls/)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 
-[![GitHub पाहणारे](https://img.shields.io/github/watchers/microsoft/AI-For-Beginners.svg?style=social&label=Watch)](https://GitHub.com/microsoft/AI-For-Beginners/watchers/)
-[![GitHub फोर्क](https://img.shields.io/github/forks/microsoft/AI-For-Beginners.svg?style=social&label=Fork)](https://GitHub.com/microsoft/AI-For-Beginners/network/)
-[![GitHub स्टार](https://img.shields.io/github/stars/microsoft/AI-For-Beginners.svg?style=social&label=Star)](https://GitHub.com/microsoft/AI-For-Beginners/stargazers/)
+[![GitHub watchers](https://img.shields.io/github/watchers/microsoft/AI-For-Beginners.svg?style=social&label=Watch)](https://GitHub.com/microsoft/AI-For-Beginners/watchers/)
+[![GitHub forks](https://img.shields.io/github/forks/microsoft/AI-For-Beginners.svg?style=social&label=Fork)](https://GitHub.com/microsoft/AI-For-Beginners/network/)
+[![GitHub stars](https://img.shields.io/github/stars/microsoft/AI-For-Beginners.svg?style=social&label=Star)](https://GitHub.com/microsoft/AI-For-Beginners/stargazers/)
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/microsoft/ai-for-beginners/HEAD)
 [![Gitter](https://badges.gitter.im/Microsoft/ai-for-beginners.svg)](https://gitter.im/Microsoft/ai-for-beginners?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
 [![Microsoft Foundry Discord](https://dcbadge.limes.pink/api/server/nTYy5BXMWG)](https://discord.gg/nTYy5BXMWG)
 
-# नवशिकांसाठी कृत्रिम बुद्धिमत्ता - एक अभ्यासक्रम
+# Artificial Intelligence for Beginners - A Curriculum
 
-|![स्केचनोट @girlie_mac द्वारे https://twitter.com/girlie_mac](../../translated_images/ai-overview.0857791951d19500d0ef8b803d77110c738dcafc52306e6d68724742cd4af167.mr.png)|
+|![Sketchnote by @girlie_mac https://twitter.com/girlie_mac](../../translated_images/mr/ai-overview.0857791951d19500.webp)|
 |:---:|
-| नवशिकांसाठी AI - _स्केचनोट द्वारे [@girlie_mac](https://twitter.com/girlie_mac)_ |
+| AI For Beginners - _Sketchnote by [@girlie_mac](https://twitter.com/girlie_mac)_ |
 
-आमच्या 12-साप्ताहिक, 24-धड्यांच्या अभ्यासक्रमासह **कृत्रिम बुद्धिमत्ता** (AI) जगाचा शोध घ्या! यात व्यावहारिक धडे, क्विझ आणि लॅब्सचा समावेश आहे. हा अभ्यासक्रम नवशिकांसाठी अनुकूल आहे आणि यात TensorFlow आणि PyTorch सारखी साधने तसेच AI मध्ये नैतिकता यांचा समावेश आहे.
+**कृत्रिम बुद्धिमत्ते**च्या (AI) जगाचा शोध घेण्यासाठी आमच्या 12 आठवड्यांच्या, 24-धड्यांच्या अभ्यासक्रमासह! यामध्ये व्यावहारिक धडे, क्विझ आणि लॅबचा समावेश आहे. हा अभ्यासक्रम नवशांकांसाठी सोप्पा आहे आणि त्यात TensorFlow आणि PyTorch सारख्या साधनांबरोबरच AI मधील नैतिकतेचा समावेश आहे.
 
-### 🌐 बहुभाषा समर्थन
+### 🌐 बहुभाषिक समर्थन
 
-#### GitHub Action द्वारे समर्थीत (स्वयंचलित व नेहमी अद्ययावत)
+#### GitHub Action द्वारा समर्थित (स्वयंचलित आणि सदैव अद्ययावत)
 
 <!-- CO-OP TRANSLATOR LANGUAGES TABLE START -->
-[अरबी](../ar/README.md) | [बंगाली](../bn/README.md) | [बुल्गेरियन](../bg/README.md) | [बर्मी (म्यानमार)](../my/README.md) | [चिनी (सरलीकृत)](../zh/README.md) | [चिनी (परंपरागत, हॉंग काँग)](../hk/README.md) | [चिनी (परंपरागत, मकाऊ)](../mo/README.md) | [चिनी (परंपरागत, तैवान)](../tw/README.md) | [क्रोएशियन](../hr/README.md) | [चेक](../cs/README.md) | [डॅनिश](../da/README.md) | [डच](../nl/README.md) | [एस्टोनियन](../et/README.md) | [फिनिश](../fi/README.md) | [फ्रेंच](../fr/README.md) | [जर्मन](../de/README.md) | [ग्रीक](../el/README.md) | [हिब्रू](../he/README.md) | [हिंदी](../hi/README.md) | [हंगेरियन](../hu/README.md) | [इंडोनेशियन](../id/README.md) | [इटालियन](../it/README.md) | [जपानी](../ja/README.md) | [कन्नड](../kn/README.md) | [कोरियन](../ko/README.md) | [लिथुआनियन](../lt/README.md) | [मलय](../ms/README.md) | [मल्याळम](../ml/README.md) | [मराठी](./README.md) | [नेपाळी](../ne/README.md) | [नायजीरियन पिड्झिन](../pcm/README.md) | [नॉर्वेजियन](../no/README.md) | [फारसी (पर्शियन)](../fa/README.md) | [पोलिश](../pl/README.md) | [पोर्तुगिज (ब्राझिल)](../br/README.md) | [पोर्तुगिज (पोर्तुगाल)](../pt/README.md) | [पंजाबी (गुरमुखी)](../pa/README.md) | [रोमानियन](../ro/README.md) | [रशियन](../ru/README.md) | [सर्बियन (सिरिलिक)](../sr/README.md) | [स्लोव्हाक](../sk/README.md) | [स्लोव्हेनियन](../sl/README.md) | [स्पॅनिश](../es/README.md) | [स्वाहिली](../sw/README.md) | [स्वीडिश](../sv/README.md) | [टागालॉग (फिलिपिनो)](../tl/README.md) | [तमिळ](../ta/README.md) | [तेलुगु](../te/README.md) | [थाई](../th/README.md) | [टर्किश](../tr/README.md) | [युक्रेनियन](../uk/README.md) | [उर्दू](../ur/README.md) | [व्हिएतनामी](../vi/README.md)
+[Arabic](../ar/README.md) | [Bengali](../bn/README.md) | [Bulgarian](../bg/README.md) | [Burmese (Myanmar)](../my/README.md) | [Chinese (Simplified)](../zh-CN/README.md) | [Chinese (Traditional, Hong Kong)](../zh-HK/README.md) | [Chinese (Traditional, Macau)](../zh-MO/README.md) | [Chinese (Traditional, Taiwan)](../zh-TW/README.md) | [Croatian](../hr/README.md) | [Czech](../cs/README.md) | [Danish](../da/README.md) | [Dutch](../nl/README.md) | [Estonian](../et/README.md) | [Finnish](../fi/README.md) | [French](../fr/README.md) | [German](../de/README.md) | [Greek](../el/README.md) | [Hebrew](../he/README.md) | [Hindi](../hi/README.md) | [Hungarian](../hu/README.md) | [Indonesian](../id/README.md) | [Italian](../it/README.md) | [Japanese](../ja/README.md) | [Kannada](../kn/README.md) | [Korean](../ko/README.md) | [Lithuanian](../lt/README.md) | [Malay](../ms/README.md) | [Malayalam](../ml/README.md) | [Marathi](./README.md) | [Nepali](../ne/README.md) | [Nigerian Pidgin](../pcm/README.md) | [Norwegian](../no/README.md) | [Persian (Farsi)](../fa/README.md) | [Polish](../pl/README.md) | [Portuguese (Brazil)](../pt-BR/README.md) | [Portuguese (Portugal)](../pt-PT/README.md) | [Punjabi (Gurmukhi)](../pa/README.md) | [Romanian](../ro/README.md) | [Russian](../ru/README.md) | [Serbian (Cyrillic)](../sr/README.md) | [Slovak](../sk/README.md) | [Slovenian](../sl/README.md) | [Spanish](../es/README.md) | [Swahili](../sw/README.md) | [Swedish](../sv/README.md) | [Tagalog (Filipino)](../tl/README.md) | [Tamil](../ta/README.md) | [Telugu](../te/README.md) | [Thai](../th/README.md) | [Turkish](../tr/README.md) | [Ukrainian](../uk/README.md) | [Urdu](../ur/README.md) | [Vietnamese](../vi/README.md)
+
+> **स्थानिकरित्या क्लोन करायचे असल्यास?**
+
+> या संग्रहात 50+ भाषांचे भाषांतर समाविष्ट आहे जे डाउनलोड आकार लक्षणीयरीत्या वाढवते. भाषांतरांशिवाय क्लोन करण्यासाठी sparse checkout वापरा:
+> ```bash
+> git clone --filter=blob:none --sparse https://github.com/microsoft/AI-For-Beginners.git
+> cd AI-For-Beginners
+> git sparse-checkout set --no-cone '/*' '!translations' '!translated_images'
+> ```
+> यामुळे आपण या कोर्सचे पूर्णपणे पालन करण्यासाठी आवश्यक सर्वकाही प्राप्त कराल आणि डाउनलोड देखील फार जलद होईल.
 <!-- CO-OP TRANSLATOR LANGUAGES TABLE END -->
 
-**जर तुम्हाला अतिरिक्त अनुवाद हवेत तर समर्थित भाषा [इथे](https://github.com/Azure/co-op-translator/blob/main/getting_started/supported-languages.md) सूचीबद्ध आहेत**
+**आपल्याला अतिरिक्त भाषांतरे हवी असल्यास ती येथे [अहे](https://github.com/Azure/co-op-translator/blob/main/getting_started/supported-languages.md) दिली आहेत**
 
-## समुदायात सामील व्हा
+## समुदायामध्ये सामील व्हा
 [![Microsoft Foundry Discord](https://dcbadge.limes.pink/api/server/nTYy5BXMWG)](https://discord.gg/nTYy5BXMWG)
 
-## तुम्हाला काय शिकायला मिळेल
+## आपण काय शिकणार आहात
 
-**[अभ्यासक्रमाचा माइंडमॅप](http://soshnikov.com/courses/ai-for-beginners/mindmap.html)**
+**[कोर्सचा माईंडमॅप](http://soshnikov.com/courses/ai-for-beginners/mindmap.html)**
 
-या अभ्यासक्रमात तुम्ही खालील गोष्टी शिकाल:
+या अभ्यासक्रमात आपण शिकाल:
 
-* कृत्रिम बुद्धिमत्तेसाठी विविध पद्धती, ज्यात "चालू असलेली" प्रतीकात्मक पद्धत **ज्ञान सादरीकरण** आणि तर्कशक्तीचा समावेश आहे ([GOFAI](https://en.wikipedia.org/wiki/Symbolic_artificial_intelligence)).
-* **न्युरल नेटवर्क्स** आणि **डीप लर्निंग**, जे आधुनिक AI च्या मधोमध आहेत. आम्ही या महत्त्वाच्या विषयांच्या मागील संकल्पना दोन लोकप्रिय फ्रेमवर्क्समध्ये - [TensorFlow](http://Tensorflow.org) आणि [PyTorch](http://pytorch.org) - कोड वापरून स्पष्ट करू.
-* प्रतिमा आणि मजकूरावर काम करण्यासाठी **न्युरल आर्किटेक्चर्स**. आम्ही अलीकडील मॉडेल्स कव्हर करू परंतु कदाचित अत्याधुनिक स्थितीत काही कमीपणा असू शकतो.
-* कमी लोकप्रिय AI पध्दती, जसे की **जेनेटिक अल्गोरिदम्स** आणि **मल्टी-एजंट सिस्टम्स**.
+* कृत्रिम बुद्धिमत्तेचे विविध दृष्टिकोन, ज्यात "चांगले जुने" प्रतीकात्मक दृष्टिकोन समाविष्ट आहे ज्यामध्ये **ज्ञान प्रतिनिधित्व** आणि तर्कशास्त्र समाविष्ट आहे ([GOFAI](https://en.wikipedia.org/wiki/Symbolic_artificial_intelligence))।
+* **न्यूरल नेटवर्क्स** आणि **डीप लर्निंग**, जे आधुनिक AI चे मुख्य आधार आहेत. आम्ही या महत्त्वाच्या विषयांमागील संकल्पना दोन सर्वात लोकप्रिय फ्रेमवर्क्स - [TensorFlow](http://Tensorflow.org) आणि [PyTorch](http://pytorch.org) वापरून कोडद्वारे स्पष्ट करू.
+* प्रतिमा आणि मजकूरावर काम करण्यासाठी **न्यूरल आर्किटेक्चर**. आम्ही अलीकडील मॉडेल्सवर चर्चा करू, पण काही प्रमाणात आत्ताच्या तंत्रज्ञानापेक्षा कमी असू शकते.
+* कमी लोकप्रिय AI दृष्टिकोन, जसे की **जननिक अल्गोरिदम्स** आणि **मल्टी-एजंट सिस्टिम्स**.
 
-या अभ्यासक्रमात आम्ही खालील गोष्टी समाविष्ट करणार नाहीत:
+हा अभ्यासक्रम काय कव्हर करणार नाही:
 
-> [या कोर्ससाठी सर्व अतिरिक्त संसाधने आमच्या Microsoft Learn संग्रहात शोधा](https://learn.microsoft.com/en-us/collections/7w28iy2xrqzdj0?WT.mc_id=academic-77998-bethanycheum)
+> [या कोर्ससाठी सर्व अतिरिक्त संसाधने इथे पाहा Microsoft Learn कलेक्शनमध्ये](https://learn.microsoft.com/en-us/collections/7w28iy2xrqzdj0?WT.mc_id=academic-77998-bethanycheum)
 
-* व्यवसायात **AI चा वापर** याचे बिझनेस केस. Microsoft Learn वरील [Introduction to AI for business users](https://docs.microsoft.com/learn/paths/introduction-ai-for-business-users/?WT.mc_id=academic-77998-bethanycheum) हा शिक्षण मार्ग घेतला तर उपयुक्त ठरू शकते, किंवा [AI Business School](https://www.microsoft.com/ai/ai-business-school/?WT.mc_id=academic-77998-bethanycheum) वापरू शकता, जो [INSEAD](https://www.insead.edu/) सह सहयोगात विकसित करण्यात आला आहे.
-* **क्लासिक मशीन लर्निंग**, जे आमच्या [Machine Learning for Beginners Curriculum](http://github.com/Microsoft/ML-for-Beginners) मध्ये चांगल्या प्रकारे वर्णन केले आहे.
-* व्यवहारातील AI अनुप्रयोग जे **[Cognitive Services](https://azure.microsoft.com/services/cognitive-services/?WT.mc_id=academic-77998-bethanycheum)** वापरून बनवलेले. यासाठी, आम्ही शिफारस करतो की तुम्ही Microsoft Learn वर [vision](https://docs.microsoft.com/learn/paths/create-computer-vision-solutions-azure-cognitive-services/?WT.mc_id=academic-77998-bethanycheum), [natural language processing](https://docs.microsoft.com/learn/paths/explore-natural-language-processing/?WT.mc_id=academic-77998-bethanycheum), **[Generative AI with Azure OpenAI Service](https://learn.microsoft.com/en-us/training/paths/develop-ai-solutions-azure-openai/?WT.mc_id=academic-77998-bethanycheum)** आणि इतर मॉड्यूल्सपासून सुरू करावे.
-* विशिष्ट एमएल **क्लाउड फ्रेमवर्क्स**, जसे की [Azure Machine Learning](https://azure.microsoft.com/services/machine-learning/?WT.mc_id=academic-77998-bethanycheum), [Microsoft Fabric](https://learn.microsoft.com/en-us/training/paths/get-started-fabric/?WT.mc_id=academic-77998-bethanycheum), किंवा [Azure Databricks](https://docs.microsoft.com/learn/paths/data-engineer-azure-databricks?WT.mc_id=academic-77998-bethanycheum). आपण [Build and operate machine learning solutions with Azure Machine Learning](https://docs.microsoft.com/learn/paths/build-ai-solutions-with-azure-ml-service/?WT.mc_id=academic-77998-bethanycheum) आणि [Build and Operate Machine Learning Solutions with Azure Databricks](https://docs.microsoft.com/learn/paths/build-operate-machine-learning-solutions-azure-databricks/?WT.mc_id=academic-77998-bethanycheum) या शिक्षण मार्गांचा विचार करू शकता.
-* **संवादी AI** आणि **चॅट बॉट्स**. यासाठी स्वतंत्र [Create conversational AI solutions](https://docs.microsoft.com/learn/paths/create-conversational-ai-solutions/?WT.mc_id=academic-77998-bethanycheum) हा शिक्षण मार्ग आहे, आणि अधिक तपशीलांसाठी तुम्ही [हा ब्लॉग पोस्ट](https://soshnikov.com/azure/hello-bot-conversational-ai-on-microsoft-platform/) देखील पाहू शकता.
-* डीप लर्निंगमागील **गूढ गणित**. या साठी आम्ही Ian Goodfellow, Yoshua Bengio आणि Aaron Courville यांनी लिहिलेल्या [Deep Learning](https://www.amazon.com/Deep-Learning-Adaptive-Computation-Machine/dp/0262035618) या पुस्तकाची शिफारस करतो, जे ऑनलाइन देखील [https://www.deeplearningbook.org/](https://www.deeplearningbook.org/) वर उपलब्ध आहे.
+* **व्यावसायिक उपयोगातील AI** चे व्यवसायिक प्रकरणे. कृपया [Introduction to AI for business users](https://docs.microsoft.com/learn/paths/introduction-ai-for-business-users/?WT.mc_id=academic-77998-bethanycheum) Microsoft Learn वर घेण्याचा विचार करा, किंवा [AI Business School](https://www.microsoft.com/ai/ai-business-school/?WT.mc_id=academic-77998-bethanycheum), जे [INSEAD](https://www.insead.edu/) सोबत सहकार्याने विकसित केले आहे.
+* **क्लासिक मशीन लर्निंग**, जे चांगल्या प्रकारे आमच्या [Machine Learning for Beginners Curriculum](http://github.com/Microsoft/ML-for-Beginners) मध्ये स्पष्ट केले आहे.
+* **[कोग्निटिव्ह सर्व्हिसेस](https://azure.microsoft.com/services/cognitive-services/?WT.mc_id=academic-77998-bethanycheum)** वापरून तयार केलेल्या व्यावहारिक AI अनुप्रयोगांसाठी. यासाठी आम्ही Microsoft Learn मधील [vision](https://docs.microsoft.com/learn/paths/create-computer-vision-solutions-azure-cognitive-services/?WT.mc_id=academic-77998-bethanycheum), [natural language processing](https://docs.microsoft.com/learn/paths/explore-natural-language-processing/?WT.mc_id=academic-77998-bethanycheum), **[Generative AI with Azure OpenAI Service](https://learn.microsoft.com/en-us/training/paths/develop-ai-solutions-azure-openai/?WT.mc_id=academic-77998-bethanycheum)** आणि इतर मॉड्यूल्सपासून सुरूवात करण्याची शिफारस करतो.
+* विशिष्ट ML **क्लाउड फ्रेमवर्क्स**, जसे की [Azure Machine Learning](https://azure.microsoft.com/services/machine-learning/?WT.mc_id=academic-77998-bethanycheum), [Microsoft Fabric](https://learn.microsoft.com/en-us/training/paths/get-started-fabric/?WT.mc_id=academic-77998-bethanycheum), किंवा [Azure Databricks](https://docs.microsoft.com/learn/paths/data-engineer-azure-databricks?WT.mc_id=academic-77998-bethanycheum). [Build and operate machine learning solutions with Azure Machine Learning](https://docs.microsoft.com/learn/paths/build-ai-solutions-with-azure-ml-service/?WT.mc_id=academic-77998-bethanycheum) आणि [Build and Operate Machine Learning Solutions with Azure Databricks](https://docs.microsoft.com/learn/paths/build-operate-machine-learning-solutions-azure-databricks/?WT.mc_id=academic-77998-bethanycheum) या शिक्षण मार्गांचा वापर करा.
+* **संवादात्मक AI** आणि **चॅट बॉट्स**. यासाठी स्वतंत्र [Create conversational AI solutions](https://docs.microsoft.com/learn/paths/create-conversational-ai-solutions/?WT.mc_id=academic-77998-bethanycheum) शिकण्याचा मार्ग आहे, तसेच अधिक तपशीलांसाठी आपण [हा ब्लॉग पोस्ट](https://soshnikov.com/azure/hello-bot-conversational-ai-on-microsoft-platform/) बघू शकता.
+* डीप लर्निंगच्या मागील **गहन गणितशास्त्र**. यासाठी आम्ही Ian Goodfellow, Yoshua Bengio आणि Aaron Courville यांच्या [Deep Learning](https://www.amazon.com/Deep-Learning-Adaptive-Computation-Machine/dp/0262035618) या पुस्तकाची शिफारस करू, जे [https://www.deeplearningbook.org/](https://www.deeplearningbook.org/) वर ऑनलाइन उपलब्ध आहे.
 
-_क्लाउडमधील AI_ विषयांच्या सौम्य परिचयासाठी आपण [Get started with artificial intelligence on Azure](https://docs.microsoft.com/learn/paths/get-started-with-artificial-intelligence-on-azure/?WT.mc_id=academic-77998-bethanycheum) हा Learning Path घेण्याचा विचार करू शकता.
+_क्लाउडमधील AI_ विषयांसाठी सौम्य परिचयासाठी आपण [Get started with artificial intelligence on Azure](https://docs.microsoft.com/learn/paths/get-started-with-artificial-intelligence-on-azure/?WT.mc_id=academic-77998-bethanycheum) शिकण्याचा मार्ग घेऊ शकता.
 
 # सामग्री
 
-|     |                                                                 धड्याचा दुवा                                                                  |                                           PyTorch/Keras/TensorFlow                                          | लॅब                                                            |
+|     |                                                                 धडा लिंक                                                                 |                                           PyTorch/Keras/TensorFlow                                          | लॅब                                                            |
 | :-: | :------------------------------------------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------: | ------------------------------------------------------------------------------ |
-| 0  |                                 [कोर्स सेटअप](./lessons/0-course-setup/setup.md)                                 |                      [Setup Your Development Environment](./lessons/0-course-setup/how-to-run.md)                       |   |
+| 0  |                                 [कोर्स सेटअप](./lessons/0-course-setup/setup.md)                                 |                      [विकास वातावरण सेटअप करा](./lessons/0-course-setup/how-to-run.md)                       |   |
 | I  |               [**AI परिचय**](./lessons/1-Intro/README.md)      | | |
-| 01  |       [AI परिचय आणि इतिहास](./lessons/1-Intro/README.md)       |           -                            | -  |
+| 01  |       [AI इतिहास आणि परिचय](./lessons/1-Intro/README.md)       |           -                            | -  |
 | II |              **प्रतीकात्मक AI**              |
-| 02  |       [ज्ञान सादरीकरण आणि एक्सपर्ट सिस्टम्स](./lessons/2-Symbolic/README.md)       |            [Expert Systems](./lessons/2-Symbolic/Animals.ipynb) /  [Ontology](./lessons/2-Symbolic/FamilyOntology.ipynb) /[Concept Graph](./lessons/2-Symbolic/MSConceptGraph.ipynb)                             |  |
-| III |                        [**न्युरल नेटवर्क्स परिचय**](./lessons/3-NeuralNetworks/README.md) |||
-| 03  |                [परसेप्ट्रॉन](./lessons/3-NeuralNetworks/03-Perceptron/README.md)                 |                       [नोटबुक](./lessons/3-NeuralNetworks/03-Perceptron/Perceptron.ipynb)                      | [लॅब](./lessons/3-NeuralNetworks/03-Perceptron/lab/README.md) |
-| 04  |                   [बहु-स्तरीय परसेप्ट्रॉन आणि आपले स्वतःचे फ्रेमवर्क तयार करणे](./lessons/3-NeuralNetworks/04-OwnFramework/README.md)                   |        [नोटबुक](./lessons/3-NeuralNetworks/04-OwnFramework/OwnFramework.ipynb)        | [लॅब](./lessons/3-NeuralNetworks/04-OwnFramework/lab/README.md) |
-| 05  |            [फ्रेमवर्क्स (PyTorch/TensorFlow) परिचय आणि ओव्हरफिटिंग](./lessons/3-NeuralNetworks/05-Frameworks/README.md)             |           [PyTorch](./lessons/3-NeuralNetworks/05-Frameworks/IntroPyTorch.ipynb) / [Keras](./lessons/3-NeuralNetworks/05-Frameworks/IntroKeras.ipynb) / [TensorFlow](./lessons/3-NeuralNetworks/05-Frameworks/IntroKerasTF.ipynb)             | [लॅब](./lessons/3-NeuralNetworks/05-Frameworks/lab/README.md) |
-| IV  |            [**संगणकीय दृष्टी**](./lessons/4-ComputerVision/README.md)             | [PyTorch](https://docs.microsoft.com/learn/modules/intro-computer-vision-pytorch/?WT.mc_id=academic-77998-cacaste) / [TensorFlow](https://docs.microsoft.com/learn/modules/intro-computer-vision-TensorFlow/?WT.mc_id=academic-77998-cacaste)| [Microsoft Azure वर संगणकीय दृष्टी एक्सप्लोर करा](https://learn.microsoft.com/en-us/collections/7w28iy2xrqzdj0?WT.mc_id=academic-77998-bethanycheum) |
-| 06  |            [संगणकीय दृष्टी परिचय. OpenCV](./lessons/4-ComputerVision/06-IntroCV/README.md)             |           [नोटबुक](./lessons/4-ComputerVision/06-IntroCV/OpenCV.ipynb)         | [लॅब](./lessons/4-ComputerVision/06-IntroCV/lab/README.md) |
+| 02  |       [ज्ञान प्रतिनिधित्व आणि तज्ञ प्रणाली](./lessons/2-Symbolic/README.md)       |            [तज्ञ प्रणाली](./lessons/2-Symbolic/Animals.ipynb) /  [ऑन्टोलॉजी](./lessons/2-Symbolic/FamilyOntology.ipynb) /[संकल्पना ग्राफ](./lessons/2-Symbolic/MSConceptGraph.ipynb)                             |  |
+| III |                        [**न्यूरल नेटवर्क्सचे परिचय**](./lessons/3-NeuralNetworks/README.md) |||
+| 03  |                [पर्सेप्ट्रॉन](./lessons/3-NeuralNetworks/03-Perceptron/README.md)                 |                       [नोटबुक](./lessons/3-NeuralNetworks/03-Perceptron/Perceptron.ipynb)                      | [लॅब](./lessons/3-NeuralNetworks/03-Perceptron/lab/README.md) |
+| 04  |                   [मल्टी-लेयर्ड पर्सेप्ट्रॉन आणि आपले स्वतःचे फ्रेमवर्क तयार करणे](./lessons/3-NeuralNetworks/04-OwnFramework/README.md)                   |        [नोटबुक](./lessons/3-NeuralNetworks/04-OwnFramework/OwnFramework.ipynb)        | [लॅब](./lessons/3-NeuralNetworks/04-OwnFramework/lab/README.md) |
+| 05  |            [फ्रेमवर्क्सचे परिचय (PyTorch/TensorFlow) आणि ओव्हरफिटिंग](./lessons/3-NeuralNetworks/05-Frameworks/README.md)             |           [PyTorch](./lessons/3-NeuralNetworks/05-Frameworks/IntroPyTorch.ipynb) / [Keras](./lessons/3-NeuralNetworks/05-Frameworks/IntroKeras.ipynb) / [TensorFlow](./lessons/3-NeuralNetworks/05-Frameworks/IntroKerasTF.ipynb)             | [लॅब](./lessons/3-NeuralNetworks/05-Frameworks/lab/README.md) |
+| IV  |            [**कंप्युटर व्हिजन**](./lessons/4-ComputerVision/README.md)             | [PyTorch](https://docs.microsoft.com/learn/modules/intro-computer-vision-pytorch/?WT.mc_id=academic-77998-cacaste) / [TensorFlow](https://docs.microsoft.com/learn/modules/intro-computer-vision-TensorFlow/?WT.mc_id=academic-77998-cacaste)| [मायक्रोसॉफ्ट अॅझ्यूर वर कंप्युटर व्हिजन एक्सप्लोर करा](https://learn.microsoft.com/en-us/collections/7w28iy2xrqzdj0?WT.mc_id=academic-77998-bethanycheum) |
+| 06  |            [कंप्युटर व्हिजनचे परिचय. OpenCV](./lessons/4-ComputerVision/06-IntroCV/README.md)             |           [नोटबुक](./lessons/4-ComputerVision/06-IntroCV/OpenCV.ipynb)         | [लॅब](./lessons/4-ComputerVision/06-IntroCV/lab/README.md) |
 | 07  |            [कन्व्होल्यूशनल न्यूरल नेटवर्क्स](./lessons/4-ComputerVision/07-ConvNets/README.md) &  [CNN आर्किटेक्चर्स](./lessons/4-ComputerVision/07-ConvNets/CNN_Architectures.md)             |           [PyTorch](./lessons/4-ComputerVision/07-ConvNets/ConvNetsPyTorch.ipynb) /[TensorFlow](./lessons/4-ComputerVision/07-ConvNets/ConvNetsTF.ipynb)             | [लॅब](./lessons/4-ComputerVision/07-ConvNets/lab/README.md) |
-| 08  |            [पूर्व-प्रशिक्षित नेटवर्क आणि ट्रान्सफर लर्निंग](./lessons/4-ComputerVision/08-TransferLearning/README.md) and [प्रशिक्षण टिप्स](./lessons/4-ComputerVision/08-TransferLearning/TrainingTricks.md)             |           [PyTorch](./lessons/4-ComputerVision/08-TransferLearning/TransferLearningPyTorch.ipynb) / [TensorFlow](./lessons/3-NeuralNetworks/05-Frameworks/IntroKerasTF.ipynb)             | [लॅब](./lessons/4-ComputerVision/08-TransferLearning/lab/README.md) |
-| 09  |            [ऑटोएनकोडर्स आणि VAEs](./lessons/4-ComputerVision/09-Autoencoders/README.md)             |           [PyTorch](./lessons/4-ComputerVision/09-Autoencoders/AutoEncodersPyTorch.ipynb) / [TensorFlow](./lessons/4-ComputerVision/09-Autoencoders/AutoencodersTF.ipynb)             |  |
-| 10  |            [जनरेटिव्ह अ‍ॅडव्हर्सेरियल नेटवर्क्स & कलात्मक शैली ट्रान्सफर](./lessons/4-ComputerVision/10-GANs/README.md)             |           [PyTorch](./lessons/4-ComputerVision/10-GANs/GANPyTorch.ipynb) / [TensorFlow](./lessons/4-ComputerVision/10-GANs/GANTF.ipynb)             |  |
+| 08  |            [पूर्व-प्रशिक्षित नेटवर्क्स आणि ट्रान्सफर लर्निंग](./lessons/4-ComputerVision/08-TransferLearning/README.md) आणि [ट्रेनिंग ट्रिक्स](./lessons/4-ComputerVision/08-TransferLearning/TrainingTricks.md)             |           [PyTorch](./lessons/4-ComputerVision/08-TransferLearning/TransferLearningPyTorch.ipynb) / [TensorFlow](./lessons/3-NeuralNetworks/05-Frameworks/IntroKerasTF.ipynb)             | [लॅब](./lessons/4-ComputerVision/08-TransferLearning/lab/README.md) |
+| 09  |            [ऑटोएन्कोडर्स आणि VAE](./lessons/4-ComputerVision/09-Autoencoders/README.md)             |           [PyTorch](./lessons/4-ComputerVision/09-Autoencoders/AutoEncodersPyTorch.ipynb) / [TensorFlow](./lessons/4-ComputerVision/09-Autoencoders/AutoencodersTF.ipynb)             |  |
+| 10  |            [जनरेटिव अ‍ॅडव्हर्सेरियल नेटवर्क्स आणि आर्टिस्टिक स्टाइल ट्रान्सफर](./lessons/4-ComputerVision/10-GANs/README.md)             |           [PyTorch](./lessons/4-ComputerVision/10-GANs/GANPyTorch.ipynb) / [TensorFlow](./lessons/4-ComputerVision/10-GANs/GANTF.ipynb)             |  |
 | 11  |            [ऑब्जेक्ट डिटेक्शन](./lessons/4-ComputerVision/11-ObjectDetection/README.md)             |         [TensorFlow](./lessons/4-ComputerVision/11-ObjectDetection/ObjectDetection.ipynb)             | [लॅब](./lessons/4-ComputerVision/11-ObjectDetection/lab/README.md) |
-| 12  |            [सेमँटिक सेगमेंटेशन. U-Net](./lessons/4-ComputerVision/12-Segmentation/README.md)             |           [PyTorch](./lessons/4-ComputerVision/12-Segmentation/SemanticSegmentationPytorch.ipynb) / [TensorFlow](./lessons/4-ComputerVision/12-Segmentation/SemanticSegmentationTF.ipynb)             |  |
-| V  |            [**नैसर्गिक भाषा प्रक्रिया**](./lessons/5-NLP/README.md)             | [PyTorch](https://docs.microsoft.com/learn/modules/intro-natural-language-processing-pytorch/?WT.mc_id=academic-77998-cacaste) /[TensorFlow](https://docs.microsoft.com/learn/modules/intro-natural-language-processing-TensorFlow/?WT.mc_id=academic-77998-cacaste) | [Microsoft Azure वर नैसर्गिक भाषा प्रक्रिया एक्सप्लोर करा](https://learn.microsoft.com/en-us/collections/7w28iy2xrqzdj0?WT.mc_id=academic-77998-bethanycheum)|
-| 13  |            [टेक्स्ट प्रतिनिधित्व. BoW/TF-IDF](./lessons/5-NLP/13-TextRep/README.md)             |           [PyTorch](https://github.com/microsoft/AI-For-Beginners/blob/main/lessons/5-NLP/13-TextRep/TextRepresentationPyTorch.ipynb) / [TensorFlow](https://github.com/microsoft/AI-For-Beginners/blob/main/lessons/5-NLP/13-TextRep/TextRepresentationTF.ipynb)             | |
-| 14  |            [शाब्दिक एम्बेडिंग्ज. Word2Vec and GloVe](./lessons/5-NLP/14-Embeddings/README.md)             |           [PyTorch](https://github.com/microsoft/AI-For-Beginners/blob/main/lessons/5-NLP/14-Embeddings/EmbeddingsPyTorch.ipynb) / [TensorFlow](https://github.com/microsoft/AI-For-Beginners/blob/main/lessons/5-NLP/14-Embeddings/EmbeddingsTF.ipynb)             |  |
-| 15  |            [भाषा मॉडेलिंग. आपली स्वतःची एम्बेडिंग्ज प्रशिक्षित करणे](./lessons/5-NLP/15-LanguageModeling/README.md)             |           [PyTorch](https://github.com/microsoft/AI-For-Beginners/blob/main/lessons/5-NLP/15-LanguageModeling/CBoW-PyTorch.ipynb) / [TensorFlow](https://github.com/microsoft/AI-For-Beginners/blob/main/lessons/5-NLP/15-LanguageModeling/CBoW-TF.ipynb)             | [लॅब](./lessons/5-NLP/15-LanguageModeling/lab/README.md) |
-| 16  |            [रीकरंट न्यूरल नेटवर्क्स](./lessons/5-NLP/16-RNN/README.md)             |           [PyTorch](https://github.com/microsoft/AI-For-Beginners/blob/main/lessons/5-NLP/16-RNN/RNNPyTorch.ipynb) / [TensorFlow](https://github.com/microsoft/AI-For-Beginners/blob/main/lessons/5-NLP/16-RNN/RNNTF.ipynb)             |  |
-| 17  |            [जनरेटिव्ह रीकरंट नेटवर्क्स](./lessons/5-NLP/17-GenerativeNetworks/README.md)             |           [PyTorch](https://github.com/microsoft/AI-For-Beginners/blob/main/lessons/5-NLP/17-GenerativeNetworks/GenerativePyTorch.ipynb) / [TensorFlow](https://github.com/microsoft/AI-For-Beginners/blob/main/lessons/5-NLP/17-GenerativeNetworks/GenerativeTF.ipynb)             | [लॅब](./lessons/5-NLP/17-GenerativeNetworks/lab/README.md) |
-| 18  |            [Transformers. BERT.](./lessons/5-NLP/18-Transformers/README.md)             |           [PyTorch](https://github.com/microsoft/AI-For-Beginners/blob/main/lessons/5-NLP/18-Transformers/TransformersPyTorch.ipynb) /[TensorFlow](https://github.com/microsoft/AI-For-Beginners/blob/main/lessons/5-NLP/18-Transformers/TransformersTF.ipynb)             |  |
-| 19  |            [नामित एंटिटी ओळख](./lessons/5-NLP/19-NER/README.md)             |           [TensorFlow](https://microsoft.github.io/AI-For-Beginners/lessons/5-NLP/19-NER/NER-TF.ipynb)             | [लॅब](./lessons/5-NLP/19-NER/lab/README.md) |
-| 20  |            [मोठी भाषा मॉडेल्स, प्रॉम्प्ट प्रोग्रामिंग आणि फ्यू-शॉट टास्क](./lessons/5-NLP/20-LangModels/README.md)             |           [PyTorch](https://microsoft.github.io/AI-For-Beginners/lessons/5-NLP/20-LangModels/GPT-PyTorch.ipynb) | |
-| VI |            **इतर AI तंत्र** || |
-| 21  |            [जेनिटिक अल्गोरिदम](./lessons/6-Other/21-GeneticAlgorithms/README.md)             |           [नोटबुक](./lessons/6-Other/21-GeneticAlgorithms/Genetic.ipynb) | |
-| 22  |            [डीप रिइनफोर्समेंट लर्निंग](./lessons/6-Other/22-DeepRL/README.md)             |           [PyTorch](./lessons/6-Other/22-DeepRL/CartPole-RL-PyTorch.ipynb) /[TensorFlow](./lessons/6-Other/22-DeepRL/CartPole-RL-TF.ipynb)             | [लॅब](./lessons/6-Other/22-DeepRL/lab/README.md) |
-| 23  |            [बहु-एजंट सिस्टम्स](./lessons/6-Other/23-MultiagentSystems/README.md)             |  | |
+| 12  |            [सिमॅंटिक सेगमेंटेशन. U-Net](./lessons/4-ComputerVision/12-Segmentation/README.md)             |           [PyTorch](./lessons/4-ComputerVision/12-Segmentation/SemanticSegmentationPytorch.ipynb) / [TensorFlow](./lessons/4-ComputerVision/12-Segmentation/SemanticSegmentationTF.ipynb)             |  |
+| V  |            [**नॅचरल लँग्वेज प्रोसेसिंग**](./lessons/5-NLP/README.md)             | [PyTorch](https://docs.microsoft.com/learn/modules/intro-natural-language-processing-pytorch/?WT.mc_id=academic-77998-cacaste) /[TensorFlow](https://docs.microsoft.com/learn/modules/intro-natural-language-processing-TensorFlow/?WT.mc_id=academic-77998-cacaste) | [मायक्रोसॉफ्ट अॅझ्यूर वर नॅचरल लँग्वेज प्रोसेसिंग एक्सप्लोर करा](https://learn.microsoft.com/en-us/collections/7w28iy2xrqzdj0?WT.mc_id=academic-77998-bethanycheum)|
+| 13  |            [मॅत्र्या प्रतिनिधित्व. बोव/टीएफ-आयडीएफ](./lessons/5-NLP/13-TextRep/README.md)             |           [PyTorch](https://github.com/microsoft/AI-For-Beginners/blob/main/lessons/5-NLP/13-TextRep/TextRepresentationPyTorch.ipynb) / [TensorFlow](https://github.com/microsoft/AI-For-Beginners/blob/main/lessons/5-NLP/13-TextRep/TextRepresentationTF.ipynb)             | |
+| 14  |            [सिमँटिक वर्ड एम्बेडिंग्ज. Word2Vec आणि GloVe](./lessons/5-NLP/14-Embeddings/README.md)             |           [PyTorch](https://github.com/microsoft/AI-For-Beginners/blob/main/lessons/5-NLP/14-Embeddings/EmbeddingsPyTorch.ipynb) / [TensorFlow](https://github.com/microsoft/AI-For-Beginners/blob/main/lessons/5-NLP/14-Embeddings/EmbeddingsTF.ipynb)             |  |
+| 15  |            [लँग्वेज मॉडेलिंग. आपले स्वतःचे एम्बेडिंग्ज ट्रेनिंग करा](./lessons/5-NLP/15-LanguageModeling/README.md)             |           [PyTorch](https://github.com/microsoft/AI-For-Beginners/blob/main/lessons/5-NLP/15-LanguageModeling/CBoW-PyTorch.ipynb) / [TensorFlow](https://github.com/microsoft/AI-For-Beginners/blob/main/lessons/5-NLP/15-LanguageModeling/CBoW-TF.ipynb)             | [लॅब](./lessons/5-NLP/15-LanguageModeling/lab/README.md) |
+| 16  |            [रिकरंट न्यूरल नेटवर्क्स](./lessons/5-NLP/16-RNN/README.md)             |           [PyTorch](https://github.com/microsoft/AI-For-Beginners/blob/main/lessons/5-NLP/16-RNN/RNNPyTorch.ipynb) / [TensorFlow](https://github.com/microsoft/AI-For-Beginners/blob/main/lessons/5-NLP/16-RNN/RNNTF.ipynb)             |  |
+| 17  |            [जनरेटिव रिकरंट नेटवर्क्स](./lessons/5-NLP/17-GenerativeNetworks/README.md)             |           [PyTorch](https://github.com/microsoft/AI-For-Beginners/blob/main/lessons/5-NLP/17-GenerativeNetworks/GenerativePyTorch.ipynb) / [TensorFlow](https://github.com/microsoft/AI-For-Beginners/blob/main/lessons/5-NLP/17-GenerativeNetworks/GenerativeTF.ipynb)             | [लॅब](./lessons/5-NLP/17-GenerativeNetworks/lab/README.md) |
+| 18  |            [ट्रान्सफॉर्मर्स. BERT.](./lessons/5-NLP/18-Transformers/README.md)             |           [PyTorch](https://github.com/microsoft/AI-For-Beginners/blob/main/lessons/5-NLP/18-Transformers/TransformersPyTorch.ipynb) /[TensorFlow](https://github.com/microsoft/AI-For-Beginners/blob/main/lessons/5-NLP/18-Transformers/TransformersTF.ipynb)             |  |
+| 19  |            [नामांकित घटक ओळख (Named Entity Recognition)](./lessons/5-NLP/19-NER/README.md)             |           [TensorFlow](https://microsoft.github.io/AI-For-Beginners/lessons/5-NLP/19-NER/NER-TF.ipynb)             | [लॅब](./lessons/5-NLP/19-NER/lab/README.md) |
+| 20  |            [मोठे भाषा मॉडेल्स, प्रॉम्प्ट प्रोग्रामिंग आणि काही-शॉट टास्क्स](./lessons/5-NLP/20-LangModels/README.md)             |           [PyTorch](https://microsoft.github.io/AI-For-Beginners/lessons/5-NLP/20-LangModels/GPT-PyTorch.ipynb) | |
+| VI |            **इतर AI तंत्रे** || |
+| 21  |            [जनुकीय अल्गोरिदम्स](./lessons/6-Other/21-GeneticAlgorithms/README.md)             |           [नोटबुक](./lessons/6-Other/21-GeneticAlgorithms/Genetic.ipynb) | |
+| 22  |            [डीप रीनफोर्समेंट लर्निंग](./lessons/6-Other/22-DeepRL/README.md)             |           [PyTorch](./lessons/6-Other/22-DeepRL/CartPole-RL-PyTorch.ipynb) /[TensorFlow](./lessons/6-Other/22-DeepRL/CartPole-RL-TF.ipynb)             | [लॅब](./lessons/6-Other/22-DeepRL/lab/README.md) |
+| 23  |            [मल्टि-एजंट सिस्टम्स](./lessons/6-Other/23-MultiagentSystems/README.md)             |  | |
 | VII |            **AI नैतिकता** | | |
 | 24  |            [AI नैतिकता आणि जबाबदार AI](./lessons/7-Ethics/README.md)             |           [Microsoft Learn: जबाबदार AI तत्त्वे](https://docs.microsoft.com/learn/paths/responsible-ai-business-principles/?WT.mc_id=academic-77998-cacaste) | |
 | IX  |            **अतिरिक्त** | | |
-| 25  |            [मल्टी-मॉडल नेटवर्क्स, CLIP आणि VQGAN](./lessons/X-Extras/X1-MultiModal/README.md)             |           [नोटबुक](./lessons/X-Extras/X1-MultiModal/Clip.ipynb)    | |
+| 25  |            [मल्टी-मोडल नेटवर्क्स, CLIP आणि VQGAN](./lessons/X-Extras/X1-MultiModal/README.md)             |           [नोटबुक](./lessons/X-Extras/X1-MultiModal/Clip.ipynb)    | |
 
-## प्रत्येक धड्यात समाविष्ट आहे
+## प्रत्येक धडा यामध्ये असतो
 
-* पूर्व-वाचन साहित्य
-* चालवता येणाऱ्या Jupyter नोटबुक्स, जे अनेकदा विशिष्ट फ्रेमवर्कसाठी असतात (**PyTorch** किंवा **TensorFlow**). चालवता येणाऱ्या नोटबुकमध्ये खूप सैद्धांतिक सामग्री असते, त्यामुळे विषय समजून घेण्यासाठी तुम्हाला नोटबुकमधून कमीतकमी एक आवृत्ती (किंवा PyTorch किंवा TensorFlow) पाहणे आवश्यक आहे.
-* काही विषयांसाठी उपलब्ध **लॅब्स**, ज्यामुळे तुम्हाला शिकलेल्या सामग्रीला विशिष्ट समस्येवर लागू करून पाहण्याची संधी मिळते.
-* काही विभागांमध्ये संबंधित विषयांना कव्हर करणाऱ्या [**MS Learn**](https://learn.microsoft.com/en-us/collections/7w28iy2xrqzdj0?WT.mc_id=academic-77998-bethanycheum) मॉड्यूल्ससाठी दुवे असतात.
+* पूर्व-अभ्यास साहित्य  
+* एक्सिक्युटेबल जुपिटर नोटबुक्स, जे अनेकदा फ्रेमवर्कसाठी विशिष्ट असतात (**PyTorch** किंवा **TensorFlow**). एक्सिक्युटेबल नोटबुकमध्ये बराच सैद्धांतिक साहित्यही असते, त्यामुळे विषय समजून घेण्यासाठी तुम्हाला किमान एका नोटबुकची आवृत्ती (PyTorch किंवा TensorFlow) पाहणे आवश्यक आहे.  
+* काही विषयांसाठी **लॅब्स** उपलब्ध आहेत, जे तुम्हाला शिकलेल्या सामग्रीला विशिष्ट समस्येवर लागू करण्याचा संधी देतात.  
+* काही विभागांमध्ये [**MS Learn**](https://learn.microsoft.com/en-us/collections/7w28iy2xrqzdj0?WT.mc_id=academic-77998-bethanycheum) मॉड्यूल्ससाठी लिंक्स असतात जे संबंधित विषयांचा आच्छादन देतात.  
 
-## सुरू करण्यासाठी
+## सुरुवात करण्यासाठी
 
-### 🎯 एआय मध्ये नवीन आहात? इथून सुरू करा!
+### 🎯 AI मध्ये नवखे आहात? येथे सुरु करा!
 
-जर तुम्ही एआयमध्ये पूर्णपणे नवीन असाल आणि जलद, हस्तगत उदाहरणं पाहू इच्छित असाल, तर आमची [**सुरुवातीसाठी सोपी उदाहरणे**](./examples/README.md) पहा! यामध्ये समाविष्ट आहेत:
+जर तुम्ही AI मध्ये पूर्णपणे नवीन असाल आणि पटकन हाताळता येण्याजोगे उदाहरणे पाहू इच्छित असाल, तर आमचे [**नवशिक्या साठी सोपे उदाहरणे**](./examples/README.md) पाहा! यात समाविष्ट आहे:  
 
-- 🌟 **Hello AI World** - तुमचा पहिला एआय प्रोग्राम (पॅटर्न ओळख)
-- 🧠 **Simple Neural Network** - शून्यापासून न्यूरल नेटवर्क तयार करा  
-- 🖼️ **Image Classifier** - सविस्तर टिप्पण्या सह प्रतिमा वर्गीकृत करा
-- 💬 **टेक्स्ट सेंटिमेंट** - सकारात्मक/नकारात्मक मजकूर विश्लेषण करा
+- 🌟 **Hello AI World** - तुमचा पहिला AI प्रोग्राम (पॅटर्न रेकग्निशन)  
+- 🧠 **साधा न्यूरल नेटवर्क** - सुरुवातीपासून न्यूरल नेटवर्क तयार करा
+- 🖼️ **प्रतिमा वर्गीकरणकर्ता** - सविस्तर टिप्पण्यासह प्रतिमा वर्गीकृत करा  
+- 💬 **मजकूर भावना** - सकारात्मक/नकारात्मक मजकूराचे विश्लेषण करा  
 
-हे उदाहरणे पूर्ण अभ्यासक्रमात शिरण्यापूर्वी AI संकल्पना समजून घेण्यासाठी तयार केलेले आहेत.
+हे उदाहरणे पूर्ण अभ्यासक्रमात अति गडद उतरण्याआधी AI संकल्पना समजून घेण्यात आपल्याला मदत करण्यासाठी डिझाइन केली आहेत.
 
-### 📚 Full Curriculum Setup
+### 📚 पूर्ण अभ्यासक्रम सेटअप  
 
-- आम्ही आपल्या विकास वातावरणाची सेटअप करण्यात मदत करण्यासाठी एक [सेटअप धडा](./lessons/0-course-setup/setup.md) तयार केले आहे. - शिक्षकांसाठी, आम्ही तुमच्यासाठी एक [अभ्यासक्रम सेटअप धडा](./lessons/0-course-setup/for-teachers.md) सुद्धा तयार केला आहे!
-- VSCode किंवा Codepace मध्ये कोड कसा [चालवायचा](./lessons/0-course-setup/how-to-run.md)
+- आम्ही आपला विकास पर्यावरण सेटअप करण्यात मदत करण्यासाठी एक [सेटअप धडा](./lessons/0-course-setup/setup.md) तयार केला आहे.  
+- शिक्षकांसाठी आम्ही आपल्यासाठी एक [अभ्यासक्रम सेटअप धडा](./lessons/0-course-setup/for-teachers.md) देखील तयार केला आहे!  
+- VSCode किंवा Codespace मध्ये [कोड कसा चालवायचा](./lessons/0-course-setup/how-to-run.md)  
 
-Follow these steps:
+हे टप्पे पाळा:  
 
-Fork the Repository: Click on the "Fork" button at the top-right corner of this page.
+रिपॉझिटरी फोर्क करा: या पानाच्या वरच्या उजव्या कोपऱ्यातील "Fork" बटणावर क्लिक करा.  
 
-Clone the Repository: `git clone https://github.com/microsoft/AI-For-Beginners.git`
+रिपॉझिटरी क्लोन करा: `git clone https://github.com/microsoft/AI-For-Beginners.git`  
 
-Don't forget to star (🌟) this repo to find it easier later.
+नंतर सोप्या शोधासाठी या रेपोला स्टार (🌟) देणे विसरू नका.  
 
-## Meet other Learners
+## इतर शिकणाऱ्यांची भेट  
 
-Join our [अधिकृत AI Discord सर्व्हर](https://aka.ms/genai-discord?WT.mc_id=academic-105485-bethanycheum) to meet and network with other learners taking this course and get support.
+आमच्या [अधिकृत AI Discord सर्व्हर](https://aka.ms/genai-discord?WT.mc_id=academic-105485-bethanycheum) मध्ये सामील व्हा आणि हा कोर्स करणाऱ्या इतर विद्यार्थ्यांना भेटा, नेटवर्क करा आणि मदत मिळवा.  
 
-If you have product feedback or questions whilst building visit our [Azure AI Foundry विकसक फोरम](https://aka.ms/foundry/forum)
+जर आपल्याकडे उत्पादनावर अभिप्राय किंवा प्रश्न असतील तर आमच्या [Azure AI Foundry Developer Forum](https://aka.ms/foundry/forum) वर भेट द्या.  
 
-## Quizzes 
+## प्रश्नमंजुषा  
 
-> **क्विझविषयी एक नोंद**: सर्व क्विझेस Quiz-app फोल्डर मध्ये etc\quiz-app मध्ये आहेत, किंवा [ऑनलाइन येथे](https://ff-quizzes.netlify.app/) ते धड्यांमधून लिंक केलेले आहेत; क्विझ अॅप स्थानिकरित्या चालवता येते किंवा Azure वर तैनात केले जाऊ शकते; `quiz-app` फोल्डरमधील सूचनांचे पालन करा. ते हळूहळू स्थानिकीकरण केले जात आहेत.
+> **प्रश्नमंजुषेबद्दल एक नोंद:** सर्व प्रश्नमंजुषा etc\quiz-app या quiz-app फोल्डरमध्ये आहेत, किंवा [इथे ऑनलाइन](https://ff-quizzes.netlify.app/) पाहू शकता. त्या धड्यांमधून लिंक केल्या आहेत. प्रश्नमंजुषा अॅप स्थानिकपणे चालवू शकतो किंवा Azure वर तैनात केला जाऊ शकतो; `quiz-app` फोल्डरमधील सूचना पाळा. त्यांचे स्थानिकरण हळूहळू सुरू आहे.  
 
-## Help Wanted
+## मदत हवी आहे  
 
-Do you have suggestions or found spelling or code errors? Raise an issue or create a pull request.
+आपल्याकडे सूचना आहेत किंवा शब्द किंवा कोडमध्ये चुका सापडल्या का? कृपया इश्यू उघडा किंवा पुल विनंती तयार करा.  
 
-## Special Thanks
+## विशेष आभार  
 
-* **✍️ मुख्य लेखक:** [Dmitry Soshnikov](http://soshnikov.com), PhD
-* **🔥 संपादक:** [Jen Looper](https://twitter.com/jenlooper), PhD
-* **🎨 स्केचनोट इलस्ट्रेटर:** [Tomomi Imura](https://twitter.com/girlie_mac)
-* **✅ क्विझ निर्माते:** [Lateefah Bello](https://github.com/CinnamonXI), [MLSA](https://studentambassadors.microsoft.com/)
-* **🙏 मुख्य योगदानकर्ते:** [Evgenii Pishchik](https://github.com/Pe4enIks)
+* **✍️ मुख्य लेखक:** [Dmitry Soshnikov](http://soshnikov.com), PhD  
+* **🔥 संपादक:** [Jen Looper](https://twitter.com/jenlooper), PhD  
+* **🎨 स्केचनोट चित्रकार:** [Tomomi Imura](https://twitter.com/girlie_mac)  
+* **✅ प्रश्नमंजुषा निर्माता:** [Lateefah Bello](https://github.com/CinnamonXI), [MLSA](https://studentambassadors.microsoft.com/)  
+* **🙏 मुख्य योगदानकर्ते:** [Evgenii Pishchik](https://github.com/Pe4enIks)  
 
-## Other Curricula
+## इतर अभ्यासक्रम  
 
-Our team produces other curricula! Check out:
+आमच्या टीमने इतर अभ्यासक्रम तयार केले आहेत! तपासा:  
 
-<!-- CO-OP TRANSLATOR OTHER COURSES START -->
-### LangChain
-[![LangChain4j प्रारंभकर्त्यांसाठी](https://img.shields.io/badge/LangChain4j%20for%20Beginners-22C55E?style=for-the-badge&&labelColor=E5E7EB&color=0553D6)](https://aka.ms/langchain4j-for-beginners)
-[![LangChain.js प्रारंभकर्त्यांसाठी](https://img.shields.io/badge/LangChain.js%20for%20Beginners-22C55E?style=for-the-badge&labelColor=E5E7EB&color=0553D6)](https://aka.ms/langchainjs-for-beginners?WT.mc_id=m365-94501-dwahlin)
+<!-- CO-OP TRANSLATOR OTHER COURSES START -->  
+### LangChain  
+[![LangChain4j for Beginners](https://img.shields.io/badge/LangChain4j%20for%20Beginners-22C55E?style=for-the-badge&&labelColor=E5E7EB&color=0553D6)](https://aka.ms/langchain4j-for-beginners)  
+[![LangChain.js for Beginners](https://img.shields.io/badge/LangChain.js%20for%20Beginners-22C55E?style=for-the-badge&labelColor=E5E7EB&color=0553D6)](https://aka.ms/langchainjs-for-beginners?WT.mc_id=m365-94501-dwahlin)  
+[![LangChain for Beginners](https://img.shields.io/badge/LangChain%20for%20Beginners-22C55E?style=for-the-badge&labelColor=E5E7EB&color=0553D6)](https://github.com/microsoft/langchain-for-beginners?WT.mc_id=m365-94501-dwahlin)  
+---  
 
----
+### Azure / Edge / MCP / Agents  
+[![AZD for Beginners](https://img.shields.io/badge/AZD%20for%20Beginners-0078D4?style=for-the-badge&labelColor=E5E7EB&color=0078D4)](https://github.com/microsoft/AZD-for-beginners?WT.mc_id=academic-105485-koreyst)  
+[![Edge AI for Beginners](https://img.shields.io/badge/Edge%20AI%20for%20Beginners-00B8E4?style=for-the-badge&labelColor=E5E7EB&color=00B8E4)](https://github.com/microsoft/edgeai-for-beginners?WT.mc_id=academic-105485-koreyst)  
+[![MCP for Beginners](https://img.shields.io/badge/MCP%20for%20Beginners-009688?style=for-the-badge&labelColor=E5E7EB&color=009688)](https://github.com/microsoft/mcp-for-beginners?WT.mc_id=academic-105485-koreyst)  
+[![AI Agents for Beginners](https://img.shields.io/badge/AI%20Agents%20for%20Beginners-00C49A?style=for-the-badge&labelColor=E5E7EB&color=00C49A)](https://github.com/microsoft/ai-agents-for-beginners?WT.mc_id=academic-105485-koreyst)  
 
-### Azure / Edge / MCP / Agents
-[![AZD प्रारंभकर्त्यांसाठी](https://img.shields.io/badge/AZD%20for%20Beginners-0078D4?style=for-the-badge&labelColor=E5E7EB&color=0078D4)](https://github.com/microsoft/AZD-for-beginners?WT.mc_id=academic-105485-koreyst)
-[![Edge AI प्रारंभकर्त्यांसाठी](https://img.shields.io/badge/Edge%20AI%20for%20Beginners-00B8E4?style=for-the-badge&labelColor=E5E7EB&color=00B8E4)](https://github.com/microsoft/edgeai-for-beginners?WT.mc_id=academic-105485-koreyst)
-[![MCP प्रारंभकर्त्यांसाठी](https://img.shields.io/badge/MCP%20for%20Beginners-009688?style=for-the-badge&labelColor=E5E7EB&color=009688)](https://github.com/microsoft/mcp-for-beginners?WT.mc_id=academic-105485-koreyst)
-[![AI Agents प्रारंभकर्त्यांसाठी](https://img.shields.io/badge/AI%20Agents%20for%20Beginners-00C49A?style=for-the-badge&labelColor=E5E7EB&color=00C49A)](https://github.com/microsoft/ai-agents-for-beginners?WT.mc_id=academic-105485-koreyst)
-
----
+---  
  
-### Generative AI Series
-[![जनरेटिव्ह AI प्रारंभकर्त्यांसाठी](https://img.shields.io/badge/Generative%20AI%20for%20Beginners-8B5CF6?style=for-the-badge&labelColor=E5E7EB&color=8B5CF6)](https://github.com/microsoft/generative-ai-for-beginners?WT.mc_id=academic-105485-koreyst)
-[![जनरेटिव्ह AI (.NET)](https://img.shields.io/badge/Generative%20AI%20(.NET)-9333EA?style=for-the-badge&labelColor=E5E7EB&color=9333EA)](https://github.com/microsoft/Generative-AI-for-beginners-dotnet?WT.mc_id=academic-105485-koreyst)
-[![जनरेटिव्ह AI (Java)](https://img.shields.io/badge/Generative%20AI%20(Java)-C084FC?style=for-the-badge&labelColor=E5E7EB&color=C084FC)](https://github.com/microsoft/generative-ai-for-beginners-java?WT.mc_id=academic-105485-koreyst)
-[![जनरेटिव्ह AI (JavaScript)](https://img.shields.io/badge/Generative%20AI%20(JavaScript)-E879F9?style=for-the-badge&labelColor=E5E7EB&color=E879F9)](https://github.com/microsoft/generative-ai-with-javascript?WT.mc_id=academic-105485-koreyst)
+### Generative AI Series  
+[![Generative AI for Beginners](https://img.shields.io/badge/Generative%20AI%20for%20Beginners-8B5CF6?style=for-the-badge&labelColor=E5E7EB&color=8B5CF6)](https://github.com/microsoft/generative-ai-for-beginners?WT.mc_id=academic-105485-koreyst)  
+[![Generative AI (.NET)](https://img.shields.io/badge/Generative%20AI%20(.NET)-9333EA?style=for-the-badge&labelColor=E5E7EB&color=9333EA)](https://github.com/microsoft/Generative-AI-for-beginners-dotnet?WT.mc_id=academic-105485-koreyst)  
+[![Generative AI (Java)](https://img.shields.io/badge/Generative%20AI%20(Java)-C084FC?style=for-the-badge&labelColor=E5E7EB&color=C084FC)](https://github.com/microsoft/generative-ai-for-beginners-java?WT.mc_id=academic-105485-koreyst)  
+[![Generative AI (JavaScript)](https://img.shields.io/badge/Generative%20AI%20(JavaScript)-E879F9?style=for-the-badge&labelColor=E5E7EB&color=E879F9)](https://github.com/microsoft/generative-ai-with-javascript?WT.mc_id=academic-105485-koreyst)  
 
----
+---  
  
-### Core Learning
-[![ML प्रारंभकर्त्यांसाठी](https://img.shields.io/badge/ML%20for%20Beginners-22C55E?style=for-the-badge&labelColor=E5E7EB&color=22C55E)](https://aka.ms/ml-beginners?WT.mc_id=academic-105485-koreyst)
-[![डेटा सायन्स प्रारंभकर्त्यांसाठी](https://img.shields.io/badge/Data%20Science%20for%20Beginners-84CC16?style=for-the-badge&labelColor=E5E7EB&color=84CC16)](https://aka.ms/datascience-beginners?WT.mc_id=academic-105485-koreyst)
-[![AI प्रारंभकर्त्यांसाठी](https://img.shields.io/badge/AI%20for%20Beginners-A3E635?style=for-the-badge&labelColor=E5E7EB&color=A3E635)](https://aka.ms/ai-beginners?WT.mc_id=academic-105485-koreyst)
-[![सायबरसुरक्षा प्रारंभकर्त्यांसाठी](https://img.shields.io/badge/Cybersecurity%20for%20Beginners-F97316?style=for-the-badge&labelColor=E5E7EB&color=F97316)](https://github.com/microsoft/Security-101?WT.mc_id=academic-96948-sayoung)
-[![वेब डेव्ह प्रारंभकर्त्यांसाठी](https://img.shields.io/badge/Web%20Dev%20for%20Beginners-EC4899?style=for-the-badge&labelColor=E5E7EB&color=EC4899)](https://aka.ms/webdev-beginners?WT.mc_id=academic-105485-koreyst)
-[![IoT प्रारंभकर्त्यांसाठी](https://img.shields.io/badge/IoT%20for%20Beginners-14B8A6?style=for-the-badge&labelColor=E5E7EB&color=14B8A6)](https://aka.ms/iot-beginners?WT.mc_id=academic-105485-koreyst)
-[![XR विकास प्रारंभकर्त्यांसाठी](https://img.shields.io/badge/XR%20Development%20for%20Beginners-38BDF8?style=for-the-badge&labelColor=E5E7EB&color=38BDF8)](https://github.com/microsoft/xr-development-for-beginners?WT.mc_id=academic-105485-koreyst)
+### Core Learning  
+[![ML for Beginners](https://img.shields.io/badge/ML%20for%20Beginners-22C55E?style=for-the-badge&labelColor=E5E7EB&color=22C55E)](https://aka.ms/ml-beginners?WT.mc_id=academic-105485-koreyst)  
+[![Data Science for Beginners](https://img.shields.io/badge/Data%20Science%20for%20Beginners-84CC16?style=for-the-badge&labelColor=E5E7EB&color=84CC16)](https://aka.ms/datascience-beginners?WT.mc_id=academic-105485-koreyst)  
+[![AI for Beginners](https://img.shields.io/badge/AI%20for%20Beginners-A3E635?style=for-the-badge&labelColor=E5E7EB&color=A3E635)](https://aka.ms/ai-beginners?WT.mc_id=academic-105485-koreyst)  
+[![Cybersecurity for Beginners](https://img.shields.io/badge/Cybersecurity%20for%20Beginners-F97316?style=for-the-badge&labelColor=E5E7EB&color=F97316)](https://github.com/microsoft/Security-101?WT.mc_id=academic-96948-sayoung)  
+[![Web Dev for Beginners](https://img.shields.io/badge/Web%20Dev%20for%20Beginners-EC4899?style=for-the-badge&labelColor=E5E7EB&color=EC4899)](https://aka.ms/webdev-beginners?WT.mc_id=academic-105485-koreyst)  
+[![IoT for Beginners](https://img.shields.io/badge/IoT%20for%20Beginners-14B8A6?style=for-the-badge&labelColor=E5E7EB&color=14B8A6)](https://aka.ms/iot-beginners?WT.mc_id=academic-105485-koreyst)  
+[![XR Development for Beginners](https://img.shields.io/badge/XR%20Development%20for%20Beginners-38BDF8?style=for-the-badge&labelColor=E5E7EB&color=38BDF8)](https://github.com/microsoft/xr-development-for-beginners?WT.mc_id=academic-105485-koreyst)  
 
----
+---  
  
-### Copilot Series
-[![Copilot - AI सह-प्रोग्रामिंगसाठी](https://img.shields.io/badge/Copilot%20for%20AI%20Paired%20Programming-FACC15?style=for-the-badge&labelColor=E5E7EB&color=FACC15)](https://aka.ms/GitHubCopilotAI?WT.mc_id=academic-105485-koreyst)
-[![Copilot - C#/.NET साठी](https://img.shields.io/badge/Copilot%20for%20C%23/.NET-FBBF24?style=for-the-badge&labelColor=E5E7EB&color=FBBF24)](https://github.com/microsoft/mastering-github-copilot-for-dotnet-csharp-developers?WT.mc_id=academic-105485-koreyst)
-[![Copilot साहस](https://img.shields.io/badge/Copilot%20Adventure-FDE68A?style=for-the-badge&labelColor=E5E7EB&color=FDE68A)](https://github.com/microsoft/CopilotAdventures?WT.mc_id=academic-105485-koreyst)
-<!-- CO-OP TRANSLATOR OTHER COURSES END -->
+### Copilot Series  
+[![Copilot for AI Paired Programming](https://img.shields.io/badge/Copilot%20for%20AI%20Paired%20Programming-FACC15?style=for-the-badge&labelColor=E5E7EB&color=FACC15)](https://aka.ms/GitHubCopilotAI?WT.mc_id=academic-105485-koreyst)  
+[![Copilot for C#/.NET](https://img.shields.io/badge/Copilot%20for%20C%23/.NET-FBBF24?style=for-the-badge&labelColor=E5E7EB&color=FBBF24)](https://github.com/microsoft/mastering-github-copilot-for-dotnet-csharp-developers?WT.mc_id=academic-105485-koreyst)  
+[![Copilot Adventure](https://img.shields.io/badge/Copilot%20Adventure-FDE68A?style=for-the-badge&labelColor=E5E7EB&color=FDE68A)](https://github.com/microsoft/CopilotAdventures?WT.mc_id=academic-105485-koreyst)  
+<!-- CO-OP TRANSLATOR OTHER COURSES END -->  
 
-## Getting Help
+## मदत मिळविणे  
 
-If you get stuck or have any questions about building AI apps. Join fellow learners and experienced developers in discussions about MCP. It's a supportive community where questions are welcome and knowledge is shared freely.
+जर आपण अडकलात किंवा AI अॅप तयार करताना कोणतेही प्रश्न असतील तर आमच्या इतर शिकणाऱ्या आणि अनुभवी विकासकांसोबत MCP बद्दलच्या चर्चेत सामील व्हा. हे एक सहायक समुदाय आहे जिथे प्रश्न विचारले जातात आणि ज्ञान मुक्तपणे शेअर केले जाते.  
 
-[![Microsoft Foundry Discord](https://dcbadge.limes.pink/api/server/nTYy5BXMWG)](https://discord.gg/nTYy5BXMWG)
+[![Microsoft Foundry Discord](https://dcbadge.limes.pink/api/server/nTYy5BXMWG)](https://discord.gg/nTYy5BXMWG)  
 
-If you have product feedback or errors while building visit:
+जर उत्पादनाबद्दल अभिप्राय असेल किंवा तयार करताना त्रुटी असतील तर भेट द्या:  
 
-[![Microsoft Foundry विकसक फोरम](https://img.shields.io/badge/GitHub-Microsoft_Foundry_Developer_Forum-blue?style=for-the-badge&logo=github&color=000000&logoColor=fff)](https://aka.ms/foundry/forum)
+[![Microsoft Foundry Developer Forum](https://img.shields.io/badge/GitHub-Microsoft_Foundry_Developer_Forum-blue?style=for-the-badge&logo=github&color=000000&logoColor=fff)](https://aka.ms/foundry/forum)
 
 ---
 
 <!-- CO-OP TRANSLATOR DISCLAIMER START -->
-अस्वीकरण:
-हा दस्तऐवज AI अनुवाद सेवा Co-op Translator (https://github.com/Azure/co-op-translator) वापरून भाषांतरित केला आहे. आम्ही अचूकतेसाठी प्रयत्न करतो, परंतु कृपया लक्षात घ्या की स्वयंचलित अनुवादांमध्ये चुका किंवा अचूकतेतील त्रुटी असू शकतात. मूळ दस्तऐवज त्याच्या मूळ भाषेत प्रमाणभूत स्रोत म्हणून विचारात घ्यावा. महत्त्वाच्या माहितीसाठी व्यावसायिक मानवी अनुवाद शिफारसीय आहे. या अनुवादाच्या वापरामुळे उद्भवणाऱ्या कोणत्याही गैरसमजुतींसाठी किंवा चुकीच्या व्याख्यांसाठी आम्ही जबाबदार नाहीत.
+**अस्वीकरण**:
+हा दस्तऐवज AI अनुवाद सेवा [Co-op Translator](https://github.com/Azure/co-op-translator) वापरून अनुवादित केला आहे. आम्ही अचूकतेसाठी प्रयत्नशील असलो तरी, कृपया लक्षात घ्या की स्वयंचलित अनुवादांमध्ये त्रुटी किंवा गैरसमज असू शकतात. मूळ दस्तऐवज त्याच्या स्थानिक भाषेत अधिकृत स्रोत मानला जातो. महत्त्वपूर्ण माहितीसाठी व्यावसायिक मानवी अनुवाद शिफारस केला जातो. या अनुवादाच्या वापरामुळे होणाऱ्या कोणत्याही गैरसमज किंवा चुकीच्या अर्थग्रहणासाठी आम्ही जबाबदार नाही.
 <!-- CO-OP TRANSLATOR DISCLAIMER END -->

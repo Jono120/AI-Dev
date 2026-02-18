@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "e2273cc150380a5e191903cea858f021",
-  "translation_date": "2025-09-23T10:14:12+00:00",
-  "source_file": "lessons/5-NLP/16-RNN/README.md",
-  "language_code": "nl"
-}
--->
 # Recurrent Neural Networks
 
 ## [Pre-lecture quiz](https://ff-quizzes.netlify.app/en/ai/quiz/31)
@@ -15,7 +6,7 @@ In de vorige secties hebben we gebruik gemaakt van rijke semantische representat
 
 Om de betekenis van een tekstsequentie vast te leggen, moeten we een andere neurale netwerkarchitectuur gebruiken, genaamd een **recurrent neural network**, of RNN. In een RNN sturen we onze zin één symbool tegelijk door het netwerk, en het netwerk produceert een **toestand**, die we vervolgens weer doorgeven aan het netwerk samen met het volgende symbool.
 
-![RNN](../../../../../translated_images/rnn.27f5c29c53d727b546ad3961637a267f0fe9ec5ab01f2a26a853c92fcefbb574.nl.png)
+![RNN](../../../../../translated_images/nl/rnn.27f5c29c53d727b5.webp)
 
 > Afbeelding door de auteur
 
@@ -31,7 +22,7 @@ Laten we eens kijken hoe een eenvoudige RNN-cel is georganiseerd. Het accepteert
 
 Een eenvoudige RNN-cel heeft twee gewichts-matrices binnenin: één transformeert een invoersymbool (laten we het W noemen), en een andere transformeert een invoertoestand (H). In dit geval wordt de uitvoer van het netwerk berekend als &sigma;(W&times;X<sub>i</sub>+H&times;S<sub>i-1</sub>+b), waarbij &sigma; de activatiefunctie is en b een extra bias is.
 
-<img alt="RNN Cell Anatomy" src="images/rnn-anatomy.png" width="50%"/>
+<img alt="RNN Cell Anatomy" src="../../../../../translated_images/nl/rnn-anatomy.79ee3f3920b3294b.webp" width="50%"/>
 
 > Afbeelding door de auteur
 
@@ -61,7 +52,7 @@ We hebben recurrente netwerken besproken die in één richting werken, van het b
 
 Een recurrent netwerk, of het nu éénrichtings of bidirectioneel is, legt bepaalde patronen binnen een sequentie vast en kan deze opslaan in een toestandsvector of doorgeven aan de uitvoer. Net zoals bij convolutionele netwerken, kunnen we een andere recurrente laag bovenop de eerste bouwen om hogere niveau patronen vast te leggen en te bouwen op laag-niveau patronen die door de eerste laag zijn geëxtraheerd. Dit leidt ons naar het concept van een **multi-layer RNN**, die bestaat uit twee of meer recurrente netwerken, waarbij de uitvoer van de vorige laag wordt doorgegeven aan de volgende laag als invoer.
 
-![Afbeelding van een multilayer long-short-term-memory RNN](../../../../../translated_images/multi-layer-lstm.dd975e29bb2a59fe58b429db833932d734c81f211cad2783797a9608984acb8c.nl.jpg)
+![Afbeelding van een multilayer long-short-term-memory RNN](../../../../../translated_images/nl/multi-layer-lstm.dd975e29bb2a59fe.webp)
 
 *Afbeelding uit [dit geweldige artikel](https://towardsdatascience.com/from-a-lstm-cell-to-a-multilayer-lstm-network-with-pytorch-2899eb5696f3) door Fernando López*
 

@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "51be6057374d01d70e07dd5ec88ebc0d",
-  "translation_date": "2025-09-23T14:21:44+00:00",
-  "source_file": "lessons/5-NLP/17-GenerativeNetworks/README.md",
-  "language_code": "ro"
-}
--->
 # Rețele generative
 
 ## [Chestionar înainte de curs](https://ff-quizzes.netlify.app/en/ai/quiz/33)
@@ -19,7 +10,7 @@ Rețelele Neuronale Recurente (RNN) și variantele lor cu celule cu porți, cum 
 
 Acest lucru permite diferite arhitecturi neuronale, așa cum sunt prezentate în imaginea de mai jos:
 
-![Imagine care arată modele comune de rețele neuronale recurente.](../../../../../translated_images/unreasonable-effectiveness-of-rnn.541ead816778f42dce6c42d8a56c184729aa2378d059b851be4ce12b993033df.ro.jpg)
+![Imagine care arată modele comune de rețele neuronale recurente.](../../../../../translated_images/ro/unreasonable-effectiveness-of-rnn.541ead816778f42d.webp)
 
 > Imagine din articolul [Unreasonable Effectiveness of Recurrent Neural Networks](http://karpathy.github.io/2015/05/21/rnn-effectiveness/) de [Andrej Karpathy](http://karpathy.github.io/)
 
@@ -32,11 +23,11 @@ Acest lucru permite diferite arhitecturi neuronale, așa cum sunt prezentate în
 
 Vom antrena acest RNN pentru a genera text pas cu pas. La fiecare pas, vom lua o secvență de caractere de lungime `nchars` și vom cere rețelei să genereze următorul caracter de ieșire pentru fiecare caracter de intrare:
 
-![Imagine care arată un exemplu de generare RNN a cuvântului 'HELLO'.](../../../../../translated_images/rnn-generate.56c54afb52f9781d63a7c16ea9c1b86cb70e6e1eae6a742b56b7b37468576b17.ro.png)
+![Imagine care arată un exemplu de generare RNN a cuvântului 'HELLO'.](../../../../../translated_images/ro/rnn-generate.56c54afb52f9781d.webp)
 
 Când generăm text (în timpul inferenței), începem cu un **prompt**, care este trecut prin celulele RNN pentru a genera starea intermediară, iar apoi, din această stare, începe generarea. Generăm un caracter pe rând și transmitem starea și caracterul generat unei alte celule RNN pentru a genera următorul, până când generăm suficiente caractere.
 
-<img src="images/rnn-generate-inf.png" width="60%"/>
+<img src="../../../../../translated_images/ro/rnn-generate-inf.5168dc65e0370eea.webp" width="60%"/>
 
 > Imagine realizată de autor
 

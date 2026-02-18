@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "6522312ff835796ca34136a9462fafb2",
-  "translation_date": "2025-09-23T10:45:04+00:00",
-  "source_file": "lessons/5-NLP/19-NER/README.md",
-  "language_code": "id"
-}
--->
 # Named Entity Recognition
 
 Hingga saat ini, kita sebagian besar telah berfokus pada satu tugas NLP - klasifikasi. Namun, ada juga tugas NLP lainnya yang dapat diselesaikan dengan jaringan neural. Salah satu tugas tersebut adalah **[Named Entity Recognition](https://wikipedia.org/wiki/Named-entity_recognition)** (NER), yang berhubungan dengan mengenali entitas spesifik dalam teks, seperti tempat, nama orang, interval waktu, rumus kimia, dan sebagainya.
@@ -17,7 +8,7 @@ Hingga saat ini, kita sebagian besar telah berfokus pada satu tugas NLP - klasif
 
 Misalkan Anda ingin mengembangkan chatbot berbasis bahasa alami, seperti Amazon Alexa atau Google Assistant. Cara kerja chatbot cerdas adalah dengan *memahami* apa yang diinginkan pengguna melalui klasifikasi teks pada kalimat masukan. Hasil dari klasifikasi ini disebut **intent**, yang menentukan apa yang harus dilakukan oleh chatbot.
 
-<img alt="Bot NER" src="images/bot-ner.png" width="50%"/>
+<img alt="Bot NER" src="../../../../../translated_images/id/bot-ner.4b09235dbb0ad275.webp" width="50%"/>
 
 > Gambar oleh penulis
 
@@ -58,7 +49,7 @@ infant | O
 
 Karena kita perlu membangun korespondensi satu-ke-satu antara token dan kelas, kita dapat melatih model jaringan neural **many-to-many** yang paling kanan dari gambar ini:
 
-![Gambar menunjukkan pola umum jaringan neural berulang.](../../../../../translated_images/unreasonable-effectiveness-of-rnn.541ead816778f42dce6c42d8a56c184729aa2378d059b851be4ce12b993033df.id.jpg)
+![Gambar menunjukkan pola umum jaringan neural berulang.](../../../../../translated_images/id/unreasonable-effectiveness-of-rnn.541ead816778f42d.webp)
 
 > *Gambar dari [blog post ini](http://karpathy.github.io/2015/05/21/rnn-effectiveness/) oleh [Andrej Karpathy](http://karpathy.github.io/). Model klasifikasi token NER sesuai dengan arsitektur jaringan paling kanan pada gambar ini.*
 

@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "a560d5b845962cf33dc102266e409568",
-  "translation_date": "2025-09-23T13:06:26+00:00",
-  "source_file": "lessons/4-ComputerVision/07-ConvNets/README.md",
-  "language_code": "ja"
-}
--->
 # 畳み込みニューラルネットワーク
 
 以前、ニューラルネットワークが画像処理に非常に優れていることを学びました。一層のパーセプトロンでも、MNISTデータセットの手書き数字をかなりの精度で認識できることが分かっています。ただし、MNISTデータセットは特別なもので、すべての数字が画像の中心に配置されているため、タスクが簡単になっています。
@@ -17,14 +8,14 @@ CO_OP_TRANSLATOR_METADATA:
 
 パターンを抽出するために、**畳み込みフィルター**という概念を使用します。ご存じの通り、画像は2D行列、または色深度を持つ3Dテンソルとして表されます。フィルターを適用するとは、比較的小さな**フィルターカーネル**行列を取り、元の画像の各ピクセルに対して隣接する点との加重平均を計算することを意味します。これは、小さな窓が画像全体をスライドし、フィルターカーネル行列の重みに従ってすべてのピクセルを平均化するようなものと考えることができます。
 
-![垂直エッジフィルター](../../../../../translated_images/filter-vert.b7148390ca0bc356ddc7e55555d2481819c1e86ddde9dce4db5e71a69d6f887f.ja.png) | ![水平エッジフィルター](../../../../../translated_images/filter-horiz.59b80ed4feb946efbe201a7fe3ca95abb3364e266e6fd90820cb893b4d3a6dda.ja.png)
+![垂直エッジフィルター](../../../../../translated_images/ja/filter-vert.b7148390ca0bc356.webp) | ![水平エッジフィルター](../../../../../translated_images/ja/filter-horiz.59b80ed4feb946ef.webp)
 ----|----
 
 > Dmitry Soshnikovによる画像
 
 例えば、MNISTの数字に3x3の垂直エッジフィルターと水平エッジフィルターを適用すると、元の画像の垂直および水平エッジがある場所でハイライト（例: 高い値）を得ることができます。このようにして、これら2つのフィルターを使用してエッジを「探す」ことができます。同様に、他の低レベルのパターンを探すためのフィルターを設計することも可能です。
 
-<img src="images/lmfilters.jpg" width="500" align="center"/>
+<img src="../../../../../translated_images/ja/lmfilters.ea9e4868a82cf74c.webp" width="500" align="center"/>
 
 > [Leung-Malikフィルターバンク](https://www.robots.ox.ac.uk/~vgg/research/texclass/filters.html)の画像
 
@@ -38,7 +29,7 @@ CNNが機能する仕組みは、以下の重要なアイデアに基づいて�
 * フィルターが自動的に学習されるようにネットワークを設計できる
 * 元の画像だけでなく、高レベルの特徴におけるパターンを見つけるためにも同じアプローチを使用できる。そのため、CNNの特徴抽出は低レベルのピクセルの組み合わせから始まり、画像の部分の高レベルの組み合わせに至るまで、特徴の階層で機能する。
 
-![階層的特徴抽出](../../../../../translated_images/FeatureExtractionCNN.d9b456cbdae7cb643fde3032b81b2940e3cf8be842e29afac3f482725ba7f95c.ja.png)
+![階層的特徴抽出](../../../../../translated_images/ja/FeatureExtractionCNN.d9b456cbdae7cb64.webp)
 
 > Hislop-Lynchによる論文からの画像 [研究に基づく](https://dl.acm.org/doi/abs/10.1145/1553374.1553453)
 
@@ -55,9 +46,9 @@ CNNが機能する仕組みは、以下の重要なアイデアに基づいて�
 
 例として、2014年にImageNetのトップ5分類で92.7%の精度を達成したVGG-16のアーキテクチャを見てみましょう：
 
-![ImageNet層](../../../../../translated_images/vgg-16-arch1.d901a5583b3a51baeaab3e768567d921e5d54befa46e1e642616c5458c934028.ja.jpg)
+![ImageNet層](../../../../../translated_images/ja/vgg-16-arch1.d901a5583b3a51ba.webp)
 
-![ImageNetピラミッド](../../../../../translated_images/vgg-16-arch.64ff2137f50dd49fdaa786e3f3a975b3f22615efd13efb19c5d22f12e01451a1.ja.jpg)
+![ImageNetピラミッド](../../../../../translated_images/ja/vgg-16-arch.64ff2137f50dd49f.webp)
 
 > [Researchgate](https://www.researchgate.net/figure/Vgg16-model-structure-To-get-the-VGG-NIN-model-we-replace-the-2-nd-4-th-6-th-7-th_fig2_335194493)からの画像
 

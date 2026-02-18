@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "7ba20f54a5bfcd6521018cdfb17c7c57",
-  "translation_date": "2025-09-23T07:23:02+00:00",
-  "source_file": "lessons/5-NLP/15-LanguageModeling/README.md",
-  "language_code": "ne"
-}
--->
 # भाषा मोडेलिङ
 
 Word2Vec र GloVe जस्ता सेम्यान्टिक एम्बेडिङहरू वास्तवमा **भाषा मोडेलिङ** तर्फको पहिलो कदम हुन् - यस्तो मोडेलहरू बनाउने जसले कुनै प्रकारले भाषा को प्रकृति *बुझ्न* (वा *प्रतिनिधित्व गर्न*) सकून्।
@@ -23,7 +14,7 @@ Word2Vec र GloVe जस्ता सेम्यान्टिक एम्�
 * **Continuous Bag-of-Words** (CBoW), जहाँ हामी टोकन अनुक्रम $W_{-N}$, ..., $W_N$ को बीचको टोकन $W_0$ भविष्यवाणी गर्छौं।
 * **Skip-gram**, जहाँ हामी बीचको टोकन $W_0$ बाट छेउछाउका टोकनहरूको सेट {$W_{-N},\dots, W_{-1}, W_1,\dots, W_N$} भविष्यवाणी गर्छौं।
 
-![शब्दहरूलाई भेक्टरमा रूपान्तरण गर्ने एल्गोरिदमको कागजबाट चित्र](../../../../../translated_images/example-algorithms-for-converting-words-to-vectors.fbe9207a726922f6f0f5de66427e8a6eda63809356114e28fb1fa5f4a83ebda7.ne.png)
+![शब्दहरूलाई भेक्टरमा रूपान्तरण गर्ने एल्गोरिदमको कागजबाट चित्र](../../../../../translated_images/ne/example-algorithms-for-converting-words-to-vectors.fbe9207a726922f6.webp)
 
 > चित्र [यस कागज](https://arxiv.org/pdf/1301.3781.pdf) बाट
 

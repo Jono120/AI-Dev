@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "51be6057374d01d70e07dd5ec88ebc0d",
-  "translation_date": "2025-09-23T10:34:11+00:00",
-  "source_file": "lessons/5-NLP/17-GenerativeNetworks/README.md",
-  "language_code": "vi"
-}
--->
 # Mạng tạo sinh
 
 ## [Câu hỏi trước bài giảng](https://ff-quizzes.netlify.app/en/ai/quiz/33)
@@ -19,7 +10,7 @@ Trong kiến trúc RNN mà chúng ta đã thảo luận trong bài trước, m�
 
 Điều này cho phép các kiến trúc nơ-ron khác nhau như được hiển thị trong hình dưới đây:
 
-![Hình ảnh hiển thị các mẫu mạng nơ-ron hồi quy phổ biến.](../../../../../translated_images/unreasonable-effectiveness-of-rnn.541ead816778f42dce6c42d8a56c184729aa2378d059b851be4ce12b993033df.vi.jpg)
+![Hình ảnh hiển thị các mẫu mạng nơ-ron hồi quy phổ biến.](../../../../../translated_images/vi/unreasonable-effectiveness-of-rnn.541ead816778f42d.webp)
 
 > Hình ảnh từ bài viết blog [Unreasonable Effectiveness of Recurrent Neural Networks](http://karpathy.github.io/2015/05/21/rnn-effectiveness/) của [Andrej Karpaty](http://karpathy.github.io/)
 
@@ -32,11 +23,11 @@ Trong bài này, chúng ta sẽ tập trung vào các mô hình tạo sinh đơn
 
 Chúng ta sẽ huấn luyện RNN này để tạo văn bản từng bước. Ở mỗi bước, chúng ta sẽ lấy một chuỗi ký tự có độ dài `nchars`, và yêu cầu mạng tạo ra ký tự đầu ra tiếp theo cho mỗi ký tự đầu vào:
 
-![Hình ảnh minh họa RNN tạo ra từ 'HELLO'.](../../../../../translated_images/rnn-generate.56c54afb52f9781d63a7c16ea9c1b86cb70e6e1eae6a742b56b7b37468576b17.vi.png)
+![Hình ảnh minh họa RNN tạo ra từ 'HELLO'.](../../../../../translated_images/vi/rnn-generate.56c54afb52f9781d.webp)
 
 Khi tạo văn bản (trong quá trình suy luận), chúng ta bắt đầu với một **gợi ý**, được truyền qua các tế bào RNN để tạo trạng thái trung gian của nó, và sau đó từ trạng thái này bắt đầu quá trình tạo. Chúng ta tạo từng ký tự một, và truyền trạng thái cùng ký tự vừa tạo vào một tế bào RNN khác để tạo ký tự tiếp theo, cho đến khi tạo đủ số ký tự.
 
-<img src="images/rnn-generate-inf.png" width="60%"/>
+<img src="../../../../../translated_images/vi/rnn-generate-inf.5168dc65e0370eea.webp" width="60%"/>
 
 > Hình ảnh của tác giả
 

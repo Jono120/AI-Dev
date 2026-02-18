@@ -1,19 +1,10 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "d76a7eda28de5210c8b1ba50a6216c69",
-  "translation_date": "2025-09-23T14:28:08+00:00",
-  "source_file": "lessons/4-ComputerVision/11-ObjectDetection/README.md",
-  "language_code": "bg"
-}
--->
 # Разпознаване на обекти
 
 Моделите за класификация на изображения, с които сме работили досега, приемат изображение и произвеждат категоричен резултат, като например класа "число" в проблема MNIST. Въпреки това, в много случаи не искаме просто да знаем, че дадена снимка изобразява обекти - искаме да можем да определим тяхното точно местоположение. Именно това е целта на **разпознаването на обекти**.
 
 ## [Тест преди лекцията](https://ff-quizzes.netlify.app/en/ai/quiz/21)
 
-![Разпознаване на обекти](../../../../../translated_images/Screen_Shot_2016-11-17_at_11.14.54_AM.b4bb3769353287be1b905373ed9c858102c054b16e4595c76ec3f7bba0feb549.bg.png)
+![Разпознаване на обекти](../../../../../translated_images/bg/Screen_Shot_2016-11-17_at_11.14.54_AM.b4bb3769353287be.webp)
 
 > Изображение от [уебсайта на YOLO v2](https://pjreddie.com/darknet/yolov2/)
 
@@ -25,7 +16,7 @@ CO_OP_TRANSLATOR_METADATA:
 2. Извършваме класификация на изображения върху всяка част.
 3. Тези части, които водят до достатъчно висока активация, могат да се считат за съдържащи търсения обект.
 
-![Наивно разпознаване на обекти](../../../../../translated_images/naive-detection.e7f1ba220ccd08c68a2ea8e06a7ed75c3fcc738c2372f9e00b7f4299a8659c01.bg.png)
+![Наивно разпознаване на обекти](../../../../../translated_images/bg/naive-detection.e7f1ba220ccd08c6.webp)
 
 > *Изображение от [тетрадката с упражнения](ObjectDetection-TF.ipynb)*
 
@@ -42,7 +33,7 @@ CO_OP_TRANSLATOR_METADATA:
 * [PASCAL VOC](http://host.robots.ox.ac.uk/pascal/VOC/) - 20 класа
 * [COCO](http://cocodataset.org/#home) - Общи обекти в контекст. 80 класа, рамки и маски за сегментация
 
-![COCO](../../../../../translated_images/coco-examples.71bc60380fa6cceb7caad48bd09e35b6028caabd363aa04fee89c414e0870e86.bg.jpg)
+![COCO](../../../../../translated_images/bg/coco-examples.71bc60380fa6cceb.webp)
 
 ## Метрики за разпознаване на обекти
 
@@ -50,7 +41,7 @@ CO_OP_TRANSLATOR_METADATA:
 
 Докато за класификация на изображения е лесно да се измери колко добре се представя алгоритъмът, за разпознаване на обекти трябва да измерим както коректността на класа, така и прецизността на местоположението на предвидената рамка. За последното използваме така наречената **Пресечна площ спрямо обединение** (IoU), която измерва колко добре се припокриват две рамки (или две произволни области).
 
-![IoU](../../../../../translated_images/iou_equation.9a4751d40fff4e119ecd0a7bcca4e71ab1dc83e0d4f2a0d66ff0859736f593cf.bg.png)
+![IoU](../../../../../translated_images/bg/iou_equation.9a4751d40fff4e11.webp)
 
 > *Фигура 2 от [този отличен блог пост за IoU](https://pyimagesearch.com/2016/11/07/intersection-over-union-iou-for-object-detection/)*
 
@@ -98,11 +89,11 @@ $$
 
 [R-CNN](http://islab.ulsan.ac.kr/files/announcement/513/rcnn_pami.pdf) използва [Selective Search](http://www.huppelen.nl/publications/selectiveSearchDraft.pdf), за да генерира йерархична структура от региони ROI, които след това се обработват чрез CNN екстрактори на характеристики и SVM-класификатори, за да се определи класът на обекта, и линейна регресия за определяне на координатите на *рамката*. [Официална статия](https://arxiv.org/pdf/1506.01497v1.pdf)
 
-![RCNN](../../../../../translated_images/rcnn1.cae407020dfb1d1fb572656e44f75cd6c512cc220591c116c506652c10e47f26.bg.png)
+![RCNN](../../../../../translated_images/bg/rcnn1.cae407020dfb1d1f.webp)
 
 > *Изображение от van de Sande et al. ICCV’11*
 
-![RCNN-1](../../../../../translated_images/rcnn2.2d9530bb83516484ec65b250c22dbf37d3d23244f32864ebcb91d98fe7c3112c.bg.png)
+![RCNN-1](../../../../../translated_images/bg/rcnn2.2d9530bb83516484.webp)
 
 > *Изображения от [този блог](https://towardsdatascience.com/r-cnn-fast-r-cnn-faster-r-cnn-yolo-object-detection-algorithms-36d53571365e)
 
@@ -110,7 +101,7 @@ $$
 
 Този подход е подобен на R-CNN, но регионите се определят след прилагане на слоевете за конволюция.
 
-![FRCNN](../../../../../translated_images/f-rcnn.3cda6d9bb41888754037d2d9763e2298a96de5d9bc2a21db3147357aa5da9b1a.bg.png)
+![FRCNN](../../../../../translated_images/bg/f-rcnn.3cda6d9bb4188875.webp)
 
 > Изображение от [официалната статия](https://www.cv-foundation.org/openaccess/content_iccv_2015/papers/Girshick_Fast_R-CNN_ICCV_2015_paper.pdf), [arXiv](https://arxiv.org/pdf/1504.08083.pdf), 2015
 
@@ -118,7 +109,7 @@ $$
 
 Основната идея на този подход е да се използва невронна мрежа за предсказване на ROI - така наречената *Мрежа за предложения на региони*. [Статия](https://arxiv.org/pdf/1506.01497.pdf), 2016
 
-![FasterRCNN](../../../../../translated_images/faster-rcnn.8d46c099b87ef30ab2ea26dbc4bdd85b974a57ba8eb526f65dc4cd0a4711de30.bg.png)
+![FasterRCNN](../../../../../translated_images/bg/faster-rcnn.8d46c099b87ef30a.webp)
 
 > Изображение от [официалната статия](https://arxiv.org/pdf/1506.01497.pdf)
 
@@ -130,7 +121,7 @@ $$
 2. Характеристиките се обработват от **Position-Sensitive Score Map**. Всеки обект от $C$ класове се разделя на $k\times k$ региони, и обучаваме мрежата да предсказва части от обекти.
 3. За всяка част от $k\times k$ региони всички мрежи гласуват за класовете на обектите, и класът с максимален брой гласове се избира.
 
-![r-fcn image](../../../../../translated_images/r-fcn.13eb88158b99a3da50fa2787a6be5cb310d47f0e9655cc93a1090dc7aab338d1.bg.png)
+![r-fcn image](../../../../../translated_images/bg/r-fcn.13eb88158b99a3da.webp)
 
 > Изображение от [официалната статия](https://arxiv.org/abs/1605.06409)
 
@@ -141,7 +132,7 @@ YOLO е алгоритъм за разпознаване в реално вре�
  * Изображението се разделя на $S\times S$ региони.
  * За всеки регион **CNN** предсказва $n$ възможни обекти, координати на *рамката* и *увереност*=*вероятност* * IoU.
 
- ![YOLO](../../../../../translated_images/yolo.a2648ec82ee8bb4ea27537677adb482fd4b733ca1705c561b6a24a85102dced5.bg.png)
+ ![YOLO](../../../../../translated_images/bg/yolo.a2648ec82ee8bb4e.webp)
 
 > Изображение от [официалната статия](https://arxiv.org/abs/1506.02640)
 

@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "7ba20f54a5bfcd6521018cdfb17c7c57",
-  "translation_date": "2025-09-23T14:46:23+00:00",
-  "source_file": "lessons/5-NLP/15-LanguageModeling/README.md",
-  "language_code": "sr"
-}
--->
 # Моделирање језика
 
 Семантички уграђени вектори, као што су Word2Vec и GloVe, представљају први корак ка **моделирању језика** – креирању модела који на неки начин *разумеју* (или *представљају*) природу језика.
@@ -23,7 +14,7 @@ CO_OP_TRANSLATOR_METADATA:
 * **Континуирана врећа речи** (CBoW), где предвиђамо средишњи токен $W_0$ у низу токена $W_{-N}$, ..., $W_N$.
 * **Скип-грам**, где предвиђамо скуп суседних токена {$W_{-N},\dots, W_{-1}, W_1,\dots, W_N$} на основу средишњег токена $W_0$.
 
-![слика из рада о претварању речи у векторе](../../../../../translated_images/example-algorithms-for-converting-words-to-vectors.fbe9207a726922f6f0f5de66427e8a6eda63809356114e28fb1fa5f4a83ebda7.sr.png)
+![слика из рада о претварању речи у векторе](../../../../../translated_images/sr/example-algorithms-for-converting-words-to-vectors.fbe9207a726922f6.webp)
 
 > Слика из [овог рада](https://arxiv.org/pdf/1301.3781.pdf)
 

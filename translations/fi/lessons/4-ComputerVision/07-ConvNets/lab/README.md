@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "b70fcf7fcee862990f848c679090943f",
-  "translation_date": "2025-10-03T14:55:46+00:00",
-  "source_file": "lessons/4-ComputerVision/07-ConvNets/lab/README.md",
-  "language_code": "fi"
-}
--->
 # Lemmikkien kasvojen luokittelu
 
 Lab-tehtävä [AI for Beginners Curriculum](https://github.com/microsoft/ai-for-beginners) -materiaalista.
@@ -21,7 +12,7 @@ Sinun tulee kouluttaa konvoluutio-neuroverkko luokittelemaan eri kissojen ja koi
 
 Käytämme [Oxford-IIIT Pet Dataset](https://www.robots.ox.ac.uk/~vgg/data/pets/) -datakokonaisuutta, joka sisältää kuvia 37 eri koira- ja kissarodusta.
 
-![Datakokonaisuus, jonka kanssa työskentelemme](../../../../../../translated_images/data.50b2a9d5484bdbf0f52f5765b381cec9efe2bd296a98f007f90bedb6ac67f2a8.fi.png)
+![Datakokonaisuus, jonka kanssa työskentelemme](../../../../../../translated_images/fi/data.50b2a9d5484bdbf0.webp)
 
 Ladataksesi datakokonaisuuden, käytä tätä koodinpätkää:
 

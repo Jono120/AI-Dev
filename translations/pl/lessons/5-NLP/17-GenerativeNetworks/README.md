@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "51be6057374d01d70e07dd5ec88ebc0d",
-  "translation_date": "2025-09-23T13:58:05+00:00",
-  "source_file": "lessons/5-NLP/17-GenerativeNetworks/README.md",
-  "language_code": "pl"
-}
--->
 # Generatywne sieci
 
 ## [Quiz przed wykładem](https://ff-quizzes.netlify.app/en/ai/quiz/33)
@@ -19,7 +10,7 @@ W architekturze RNN, którą omawialiśmy w poprzedniej jednostce, każda jednos
 
 To umożliwia różne architektury sieci neuronowych, które przedstawiono na poniższym obrazku:
 
-![Obraz przedstawiający typowe wzorce rekurencyjnych sieci neuronowych.](../../../../../translated_images/unreasonable-effectiveness-of-rnn.541ead816778f42dce6c42d8a56c184729aa2378d059b851be4ce12b993033df.pl.jpg)
+![Obraz przedstawiający typowe wzorce rekurencyjnych sieci neuronowych.](../../../../../translated_images/pl/unreasonable-effectiveness-of-rnn.541ead816778f42d.webp)
 
 > Obraz z wpisu na blogu [Unreasonable Effectiveness of Recurrent Neural Networks](http://karpathy.github.io/2015/05/21/rnn-effectiveness/) autorstwa [Andreja Karpaty](http://karpathy.github.io/)
 
@@ -32,11 +23,11 @@ W tej jednostce skupimy się na prostych modelach generatywnych, które pomagaj�
 
 Wytrenujemy tę RNN do generowania tekstu krok po kroku. Na każdym kroku weźmiemy sekwencję znaków o długości `nchars` i poprosimy sieć o wygenerowanie kolejnego znaku wyjściowego dla każdego znaku wejściowego:
 
-![Obraz przedstawiający przykład generowania słowa 'HELLO' przez RNN.](../../../../../translated_images/rnn-generate.56c54afb52f9781d63a7c16ea9c1b86cb70e6e1eae6a742b56b7b37468576b17.pl.png)
+![Obraz przedstawiający przykład generowania słowa 'HELLO' przez RNN.](../../../../../translated_images/pl/rnn-generate.56c54afb52f9781d.webp)
 
 Podczas generowania tekstu (w trakcie inferencji) zaczynamy od jakiegoś **podpowiedzi** (prompt), która jest przepuszczana przez komórki RNN, aby wygenerować jej stan pośredni, a następnie z tego stanu rozpoczyna się generowanie. Generujemy jeden znak na raz, przekazujemy stan i wygenerowany znak do kolejnej komórki RNN, aby wygenerować następny znak, aż wygenerujemy wystarczającą liczbę znaków.
 
-<img src="images/rnn-generate-inf.png" width="60%"/>
+<img src="../../../../../translated_images/pl/rnn-generate-inf.5168dc65e0370eea.webp" width="60%"/>
 
 > Obraz autorstwa autora
 

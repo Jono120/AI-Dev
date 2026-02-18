@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "6522312ff835796ca34136a9462fafb2",
-  "translation_date": "2025-10-11T11:42:01+00:00",
-  "source_file": "lessons/5-NLP/19-NER/README.md",
-  "language_code": "et"
-}
--->
 # Nimega Entiteetide Tuvastamine
 
 Siiani oleme peamiselt keskendunud ühele NLP ülesandele - klassifikatsioonile. Kuid on ka teisi NLP ülesandeid, mida saab lahendada närvivõrkude abil. Üks neist ülesannetest on **[Nimega Entiteetide Tuvastamine](https://wikipedia.org/wiki/Named-entity_recognition)** (NER), mis tegeleb konkreetsete entiteetide tuvastamisega tekstis, nagu näiteks kohad, isikunimed, kuupäevad ja ajavahemikud, keemilised valemid jne.
@@ -17,7 +8,7 @@ Siiani oleme peamiselt keskendunud ühele NLP ülesandele - klassifikatsioonile.
 
 Oletame, et soovite arendada loomuliku keele vestlusrobotit, sarnast Amazon Alexa või Google Assistantiga. Nutikad vestlusrobotid töötavad nii, et nad *mõistavad*, mida kasutaja tahab, tehes sisendlausele tekstiklassifikatsiooni. Selle klassifikatsiooni tulemus on nn **intent**, mis määrab, mida vestlusrobot peaks tegema.
 
-<img alt="Bot NER" src="../../../../../translated_images/bot-ner.4b09235dbb0ad2754ec1f54c8c797f902cbb0b45ac90b0cfc8287343cef8df2f.et.png" width="50%"/>
+<img alt="Bot NER" src="../../../../../translated_images/et/bot-ner.4b09235dbb0ad275.webp" width="50%"/>
 
 > Pilt autorilt
 
@@ -54,7 +45,7 @@ vastsündinul | O
 
 Kuna peame looma üks-ühele vastavuse tokenite ja klasside vahel, saame treenida parempoolse **mitme-mitme** närvivõrgu mudeli sellest pildist:
 
-![Pilt, mis näitab levinud korduvate närvivõrkude mustreid.](../../../../../translated_images/unreasonable-effectiveness-of-rnn.541ead816778f42dce6c42d8a56c184729aa2378d059b851be4ce12b993033df.et.jpg)
+![Pilt, mis näitab levinud korduvate närvivõrkude mustreid.](../../../../../translated_images/et/unreasonable-effectiveness-of-rnn.541ead816778f42d.webp)
 
 > *Pilt [sellest blogipostitusest](http://karpathy.github.io/2015/05/21/rnn-effectiveness/) autorilt [Andrej Karpathy](http://karpathy.github.io/). NER tokenite klassifikatsioonimudelid vastavad parempoolsele võrgustiku arhitektuurile sellel pildil.*
 

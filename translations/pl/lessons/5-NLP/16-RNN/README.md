@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "e2273cc150380a5e191903cea858f021",
-  "translation_date": "2025-09-23T13:59:51+00:00",
-  "source_file": "lessons/5-NLP/16-RNN/README.md",
-  "language_code": "pl"
-}
--->
 # Sieci Neuronowe Rekurencyjne
 
 ## [Quiz przed wykładem](https://ff-quizzes.netlify.app/en/ai/quiz/31)
@@ -15,7 +6,7 @@ W poprzednich sekcjach korzystaliśmy z bogatych semantycznych reprezentacji tek
 
 Aby uchwycić znaczenie sekwencji tekstu, musimy użyć innej architektury sieci neuronowej, zwanej **siecią neuronową rekurencyjną** (RNN). W RNN przekazujemy nasze zdanie przez sieć symbol po symbolu, a sieć generuje pewien **stan**, który następnie przekazujemy z kolejnym symbolem.
 
-![RNN](../../../../../translated_images/rnn.27f5c29c53d727b546ad3961637a267f0fe9ec5ab01f2a26a853c92fcefbb574.pl.png)
+![RNN](../../../../../translated_images/pl/rnn.27f5c29c53d727b5.webp)
 
 > Obraz autorstwa autora
 
@@ -31,7 +22,7 @@ Przyjrzyjmy się, jak zorganizowana jest prosta komórka RNN. Przyjmuje ona popr
 
 Prosta komórka RNN ma wewnątrz dwie macierze wag: jedna przekształca symbol wejściowy (nazwijmy ją W), a druga przekształca stan wejściowy (H). W takim przypadku wyjście sieci obliczane jest jako &sigma;(W&times;X<sub>i</sub>+H&times;S<sub>i-1</sub>+b), gdzie &sigma; to funkcja aktywacji, a b to dodatkowe przesunięcie.
 
-<img alt="Anatomia komórki RNN" src="images/rnn-anatomy.png" width="50%"/>
+<img alt="Anatomia komórki RNN" src="../../../../../translated_images/pl/rnn-anatomy.79ee3f3920b3294b.webp" width="50%"/>
 
 > Obraz autorstwa autora
 
@@ -61,7 +52,7 @@ Omówiliśmy sieci rekurencyjne, które działają w jednym kierunku, od począt
 
 Sieć rekurencyjna, czy to jednokierunkowa, czy dwukierunkowa, wychwytuje pewne wzorce w sekwencji i może je przechowywać w wektorze stanu lub przekazywać na wyjście. Podobnie jak w przypadku sieci konwolucyjnych, możemy zbudować kolejną warstwę rekurencyjną na szczycie pierwszej, aby uchwycić wzorce wyższego poziomu i budować na bazie wzorców niskiego poziomu wyodrębnionych przez pierwszą warstwę. Prowadzi to do pojęcia **wielowarstwowego RNN**, który składa się z dwóch lub więcej sieci rekurencyjnych, gdzie wyjście poprzedniej warstwy jest przekazywane jako wejście do następnej warstwy.
 
-![Obraz przedstawiający wielowarstwowy LSTM RNN](../../../../../translated_images/multi-layer-lstm.dd975e29bb2a59fe58b429db833932d734c81f211cad2783797a9608984acb8c.pl.jpg)
+![Obraz przedstawiający wielowarstwowy LSTM RNN](../../../../../translated_images/pl/multi-layer-lstm.dd975e29bb2a59fe.webp)
 
 *Obraz z [tego wspaniałego artykułu](https://towardsdatascience.com/from-a-lstm-cell-to-a-multilayer-lstm-network-with-pytorch-2899eb5696f3) autorstwa Fernando Lópeza*
 

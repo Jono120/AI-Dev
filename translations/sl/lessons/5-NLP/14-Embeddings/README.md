@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "b708c9b85b833864c73c6281f1e6b96e",
-  "translation_date": "2025-09-23T15:11:33+00:00",
-  "source_file": "lessons/5-NLP/14-Embeddings/README.md",
-  "language_code": "sl"
-}
--->
 # Vdelave
 
 ## [Predhodni kviz](https://ff-quizzes.netlify.app/en/ai/quiz/27)
@@ -19,7 +10,7 @@ Tako bi plast vdelave sprejela besedo kot vhod in ustvarila izhodni vektor dolo�
 
 Z uporabo plasti vdelave kot prve plasti v našem klasifikacijskem omrežju lahko preklopimo iz modela vreče besed na model **vreče vdelav**, kjer najprej vsako besedo v našem besedilu pretvorimo v ustrezno vdelavo, nato pa izračunamo neko agregatno funkcijo nad vsemi temi vdelavami, kot so `sum`, `average` ali `max`.  
 
-![Slika prikazuje klasifikator vdelav za pet besed v zaporedju.](../../../../../translated_images/embedding-classifier-example.b77f021a7ee67eeec8e68bfe11636c5b97d6eaa067515a129bfb1d0034b1ac5b.sl.png)
+![Slika prikazuje klasifikator vdelav za pet besed v zaporedju.](../../../../../translated_images/sl/embedding-classifier-example.b77f021a7ee67eee.webp)
 
 > Slika avtorja
 
@@ -40,7 +31,7 @@ Da bi to dosegli, moramo naš model vdelave predhodno trenirati na veliki zbirki
 
 CBoW je hitrejši, medtem ko je preskok-gram počasnejši, vendar bolje predstavlja redke besede.
 
-![Slika prikazuje algoritma CBoW in Skip-Gram za pretvorbo besed v vektorje.](../../../../../translated_images/example-algorithms-for-converting-words-to-vectors.fbe9207a726922f6f0f5de66427e8a6eda63809356114e28fb1fa5f4a83ebda7.sl.png)
+![Slika prikazuje algoritma CBoW in Skip-Gram za pretvorbo besed v vektorje.](../../../../../translated_images/sl/example-algorithms-for-converting-words-to-vectors.fbe9207a726922f6.webp)
 
 > Slika iz [tega članka](https://arxiv.org/pdf/1301.3781.pdf)
 

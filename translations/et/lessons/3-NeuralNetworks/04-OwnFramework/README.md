@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "789d6c3fb6fc7948a470b33078a5983a",
-  "translation_date": "2025-10-11T11:30:37+00:00",
-  "source_file": "lessons/3-NeuralNetworks/04-OwnFramework/README.md",
-  "language_code": "et"
-}
--->
 # Sissejuhatus tehisnärvivõrkudesse. Mitmekihiline perceptron
 
 Eelmises osas õppisite tundma kõige lihtsamat tehisnärvivõrgu mudelit – ühekihilist perceptronit, mis on lineaarne kahe klassi klassifitseerimise mudel.
@@ -65,7 +56,7 @@ Gradientlanguse algoritm jääb samaks, kuid gradientide arvutamine muutub keeru
 
 Pange tähele, et kõigi nende avaldiste vasakpoolne osa on sama, ja seega saame tuletised tõhusalt arvutada, alustades kaofunktsioonist ja liikudes "tagasi" läbi arvutusgraafi. Seetõttu nimetatakse mitmekihilise perceptroni treenimise meetodit **tagasilevikuks** ehk 'backprop'.
 
-<img alt="arvutusgraaf" src="../../../../../translated_images/ComputeGraphGrad.4626252c0de035075e5cd2b7f71b776d5e3e8f64f2dc472b4420d3fdfaf53ba8.et.png"/>
+<img alt="arvutusgraaf" src="../../../../../translated_images/et/ComputeGraphGrad.4626252c0de03507.webp"/>
 
 > TODO: pildi viide
 

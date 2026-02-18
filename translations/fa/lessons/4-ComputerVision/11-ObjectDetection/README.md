@@ -1,19 +1,10 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "d76a7eda28de5210c8b1ba50a6216c69",
-  "translation_date": "2025-09-23T12:28:28+00:00",
-  "source_file": "lessons/4-ComputerVision/11-ObjectDetection/README.md",
-  "language_code": "fa"
-}
--->
 # تشخیص اشیا
 
 مدل‌های طبقه‌بندی تصویر که تاکنون با آن‌ها کار کرده‌ایم، یک تصویر را گرفته و یک نتیجه دسته‌بندی شده تولید می‌کردند، مانند کلاس "عدد" در مسئله MNIST. اما در بسیاری از موارد، ما فقط نمی‌خواهیم بدانیم که یک تصویر اشیایی را نشان می‌دهد - بلکه می‌خواهیم مکان دقیق آن‌ها را نیز تعیین کنیم. این دقیقاً هدف **تشخیص اشیا** است.
 
 ## [پیش‌کوئیز](https://ff-quizzes.netlify.app/en/ai/quiz/21)
 
-![تشخیص اشیا](../../../../../translated_images/Screen_Shot_2016-11-17_at_11.14.54_AM.b4bb3769353287be1b905373ed9c858102c054b16e4595c76ec3f7bba0feb549.fa.png)
+![تشخیص اشیا](../../../../../translated_images/fa/Screen_Shot_2016-11-17_at_11.14.54_AM.b4bb3769353287be.webp)
 
 > تصویر از [وب‌سایت YOLO v2](https://pjreddie.com/darknet/yolov2/)
 
@@ -25,7 +16,7 @@ CO_OP_TRANSLATOR_METADATA:
 2. طبقه‌بندی تصویر را روی هر کاشی اجرا کنید.
 3. کاشی‌هایی که منجر به فعال‌سازی کافی بالا می‌شوند، می‌توانند به عنوان حاوی شیء مورد نظر در نظر گرفته شوند.
 
-![تشخیص ساده اشیا](../../../../../translated_images/naive-detection.e7f1ba220ccd08c68a2ea8e06a7ed75c3fcc738c2372f9e00b7f4299a8659c01.fa.png)
+![تشخیص ساده اشیا](../../../../../translated_images/fa/naive-detection.e7f1ba220ccd08c6.webp)
 
 > *تصویر از [دفترچه تمرین](ObjectDetection-TF.ipynb)*
 
@@ -42,7 +33,7 @@ CO_OP_TRANSLATOR_METADATA:
 * [PASCAL VOC](http://host.robots.ox.ac.uk/pascal/VOC/) - شامل ۲۰ کلاس
 * [COCO](http://cocodataset.org/#home) - اشیای عمومی در زمینه. شامل ۸۰ کلاس، جعبه‌های محدودکننده و ماسک‌های تقسیم‌بندی
 
-![COCO](../../../../../translated_images/coco-examples.71bc60380fa6cceb7caad48bd09e35b6028caabd363aa04fee89c414e0870e86.fa.jpg)
+![COCO](../../../../../translated_images/fa/coco-examples.71bc60380fa6cceb.webp)
 
 ## معیارهای تشخیص اشیا
 
@@ -50,7 +41,7 @@ CO_OP_TRANSLATOR_METADATA:
 
 در حالی که برای طبقه‌بندی تصویر اندازه‌گیری عملکرد الگوریتم آسان است، برای تشخیص اشیا باید هم درستی کلاس و هم دقت مکان‌یابی جعبه محدودکننده استنباط شده را اندازه‌گیری کنیم. برای مورد دوم، از معیاری به نام **تقاطع بر اتحاد** (IoU) استفاده می‌کنیم که میزان همپوشانی دو جعبه (یا دو ناحیه دلخواه) را اندازه‌گیری می‌کند.
 
-![IoU](../../../../../translated_images/iou_equation.9a4751d40fff4e119ecd0a7bcca4e71ab1dc83e0d4f2a0d66ff0859736f593cf.fa.png)
+![IoU](../../../../../translated_images/fa/iou_equation.9a4751d40fff4e11.webp)
 
 > *شکل ۲ از [این پست وبلاگ عالی درباره IoU](https://pyimagesearch.com/2016/11/07/intersection-over-union-iou-for-object-detection/)*
 
@@ -98,11 +89,11 @@ $$
 
 [R-CNN](http://islab.ulsan.ac.kr/files/announcement/513/rcnn_pami.pdf) از [جستجوی انتخابی](http://www.huppelen.nl/publications/selectiveSearchDraft.pdf) برای تولید ساختار سلسله‌مراتبی ناحیه‌های ROI استفاده می‌کند که سپس از طریق استخراج‌کننده‌های ویژگی CNN و طبقه‌بندی‌کننده‌های SVM عبور داده می‌شوند تا کلاس شیء تعیین شود، و از رگرسیون خطی برای تعیین مختصات *جعبه محدودکننده* استفاده می‌شود. [مقاله رسمی](https://arxiv.org/pdf/1506.01497v1.pdf)
 
-![RCNN](../../../../../translated_images/rcnn1.cae407020dfb1d1fb572656e44f75cd6c512cc220591c116c506652c10e47f26.fa.png)
+![RCNN](../../../../../translated_images/fa/rcnn1.cae407020dfb1d1f.webp)
 
 > *تصویر از van de Sande et al. ICCV’11*
 
-![RCNN-1](../../../../../translated_images/rcnn2.2d9530bb83516484ec65b250c22dbf37d3d23244f32864ebcb91d98fe7c3112c.fa.png)
+![RCNN-1](../../../../../translated_images/fa/rcnn2.2d9530bb83516484.webp)
 
 > *تصاویر از [این وبلاگ](https://towardsdatascience.com/r-cnn-fast-r-cnn-faster-r-cnn-yolo-object-detection-algorithms-36d53571365e)*
 
@@ -110,7 +101,7 @@ $$
 
 این روش مشابه R-CNN است، اما ناحیه‌ها پس از اعمال لایه‌های کانولوشنی تعریف می‌شوند.
 
-![FRCNN](../../../../../translated_images/f-rcnn.3cda6d9bb41888754037d2d9763e2298a96de5d9bc2a21db3147357aa5da9b1a.fa.png)
+![FRCNN](../../../../../translated_images/fa/f-rcnn.3cda6d9bb4188875.webp)
 
 > تصویر از [مقاله رسمی](https://www.cv-foundation.org/openaccess/content_iccv_2015/papers/Girshick_Fast_R-CNN_ICCV_2015_paper.pdf)، [arXiv](https://arxiv.org/pdf/1504.08083.pdf)، ۲۰۱۵
 
@@ -118,7 +109,7 @@ $$
 
 ایده اصلی این روش استفاده از شبکه عصبی برای پیش‌بینی ROIها است - به اصطلاح *شبکه پیشنهاد ناحیه*. [مقاله](https://arxiv.org/pdf/1506.01497.pdf)، ۲۰۱۶
 
-![FasterRCNN](../../../../../translated_images/faster-rcnn.8d46c099b87ef30ab2ea26dbc4bdd85b974a57ba8eb526f65dc4cd0a4711de30.fa.png)
+![FasterRCNN](../../../../../translated_images/fa/faster-rcnn.8d46c099b87ef30a.webp)
 
 > تصویر از [مقاله رسمی](https://arxiv.org/pdf/1506.01497.pdf)
 
@@ -130,7 +121,7 @@ $$
 2. ویژگی‌ها توسط **نقشه امتیاز حساس به موقعیت** پردازش می‌شوند. هر شیء از کلاس‌های $C$ به ناحیه‌های $k\times k$ تقسیم می‌شود و ما برای پیش‌بینی بخش‌های اشیا آموزش می‌بینیم.
 3. برای هر بخش از ناحیه‌های $k\times k$، تمام شبکه‌ها برای کلاس‌های اشیا رأی می‌دهند و کلاس شیء با بیشترین رأی انتخاب می‌شود.
 
-![r-fcn image](../../../../../translated_images/r-fcn.13eb88158b99a3da50fa2787a6be5cb310d47f0e9655cc93a1090dc7aab338d1.fa.png)
+![r-fcn image](../../../../../translated_images/fa/r-fcn.13eb88158b99a3da.webp)
 
 > تصویر از [مقاله رسمی](https://arxiv.org/abs/1605.06409)
 
@@ -141,7 +132,7 @@ YOLO یک الگوریتم یک‌مرحله‌ای بلادرنگ است. ای�
  * تصویر به ناحیه‌های $S\times S$ تقسیم می‌شود.
  * برای هر ناحیه، **CNN** $n$ شیء ممکن، مختصات *جعبه محدودکننده* و *اعتماد* = *احتمال* * IoU را پیش‌بینی می‌کند.
 
- ![YOLO](../../../../../translated_images/yolo.a2648ec82ee8bb4ea27537677adb482fd4b733ca1705c561b6a24a85102dced5.fa.png)
+ ![YOLO](../../../../../translated_images/fa/yolo.a2648ec82ee8bb4e.webp)
 
 > تصویر از [مقاله رسمی](https://arxiv.org/abs/1506.02640)
 

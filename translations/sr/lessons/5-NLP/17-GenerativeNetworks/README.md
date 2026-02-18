@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "51be6057374d01d70e07dd5ec88ebc0d",
-  "translation_date": "2025-09-23T14:46:00+00:00",
-  "source_file": "lessons/5-NLP/17-GenerativeNetworks/README.md",
-  "language_code": "sr"
-}
--->
 # Генеративне мреже
 
 ## [Квиз пре предавања](https://ff-quizzes.netlify.app/en/ai/quiz/33)
@@ -19,7 +10,7 @@ CO_OP_TRANSLATOR_METADATA:
 
 Ово омогућава различите неуронске архитектуре које су приказане на слици испод:
 
-![Слика која приказује уобичајене обрасце рекурентних неуронских мрежа.](../../../../../translated_images/unreasonable-effectiveness-of-rnn.541ead816778f42dce6c42d8a56c184729aa2378d059b851be4ce12b993033df.sr.jpg)
+![Слика која приказује уобичајене обрасце рекурентних неуронских мрежа.](../../../../../translated_images/sr/unreasonable-effectiveness-of-rnn.541ead816778f42d.webp)
 
 > Слика из блога [Unreasonable Effectiveness of Recurrent Neural Networks](http://karpathy.github.io/2015/05/21/rnn-effectiveness/) аутора [Андреја Карпатија](http://karpathy.github.io/)
 
@@ -32,11 +23,11 @@ CO_OP_TRANSLATOR_METADATA:
 
 Обучаваћемо ову RNN да генерише текст корак по корак. На сваком кораку, узимамо секвенцу карактера дужине `nchars` и тражимо од мреже да генерише следећи излазни карактер за сваки улазни карактер:
 
-![Слика која приказује пример RNN генерисања речи 'HELLO'.](../../../../../translated_images/rnn-generate.56c54afb52f9781d63a7c16ea9c1b86cb70e6e1eae6a742b56b7b37468576b17.sr.png)
+![Слика која приказује пример RNN генерисања речи 'HELLO'.](../../../../../translated_images/sr/rnn-generate.56c54afb52f9781d.webp)
 
 Када генеришемо текст (током инференције), почињемо са неким **подстицајем** (prompt), који се прослеђује кроз RNN ћелије да би се генерисало његово интермедијарно стање, а затим из тог стања почиње генерисање. Генеришемо један карактер у исто време и прослеђујемо стање и генерисани карактер следећој RNN ћелији да генерише следећи, све док не генеришемо довољно карактера.
 
-<img src="images/rnn-generate-inf.png" width="60%"/>
+<img src="../../../../../translated_images/sr/rnn-generate-inf.5168dc65e0370eea.webp" width="60%"/>
 
 > Слика аутора
 

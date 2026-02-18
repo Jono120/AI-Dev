@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "51be6057374d01d70e07dd5ec88ebc0d",
-  "translation_date": "2025-09-23T07:52:18+00:00",
-  "source_file": "lessons/5-NLP/17-GenerativeNetworks/README.md",
-  "language_code": "bn"
-}
--->
 # জেনারেটিভ নেটওয়ার্ক
 
 ## [পূর্ব-লেকচার কুইজ](https://ff-quizzes.netlify.app/en/ai/quiz/33)
@@ -19,7 +10,7 @@ Recurrent Neural Networks (RNNs) এবং তাদের গেটেড স�
 
 এটি বিভিন্ন নিউরাল আর্কিটেকচারের জন্য অনুমতি দেয়, যা নিচের ছবিতে দেখানো হয়েছে:
 
-![RNN-এর সাধারণ প্যাটার্ন দেখানো একটি ছবি।](../../../../../translated_images/unreasonable-effectiveness-of-rnn.541ead816778f42dce6c42d8a56c184729aa2378d059b851be4ce12b993033df.bn.jpg)
+![RNN-এর সাধারণ প্যাটার্ন দেখানো একটি ছবি।](../../../../../translated_images/bn/unreasonable-effectiveness-of-rnn.541ead816778f42d.webp)
 
 > ছবি ব্লগ পোস্ট [Unreasonable Effectiveness of Recurrent Neural Networks](http://karpathy.github.io/2015/05/21/rnn-effectiveness/) থেকে [Andrej Karpaty](http://karpathy.github.io/) দ্বারা
 
@@ -32,11 +23,11 @@ Recurrent Neural Networks (RNNs) এবং তাদের গেটেড স�
 
 আমরা এই RNN-কে ধাপে ধাপে টেক্সট তৈরি করতে প্রশিক্ষণ দেব। প্রতিটি ধাপে, আমরা `nchars` দৈর্ঘ্যের একটি চরিত্রের সিকোয়েন্স গ্রহণ করব এবং নেটওয়ার্ককে প্রতিটি ইনপুট চরিত্রের জন্য পরবর্তী আউটপুট চরিত্র তৈরি করতে বলব:
 
-!['HELLO' শব্দটি তৈরি করার একটি উদাহরণ RNN দেখানো হয়েছে।](../../../../../translated_images/rnn-generate.56c54afb52f9781d63a7c16ea9c1b86cb70e6e1eae6a742b56b7b37468576b17.bn.png)
+!['HELLO' শব্দটি তৈরি করার একটি উদাহরণ RNN দেখানো হয়েছে।](../../../../../translated_images/bn/rnn-generate.56c54afb52f9781d.webp)
 
 যখন টেক্সট তৈরি করা হয় (ইনফারেন্সের সময়), আমরা কিছু **প্রম্পট** দিয়ে শুরু করি, যা RNN সেলগুলোর মাধ্যমে পাস করে তার মধ্যবর্তী স্টেট তৈরি করে, এবং তারপর এই স্টেট থেকে জেনারেশন শুরু হয়। আমরা একবারে একটি চরিত্র তৈরি করি এবং স্টেট এবং তৈরি করা চরিত্রকে অন্য RNN সেলে পাস করি পরবর্তী চরিত্র তৈরি করার জন্য, যতক্ষণ না আমরা পর্যাপ্ত চরিত্র তৈরি করি।
 
-<img src="images/rnn-generate-inf.png" width="60%"/>
+<img src="../../../../../translated_images/bn/rnn-generate-inf.5168dc65e0370eea.webp" width="60%"/>
 
 > লেখকের তৈরি ছবি
 

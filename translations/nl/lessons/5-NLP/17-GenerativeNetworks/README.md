@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "51be6057374d01d70e07dd5ec88ebc0d",
-  "translation_date": "2025-09-23T10:12:50+00:00",
-  "source_file": "lessons/5-NLP/17-GenerativeNetworks/README.md",
-  "language_code": "nl"
-}
--->
 # Generatieve netwerken
 
 ## [Pre-lecture quiz](https://ff-quizzes.netlify.app/en/ai/quiz/33)
@@ -19,7 +10,7 @@ In de RNN-architectuur die we in de vorige eenheid hebben besproken, produceerde
 
 Dit maakt verschillende neurale architecturen mogelijk, zoals weergegeven in de onderstaande afbeelding:
 
-![Afbeelding met veelvoorkomende patronen van recurrente neurale netwerken.](../../../../../translated_images/unreasonable-effectiveness-of-rnn.541ead816778f42dce6c42d8a56c184729aa2378d059b851be4ce12b993033df.nl.jpg)
+![Afbeelding met veelvoorkomende patronen van recurrente neurale netwerken.](../../../../../translated_images/nl/unreasonable-effectiveness-of-rnn.541ead816778f42d.webp)
 
 > Afbeelding uit de blogpost [Unreasonable Effectiveness of Recurrent Neural Networks](http://karpathy.github.io/2015/05/21/rnn-effectiveness/) door [Andrej Karpaty](http://karpathy.github.io/)
 
@@ -32,11 +23,11 @@ In deze eenheid richten we ons op eenvoudige generatieve modellen die ons helpen
 
 We trainen deze RNN om tekst stap voor stap te genereren. Bij elke stap nemen we een reeks karakters van lengte `nchars` en vragen we het netwerk om het volgende uitvoerkarakter te genereren voor elk invoerkarakter:
 
-![Afbeelding met een voorbeeld van RNN-generatie van het woord 'HELLO'.](../../../../../translated_images/rnn-generate.56c54afb52f9781d63a7c16ea9c1b86cb70e6e1eae6a742b56b7b37468576b17.nl.png)
+![Afbeelding met een voorbeeld van RNN-generatie van het woord 'HELLO'.](../../../../../translated_images/nl/rnn-generate.56c54afb52f9781d.webp)
 
 Bij het genereren van tekst (tijdens inferentie) beginnen we met een **prompt**, die door de RNN-cellen wordt doorgegeven om de tussenliggende toestand te genereren. Vanuit deze toestand begint de generatie. We genereren één karakter tegelijk en geven de toestand en het gegenereerde karakter door aan een andere RNN-cel om het volgende te genereren, totdat we genoeg karakters hebben gegenereerd.
 
-<img src="images/rnn-generate-inf.png" width="60%"/>
+<img src="../../../../../translated_images/nl/rnn-generate-inf.5168dc65e0370eea.webp" width="60%"/>
 
 > Afbeelding door de auteur
 

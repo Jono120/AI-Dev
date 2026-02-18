@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "1b8d9e1b3a6f1daa864b1ff3dfc3076d",
-  "translation_date": "2025-09-23T13:08:44+00:00",
-  "source_file": "lessons/4-ComputerVision/09-Autoencoders/README.md",
-  "language_code": "ja"
-}
--->
 # オートエンコーダー
 
 CNNをトレーニングする際の問題の一つは、多くのラベル付きデータが必要になることです。画像分類の場合、画像を異なるクラスに分ける必要があり、これは手作業で行う必要があります。
@@ -19,7 +10,7 @@ CNNをトレーニングする際の問題の一つは、多くのラベル付�
 
 オートエンコーダーをトレーニングして、元の画像から可能な限り多くの情報をキャプチャし、正確に再構築するため、ネットワークは入力画像の意味を捉える最適な**埋め込み**を見つけようとします。
 
-![オートエンコーダーの図](../../../../../translated_images/autoencoder_schema.5e6fc9ad98a5eb6197f3513cf3baf4dfbe1389a6ae74daebda64de9f1c99f142.ja.jpg)
+![オートエンコーダーの図](../../../../../translated_images/ja/autoencoder_schema.5e6fc9ad98a5eb61.webp)
 
 > 画像は[Kerasブログ](https://blog.keras.io/building-autoencoders-in-keras.html)より
 
@@ -46,7 +37,7 @@ VAEは、潜在パラメータの*統計分布*、いわゆる**潜在分布**�
  * 分布N(z<sub>mean</sub>,exp(z<sub>log_sigma</sub>))からベクトル`sample`をサンプリングします。
  * デコーダーは`sample`を入力ベクトルとして使用し、元の画像をデコードしようとします。
 
- <img src="images/vae.png" width="50%">
+ <img src="../../../../../translated_images/ja/vae.464c465a5b6a9e25.webp" width="50%">
 
 > 画像は[Isaak Dykemanのブログ記事](https://ijdykeman.github.io/ml/2016/12/21/cvae.html)より
 
@@ -57,13 +48,13 @@ VAEは、潜在パラメータの*統計分布*、いわゆる**潜在分布**�
 
 VAEの重要な利点の一つは、潜在ベクトルをサンプリングする分布が分かっているため、新しい画像を比較的簡単に生成できることです。例えば、2次元の潜在ベクトルを持つVAEをMNISTでトレーニングした場合、潜在ベクトルの成分を変化させることで異なる数字を得ることができます：
 
-<img alt="vaemnist" src="images/vaemnist.png" width="50%"/>
+<img alt="vaemnist" src="../../../../../translated_images/ja/vaemnist.cab9e602dc08dc50.webp" width="50%"/>
 
 > 画像は[Dmitry Soshnikov](http://soshnikov.com)より
 
 潜在パラメータ空間の異なる部分から潜在ベクトルを取得するにつれて、画像がどのように互いにブレンドされるかを観察できます。この空間を2次元で視覚化することも可能です：
 
-<img alt="vaemnist cluster" src="images/vaemnist-diag.png" width="50%"/> 
+<img alt="vaemnist cluster" src="../../../../../translated_images/ja/vaemnist-diag.694315f775d5d666.webp" width="50%"/> 
 
 > 画像は[Dmitry Soshnikov](http://soshnikov.com)より
 

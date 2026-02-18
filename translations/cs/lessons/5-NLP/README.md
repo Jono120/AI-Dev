@@ -1,15 +1,6 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "8ef02a9318257ea140ed3ed74442096d",
-  "translation_date": "2025-08-25T21:27:40+00:00",
-  "source_file": "lessons/5-NLP/README.md",
-  "language_code": "cs"
-}
--->
 # Zpracování přirozeného jazyka
 
-![Shrnutí úkolů NLP na kresbě](../../../../translated_images/ai-nlp.b22dcb8ca4707ceaee8576db1c5f4089c8cac2f454e9e03ea554f07fda4556b8.cs.png)
+![Shrnutí úkolů NLP na kresbě](../../../../translated_images/cs/ai-nlp.b22dcb8ca4707cea.webp)
 
 V této sekci se zaměříme na použití neuronových sítí k řešení úkolů spojených se **zpracováním přirozeného jazyka (NLP)**. Existuje mnoho problémů v oblasti NLP, které bychom chtěli, aby počítače dokázaly vyřešit:
 

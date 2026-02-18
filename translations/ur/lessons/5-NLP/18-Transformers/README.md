@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "f335dfcb4a993920504c387973a36957",
-  "translation_date": "2025-09-23T06:48:34+00:00",
-  "source_file": "lessons/5-NLP/18-Transformers/README.md",
-  "language_code": "ur"
-}
--->
 # توجہ کے طریقہ کار اور ٹرانسفارمرز
 
 ## [لیکچر سے پہلے کا کوئز](https://ff-quizzes.netlify.app/en/ai/quiz/35)
@@ -20,13 +11,13 @@ RNNs کے ساتھ، sequence-to-sequence دو recurrent نیٹ ورکس کے ذ
 
 **توجہ کے طریقہ کار** RNN کے ہر آؤٹ پٹ پیش گوئی پر ہر ان پٹ ویکٹر کے سیاق و سباق کے اثر کو وزن دینے کا ایک ذریعہ فراہم کرتے ہیں۔ اس کو نافذ کرنے کا طریقہ یہ ہے کہ ان پٹ RNN کی درمیانی حالتوں اور آؤٹ پٹ RNN کے درمیان شارٹ کٹس بنائے جائیں۔ اس طرح، جب آؤٹ پٹ علامت y<sub>t</sub> پیدا کی جا رہی ہو، ہم تمام ان پٹ hidden states h<sub>i</sub> کو مختلف وزن کے coefficients &alpha;<sub>t,i</sub> کے ساتھ مدنظر رکھیں گے۔
 
-![تصویر جو encoder/decoder ماڈل کو additive attention layer کے ساتھ دکھا رہی ہے](../../../../../translated_images/encoder-decoder-attention.7a726296894fb567aa2898c94b17b3289087f6705c11907df8301df9e5eeb3de.ur.png)
+![تصویر جو encoder/decoder ماڈل کو additive attention layer کے ساتھ دکھا رہی ہے](../../../../../translated_images/ur/encoder-decoder-attention.7a726296894fb567.webp)
 
 > [Bahdanau et al., 2015](https://arxiv.org/pdf/1409.0473.pdf) میں additive attention mechanism کے ساتھ encoder-decoder ماڈل، [اس بلاگ پوسٹ](https://lilianweng.github.io/lil-log/2018/06/24/attention-attention.html) سے لیا گیا۔
 
 توجہ میٹرکس {&alpha;<sub>i,j</sub>} اس حد کو ظاہر کرے گی کہ ان پٹ سیکوئنس میں موجود مخصوص الفاظ آؤٹ پٹ سیکوئنس میں دیے گئے لفظ کی تخلیق میں کتنا کردار ادا کرتے ہیں۔ نیچے ایک مثال دی گئی ہے:
 
-![تصویر جو RNNsearch-50 کے ذریعے پائی گئی ایک نمونہ alignment کو دکھا رہی ہے، Bahdanau - arviz.org سے لی گئی](../../../../../translated_images/bahdanau-fig3.09ba2d37f202a6af11de6c82d2d197830ba5f4528d9ea430eb65fd3a75065973.ur.png)
+![تصویر جو RNNsearch-50 کے ذریعے پائی گئی ایک نمونہ alignment کو دکھا رہی ہے، Bahdanau - arviz.org سے لی گئی](../../../../../translated_images/ur/bahdanau-fig3.09ba2d37f202a6af.webp)
 
 > [Bahdanau et al., 2015](https://arxiv.org/pdf/1409.0473.pdf) سے تصویر (Fig.3)
 
@@ -56,7 +47,7 @@ positional encoding کا خیال درج ذیل ہے:
 * Trainable embedding، token embedding کی طرح۔ یہ وہ طریقہ ہے جس پر ہم یہاں غور کرتے ہیں۔ ہم tokens اور ان کی positions دونوں پر embedding layers لگاتے ہیں، جس کے نتیجے میں ایک ہی dimensions کے embedding vectors حاصل ہوتے ہیں، جنہیں ہم پھر ایک ساتھ جوڑتے ہیں۔
 * Fixed position encoding function، جیسا کہ اصل مقالے میں تجویز کیا گیا ہے۔
 
-<img src="images/pos-embedding.png" width="50%"/>
+<img src="../../../../../translated_images/ur/pos-embedding.e41ce9b6cf6078af.webp" width="50%"/>
 
 > تصویر مصنف کی طرف سے
 
@@ -66,7 +57,7 @@ positional encoding کا خیال درج ذیل ہے:
 
 اگلا، ہمیں اپنی سیکوئنس کے اندر کچھ patterns کو capture کرنے کی ضرورت ہے۔ ایسا کرنے کے لیے، ٹرانسفارمرز **self-attention** mechanism استعمال کرتے ہیں، جو بنیادی طور پر وہی توجہ ہے جو ان پٹ اور آؤٹ پٹ کے طور پر ایک ہی سیکوئنس پر لاگو ہوتی ہے۔ self-attention کو لاگو کرنے سے ہمیں جملے کے اندر **context** کو مدنظر رکھنے کی اجازت ملتی ہے، اور یہ دیکھنے کی اجازت ملتی ہے کہ کون سے الفاظ آپس میں جڑے ہوئے ہیں۔ مثال کے طور پر، یہ ہمیں یہ دیکھنے کی اجازت دیتا ہے کہ کون سے الفاظ coreferences جیسے *it* کے ذریعے حوالہ دیے گئے ہیں، اور سیاق و سباق کو بھی مدنظر رکھتا ہے:
 
-![](../../../../../translated_images/CoreferenceResolution.861924d6d384a7d68d8d0039d06a71a151f18a796b8b1330239d3590bd4947eb.ur.png)
+![](../../../../../translated_images/ur/CoreferenceResolution.861924d6d384a7d6.webp)
 
 > [گوگل بلاگ](https://research.googleblog.com/2017/08/transformer-novel-neural-network.html) سے تصویر
 
@@ -91,7 +82,7 @@ Encoder-decoder attention RNNs میں استعمال ہونے والے توجہ 
 
 **BERT** (Bidirectional Encoder Representations from Transformers) ایک بہت بڑا multi-layer transformer نیٹ ورک ہے جس میں *BERT-base* کے لیے 12 layers ہیں، اور *BERT-large* کے لیے 24 layers ہیں۔ ماڈل کو پہلے ایک بڑے text data corpus (WikiPedia + books) پر unsupervised training (جملے میں masked words کی پیش گوئی) کا استعمال کرتے ہوئے pre-train کیا جاتا ہے۔ pre-training کے دوران ماڈل زبان کی سمجھ کے اہم سطحوں کو جذب کرتا ہے، جنہیں پھر دیگر datasets کے ساتھ fine tuning کے ذریعے استعمال کیا جا سکتا ہے۔ اس عمل کو **transfer learning** کہا جاتا ہے۔
 
-![تصویر http://jalammar.github.io/illustrated-bert/ سے](../../../../../translated_images/jalammarBERT-language-modeling-masked-lm.34f113ea5fec4362e39ee4381aab7cad06b5465a0b5f053a0f2aa05fbe14e746.ur.png)
+![تصویر http://jalammar.github.io/illustrated-bert/ سے](../../../../../translated_images/ur/jalammarBERT-language-modeling-masked-lm.34f113ea5fec4362.webp)
 
 > تصویر [ماخذ](http://jalammar.github.io/illustrated-bert/)
 

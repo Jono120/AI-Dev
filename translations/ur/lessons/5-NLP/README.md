@@ -1,15 +1,6 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "8ef02a9318257ea140ed3ed74442096d",
-  "translation_date": "2025-08-26T08:02:19+00:00",
-  "source_file": "lessons/5-NLP/README.md",
-  "language_code": "ur"
-}
--->
 # قدرتی زبان کی پروسیسنگ
 
-![NLP کے کاموں کا خلاصہ ایک خاکے میں](../../../../translated_images/ai-nlp.b22dcb8ca4707ceaee8576db1c5f4089c8cac2f454e9e03ea554f07fda4556b8.ur.png)
+![NLP کے کاموں کا خلاصہ ایک خاکے میں](../../../../translated_images/ur/ai-nlp.b22dcb8ca4707cea.webp)
 
 اس حصے میں، ہم نیورل نیٹ ورکس کا استعمال کرتے ہوئے **قدرتی زبان کی پروسیسنگ (NLP)** سے متعلق کاموں کو حل کرنے پر توجہ مرکوز کریں گے۔ NLP کے کئی مسائل ہیں جنہیں ہم چاہتے ہیں کہ کمپیوٹر حل کر سکیں:
 

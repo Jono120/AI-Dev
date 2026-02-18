@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "b70fcf7fcee862990f848c679090943f",
-  "translation_date": "2025-10-03T14:53:58+00:00",
-  "source_file": "lessons/4-ComputerVision/07-ConvNets/lab/README.md",
-  "language_code": "ne"
-}
--->
 # पाल्तु जनावरको अनुहारको वर्गीकरण
 
 [AI for Beginners Curriculum](https://github.com/microsoft/ai-for-beginners) बाट ल्याब असाइनमेन्ट।
@@ -21,7 +12,7 @@ CO_OP_TRANSLATOR_METADATA:
 
 हामी [Oxford-IIIT Pet Dataset](https://www.robots.ox.ac.uk/~vgg/data/pets/) प्रयोग गर्नेछौं, जसमा कुकुर र बिरालोका ३७ विभिन्न प्रजातिहरूका छविहरू समावेश छन्।
 
-![हामीले प्रयोग गर्ने डेटासेट](../../../../../../translated_images/data.50b2a9d5484bdbf0f52f5765b381cec9efe2bd296a98f007f90bedb6ac67f2a8.ne.png)
+![हामीले प्रयोग गर्ने डेटासेट](../../../../../../translated_images/ne/data.50b2a9d5484bdbf0.webp)
 
 डेटासेट डाउनलोड गर्न, यो कोड स्निपेट प्रयोग गर्नुहोस्:
 

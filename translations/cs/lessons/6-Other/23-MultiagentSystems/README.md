@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "38a1185ae3d54b180378bbd71ae3ef16",
-  "translation_date": "2025-09-23T11:20:59+00:00",
-  "source_file": "lessons/6-Other/23-MultiagentSystems/README.md",
-  "language_code": "cs"
-}
--->
 # Multi-Agentní systémy
 
 Jedním z možných způsobů dosažení inteligence je tzv. **emergentní** (nebo **synergický**) přístup, který vychází z faktu, že kombinované chování mnoha relativně jednoduchých agentů může vést k celkově složitějšímu (nebo inteligentnějšímu) chování systému jako celku. Teoreticky je tento přístup založen na principech [kolektivní inteligence](https://en.wikipedia.org/wiki/Collective_intelligence), [emergentismu](https://en.wikipedia.org/wiki/Global_brain) a [evoluční kybernetiky](https://en.wikipedia.org/wiki/Global_brain), které tvrdí, že systémy na vyšší úrovni získávají určitou přidanou hodnotu, pokud jsou správně kombinovány ze systémů na nižší úrovni (tzv. *princip přechodu metasystému*).
@@ -60,7 +51,7 @@ NetLogo si můžete [stáhnout](https://ccl.northwestern.edu/netlogo/download.sh
 
 Skvělou věcí na NetLogo je, že obsahuje knihovnu funkčních modelů, které si můžete vyzkoušet. Přejděte na **File &rightarrow; Models Library**, kde máte na výběr mnoho kategorií modelů.
 
-<img alt="NetLogo Models Library" src="images/NetLogo-ModelLib.png" width="60%"/>
+<img alt="NetLogo Models Library" src="../../../../../translated_images/cs/NetLogo-ModelLib.efe023afb4763c05.webp" width="60%"/>
 
 > Screenshot knihovny modelů od Dmitry Soshnikov
 
@@ -70,7 +61,7 @@ Můžete otevřít jeden z modelů, například **Biology &rightarrow; Flocking*
 
 Po otevření modelu se dostanete na hlavní obrazovku NetLogo. Zde je ukázkový model, který popisuje populaci vlků a ovcí, vzhledem k omezeným zdrojům (tráva).
 
-![NetLogo Main Screen](../../../../../translated_images/NetLogo-Main.32653711ec1a01b3cab22ec0b148e64193d0b979b055285bef329d5e3d6958c5.cs.png)
+![NetLogo Main Screen](../../../../../translated_images/cs/NetLogo-Main.32653711ec1a01b3.webp)
 
 > Screenshot od Dmitry Soshnikov
 

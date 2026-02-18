@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "1b8d9e1b3a6f1daa864b1ff3dfc3076d",
-  "translation_date": "2025-09-23T10:08:55+00:00",
-  "source_file": "lessons/4-ComputerVision/09-Autoencoders/README.md",
-  "language_code": "nl"
-}
--->
 # Autoencoders
 
 Bij het trainen van CNNs is een van de problemen dat we veel gelabelde data nodig hebben. In het geval van beeldclassificatie moeten we afbeeldingen in verschillende klassen indelen, wat een handmatig proces is.
@@ -19,7 +10,7 @@ We willen echter mogelijk ruwe (ongelabelde) data gebruiken om CNN-feature extra
 
 Omdat we een autoencoder trainen om zoveel mogelijk informatie uit de originele afbeelding vast te leggen voor een nauwkeurige reconstructie, probeert het netwerk de beste **embedding** van invoerafbeeldingen te vinden om de betekenis vast te leggen.
 
-![AutoEncoder Diagram](../../../../../translated_images/autoencoder_schema.5e6fc9ad98a5eb6197f3513cf3baf4dfbe1389a6ae74daebda64de9f1c99f142.nl.jpg)
+![AutoEncoder Diagram](../../../../../translated_images/nl/autoencoder_schema.5e6fc9ad98a5eb61.webp)
 
 > Afbeelding van [Keras blog](https://blog.keras.io/building-autoencoders-in-keras.html)
 
@@ -46,7 +37,7 @@ Samenvattend:
  * We nemen een steekproefvector `sample` uit de verdeling N(z<sub>mean</sub>,exp(z<sub>log\_sigma</sub>))
  * De decoder probeert de originele afbeelding te decoderen met `sample` als invoervector
 
- <img src="images/vae.png" width="50%">
+ <img src="../../../../../translated_images/nl/vae.464c465a5b6a9e25.webp" width="50%">
 
 > Afbeelding van [deze blogpost](https://ijdykeman.github.io/ml/2016/12/21/cvae.html) door Isaak Dykeman
 
@@ -57,13 +48,13 @@ Variational autoencoders gebruiken een complexe verliesfunctie die uit twee dele
 
 Een belangrijk voordeel van VAEs is dat ze ons in staat stellen relatief eenvoudig nieuwe afbeeldingen te genereren, omdat we weten uit welke verdeling we latente vectoren moeten nemen. Bijvoorbeeld, als we een VAE trainen met een 2D latente vector op MNIST, kunnen we vervolgens de componenten van de latente vector variëren om verschillende cijfers te krijgen:
 
-<img alt="vaemnist" src="images/vaemnist.png" width="50%"/>
+<img alt="vaemnist" src="../../../../../translated_images/nl/vaemnist.cab9e602dc08dc50.webp" width="50%"/>
 
 > Afbeelding door [Dmitry Soshnikov](http://soshnikov.com)
 
 Let op hoe afbeeldingen in elkaar overlopen, terwijl we latente vectoren uit verschillende delen van de latente parametersruimte halen. We kunnen deze ruimte ook in 2D visualiseren:
 
-<img alt="vaemnist cluster" src="images/vaemnist-diag.png" width="50%"/> 
+<img alt="vaemnist cluster" src="../../../../../translated_images/nl/vaemnist-diag.694315f775d5d666.webp" width="50%"/> 
 
 > Afbeelding door [Dmitry Soshnikov](http://soshnikov.com)
 

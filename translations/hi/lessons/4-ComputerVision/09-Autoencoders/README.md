@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "1b8d9e1b3a6f1daa864b1ff3dfc3076d",
-  "translation_date": "2025-09-23T13:30:12+00:00",
-  "source_file": "lessons/4-ComputerVision/09-Autoencoders/README.md",
-  "language_code": "hi"
-}
--->
 # ऑटोएन्कोडर्स
 
 जब CNNs को ट्रेन किया जाता है, तो एक समस्या यह होती है कि हमें बहुत सारे लेबल वाले डेटा की आवश्यकता होती है। इमेज क्लासिफिकेशन के मामले में, हमें इमेज को अलग-अलग क्लास में विभाजित करना होता है, जो एक मैनुअल प्रक्रिया है।
@@ -19,7 +10,7 @@ CO_OP_TRANSLATOR_METADATA:
 
 चूंकि हम ऑटोएन्कोडर को मूल इमेज से अधिकतम जानकारी को कैप्चर करने के लिए ट्रेन कर रहे हैं ताकि सटीक पुनर्निर्माण हो सके, नेटवर्क इनपुट इमेज का सबसे अच्छा **एम्बेडिंग** खोजने की कोशिश करता है।
 
-![ऑटोएन्कोडर डायग्राम](../../../../../translated_images/autoencoder_schema.5e6fc9ad98a5eb6197f3513cf3baf4dfbe1389a6ae74daebda64de9f1c99f142.hi.jpg)
+![ऑटोएन्कोडर डायग्राम](../../../../../translated_images/hi/autoencoder_schema.5e6fc9ad98a5eb61.webp)
 
 > इमेज [Keras ब्लॉग](https://blog.keras.io/building-autoencoders-in-keras.html) से
 
@@ -46,7 +37,7 @@ VAE वह ऑटोएन्कोडर है जो लेटेंट प�
 * हम वितरण N(z<sub>mean</sub>,exp(z<sub>log\_sigma</sub>)) से एक वेक्टर `sample` लेते हैं
 * डिकोडर `sample` को इनपुट वेक्टर के रूप में उपयोग करके मूल इमेज को डिकोड करने की कोशिश करता है
 
-<img src="images/vae.png" width="50%">
+<img src="../../../../../translated_images/hi/vae.464c465a5b6a9e25.webp" width="50%">
 
 > इमेज [इस ब्लॉग पोस्ट](https://ijdykeman.github.io/ml/2016/12/21/cvae.html) से, लेखक: इसाक डाइकमैन
 
@@ -57,13 +48,13 @@ VAE वह ऑटोएन्कोडर है जो लेटेंट प�
 
 VAEs का एक महत्वपूर्ण लाभ यह है कि वे हमें नए इमेज को अपेक्षाकृत आसानी से जनरेट करने की अनुमति देते हैं, क्योंकि हमें पता होता है कि लेटेंट वेक्टर को किस वितरण से सैंपल करना है। उदाहरण के लिए, यदि हम MNIST पर 2D लेटेंट वेक्टर के साथ VAE को ट्रेन करते हैं, तो हम लेटेंट वेक्टर के घटकों को बदलकर विभिन्न अंकों को प्राप्त कर सकते हैं:
 
-<img alt="vaemnist" src="images/vaemnist.png" width="50%"/>
+<img alt="vaemnist" src="../../../../../translated_images/hi/vaemnist.cab9e602dc08dc50.webp" width="50%"/>
 
 > इमेज [दिमित्री सोश्निकोव](http://soshnikov.com) द्वारा
 
 ध्यान दें कि कैसे इमेज एक-दूसरे में मिल जाती हैं, जैसे ही हम लेटेंट पैरामीटर स्पेस के विभिन्न हिस्सों से लेटेंट वेक्टर प्राप्त करना शुरू करते हैं। हम इस स्पेस को 2D में भी विज़ुअलाइज़ कर सकते हैं:
 
-<img alt="vaemnist cluster" src="images/vaemnist-diag.png" width="50%"/> 
+<img alt="vaemnist cluster" src="../../../../../translated_images/hi/vaemnist-diag.694315f775d5d666.webp" width="50%"/> 
 
 > इमेज [दिमित्री सोश्निकोव](http://soshnikov.com) द्वारा
 

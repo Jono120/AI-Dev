@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "e2273cc150380a5e191903cea858f021",
-  "translation_date": "2025-09-23T08:35:58+00:00",
-  "source_file": "lessons/5-NLP/16-RNN/README.md",
-  "language_code": "it"
-}
--->
 # Reti Neurali Ricorrenti
 
 ## [Quiz pre-lezione](https://ff-quizzes.netlify.app/en/ai/quiz/31)
@@ -15,7 +6,7 @@ Nelle sezioni precedenti, abbiamo utilizzato rappresentazioni semantiche ricche 
 
 Per catturare il significato di una sequenza di testo, dobbiamo utilizzare un'altra architettura di rete neurale, chiamata **rete neurale ricorrente**, o RNN. Nelle RNN, passiamo la nostra frase attraverso la rete un simbolo alla volta, e la rete produce uno **stato**, che poi passiamo nuovamente alla rete insieme al simbolo successivo.
 
-![RNN](../../../../../translated_images/rnn.27f5c29c53d727b546ad3961637a267f0fe9ec5ab01f2a26a853c92fcefbb574.it.png)
+![RNN](../../../../../translated_images/it/rnn.27f5c29c53d727b5.webp)
 
 > Immagine dell'autore
 
@@ -31,7 +22,7 @@ Vediamo come è organizzata una semplice cella RNN. Accetta lo stato precedente 
 
 Una semplice cella RNN ha due matrici di peso al suo interno: una trasforma un simbolo di input (chiamiamola W) e un'altra trasforma uno stato di input (H). In questo caso, l'output della rete è calcolato come &sigma;(W&times;X<sub>i</sub>+H&times;S<sub>i-1</sub>+b), dove &sigma; è la funzione di attivazione e b è un bias aggiuntivo.
 
-<img alt="Anatomia della cella RNN" src="images/rnn-anatomy.png" width="50%"/>
+<img alt="Anatomia della cella RNN" src="../../../../../translated_images/it/rnn-anatomy.79ee3f3920b3294b.webp" width="50%"/>
 
 > Immagine dell'autore
 
@@ -61,7 +52,7 @@ Abbiamo discusso reti ricorrenti che operano in una direzione, dall'inizio di un
 
 Una rete ricorrente, sia unidirezionale che bidirezionale, cattura certi schemi all'interno di una sequenza e può memorizzarli in un vettore di stato o passarli all'output. Come con le reti convoluzionali, possiamo costruire un altro strato ricorrente sopra il primo per catturare schemi di livello superiore e costruire a partire dagli schemi di basso livello estratti dal primo strato. Questo ci porta al concetto di **RNN multistrato**, che consiste in due o più reti ricorrenti, dove l'output del livello precedente viene passato al livello successivo come input.
 
-![Immagine che mostra una RNN LSTM multistrato](../../../../../translated_images/multi-layer-lstm.dd975e29bb2a59fe58b429db833932d734c81f211cad2783797a9608984acb8c.it.jpg)
+![Immagine che mostra una RNN LSTM multistrato](../../../../../translated_images/it/multi-layer-lstm.dd975e29bb2a59fe.webp)
 
 *Immagine tratta da [questo meraviglioso post](https://towardsdatascience.com/from-a-lstm-cell-to-a-multilayer-lstm-network-with-pytorch-2899eb5696f3) di Fernando López*
 

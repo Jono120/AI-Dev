@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "b70fcf7fcee862990f848c679090943f",
-  "translation_date": "2025-10-03T14:57:03+00:00",
-  "source_file": "lessons/4-ComputerVision/07-ConvNets/lab/README.md",
-  "language_code": "cs"
-}
--->
 # Klasifikace obličejů domácích mazlíčků
 
 Laboratorní úkol z [AI for Beginners Curriculum](https://github.com/microsoft/ai-for-beginners).
@@ -21,7 +12,7 @@ Vaším úkolem je natrénovat konvoluční neuronovou síť, která bude klasif
 
 Použijeme [Oxford-IIIT Pet Dataset](https://www.robots.ox.ac.uk/~vgg/data/pets/), který obsahuje obrázky 37 různých plemen psů a koček.
 
-![Dataset, se kterým budeme pracovat](../../../../../../translated_images/data.50b2a9d5484bdbf0f52f5765b381cec9efe2bd296a98f007f90bedb6ac67f2a8.cs.png)
+![Dataset, se kterým budeme pracovat](../../../../../../translated_images/cs/data.50b2a9d5484bdbf0.webp)
 
 Pro stažení datasetu použijte tento kód:
 

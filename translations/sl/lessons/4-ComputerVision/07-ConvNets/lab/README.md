@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "b70fcf7fcee862990f848c679090943f",
-  "translation_date": "2025-10-03T14:58:19+00:00",
-  "source_file": "lessons/4-ComputerVision/07-ConvNets/lab/README.md",
-  "language_code": "sl"
-}
--->
 # Razvrščanje obrazov hišnih ljubljenčkov
 
 Laboratorijska naloga iz [Učnega načrta za začetnike v AI](https://github.com/microsoft/ai-for-beginners).
@@ -21,7 +12,7 @@ Vaša naloga je, da usposobite konvolucijsko nevronsko mrežo za razvrščanje r
 
 Uporabili bomo [Oxford-IIIT Pet Dataset](https://www.robots.ox.ac.uk/~vgg/data/pets/), ki vsebuje slike 37 različnih pasem psov in mačk.
 
-![Podatkovna zbirka, s katero bomo delali](../../../../../../translated_images/data.50b2a9d5484bdbf0f52f5765b381cec9efe2bd296a98f007f90bedb6ac67f2a8.sl.png)
+![Podatkovna zbirka, s katero bomo delali](../../../../../../translated_images/sl/data.50b2a9d5484bdbf0.webp)
 
 Za prenos podatkovne zbirke uporabite naslednji del kode:
 

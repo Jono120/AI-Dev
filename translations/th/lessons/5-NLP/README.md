@@ -1,15 +1,6 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "8ef02a9318257ea140ed3ed74442096d",
-  "translation_date": "2025-08-29T09:16:38+00:00",
-  "source_file": "lessons/5-NLP/README.md",
-  "language_code": "th"
-}
--->
 # การประมวลผลภาษาธรรมชาติ
 
-![ภาพสรุปงาน NLP ในรูปวาด](../../../../translated_images/ai-nlp.b22dcb8ca4707ceaee8576db1c5f4089c8cac2f454e9e03ea554f07fda4556b8.th.png)
+![ภาพสรุปงาน NLP ในรูปวาด](../../../../translated_images/th/ai-nlp.b22dcb8ca4707cea.webp)
 
 ในส่วนนี้ เราจะมุ่งเน้นการใช้เครือข่ายประสาทเทียม (Neural Networks) เพื่อจัดการกับงานที่เกี่ยวข้องกับ **การประมวลผลภาษาธรรมชาติ (Natural Language Processing - NLP)** มีปัญหาหลายประเภทใน NLP ที่เราต้องการให้คอมพิวเตอร์สามารถแก้ไขได้:
 

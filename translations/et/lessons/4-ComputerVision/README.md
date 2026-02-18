@@ -1,15 +1,6 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "58a52f000089c1d8906a4daa4ab1169b",
-  "translation_date": "2025-10-11T11:17:30+00:00",
-  "source_file": "lessons/4-ComputerVision/README.md",
-  "language_code": "et"
-}
--->
 # Arvutinägemine
 
-![Arvutinägemise sisu kokkuvõte visandina](../../../../translated_images/ai-computervision.6506ebebac3fbf76cdb78989d7d3dfea87e88285c0feaade53aa7804a22b248f.et.png)
+![Arvutinägemise sisu kokkuvõte visandina](../../../../translated_images/et/ai-computervision.6506ebebac3fbf76.webp)
 
 Selles osas õpime:
 

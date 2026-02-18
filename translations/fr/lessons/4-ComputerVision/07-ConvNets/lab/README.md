@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "b70fcf7fcee862990f848c679090943f",
-  "translation_date": "2025-10-03T14:51:48+00:00",
-  "source_file": "lessons/4-ComputerVision/07-ConvNets/lab/README.md",
-  "language_code": "fr"
-}
--->
 # Classification des visages d'animaux
 
 Travail pratique issu du [Curriculum AI pour débutants](https://github.com/microsoft/ai-for-beginners).
@@ -21,7 +12,7 @@ Vous devez entraîner un réseau neuronal convolutif pour classifier différente
 
 Nous utiliserons le [Oxford-IIIT Pet Dataset](https://www.robots.ox.ac.uk/~vgg/data/pets/), qui contient des images de 37 races différentes de chiens et de chats.
 
-![Dataset avec lequel nous travaillerons](../../../../../../translated_images/data.50b2a9d5484bdbf0f52f5765b381cec9efe2bd296a98f007f90bedb6ac67f2a8.fr.png)
+![Dataset avec lequel nous travaillerons](../../../../../../translated_images/fr/data.50b2a9d5484bdbf0.webp)
 
 Pour télécharger le dataset, utilisez ce fragment de code :
 

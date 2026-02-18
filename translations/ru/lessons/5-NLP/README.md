@@ -1,15 +1,6 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "8ef02a9318257ea140ed3ed74442096d",
-  "translation_date": "2025-08-26T06:34:51+00:00",
-  "source_file": "lessons/5-NLP/README.md",
-  "language_code": "ru"
-}
--->
 # Обработка естественного языка
 
-![Сводка задач NLP в виде рисунка](../../../../translated_images/ai-nlp.b22dcb8ca4707ceaee8576db1c5f4089c8cac2f454e9e03ea554f07fda4556b8.ru.png)
+![Сводка задач NLP в виде рисунка](../../../../translated_images/ru/ai-nlp.b22dcb8ca4707cea.webp)
 
 В этом разделе мы сосредоточимся на использовании нейронных сетей для решения задач, связанных с **обработкой естественного языка (NLP)**. Существует множество задач NLP, которые мы хотим, чтобы компьютеры могли решать:
 

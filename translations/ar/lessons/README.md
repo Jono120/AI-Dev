@@ -1,15 +1,6 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "5fef1a0b22498d7188959e2a2cb08af7",
-  "translation_date": "2025-08-26T07:57:01+00:00",
-  "source_file": "lessons/README.md",
-  "language_code": "ar"
-}
--->
 # نظرة عامة
 
-![نظرة عامة في رسم توضيحي](../../../translated_images/ai-overview.0857791951d19500d0ef8b803d77110c738dcafc52306e6d68724742cd4af167.ar.png)
+![نظرة عامة في رسم توضيحي](../../../translated_images/ar/ai-overview.0857791951d19500.webp)
 
 > رسم توضيحي بواسطة [Tomomi Imura](https://twitter.com/girlie_mac)
 

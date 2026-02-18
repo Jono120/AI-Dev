@@ -1,15 +1,6 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "8ef02a9318257ea140ed3ed74442096d",
-  "translation_date": "2025-08-26T08:05:51+00:00",
-  "source_file": "lessons/5-NLP/README.md",
-  "language_code": "pa"
-}
--->
 # ਨੈਚਰਲ ਲੈਂਗਵੇਜ ਪ੍ਰੋਸੈਸਿੰਗ
 
-![NLP ਟਾਸਕਾਂ ਦਾ ਸਾਰ](../../../../translated_images/ai-nlp.b22dcb8ca4707ceaee8576db1c5f4089c8cac2f454e9e03ea554f07fda4556b8.pa.png)
+![NLP ਟਾਸਕਾਂ ਦਾ ਸਾਰ](../../../../translated_images/pa/ai-nlp.b22dcb8ca4707cea.webp)
 
 ਇਸ ਸੈਕਸ਼ਨ ਵਿੱਚ, ਅਸੀਂ **ਨੈਚਰਲ ਲੈਂਗਵੇਜ ਪ੍ਰੋਸੈਸਿੰਗ (NLP)** ਨਾਲ ਸੰਬੰਧਿਤ ਟਾਸਕਾਂ ਨੂੰ ਹੱਲ ਕਰਨ ਲਈ ਨਿਊਰਲ ਨੈਟਵਰਕਸ ਦੀ ਵਰਤੋਂ 'ਤੇ ਧਿਆਨ ਦੇਵਾਂਗੇ। ਬਹੁਤ ਸਾਰੇ NLP ਸਮੱਸਿਆਵਾਂ ਹਨ ਜਿਨ੍ਹਾਂ ਨੂੰ ਅਸੀਂ ਚਾਹੁੰਦੇ ਹਾਂ ਕਿ ਕੰਪਿਊਟਰ ਹੱਲ ਕਰ ਸਕਣ:
 

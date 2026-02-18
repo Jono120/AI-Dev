@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "7ba20f54a5bfcd6521018cdfb17c7c57",
-  "translation_date": "2025-09-23T12:03:15+00:00",
-  "source_file": "lessons/5-NLP/15-LanguageModeling/README.md",
-  "language_code": "fr"
-}
--->
 # Modélisation du langage
 
 Les embeddings sémantiques, tels que Word2Vec et GloVe, constituent en réalité une première étape vers la **modélisation du langage** - créer des modèles qui *comprennent* (ou *représentent*) d'une certaine manière la nature du langage.
@@ -23,7 +14,7 @@ Dans nos exemples précédents, nous avons utilisé des embeddings sémantiques 
 * **Continuous Bag-of-Words** (CBoW), où l'on prédit le token central $W_0$ dans une séquence de tokens $W_{-N}$, ..., $W_N$.
 * **Skip-gram**, où l'on prédit un ensemble de tokens voisins {$W_{-N},\dots, W_{-1}, W_1,\dots, W_N$} à partir du token central $W_0$.
 
-![image tirée d'un article sur la conversion des mots en vecteurs](../../../../../translated_images/example-algorithms-for-converting-words-to-vectors.fbe9207a726922f6f0f5de66427e8a6eda63809356114e28fb1fa5f4a83ebda7.fr.png)
+![image tirée d'un article sur la conversion des mots en vecteurs](../../../../../translated_images/fr/example-algorithms-for-converting-words-to-vectors.fbe9207a726922f6.webp)
 
 > Image tirée de [cet article](https://arxiv.org/pdf/1301.3781.pdf)
 

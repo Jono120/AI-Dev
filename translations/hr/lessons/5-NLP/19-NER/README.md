@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "6522312ff835796ca34136a9462fafb2",
-  "translation_date": "2025-09-23T14:59:00+00:00",
-  "source_file": "lessons/5-NLP/19-NER/README.md",
-  "language_code": "hr"
-}
--->
 # Prepoznavanje imenovanih entiteta
 
 Do sada smo se uglavnom fokusirali na jedan NLP zadatak - klasifikaciju. Međutim, postoje i drugi NLP zadaci koji se mogu ostvariti pomoću neuronskih mreža. Jedan od tih zadataka je **[Prepoznavanje imenovanih entiteta](https://wikipedia.org/wiki/Named-entity_recognition)** (NER), koji se bavi prepoznavanjem specifičnih entiteta unutar teksta, poput mjesta, imena osoba, vremenskih intervala, kemijskih formula i slično.
@@ -17,7 +8,7 @@ Do sada smo se uglavnom fokusirali na jedan NLP zadatak - klasifikaciju. Međuti
 
 Pretpostavimo da želite razviti chatbot za prirodni jezik, sličan Amazon Alexi ili Google Asistentu. Inteligentni chatboti funkcioniraju tako da *razumiju* što korisnik želi, koristeći klasifikaciju teksta na ulaznoj rečenici. Rezultat te klasifikacije je takozvani **intencija**, koja određuje što chatbot treba učiniti.
 
-<img alt="Bot NER" src="images/bot-ner.png" width="50%"/>
+<img alt="Bot NER" src="../../../../../translated_images/hr/bot-ner.4b09235dbb0ad275.webp" width="50%"/>
 
 > Slika autora
 
@@ -56,7 +47,7 @@ novorođenčeta | O
 
 Budući da trebamo izgraditi jedno-na-jedno korespondenciju između tokena i klasa, možemo trenirati desno **mnogostruko-na-mnogostruko** neuronski mrežni model iz ove slike:
 
-![Slika koja prikazuje uobičajene obrasce rekurentnih neuronskih mreža.](../../../../../translated_images/unreasonable-effectiveness-of-rnn.541ead816778f42dce6c42d8a56c184729aa2378d059b851be4ce12b993033df.hr.jpg)
+![Slika koja prikazuje uobičajene obrasce rekurentnih neuronskih mreža.](../../../../../translated_images/hr/unreasonable-effectiveness-of-rnn.541ead816778f42d.webp)
 
 > *Slika iz [ovog blog posta](http://karpathy.github.io/2015/05/21/rnn-effectiveness/) autora [Andreja Karpathyja](http://karpathy.github.io/). NER modeli za klasifikaciju tokena odgovaraju desno najudaljenijoj arhitekturi mreže na ovoj slici.*
 

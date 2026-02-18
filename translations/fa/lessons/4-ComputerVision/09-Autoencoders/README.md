@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "1b8d9e1b3a6f1daa864b1ff3dfc3076d",
-  "translation_date": "2025-09-23T12:29:05+00:00",
-  "source_file": "lessons/4-ComputerVision/09-Autoencoders/README.md",
-  "language_code": "fa"
-}
--->
 # اتوانکودرها
 
 هنگام آموزش شبکه‌های عصبی کانولوشنی (CNN)، یکی از مشکلات این است که به داده‌های برچسب‌دار زیادی نیاز داریم. در مورد دسته‌بندی تصاویر، باید تصاویر را به کلاس‌های مختلف تقسیم کنیم که این کار به صورت دستی انجام می‌شود.
@@ -19,7 +10,7 @@ CO_OP_TRANSLATOR_METADATA:
 
 از آنجا که ما اتوانکودر را برای گرفتن بیشترین اطلاعات از تصویر اصلی برای بازسازی دقیق آموزش می‌دهیم، شبکه تلاش می‌کند بهترین **تعبیر** از تصاویر ورودی را پیدا کند تا معنا را ثبت کند.
 
-![نمودار اتوانکودر](../../../../../translated_images/autoencoder_schema.5e6fc9ad98a5eb6197f3513cf3baf4dfbe1389a6ae74daebda64de9f1c99f142.fa.jpg)
+![نمودار اتوانکودر](../../../../../translated_images/fa/autoencoder_schema.5e6fc9ad98a5eb61.webp)
 
 > تصویر از [وبلاگ Keras](https://blog.keras.io/building-autoencoders-in-keras.html)
 
@@ -46,7 +37,7 @@ VAE نوعی اتوانکودر است که یاد می‌گیرد *توزیع �
 * یک بردار `sample` از توزیع N(z<sub>mean</sub>,exp(z<sub>log\_sigma</sub>)) نمونه‌برداری می‌کنیم
 * رمزگشا تلاش می‌کند تصویر اصلی را با استفاده از `sample` به عنوان بردار ورودی رمزگشایی کند
 
-<img src="images/vae.png" width="50%">
+<img src="../../../../../translated_images/fa/vae.464c465a5b6a9e25.webp" width="50%">
 
 > تصویر از [این پست وبلاگ](https://ijdykeman.github.io/ml/2016/12/21/cvae.html) توسط Isaak Dykeman
 
@@ -57,13 +48,13 @@ VAE نوعی اتوانکودر است که یاد می‌گیرد *توزیع �
 
 یکی از مزایای مهم VAE‌ها این است که به ما امکان می‌دهند تصاویر جدید را نسبتاً آسان تولید کنیم، زیرا می‌دانیم از کدام توزیع برای نمونه‌برداری بردارهای نهفته استفاده کنیم. به عنوان مثال، اگر VAE را با بردار نهفته دو‌بعدی روی MNIST آموزش دهیم، می‌توانیم اجزای بردار نهفته را تغییر دهیم تا ارقام مختلفی به دست آوریم:
 
-<img alt="vaemnist" src="images/vaemnist.png" width="50%"/>
+<img alt="vaemnist" src="../../../../../translated_images/fa/vaemnist.cab9e602dc08dc50.webp" width="50%"/>
 
 > تصویر توسط [Dmitry Soshnikov](http://soshnikov.com)
 
 مشاهده کنید که چگونه تصاویر به یکدیگر تبدیل می‌شوند، زیرا شروع به گرفتن بردارهای نهفته از بخش‌های مختلف فضای پارامتر نهفته می‌کنیم. همچنین می‌توانیم این فضا را در دو‌بعد مصورسازی کنیم:
 
-<img alt="vaemnist cluster" src="images/vaemnist-diag.png" width="50%"/> 
+<img alt="vaemnist cluster" src="../../../../../translated_images/fa/vaemnist-diag.694315f775d5d666.webp" width="50%"/> 
 
 > تصویر توسط [Dmitry Soshnikov](http://soshnikov.com)
 

@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "ddd216f558a255260a9374008002c971",
-  "translation_date": "2025-11-18T18:29:12+00:00",
-  "source_file": "lessons/3-NeuralNetworks/05-Frameworks/README.md",
-  "language_code": "pcm"
-}
--->
 # Neural Network Frameworks
 
 As we don learn already, to fit train neural networks well well, we need do two things:
@@ -58,7 +49,7 @@ Overfitting na very important concept for machine learning, and e dey very impor
 
 Look this problem of trying to fit 5 dots (we dey represent with `x` for the graphs below):
 
-![linear](../../../../../translated_images/overfit1.f24b71c6f652e59e6bed7245ffbeaecc3ba320e16e2221f6832b432052c4da43.pcm.jpg) | ![overfit](../../../../../translated_images/overfit2.131f5800ae10ca5e41d12a411f5f705d9ee38b1b10916f284b787028dd55cc1c.pcm.jpg)
+![linear](../../../../../translated_images/pcm/overfit1.f24b71c6f652e59e.webp) | ![overfit](../../../../../translated_images/pcm/overfit2.131f5800ae10ca5e.webp)
 -------------------------|--------------------------
 **Linear model, 2 parameters** | **Non-linear model, 7 parameters**
 Training error = 5.3 | Training error = 0
@@ -79,7 +70,7 @@ E dey very important to balance the model strength (number of parameters) and th
 
 As you see for the graph above, overfitting fit show when training error dey very low, but validation error dey high. Normally, during training, both training and validation errors go dey reduce, but at one point validation error fit stop to reduce and start to increase. This na sign of overfitting, and e mean say we suppose stop training for that point (or at least save the model snapshot).
 
-![overfitting](../../../../../translated_images/Overfitting.408ad91cd90b4371d0a81f4287e1409c359751adeb1ae450332af50e84f08c3e.pcm.png)
+![overfitting](../../../../../translated_images/pcm/Overfitting.408ad91cd90b4371.webp)
 
 ## How to prevent overfitting
 

@@ -1,23 +1,14 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "53faab85adfcebd8c10bcd71dc2fa557",
-  "translation_date": "2025-09-23T13:06:43+00:00",
-  "source_file": "lessons/4-ComputerVision/07-ConvNets/CNN_Architectures.md",
-  "language_code": "ja"
-}
--->
 # よく知られたCNNアーキテクチャ
 
 ### VGG-16
 
 VGG-16は、2014年にImageNetのトップ5分類で92.7%の精度を達成したネットワークです。そのレイヤー構造は以下の通りです：
 
-![ImageNet Layers](../../../../../translated_images/vgg-16-arch1.d901a5583b3a51baeaab3e768567d921e5d54befa46e1e642616c5458c934028.ja.jpg)
+![ImageNet Layers](../../../../../translated_images/ja/vgg-16-arch1.d901a5583b3a51ba.webp)
 
 ご覧の通り、VGGは従来のピラミッド型アーキテクチャを採用しており、畳み込み層とプーリング層が順番に並んでいます。
 
-![ImageNet Pyramid](../../../../../translated_images/vgg-16-arch.64ff2137f50dd49fdaa786e3f3a975b3f22615efd13efb19c5d22f12e01451a1.ja.jpg)
+![ImageNet Pyramid](../../../../../translated_images/ja/vgg-16-arch.64ff2137f50dd49f.webp)
 
 > 画像出典: [Researchgate](https://www.researchgate.net/figure/Vgg16-model-structure-To-get-the-VGG-NIN-model-we-replace-the-2-nd-4-th-6-th-7-th_fig2_335194493)
 
@@ -25,7 +16,7 @@ VGG-16は、2014年にImageNetのトップ5分類で92.7%の精度を達成し�
 
 ResNetは、2015年にMicrosoft Researchによって提案されたモデル群です。ResNetの主なアイデアは**残差ブロック**を使用することです：
 
-<img src="images/resnet-block.png" width="300"/>
+<img src="../../../../../translated_images/ja/resnet-block.aba4ccbcc0944434.webp" width="300"/>
 
 > 画像出典: [この論文](https://arxiv.org/pdf/1512.03385.pdf)
 
@@ -37,7 +28,7 @@ ResNetは、2015年にMicrosoft Researchによって提案されたモデル群�
 
 Google Inceptionアーキテクチャはこのアイデアをさらに進化させ、各ネットワーク層を複数の異なる経路の組み合わせとして構築します：
 
-<img src="images/inception.png" width="400"/>
+<img src="../../../../../translated_images/ja/inception.a6605b85bcbc6f52.webp" width="400"/>
 
 > 画像出典: [Researchgate](https://www.researchgate.net/figure/Inception-module-with-dimension-reductions-left-and-schema-for-Inception-ResNet-v1_fig2_355547454)
 

@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "7ba20f54a5bfcd6521018cdfb17c7c57",
-  "translation_date": "2025-09-23T09:12:27+00:00",
-  "source_file": "lessons/5-NLP/15-LanguageModeling/README.md",
-  "language_code": "th"
-}
--->
 # การสร้างแบบจำลองภาษา
 
 การฝังความหมาย เช่น Word2Vec และ GloVe ถือเป็นก้าวแรกในการสร้าง **แบบจำลองภาษา** - การสร้างโมเดลที่สามารถ *เข้าใจ* (หรือ *แสดงออก*) ลักษณะของภาษาได้ในบางรูปแบบ
@@ -23,7 +14,7 @@ CO_OP_TRANSLATOR_METADATA:
 * **Continuous Bag-of-Words** (CBoW) โดยการทำนายโทเค็นตรงกลาง $W_0$ ในลำดับโทเค็น $W_{-N}$, ..., $W_N$
 * **Skip-gram** โดยการทำนายชุดโทเค็นที่อยู่ใกล้เคียง {$W_{-N},\dots, W_{-1}, W_1,\dots, W_N$} จากโทเค็นตรงกลาง $W_0$
 
-![ภาพจากงานวิจัยเกี่ยวกับการแปลงคำเป็นเวกเตอร์](../../../../../translated_images/example-algorithms-for-converting-words-to-vectors.fbe9207a726922f6f0f5de66427e8a6eda63809356114e28fb1fa5f4a83ebda7.th.png)
+![ภาพจากงานวิจัยเกี่ยวกับการแปลงคำเป็นเวกเตอร์](../../../../../translated_images/th/example-algorithms-for-converting-words-to-vectors.fbe9207a726922f6.webp)
 
 > ภาพจาก [งานวิจัยนี้](https://arxiv.org/pdf/1301.3781.pdf)
 

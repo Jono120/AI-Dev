@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "ddd216f558a255260a9374008002c971",
-  "translation_date": "2025-09-23T07:22:09+00:00",
-  "source_file": "lessons/3-NeuralNetworks/05-Frameworks/README.md",
-  "language_code": "ne"
-}
--->
 # न्युरल नेटवर्क फ्रेमवर्कहरू
 
 जसरी हामीले पहिले नै सिकेका छौं, न्युरल नेटवर्कलाई प्रभावकारी रूपमा प्रशिक्षण गर्न हामीले दुई कुराहरू गर्नुपर्छ:
@@ -58,7 +49,7 @@ High-level API| [Keras](IntroKeras.ipynb) | *PyTorch Lightning*
 
 तलको समस्या विचार गर्नुहोस् जहाँ ५ बिन्दुहरूलाई (ग्राफमा `x` ले प्रतिनिधित्व गरिएको) अनुमान गर्नुपर्छ:
 
-![linear](../../../../../translated_images/overfit1.f24b71c6f652e59e6bed7245ffbeaecc3ba320e16e2221f6832b432052c4da43.ne.jpg) | ![overfit](../../../../../translated_images/overfit2.131f5800ae10ca5e41d12a411f5f705d9ee38b1b10916f284b787028dd55cc1c.ne.jpg)
+![linear](../../../../../translated_images/ne/overfit1.f24b71c6f652e59e.webp) | ![overfit](../../../../../translated_images/ne/overfit2.131f5800ae10ca5e.webp)
 -------------------------|--------------------------
 **रेखीय मोडेल, २ प्यारामिटरहरू** | **गैर-रेखीय मोडेल, ७ प्यारामिटरहरू**
 प्रशिक्षण त्रुटि = ५.३ | प्रशिक्षण त्रुटि = ०
@@ -79,7 +70,7 @@ High-level API| [Keras](IntroKeras.ipynb) | *PyTorch Lightning*
 
 जसरी माथिको ग्राफबाट देख्न सकिन्छ, ओभरफिटिङलाई धेरै कम प्रशिक्षण त्रुटि र उच्च मान्यकरण त्रुटिबाट पत्ता लगाउन सकिन्छ। सामान्यतया प्रशिक्षणको क्रममा हामीले प्रशिक्षण र मान्यकरण त्रुटिहरू दुवै घट्न थालेको देख्छौं, र त्यसपछि कुनै बिन्दुमा मान्यकरण त्रुटि घट्न रोक्न सक्छ र बढ्न थाल्न सक्छ। यो ओभरफिटिङको संकेत हुनेछ, र यो बिन्दुमा प्रशिक्षण रोक्नुपर्छ (वा कम्तीमा मोडेलको स्न्यापशट लिनुपर्छ) भन्ने सूचक हुनेछ।
 
-![overfitting](../../../../../translated_images/Overfitting.408ad91cd90b4371d0a81f4287e1409c359751adeb1ae450332af50e84f08c3e.ne.png)
+![overfitting](../../../../../translated_images/ne/Overfitting.408ad91cd90b4371.webp)
 
 ## ओभरफिटिङ रोक्न कसरी
 

@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "7ba20f54a5bfcd6521018cdfb17c7c57",
-  "translation_date": "2025-09-23T09:34:48+00:00",
-  "source_file": "lessons/5-NLP/15-LanguageModeling/README.md",
-  "language_code": "da"
-}
--->
 # Sproglig Modellering
 
 Semantiske indlejringer, såsom Word2Vec og GloVe, er faktisk et første skridt mod **sproglig modellering** - at skabe modeller, der på en eller anden måde *forstår* (eller *repræsenterer*) sprogets natur.
@@ -23,7 +14,7 @@ I vores tidligere eksempler brugte vi fortrænede semantiske indlejringer, men d
 * **Continuous Bag-of-Words** (CBoW), hvor vi forudsiger det midterste token $W_0$ i en token-sekvens $W_{-N}$, ..., $W_N$.
 * **Skip-gram**, hvor vi forudsiger et sæt af nabotokens {$W_{-N},\dots, W_{-1}, W_1,\dots, W_N$} ud fra det midterste token $W_0$.
 
-![billede fra artikel om konvertering af ord til vektorer](../../../../../translated_images/example-algorithms-for-converting-words-to-vectors.fbe9207a726922f6f0f5de66427e8a6eda63809356114e28fb1fa5f4a83ebda7.da.png)
+![billede fra artikel om konvertering af ord til vektorer](../../../../../translated_images/da/example-algorithms-for-converting-words-to-vectors.fbe9207a726922f6.webp)
 
 > Billede fra [denne artikel](https://arxiv.org/pdf/1301.3781.pdf)
 

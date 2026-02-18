@@ -1,15 +1,6 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "5fef1a0b22498d7188959e2a2cb08af7",
-  "translation_date": "2025-11-25T20:36:30+00:00",
-  "source_file": "lessons/README.md",
-  "language_code": "kn"
-}
--->
 # ಅವಲೋಕನ
 
-![ಡೂಡಲ್‌ನಲ್ಲಿ ಅವಲೋಕನ](../../../translated_images/ai-overview.0857791951d19500d0ef8b803d77110c738dcafc52306e6d68724742cd4af167.kn.png)
+![ಡೂಡಲ್‌ನಲ್ಲಿ ಅವಲೋಕನ](../../../translated_images/kn/ai-overview.0857791951d19500.webp)
 
 > ಸ್ಕೆಚ್‌ನೋಟ್ [ಟೊಮೊಮಿ ಇಮುರು](https://twitter.com/girlie_mac) ಅವರಿಂದ
 

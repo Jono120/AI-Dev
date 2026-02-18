@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "e2273cc150380a5e191903cea858f021",
-  "translation_date": "2025-09-23T09:47:08+00:00",
-  "source_file": "lessons/5-NLP/16-RNN/README.md",
-  "language_code": "no"
-}
--->
 # Rekurrente Nevrale Nettverk
 
 ## [Quiz før forelesning](https://ff-quizzes.netlify.app/en/ai/quiz/31)
@@ -15,7 +6,7 @@ I tidligere seksjoner har vi brukt rike semantiske representasjoner av tekst og 
 
 For å fange betydningen av tekstsekvenser, må vi bruke en annen nevralt nettverksarkitektur, som kalles et **rekurrent nevralt nettverk**, eller RNN. I RNN sender vi setningen vår gjennom nettverket én symbol om gangen, og nettverket produserer en **tilstand**, som vi deretter sender tilbake til nettverket sammen med neste symbol.
 
-![RNN](../../../../../translated_images/rnn.27f5c29c53d727b546ad3961637a267f0fe9ec5ab01f2a26a853c92fcefbb574.no.png)
+![RNN](../../../../../translated_images/no/rnn.27f5c29c53d727b5.webp)
 
 > Bilde av forfatteren
 
@@ -31,7 +22,7 @@ La oss se hvordan en enkel RNN-celle er organisert. Den aksepterer den forrige t
 
 En enkel RNN-celle har to vektmatriser inni: én transformerer et input-symbol (la oss kalle den W), og en annen transformerer en input-tilstand (H). I dette tilfellet beregnes output fra nettverket som &sigma;(W&times;X<sub>i</sub>+H&times;S<sub>i-1</sub>+b), der &sigma; er aktiveringsfunksjonen og b er en ekstra bias.
 
-<img alt="RNN Cell Anatomy" src="images/rnn-anatomy.png" width="50%"/>
+<img alt="RNN Cell Anatomy" src="../../../../../translated_images/no/rnn-anatomy.79ee3f3920b3294b.webp" width="50%"/>
 
 > Bilde av forfatteren
 
@@ -61,7 +52,7 @@ Vi har diskutert rekurrente nettverk som opererer i én retning, fra begynnelsen
 
 Et rekurrent nettverk, enten én-retning eller bidireksjonalt, fanger visse mønstre innen en sekvens og kan lagre dem i en tilstandsvektor eller sende dem til output. Som med konvolusjonsnettverk, kan vi bygge et annet rekurrent lag oppå det første for å fange høyere nivå mønstre og bygge fra lavnivå mønstre som er hentet ut av det første laget. Dette leder oss til begrepet **flerlags RNN**, som består av to eller flere rekurrente nettverk, der output fra det forrige laget sendes til neste lag som input.
 
-![Bilde som viser et flerlags long-short-term-memory-RNN](../../../../../translated_images/multi-layer-lstm.dd975e29bb2a59fe58b429db833932d734c81f211cad2783797a9608984acb8c.no.jpg)
+![Bilde som viser et flerlags long-short-term-memory-RNN](../../../../../translated_images/no/multi-layer-lstm.dd975e29bb2a59fe.webp)
 
 *Bilde fra [denne fantastiske posten](https://towardsdatascience.com/from-a-lstm-cell-to-a-multilayer-lstm-network-with-pytorch-2899eb5696f3) av Fernando López*
 

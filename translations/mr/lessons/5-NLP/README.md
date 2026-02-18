@@ -1,15 +1,6 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "8ef02a9318257ea140ed3ed74442096d",
-  "translation_date": "2025-08-26T08:04:03+00:00",
-  "source_file": "lessons/5-NLP/README.md",
-  "language_code": "mr"
-}
--->
 # नैसर्गिक भाषा प्रक्रिया
 
-![NLP कार्यांचा संक्षेप एका चित्रात](../../../../translated_images/ai-nlp.b22dcb8ca4707ceaee8576db1c5f4089c8cac2f454e9e03ea554f07fda4556b8.mr.png)
+![NLP कार्यांचा संक्षेप एका चित्रात](../../../../translated_images/mr/ai-nlp.b22dcb8ca4707cea.webp)
 
 या विभागात, आपण **नैसर्गिक भाषा प्रक्रिया (NLP)** संबंधित कार्ये हाताळण्यासाठी न्यूरल नेटवर्क्सचा वापर कसा करायचा यावर लक्ष केंद्रित करू. अनेक NLP समस्या आहेत ज्या संगणकांनी सोडवाव्या अशी आपली इच्छा आहे:
 

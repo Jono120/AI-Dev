@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "ddd216f558a255260a9374008002c971",
-  "translation_date": "2025-09-23T09:22:45+00:00",
-  "source_file": "lessons/3-NeuralNetworks/05-Frameworks/README.md",
-  "language_code": "sv"
-}
--->
 # Ramverk för neurala nätverk
 
 Som vi redan har lärt oss, för att kunna träna neurala nätverk effektivt behöver vi göra två saker:
@@ -58,7 +49,7 @@ Efter att ha bemästrat ramverken, låt oss repetera begreppet överanpassning.
 
 Tänk på följande problem med att approximera 5 punkter (representerade av `x` på graferna nedan):
 
-![linear](../../../../../translated_images/overfit1.f24b71c6f652e59e6bed7245ffbeaecc3ba320e16e2221f6832b432052c4da43.sv.jpg) | ![overfit](../../../../../translated_images/overfit2.131f5800ae10ca5e41d12a411f5f705d9ee38b1b10916f284b787028dd55cc1c.sv.jpg)
+![linear](../../../../../translated_images/sv/overfit1.f24b71c6f652e59e.webp) | ![overfit](../../../../../translated_images/sv/overfit2.131f5800ae10ca5e.webp)
 -------------------------|--------------------------
 **Linjär modell, 2 parametrar** | **Icke-linjär modell, 7 parametrar**
 Träningsfel = 5.3 | Träningsfel = 0
@@ -79,7 +70,7 @@ Det är mycket viktigt att hitta en korrekt balans mellan modellens komplexitet 
 
 Som du kan se från grafen ovan kan överanpassning upptäckas genom ett mycket lågt träningsfel och ett högt valideringsfel. Normalt under träning ser vi både tränings- och valideringsfel minska, och sedan vid någon punkt kan valideringsfelet sluta minska och börja öka. Detta är ett tecken på överanpassning och en indikation på att vi förmodligen bör sluta träna vid denna punkt (eller åtminstone spara en ögonblicksbild av modellen).
 
-![overfitting](../../../../../translated_images/Overfitting.408ad91cd90b4371d0a81f4287e1409c359751adeb1ae450332af50e84f08c3e.sv.png)
+![overfitting](../../../../../translated_images/sv/Overfitting.408ad91cd90b4371.webp)
 
 ## Hur man förhindrar överanpassning
 

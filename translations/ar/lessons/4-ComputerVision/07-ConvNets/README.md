@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "a560d5b845962cf33dc102266e409568",
-  "translation_date": "2025-09-23T06:31:43+00:00",
-  "source_file": "lessons/4-ComputerVision/07-ConvNets/README.md",
-  "language_code": "ar"
-}
--->
 # الشبكات العصبية الالتفافية
 
 لقد رأينا سابقًا أن الشبكات العصبية جيدة جدًا في التعامل مع الصور، وحتى الشبكة العصبية ذات الطبقة الواحدة قادرة على التعرف على الأرقام المكتوبة بخط اليد من مجموعة بيانات MNIST بدقة معقولة. ومع ذلك، فإن مجموعة بيانات MNIST مميزة جدًا، حيث يتمركز جميع الأرقام داخل الصورة، مما يجعل المهمة أسهل.
@@ -17,14 +8,14 @@ CO_OP_TRANSLATOR_METADATA:
 
 لاستخراج الأنماط، سنستخدم مفهوم **المرشحات الالتفافية**. كما تعلم، يتم تمثيل الصورة بمصفوفة ثنائية الأبعاد، أو موتر ثلاثي الأبعاد مع عمق اللون. تطبيق المرشح يعني أننا نأخذ مصفوفة **نواة المرشح** صغيرة نسبيًا، ولكل بكسل في الصورة الأصلية نحسب المتوسط المرجح مع النقاط المجاورة. يمكننا تصور هذا كنافذة صغيرة تنزلق عبر الصورة بأكملها، وتقوم بتوسيط جميع البكسلات وفقًا للأوزان في مصفوفة نواة المرشح.
 
-![مرشح الحافة العمودية](../../../../../translated_images/filter-vert.b7148390ca0bc356ddc7e55555d2481819c1e86ddde9dce4db5e71a69d6f887f.ar.png) | ![مرشح الحافة الأفقية](../../../../../translated_images/filter-horiz.59b80ed4feb946efbe201a7fe3ca95abb3364e266e6fd90820cb893b4d3a6dda.ar.png)
+![مرشح الحافة العمودية](../../../../../translated_images/ar/filter-vert.b7148390ca0bc356.webp) | ![مرشح الحافة الأفقية](../../../../../translated_images/ar/filter-horiz.59b80ed4feb946ef.webp)
 ----|----
 
 > الصورة بواسطة ديمتري سوشنيكوف
 
 على سبيل المثال، إذا قمنا بتطبيق مرشحات الحافة العمودية والحافة الأفقية بحجم 3x3 على أرقام MNIST، يمكننا الحصول على تمييز (مثل القيم العالية) حيث توجد حواف عمودية وأفقية في الصورة الأصلية. وبالتالي يمكن استخدام هذين المرشحين "للبحث عن" الحواف. وبالمثل، يمكننا تصميم مرشحات مختلفة للبحث عن أنماط منخفضة المستوى أخرى:
 
-<img src="images/lmfilters.jpg" width="500" align="center"/>
+<img src="../../../../../translated_images/ar/lmfilters.ea9e4868a82cf74c.webp" width="500" align="center"/>
 
 > صورة [مجموعة مرشحات ليونغ-مالك](https://www.robots.ox.ac.uk/~vgg/research/texclass/filters.html)
 
@@ -38,7 +29,7 @@ CO_OP_TRANSLATOR_METADATA:
 * يمكننا تصميم الشبكة بطريقة تجعل المرشحات تُدرَّب تلقائيًا
 * يمكننا استخدام نفس النهج للعثور على الأنماط في الميزات عالية المستوى، وليس فقط في الصورة الأصلية. وبالتالي، تعمل عملية استخراج الميزات في الشبكات العصبية الالتفافية على تسلسل هرمي للميزات، بدءًا من تركيبات البكسلات منخفضة المستوى، وصولًا إلى تركيبات أعلى مستوى لأجزاء الصورة.
 
-![استخراج الميزات الهرمي](../../../../../translated_images/FeatureExtractionCNN.d9b456cbdae7cb643fde3032b81b2940e3cf8be842e29afac3f482725ba7f95c.ar.png)
+![استخراج الميزات الهرمي](../../../../../translated_images/ar/FeatureExtractionCNN.d9b456cbdae7cb64.webp)
 
 > صورة من [ورقة بحثية بواسطة هيسلوب-لينش](https://www.semanticscholar.org/paper/Computer-vision-based-pedestrian-trajectory-Hislop-Lynch/26e6f74853fc9bbb7487b06dc2cf095d36c9021d)، بناءً على [أبحاثهم](https://dl.acm.org/doi/abs/10.1145/1553374.1553453)
 
@@ -55,9 +46,9 @@ CO_OP_TRANSLATOR_METADATA:
 
 كمثال، دعونا نلقي نظرة على بنية VGG-16، وهي شبكة حققت دقة 92.7% في تصنيف ImageNet ضمن أفضل 5 في عام 2014:
 
-![طبقات ImageNet](../../../../../translated_images/vgg-16-arch1.d901a5583b3a51baeaab3e768567d921e5d54befa46e1e642616c5458c934028.ar.jpg)
+![طبقات ImageNet](../../../../../translated_images/ar/vgg-16-arch1.d901a5583b3a51ba.webp)
 
-![هرم ImageNet](../../../../../translated_images/vgg-16-arch.64ff2137f50dd49fdaa786e3f3a975b3f22615efd13efb19c5d22f12e01451a1.ar.jpg)
+![هرم ImageNet](../../../../../translated_images/ar/vgg-16-arch.64ff2137f50dd49f.webp)
 
 > صورة من [Researchgate](https://www.researchgate.net/figure/Vgg16-model-structure-To-get-the-VGG-NIN-model-we-replace-the-2-nd-4-th-6-th-7-th_fig2_335194493)
 

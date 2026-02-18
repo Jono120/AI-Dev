@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "b70fcf7fcee862990f848c679090943f",
-  "translation_date": "2025-10-03T14:56:10+00:00",
-  "source_file": "lessons/4-ComputerVision/07-ConvNets/lab/README.md",
-  "language_code": "vi"
-}
--->
 # Phân Loại Khuôn Mặt Thú Cưng
 
 Bài tập thực hành từ [Chương trình AI cho Người Mới Bắt Đầu](https://github.com/microsoft/ai-for-beginners).
@@ -21,7 +12,7 @@ Bạn cần huấn luyện một mạng nơ-ron tích chập để phân loại 
 
 Chúng ta sẽ sử dụng [Bộ Dữ Liệu Thú Cưng Oxford-IIIT](https://www.robots.ox.ac.uk/~vgg/data/pets/), bộ dữ liệu này chứa hình ảnh của 37 giống loài chó và mèo khác nhau.
 
-![Bộ dữ liệu chúng ta sẽ làm việc](../../../../../../translated_images/data.50b2a9d5484bdbf0f52f5765b381cec9efe2bd296a98f007f90bedb6ac67f2a8.vi.png)
+![Bộ dữ liệu chúng ta sẽ làm việc](../../../../../../translated_images/vi/data.50b2a9d5484bdbf0.webp)
 
 Để tải bộ dữ liệu, sử dụng đoạn mã sau:
 

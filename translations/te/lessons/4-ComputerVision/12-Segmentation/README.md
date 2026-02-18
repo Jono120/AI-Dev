@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "6568aaae7e0e4afed4b5d74b5b223700",
-  "translation_date": "2025-11-25T22:37:14+00:00",
-  "source_file": "lessons/4-ComputerVision/12-Segmentation/README.md",
-  "language_code": "te"
-}
--->
 # విభజన
 
 మేము ముందుగా ఆబ్జెక్ట్ డిటెక్షన్ గురించి నేర్చుకున్నాము, ఇది చిత్రంలో ఆబ్జెక్టులను వారి *బౌండింగ్ బాక్స్‌లు*ను అంచనా వేయడం ద్వారా గుర్తించడానికి సహాయపడుతుంది. అయితే, కొన్ని పనుల కోసం మాకు కేవలం బౌండింగ్ బాక్స్‌లు మాత్రమే కాకుండా, మరింత ఖచ్చితమైన ఆబ్జెక్ట్ స్థానాన్ని కూడా అవసరం. ఈ పనిని **విభజన** అంటారు.
@@ -20,7 +11,7 @@ CO_OP_TRANSLATOR_METADATA:
 
 ఇన్స్టాన్స్ విభజనలో, ఈ గొర్రెలు వేర్వేరు ఆబ్జెక్టులు, కానీ సెమాంటిక్ విభజనలో అన్ని గొర్రెలు ఒకే వర్గంగా చూపబడతాయి.
 
-<img src="../../../../../translated_images/instance_vs_semantic.eee9812bebf8cd450cdef4caaed2d4dd9c6c3b671e0c65d8aef312758ebb7b89.te.jpeg" width="50%">
+<img src="../../../../../translated_images/te/instance_vs_semantic.eee9812bebf8cd45.webp" width="50%">
 
 > చిత్రం [ఈ బ్లాగ్ పోస్ట్](https://nirmalamurali.medium.com/image-classification-vs-semantic-segmentation-vs-instance-segmentation-625c33a08d50) నుండి
 
@@ -29,7 +20,7 @@ CO_OP_TRANSLATOR_METADATA:
 * **ఎంకోడర్** ఇన్‌పుట్ చిత్రంలో నుండి ఫీచర్లను తీసుకుంటుంది
 * **డీకోడర్** ఆ ఫీచర్లను **మాస్క్ చిత్రం**గా మార్చుతుంది, అదే పరిమాణం మరియు వర్గాల సంఖ్యకు సరిపోయే ఛానెల్‌లతో.
 
-<img src="../../../../../translated_images/segm.92442f2cb42ff4fa650fee858a3a02f55cf46825d9602115130e9e95a52a8526.te.png" width="80%">
+<img src="../../../../../translated_images/te/segm.92442f2cb42ff4fa.webp" width="80%">
 
 > చిత్రం [ఈ ప్రచురణ](https://arxiv.org/pdf/2001.05566.pdf) నుండి
 
@@ -43,7 +34,7 @@ CO_OP_TRANSLATOR_METADATA:
 
 > ✅ ఈ సాంకేతికత ఈ రకమైన వైద్య చిత్రీకరణకు చాలా అనుకూలంగా ఉంటుంది, కానీ మీరు మరే ఇతర వాస్తవ ప్రపంచ అనువర్తనాలను ఊహించగలరా?
 
-<img alt="navi" src="../../../../../translated_images/navi.2f20b727910110ea593fa03a2491f2ba1b25c62c97b33c692bcf01917a1f333f.te.png"/>
+<img alt="navi" src="../../../../../translated_images/te/navi.2f20b727910110ea.webp"/>
 
 > చిత్రం PH<sup>2</sup> డేటాబేస్ నుండి
 

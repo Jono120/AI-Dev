@@ -1,23 +1,14 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "53faab85adfcebd8c10bcd71dc2fa557",
-  "translation_date": "2025-09-23T07:45:44+00:00",
-  "source_file": "lessons/4-ComputerVision/07-ConvNets/CNN_Architectures.md",
-  "language_code": "bn"
-}
--->
 # পরিচিত CNN আর্কিটেকচার
 
 ### VGG-16
 
 VGG-16 একটি নেটওয়ার্ক যা ২০১৪ সালে ImageNet টপ-৫ শ্রেণীবিন্যাসে ৯২.৭% সঠিকতা অর্জন করেছিল। এর স্তর কাঠামো নিম্নরূপ:
 
-![ImageNet Layers](../../../../../translated_images/vgg-16-arch1.d901a5583b3a51baeaab3e768567d921e5d54befa46e1e642616c5458c934028.bn.jpg)
+![ImageNet Layers](../../../../../translated_images/bn/vgg-16-arch1.d901a5583b3a51ba.webp)
 
 যেমনটি আপনি দেখতে পাচ্ছেন, VGG একটি ঐতিহ্যবাহী পিরামিড আর্কিটেকচার অনুসরণ করে, যা কনভোলিউশন-পুলিং স্তরের একটি ক্রম।
 
-![ImageNet Pyramid](../../../../../translated_images/vgg-16-arch.64ff2137f50dd49fdaa786e3f3a975b3f22615efd13efb19c5d22f12e01451a1.bn.jpg)
+![ImageNet Pyramid](../../../../../translated_images/bn/vgg-16-arch.64ff2137f50dd49f.webp)
 
 > ছবি [Researchgate](https://www.researchgate.net/figure/Vgg16-model-structure-To-get-the-VGG-NIN-model-we-replace-the-2-nd-4-th-6-th-7-th_fig2_335194493) থেকে
 
@@ -25,7 +16,7 @@ VGG-16 একটি নেটওয়ার্ক যা ২০১৪ সাল
 
 ResNet হলো Microsoft Research দ্বারা ২০১৫ সালে প্রস্তাবিত মডেলের একটি পরিবার। ResNet-এর মূল ধারণা হলো **residual blocks** ব্যবহার করা:
 
-<img src="images/resnet-block.png" width="300"/>
+<img src="../../../../../translated_images/bn/resnet-block.aba4ccbcc0944434.webp" width="300"/>
 
 > ছবি [এই গবেষণাপত্র](https://arxiv.org/pdf/1512.03385.pdf) থেকে
 
@@ -37,7 +28,7 @@ Identity pass-through ব্যবহারের কারণ হলো আম�
 
 Google Inception আর্কিটেকচার এই ধারণাকে আরও এক ধাপ এগিয়ে নিয়ে যায় এবং প্রতিটি নেটওয়ার্ক স্তরকে বিভিন্ন পথের সমন্বয়ে তৈরি করে:
 
-<img src="images/inception.png" width="400"/>
+<img src="../../../../../translated_images/bn/inception.a6605b85bcbc6f52.webp" width="400"/>
 
 > ছবি [Researchgate](https://www.researchgate.net/figure/Inception-module-with-dimension-reductions-left-and-schema-for-Inception-ResNet-v1_fig2_355547454) থেকে
 

@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "51be6057374d01d70e07dd5ec88ebc0d",
-  "translation_date": "2025-09-23T07:38:50+00:00",
-  "source_file": "lessons/5-NLP/17-GenerativeNetworks/README.md",
-  "language_code": "pa"
-}
--->
 # ਜਨਰੇਟਿਵ ਨੈਟਵਰਕਸ
 
 ## [ਪ੍ਰੀ-ਲੈਕਚਰ ਕਵਿਜ਼](https://ff-quizzes.netlify.app/en/ai/quiz/33)
@@ -19,7 +10,7 @@ CO_OP_TRANSLATOR_METADATA:
 
 ਇਸ ਨਾਲ ਵੱਖ-ਵੱਖ ਨਿਊਰਲ ਆਰਕੀਟੈਕਚਰਸ ਦੀ ਆਗਿਆ ਮਿਲਦੀ ਹੈ ਜੋ ਹੇਠਾਂ ਦਿੱਤੇ ਚਿੱਤਰ ਵਿੱਚ ਦਿਖਾਏ ਗਏ ਹਨ:
 
-![ਚਿੱਤਰ ਜੋ ਆਮ ਰੀਕਰਨਟ ਨਿਊਰਲ ਨੈਟਵਰਕ ਪੈਟਰਨ ਦਿਖਾਉਂਦਾ ਹੈ।](../../../../../translated_images/unreasonable-effectiveness-of-rnn.541ead816778f42dce6c42d8a56c184729aa2378d059b851be4ce12b993033df.pa.jpg)
+![ਚਿੱਤਰ ਜੋ ਆਮ ਰੀਕਰਨਟ ਨਿਊਰਲ ਨੈਟਵਰਕ ਪੈਟਰਨ ਦਿਖਾਉਂਦਾ ਹੈ।](../../../../../translated_images/pa/unreasonable-effectiveness-of-rnn.541ead816778f42d.webp)
 
 > ਚਿੱਤਰ ਬਲੌਗ ਪੋਸਟ [Unreasonable Effectiveness of Recurrent Neural Networks](http://karpathy.github.io/2015/05/21/rnn-effectiveness/) ਤੋਂ [Andrej Karpaty](http://karpathy.github.io/) ਦੁਆਰਾ
 
@@ -32,11 +23,11 @@ CO_OP_TRANSLATOR_METADATA:
 
 ਅਸੀਂ ਇਸ RNN ਨੂੰ ਕਦਮ-ਦਰ-ਕਦਮ ਟੈਕਸਟ ਪੈਦਾ ਕਰਨ ਲਈ ਟ੍ਰੇਨ ਕਰਾਂਗੇ। ਹਰ ਕਦਮ 'ਤੇ, ਅਸੀਂ `nchars` ਦੀ ਲੰਬਾਈ ਦੇ ਕਿਰਦਾਰਾਂ ਦੇ ਕ੍ਰਮ ਨੂੰ ਲਵਾਂਗੇ, ਅਤੇ ਨੈਟਵਰਕ ਤੋਂ ਹਰ ਇਨਪੁਟ ਕਿਰਦਾਰ ਲਈ ਅਗਲਾ ਆਉਟਪੁਟ ਕਿਰਦਾਰ ਪੈਦਾ ਕਰਨ ਲਈ ਕਹਾਂਗੇ:
 
-![ਚਿੱਤਰ ਜੋ 'HELLO' ਸ਼ਬਦ ਦੇ RNN ਜਨਰੇਸ਼ਨ ਦਾ ਉਦਾਹਰਨ ਦਿਖਾਉਂਦਾ ਹੈ।](../../../../../translated_images/rnn-generate.56c54afb52f9781d63a7c16ea9c1b86cb70e6e1eae6a742b56b7b37468576b17.pa.png)
+![ਚਿੱਤਰ ਜੋ 'HELLO' ਸ਼ਬਦ ਦੇ RNN ਜਨਰੇਸ਼ਨ ਦਾ ਉਦਾਹਰਨ ਦਿਖਾਉਂਦਾ ਹੈ।](../../../../../translated_images/pa/rnn-generate.56c54afb52f9781d.webp)
 
 ਜਦੋਂ ਟੈਕਸਟ ਪੈਦਾ ਕਰਨਾ (ਇਨਫਰੈਂਸ ਦੌਰਾਨ), ਅਸੀਂ ਕੁਝ **ਪ੍ਰਾਂਪਟ** ਨਾਲ ਸ਼ੁਰੂ ਕਰਦੇ ਹਾਂ, ਜਿਸਨੂੰ RNN ਸੈਲਸ ਵਿੱਚੋਂ ਪਾਸ ਕੀਤਾ ਜਾਂਦਾ ਹੈ ਤਾਂ ਜੋ ਇਸਦਾ ਮੱਧਵਰਤੀ ਸਟੇਟ ਪੈਦਾ ਕੀਤਾ ਜਾ ਸਕੇ, ਅਤੇ ਫਿਰ ਇਸ ਸਟੇਟ ਤੋਂ ਜਨਰੇਸ਼ਨ ਸ਼ੁਰੂ ਹੁੰਦੀ ਹੈ। ਅਸੀਂ ਇੱਕ ਸਮੇਂ ਵਿੱਚ ਇੱਕ ਕਿਰਦਾਰ ਪੈਦਾ ਕਰਦੇ ਹਾਂ, ਅਤੇ ਸਟੇਟ ਅਤੇ ਪੈਦਾ ਕੀਤੇ ਕਿਰਦਾਰ ਨੂੰ ਅਗਲੇ RNN ਸੈਲ ਵਿੱਚ ਪਾਸ ਕਰਦੇ ਹਾਂ ਤਾਂ ਜੋ ਅਗਲਾ ਪੈਦਾ ਕੀਤਾ ਜਾ ਸਕੇ, ਜਦੋਂ ਤੱਕ ਅਸੀਂ ਕਾਫ਼ੀ ਕਿਰਦਾਰ ਪੈਦਾ ਨਹੀਂ ਕਰ ਲੈਂਦੇ।
 
-<img src="images/rnn-generate-inf.png" width="60%"/>
+<img src="../../../../../translated_images/pa/rnn-generate-inf.5168dc65e0370eea.webp" width="60%"/>
 
 > ਚਿੱਤਰ ਲੇਖਕ ਦੁਆਰਾ
 

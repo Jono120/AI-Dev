@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "feeca98225cb420afc89415f24f63d92",
-  "translation_date": "2025-09-23T13:52:01+00:00",
-  "source_file": "lessons/4-ComputerVision/06-IntroCV/README.md",
-  "language_code": "pl"
-}
--->
 # Wprowadzenie do wizji komputerowej
 
 [Wizja komputerowa](https://wikipedia.org/wiki/Computer_vision) to dziedzina, której celem jest umożliwienie komputerom uzyskania wysokopoziomowego zrozumienia obrazów cyfrowych. Jest to dość szeroka definicja, ponieważ *zrozumienie* może oznaczać wiele różnych rzeczy, takich jak znalezienie obiektu na zdjęciu (**detekcja obiektów**), zrozumienie, co się dzieje (**detekcja zdarzeń**), opisanie obrazu w formie tekstu czy rekonstrukcja sceny w 3D. Istnieją również specjalne zadania związane z obrazami ludzi: szacowanie wieku i emocji, detekcja i identyfikacja twarzy oraz estymacja pozycji 3D, by wymienić tylko kilka.
@@ -73,14 +64,14 @@ W naszym [OpenCV Notebook](OpenCV.ipynb) przedstawiamy kilka przykładów, kiedy
 
 * **Wstępne przetwarzanie fotografii książki Braille'a**. Skupiamy się na tym, jak można użyć progowania, detekcji cech, transformacji perspektywicznej i manipulacji NumPy, aby oddzielić pojedyncze symbole Braille'a do dalszej klasyfikacji przez sieć neuronową.
 
-![Obraz Braille'a](../../../../../translated_images/braille.341962ff76b1bd7044409371d3de09ced5028132aef97344ea4b7468c1208126.pl.jpeg) | ![Obraz Braille'a po przetworzeniu](../../../../../translated_images/braille-result.46530fea020b03c76aac532d7d6eeef7f6fb35b55b1001cd21627907dabef3ed.pl.png) | ![Symbole Braille'a](../../../../../translated_images/braille-symbols.0159185ab69d533909dc4d7d26a1971b51401c6a80eb3a5584f250ea880af88b.pl.png)
+![Obraz Braille'a](../../../../../translated_images/pl/braille.341962ff76b1bd70.webp) | ![Obraz Braille'a po przetworzeniu](../../../../../translated_images/pl/braille-result.46530fea020b03c7.webp) | ![Symbole Braille'a](../../../../../translated_images/pl/braille-symbols.0159185ab69d5339.webp)
 ----|-----|-----
 
 > Obraz z [OpenCV.ipynb](OpenCV.ipynb)
 
 * **Detekcja ruchu w wideo za pomocą różnicy klatek**. Jeśli kamera jest nieruchoma, klatki z jej strumienia powinny być dość podobne do siebie. Ponieważ klatki są reprezentowane jako tablice, wystarczy odjąć te tablice dla dwóch kolejnych klatek, aby uzyskać różnicę pikseli, która powinna być niska dla statycznych klatek, a wyższa, gdy w obrazie występuje znaczący ruch.
 
-![Obraz klatek wideo i różnic klatek](../../../../../translated_images/frame-difference.706f805491a0883c938e16447bf5eb2f7d69e812c7f743cbe7d7c7645168f81f.pl.png)
+![Obraz klatek wideo i różnic klatek](../../../../../translated_images/pl/frame-difference.706f805491a0883c.webp)
 
 > Obraz z [OpenCV.ipynb](OpenCV.ipynb)
 
@@ -89,7 +80,7 @@ W naszym [OpenCV Notebook](OpenCV.ipynb) przedstawiamy kilka przykładów, kiedy
    - **Gęsty optyczny przepływ** oblicza pole wektorowe, które pokazuje, gdzie każdy piksel się porusza.
    - **Rzadki optyczny przepływ** opiera się na wybraniu charakterystycznych cech obrazu (np. krawędzi) i budowaniu ich trajektorii od klatki do klatki.
 
-![Obraz optycznego przepływu](../../../../../translated_images/optical.1f4a94464579a83a10784f3c07fe7228514714b96782edf50e70ccd59d2d8c4f.pl.png)
+![Obraz optycznego przepływu](../../../../../translated_images/pl/optical.1f4a94464579a83a.webp)
 
 > Obraz z [OpenCV.ipynb](OpenCV.ipynb)
 
@@ -115,7 +106,7 @@ Przeczytaj więcej o optycznym przepływie [w tym świetnym tutorialu](https://l
 
 W tym laboratorium nagrasz wideo z prostymi gestami, a Twoim celem będzie wyodrębnienie ruchów góra/dół/lewo/prawo za pomocą optycznego przepływu.
 
-<img src="images/palm-movement.png" width="30%" alt="Klatka ruchu dłoni"/>
+<img src="../../../../../translated_images/pl/palm-movement.341495f0e9c47da3.webp" width="30%" alt="Klatka ruchu dłoni"/>
 
 ---
 

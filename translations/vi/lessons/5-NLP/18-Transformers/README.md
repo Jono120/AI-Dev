@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "f335dfcb4a993920504c387973a36957",
-  "translation_date": "2025-09-23T10:34:39+00:00",
-  "source_file": "lessons/5-NLP/18-Transformers/README.md",
-  "language_code": "vi"
-}
--->
 # Cơ chế Attention và Transformers
 
 ## [Câu hỏi trước bài giảng](https://ff-quizzes.netlify.app/en/ai/quiz/35)
@@ -20,13 +11,13 @@ Với RNNs, sequence-to-sequence được thực hiện bởi hai mạng hồi q
 
 **Cơ chế Attention** cung cấp một cách để cân nhắc tác động ngữ cảnh của từng vector đầu vào lên từng dự đoán đầu ra của RNN. Cách nó được thực hiện là tạo các đường tắt giữa các trạng thái trung gian của RNN đầu vào và RNN đầu ra. Theo cách này, khi tạo ra ký hiệu đầu ra y<sub>t</sub>, chúng ta sẽ xem xét tất cả các trạng thái ẩn đầu vào h<sub>i</sub>, với các hệ số trọng số khác nhau &alpha;<sub>t,i</sub>.
 
-![Hình ảnh mô tả mô hình encoder/decoder với lớp attention cộng](../../../../../translated_images/encoder-decoder-attention.7a726296894fb567aa2898c94b17b3289087f6705c11907df8301df9e5eeb3de.vi.png)
+![Hình ảnh mô tả mô hình encoder/decoder với lớp attention cộng](../../../../../translated_images/vi/encoder-decoder-attention.7a726296894fb567.webp)
 
 > Mô hình encoder-decoder với cơ chế attention cộng trong [Bahdanau et al., 2015](https://arxiv.org/pdf/1409.0473.pdf), trích dẫn từ [bài viết blog này](https://lilianweng.github.io/lil-log/2018/06/24/attention-attention.html)
 
 Ma trận attention {&alpha;<sub>i,j</sub>} sẽ biểu thị mức độ mà các từ đầu vào nhất định ảnh hưởng đến việc tạo ra một từ cụ thể trong chuỗi đầu ra. Dưới đây là một ví dụ về ma trận như vậy:
 
-![Hình ảnh hiển thị một mẫu căn chỉnh được tìm thấy bởi RNNsearch-50, lấy từ Bahdanau - arviz.org](../../../../../translated_images/bahdanau-fig3.09ba2d37f202a6af11de6c82d2d197830ba5f4528d9ea430eb65fd3a75065973.vi.png)
+![Hình ảnh hiển thị một mẫu căn chỉnh được tìm thấy bởi RNNsearch-50, lấy từ Bahdanau - arviz.org](../../../../../translated_images/vi/bahdanau-fig3.09ba2d37f202a6af.webp)
 
 > Hình từ [Bahdanau et al., 2015](https://arxiv.org/pdf/1409.0473.pdf) (Hình 3)
 
@@ -56,7 +47,7 @@ Một trong những ý tưởng chính đằng sau transformers là tránh tính
 * Nhúng có thể huấn luyện, tương tự như nhúng token. Đây là cách tiếp cận chúng ta xem xét ở đây. Chúng ta áp dụng các lớp nhúng lên cả token và vị trí của chúng, tạo ra các vector nhúng có cùng kích thước, sau đó cộng chúng lại với nhau.
 * Hàm mã hóa vị trí cố định, như được đề xuất trong bài báo gốc.
 
-<img src="images/pos-embedding.png" width="50%"/>
+<img src="../../../../../translated_images/vi/pos-embedding.e41ce9b6cf6078af.webp" width="50%"/>
 
 > Hình ảnh của tác giả
 
@@ -66,7 +57,7 @@ Kết quả mà chúng ta nhận được với nhúng vị trí là nhúng cả
 
 Tiếp theo, chúng ta cần nắm bắt một số mẫu trong chuỗi của mình. Để làm điều này, transformers sử dụng cơ chế **self-attention**, về cơ bản là attention được áp dụng cho cùng một chuỗi làm đầu vào và đầu ra. Việc áp dụng self-attention cho phép chúng ta xem xét **ngữ cảnh** trong câu và xem các từ nào có liên quan đến nhau. Ví dụ, nó cho phép chúng ta thấy các từ nào được tham chiếu bởi các đại từ như *it*, và cũng xem xét ngữ cảnh:
 
-![](../../../../../translated_images/CoreferenceResolution.861924d6d384a7d68d8d0039d06a71a151f18a796b8b1330239d3590bd4947eb.vi.png)
+![](../../../../../translated_images/vi/CoreferenceResolution.861924d6d384a7d6.webp)
 
 > Hình ảnh từ [Blog của Google](https://research.googleblog.com/2017/08/transformer-novel-neural-network.html)
 
@@ -91,7 +82,7 @@ Vì mỗi vị trí đầu vào được ánh xạ độc lập đến mỗi v�
 
 **BERT** (Bidirectional Encoder Representations from Transformers) là một mạng transformer nhiều lớp rất lớn với 12 lớp cho *BERT-base*, và 24 lớp cho *BERT-large*. Mô hình này được huấn luyện trước trên một tập dữ liệu văn bản lớn (WikiPedia + sách) bằng cách huấn luyện không giám sát (dự đoán các từ bị che trong câu). Trong quá trình huấn luyện trước, mô hình hấp thụ mức độ hiểu biết ngôn ngữ đáng kể, sau đó có thể được tận dụng với các tập dữ liệu khác bằng cách tinh chỉnh. Quá trình này được gọi là **học chuyển giao**.
 
-![Hình ảnh từ http://jalammar.github.io/illustrated-bert/](../../../../../translated_images/jalammarBERT-language-modeling-masked-lm.34f113ea5fec4362e39ee4381aab7cad06b5465a0b5f053a0f2aa05fbe14e746.vi.png)
+![Hình ảnh từ http://jalammar.github.io/illustrated-bert/](../../../../../translated_images/vi/jalammarBERT-language-modeling-masked-lm.34f113ea5fec4362.webp)
 
 > Hình ảnh [nguồn](http://jalammar.github.io/illustrated-bert/)
 

@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "feeca98225cb420afc89415f24f63d92",
-  "translation_date": "2025-09-23T14:15:40+00:00",
-  "source_file": "lessons/4-ComputerVision/06-IntroCV/README.md",
-  "language_code": "ro"
-}
--->
 # Introducere în Viziunea Computațională
 
 [Viziunea Computațională](https://wikipedia.org/wiki/Computer_vision) este o disciplină al cărei scop este să permită calculatoarelor să obțină o înțelegere de nivel înalt a imaginilor digitale. Aceasta este o definiție destul de largă, deoarece *înțelegerea* poate însemna multe lucruri diferite, inclusiv identificarea unui obiect într-o imagine (**detectarea obiectelor**), înțelegerea a ceea ce se întâmplă (**detectarea evenimentelor**), descrierea unei imagini în text sau reconstruirea unei scene în 3D. Există, de asemenea, sarcini speciale legate de imaginile umane: estimarea vârstei și emoțiilor, detectarea și identificarea fețelor, și estimarea poziției 3D, printre altele.
@@ -73,14 +64,14 @@ De asemenea, poți folosi OpenCV pentru a încărca cadre video unul câte unul 
 
 * **Preprocesarea unei fotografii a unei cărți Braille**. Ne concentrăm pe modul în care putem utiliza thresholding, detectarea caracteristicilor, transformarea de perspectivă și manipulările NumPy pentru a separa simbolurile individuale Braille pentru clasificarea ulterioară de către o rețea neuronală.
 
-![Imagine Braille](../../../../../translated_images/braille.341962ff76b1bd7044409371d3de09ced5028132aef97344ea4b7468c1208126.ro.jpeg) | ![Imagine Braille Preprocesată](../../../../../translated_images/braille-result.46530fea020b03c76aac532d7d6eeef7f6fb35b55b1001cd21627907dabef3ed.ro.png) | ![Simboluri Braille](../../../../../translated_images/braille-symbols.0159185ab69d533909dc4d7d26a1971b51401c6a80eb3a5584f250ea880af88b.ro.png)
+![Imagine Braille](../../../../../translated_images/ro/braille.341962ff76b1bd70.webp) | ![Imagine Braille Preprocesată](../../../../../translated_images/ro/braille-result.46530fea020b03c7.webp) | ![Simboluri Braille](../../../../../translated_images/ro/braille-symbols.0159185ab69d5339.webp)
 ----|-----|-----
 
 > Imagine din [OpenCV.ipynb](OpenCV.ipynb)
 
 * **Detectarea mișcării în video folosind diferența dintre cadre**. Dacă camera este fixă, atunci cadrele din fluxul camerei ar trebui să fie destul de similare între ele. Deoarece cadrele sunt reprezentate ca matrice, doar prin scăderea acestor matrice pentru două cadre consecutive vom obține diferența de pixeli, care ar trebui să fie mică pentru cadre statice și să devină mai mare odată ce există o mișcare semnificativă în imagine.
 
-![Imagine a cadrelor video și diferențelor dintre cadre](../../../../../translated_images/frame-difference.706f805491a0883c938e16447bf5eb2f7d69e812c7f743cbe7d7c7645168f81f.ro.png)
+![Imagine a cadrelor video și diferențelor dintre cadre](../../../../../translated_images/ro/frame-difference.706f805491a0883c.webp)
 
 > Imagine din [OpenCV.ipynb](OpenCV.ipynb)
 
@@ -89,7 +80,7 @@ De asemenea, poți folosi OpenCV pentru a încărca cadre video unul câte unul 
    - **Flux Optic Dens** calculează câmpul vectorial care arată pentru fiecare pixel unde se mișcă.
    - **Flux Optic Rar** se bazează pe luarea unor caracteristici distinctive din imagine (de exemplu, margini) și construirea traiectoriei lor de la un cadru la altul.
 
-![Imagine a Fluxului Optic](../../../../../translated_images/optical.1f4a94464579a83a10784f3c07fe7228514714b96782edf50e70ccd59d2d8c4f.ro.png)
+![Imagine a Fluxului Optic](../../../../../translated_images/ro/optical.1f4a94464579a83a.webp)
 
 > Imagine din [OpenCV.ipynb](OpenCV.ipynb)
 
@@ -115,7 +106,7 @@ Citește mai multe despre fluxul optic [în acest tutorial excelent](https://lea
 
 În acest laborator, vei filma un video cu gesturi simple, iar scopul tău este să extragi mișcările sus/jos/stânga/dreapta folosind flux optic.
 
-<img src="images/palm-movement.png" width="30%" alt="Cadru Mișcare Palmă"/>
+<img src="../../../../../translated_images/ro/palm-movement.341495f0e9c47da3.webp" width="30%" alt="Cadru Mișcare Palmă"/>
 
 ---
 

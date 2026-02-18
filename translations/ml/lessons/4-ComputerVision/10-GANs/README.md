@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "0ff65b4da07b23697235de2beb2a3c25",
-  "translation_date": "2025-11-25T22:30:04+00:00",
-  "source_file": "lessons/4-ComputerVision/10-GANs/README.md",
-  "language_code": "ml"
-}
--->
 # ജനറേറ്റീവ് അഡ്വേഴ്സറിയൽ നെറ്റ്വർക്കുകൾ
 
 മുൻവകുപ്പിൽ, നാം **ജനറേറ്റീവ് മോഡലുകൾ** എന്നതിനെക്കുറിച്ച് പഠിച്ചു: പരിശീലന ഡാറ്റാസെറ്റിലുള്ള ചിത്രങ്ങളോട് സമാനമായ പുതിയ ചിത്രങ്ങൾ സൃഷ്ടിക്കാൻ കഴിയുന്ന മോഡലുകൾ. VAE ഒരു നല്ല ഉദാഹരണമായിരുന്നു.
@@ -17,7 +8,7 @@ CO_OP_TRANSLATOR_METADATA:
 
 GAN-ന്റെ പ്രധാന ആശയം രണ്ട് ന്യൂറൽ നെറ്റ്വർക്കുകൾ തമ്മിൽ പരസ്പരം മത്സരിച്ച് പരിശീലിക്കപ്പെടുക എന്നതാണ്:
 
-<img src="../../../../../translated_images/gan_architecture.8f3a5ab62b8d5d698a91f7668017d8e09b81c5d8e7cc99bdb23979d90a0c475e.ml.png" width="70%"/>
+<img src="../../../../../translated_images/ml/gan_architecture.8f3a5ab62b8d5d69.webp" width="70%"/>
 
 > ചിത്രം: [Dmitry Soshnikov](http://soshnikov.com)
 
@@ -41,7 +32,7 @@ CNN ഡിസ്ക്രിമിനേറ്റർ താഴെപ്പറയ
 
 > ✅ കോൺവല്യൂഷൻ ലെയർ ചിത്രം താണ്ടുന്ന ലീനിയർ ഫിൽട്ടറായതിനാൽ, ഡീകോൺവല്യൂഷൻ അടിസ്ഥാനപരമായി കോൺവല്യൂഷനോട് സമാനമാണ്, അതേ ലെയർ ലജിക് ഉപയോഗിച്ച് നടപ്പിലാക്കാം.
 
-<img src="../../../../../translated_images/gan_arch_detail.46b95fd366f8e543170264fe07e516683ac3e5bb699392c35449e99590a11063.ml.png" width="70%"/>
+<img src="../../../../../translated_images/ml/gan_arch_detail.46b95fd366f8e543.webp" width="70%"/>
 
 > ചിത്രം: [Dmitry Soshnikov](http://soshnikov.com)
 

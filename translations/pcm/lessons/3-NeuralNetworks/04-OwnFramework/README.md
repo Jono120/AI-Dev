@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "789d6c3fb6fc7948a470b33078a5983a",
-  "translation_date": "2025-11-18T18:27:00+00:00",
-  "source_file": "lessons/3-NeuralNetworks/04-OwnFramework/README.md",
-  "language_code": "pcm"
-}
--->
 # Introduction to Neural Networks. Multi-Layered Perceptron
 
 For di last section, you don learn about di simplest neural network model - one-layered perceptron, wey be linear two-class classification model.
@@ -65,7 +56,7 @@ Di gradient descent algorithm go still dey di same, but e go hard to calculate g
 
 Notice say di left-most part of all di expressions dey di same, so we fit calculate derivatives well starting from di loss function and go "backwards" through di computational graph. So di method of training multi-layered perceptron na **backpropagation**, or 'backprop'.
 
-<img alt="compute graph" src="../../../../../translated_images/ComputeGraphGrad.4626252c0de035075e5cd2b7f71b776d5e3e8f64f2dc472b4420d3fdfaf53ba8.pcm.png"/>
+<img alt="compute graph" src="../../../../../translated_images/pcm/ComputeGraphGrad.4626252c0de03507.webp"/>
 
 > TODO: image citation
 

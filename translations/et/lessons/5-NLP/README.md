@@ -1,15 +1,6 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "8ef02a9318257ea140ed3ed74442096d",
-  "translation_date": "2025-10-11T11:38:36+00:00",
-  "source_file": "lessons/5-NLP/README.md",
-  "language_code": "et"
-}
--->
 # Loodusliku keele töötlemine
 
-![NLP ülesannete kokkuvõte visandis](../../../../translated_images/ai-nlp.b22dcb8ca4707ceaee8576db1c5f4089c8cac2f454e9e03ea554f07fda4556b8.et.png)
+![NLP ülesannete kokkuvõte visandis](../../../../translated_images/et/ai-nlp.b22dcb8ca4707cea.webp)
 
 Selles osas keskendume **loodusliku keele töötlemise (NLP)** ülesannete lahendamisele, kasutades tehisnärvivõrke. On palju NLP probleeme, mida soovime, et arvutid suudaksid lahendada:
 

@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "b70fcf7fcee862990f848c679090943f",
-  "translation_date": "2025-11-25T22:42:24+00:00",
-  "source_file": "lessons/4-ComputerVision/07-ConvNets/lab/README.md",
-  "language_code": "ml"
-}
--->
 # മൃഗങ്ങളുടെ മുഖങ്ങളുടെ വർഗ്ഗീകരണം
 
 [AI for Beginners Curriculum](https://github.com/microsoft/ai-for-beginners) ലെ ലാബ് അസൈൻമെന്റ്.
@@ -21,7 +12,7 @@ CO_OP_TRANSLATOR_METADATA:
 
 നാം ഉപയോഗിക്കുന്നത് [Oxford-IIIT Pet Dataset](https://www.robots.ox.ac.uk/~vgg/data/pets/) ആണ്, ഇതിൽ 37 വ്യത്യസ്ത നായയും പൂച്ചയും ജാതികളുടെ ചിത്രങ്ങൾ ഉൾപ്പെടുന്നു.
 
-![നാം കൈകാര്യം ചെയ്യാൻ പോകുന്ന ഡാറ്റാസെറ്റ്](../../../../../../translated_images/data.50b2a9d5484bdbf0f52f5765b381cec9efe2bd296a98f007f90bedb6ac67f2a8.ml.png)
+![നാം കൈകാര്യം ചെയ്യാൻ പോകുന്ന ഡാറ്റാസെറ്റ്](../../../../../../translated_images/ml/data.50b2a9d5484bdbf0.webp)
 
 ഡാറ്റാസെറ്റ് ഡൗൺലോഡ് ചെയ്യാൻ, ഈ കോഡ് സ്നിപ്പെറ്റ് ഉപയോഗിക്കുക:
 

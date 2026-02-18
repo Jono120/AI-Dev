@@ -1,15 +1,6 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "f57e8aa46141fd220b16ffed8f11aec7",
-  "translation_date": "2025-11-18T22:17:54+00:00",
-  "source_file": "lessons/1-Intro/README.md",
-  "language_code": "ta"
-}
--->
 # AI அறிமுகம்
 
-![AI அறிமுகத்தின் சுருக்கம் ஒரு டூடிலில்](../../../../translated_images/ai-intro.bf28d1ac4235881c096f0ffdb320ba4102940eafcca4e9d7a55a03914361f8f3.ta.png)
+![AI அறிமுகத்தின் சுருக்கம் ஒரு டூடிலில்](../../../../translated_images/ta/ai-intro.bf28d1ac4235881c.webp)
 
 > [Tomomi Imura](https://twitter.com/girlie_mac) இன் ஸ்கெட்ச் நோட்
 
@@ -19,7 +10,7 @@ CO_OP_TRANSLATOR_METADATA:
 
 முதலில், கணினிகளை [Charles Babbage](https://en.wikipedia.org/wiki/Charles_Babbage) எண் கணக்கீடுகளை ஒரு நன்கு வரையறுக்கப்பட்ட செயல்முறை - ஒரு ஆல்கொரிதம் - மூலம் செயல்படுத்த உருவாக்கினார். 19ஆம் நூற்றாண்டில் முன்மாதிரியாக உருவாக்கப்பட்ட கணினி மாடலின் அடிப்படையில், நவீன கணினிகள் மிகவும் மேம்பட்டவை என்றாலும், கட்டுப்படுத்தப்பட்ட கணக்கீடுகளின் அடிப்படையில் செயல்படுகின்றன. எனவே, ஒரு குறிப்பிட்ட இலக்கை அடைய தேவையான செயல்முறைகளை நன்கு அறிந்தால், கணினியை ஒரு செயல்பாட்டிற்கு நிரலிட முடியும்.
 
-![ஒரு நபரின் புகைப்படம்](../../../../translated_images/dsh_age.d212a30d4e54fb5f68b94a624aad64bc086124bcbbec9561ae5bd5da661e22d8.ta.png)
+![ஒரு நபரின் புகைப்படம்](../../../../translated_images/ta/dsh_age.d212a30d4e54fb5f.webp)
 
 > [Vickie Soshnikova](http://twitter.com/vickievalerie) இன் புகைப்படம்
 
@@ -45,7 +36,7 @@ CO_OP_TRANSLATOR_METADATA:
 
 **[Intelligence](https://en.wikipedia.org/wiki/Intelligence)** என்ற சொல்லைச் சிக்கலாகக் கருதும்போது, இந்த சொல்லுக்கு தெளிவான வரையறை இல்லை என்பது ஒரு பிரச்சனையாகும். அறிவு **மூலதன சிந்தனை** அல்லது **சுய விழிப்புணர்வு** உடன் தொடர்புடையது என்று ஒருவர் வாதிடலாம், ஆனால் அதை சரியாக வரையறுக்க முடியாது.
 
-![ஒரு பூனையின் புகைப்படம்](../../../../translated_images/photo-cat.8c8e8fb760ffe45725c5b9f6b0d954e9bf114475c01c55adf0303982851b7eae.ta.jpg)
+![ஒரு பூனையின் புகைப்படம்](../../../../translated_images/ta/photo-cat.8c8e8fb760ffe457.webp)
 
 > [Amber Kipp](https://unsplash.com/@sadmax) இன் Unsplash புகைப்படம் [Photo](https://unsplash.com/photos/75715CVEJhI)
 
@@ -97,13 +88,13 @@ AGI பற்றி பேசும்போது, ​​நாம் உண்
 
 > | ML பற்றி என்ன?         |      |
 > |--------------|-----------|
-> | சில data அடிப்படையில் ஒரு பிரச்சனையைத் தீர்க்க computer learning அடிப்படையில் Artificial Intelligence இன் ஒரு பகுதி **Machine Learning** என்று அழைக்கப்படுகிறது. இந்த course இல் classical machine learning ஐ நாம் பரிசீலிக்க மாட்டோம் - [Machine Learning for Beginners](http://aka.ms/ml-beginners) curriculum ஐப் பார்க்கவும். |   ![ML for Beginners](../../../../translated_images/ml-for-beginners.9e4fed176fd5817d7d1f7d358302515186579cbf09b2a6c5bd8092b345da7f22.ta.png)    |
+> | சில data அடிப்படையில் ஒரு பிரச்சனையைத் தீர்க்க computer learning அடிப்படையில் Artificial Intelligence இன் ஒரு பகுதி **Machine Learning** என்று அழைக்கப்படுகிறது. இந்த course இல் classical machine learning ஐ நாம் பரிசீலிக்க மாட்டோம் - [Machine Learning for Beginners](http://aka.ms/ml-beginners) curriculum ஐப் பார்க்கவும். |   ![ML for Beginners](../../../../translated_images/ta/ml-for-beginners.9e4fed176fd5817d.webp)    |
 
 ## AI இன் சுருக்கமான வரலாறு
 
 Artificial Intelligence 20ஆம் நூற்றாண்டின் நடுப்பகுதியில் ஒரு துறையாக தொடங்கப்பட்டது. ஆரம்பத்தில், symbolic reasoning ஒரு முக்கியமான approach ஆக இருந்தது, மேலும் இது expert systems போன்ற சில முக்கியமான வெற்றிகளை உருவாக்கியது – குறிப்பிட்ட பிரச்சனை துறைகளில் ஒரு நிபுணராக செயல்படக்கூடிய computer programs. இருப்பினும், இந்த approach நன்றாக scale ஆகாது என்பது விரைவில் தெளிவாகியது. ஒரு நிபுணரிடமிருந்து அறிவை எடுப்பது, அதை கணினியில் பிரதிநிதித்துவப்படுத்துவது மற்றும் அந்த knowledgebase ஐ துல்லியமாக வைத்திருப்பது மிகவும் சிக்கலான task ஆகும், மேலும் பல சந்தர்ப்பங்களில் நடைமுறைக்கு மிகவும் செலவாகும். இது 1970களில் [AI Winter](https://en.wikipedia.org/wiki/AI_winter) என அழைக்கப்படும் நிலைக்கு வழிவகுத்தது.
 
-<img alt="AI வரலாற்றின் சுருக்கம்" src="../../../../translated_images/history-of-ai.7e83efa70b537f5a0264357672b0884cf3a220fbafe35c65d70b2c3805f7bf5e.ta.png" width="70%"/>
+<img alt="AI வரலாற்றின் சுருக்கம்" src="../../../../translated_images/ta/history-of-ai.7e83efa70b537f5a.webp" width="70%"/>
 
 > [Dmitry Soshnikov](http://soshnikov.com) இன் படம்
 
@@ -123,7 +114,7 @@ Artificial Intelligence 20ஆம் நூற்றாண்டின் நட�
 * Cortana, Siri அல்லது Google Assistant போன்ற modern assistants அனைத்தும் hybrid systems ஆகும், அவை speech ஐ text ஆக மாற்ற neural networks ஐ பயன்படுத்துகின்றன மற்றும் நம் intent ஐ recognize செய்கின்றன, பின்னர் தேவையான actions ஐ செய்ய reasoning அல்லது explicit algorithms ஐ employ செய்கின்றன.
 * எதிர்காலத்தில், dialogue ஐ தானாகவே handle செய்ய ஒரு complete neural-based model ஐ எதிர்பார்க்கலாம். சமீபத்திய GPT மற்றும் [Turing-NLG](https://www.microsoft.com/research/blog/turing-nlg-a-17-billion-parameter-language-model-by-microsoft) neural networks குடும்பம் இதில் சிறந்த வெற்றியை காட்டுகின்றன.
 
-<img alt="Turing Test இன் evolution" src="../../../../translated_images/turing-test-evol.4184696701293ead6de6e6441a659c62f0b119b342456987f531005f43be0b6d.ta.png" width="70%"/>
+<img alt="Turing Test இன் evolution" src="../../../../translated_images/ta/turing-test-evol.4184696701293ead.webp" width="70%"/>
 > படம்: Dmitry Soshnikov, [புகைப்படம்](https://unsplash.com/photos/r8LmVbUKgns): [Marina Abrosimova](https://unsplash.com/@abrosimova_marina_foto), Unsplash
 
 ## சமீபத்திய AI ஆராய்ச்சி

@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "f335dfcb4a993920504c387973a36957",
-  "translation_date": "2025-09-23T10:03:21+00:00",
-  "source_file": "lessons/5-NLP/18-Transformers/README.md",
-  "language_code": "fi"
-}
--->
 # Huomiomekanismit ja Transformerit
 
 ## [Ennakkokysely](https://ff-quizzes.netlify.app/en/ai/quiz/35)
@@ -20,13 +11,13 @@ RNN:ien avulla sekvenssi-sekvenssi toteutetaan kahdella toistuvalla verkolla, jo
 
 **Huomiomekanismit** tarjoavat tavan painottaa kunkin syötevektorin kontekstuaalista vaikutusta RNN:n kunkin ennusteen kohdalla. Tämä toteutetaan luomalla oikoteitä syötteen RNN:n välitilojen ja tuloksen RNN:n välille. Näin ollen, kun tuotetaan ulostulosymbolia y<sub>t</sub>, otamme huomioon kaikki syötteen piilotilat h<sub>i</sub>, eri painokertoimilla &alpha;<sub>t,i</sub>.
 
-![Kuva, joka näyttää enkooderi/dekooderi-mallin additiivisella huomiokerroksella](../../../../../translated_images/encoder-decoder-attention.7a726296894fb567aa2898c94b17b3289087f6705c11907df8301df9e5eeb3de.fi.png)
+![Kuva, joka näyttää enkooderi/dekooderi-mallin additiivisella huomiokerroksella](../../../../../translated_images/fi/encoder-decoder-attention.7a726296894fb567.webp)
 
 > Enkooderi-dekooderi-malli additiivisella huomiomekanismilla [Bahdanau et al., 2015](https://arxiv.org/pdf/1409.0473.pdf), lainattu [tästä blogikirjoituksesta](https://lilianweng.github.io/lil-log/2018/06/24/attention-attention.html)
 
 Huomiomatriisi {&alpha;<sub>i,j</sub>} edustaa sitä, kuinka paljon tietyt syötteen sanat vaikuttavat tietyn sanan tuottamiseen ulostulosekvenssissä. Alla on esimerkki tällaisesta matriisista:
 
-![Kuva, joka näyttää esimerkkikohdistuksen RNNsearch-50:llä, otettu Bahdanau - arviz.org](../../../../../translated_images/bahdanau-fig3.09ba2d37f202a6af11de6c82d2d197830ba5f4528d9ea430eb65fd3a75065973.fi.png)
+![Kuva, joka näyttää esimerkkikohdistuksen RNNsearch-50:llä, otettu Bahdanau - arviz.org](../../../../../translated_images/fi/bahdanau-fig3.09ba2d37f202a6af.webp)
 
 > Kuva [Bahdanau et al., 2015](https://arxiv.org/pdf/1409.0473.pdf) (Fig.3)
 
@@ -56,7 +47,7 @@ Positionaalisen koodauksen idea on seuraava.
 * Koulutettava upotus, kuten token-upotus. Tämä on lähestymistapa, jota tarkastelemme tässä. Sovellamme upotuskerroksia sekä tokeneihin että niiden sijainteihin, jolloin saadaan samankokoiset upotusvektorit, jotka sitten lisätään yhteen.
 * Kiinteä positionaalinen koodausfunktio, kuten alkuperäisessä paperissa ehdotettiin.
 
-<img src="images/pos-embedding.png" width="50%"/>
+<img src="../../../../../translated_images/fi/pos-embedding.e41ce9b6cf6078af.webp" width="50%"/>
 
 > Kuva kirjoittajalta
 
@@ -66,7 +57,7 @@ Tuloksena saadaan positionaalinen upotus, joka upottaa sekä alkuperäisen token
 
 Seuraavaksi täytyy tunnistaa kuvioita sekvenssissä. Tätä varten transformerit käyttävät **itsehuomiomekanismia**, joka on käytännössä huomio, joka kohdistetaan samaan sekvenssiin syötteenä ja tuloksena. Itsehuomion soveltaminen mahdollistaa **kontekstin** huomioimisen lauseessa ja sen, mitkä sanat liittyvät toisiinsa. Esimerkiksi se auttaa tunnistamaan, mihin sanat kuten *se* viittaavat, ja ottaa kontekstin huomioon:
 
-![](../../../../../translated_images/CoreferenceResolution.861924d6d384a7d68d8d0039d06a71a151f18a796b8b1330239d3590bd4947eb.fi.png)
+![](../../../../../translated_images/fi/CoreferenceResolution.861924d6d384a7d6.webp)
 
 > Kuva [Googlen blogista](https://research.googleblog.com/2017/08/transformer-novel-neural-network.html)
 
@@ -91,7 +82,7 @@ Koska jokainen syötteen sijainti kartoitetaan itsenäisesti jokaiseen tuloksen 
 
 **BERT** (Bidirectional Encoder Representations from Transformers) on erittäin suuri monikerroksinen transformer-verkko, jossa on 12 kerrosta *BERT-base*-mallissa ja 24 kerrosta *BERT-large*-mallissa. Malli esikoulutetaan ensin suurella tekstikorpuksella (Wikipedia + kirjat) käyttämällä valvomatonta koulutusta (ennustamalla peitettyjä sanoja lauseessa). Esikoulutuksen aikana malli omaksuu merkittävän määrän kielen ymmärrystä, jota voidaan hyödyntää muilla aineistoilla hienosäädön avulla. Tätä prosessia kutsutaan **siirto-oppimiseksi**.
 
-![kuva osoitteesta http://jalammar.github.io/illustrated-bert/](../../../../../translated_images/jalammarBERT-language-modeling-masked-lm.34f113ea5fec4362e39ee4381aab7cad06b5465a0b5f053a0f2aa05fbe14e746.fi.png)
+![kuva osoitteesta http://jalammar.github.io/illustrated-bert/](../../../../../translated_images/fi/jalammarBERT-language-modeling-masked-lm.34f113ea5fec4362.webp)
 
 > Kuva [lähde](http://jalammar.github.io/illustrated-bert/)
 

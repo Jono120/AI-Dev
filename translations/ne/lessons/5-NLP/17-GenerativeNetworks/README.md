@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "51be6057374d01d70e07dd5ec88ebc0d",
-  "translation_date": "2025-09-23T07:22:39+00:00",
-  "source_file": "lessons/5-NLP/17-GenerativeNetworks/README.md",
-  "language_code": "ne"
-}
--->
 # जेनेरेटिभ नेटवर्कहरू
 
 ## [प्री-लेक्चर क्विज](https://ff-quizzes.netlify.app/en/ai/quiz/33)
@@ -19,7 +10,7 @@ Recurrent Neural Networks (RNNs) र तिनका गेटेड सेल �
 
 यसले विभिन्न न्युरल आर्किटेक्चरहरूलाई अनुमति दिन्छ जुन तलको चित्रमा देखाइएको छ:
 
-![सामान्य पुनरावर्ती न्युरल नेटवर्क ढाँचाहरू देखाउने चित्र।](../../../../../translated_images/unreasonable-effectiveness-of-rnn.541ead816778f42dce6c42d8a56c184729aa2378d059b851be4ce12b993033df.ne.jpg)
+![सामान्य पुनरावर्ती न्युरल नेटवर्क ढाँचाहरू देखाउने चित्र।](../../../../../translated_images/ne/unreasonable-effectiveness-of-rnn.541ead816778f42d.webp)
 
 > [Andrej Karpaty](http://karpathy.github.io/) द्वारा [Unreasonable Effectiveness of Recurrent Neural Networks](http://karpathy.github.io/2015/05/21/rnn-effectiveness/) ब्लग पोस्टबाट चित्र
 
@@ -32,11 +23,11 @@ Recurrent Neural Networks (RNNs) र तिनका गेटेड सेल �
 
 हामीले यो RNN लाई चरण-दर-चरण पाठ उत्पन्न गर्न तालिम दिनेछौं। प्रत्येक चरणमा, हामी `nchars` लम्बाइको क्यारेक्टरहरूको अनुक्रम लिनेछौं, र नेटवर्कलाई प्रत्येक इनपुट क्यारेक्टरको लागि अर्को आउटपुट क्यारेक्टर उत्पन्न गर्न सोध्नेछौं:
 
-![शब्द 'HELLO' को RNN उत्पादनको उदाहरण देखाउने चित्र।](../../../../../translated_images/rnn-generate.56c54afb52f9781d63a7c16ea9c1b86cb70e6e1eae6a742b56b7b37468576b17.ne.png)
+![शब्द 'HELLO' को RNN उत्पादनको उदाहरण देखाउने चित्र।](../../../../../translated_images/ne/rnn-generate.56c54afb52f9781d.webp)
 
 पाठ उत्पन्न गर्दा (इनफरेन्सको समयमा), हामी केही **प्रम्प्ट** बाट सुरु गर्छौं, जुन RNN सेलहरू मार्फत पास गरिन्छ यसको मध्यवर्ती अवस्था उत्पन्न गर्न, र त्यसपछि यो अवस्थाबाट उत्पादन सुरु हुन्छ। हामी एक पटकमा एक क्यारेक्टर उत्पन्न गर्छौं, र अर्को RNN सेलमा अवस्था र उत्पन्न क्यारेक्टर पास गर्छौं अर्को क्यारेक्टर उत्पन्न गर्न, जबसम्म हामी पर्याप्त क्यारेक्टरहरू उत्पन्न गर्दैनौं।
 
-<img src="images/rnn-generate-inf.png" width="60%"/>
+<img src="../../../../../translated_images/ne/rnn-generate-inf.5168dc65e0370eea.webp" width="60%"/>
 
 > लेखकद्वारा चित्र
 

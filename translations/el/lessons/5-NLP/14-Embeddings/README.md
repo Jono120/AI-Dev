@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "b708c9b85b833864c73c6281f1e6b96e",
-  "translation_date": "2025-09-23T09:00:44+00:00",
-  "source_file": "lessons/5-NLP/14-Embeddings/README.md",
-  "language_code": "el"
-}
--->
 # Ενσωματώσεις
 
 ## [Προ-διάλεξης κουίζ](https://ff-quizzes.netlify.app/en/ai/quiz/27)
@@ -19,7 +10,7 @@ CO_OP_TRANSLATOR_METADATA:
 
 Χρησιμοποιώντας ένα επίπεδο ενσωμάτωσης ως το πρώτο επίπεδο στο δίκτυο ταξινόμησής μας, μπορούμε να μεταβούμε από ένα μοντέλο bag-of-words σε ένα μοντέλο **embedding bag**, όπου πρώτα μετατρέπουμε κάθε λέξη στο κείμενό μας στην αντίστοιχη ενσωμάτωσή της και στη συνέχεια υπολογίζουμε κάποια συνάρτηση συσσωμάτωσης πάνω σε όλες αυτές τις ενσωματώσεις, όπως `sum`, `average` ή `max`.  
 
-![Εικόνα που δείχνει έναν ταξινομητή ενσωμάτωσης για πέντε λέξεις ακολουθίας.](../../../../../translated_images/embedding-classifier-example.b77f021a7ee67eeec8e68bfe11636c5b97d6eaa067515a129bfb1d0034b1ac5b.el.png)
+![Εικόνα που δείχνει έναν ταξινομητή ενσωμάτωσης για πέντε λέξεις ακολουθίας.](../../../../../translated_images/el/embedding-classifier-example.b77f021a7ee67eee.webp)
 
 > Εικόνα από τον συγγραφέα
 
@@ -40,7 +31,7 @@ CO_OP_TRANSLATOR_METADATA:
 
 Το CBoW είναι ταχύτερο, ενώ το skip-gram είναι πιο αργό, αλλά αποδίδει καλύτερα στην αναπαράσταση σπάνιων λέξεων.
 
-![Εικόνα που δείχνει τους αλγορίθμους CBoW και Skip-Gram για τη μετατροπή λέξεων σε διανύσματα.](../../../../../translated_images/example-algorithms-for-converting-words-to-vectors.fbe9207a726922f6f0f5de66427e8a6eda63809356114e28fb1fa5f4a83ebda7.el.png)
+![Εικόνα που δείχνει τους αλγορίθμους CBoW και Skip-Gram για τη μετατροπή λέξεων σε διανύσματα.](../../../../../translated_images/el/example-algorithms-for-converting-words-to-vectors.fbe9207a726922f6.webp)
 
 > Εικόνα από [αυτό το άρθρο](https://arxiv.org/pdf/1301.3781.pdf)
 

@@ -1,23 +1,14 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "53faab85adfcebd8c10bcd71dc2fa557",
-  "translation_date": "2025-11-25T22:04:54+00:00",
-  "source_file": "lessons/4-ComputerVision/07-ConvNets/CNN_Architectures.md",
-  "language_code": "kn"
-}
--->
 # ಪ್ರಸಿದ್ಧ CNN ವಾಸ್ತುಶಿಲ್ಪಗಳು
 
 ### VGG-16
 
 VGG-16 2014 ರಲ್ಲಿ ImageNet ಟಾಪ್-5 ವರ್ಗೀಕರಣದಲ್ಲಿ 92.7% ನಿಖರತೆಯನ್ನು ಸಾಧಿಸಿದ ನೆಟ್‌ವರ್ಕ್ ಆಗಿದೆ. ಇದರ ಲೇಯರ್ ರಚನೆ ಹೀಗಿದೆ:
 
-![ImageNet Layers](../../../../../translated_images/vgg-16-arch1.d901a5583b3a51baeaab3e768567d921e5d54befa46e1e642616c5458c934028.kn.jpg)
+![ImageNet Layers](../../../../../translated_images/kn/vgg-16-arch1.d901a5583b3a51ba.webp)
 
 ನೀವು ನೋಡಬಹುದು, VGG ಪರಂಪರাগত ಪಿರಮಿಡ್ ವಾಸ್ತುಶಿಲ್ಪವನ್ನು ಅನುಸರಿಸುತ್ತದೆ, ಇದು ಸಂಯೋಜನೆ-ಪೂಲಿಂಗ್ ಲೇಯರ್‌ಗಳ ಸರಣಿಯಾಗಿದೆ.
 
-![ImageNet Pyramid](../../../../../translated_images/vgg-16-arch.64ff2137f50dd49fdaa786e3f3a975b3f22615efd13efb19c5d22f12e01451a1.kn.jpg)
+![ImageNet Pyramid](../../../../../translated_images/kn/vgg-16-arch.64ff2137f50dd49f.webp)
 
 > ಚಿತ್ರ [Researchgate](https://www.researchgate.net/figure/Vgg16-model-structure-To-get-the-VGG-NIN-model-we-replace-the-2-nd-4-th-6-th-7-th_fig2_335194493) ನಿಂದ
 
@@ -25,7 +16,7 @@ VGG-16 2014 ರಲ್ಲಿ ImageNet ಟಾಪ್-5 ವರ್ಗೀಕರಣದ�
 
 ResNet 2015 ರಲ್ಲಿ Microsoft Research ಪ್ರಸ್ತಾಪಿಸಿದ ಮಾದರಿಗಳ ಕುಟುಂಬವಾಗಿದೆ. ResNet ನ ಮುಖ್ಯ ಆಲೋಚನೆ **residual blocks** ಬಳಕೆ:
 
-<img src="../../../../../translated_images/resnet-block.aba4ccbcc094443477d7bee189d44fed695c852d710a702462d6b809155d959a.kn.png" width="300"/>
+<img src="../../../../../translated_images/kn/resnet-block.aba4ccbcc0944434.webp" width="300"/>
 
 > ಚಿತ್ರ [ಈ ಪೇಪರ್](https://arxiv.org/pdf/1512.03385.pdf) ನಿಂದ
 
@@ -37,7 +28,7 @@ ResNet 2015 ರಲ್ಲಿ Microsoft Research ಪ್ರಸ್ತಾಪಿಸಿ
 
 Google Inception ವಾಸ್ತುಶಿಲ್ಪ ಈ ಆಲೋಚನೆಯನ್ನು ಇನ್ನೊಂದು ಹಂತಕ್ಕೆ ತೆಗೆದುಕೊಂಡು ಹೋಗುತ್ತದೆ ಮತ್ತು ಪ್ರತಿ ನೆಟ್‌ವರ್ಕ್ ಲೇಯರ್ ಅನ್ನು ಹಲವು ವಿಭಿನ್ನ ಮಾರ್ಗಗಳ ಸಂಯೋಜನೆಯಾಗಿ ನಿರ್ಮಿಸುತ್ತದೆ:
 
-<img src="../../../../../translated_images/inception.a6605b85bcbc6f52490ec55e68109dd41924cba9d7e1007453b4cdf554199c8d.kn.png" width="400"/>
+<img src="../../../../../translated_images/kn/inception.a6605b85bcbc6f52.webp" width="400"/>
 
 > ಚಿತ್ರ [Researchgate](https://www.researchgate.net/figure/Inception-module-with-dimension-reductions-left-and-schema-for-Inception-ResNet-v1_fig2_355547454) ನಿಂದ
 

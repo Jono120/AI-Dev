@@ -1,23 +1,14 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "53faab85adfcebd8c10bcd71dc2fa557",
-  "translation_date": "2025-09-23T06:41:30+00:00",
-  "source_file": "lessons/4-ComputerVision/07-ConvNets/CNN_Architectures.md",
-  "language_code": "ur"
-}
--->
 # مشہور سی این این آرکیٹیکچرز
 
 ### VGG-16
 
 VGG-16 ایک نیٹ ورک ہے جس نے 2014 میں ImageNet کے ٹاپ-5 کلاسیفیکیشن میں 92.7% درستگی حاصل کی۔ اس کی درج ذیل لیئر ساخت ہے:
 
-![ImageNet Layers](../../../../../translated_images/vgg-16-arch1.d901a5583b3a51baeaab3e768567d921e5d54befa46e1e642616c5458c934028.ur.jpg)
+![ImageNet Layers](../../../../../translated_images/ur/vgg-16-arch1.d901a5583b3a51ba.webp)
 
 جیسا کہ آپ دیکھ سکتے ہیں، VGG ایک روایتی پیرامڈ آرکیٹیکچر کی پیروی کرتا ہے، جو کہ کنوولوشن-پولنگ لیئرز کی ترتیب ہے۔
 
-![ImageNet Pyramid](../../../../../translated_images/vgg-16-arch.64ff2137f50dd49fdaa786e3f3a975b3f22615efd13efb19c5d22f12e01451a1.ur.jpg)
+![ImageNet Pyramid](../../../../../translated_images/ur/vgg-16-arch.64ff2137f50dd49f.webp)
 
 > تصویر [Researchgate](https://www.researchgate.net/figure/Vgg16-model-structure-To-get-the-VGG-NIN-model-we-replace-the-2-nd-4-th-6-th-7-th_fig2_335194493) سے لی گئی ہے۔
 
@@ -25,7 +16,7 @@ VGG-16 ایک نیٹ ورک ہے جس نے 2014 میں ImageNet کے ٹاپ-5 ک
 
 ResNet ماڈلز کا ایک خاندان ہے جو 2015 میں Microsoft Research نے پیش کیا۔ ResNet کا بنیادی خیال **ریزیڈیول بلاکس** استعمال کرنا ہے:
 
-<img src="images/resnet-block.png" width="300"/>
+<img src="../../../../../translated_images/ur/resnet-block.aba4ccbcc0944434.webp" width="300"/>
 
 > تصویر [اس مقالے](https://arxiv.org/pdf/1512.03385.pdf) سے لی گئی ہے۔
 
@@ -37,7 +28,7 @@ ResNet ماڈلز کا ایک خاندان ہے جو 2015 میں Microsoft Resea
 
 Google Inception آرکیٹیکچر اس خیال کو ایک قدم آگے لے جاتا ہے، اور ہر نیٹ ورک لیئر کو کئی مختلف راستوں کے امتزاج کے طور پر بناتا ہے:
 
-<img src="images/inception.png" width="400"/>
+<img src="../../../../../translated_images/ur/inception.a6605b85bcbc6f52.webp" width="400"/>
 
 > تصویر [Researchgate](https://www.researchgate.net/figure/Inception-module-with-dimension-reductions-left-and-schema-for-Inception-ResNet-v1_fig2_355547454) سے لی گئی ہے۔
 

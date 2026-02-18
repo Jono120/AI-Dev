@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "b70fcf7fcee862990f848c679090943f",
-  "translation_date": "2025-10-03T14:55:20+00:00",
-  "source_file": "lessons/4-ComputerVision/07-ConvNets/lab/README.md",
-  "language_code": "sv"
-}
--->
 # Klassificering av husdjursansikten
 
 Labuppgift från [AI för nybörjare-kursen](https://github.com/microsoft/ai-for-beginners).
@@ -21,7 +12,7 @@ Du behöver träna ett konvolutionellt neuralt nätverk för att klassificera ol
 
 Vi kommer att använda [Oxford-IIIT Pet Dataset](https://www.robots.ox.ac.uk/~vgg/data/pets/), som innehåller bilder av 37 olika raser av hundar och katter.
 
-![Datasetet vi kommer att arbeta med](../../../../../../translated_images/data.50b2a9d5484bdbf0f52f5765b381cec9efe2bd296a98f007f90bedb6ac67f2a8.sv.png)
+![Datasetet vi kommer att arbeta med](../../../../../../translated_images/sv/data.50b2a9d5484bdbf0.webp)
 
 För att ladda ner datasetet, använd följande kodsnutt:
 

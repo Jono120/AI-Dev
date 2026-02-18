@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "feeca98225cb420afc89415f24f63d92",
-  "translation_date": "2025-09-23T15:15:24+00:00",
-  "source_file": "lessons/4-ComputerVision/06-IntroCV/README.md",
-  "language_code": "my"
-}
--->
 # ကွန်ပျူတာဗီရှင်းအကြောင်းမိတ်ဆက်
 
 [ကွန်ပျူတာဗီရှင်း](https://wikipedia.org/wiki/Computer_vision) ဆိုတာက ကွန်ပျူတာတွေကို ဒစ်ဂျစ်တယ်ပုံရိပ်တွေကို အဆင့်မြင့်နားလည်မှုရရှိစေဖို့ ရည်ရွယ်တဲ့ အပိုင်းတစ်ခုဖြစ်ပါတယ်။ ဒီအဓိပ္ပါယ်က အတော်လေးကျယ်ပြန့်ပါတယ်၊ အကြောင်းမူတည်ပြီး *နားလည်မှု* ဆိုတာ အမျိုးမျိုးဖြစ်နိုင်ပါတယ်။ ဥပမာအားဖြင့် ပုံထဲမှာ အရာဝတ္ထုတစ်ခုကို ရှာဖွေခြင်း (**object detection**), ဖြစ်ပျက်နေတဲ့အရာကို နားလည်ခြင်း (**event detection**), ပုံကို စာသားနဲ့ ဖော်ပြခြင်း, ဒါမှမဟုတ် 3D အနေအထားနဲ့ ရှုခင်းကို ပြန်လည်တည်ဆောက်ခြင်း။ လူနဲ့ဆိုင်တဲ့ ပုံရိပ်တွေကို အထူးလုပ်ငန်းတွေပါရှိပါတယ် - အသက်အရွယ်နဲ့ ခံစားချက်ခန့်မှန်းခြင်း, မျက်နှာရှာဖွေခြင်းနဲ့ မှတ်ပုံတင်ခြင်း, 3D အနေအထားခန့်မှန်းခြင်း စသည်ဖြင့်။
@@ -75,14 +66,14 @@ OpenCV ကို အသုံးပြုပြီး ဗီဒီယို fram
 
 * **Braille စာအုပ်ရဲ့ ဓာတ်ပုံကို Pre-processing လုပ်ခြင်း**။ thresholding, feature detection, perspective transformation နဲ့ NumPy ကို ကိုင်တွယ်ခြင်းတို့ကို အသုံးပြုပြီး Braille အက္ခရာတစ်ခုချင်းစီကို neural network နဲ့ classification လုပ်ဖို့ ခွဲထုတ်ပေးနိုင်ပါတယ်။
 
-![Braille Image](../../../../../translated_images/braille.341962ff76b1bd7044409371d3de09ced5028132aef97344ea4b7468c1208126.my.jpeg) | ![Braille Image Pre-processed](../../../../../translated_images/braille-result.46530fea020b03c76aac532d7d6eeef7f6fb35b55b1001cd21627907dabef3ed.my.png) | ![Braille Symbols](../../../../../translated_images/braille-symbols.0159185ab69d533909dc4d7d26a1971b51401c6a80eb3a5584f250ea880af88b.my.png)
+![Braille Image](../../../../../translated_images/my/braille.341962ff76b1bd70.webp) | ![Braille Image Pre-processed](../../../../../translated_images/my/braille-result.46530fea020b03c7.webp) | ![Braille Symbols](../../../../../translated_images/my/braille-symbols.0159185ab69d5339.webp)
 ----|-----|-----
 
 > [OpenCV.ipynb](OpenCV.ipynb) မှ ပုံရိပ်
 
 * **Frame difference ကို အသုံးပြုပြီး ဗီဒီယိုထဲမှာ လှုပ်ရှားမှုကို ရှာဖွေခြင်း**။ ကင်မရာက တည်နေရာမှာရှိရင် ကင်မရာ feed ရဲ့ frame တွေဟာ တူညီနေတတ်ပါတယ်။ Frame တွေကို array အနေနဲ့ ကိုယ်စားပြုထားတဲ့အတွက် frame 2 ခုကို လျော့ချက်လုပ်လိုက်ရင် pixel difference ကို ရရှိမှာဖြစ်ပြီး static frame တွေမှာ pixel difference နည်းနည်းရှိပြီး ပုံရိပ်ထဲမှာ လှုပ်ရှားမှုများလာတဲ့အခါ pixel difference ပိုများလာတတ်ပါတယ်။
 
-![Image of video frames and frame differences](../../../../../translated_images/frame-difference.706f805491a0883c938e16447bf5eb2f7d69e812c7f743cbe7d7c7645168f81f.my.png)
+![Image of video frames and frame differences](../../../../../translated_images/my/frame-difference.706f805491a0883c.webp)
 
 > [OpenCV.ipynb](OpenCV.ipynb) မှ ပုံရိပ်
 
@@ -91,7 +82,7 @@ OpenCV ကို အသုံးပြုပြီး ဗီဒီယို fram
    - **Dense Optical Flow** က pixel တစ်ခုချင်းစီ ဘယ်နေရာကိုရွေ့လျားနေတယ်ဆိုတာကို ပြသတဲ့ vector field ကို တွက်ချက်ပေးပါတယ်။
    - **Sparse Optical Flow** က ပုံရိပ်ထဲမှာ အထူးသတ်မှတ်ချက်တွေ (ဥပမာ - အနားသတ်) ကို ရွေးပြီး frame-to-frame trajectory ကို တည်ဆောက်ပေးပါတယ်။
 
-![Image of Optical Flow](../../../../../translated_images/optical.1f4a94464579a83a10784f3c07fe7228514714b96782edf50e70ccd59d2d8c4f.my.png)
+![Image of Optical Flow](../../../../../translated_images/my/optical.1f4a94464579a83a.webp)
 
 > [OpenCV.ipynb](OpenCV.ipynb) မှ ပုံရိပ်
 
@@ -117,7 +108,7 @@ Optical flow အကြောင်းကို [ဒီအလွန်ကော�
 
 ဒီ lab မှာ လက်သွားလက်လာရဲ့ ဗီဒီယိုကို ရိုက်ကူးပြီး optical flow ကို အသုံးပြုပြီး အပေါ်/အောက်/ဘယ်/ညာ လှုပ်ရှားမှုတွေကို ရှာဖွေဖို့ ရည်ရွယ်ပါတယ်။
 
-<img src="images/palm-movement.png" width="30%" alt="Palm Movement Frame"/>
+<img src="../../../../../translated_images/my/palm-movement.341495f0e9c47da3.webp" width="30%" alt="Palm Movement Frame"/>
 
 ---
 

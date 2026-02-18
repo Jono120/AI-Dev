@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "b708c9b85b833864c73c6281f1e6b96e",
-  "translation_date": "2025-09-23T10:46:13+00:00",
-  "source_file": "lessons/5-NLP/14-Embeddings/README.md",
-  "language_code": "id"
-}
--->
 # Embeddings
 
 ## [Pre-lecture quiz](https://ff-quizzes.netlify.app/en/ai/quiz/27)
@@ -19,7 +10,7 @@ Jadi, lapisan embedding akan mengambil sebuah kata sebagai input, dan menghasilk
 
 Dengan menggunakan lapisan embedding sebagai lapisan pertama dalam jaringan classifier kita, kita dapat beralih dari model bag-of-words ke model **embedding bag**, di mana kita pertama-tama mengonversi setiap kata dalam teks kita ke embedding yang sesuai, dan kemudian menghitung beberapa fungsi agregat dari semua embedding tersebut, seperti `sum`, `average`, atau `max`.  
 
-![Gambar menunjukkan classifier embedding untuk lima kata dalam urutan.](../../../../../translated_images/embedding-classifier-example.b77f021a7ee67eeec8e68bfe11636c5b97d6eaa067515a129bfb1d0034b1ac5b.id.png)
+![Gambar menunjukkan classifier embedding untuk lima kata dalam urutan.](../../../../../translated_images/id/embedding-classifier-example.b77f021a7ee67eee.webp)
 
 > Gambar oleh penulis
 
@@ -40,7 +31,7 @@ Untuk mencapai itu, kita perlu melatih model embedding kita terlebih dahulu pada
 
 CBoW lebih cepat, sedangkan skip-gram lebih lambat, tetapi lebih baik dalam merepresentasikan kata-kata yang jarang muncul.
 
-![Gambar menunjukkan algoritma CBoW dan Skip-Gram untuk mengonversi kata-kata menjadi vektor.](../../../../../translated_images/example-algorithms-for-converting-words-to-vectors.fbe9207a726922f6f0f5de66427e8a6eda63809356114e28fb1fa5f4a83ebda7.id.png)
+![Gambar menunjukkan algoritma CBoW dan Skip-Gram untuk mengonversi kata-kata menjadi vektor.](../../../../../translated_images/id/example-algorithms-for-converting-words-to-vectors.fbe9207a726922f6.webp)
 
 > Gambar dari [makalah ini](https://arxiv.org/pdf/1301.3781.pdf)
 

@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "ddd216f558a255260a9374008002c971",
-  "translation_date": "2025-09-23T08:44:15+00:00",
-  "source_file": "lessons/3-NeuralNetworks/05-Frameworks/README.md",
-  "language_code": "tr"
-}
--->
 # Sinir Ağı Çerçeveleri
 
 Daha önce öğrendiğimiz gibi, sinir ağlarını verimli bir şekilde eğitebilmek için iki şeyi yapmamız gerekiyor:
@@ -58,7 +49,7 @@ Aşırı öğrenme, makine öğreniminde son derece önemli bir kavramdır ve do
 
 Aşağıdaki 5 noktayı (grafiklerde `x` ile gösterilen) yaklaşık olarak tahmin etme problemini düşünün:
 
-![linear](../../../../../translated_images/overfit1.f24b71c6f652e59e6bed7245ffbeaecc3ba320e16e2221f6832b432052c4da43.tr.jpg) | ![overfit](../../../../../translated_images/overfit2.131f5800ae10ca5e41d12a411f5f705d9ee38b1b10916f284b787028dd55cc1c.tr.jpg)
+![linear](../../../../../translated_images/tr/overfit1.f24b71c6f652e59e.webp) | ![overfit](../../../../../translated_images/tr/overfit2.131f5800ae10ca5e.webp)
 -------------------------|--------------------------
 **Doğrusal model, 2 parametre** | **Doğrusal olmayan model, 7 parametre**
 Eğitim hatası = 5.3 | Eğitim hatası = 0
@@ -79,7 +70,7 @@ Modelin zenginliği (parametre sayısı) ile eğitim örneklerinin sayısı aras
 
 Yukarıdaki grafikten görebileceğiniz gibi, aşırı öğrenme çok düşük bir eğitim hatası ve yüksek bir doğrulama hatası ile tespit edilebilir. Normalde eğitim sırasında hem eğitim hem de doğrulama hatalarının azalmaya başladığını görürüz, ancak bir noktada doğrulama hatası azalmayı durdurabilir ve artmaya başlayabilir. Bu, aşırı öğrenmenin bir işareti ve eğitimi muhtemelen bu noktada durdurmamız gerektiğinin (veya en azından modelin bir anlık görüntüsünü almamız gerektiğinin) göstergesidir.
 
-![overfitting](../../../../../translated_images/Overfitting.408ad91cd90b4371d0a81f4287e1409c359751adeb1ae450332af50e84f08c3e.tr.png)
+![overfitting](../../../../../translated_images/tr/Overfitting.408ad91cd90b4371.webp)
 
 ## Aşırı Öğrenme Nasıl Önlenir?
 

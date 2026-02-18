@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "b708c9b85b833864c73c6281f1e6b96e",
-  "translation_date": "2025-09-23T12:35:55+00:00",
-  "source_file": "lessons/5-NLP/14-Embeddings/README.md",
-  "language_code": "fa"
-}
--->
 # تعبیه‌ها
 
 ## [پیش‌آزمون](https://ff-quizzes.netlify.app/en/ai/quiz/27)
@@ -19,7 +10,7 @@ CO_OP_TRANSLATOR_METADATA:
 
 با استفاده از یک لایه تعبیه به‌عنوان اولین لایه در شبکه دسته‌بند خود، می‌توانیم از مدل کیسه کلمات به مدل **کیسه تعبیه‌ها** تغییر دهیم، جایی که ابتدا هر کلمه در متن خود را به تعبیه مربوطه تبدیل می‌کنیم و سپس یک تابع تجمعی مانند `sum`، `average` یا `max` را بر روی تمام این تعبیه‌ها محاسبه می‌کنیم.
 
-![تصویری که یک دسته‌بند تعبیه برای پنج کلمه دنباله را نشان می‌دهد.](../../../../../translated_images/embedding-classifier-example.b77f021a7ee67eeec8e68bfe11636c5b97d6eaa067515a129bfb1d0034b1ac5b.fa.png)
+![تصویری که یک دسته‌بند تعبیه برای پنج کلمه دنباله را نشان می‌دهد.](../../../../../translated_images/fa/embedding-classifier-example.b77f021a7ee67eee.webp)
 
 > تصویر توسط نویسنده
 
@@ -40,7 +31,7 @@ CO_OP_TRANSLATOR_METADATA:
 
 CBoW سریع‌تر است، در حالی که اسکیپ‌گرام کندتر است اما در نمایش کلمات نادر بهتر عمل می‌کند.
 
-![تصویری که الگوریتم‌های CBoW و اسکیپ‌گرام را برای تبدیل کلمات به بردارها نشان می‌دهد.](../../../../../translated_images/example-algorithms-for-converting-words-to-vectors.fbe9207a726922f6f0f5de66427e8a6eda63809356114e28fb1fa5f4a83ebda7.fa.png)
+![تصویری که الگوریتم‌های CBoW و اسکیپ‌گرام را برای تبدیل کلمات به بردارها نشان می‌دهد.](../../../../../translated_images/fa/example-algorithms-for-converting-words-to-vectors.fbe9207a726922f6.webp)
 
 > تصویر از [این مقاله](https://arxiv.org/pdf/1301.3781.pdf)
 

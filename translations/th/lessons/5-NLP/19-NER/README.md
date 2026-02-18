@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "6522312ff835796ca34136a9462fafb2",
-  "translation_date": "2025-09-23T09:13:26+00:00",
-  "source_file": "lessons/5-NLP/19-NER/README.md",
-  "language_code": "th"
-}
--->
 # การรู้จำชื่อเอนทิตี
 
 จนถึงตอนนี้ เราได้มุ่งเน้นไปที่งาน NLP อย่างหนึ่งเป็นหลัก นั่นคือการจัดประเภท อย่างไรก็ตาม ยังมีงาน NLP อื่นๆ ที่สามารถทำได้ด้วยเครือข่ายประสาทเทียม หนึ่งในงานเหล่านั้นคือ **[การรู้จำชื่อเอนทิตี](https://wikipedia.org/wiki/Named-entity_recognition)** (NER) ซึ่งเกี่ยวข้องกับการระบุเอนทิตีเฉพาะในข้อความ เช่น สถานที่ ชื่อบุคคล ช่วงเวลา สูตรเคมี และอื่นๆ
@@ -17,7 +8,7 @@ CO_OP_TRANSLATOR_METADATA:
 
 สมมติว่าคุณต้องการพัฒนาช่องสนทนาภาษาธรรมชาติ เช่น Amazon Alexa หรือ Google Assistant วิธีการทำงานของช่องสนทนาอัจฉริยะคือการ *เข้าใจ* สิ่งที่ผู้ใช้ต้องการโดยการจัดประเภทข้อความในประโยคที่ป้อน ผลลัพธ์ของการจัดประเภทนี้เรียกว่า **เจตนา** ซึ่งกำหนดสิ่งที่ช่องสนทนาควรทำ
 
-<img alt="Bot NER" src="images/bot-ner.png" width="50%"/>
+<img alt="Bot NER" src="../../../../../translated_images/th/bot-ner.4b09235dbb0ad275.webp" width="50%"/>
 
 > ภาพโดยผู้เขียน
 
@@ -58,7 +49,7 @@ infant | O
 
 เนื่องจากเราต้องสร้างความสัมพันธ์แบบหนึ่งต่อหนึ่งระหว่างโทเค็นและคลาส เราสามารถฝึกโมเดลเครือข่ายประสาทเทียมแบบ **many-to-many** ที่เหมาะสมจากภาพนี้:
 
-![ภาพแสดงรูปแบบเครือข่ายประสาทเทียมแบบ recurrent ทั่วไป](../../../../../translated_images/unreasonable-effectiveness-of-rnn.541ead816778f42dce6c42d8a56c184729aa2378d059b851be4ce12b993033df.th.jpg)
+![ภาพแสดงรูปแบบเครือข่ายประสาทเทียมแบบ recurrent ทั่วไป](../../../../../translated_images/th/unreasonable-effectiveness-of-rnn.541ead816778f42d.webp)
 
 > *ภาพจาก [บล็อกโพสต์นี้](http://karpathy.github.io/2015/05/21/rnn-effectiveness/) โดย [Andrej Karpathy](http://karpathy.github.io/) โมเดลการจัดประเภทโทเค็น NER สอดคล้องกับสถาปัตยกรรมเครือข่ายที่อยู่ทางขวาสุดในภาพนี้*
 

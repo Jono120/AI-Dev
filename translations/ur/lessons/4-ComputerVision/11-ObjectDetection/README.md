@@ -1,19 +1,10 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "d76a7eda28de5210c8b1ba50a6216c69",
-  "translation_date": "2025-09-23T06:42:40+00:00",
-  "source_file": "lessons/4-ComputerVision/11-ObjectDetection/README.md",
-  "language_code": "ur"
-}
--->
 # آبجیکٹ ڈیٹیکشن
 
 اب تک ہم نے جو امیج کلاسیفیکیشن ماڈلز دیکھے ہیں، وہ ایک تصویر لیتے ہیں اور ایک کیٹیگریکل نتیجہ دیتے ہیں، جیسے MNIST مسئلے میں کلاس 'نمبر'۔ لیکن اکثر ہمیں صرف یہ جاننا نہیں ہوتا کہ تصویر میں اشیاء موجود ہیں، بلکہ ہم ان کی درست جگہ کا تعین کرنا چاہتے ہیں۔ یہی **آبجیکٹ ڈیٹیکشن** کا مقصد ہے۔
 
 ## [لیکچر سے پہلے کا کوئز](https://ff-quizzes.netlify.app/en/ai/quiz/21)
 
-![آبجیکٹ ڈیٹیکشن](../../../../../translated_images/Screen_Shot_2016-11-17_at_11.14.54_AM.b4bb3769353287be1b905373ed9c858102c054b16e4595c76ec3f7bba0feb549.ur.png)
+![آبجیکٹ ڈیٹیکشن](../../../../../translated_images/ur/Screen_Shot_2016-11-17_at_11.14.54_AM.b4bb3769353287be.webp)
 
 > تصویر [YOLO v2 ویب سائٹ](https://pjreddie.com/darknet/yolov2/) سے لی گئی ہے۔
 
@@ -25,7 +16,7 @@ CO_OP_TRANSLATOR_METADATA:
 2. ہر حصے پر امیج کلاسیفیکیشن چلائیں۔
 3. وہ حصے جن میں کافی زیادہ ایکٹیویشن ہو، انہیں مطلوبہ آبجیکٹ کے حامل سمجھا جا سکتا ہے۔
 
-![سادہ آبجیکٹ ڈیٹیکشن](../../../../../translated_images/naive-detection.e7f1ba220ccd08c68a2ea8e06a7ed75c3fcc738c2372f9e00b7f4299a8659c01.ur.png)
+![سادہ آبجیکٹ ڈیٹیکشن](../../../../../translated_images/ur/naive-detection.e7f1ba220ccd08c6.webp)
 
 > *تصویر [ایکسسرسائز نوٹ بک](ObjectDetection-TF.ipynb) سے لی گئی ہے۔*
 
@@ -42,7 +33,7 @@ CO_OP_TRANSLATOR_METADATA:
 * [PASCAL VOC](http://host.robots.ox.ac.uk/pascal/VOC/) - 20 کلاسز
 * [COCO](http://cocodataset.org/#home) - عام اشیاء کے سیاق و سباق میں۔ 80 کلاسز، باؤنڈنگ باکسز اور سیگمنٹیشن ماسکس
 
-![COCO](../../../../../translated_images/coco-examples.71bc60380fa6cceb7caad48bd09e35b6028caabd363aa04fee89c414e0870e86.ur.jpg)
+![COCO](../../../../../translated_images/ur/coco-examples.71bc60380fa6cceb.webp)
 
 ## آبجیکٹ ڈیٹیکشن میٹرکس
 
@@ -50,7 +41,7 @@ CO_OP_TRANSLATOR_METADATA:
 
 امیج کلاسیفیکیشن کے لیے یہ آسان ہے کہ ہم الگورتھم کی کارکردگی کو ماپ سکیں، لیکن آبجیکٹ ڈیٹیکشن کے لیے ہمیں کلاس کی درستگی کے ساتھ ساتھ باؤنڈنگ باکس کی پیش گوئی کی درستگی کو بھی ماپنا ہوتا ہے۔ اس کے لیے ہم **انٹرسیکشن اوور یونین** (IoU) استعمال کرتے ہیں، جو دو باکسز (یا دو کسی بھی علاقے) کے اوورلیپ کو ماپتا ہے۔
 
-![IoU](../../../../../translated_images/iou_equation.9a4751d40fff4e119ecd0a7bcca4e71ab1dc83e0d4f2a0d66ff0859736f593cf.ur.png)
+![IoU](../../../../../translated_images/ur/iou_equation.9a4751d40fff4e11.webp)
 
 > *تصویر 2 [اس بہترین بلاگ پوسٹ](https://pyimagesearch.com/2016/11/07/intersection-over-union-iou-for-object-detection/) سے لی گئی ہے۔*
 
@@ -98,11 +89,11 @@ $$
 
 [R-CNN](http://islab.ulsan.ac.kr/files/announcement/513/rcnn_pami.pdf) [سیلیکٹیو سرچ](http://www.huppelen.nl/publications/selectiveSearchDraft.pdf) استعمال کرتا ہے تاکہ ROI ریجنز کی ہائیرارکل ساخت بنائی جا سکے، جنہیں پھر CNN فیچر ایکسٹریکٹرز اور SVM کلاسیفائرز کے ذریعے آبجیکٹ کلاس کا تعین کرنے کے لیے پاس کیا جاتا ہے، اور *باؤنڈنگ باکس* کے کوآرڈینیٹس کا تعین کرنے کے لیے لینیئر ریگریشن استعمال کی جاتی ہے۔ [آفیشل پیپر](https://arxiv.org/pdf/1506.01497v1.pdf)
 
-![RCNN](../../../../../translated_images/rcnn1.cae407020dfb1d1fb572656e44f75cd6c512cc220591c116c506652c10e47f26.ur.png)
+![RCNN](../../../../../translated_images/ur/rcnn1.cae407020dfb1d1f.webp)
 
 > *تصویر van de Sande et al. ICCV’11 سے لی گئی ہے۔*
 
-![RCNN-1](../../../../../translated_images/rcnn2.2d9530bb83516484ec65b250c22dbf37d3d23244f32864ebcb91d98fe7c3112c.ur.png)
+![RCNN-1](../../../../../translated_images/ur/rcnn2.2d9530bb83516484.webp)
 
 > *تصاویر [اس بلاگ](https://towardsdatascience.com/r-cnn-fast-r-cnn-faster-r-cnn-yolo-object-detection-algorithms-36d53571365e) سے لی گئی ہیں۔*
 
@@ -110,7 +101,7 @@ $$
 
 یہ طریقہ R-CNN سے ملتا جلتا ہے، لیکن ریجنز کنوولوشن لیئرز کے بعد ڈیفائن کیے جاتے ہیں۔
 
-![FRCNN](../../../../../translated_images/f-rcnn.3cda6d9bb41888754037d2d9763e2298a96de5d9bc2a21db3147357aa5da9b1a.ur.png)
+![FRCNN](../../../../../translated_images/ur/f-rcnn.3cda6d9bb4188875.webp)
 
 > تصویر [آفیشل پیپر](https://www.cv-foundation.org/openaccess/content_iccv_2015/papers/Girshick_Fast_R-CNN_ICCV_2015_paper.pdf)، [arXiv](https://arxiv.org/pdf/1504.08083.pdf)، 2015 سے لی گئی ہے۔
 
@@ -118,7 +109,7 @@ $$
 
 اس طریقے کا بنیادی خیال یہ ہے کہ ریجنز کی پیش گوئی کے لیے نیورل نیٹ ورک استعمال کیا جائے - جسے *ریجن پروپوزل نیٹ ورک* کہا جاتا ہے۔ [پیپر](https://arxiv.org/pdf/1506.01497.pdf)، 2016
 
-![FasterRCNN](../../../../../translated_images/faster-rcnn.8d46c099b87ef30ab2ea26dbc4bdd85b974a57ba8eb526f65dc4cd0a4711de30.ur.png)
+![FasterRCNN](../../../../../translated_images/ur/faster-rcnn.8d46c099b87ef30a.webp)
 
 > تصویر [آفیشل پیپر](https://arxiv.org/pdf/1506.01497.pdf) سے لی گئی ہے۔
 
@@ -130,7 +121,7 @@ $$
 1. فیچرز **پوزیشن سینسیٹو اسکور میپ** کے ذریعے پروسیس کیے جاتے ہیں۔ $C$ کلاسز کے ہر آبجیکٹ کو $k\times k$ ریجنز میں تقسیم کیا جاتا ہے، اور ہم آبجیکٹس کے حصے پیش گوئی کرنے کی تربیت کرتے ہیں۔
 1. $k\times k$ ریجنز کے ہر حصے کے لیے تمام نیٹ ورکس آبجیکٹ کلاسز کے لیے ووٹ دیتے ہیں، اور زیادہ سے زیادہ ووٹ کے ساتھ آبجیکٹ کلاس منتخب کی جاتی ہے۔
 
-![r-fcn image](../../../../../translated_images/r-fcn.13eb88158b99a3da50fa2787a6be5cb310d47f0e9655cc93a1090dc7aab338d1.ur.png)
+![r-fcn image](../../../../../translated_images/ur/r-fcn.13eb88158b99a3da.webp)
 
 > تصویر [آفیشل پیپر](https://arxiv.org/abs/1605.06409) سے لی گئی ہے۔
 
@@ -141,7 +132,7 @@ YOLO ایک ریئل ٹائم ون پاس الگورتھم ہے۔ بنیادی �
  * تصویر کو $S\times S$ ریجنز میں تقسیم کیا جاتا ہے۔
  * ہر ریجن کے لیے، **CNN** $n$ ممکنہ آبجیکٹس، *باؤنڈنگ باکس* کے کوآرڈینیٹس اور *کانفیڈنس*=*پروببلیٹی* * IoU کی پیش گوئی کرتا ہے۔
 
- ![YOLO](../../../../../translated_images/yolo.a2648ec82ee8bb4ea27537677adb482fd4b733ca1705c561b6a24a85102dced5.ur.png)
+ ![YOLO](../../../../../translated_images/ur/yolo.a2648ec82ee8bb4e.webp)
 
 > تصویر [آفیشل پیپر](https://arxiv.org/abs/1506.02640) سے لی گئی ہے۔
 

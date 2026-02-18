@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "b708c9b85b833864c73c6281f1e6b96e",
-  "translation_date": "2025-09-23T10:36:10+00:00",
-  "source_file": "lessons/5-NLP/14-Embeddings/README.md",
-  "language_code": "vi"
-}
--->
 # Nhúng
 
 ## [Câu hỏi trước bài giảng](https://ff-quizzes.netlify.app/en/ai/quiz/27)
@@ -19,7 +10,7 @@ Vì vậy, lớp nhúng sẽ nhận một từ làm đầu vào và tạo ra m�
 
 Bằng cách sử dụng lớp nhúng làm lớp đầu tiên trong mạng phân loại của chúng ta, chúng ta có thể chuyển từ mô hình túi từ sang mô hình **túi nhúng**, nơi chúng ta đầu tiên chuyển đổi mỗi từ trong văn bản của mình thành nhúng tương ứng, và sau đó tính toán một số hàm tổng hợp trên tất cả các nhúng đó, chẳng hạn như `sum`, `average` hoặc `max`.
 
-![Hình ảnh minh họa một bộ phân loại nhúng cho năm từ trong chuỗi.](../../../../../translated_images/embedding-classifier-example.b77f021a7ee67eeec8e68bfe11636c5b97d6eaa067515a129bfb1d0034b1ac5b.vi.png)
+![Hình ảnh minh họa một bộ phân loại nhúng cho năm từ trong chuỗi.](../../../../../translated_images/vi/embedding-classifier-example.b77f021a7ee67eee.webp)
 
 > Hình ảnh của tác giả
 
@@ -40,7 +31,7 @@ Mặc dù lớp nhúng đã học cách ánh xạ các từ sang biểu diễn v
 
 CBoW nhanh hơn, trong khi skip-gram chậm hơn nhưng làm tốt hơn trong việc biểu diễn các từ ít xuất hiện.
 
-![Hình ảnh minh họa cả hai thuật toán CBoW và Skip-Gram để chuyển đổi từ thành vector.](../../../../../translated_images/example-algorithms-for-converting-words-to-vectors.fbe9207a726922f6f0f5de66427e8a6eda63809356114e28fb1fa5f4a83ebda7.vi.png)
+![Hình ảnh minh họa cả hai thuật toán CBoW và Skip-Gram để chuyển đổi từ thành vector.](../../../../../translated_images/vi/example-algorithms-for-converting-words-to-vectors.fbe9207a726922f6.webp)
 
 > Hình ảnh từ [bài báo này](https://arxiv.org/pdf/1301.3781.pdf)
 

@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "b70fcf7fcee862990f848c679090943f",
-  "translation_date": "2025-10-03T14:53:39+00:00",
-  "source_file": "lessons/4-ComputerVision/07-ConvNets/lab/README.md",
-  "language_code": "bn"
-}
--->
 # পোষা প্রাণীর মুখের শ্রেণীবিন্যাস
 
 [AI for Beginners Curriculum](https://github.com/microsoft/ai-for-beginners) থেকে ল্যাব অ্যাসাইনমেন্ট।
@@ -21,7 +12,7 @@ CO_OP_TRANSLATOR_METADATA:
 
 আমরা [Oxford-IIIT Pet Dataset](https://www.robots.ox.ac.uk/~vgg/data/pets/) ব্যবহার করব, যেখানে ৩৭টি ভিন্ন জাতের কুকুর এবং বিড়ালের ছবি রয়েছে।
 
-![আমরা যে ডেটাসেট নিয়ে কাজ করব](../../../../../../translated_images/data.50b2a9d5484bdbf0f52f5765b381cec9efe2bd296a98f007f90bedb6ac67f2a8.bn.png)
+![আমরা যে ডেটাসেট নিয়ে কাজ করব](../../../../../../translated_images/bn/data.50b2a9d5484bdbf0.webp)
 
 ডেটাসেট ডাউনলোড করতে, এই কোড স্নিপেটটি ব্যবহার করুন:
 

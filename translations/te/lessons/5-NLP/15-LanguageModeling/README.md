@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "7ba20f54a5bfcd6521018cdfb17c7c57",
-  "translation_date": "2025-11-25T22:58:44+00:00",
-  "source_file": "lessons/5-NLP/15-LanguageModeling/README.md",
-  "language_code": "te"
-}
--->
 # భాషా మోడలింగ్
 
 వర్డ్2వెక్ మరియు గ్లోవ్ వంటి సేమాంటిక్ ఎంబెడ్డింగ్స్ వాస్తవానికి **భాషా మోడలింగ్** వైపు మొదటి అడుగు - భాష యొక్క స్వభావాన్ని ఏదో విధంగా *అర్థం చేసుకోవడం* (లేదా *ప్రతినిధ్యం వహించడం*) కోసం మోడల్స్ సృష్టించడం.
@@ -23,7 +14,7 @@ CO_OP_TRANSLATOR_METADATA:
 * **కంటిన్యూయస్ బ్యాగ్-ఆఫ్-వర్డ్స్** (CBoW), ఇందులో టోకెన్ సీక్వెన్స్ $W_{-N}$, ..., $W_N$ లో మధ్య టోకెన్ $W_0$ ను అంచనా వేస్తాము.
 * **స్కిప్-గ్రామ్**, ఇందులో మధ్య టోకెన్ $W_0$ నుండి పొరుగువారైన టోకెన్ల సమూహం {$W_{-N},\dots, W_{-1}, W_1,\dots, W_N$} ను అంచనా వేస్తాము.
 
-![పదాలను వెక్టర్లుగా మార్చే అల్గోరిథమ్స్ పై పేపర్ నుండి చిత్రం](../../../../../translated_images/example-algorithms-for-converting-words-to-vectors.fbe9207a726922f6f0f5de66427e8a6eda63809356114e28fb1fa5f4a83ebda7.te.png)
+![పదాలను వెక్టర్లుగా మార్చే అల్గోరిథమ్స్ పై పేపర్ నుండి చిత్రం](../../../../../translated_images/te/example-algorithms-for-converting-words-to-vectors.fbe9207a726922f6.webp)
 
 > చిత్రం [ఈ పేపర్](https://arxiv.org/pdf/1301.3781.pdf) నుండి
 

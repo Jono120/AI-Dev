@@ -1,19 +1,10 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "d76a7eda28de5210c8b1ba50a6216c69",
-  "translation_date": "2025-09-23T07:17:01+00:00",
-  "source_file": "lessons/4-ComputerVision/11-ObjectDetection/README.md",
-  "language_code": "ne"
-}
--->
 # वस्तु पहिचान (Object Detection)
 
 अहिलेसम्म हामीले अध्ययन गरेका छवि वर्गीकरण मोडेलहरूले एउटा छवि लिएर वर्गीय परिणाम उत्पादन गर्थे, जस्तै MNIST समस्यामा 'संख्या' वर्ग। तर, धेरै अवस्थामा हामीलाई केवल यो थाहा पाउन चाहिँदैन कि तस्वीरमा वस्तुहरू छन्; हामीलाई तिनीहरूको ठ्याक्कै स्थान पनि पत्ता लगाउन चाहिन्छ। यही उद्देश्यका लागि **वस्तु पहिचान (Object Detection)** प्रयोग गरिन्छ।
 
 ## [पूर्व-व्याख्यान क्विज](https://ff-quizzes.netlify.app/en/ai/quiz/21)
 
-![वस्तु पहिचान](../../../../../translated_images/Screen_Shot_2016-11-17_at_11.14.54_AM.b4bb3769353287be1b905373ed9c858102c054b16e4595c76ec3f7bba0feb549.ne.png)
+![वस्तु पहिचान](../../../../../translated_images/ne/Screen_Shot_2016-11-17_at_11.14.54_AM.b4bb3769353287be.webp)
 
 > छवि [YOLO v2 वेबसाइट](https://pjreddie.com/darknet/yolov2/) बाट
 
@@ -25,7 +16,7 @@ CO_OP_TRANSLATOR_METADATA:
 2. प्रत्येक टाइलमा छवि वर्गीकरण चलाउनुहोस्।
 3. ती टाइलहरू, जसले पर्याप्त उच्च सक्रियता देखाउँछन्, तिनीहरूमा खोजिएको वस्तु भएको मान्न सकिन्छ।
 
-![साधारण वस्तु पहिचान](../../../../../translated_images/naive-detection.e7f1ba220ccd08c68a2ea8e06a7ed75c3fcc738c2372f9e00b7f4299a8659c01.ne.png)
+![साधारण वस्तु पहिचान](../../../../../translated_images/ne/naive-detection.e7f1ba220ccd08c6.webp)
 
 > *छवि [व्यायाम नोटबुक](ObjectDetection-TF.ipynb) बाट*
 
@@ -42,7 +33,7 @@ CO_OP_TRANSLATOR_METADATA:
 * [PASCAL VOC](http://host.robots.ox.ac.uk/pascal/VOC/) - २० वर्गहरू
 * [COCO](http://cocodataset.org/#home) - सामान्य वस्तुहरू सन्दर्भमा। ८० वर्गहरू, सीमाना बक्सहरू र खण्डन मास्कहरू
 
-![COCO](../../../../../translated_images/coco-examples.71bc60380fa6cceb7caad48bd09e35b6028caabd363aa04fee89c414e0870e86.ne.jpg)
+![COCO](../../../../../translated_images/ne/coco-examples.71bc60380fa6cceb.webp)
 
 ## वस्तु पहिचान मेट्रिक्स
 
@@ -50,7 +41,7 @@ CO_OP_TRANSLATOR_METADATA:
 
 जहाँ छवि वर्गीकरणका लागि एल्गोरिदमको प्रदर्शन मापन गर्न सजिलो छ, वस्तु पहिचानका लागि वर्गको शुद्धता र अनुमानित सीमाना बक्स स्थानको सटीकता दुवै मापन गर्न आवश्यक छ। पछिल्लोका लागि, हामी **Intersection over Union** (IoU) प्रयोग गर्छौं, जसले दुई बक्सहरू (वा दुई मनमानी क्षेत्रहरू) कत्तिको ओभरल्याप गर्छन् भनेर मापन गर्छ।
 
-![IoU](../../../../../translated_images/iou_equation.9a4751d40fff4e119ecd0a7bcca4e71ab1dc83e0d4f2a0d66ff0859736f593cf.ne.png)
+![IoU](../../../../../translated_images/ne/iou_equation.9a4751d40fff4e11.webp)
 
 > *[IoU सम्बन्धी उत्कृष्ट ब्लग पोस्ट](https://pyimagesearch.com/2016/11/07/intersection-over-union-iou-for-object-detection/) बाट चित्र २*
 
@@ -97,11 +88,11 @@ $$
 
 [R-CNN](http://islab.ulsan.ac.kr/files/announcement/513/rcnn_pami.pdf) ले [Selective Search](http://www.huppelen.nl/publications/selectiveSearchDraft.pdf) प्रयोग गरी ROI क्षेत्रहरूको पदानुक्रम संरचना उत्पन्न गर्छ, जसलाई CNN फिचर एक्स्ट्र्याक्टरहरू र SVM वर्गीकरणकर्ताहरू मार्फत पास गरिन्छ, वस्तु वर्ग निर्धारण गर्न, र *सीमाना बक्स* समन्वय निर्धारण गर्न रेखीय रिग्रेसन प्रयोग गरिन्छ। [आधिकारिक पेपर](https://arxiv.org/pdf/1506.01497v1.pdf)
 
-![RCNN](../../../../../translated_images/rcnn1.cae407020dfb1d1fb572656e44f75cd6c512cc220591c116c506652c10e47f26.ne.png)
+![RCNN](../../../../../translated_images/ne/rcnn1.cae407020dfb1d1f.webp)
 
 > *van de Sande et al. ICCV’11 बाट छवि*
 
-![RCNN-1](../../../../../translated_images/rcnn2.2d9530bb83516484ec65b250c22dbf37d3d23244f32864ebcb91d98fe7c3112c.ne.png)
+![RCNN-1](../../../../../translated_images/ne/rcnn2.2d9530bb83516484.webp)
 
 > *[यो ब्लग](https://towardsdatascience.com/r-cnn-fast-r-cnn-faster-r-cnn-yolo-object-detection-algorithms-36d53571365e) बाट छविहरू*
 
@@ -109,7 +100,7 @@ $$
 
 यो दृष्टिकोण R-CNN जस्तै हो, तर क्षेत्रहरू कन्भोल्युसन तहहरू लागू भएपछि परिभाषित गरिन्छन्।
 
-![FRCNN](../../../../../translated_images/f-rcnn.3cda6d9bb41888754037d2d9763e2298a96de5d9bc2a21db3147357aa5da9b1a.ne.png)
+![FRCNN](../../../../../translated_images/ne/f-rcnn.3cda6d9bb4188875.webp)
 
 > [आधिकारिक पेपर](https://www.cv-foundation.org/openaccess/content_iccv_2015/papers/Girshick_Fast_R-CNN_ICCV_2015_paper.pdf), [arXiv](https://arxiv.org/pdf/1504.08083.pdf), 2015 बाट छवि
 
@@ -117,7 +108,7 @@ $$
 
 यस दृष्टिकोणको मुख्य विचार भनेको क्षेत्रहरू भविष्यवाणी गर्न न्यूरल नेटवर्क प्रयोग गर्नु हो - जसलाई *क्षेत्र प्रस्ताव नेटवर्क* भनिन्छ। [पेपर](https://arxiv.org/pdf/1506.01497.pdf), 2016
 
-![FasterRCNN](../../../../../translated_images/faster-rcnn.8d46c099b87ef30ab2ea26dbc4bdd85b974a57ba8eb526f65dc4cd0a4711de30.ne.png)
+![FasterRCNN](../../../../../translated_images/ne/faster-rcnn.8d46c099b87ef30a.webp)
 
 > [आधिकारिक पेपर](https://arxiv.org/pdf/1506.01497.pdf) बाट छवि
 
@@ -129,7 +120,7 @@ $$
 2. फिचरहरू **पोजिसन-सेंसिटिभ स्कोर म्याप** द्वारा प्रशोधन गरिन्छ। $C$ वर्गका प्रत्येक वस्तु $k\times k$ क्षेत्रहरूमा विभाजन गरिन्छ, र हामी वस्तुका भागहरू भविष्यवाणी गर्न प्रशिक्षण गर्छौं।
 3. $k\times k$ क्षेत्रका प्रत्येक भागका लागि सबै नेटवर्कहरूले वस्तु वर्गहरूको लागि मतदान गर्छन्, र अधिकतम भोट भएको वस्तु वर्ग चयन गरिन्छ।
 
-![r-fcn छवि](../../../../../translated_images/r-fcn.13eb88158b99a3da50fa2787a6be5cb310d47f0e9655cc93a1090dc7aab338d1.ne.png)
+![r-fcn छवि](../../../../../translated_images/ne/r-fcn.13eb88158b99a3da.webp)
 
 > [आधिकारिक पेपर](https://arxiv.org/abs/1605.06409) बाट छवि
 
@@ -140,7 +131,7 @@ YOLO एक वास्तविक-समय एक-पास एल्गो�
  * छवि $S\times S$ क्षेत्रहरूमा विभाजन गरिन्छ।
  * प्रत्येक क्षेत्रका लागि, **CNN** ले $n$ सम्भावित वस्तुहरू, *सीमाना बक्स* समन्वय र *विश्वास* = *संभाव्यता* * IoU भविष्यवाणी गर्छ।
 
- ![YOLO](../../../../../translated_images/yolo.a2648ec82ee8bb4ea27537677adb482fd4b733ca1705c561b6a24a85102dced5.ne.png)
+ ![YOLO](../../../../../translated_images/ne/yolo.a2648ec82ee8bb4e.webp)
 
 > [आधिकारिक पेपर](https://arxiv.org/abs/1506.02640) बाट छवि
 

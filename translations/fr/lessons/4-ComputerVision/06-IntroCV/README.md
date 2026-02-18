@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "feeca98225cb420afc89415f24f63d92",
-  "translation_date": "2025-09-23T11:56:49+00:00",
-  "source_file": "lessons/4-ComputerVision/06-IntroCV/README.md",
-  "language_code": "fr"
-}
--->
 # Introduction à la vision par ordinateur
 
 [La vision par ordinateur](https://wikipedia.org/wiki/Computer_vision) est une discipline dont le but est de permettre aux ordinateurs de comprendre les images numériques à un niveau élevé. Cette définition est assez large, car *comprendre* peut signifier de nombreuses choses différentes, comme trouver un objet sur une image (**détection d'objet**), comprendre ce qui se passe (**détection d'événements**), décrire une image en texte ou reconstruire une scène en 3D. Il existe également des tâches spécifiques liées aux images humaines : estimation de l'âge et des émotions, détection et identification de visages, et estimation de la pose en 3D, pour n'en citer que quelques-unes.
@@ -73,14 +64,14 @@ Dans notre [OpenCV Notebook](OpenCV.ipynb), nous donnons quelques exemples où l
 
 * **Prétraitement d'une photographie d'un livre en braille**. Nous nous concentrons sur la manière dont nous pouvons utiliser le seuil, la détection de caractéristiques, la transformation de perspective et les manipulations NumPy pour séparer les symboles individuels en braille pour une classification ultérieure par un réseau neuronal.
 
-![Image Braille](../../../../../translated_images/braille.341962ff76b1bd7044409371d3de09ced5028132aef97344ea4b7468c1208126.fr.jpeg) | ![Image Braille prétraitée](../../../../../translated_images/braille-result.46530fea020b03c76aac532d7d6eeef7f6fb35b55b1001cd21627907dabef3ed.fr.png) | ![Symboles Braille](../../../../../translated_images/braille-symbols.0159185ab69d533909dc4d7d26a1971b51401c6a80eb3a5584f250ea880af88b.fr.png)
+![Image Braille](../../../../../translated_images/fr/braille.341962ff76b1bd70.webp) | ![Image Braille prétraitée](../../../../../translated_images/fr/braille-result.46530fea020b03c7.webp) | ![Symboles Braille](../../../../../translated_images/fr/braille-symbols.0159185ab69d5339.webp)
 ----|-----|-----
 
 > Image tirée de [OpenCV.ipynb](OpenCV.ipynb)
 
 * **Détection de mouvement dans une vidéo à l'aide de la différence entre les images**. Si la caméra est fixe, les images du flux de la caméra devraient être assez similaires les unes aux autres. Étant donné que les images sont représentées sous forme de tableaux, en soustrayant simplement ces tableaux pour deux images consécutives, nous obtiendrons la différence de pixels, qui devrait être faible pour des images statiques, et devenir plus élevée lorsqu'il y a un mouvement substantiel dans l'image.
 
-![Image des images vidéo et des différences entre les images](../../../../../translated_images/frame-difference.706f805491a0883c938e16447bf5eb2f7d69e812c7f743cbe7d7c7645168f81f.fr.png)
+![Image des images vidéo et des différences entre les images](../../../../../translated_images/fr/frame-difference.706f805491a0883c.webp)
 
 > Image tirée de [OpenCV.ipynb](OpenCV.ipynb)
 
@@ -89,7 +80,7 @@ Dans notre [OpenCV Notebook](OpenCV.ipynb), nous donnons quelques exemples où l
    - **Flux optique dense** calcule le champ vectoriel qui montre pour chaque pixel où il se déplace.
    - **Flux optique clairsemé** est basé sur la prise de certaines caractéristiques distinctives dans l'image (par exemple, les contours) et la construction de leur trajectoire d'une image à l'autre.
 
-![Image du flux optique](../../../../../translated_images/optical.1f4a94464579a83a10784f3c07fe7228514714b96782edf50e70ccd59d2d8c4f.fr.png)
+![Image du flux optique](../../../../../translated_images/fr/optical.1f4a94464579a83a.webp)
 
 > Image tirée de [OpenCV.ipynb](OpenCV.ipynb)
 
@@ -115,7 +106,7 @@ Lisez davantage sur le flux optique [dans ce tutoriel excellent](https://learnop
 
 Dans ce laboratoire, vous prendrez une vidéo avec des gestes simples, et votre objectif sera d'extraire les mouvements haut/bas/gauche/droite en utilisant le flux optique.
 
-<img src="images/palm-movement.png" width="30%" alt="Image de mouvement de la paume"/>
+<img src="../../../../../translated_images/fr/palm-movement.341495f0e9c47da3.webp" width="30%" alt="Image de mouvement de la paume"/>
 
 ---
 

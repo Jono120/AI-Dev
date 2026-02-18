@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "b70fcf7fcee862990f848c679090943f",
-  "translation_date": "2025-10-03T14:57:12+00:00",
-  "source_file": "lessons/4-ComputerVision/07-ConvNets/lab/README.md",
-  "language_code": "sk"
-}
--->
 # Klasifikácia tvárí domácich zvierat
 
 Laboratórna úloha z [AI for Beginners Curriculum](https://github.com/microsoft/ai-for-beginners).
@@ -21,7 +12,7 @@ Vašou úlohou je vytrénovať konvolučnú neurónovú sieť na klasifikáciu r
 
 Použijeme [Oxford-IIIT Pet Dataset](https://www.robots.ox.ac.uk/~vgg/data/pets/), ktorý obsahuje obrázky 37 rôznych plemien psov a mačiek.
 
-![Dataset, s ktorým budeme pracovať](../../../../../../translated_images/data.50b2a9d5484bdbf0f52f5765b381cec9efe2bd296a98f007f90bedb6ac67f2a8.sk.png)
+![Dataset, s ktorým budeme pracovať](../../../../../../translated_images/sk/data.50b2a9d5484bdbf0.webp)
 
 Na stiahnutie datasetu použite tento kód:
 

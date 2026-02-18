@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "04395657fc01648f8f70484d0e55ab67",
-  "translation_date": "2025-11-18T18:48:28+00:00",
-  "source_file": "lessons/6-Other/22-DeepRL/README.md",
-  "language_code": "pcm"
-}
--->
 # Deep Reinforcement Learning
 
 Reinforcement learning (RL) na one of di main machine learning methods, wey dey different from supervised learning and unsupervised learning. For supervised learning, we dey use dataset wey get known answers, but RL na **learning by doing**. For example, when we first see computer game, we go start to play am, even if we no sabi di rules, and soon we go dey improve our skills just by playing di game and changing how we dey behave.
@@ -34,7 +25,7 @@ You don see modern balancing devices like *Segway* or *Gyroscooters* before? Dem
 
 Simplified version of balancing na **CartPole** problem. For CartPole world, we get horizontal slider wey fit move left or right, and di goal na to balance vertical pole on top di slider as e dey move.
 
-<img alt="a cartpole" src="../../../../../translated_images/cartpole.f52a67f27e058170c25efc1bca8375b60906570ea757fe8d7ef04ae8e53df29d.pcm.png" width="200"/>
+<img alt="a cartpole" src="../../../../../translated_images/pcm/cartpole.f52a67f27e058170.webp" width="200"/>
 
 To create and use dis environment, we need small Python code:
 

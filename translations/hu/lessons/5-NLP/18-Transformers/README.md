@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "f335dfcb4a993920504c387973a36957",
-  "translation_date": "2025-09-23T11:17:48+00:00",
-  "source_file": "lessons/5-NLP/18-Transformers/README.md",
-  "language_code": "hu"
-}
--->
 # Figyelem Mechanizmusok és Transzformerek
 
 ## [Előadás előtti kvíz](https://ff-quizzes.netlify.app/en/ai/quiz/35)
@@ -20,13 +11,13 @@ Az RNN-ekkel a sorozat-sorozat feladatot két rekurzív hálózat valósítja me
 
 A **figyelem mechanizmusok** lehetőséget adnak arra, hogy súlyozzuk az egyes bemeneti vektorok kontextuális hatását az RNN kimeneti előrejelzéseire. Ez úgy valósul meg, hogy rövidítéseket hozunk létre a bemeneti RNN köztes állapotai és a kimeneti RNN között. Ily módon, amikor a y<sub>t</sub> kimeneti szimbólumot generáljuk, figyelembe vesszük az összes bemeneti rejtett állapotot h<sub>i</sub>, különböző súlyozási együtthatókkal &alpha;<sub>t,i</sub>.
 
-![Kép egy enkóder/dekóder modellről additív figyelemréteggel](../../../../../translated_images/encoder-decoder-attention.7a726296894fb567aa2898c94b17b3289087f6705c11907df8301df9e5eeb3de.hu.png)
+![Kép egy enkóder/dekóder modellről additív figyelemréteggel](../../../../../translated_images/hu/encoder-decoder-attention.7a726296894fb567.webp)
 
 > Az enkóder-dekóder modell additív figyelem mechanizmussal [Bahdanau et al., 2015](https://arxiv.org/pdf/1409.0473.pdf), idézve [ebből a blogbejegyzésből](https://lilianweng.github.io/lil-log/2018/06/24/attention-attention.html)
 
 A figyelem mátrix {&alpha;<sub>i,j</sub>} azt mutatja, hogy a bemeneti szavak milyen mértékben játszanak szerepet egy adott szó generálásában a kimeneti sorozatban. Az alábbiakban egy ilyen mátrix példáját láthatjuk:
 
-![Kép egy mintázott igazításról, amelyet az RNNsearch-50 talált, Bahdanau - arviz.org](../../../../../translated_images/bahdanau-fig3.09ba2d37f202a6af11de6c82d2d197830ba5f4528d9ea430eb65fd3a75065973.hu.png)
+![Kép egy mintázott igazításról, amelyet az RNNsearch-50 talált, Bahdanau - arviz.org](../../../../../translated_images/hu/bahdanau-fig3.09ba2d37f202a6af.webp)
 
 > Ábra [Bahdanau et al., 2015](https://arxiv.org/pdf/1409.0473.pdf) (3. ábra)
 
@@ -56,7 +47,7 @@ A pozíciós kódolás ötlete a következő:
 * Tanítható beágyazás, hasonlóan a token beágyazáshoz. Ezt a megközelítést vesszük figyelembe itt. Beágyazási rétegeket alkalmazunk mind a tokenekre, mind azok pozícióira, amelyek azonos dimenziójú beágyazási vektorokat eredményeznek, amelyeket ezután összeadunk.
 * Fix pozíciós kódoló függvény, ahogy azt az eredeti cikk javasolta.
 
-<img src="images/pos-embedding.png" width="50%"/>
+<img src="../../../../../translated_images/hu/pos-embedding.e41ce9b6cf6078af.webp" width="50%"/>
 
 > Kép a szerzőtől
 
@@ -66,7 +57,7 @@ Az eredmény, amelyet a pozíciós beágyazással kapunk, beágyazza mind az ere
 
 Ezután meg kell ragadnunk néhány mintát a sorozatunkon belül. Ehhez a transzformerek **önfigyelem** mechanizmust használnak, amely lényegében figyelem, amelyet ugyanarra a sorozatra alkalmazunk bemenetként és kimenetként. Az önfigyelem alkalmazása lehetővé teszi számunkra, hogy figyelembe vegyük a mondaton belüli **kontekztust**, és lássuk, mely szavak kapcsolódnak egymáshoz. Például lehetővé teszi számunkra, hogy lássuk, mely szavakra utalnak visszautalások, mint például *az*, és figyelembe vegyük a kontextust is:
 
-![](../../../../../translated_images/CoreferenceResolution.861924d6d384a7d68d8d0039d06a71a151f18a796b8b1330239d3590bd4947eb.hu.png)
+![](../../../../../translated_images/hu/CoreferenceResolution.861924d6d384a7d6.webp)
 
 > Kép a [Google Blogból](https://research.googleblog.com/2017/08/transformer-novel-neural-network.html)
 
@@ -91,7 +82,7 @@ Mivel minden bemeneti pozíciót függetlenül térképezünk a kimeneti pozíci
 
 A **BERT** (Bidirectional Encoder Representations from Transformers) egy nagyon nagy, többrétegű transzformer hálózat, amelynek 12 rétege van a *BERT-base* esetében, és 24 a *BERT-large* esetében. A modellt először egy nagy szövegkorpuszra (WikiPedia + könyvek) tanítják be felügyelet nélküli tanulással (maszkolt szavak előrejelzése egy mondatban). Az előképzés során a modell jelentős nyelvi megértést szerez, amelyet más adathalmazokkal finomhangolással lehet kihasználni. Ezt a folyamatot **transzfer tanulásnak** nevezzük.
 
-![kép a http://jalammar.github.io/illustrated-bert/ oldalról](../../../../../translated_images/jalammarBERT-language-modeling-masked-lm.34f113ea5fec4362e39ee4381aab7cad06b5465a0b5f053a0f2aa05fbe14e746.hu.png)
+![kép a http://jalammar.github.io/illustrated-bert/ oldalról](../../../../../translated_images/hu/jalammarBERT-language-modeling-masked-lm.34f113ea5fec4362.webp)
 
 > Kép [forrása](http://jalammar.github.io/illustrated-bert/)
 

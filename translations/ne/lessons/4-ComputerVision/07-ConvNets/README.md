@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "a560d5b845962cf33dc102266e409568",
-  "translation_date": "2025-09-23T07:15:35+00:00",
-  "source_file": "lessons/4-ComputerVision/07-ConvNets/README.md",
-  "language_code": "ne"
-}
--->
 # Convolutional Neural Networks
 
 हामीले पहिले देखिसकेका छौं कि न्युरल नेटवर्कहरू छविहरूसँग काम गर्न निकै राम्रो छन्, र एक तहको परसेप्ट्रोनले पनि MNIST डेटासेटबाट हस्तलेखन गरिएको अंकहरू उचित शुद्धतासँग चिन्हित गर्न सक्षम छ। तर, MNIST डेटासेट विशेष छ, र सबै अंकहरू छविको बीचमा केन्द्रित छन्, जसले कार्यलाई सरल बनाउँछ।
@@ -17,14 +8,14 @@ CO_OP_TRANSLATOR_METADATA:
 
 ढाँचाहरू निकाल्न, हामी **कन्भोल्युसनल फिल्टरहरू** को धारणा प्रयोग गर्नेछौं। तपाईंलाई थाहा छ, छवि 2D-म्याट्रिक्स वा रंग गहिराइ भएको 3D-टेन्सरद्वारा प्रतिनिधित्व गरिन्छ। फिल्टर लागू गर्नुको मतलब हामी सानो **फिल्टर कर्नेल** म्याट्रिक्स लिन्छौं, र मूल छविको प्रत्येक पिक्सेलको लागि हामी छिमेकी बिन्दुहरूसँग तौलित औसत गणना गर्छौं। हामी यसलाई सानो झ्यालले सम्पूर्ण छविमा स्लाइड गर्दै, र फिल्टर कर्नेल म्याट्रिक्समा तौलहरू अनुसार सबै पिक्सेलहरू औसत गर्दै हेर्न सक्छौं।
 
-![Vertical Edge Filter](../../../../../translated_images/filter-vert.b7148390ca0bc356ddc7e55555d2481819c1e86ddde9dce4db5e71a69d6f887f.ne.png) | ![Horizontal Edge Filter](../../../../../translated_images/filter-horiz.59b80ed4feb946efbe201a7fe3ca95abb3364e266e6fd90820cb893b4d3a6dda.ne.png)
+![Vertical Edge Filter](../../../../../translated_images/ne/filter-vert.b7148390ca0bc356.webp) | ![Horizontal Edge Filter](../../../../../translated_images/ne/filter-horiz.59b80ed4feb946ef.webp)
 ----|----
 
 > छवि: दिमित्री सोश्निकोभ
 
 उदाहरणका लागि, यदि हामी 3x3 ठाडो किनारा र तेर्सो किनारा फिल्टरहरू MNIST अंकहरूमा लागू गर्छौं भने, हामी मूल छविमा ठाडो र तेर्सो किनाराहरू भएको ठाउँमा हाइलाइटहरू (जस्तै उच्च मानहरू) प्राप्त गर्न सक्छौं। त्यसैले ती दुई फिल्टरहरू किनाराहरू "खोज्न" प्रयोग गर्न सकिन्छ। यसैगरी, हामी अन्य तल्लो-स्तरका ढाँचाहरू खोज्न विभिन्न फिल्टरहरू डिजाइन गर्न सक्छौं:
 
-<img src="images/lmfilters.jpg" width="500" align="center"/>
+<img src="../../../../../translated_images/ne/lmfilters.ea9e4868a82cf74c.webp" width="500" align="center"/>
 
 > [Leung-Malik Filter Bank](https://www.robots.ox.ac.uk/~vgg/research/texclass/filters.html) को छवि
 
@@ -38,7 +29,7 @@ CNN काम गर्ने तरिका निम्न महत्त्
 * हामी नेटवर्कलाई यसरी डिजाइन गर्न सक्छौं कि फिल्टरहरू स्वचालित रूपमा प्रशिक्षित हुन्छन्
 * हामी मूल छविमा मात्र होइन, उच्च-स्तरका विशेषताहरूमा ढाँचाहरू फेला पार्न उस्तै दृष्टिकोण प्रयोग गर्न सक्छौं। यसरी CNN विशेषता निकाल्ने काम विशेषताको पदानुक्रममा हुन्छ, तल्लो-स्तरका पिक्सेल संयोजनबाट सुरु गर्दै, चित्रका भागहरूको उच्च-स्तर संयोजनसम्म।
 
-![Hierarchical Feature Extraction](../../../../../translated_images/FeatureExtractionCNN.d9b456cbdae7cb643fde3032b81b2940e3cf8be842e29afac3f482725ba7f95c.ne.png)
+![Hierarchical Feature Extraction](../../../../../translated_images/ne/FeatureExtractionCNN.d9b456cbdae7cb64.webp)
 
 > छवि: [Hislop-Lynch को पेपर](https://www.semanticscholar.org/paper/Computer-vision-based-pedestrian-trajectory-Hislop-Lynch/26e6f74853fc9bbb7487b06dc2cf095d36c9021d) बाट, [तिनीहरूको अनुसन्धान](https://dl.acm.org/doi/abs/10.1145/1553374.1553453) मा आधारित
 
@@ -55,9 +46,9 @@ CNN काम गर्ने तरिका निम्न महत्त्
 
 उदाहरणका लागि, VGG-16 को आर्किटेक्चरलाई हेरौं, जसले 2014 मा ImageNet को शीर्ष-5 वर्गीकरणमा 92.7% शुद्धता प्राप्त गर्यो:
 
-![ImageNet Layers](../../../../../translated_images/vgg-16-arch1.d901a5583b3a51baeaab3e768567d921e5d54befa46e1e642616c5458c934028.ne.jpg)
+![ImageNet Layers](../../../../../translated_images/ne/vgg-16-arch1.d901a5583b3a51ba.webp)
 
-![ImageNet Pyramid](../../../../../translated_images/vgg-16-arch.64ff2137f50dd49fdaa786e3f3a975b3f22615efd13efb19c5d22f12e01451a1.ne.jpg)
+![ImageNet Pyramid](../../../../../translated_images/ne/vgg-16-arch.64ff2137f50dd49f.webp)
 
 > छवि: [Researchgate](https://www.researchgate.net/figure/Vgg16-model-structure-To-get-the-VGG-NIN-model-we-replace-the-2-nd-4-th-6-th-7-th_fig2_335194493) बाट
 

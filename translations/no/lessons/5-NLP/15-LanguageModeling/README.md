@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "7ba20f54a5bfcd6521018cdfb17c7c57",
-  "translation_date": "2025-09-23T09:45:54+00:00",
-  "source_file": "lessons/5-NLP/15-LanguageModeling/README.md",
-  "language_code": "no"
-}
--->
 # Språkmodellering
 
 Semantiske embeddinger, som Word2Vec og GloVe, er faktisk et første steg mot **språkmodellering** - å lage modeller som på en eller annen måte *forstår* (eller *representerer*) språkets natur.
@@ -23,7 +14,7 @@ I våre tidligere eksempler brukte vi forhåndstrente semantiske embeddinger, me
 * **Continuous Bag-of-Words** (CBoW), der vi forutsier det midterste tokenet $W_0$ i en sekvens av token $W_{-N}$, ..., $W_N$.
 * **Skip-gram**, der vi forutsier et sett av nabotoken {$W_{-N},\dots, W_{-1}, W_1,\dots, W_N$} fra det midterste tokenet $W_0$.
 
-![bilde fra artikkel om konvertering av ord til vektorer](../../../../../translated_images/example-algorithms-for-converting-words-to-vectors.fbe9207a726922f6f0f5de66427e8a6eda63809356114e28fb1fa5f4a83ebda7.no.png)
+![bilde fra artikkel om konvertering av ord til vektorer](../../../../../translated_images/no/example-algorithms-for-converting-words-to-vectors.fbe9207a726922f6.webp)
 
 > Bilde fra [denne artikkelen](https://arxiv.org/pdf/1301.3781.pdf)
 

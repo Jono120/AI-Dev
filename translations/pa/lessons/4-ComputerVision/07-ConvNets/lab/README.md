@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "b70fcf7fcee862990f848c679090943f",
-  "translation_date": "2025-10-03T14:54:07+00:00",
-  "source_file": "lessons/4-ComputerVision/07-ConvNets/lab/README.md",
-  "language_code": "pa"
-}
--->
 # ਪਾਲਤੂ ਜਾਨਵਰਾਂ ਦੇ ਚਿਹਰਿਆਂ ਦੀ ਵਰਗੀਕਰਨ
 
 [AI for Beginners Curriculum](https://github.com/microsoft/ai-for-beginners) ਤੋਂ ਲੈਬ ਅਸਾਈਨਮੈਂਟ।
@@ -21,7 +12,7 @@ CO_OP_TRANSLATOR_METADATA:
 
 ਅਸੀਂ [Oxford-IIIT Pet Dataset](https://www.robots.ox.ac.uk/~vgg/data/pets/) ਦੀ ਵਰਤੋਂ ਕਰਾਂਗੇ, ਜਿਸ ਵਿੱਚ ਕੁੱਤਿਆਂ ਅਤੇ ਬਿੱਲੀਆਂ ਦੀਆਂ 37 ਵੱਖ-ਵੱਖ ਬਰੀਡਾਂ ਦੀਆਂ ਤਸਵੀਰਾਂ ਸ਼ਾਮਲ ਹਨ।
 
-![ਜਿਸ ਡੇਟਾ ਨਾਲ ਅਸੀਂ ਕੰਮ ਕਰਨ ਜਾ ਰਹੇ ਹਾਂ](../../../../../../translated_images/data.50b2a9d5484bdbf0f52f5765b381cec9efe2bd296a98f007f90bedb6ac67f2a8.pa.png)
+![ਜਿਸ ਡੇਟਾ ਨਾਲ ਅਸੀਂ ਕੰਮ ਕਰਨ ਜਾ ਰਹੇ ਹਾਂ](../../../../../../translated_images/pa/data.50b2a9d5484bdbf0.webp)
 
 ਡੇਟਾਸੈਟ ਡਾਊਨਲੋਡ ਕਰਨ ਲਈ, ਇਸ ਕੋਡ ਸਨਿੱਪਟ ਦੀ ਵਰਤੋਂ ਕਰੋ:
 

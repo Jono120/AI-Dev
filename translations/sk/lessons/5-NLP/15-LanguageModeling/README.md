@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "7ba20f54a5bfcd6521018cdfb17c7c57",
-  "translation_date": "2025-09-23T14:09:53+00:00",
-  "source_file": "lessons/5-NLP/15-LanguageModeling/README.md",
-  "language_code": "sk"
-}
--->
 # Jazykové modelovanie
 
 Sémantické vektory, ako Word2Vec a GloVe, sú v skutočnosti prvým krokom k **jazykovému modelovaniu** – vytváraniu modelov, ktoré nejako *rozumejú* (alebo *reprezentujú*) podstatu jazyka.
@@ -23,7 +14,7 @@ V našich predchádzajúcich príkladoch sme používali predtrénované sémant
 * **Continuous Bag-of-Words** (CBoW), kde predpovedáme stredný token $W_0$ v sekvencii tokenov $W_{-N}$, ..., $W_N$.
 * **Skip-gram**, kde predpovedáme množinu susedných tokenov {$W_{-N},\dots, W_{-1}, W_1,\dots, W_N$} zo stredného tokenu $W_0$.
 
-![obrázok z článku o konverzii slov na vektory](../../../../../translated_images/example-algorithms-for-converting-words-to-vectors.fbe9207a726922f6f0f5de66427e8a6eda63809356114e28fb1fa5f4a83ebda7.sk.png)
+![obrázok z článku o konverzii slov na vektory](../../../../../translated_images/sk/example-algorithms-for-converting-words-to-vectors.fbe9207a726922f6.webp)
 
 > Obrázok z [tohto článku](https://arxiv.org/pdf/1301.3781.pdf)
 

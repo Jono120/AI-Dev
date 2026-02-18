@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "7ba20f54a5bfcd6521018cdfb17c7c57",
-  "translation_date": "2025-09-23T08:58:26+00:00",
-  "source_file": "lessons/5-NLP/15-LanguageModeling/README.md",
-  "language_code": "el"
-}
--->
 # Μοντελοποίηση Γλώσσας
 
 Οι σημασιολογικές ενσωματώσεις, όπως το Word2Vec και το GloVe, αποτελούν στην πραγματικότητα το πρώτο βήμα προς τη **μοντελοποίηση γλώσσας** - τη δημιουργία μοντέλων που με κάποιο τρόπο *κατανοούν* (ή *αναπαριστούν*) τη φύση της γλώσσας.
@@ -23,7 +14,7 @@ CO_OP_TRANSLATOR_METADATA:
 * **Continuous Bag-of-Words** (CBoW), όπου προβλέπουμε το μεσαίο σύμβολο $W_0$ σε μια ακολουθία συμβόλων $W_{-N}$, ..., $W_N$.
 * **Skip-gram**, όπου προβλέπουμε ένα σύνολο γειτονικών συμβόλων {$W_{-N},\dots, W_{-1}, W_1,\dots, W_N$} από το μεσαίο σύμβολο $W_0$.
 
-![εικόνα από άρθρο για τη μετατροπή λέξεων σε διανύσματα](../../../../../translated_images/example-algorithms-for-converting-words-to-vectors.fbe9207a726922f6f0f5de66427e8a6eda63809356114e28fb1fa5f4a83ebda7.el.png)
+![εικόνα από άρθρο για τη μετατροπή λέξεων σε διανύσματα](../../../../../translated_images/el/example-algorithms-for-converting-words-to-vectors.fbe9207a726922f6.webp)
 
 > Εικόνα από [αυτό το άρθρο](https://arxiv.org/pdf/1301.3781.pdf)
 

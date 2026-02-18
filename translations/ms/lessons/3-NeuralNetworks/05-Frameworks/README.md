@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "ddd216f558a255260a9374008002c971",
-  "translation_date": "2025-09-23T10:53:58+00:00",
-  "source_file": "lessons/3-NeuralNetworks/05-Frameworks/README.md",
-  "language_code": "ms"
-}
--->
 # Rangka Kerja Rangkaian Neural
 
 Seperti yang telah kita pelajari, untuk melatih rangkaian neural dengan cekap, kita perlu melakukan dua perkara:
@@ -58,7 +49,7 @@ Overfitting adalah konsep yang sangat penting dalam pembelajaran mesin, dan sang
 
 Pertimbangkan masalah berikut untuk menghampiri 5 titik (diwakili oleh `x` pada graf di bawah):
 
-![linear](../../../../../translated_images/overfit1.f24b71c6f652e59e6bed7245ffbeaecc3ba320e16e2221f6832b432052c4da43.ms.jpg) | ![overfit](../../../../../translated_images/overfit2.131f5800ae10ca5e41d12a411f5f705d9ee38b1b10916f284b787028dd55cc1c.ms.jpg)
+![linear](../../../../../translated_images/ms/overfit1.f24b71c6f652e59e.webp) | ![overfit](../../../../../translated_images/ms/overfit2.131f5800ae10ca5e.webp)
 -------------------------|--------------------------
 **Model Linear, 2 parameter** | **Model Tidak Linear, 7 parameter**
 Ralat latihan = 5.3 | Ralat latihan = 0
@@ -79,7 +70,7 @@ Adalah sangat penting untuk mencapai keseimbangan yang betul antara kekayaan mod
 
 Seperti yang anda lihat daripada graf di atas, overfitting boleh dikesan melalui ralat latihan yang sangat rendah, dan ralat validasi yang tinggi. Biasanya semasa latihan kita akan melihat kedua-dua ralat latihan dan validasi mula berkurangan, dan kemudian pada satu ketika ralat validasi mungkin berhenti berkurangan dan mula meningkat. Ini akan menjadi tanda overfitting, dan petunjuk bahawa kita mungkin perlu menghentikan latihan pada ketika ini (atau sekurang-kurangnya membuat snapshot model).
 
-![overfitting](../../../../../translated_images/Overfitting.408ad91cd90b4371d0a81f4287e1409c359751adeb1ae450332af50e84f08c3e.ms.png)
+![overfitting](../../../../../translated_images/ms/Overfitting.408ad91cd90b4371.webp)
 
 ## Cara mencegah overfitting
 

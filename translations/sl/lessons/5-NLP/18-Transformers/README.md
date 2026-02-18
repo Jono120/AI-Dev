@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "f335dfcb4a993920504c387973a36957",
-  "translation_date": "2025-09-23T15:09:53+00:00",
-  "source_file": "lessons/5-NLP/18-Transformers/README.md",
-  "language_code": "sl"
-}
--->
 # Mehanizmi pozornosti in transformatorji
 
 ## [Predavanje kviz](https://ff-quizzes.netlify.app/en/ai/quiz/35)
@@ -20,13 +11,13 @@ Pri RNN-jih je zaporedje-v-zaporedje implementirano z dvema rekurzivnima mrežam
 
 **Mehanizmi pozornosti** omogočajo tehtanje kontekstualnega vpliva vsakega vhodnega vektorja na vsako napoved izhoda RNN. To se implementira z ustvarjanjem bližnjic med vmesnimi stanji vhodnega RNN in izhodnega RNN. Na ta način bomo pri generiranju izhodnega simbola y<sub>t</sub> upoštevali vsa vhodna skrita stanja h<sub>i</sub>, z različnimi utežnimi koeficienti &alpha;<sub>t,i</sub>.
 
-![Slika, ki prikazuje model enkoder/dekoder z aditivno plastjo pozornosti](../../../../../translated_images/encoder-decoder-attention.7a726296894fb567aa2898c94b17b3289087f6705c11907df8301df9e5eeb3de.sl.png)
+![Slika, ki prikazuje model enkoder/dekoder z aditivno plastjo pozornosti](../../../../../translated_images/sl/encoder-decoder-attention.7a726296894fb567.webp)
 
 > Model enkoder-dekoder z aditivnim mehanizmom pozornosti v [Bahdanau et al., 2015](https://arxiv.org/pdf/1409.0473.pdf), povzeto iz [tega bloga](https://lilianweng.github.io/lil-log/2018/06/24/attention-attention.html)
 
 Matrika pozornosti {&alpha;<sub>i,j</sub>} predstavlja stopnjo, do katere določene vhodne besede vplivajo na generiranje določene besede v izhodnem zaporedju. Spodaj je primer takšne matrike:
 
-![Slika, ki prikazuje vzorčno poravnavo, najdeno z RNNsearch-50, povzeto iz Bahdanau - arviz.org](../../../../../translated_images/bahdanau-fig3.09ba2d37f202a6af11de6c82d2d197830ba5f4528d9ea430eb65fd3a75065973.sl.png)
+![Slika, ki prikazuje vzorčno poravnavo, najdeno z RNNsearch-50, povzeto iz Bahdanau - arviz.org](../../../../../translated_images/sl/bahdanau-fig3.09ba2d37f202a6af.webp)
 
 > Slika iz [Bahdanau et al., 2015](https://arxiv.org/pdf/1409.0473.pdf) (Slika 3)
 
@@ -56,7 +47,7 @@ Ideja kodiranja položaja je naslednja.
 * Učljivo ugnezdenje, podobno ugnezdenju tokenov. To je pristop, ki ga obravnavamo tukaj. Na vrhu tako tokenov kot njihovih položajev uporabimo plasti ugnezdenja, kar rezultira v vektorjih ugnezdenja enakih dimenzij, ki jih nato seštejemo.
 * Fiksna funkcija kodiranja položaja, kot je predlagano v izvirnem članku.
 
-<img src="images/pos-embedding.png" width="50%"/>
+<img src="../../../../../translated_images/sl/pos-embedding.e41ce9b6cf6078af.webp" width="50%"/>
 
 > Slika avtorja
 
@@ -66,7 +57,7 @@ Rezultat, ki ga dobimo s kodiranjem položaja, ugnezdi tako izvirni token kot nj
 
 Nato moramo zajeti nekatere vzorce znotraj našega zaporedja. Da bi to dosegli, transformatorji uporabljajo mehanizem **samopozornosti**, ki je v bistvu pozornost, uporabljena na istem zaporedju kot vhod in izhod. Uporaba samopozornosti nam omogoča, da upoštevamo **kontekst** znotraj stavka in vidimo, katere besede so medsebojno povezane. Na primer, omogoča nam, da vidimo, na katere besede se nanašajo koreference, kot je *to*, in tudi upoštevamo kontekst:
 
-![](../../../../../translated_images/CoreferenceResolution.861924d6d384a7d68d8d0039d06a71a151f18a796b8b1330239d3590bd4947eb.sl.png)
+![](../../../../../translated_images/sl/CoreferenceResolution.861924d6d384a7d6.webp)
 
 > Slika iz [Googlovega bloga](https://research.googleblog.com/2017/08/transformer-novel-neural-network.html)
 
@@ -91,7 +82,7 @@ Ker je vsak vhodni položaj neodvisno preslikan na vsak izhodni položaj, lahko 
 
 **BERT** (Bidirectional Encoder Representations from Transformers) je zelo velika večplastna mreža transformatorjev z 12 plastmi za *BERT-base* in 24 za *BERT-large*. Model je najprej predhodno naučen na velikem korpusu besedilnih podatkov (WikiPedia + knjige) z uporabo nenadzorovanega učenja (napovedovanje zamaskiranih besed v stavku). Med predhodnim učenjem model absorbira pomembne ravni razumevanja jezika, ki jih je nato mogoče uporabiti z drugimi nabori podatkov z uporabo finega uglaševanja. Ta proces se imenuje **prenosno učenje**.
 
-![slika iz http://jalammar.github.io/illustrated-bert/](../../../../../translated_images/jalammarBERT-language-modeling-masked-lm.34f113ea5fec4362e39ee4381aab7cad06b5465a0b5f053a0f2aa05fbe14e746.sl.png)
+![slika iz http://jalammar.github.io/illustrated-bert/](../../../../../translated_images/sl/jalammarBERT-language-modeling-masked-lm.34f113ea5fec4362.webp)
 
 > Slika [vir](http://jalammar.github.io/illustrated-bert/)
 

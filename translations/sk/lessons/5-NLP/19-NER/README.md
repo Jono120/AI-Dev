@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "6522312ff835796ca34136a9462fafb2",
-  "translation_date": "2025-09-23T14:10:58+00:00",
-  "source_file": "lessons/5-NLP/19-NER/README.md",
-  "language_code": "sk"
-}
--->
 # Rozpoznávanie pomenovaných entít
 
 Doteraz sme sa väčšinou sústredili na jednu úlohu NLP - klasifikáciu. Existujú však aj ďalšie úlohy NLP, ktoré je možné riešiť pomocou neurónových sietí. Jednou z týchto úloh je **[Rozpoznávanie pomenovaných entít](https://wikipedia.org/wiki/Named-entity_recognition)** (NER), ktoré sa zaoberá identifikáciou konkrétnych entít v texte, ako sú miesta, mená osôb, časové intervaly, chemické vzorce a podobne.
@@ -17,7 +8,7 @@ Doteraz sme sa väčšinou sústredili na jednu úlohu NLP - klasifikáciu. Exis
 
 Predstavte si, že chcete vyvinúť chatbot na spracovanie prirodzeného jazyka, podobný Amazon Alexa alebo Google Assistant. Inteligentné chatboty fungujú tak, že *rozumejú* tomu, čo používateľ chce, prostredníctvom klasifikácie textu na vstupnej vete. Výsledkom tejto klasifikácie je tzv. **zámer**, ktorý určuje, čo by mal chatbot urobiť.
 
-<img alt="Bot NER" src="images/bot-ner.png" width="50%"/>
+<img alt="Bot NER" src="../../../../../translated_images/sk/bot-ner.4b09235dbb0ad275.webp" width="50%"/>
 
 > Obrázok od autora
 
@@ -56,7 +47,7 @@ novorodenca | O
 
 Keďže potrebujeme vytvoriť jednoznačnú korešpondenciu medzi tokenmi a triedami, môžeme trénovať pravú **mnoho-na-mnoho** neurónovú sieť z tohto obrázku:
 
-![Obrázok zobrazujúci bežné vzory rekurentných neurónových sietí.](../../../../../translated_images/unreasonable-effectiveness-of-rnn.541ead816778f42dce6c42d8a56c184729aa2378d059b851be4ce12b993033df.sk.jpg)
+![Obrázok zobrazujúci bežné vzory rekurentných neurónových sietí.](../../../../../translated_images/sk/unreasonable-effectiveness-of-rnn.541ead816778f42d.webp)
 
 > *Obrázok z [tohto blogového príspevku](http://karpathy.github.io/2015/05/21/rnn-effectiveness/) od [Andreja Karpathyho](http://karpathy.github.io/). Modely klasifikácie tokenov NER zodpovedajú najpravšej architektúre siete na tomto obrázku.*
 

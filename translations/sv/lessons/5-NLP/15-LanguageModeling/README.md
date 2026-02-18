@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "7ba20f54a5bfcd6521018cdfb17c7c57",
-  "translation_date": "2025-09-23T09:23:36+00:00",
-  "source_file": "lessons/5-NLP/15-LanguageModeling/README.md",
-  "language_code": "sv"
-}
--->
 # Språkmodellering
 
 Semantiska inbäddningar, såsom Word2Vec och GloVe, är faktiskt ett första steg mot **språkmodellering** – att skapa modeller som på något sätt *förstår* (eller *representerar*) språkets natur.
@@ -23,7 +14,7 @@ I våra tidigare exempel använde vi förtränade semantiska inbäddningar, men 
 * **Continuous Bag-of-Words** (CBoW), där vi förutspår den mittersta token $W_0$ i en sekvens av tokens $W_{-N}$, ..., $W_N$.
 * **Skip-gram**, där vi förutspår en uppsättning närliggande tokens {$W_{-N},\dots, W_{-1}, W_1,\dots, W_N$} från den mittersta token $W_0$.
 
-![bild från artikel om att konvertera ord till vektorer](../../../../../translated_images/example-algorithms-for-converting-words-to-vectors.fbe9207a726922f6f0f5de66427e8a6eda63809356114e28fb1fa5f4a83ebda7.sv.png)
+![bild från artikel om att konvertera ord till vektorer](../../../../../translated_images/sv/example-algorithms-for-converting-words-to-vectors.fbe9207a726922f6.webp)
 
 > Bild från [denna artikel](https://arxiv.org/pdf/1301.3781.pdf)
 

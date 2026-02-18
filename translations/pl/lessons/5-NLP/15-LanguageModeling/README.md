@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "7ba20f54a5bfcd6521018cdfb17c7c57",
-  "translation_date": "2025-09-23T13:58:26+00:00",
-  "source_file": "lessons/5-NLP/15-LanguageModeling/README.md",
-  "language_code": "pl"
-}
--->
 # Modelowanie języka
 
 Semantyczne osadzenia, takie jak Word2Vec i GloVe, są w rzeczywistości pierwszym krokiem w kierunku **modelowania języka** - tworzenia modeli, które w pewien sposób *rozumieją* (lub *reprezentują*) naturę języka.
@@ -23,7 +14,7 @@ W naszych wcześniejszych przykładach korzystaliśmy z wstępnie wytrenowanych 
 * **Continuous Bag-of-Words** (CBoW), gdzie przewidujemy środkowy token $W_0$ w sekwencji tokenów $W_{-N}$, ..., $W_N$.
 * **Skip-gram**, gdzie przewidujemy zestaw sąsiednich tokenów {$W_{-N},\dots, W_{-1}, W_1,\dots, W_N$} na podstawie środkowego tokena $W_0$.
 
-![obraz z artykułu o konwersji słów na wektory](../../../../../translated_images/example-algorithms-for-converting-words-to-vectors.fbe9207a726922f6f0f5de66427e8a6eda63809356114e28fb1fa5f4a83ebda7.pl.png)
+![obraz z artykułu o konwersji słów na wektory](../../../../../translated_images/pl/example-algorithms-for-converting-words-to-vectors.fbe9207a726922f6.webp)
 
 > Obraz z [tego artykułu](https://arxiv.org/pdf/1301.3781.pdf)
 

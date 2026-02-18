@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "ddd216f558a255260a9374008002c971",
-  "translation_date": "2025-09-23T11:04:47+00:00",
-  "source_file": "lessons/3-NeuralNetworks/05-Frameworks/README.md",
-  "language_code": "sw"
-}
--->
 # Mfumo wa Mitandao ya Neural
 
 Kama tulivyojifunza tayari, ili kuweza kufundisha mitandao ya neural kwa ufanisi tunahitaji kufanya mambo mawili:
@@ -58,7 +49,7 @@ Overfitting ni dhana muhimu sana katika ujifunzaji wa mashine, na ni muhimu sana
 
 Fikiria tatizo lifuatalo la kukadiria alama 5 (zinazoonyeshwa na `x` kwenye grafu hapa chini):
 
-![linear](../../../../../translated_images/overfit1.f24b71c6f652e59e6bed7245ffbeaecc3ba320e16e2221f6832b432052c4da43.sw.jpg) | ![overfit](../../../../../translated_images/overfit2.131f5800ae10ca5e41d12a411f5f705d9ee38b1b10916f284b787028dd55cc1c.sw.jpg)
+![linear](../../../../../translated_images/sw/overfit1.f24b71c6f652e59e.webp) | ![overfit](../../../../../translated_images/sw/overfit2.131f5800ae10ca5e.webp)
 -------------------------|--------------------------
 **Modeli ya mstari, vigezo 2** | **Modeli isiyo ya mstari, vigezo 7**
 Makosa ya mafunzo = 5.3 | Makosa ya mafunzo = 0
@@ -79,7 +70,7 @@ Ni muhimu sana kupata usawa sahihi kati ya utajiri wa modeli (idadi ya vigezo) n
 
 Kama unavyoona kutoka kwenye grafu hapo juu, overfitting inaweza kugunduliwa kwa makosa ya mafunzo ya chini sana, na makosa ya uthibitishaji ya juu. Kawaida wakati wa mafunzo tutaona makosa ya mafunzo na uthibitishaji yakianza kupungua, na kisha wakati fulani makosa ya uthibitishaji yanaweza kuacha kupungua na kuanza kuongezeka. Hii itakuwa ishara ya overfitting, na kiashiria kwamba tunapaswa labda kuacha mafunzo wakati huo (au angalau kufanya nakala ya modeli).
 
-![overfitting](../../../../../translated_images/Overfitting.408ad91cd90b4371d0a81f4287e1409c359751adeb1ae450332af50e84f08c3e.sw.png)
+![overfitting](../../../../../translated_images/sw/Overfitting.408ad91cd90b4371.webp)
 
 ## Jinsi ya kuzuia overfitting
 

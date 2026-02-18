@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "feeca98225cb420afc89415f24f63d92",
-  "translation_date": "2025-09-23T15:03:07+00:00",
-  "source_file": "lessons/4-ComputerVision/06-IntroCV/README.md",
-  "language_code": "sl"
-}
--->
 # Uvod v računalniški vid
 
 [Računalniški vid](https://wikipedia.org/wiki/Computer_vision) je področje, katerega cilj je omogočiti računalnikom, da pridobijo visok nivo razumevanja digitalnih slik. To je precej široka definicija, saj lahko *razumevanje* pomeni veliko različnih stvari, vključno z iskanjem objekta na sliki (**prepoznavanje objektov**), razumevanjem dogajanja (**prepoznavanje dogodkov**), opisovanjem slike z besedilom ali rekonstrukcijo prizora v 3D. Obstajajo tudi posebne naloge, povezane s človeškimi slikami: ocenjevanje starosti in čustev, prepoznavanje obrazov ter določanje 3D drže, če naštejemo le nekaj primerov.
@@ -73,14 +64,14 @@ V našem [OpenCV Notebook](OpenCV.ipynb) podajamo nekaj primerov, kdaj se račun
 
 * **Predobdelava fotografije Braillove knjige**. Osredotočamo se na to, kako lahko uporabimo pragovno obdelavo, zaznavanje značilnosti, perspektivno transformacijo in manipulacije z NumPy za ločevanje posameznih Braillovih simbolov za nadaljnjo klasifikacijo z nevronsko mrežo.
 
-![Slika Braillove knjige](../../../../../translated_images/braille.341962ff76b1bd7044409371d3de09ced5028132aef97344ea4b7468c1208126.sl.jpeg) | ![Predobdelana slika Braillove knjige](../../../../../translated_images/braille-result.46530fea020b03c76aac532d7d6eeef7f6fb35b55b1001cd21627907dabef3ed.sl.png) | ![Braillovi simboli](../../../../../translated_images/braille-symbols.0159185ab69d533909dc4d7d26a1971b51401c6a80eb3a5584f250ea880af88b.sl.png)
+![Slika Braillove knjige](../../../../../translated_images/sl/braille.341962ff76b1bd70.webp) | ![Predobdelana slika Braillove knjige](../../../../../translated_images/sl/braille-result.46530fea020b03c7.webp) | ![Braillovi simboli](../../../../../translated_images/sl/braille-symbols.0159185ab69d5339.webp)
 ----|-----|-----
 
 > Slika iz [OpenCV.ipynb](OpenCV.ipynb)
 
 * **Zaznavanje gibanja v videu z razliko med okvirji**. Če je kamera fiksna, bi morali biti okvirji iz kamere med seboj precej podobni. Ker so okvirji predstavljeni kot polja, bomo z odštevanjem teh polj za dva zaporedna okvirja dobili razliko med piksli, ki bi morala biti nizka za statične okvirje in postati višja, ko je v sliki zaznano večje gibanje.
 
-![Slika video okvirjev in razlik med okvirji](../../../../../translated_images/frame-difference.706f805491a0883c938e16447bf5eb2f7d69e812c7f743cbe7d7c7645168f81f.sl.png)
+![Slika video okvirjev in razlik med okvirji](../../../../../translated_images/sl/frame-difference.706f805491a0883c.webp)
 
 > Slika iz [OpenCV.ipynb](OpenCV.ipynb)
 
@@ -89,7 +80,7 @@ V našem [OpenCV Notebook](OpenCV.ipynb) podajamo nekaj primerov, kdaj se račun
    - **Gost optični tok** izračuna vektorsko polje, ki kaže, kam se premika vsak piksel.
    - **Redek optični tok** temelji na zaznavanju nekaterih značilnih značilnosti slike (npr. robov) in gradnji njihove trajektorije od okvirja do okvirja.
 
-![Slika optičnega toka](../../../../../translated_images/optical.1f4a94464579a83a10784f3c07fe7228514714b96782edf50e70ccd59d2d8c4f.sl.png)
+![Slika optičnega toka](../../../../../translated_images/sl/optical.1f4a94464579a83a.webp)
 
 > Slika iz [OpenCV.ipynb](OpenCV.ipynb)
 
@@ -115,7 +106,7 @@ Preberite več o optičnem toku [v tem odličnem vodiču](https://learnopencv.co
 
 V tej nalogi boste posneli video s preprostimi gestami, vaš cilj pa bo izluščiti premike gor/dol/levo/desno z uporabo optičnega toka.
 
-<img src="images/palm-movement.png" width="30%" alt="Okvir premika dlani"/>
+<img src="../../../../../translated_images/sl/palm-movement.341495f0e9c47da3.webp" width="30%" alt="Okvir premika dlani"/>
 
 ---
 

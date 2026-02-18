@@ -1,23 +1,14 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "53faab85adfcebd8c10bcd71dc2fa557",
-  "translation_date": "2025-09-23T09:16:43+00:00",
-  "source_file": "lessons/4-ComputerVision/07-ConvNets/CNN_Architectures.md",
-  "language_code": "sv"
-}
--->
 # Välkända CNN-arkitekturer
 
 ### VGG-16
 
 VGG-16 är ett nätverk som uppnådde 92,7% noggrannhet i ImageNet top-5 klassificering år 2014. Det har följande lagerstruktur:
 
-![ImageNet Layers](../../../../../translated_images/vgg-16-arch1.d901a5583b3a51baeaab3e768567d921e5d54befa46e1e642616c5458c934028.sv.jpg)
+![ImageNet Layers](../../../../../translated_images/sv/vgg-16-arch1.d901a5583b3a51ba.webp)
 
 Som du kan se följer VGG en traditionell pyramidarkitektur, vilket är en sekvens av konvolutions- och poolinglager.
 
-![ImageNet Pyramid](../../../../../translated_images/vgg-16-arch.64ff2137f50dd49fdaa786e3f3a975b3f22615efd13efb19c5d22f12e01451a1.sv.jpg)
+![ImageNet Pyramid](../../../../../translated_images/sv/vgg-16-arch.64ff2137f50dd49f.webp)
 
 > Bild från [Researchgate](https://www.researchgate.net/figure/Vgg16-model-structure-To-get-the-VGG-NIN-model-we-replace-the-2-nd-4-th-6-th-7-th_fig2_335194493)
 
@@ -25,7 +16,7 @@ Som du kan se följer VGG en traditionell pyramidarkitektur, vilket är en sekve
 
 ResNet är en familj av modeller som föreslogs av Microsoft Research år 2015. Huvudidén med ResNet är att använda **residualblock**:
 
-<img src="images/resnet-block.png" width="300"/>
+<img src="../../../../../translated_images/sv/resnet-block.aba4ccbcc0944434.webp" width="300"/>
 
 > Bild från [denna artikel](https://arxiv.org/pdf/1512.03385.pdf)
 
@@ -37,7 +28,7 @@ Du kan också tänka på detta nätverk som att det kan anpassa sin komplexitet 
 
 Google Inception-arkitekturen tar denna idé ett steg längre och bygger varje nätverkslager som en kombination av flera olika vägar:
 
-<img src="images/inception.png" width="400"/>
+<img src="../../../../../translated_images/sv/inception.a6605b85bcbc6f52.webp" width="400"/>
 
 > Bild från [Researchgate](https://www.researchgate.net/figure/Inception-module-with-dimension-reductions-left-and-schema-for-Inception-ResNet-v1_fig2_355547454)
 

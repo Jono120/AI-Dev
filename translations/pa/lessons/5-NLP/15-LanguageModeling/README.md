@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "7ba20f54a5bfcd6521018cdfb17c7c57",
-  "translation_date": "2025-09-23T07:39:25+00:00",
-  "source_file": "lessons/5-NLP/15-LanguageModeling/README.md",
-  "language_code": "pa"
-}
--->
 # ਭਾਸ਼ਾ ਮਾਡਲਿੰਗ
 
 ਸੈਮੈਂਟਿਕ ਐਮਬੈਡਿੰਗਜ਼, ਜਿਵੇਂ ਕਿ Word2Vec ਅਤੇ GloVe, ਅਸਲ ਵਿੱਚ **ਭਾਸ਼ਾ ਮਾਡਲਿੰਗ** ਵੱਲ ਪਹਿਲਾ ਕਦਮ ਹਨ - ਅਜਿਹੇ ਮਾਡਲ ਬਣਾਉਣਾ ਜੋ ਕਿਸੇ ਤਰੀਕੇ ਨਾਲ ਭਾਸ਼ਾ ਦੀ ਕੁਦਰਤ ਨੂੰ *ਸਮਝਦੇ* (ਜਾਂ *ਪ੍ਰਸਤੁਤ ਕਰਦੇ*) ਹਨ।
@@ -23,7 +14,7 @@ CO_OP_TRANSLATOR_METADATA:
 * **ਕੰਟਿਨਿਊਅਸ ਬੈਗ-ਆਫ-ਵਰਡਸ** (CBoW), ਜਦੋਂ ਅਸੀਂ ਟੋਕਨ ਸੀਕਵੈਂਸ $W_{-N}$, ..., $W_N$ ਵਿੱਚ ਮੱਧਲੇ ਟੋਕਨ $W_0$ ਦੀ ਪੇਸ਼ਗੂਈ ਕਰਦੇ ਹਾਂ।
 * **ਸਕਿਪ-ਗ੍ਰਾਮ**, ਜਿੱਥੇ ਅਸੀਂ ਮੱਧਲੇ ਟੋਕਨ $W_0$ ਤੋਂ ਨੇੜਲੇ ਟੋਕਨਜ਼ {$W_{-N},\dots, W_{-1}, W_1,\dots, W_N$} ਦੀ ਪੇਸ਼ਗੂਈ ਕਰਦੇ ਹਾਂ।
 
-![ਸ਼ਬਦਾਂ ਨੂੰ ਵੈਕਟਰ ਵਿੱਚ ਬਦਲਣ ਲਈ ਪੇਪਰ ਤੋਂ ਚਿੱਤਰ](../../../../../translated_images/example-algorithms-for-converting-words-to-vectors.fbe9207a726922f6f0f5de66427e8a6eda63809356114e28fb1fa5f4a83ebda7.pa.png)
+![ਸ਼ਬਦਾਂ ਨੂੰ ਵੈਕਟਰ ਵਿੱਚ ਬਦਲਣ ਲਈ ਪੇਪਰ ਤੋਂ ਚਿੱਤਰ](../../../../../translated_images/pa/example-algorithms-for-converting-words-to-vectors.fbe9207a726922f6.webp)
 
 > ਚਿੱਤਰ [ਇਸ ਪੇਪਰ](https://arxiv.org/pdf/1301.3781.pdf) ਤੋਂ
 

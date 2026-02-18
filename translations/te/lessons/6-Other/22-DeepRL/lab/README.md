@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "7bd8dc72040e98e35e7225e34058cd4e",
-  "translation_date": "2025-11-25T23:39:14+00:00",
-  "source_file": "lessons/6-Other/22-DeepRL/lab/README.md",
-  "language_code": "te"
-}
--->
 # మౌంటైన్ కార్ నుండి తప్పించుకోవడానికి శిక్షణ
 
 [AI for Beginners Curriculum](https://github.com/microsoft/ai-for-beginners) నుండి ల్యాబ్ అసైన్‌మెంట్.
@@ -15,7 +6,7 @@ CO_OP_TRANSLATOR_METADATA:
 
 OpenAI పరిసరంలో [Mountain Car](https://www.gymlibrary.ml/environments/classic_control/mountain_car/) ను నియంత్రించడానికి RL ఏజెంట్‌ను శిక్షణ ఇవ్వడం మీ లక్ష్యం.
 
-<img alt="Mountain Car" src="../../../../../../translated_images/mountaincar.f7b7a7f6d4f9933b31a5fb3453b9c026aa0d65f6644bb03513a955590aae1bc4.te.png" width="300"/>
+<img alt="Mountain Car" src="../../../../../../translated_images/te/mountaincar.f7b7a7f6d4f9933b.webp" width="300"/>
 
 ## పరిసరము
 

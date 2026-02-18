@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "feeca98225cb420afc89415f24f63d92",
-  "translation_date": "2025-09-23T10:59:47+00:00",
-  "source_file": "lessons/4-ComputerVision/06-IntroCV/README.md",
-  "language_code": "sw"
-}
--->
 # Utangulizi wa Uelewa wa Picha na Kompyuta
 
 [Computer Vision](https://wikipedia.org/wiki/Computer_vision) ni taaluma inayolenga kuwezesha kompyuta kupata uelewa wa kiwango cha juu wa picha za kidijitali. Hii ni tafsiri pana, kwa sababu *uelewa* unaweza kumaanisha mambo mengi tofauti, ikiwa ni pamoja na kutambua kitu kwenye picha (**utambuzi wa vitu**), kuelewa kinachotokea (**utambuzi wa matukio**), kuelezea picha kwa maandishi, au kujenga upya mandhari kwa 3D. Pia kuna kazi maalum zinazohusiana na picha za binadamu: makadirio ya umri na hisia, utambuzi wa uso na utambulisho, na makadirio ya mkao wa 3D, miongoni mwa mengine.
@@ -73,14 +64,14 @@ Katika [OpenCV Notebook](OpenCV.ipynb) yetu, tunatoa mifano ya wakati uelewa wa 
 
 * **Usindikaji wa awali wa picha ya kitabu cha Braille**. Tunazingatia jinsi tunavyoweza kutumia thresholding, utambuzi wa vipengele, mabadiliko ya mtazamo na manipulations za NumPy kutenganisha alama za Braille kwa uainishaji zaidi na mtandao wa neva.
 
-![Braille Image](../../../../../translated_images/braille.341962ff76b1bd7044409371d3de09ced5028132aef97344ea4b7468c1208126.sw.jpeg) | ![Braille Image Pre-processed](../../../../../translated_images/braille-result.46530fea020b03c76aac532d7d6eeef7f6fb35b55b1001cd21627907dabef3ed.sw.png) | ![Braille Symbols](../../../../../translated_images/braille-symbols.0159185ab69d533909dc4d7d26a1971b51401c6a80eb3a5584f250ea880af88b.sw.png)
+![Braille Image](../../../../../translated_images/sw/braille.341962ff76b1bd70.webp) | ![Braille Image Pre-processed](../../../../../translated_images/sw/braille-result.46530fea020b03c7.webp) | ![Braille Symbols](../../../../../translated_images/sw/braille-symbols.0159185ab69d5339.webp)
 ----|-----|-----
 
 > Picha kutoka [OpenCV.ipynb](OpenCV.ipynb)
 
 * **Kutambua harakati kwenye video kwa kutumia tofauti ya fremu**. Ikiwa kamera imetulia, basi fremu kutoka mlisho wa kamera zinapaswa kufanana sana. Kwa kuwa fremu zinawakilishwa kama safu, kwa kutoa tofauti ya safu hizo kwa fremu mbili mfululizo tutapata tofauti ya pikseli, ambayo inapaswa kuwa ndogo kwa fremu tuli, na kuwa kubwa zaidi mara kuna harakati kubwa kwenye picha.
 
-![Image of video frames and frame differences](../../../../../translated_images/frame-difference.706f805491a0883c938e16447bf5eb2f7d69e812c7f743cbe7d7c7645168f81f.sw.png)
+![Image of video frames and frame differences](../../../../../translated_images/sw/frame-difference.706f805491a0883c.webp)
 
 > Picha kutoka [OpenCV.ipynb](OpenCV.ipynb)
 
@@ -89,7 +80,7 @@ Katika [OpenCV Notebook](OpenCV.ipynb) yetu, tunatoa mifano ya wakati uelewa wa 
    - **Dense Optical Flow** huhesabu uwanja wa vekta unaoonyesha kwa kila pikseli inahama wapi.
    - **Sparse Optical Flow** inategemea kuchukua vipengele vya kipekee kwenye picha (mfano, kingo), na kujenga mwelekeo wake kutoka fremu hadi fremu.
 
-![Image of Optical Flow](../../../../../translated_images/optical.1f4a94464579a83a10784f3c07fe7228514714b96782edf50e70ccd59d2d8c4f.sw.png)
+![Image of Optical Flow](../../../../../translated_images/sw/optical.1f4a94464579a83a.webp)
 
 > Picha kutoka [OpenCV.ipynb](OpenCV.ipynb)
 
@@ -115,7 +106,7 @@ Soma zaidi kuhusu optical flow [katika mafunzo haya mazuri](https://learnopencv.
 
 Katika maabara hii, utachukua video yenye ishara rahisi, na lengo lako ni kutoa harakati za juu/chini/kushoto/kulia kwa kutumia optical flow.
 
-<img src="images/palm-movement.png" width="30%" alt="Palm Movement Frame"/>
+<img src="../../../../../translated_images/sw/palm-movement.341495f0e9c47da3.webp" width="30%" alt="Palm Movement Frame"/>
 
 ---
 

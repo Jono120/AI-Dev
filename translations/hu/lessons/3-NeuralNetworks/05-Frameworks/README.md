@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "ddd216f558a255260a9374008002c971",
-  "translation_date": "2025-09-23T11:16:35+00:00",
-  "source_file": "lessons/3-NeuralNetworks/05-Frameworks/README.md",
-  "language_code": "hu"
-}
--->
 # Neurális hálózati keretrendszerek
 
 Ahogy már megtanultuk, a neurális hálózatok hatékony tanításához két dolgot kell megtennünk:
@@ -58,7 +49,7 @@ Az overfitting rendkívül fontos fogalom a gépi tanulásban, és nagyon fontos
 
 Vegyük például az alábbi problémát, amelyben 5 pontot próbálunk közelíteni (a grafikonokon `x` jelöli a pontokat):
 
-![lineáris](../../../../../translated_images/overfit1.f24b71c6f652e59e6bed7245ffbeaecc3ba320e16e2221f6832b432052c4da43.hu.jpg) | ![overfitting](../../../../../translated_images/overfit2.131f5800ae10ca5e41d12a411f5f705d9ee38b1b10916f284b787028dd55cc1c.hu.jpg)
+![lineáris](../../../../../translated_images/hu/overfit1.f24b71c6f652e59e.webp) | ![overfitting](../../../../../translated_images/hu/overfit2.131f5800ae10ca5e.webp)
 -------------------------|--------------------------
 **Lineáris modell, 2 paraméter** | **Nemlineáris modell, 7 paraméter**
 Tanítási hiba = 5.3 | Tanítási hiba = 0
@@ -79,7 +70,7 @@ Nagyon fontos megtalálni a megfelelő egyensúlyt a modell gazdagsága (paramé
 
 Ahogy a fenti grafikonon látható, az overfittinget nagyon alacsony tanítási hiba és magas validációs hiba jelezheti. Általában a tanítás során mind a tanítási, mind a validációs hibák csökkenni kezdenek, majd egy ponton a validációs hiba megállhat a csökkenésben, és növekedni kezdhet. Ez az overfitting jele, és annak indikátora, hogy valószínűleg abba kell hagynunk a tanítást (vagy legalábbis készítenünk kell egy pillanatképet a modellről).
 
-![overfitting](../../../../../translated_images/Overfitting.408ad91cd90b4371d0a81f4287e1409c359751adeb1ae450332af50e84f08c3e.hu.png)
+![overfitting](../../../../../translated_images/hu/Overfitting.408ad91cd90b4371.webp)
 
 ## Hogyan előzhető meg az overfitting?
 

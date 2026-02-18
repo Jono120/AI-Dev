@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "a560d5b845962cf33dc102266e409568",
-  "translation_date": "2025-09-23T12:27:00+00:00",
-  "source_file": "lessons/4-ComputerVision/07-ConvNets/README.md",
-  "language_code": "fa"
-}
--->
 # شبکه‌های عصبی کانولوشنی
 
 قبلاً دیده‌ایم که شبکه‌های عصبی در پردازش تصاویر بسیار خوب عمل می‌کنند، حتی یک پرسپترون تک‌لایه قادر است با دقت قابل قبولی ارقام دست‌نویس مجموعه داده MNIST را تشخیص دهد. با این حال، مجموعه داده MNIST بسیار خاص است و تمام ارقام در مرکز تصویر قرار دارند، که این کار را ساده‌تر می‌کند.
@@ -17,14 +8,14 @@ CO_OP_TRANSLATOR_METADATA:
 
 برای استخراج الگوها، از مفهوم **فیلترهای کانولوشنی** استفاده خواهیم کرد. همان‌طور که می‌دانید، یک تصویر به صورت یک ماتریس دو‌بعدی یا یک تنسور سه‌بعدی با عمق رنگ نمایش داده می‌شود. اعمال یک فیلتر به این معناست که یک ماتریس کوچک **هسته فیلتر** را می‌گیریم و برای هر پیکسل در تصویر اصلی میانگین وزنی را با نقاط همسایه محاسبه می‌کنیم. می‌توانیم این فرآیند را به صورت یک پنجره کوچک که روی کل تصویر حرکت می‌کند و تمام پیکسل‌ها را بر اساس وزن‌های موجود در ماتریس هسته فیلتر میانگین‌گیری می‌کند، تصور کنیم.
 
-![فیلتر لبه عمودی](../../../../../translated_images/filter-vert.b7148390ca0bc356ddc7e55555d2481819c1e86ddde9dce4db5e71a69d6f887f.fa.png) | ![فیلتر لبه افقی](../../../../../translated_images/filter-horiz.59b80ed4feb946efbe201a7fe3ca95abb3364e266e6fd90820cb893b4d3a6dda.fa.png)
+![فیلتر لبه عمودی](../../../../../translated_images/fa/filter-vert.b7148390ca0bc356.webp) | ![فیلتر لبه افقی](../../../../../translated_images/fa/filter-horiz.59b80ed4feb946ef.webp)
 ----|----
 
 > تصویر از دیمیتری سوشنیکوف
 
 به عنوان مثال، اگر فیلترهای لبه عمودی و افقی ۳x۳ را به ارقام MNIST اعمال کنیم، می‌توانیم نقاط برجسته (مانند مقادیر بالا) را در جایی که لبه‌های عمودی و افقی در تصویر اصلی وجود دارند، دریافت کنیم. بنابراین این دو فیلتر می‌توانند برای "جستجوی" لبه‌ها استفاده شوند. به همین ترتیب، می‌توانیم فیلترهای مختلفی طراحی کنیم تا به دنبال سایر الگوهای سطح پایین بگردیم:
 
-<img src="images/lmfilters.jpg" width="500" align="center"/>
+<img src="../../../../../translated_images/fa/lmfilters.ea9e4868a82cf74c.webp" width="500" align="center"/>
 
 > تصویر از [بانک فیلتر لئونگ-مالیک](https://www.robots.ox.ac.uk/~vgg/research/texclass/filters.html)
 
@@ -38,7 +29,7 @@ CO_OP_TRANSLATOR_METADATA:
 * می‌توانیم شبکه را به گونه‌ای طراحی کنیم که فیلترها به صورت خودکار آموزش ببینند.
 * می‌توانیم از همین روش برای یافتن الگوها در ویژگی‌های سطح بالا، نه فقط در تصویر اصلی، استفاده کنیم. بنابراین استخراج ویژگی‌های CNN بر اساس سلسله مراتبی از ویژگی‌ها عمل می‌کند، از ترکیب‌های پیکسل سطح پایین تا ترکیب‌های سطح بالای بخش‌های تصویر.
 
-![استخراج ویژگی سلسله‌مراتبی](../../../../../translated_images/FeatureExtractionCNN.d9b456cbdae7cb643fde3032b81b2940e3cf8be842e29afac3f482725ba7f95c.fa.png)
+![استخراج ویژگی سلسله‌مراتبی](../../../../../translated_images/fa/FeatureExtractionCNN.d9b456cbdae7cb64.webp)
 
 > تصویر از [مقاله‌ای توسط هیسلوپ-لینچ](https://www.semanticscholar.org/paper/Computer-vision-based-pedestrian-trajectory-Hislop-Lynch/26e6f74853fc9bbb7487b06dc2cf095d36c9021d)، بر اساس [تحقیقات آن‌ها](https://dl.acm.org/doi/abs/10.1145/1553374.1553453)
 
@@ -55,9 +46,9 @@ CO_OP_TRANSLATOR_METADATA:
 
 به عنوان مثال، بیایید به معماری VGG-16 نگاه کنیم، شبکه‌ای که در سال ۲۰۱۴ به دقت ۹۲.۷٪ در طبقه‌بندی پنج‌تایی ImageNet دست یافت:
 
-![لایه‌های ImageNet](../../../../../translated_images/vgg-16-arch1.d901a5583b3a51baeaab3e768567d921e5d54befa46e1e642616c5458c934028.fa.jpg)
+![لایه‌های ImageNet](../../../../../translated_images/fa/vgg-16-arch1.d901a5583b3a51ba.webp)
 
-![هرم ImageNet](../../../../../translated_images/vgg-16-arch.64ff2137f50dd49fdaa786e3f3a975b3f22615efd13efb19c5d22f12e01451a1.fa.jpg)
+![هرم ImageNet](../../../../../translated_images/fa/vgg-16-arch.64ff2137f50dd49f.webp)
 
 > تصویر از [ریسرچ‌گیت](https://www.researchgate.net/figure/Vgg16-model-structure-To-get-the-VGG-NIN-model-we-replace-the-2-nd-4-th-6-th-7-th_fig2_335194493)
 

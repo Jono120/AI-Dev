@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "b70fcf7fcee862990f848c679090943f",
-  "translation_date": "2025-11-25T22:42:55+00:00",
-  "source_file": "lessons/4-ComputerVision/07-ConvNets/lab/README.md",
-  "language_code": "kn"
-}
--->
 # ಪೆಟ್ಸ್ ಮುಖಗಳ ವರ್ಗೀಕರಣ
 
 [AI for Beginners Curriculum](https://github.com/microsoft/ai-for-beginners) ನಿಂದ ಪ್ರಯೋಗಾಲಯದ ಕಾರ್ಯ.
@@ -21,7 +12,7 @@ CO_OP_TRANSLATOR_METADATA:
 
 ನಾವು [Oxford-IIIT Pet Dataset](https://www.robots.ox.ac.uk/~vgg/data/pets/) ಅನ್ನು ಬಳಸಲಿದ್ದೇವೆ, ಇದರಲ್ಲಿ 37 ವಿಭಿನ್ನ ನಾಯಿ ಮತ್ತು ಬೆಕ್ಕು ಜಾತಿಗಳ ಚಿತ್ರಗಳಿವೆ.
 
-![ನಾವು ಕೈಗಾರಿಕೆ ಮಾಡಲಿರುವ ಡೇಟಾಸೆಟ್](../../../../../../translated_images/data.50b2a9d5484bdbf0f52f5765b381cec9efe2bd296a98f007f90bedb6ac67f2a8.kn.png)
+![ನಾವು ಕೈಗಾರಿಕೆ ಮಾಡಲಿರುವ ಡೇಟಾಸೆಟ್](../../../../../../translated_images/kn/data.50b2a9d5484bdbf0.webp)
 
 ಡೇಟಾಸೆಟ್ ಡೌನ್‌ಲೋಡ್ ಮಾಡಲು, ಈ ಕೋಡ್ ಸ್ನಿಪೆಟ್ ಬಳಸಿ:
 

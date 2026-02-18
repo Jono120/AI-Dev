@@ -1,19 +1,10 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "d76a7eda28de5210c8b1ba50a6216c69",
-  "translation_date": "2025-11-25T22:35:21+00:00",
-  "source_file": "lessons/4-ComputerVision/11-ObjectDetection/README.md",
-  "language_code": "kn"
-}
--->
 # ವಸ್ತು ಪತ್ತೆ
 
 ನಾವು ಇದುವರೆಗೆ ನೋಡಿದ ಚಿತ್ರ ವರ್ಗೀಕರಣ ಮಾದರಿಗಳು ಒಂದು ಚಿತ್ರವನ್ನು ತೆಗೆದುಕೊಂಡು ವರ್ಗೀಕೃತ ಫಲಿತಾಂಶವನ್ನು ನೀಡುತ್ತವೆ, ಉದಾಹರಣೆಗೆ MNIST ಸಮಸ್ಯೆಯಲ್ಲಿ 'ಸಂಖ್ಯೆ' ವರ್ಗ. ಆದರೆ, ಅನೇಕ ಸಂದರ್ಭಗಳಲ್ಲಿ ನಾವು ಕೇವಲ ಚಿತ್ರದಲ್ಲಿ ವಸ್ತುಗಳಿರುವುದನ್ನು ತಿಳಿದುಕೊಳ್ಳುವುದಲ್ಲ, ಅವುಗಳ ನಿಖರ ಸ್ಥಳವನ್ನು ಕಂಡುಹಿಡಿಯಬೇಕಾಗುತ್ತದೆ. ಇದೇ ನಿಖರವಾಗಿ **ವಸ್ತು ಪತ್ತೆ**ಯ ಉದ್ದೇಶ.
 
 ## [ಪೂರ್ವ-ಪಾಠ ಪ್ರಶ್ನೋತ್ತರ](https://ff-quizzes.netlify.app/en/ai/quiz/21)
 
-![ವಸ್ತು ಪತ್ತೆ](../../../../../translated_images/Screen_Shot_2016-11-17_at_11.14.54_AM.b4bb3769353287be1b905373ed9c858102c054b16e4595c76ec3f7bba0feb549.kn.png)
+![ವಸ್ತು ಪತ್ತೆ](../../../../../translated_images/kn/Screen_Shot_2016-11-17_at_11.14.54_AM.b4bb3769353287be.webp)
 
 > ಚಿತ್ರ [YOLO v2 ವೆಬ್ ಸೈಟ್](https://pjreddie.com/darknet/yolov2/) ನಿಂದ
 
@@ -25,7 +16,7 @@ CO_OP_TRANSLATOR_METADATA:
 2. ಪ್ರತಿ ಟೈಲ್ನಲ್ಲಿ ಚಿತ್ರ ವರ್ಗೀಕರಣವನ್ನು ನಡೆಸಿ.
 3. ಸಾಕಷ್ಟು ಉತ್ಸಾಹದೊಂದಿಗೆ ಫಲಿತಾಂಶ ನೀಡುವ ಟೈಲ್ಗಳನ್ನು ಆ ವಸ್ತು ಹೊಂದಿದೆ ಎಂದು ಪರಿಗಣಿಸಬಹುದು.
 
-![ಸರಳ ವಸ್ತು ಪತ್ತೆ](../../../../../translated_images/naive-detection.e7f1ba220ccd08c68a2ea8e06a7ed75c3fcc738c2372f9e00b7f4299a8659c01.kn.png)
+![ಸರಳ ವಸ್ತು ಪತ್ತೆ](../../../../../translated_images/kn/naive-detection.e7f1ba220ccd08c6.webp)
 
 > *ಚಿತ್ರ [ಅಭ್ಯಾಸ ನೋಟ್ಬುಕ್](ObjectDetection-TF.ipynb) ನಿಂದ*
 
@@ -42,7 +33,7 @@ CO_OP_TRANSLATOR_METADATA:
 * [PASCAL VOC](http://host.robots.ox.ac.uk/pascal/VOC/) - 20 ವರ್ಗಗಳು
 * [COCO](http://cocodataset.org/#home) - ಸಾಮಾನ್ಯ ವಸ್ತುಗಳು ಸನ್ನಿವೇಶದಲ್ಲಿ. 80 ವರ್ಗಗಳು, ಸುತ್ತುವರೆದ ಬಾಕ್ಸ್‌ಗಳು ಮತ್ತು ವಿಭಾಗ ಚಿಹ್ನೆಗಳು
 
-![COCO](../../../../../translated_images/coco-examples.71bc60380fa6cceb7caad48bd09e35b6028caabd363aa04fee89c414e0870e86.kn.jpg)
+![COCO](../../../../../translated_images/kn/coco-examples.71bc60380fa6cceb.webp)
 
 ## ವಸ್ತು ಪತ್ತೆ ಮೌಲ್ಯಮಾಪನ
 
@@ -50,7 +41,7 @@ CO_OP_TRANSLATOR_METADATA:
 
 ಚಿತ್ರ ವರ್ಗೀಕರಣದಲ್ಲಿ ಆಲ್ಗಾರಿದಮ್ ಎಷ್ಟು ಚೆನ್ನಾಗಿ ಕಾರ್ಯನಿರ್ವಹಿಸುತ್ತದೆ ಎಂದು ಅಳೆಯುವುದು ಸುಲಭ, ಆದರೆ ವಸ್ತು ಪತ್ತೆಯಲ್ಲಿ ವರ್ಗದ ಸರಿಯಾದತೆ ಮತ್ತು ಸುತ್ತುವರೆದ ಬಾಕ್ಸ್ ನಿಖರತೆಯನ್ನು ಎರಡನ್ನೂ ಅಳೆಯಬೇಕಾಗುತ್ತದೆ. ನಂತರದದಕ್ಕಾಗಿ ನಾವು **Intersection over Union** (IoU) ಅನ್ನು ಬಳಸುತ್ತೇವೆ, ಇದು ಎರಡು ಬಾಕ್ಸ್‌ಗಳು (ಅಥವಾ ಎರಡು ಯಾವುದೇ ಪ್ರದೇಶಗಳು) ಎಷ್ಟು ಒಟ್ಟಿಗೆ ಬರುತ್ತವೆ ಎಂದು ಅಳೆಯುತ್ತದೆ.
 
-![IoU](../../../../../translated_images/iou_equation.9a4751d40fff4e119ecd0a7bcca4e71ab1dc83e0d4f2a0d66ff0859736f593cf.kn.png)
+![IoU](../../../../../translated_images/kn/iou_equation.9a4751d40fff4e11.webp)
 
 > *ಚಿತ್ರ 2 [ಈ ಅದ್ಭುತ ಬ್ಲಾಗ್ ಪೋಸ್ಟ್](https://pyimagesearch.com/2016/11/07/intersection-over-union-iou-for-object-detection/) ನಿಂದ*
 
@@ -97,11 +88,11 @@ $$
 
 [R-CNN](http://islab.ulsan.ac.kr/files/announcement/513/rcnn_pami.pdf) [Selective Search](http://www.huppelen.nl/publications/selectiveSearchDraft.pdf) ಬಳಸಿ ROI ಪ್ರದೇಶಗಳ ಹೈರಾರ್ಕಿಕ ರಚನೆಯನ್ನು ರಚಿಸುತ್ತದೆ, ಅವುಗಳನ್ನು ನಂತರ CNN ವೈಶಿಷ್ಟ್ಯ ಸಂಗ್ರಾಹಕ ಮತ್ತು SVM ವರ್ಗೀಕರಣಕಾರರ ಮೂಲಕ ವಸ್ತು ವರ್ಗವನ್ನು ನಿರ್ಧರಿಸಲು ಮತ್ತು ರೇಖೀಯ ರಿಗ್ರೆಷನ್ ಮೂಲಕ *ಸುತ್ತುವರೆದ ಬಾಕ್ಸ್* ಸಂಯೋಜನೆಗಳನ್ನು ಊಹಿಸಲು ಬಳಸಲಾಗುತ್ತದೆ. [ಅಧಿಕೃತ ಪೇಪರ್](https://arxiv.org/pdf/1506.01497v1.pdf)
 
-![RCNN](../../../../../translated_images/rcnn1.cae407020dfb1d1fb572656e44f75cd6c512cc220591c116c506652c10e47f26.kn.png)
+![RCNN](../../../../../translated_images/kn/rcnn1.cae407020dfb1d1f.webp)
 
 > *ಚಿತ್ರ van de Sande et al. ICCV’11 ನಿಂದ*
 
-![RCNN-1](../../../../../translated_images/rcnn2.2d9530bb83516484ec65b250c22dbf37d3d23244f32864ebcb91d98fe7c3112c.kn.png)
+![RCNN-1](../../../../../translated_images/kn/rcnn2.2d9530bb83516484.webp)
 
 > *ಚಿತ್ರಗಳು [ಈ ಬ್ಲಾಗ್](https://towardsdatascience.com/r-cnn-fast-r-cnn-faster-r-cnn-yolo-object-detection-algorithms-36d53571365e) ನಿಂದ*
 
@@ -109,7 +100,7 @@ $$
 
 ಈ ವಿಧಾನ R-CNN ಗೆ ಸಮಾನ, ಆದರೆ ಪ್ರದೇಶಗಳನ್ನು ಕನ್ವಲ್ಯೂಷನ್ ಲೇಯರ್‌ಗಳ ನಂತರ ನಿರ್ಧರಿಸಲಾಗುತ್ತದೆ.
 
-![FRCNN](../../../../../translated_images/f-rcnn.3cda6d9bb41888754037d2d9763e2298a96de5d9bc2a21db3147357aa5da9b1a.kn.png)
+![FRCNN](../../../../../translated_images/kn/f-rcnn.3cda6d9bb4188875.webp)
 
 > ಚಿತ್ರ [ಅಧಿಕೃತ ಪೇಪರ್](https://www.cv-foundation.org/openaccess/content_iccv_2015/papers/Girshick_Fast_R-CNN_ICCV_2015_paper.pdf), [arXiv](https://arxiv.org/pdf/1504.08083.pdf), 2015 ನಿಂದ
 
@@ -117,7 +108,7 @@ $$
 
 ಈ ವಿಧಾನದಲ್ಲಿ ಮುಖ್ಯ ಯೋಚನೆ ROI ಗಳನ್ನು ಊಹಿಸಲು ನ್ಯೂರಲ್ ನೆಟ್‌ವರ್ಕ್ ಬಳಸುವುದು - ಇದನ್ನು *ಪ್ರದೇಶ ಪ್ರಸ್ತಾವನೆ ಜಾಲ* ಎಂದು ಕರೆಯುತ್ತಾರೆ. [ಪೇಪರ್](https://arxiv.org/pdf/1506.01497.pdf), 2016
 
-![FasterRCNN](../../../../../translated_images/faster-rcnn.8d46c099b87ef30ab2ea26dbc4bdd85b974a57ba8eb526f65dc4cd0a4711de30.kn.png)
+![FasterRCNN](../../../../../translated_images/kn/faster-rcnn.8d46c099b87ef30a.webp)
 
 > ಚಿತ್ರ [ಅಧಿಕೃತ ಪೇಪರ್](https://arxiv.org/pdf/1506.01497.pdf) ನಿಂದ
 
@@ -129,7 +120,7 @@ $$
 2. ವೈಶಿಷ್ಟ್ಯಗಳನ್ನು **ಸ್ಥಾನ-ಸಂವೇದನಾತ್ಮಕ ಸ್ಕೋರ್ ನಕ್ಷೆ** ಮೂಲಕ ಪ್ರಕ್ರಿಯೆಗೊಳಿಸುವುದು. $C$ ವರ್ಗಗಳ ಪ್ರತಿಯೊಂದು ವಸ್ತುವನ್ನು $k\times k$ ಪ್ರದೇಶಗಳಾಗಿ ವಿಭಜಿಸಿ, ವಸ್ತುಗಳ ಭಾಗಗಳನ್ನು ಊಹಿಸಲು ತರಬೇತಿ ನೀಡಲಾಗುತ್ತದೆ.
 3. $k\times k$ ಪ್ರದೇಶಗಳ ಪ್ರತಿಯೊಂದು ಭಾಗಕ್ಕೆ ಎಲ್ಲಾ ಜಾಲಗಳು ವಸ್ತು ವರ್ಗಗಳಿಗೆ ಮತದಾನ ಮಾಡುತ್ತವೆ, ಗರಿಷ್ಠ ಮತ ಪಡೆದ ವಸ್ತು ವರ್ಗ ಆಯ್ಕೆಮಾಡಲಾಗುತ್ತದೆ.
 
-![r-fcn image](../../../../../translated_images/r-fcn.13eb88158b99a3da50fa2787a6be5cb310d47f0e9655cc93a1090dc7aab338d1.kn.png)
+![r-fcn image](../../../../../translated_images/kn/r-fcn.13eb88158b99a3da.webp)
 
 > ಚಿತ್ರ [ಅಧಿಕೃತ ಪೇಪರ್](https://arxiv.org/abs/1605.06409) ನಿಂದ
 
@@ -140,7 +131,7 @@ YOLO ಒಂದು ರಿಯಲ್-ಟೈಮ್ ಒಂದು-ಪಾಸ್ ಆಲ�
  * ಚಿತ್ರವನ್ನು $S\times S$ ಪ್ರದೇಶಗಳಾಗಿ ವಿಭಜಿಸುವುದು
  * ಪ್ರತಿ ಪ್ರದೇಶಕ್ಕೆ, **CNN** $n$ ಸಾಧ್ಯವಿರುವ ವಸ್ತುಗಳನ್ನು, *ಸುತ್ತುವರೆದ ಬಾಕ್ಸ್* ಸಂಯೋಜನೆಗಳನ್ನು ಮತ್ತು *ನಂಬಿಕೆ* = *ಸಂಭಾವ್ಯತೆ* * IoU ಅನ್ನು ಊಹಿಸುವುದು.
 
- ![YOLO](../../../../../translated_images/yolo.a2648ec82ee8bb4ea27537677adb482fd4b733ca1705c561b6a24a85102dced5.kn.png)
+ ![YOLO](../../../../../translated_images/kn/yolo.a2648ec82ee8bb4e.webp)
 
 > ಚಿತ್ರ [ಅಧಿಕೃತ ಪೇಪರ್](https://arxiv.org/abs/1506.02640) ನಿಂದ
 

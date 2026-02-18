@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "b70fcf7fcee862990f848c679090943f",
-  "translation_date": "2025-10-03T14:58:48+00:00",
-  "source_file": "lessons/4-ComputerVision/07-ConvNets/lab/README.md",
-  "language_code": "lt"
-}
--->
 # Naminių gyvūnų veidų klasifikacija
 
 Laboratorinis darbas iš [AI pradedantiesiems mokymo programos](https://github.com/microsoft/ai-for-beginners).
@@ -21,7 +12,7 @@ Jums reikia išmokyti konvoliucinį neuroninį tinklą klasifikuoti skirtingas k
 
 Naudosime [Oxford-IIIT Pet Dataset](https://www.robots.ox.ac.uk/~vgg/data/pets/), kuriame yra 37 skirtingų šunų ir kačių veislių nuotraukos.
 
-![Duomenų rinkinys, su kuriuo dirbsime](../../../../../../translated_images/data.50b2a9d5484bdbf0f52f5765b381cec9efe2bd296a98f007f90bedb6ac67f2a8.lt.png)
+![Duomenų rinkinys, su kuriuo dirbsime](../../../../../../translated_images/lt/data.50b2a9d5484bdbf0.webp)
 
 Norėdami atsisiųsti duomenų rinkinį, naudokite šį kodo fragmentą:
 

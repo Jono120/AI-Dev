@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "b70fcf7fcee862990f848c679090943f",
-  "translation_date": "2025-10-03T14:55:55+00:00",
-  "source_file": "lessons/4-ComputerVision/07-ConvNets/lab/README.md",
-  "language_code": "nl"
-}
--->
 # Classificatie van Huisdiergezichten
 
 Labopdracht uit [AI for Beginners Curriculum](https://github.com/microsoft/ai-for-beginners).
@@ -21,7 +12,7 @@ Je moet een convolutioneel neuraal netwerk trainen om verschillende rassen van k
 
 We gebruiken de [Oxford-IIIT Pet Dataset](https://www.robots.ox.ac.uk/~vgg/data/pets/), die afbeeldingen bevat van 37 verschillende rassen van honden en katten.
 
-![Dataset waarmee we werken](../../../../../../translated_images/data.50b2a9d5484bdbf0f52f5765b381cec9efe2bd296a98f007f90bedb6ac67f2a8.nl.png)
+![Dataset waarmee we werken](../../../../../../translated_images/nl/data.50b2a9d5484bdbf0.webp)
 
 Om de dataset te downloaden, gebruik deze codefragment:
 

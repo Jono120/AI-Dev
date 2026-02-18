@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "7ba20f54a5bfcd6521018cdfb17c7c57",
-  "translation_date": "2025-10-11T11:42:54+00:00",
-  "source_file": "lessons/5-NLP/15-LanguageModeling/README.md",
-  "language_code": "et"
-}
--->
 # Keelemudelid
 
 Semantilised vektorid, nagu Word2Vec ja GloVe, on tegelikult esimene samm **keelemudelite** suunas – mudelite loomine, mis mingil moel *mõistavad* (või *esindavad*) keele olemust.
@@ -23,7 +14,7 @@ Eelnevates näidetes kasutasime eelnevalt treenitud semantilisi vektoreid, kuid 
 * **Järjepidev sõnakott** (CBoW), kus ennustame keskmist tokenit $W_0$ tokenite järjestuses $W_{-N}$, ..., $W_N$.
 * **Skip-gramm**, kus ennustame keskmise tokeni $W_0$ põhjal naabertokenite komplekti {$W_{-N},\dots, W_{-1}, W_1,\dots, W_N$}.
 
-![pilt artiklist, mis käsitleb sõnade teisendamist vektoriteks](../../../../../translated_images/example-algorithms-for-converting-words-to-vectors.fbe9207a726922f6f0f5de66427e8a6eda63809356114e28fb1fa5f4a83ebda7.et.png)
+![pilt artiklist, mis käsitleb sõnade teisendamist vektoriteks](../../../../../translated_images/et/example-algorithms-for-converting-words-to-vectors.fbe9207a726922f6.webp)
 
 > Pilt [sellest artiklist](https://arxiv.org/pdf/1301.3781.pdf)
 

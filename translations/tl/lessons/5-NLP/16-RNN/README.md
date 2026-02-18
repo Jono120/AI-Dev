@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "e2273cc150380a5e191903cea858f021",
-  "translation_date": "2025-09-23T07:01:08+00:00",
-  "source_file": "lessons/5-NLP/16-RNN/README.md",
-  "language_code": "tl"
-}
--->
 # Recurrent Neural Networks
 
 ## [Pre-lecture quiz](https://ff-quizzes.netlify.app/en/ai/quiz/31)
@@ -15,7 +6,7 @@ Sa mga nakaraang seksyon, gumamit tayo ng mas mayamang semantic na representasyo
 
 Upang makuha ang kahulugan ng pagkakasunod-sunod ng teksto, kailangan nating gumamit ng ibang arkitektura ng neural network, na tinatawag na **recurrent neural network**, o RNN. Sa RNN, ipinapasa natin ang ating pangungusap sa network nang paisa-isang simbolo, at ang network ay gumagawa ng isang **estado**, na pagkatapos ay ipinapasa natin muli sa network kasama ang susunod na simbolo.
 
-![RNN](../../../../../translated_images/rnn.27f5c29c53d727b546ad3961637a267f0fe9ec5ab01f2a26a853c92fcefbb574.tl.png)
+![RNN](../../../../../translated_images/tl/rnn.27f5c29c53d727b5.webp)
 
 > Larawan mula sa may-akda
 
@@ -31,7 +22,7 @@ Tingnan natin kung paano nakaayos ang isang simpleng RNN cell. Tumatanggap ito n
 
 Ang isang simpleng RNN cell ay may dalawang weight matrices sa loob: ang isa ay nagta-transform ng input symbol (tawagin natin itong W), at ang isa ay nagta-transform ng input state (H). Sa kasong ito, ang output ng network ay kinakalkula bilang &sigma;(W&times;X<sub>i</sub>+H&times;S<sub>i-1</sub>+b), kung saan ang &sigma; ay ang activation function at ang b ay karagdagang bias.
 
-<img alt="RNN Cell Anatomy" src="images/rnn-anatomy.png" width="50%"/>
+<img alt="RNN Cell Anatomy" src="../../../../../translated_images/tl/rnn-anatomy.79ee3f3920b3294b.webp" width="50%"/>
 
 > Larawan mula sa may-akda
 
@@ -61,7 +52,7 @@ Napag-usapan natin ang mga recurrent networks na gumagana sa isang direksyon, mu
 
 Ang isang Recurrent network, alinman sa one-directional o bidirectional, ay kumukuha ng ilang patterns sa loob ng isang sequence, at maaaring i-store ang mga ito sa isang state vector o ipasa sa output. Tulad ng convolutional networks, maaari tayong bumuo ng isa pang recurrent layer sa ibabaw ng una upang makuha ang mas mataas na level na patterns at bumuo mula sa low-level patterns na nakuha ng unang layer. Ito ay humahantong sa konsepto ng isang **multi-layer RNN** na binubuo ng dalawa o higit pang recurrent networks, kung saan ang output ng nakaraang layer ay ipinapasa sa susunod na layer bilang input.
 
-![Image showing a Multilayer long-short-term-memory- RNN](../../../../../translated_images/multi-layer-lstm.dd975e29bb2a59fe58b429db833932d734c81f211cad2783797a9608984acb8c.tl.jpg)
+![Image showing a Multilayer long-short-term-memory- RNN](../../../../../translated_images/tl/multi-layer-lstm.dd975e29bb2a59fe.webp)
 
 *Larawan mula sa [napakagandang post na ito](https://towardsdatascience.com/from-a-lstm-cell-to-a-multilayer-lstm-network-with-pytorch-2899eb5696f3) ni Fernando López*
 

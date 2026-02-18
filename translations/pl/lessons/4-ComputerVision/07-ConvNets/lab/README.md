@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "b70fcf7fcee862990f848c679090943f",
-  "translation_date": "2025-10-03T14:54:42+00:00",
-  "source_file": "lessons/4-ComputerVision/07-ConvNets/lab/README.md",
-  "language_code": "pl"
-}
--->
 # Klasyfikacja Twarzy Zwierząt Domowych
 
 Zadanie laboratoryjne z [Kursu AI dla Początkujących](https://github.com/microsoft/ai-for-beginners).
@@ -21,7 +12,7 @@ Twoim zadaniem jest wytrenowanie konwolucyjnej sieci neuronowej do klasyfikacji 
 
 Użyjemy [Oxford-IIIT Pet Dataset](https://www.robots.ox.ac.uk/~vgg/data/pets/), który zawiera obrazy 37 różnych ras psów i kotów.
 
-![Zestaw danych, z którym będziemy pracować](../../../../../../translated_images/data.50b2a9d5484bdbf0f52f5765b381cec9efe2bd296a98f007f90bedb6ac67f2a8.pl.png)
+![Zestaw danych, z którym będziemy pracować](../../../../../../translated_images/pl/data.50b2a9d5484bdbf0.webp)
 
 Aby pobrać zestaw danych, użyj tego fragmentu kodu:
 

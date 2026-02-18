@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "0ff65b4da07b23697235de2beb2a3c25",
-  "translation_date": "2025-11-25T22:28:10+00:00",
-  "source_file": "lessons/4-ComputerVision/10-GANs/README.md",
-  "language_code": "te"
-}
--->
 # జనరేటివ్ అడ్వర్సరియల్ నెట్‌వర్క్స్
 
 మునుపటి విభాగంలో, మనం **జనరేటివ్ మోడల్స్** గురించి నేర్చుకున్నాము: శిక్షణ డేటాసెట్‌లోని చిత్రాలకు సమానమైన కొత్త చిత్రాలను సృష్టించగల మోడల్స్. VAE ఒక మంచి ఉదాహరణ.
@@ -17,7 +8,7 @@ CO_OP_TRANSLATOR_METADATA:
 
 GAN యొక్క ప్రధాన ఆలోచన రెండు న్యూరల్ నెట్‌వర్క్స్‌ను ఒకదానితో ఒకటి పోటీగా శిక్షణ ఇవ్వడం:
 
-<img src="../../../../../translated_images/gan_architecture.8f3a5ab62b8d5d698a91f7668017d8e09b81c5d8e7cc99bdb23979d90a0c475e.te.png" width="70%"/>
+<img src="../../../../../translated_images/te/gan_architecture.8f3a5ab62b8d5d69.webp" width="70%"/>
 
 > చిత్రం: [Dmitry Soshnikov](http://soshnikov.com)
 
@@ -41,7 +32,7 @@ CNN డిస్క్రిమినేటర్ లో ఈ క్రింద�
 
 > ✅ కన్వల్యూషన్ లేయర్ చిత్రం మీద లీనియర్ ఫిల్టర్ లాగా అమలు కావడంతో, డీకన్వల్యూషన్ కూడా కన్వల్యూషన్ లాగా ఉంటుంది మరియు అదే లేయర్ లాజిక్ ఉపయోగించి అమలు చేయవచ్చు.
 
-<img src="../../../../../translated_images/gan_arch_detail.46b95fd366f8e543170264fe07e516683ac3e5bb699392c35449e99590a11063.te.png" width="70%"/>
+<img src="../../../../../translated_images/te/gan_arch_detail.46b95fd366f8e543.webp" width="70%"/>
 
 > చిత్రం: [Dmitry Soshnikov](http://soshnikov.com)
 

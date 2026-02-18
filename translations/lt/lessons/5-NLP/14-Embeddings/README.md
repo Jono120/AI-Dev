@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "b708c9b85b833864c73c6281f1e6b96e",
-  "translation_date": "2025-09-23T15:50:57+00:00",
-  "source_file": "lessons/5-NLP/14-Embeddings/README.md",
-  "language_code": "lt"
-}
--->
 # Įterpiniai
 
 ## [Prieš paskaitos testas](https://ff-quizzes.netlify.app/en/ai/quiz/27)
@@ -19,7 +10,7 @@ Taigi, įterpimo sluoksnis priims žodį kaip įvestį ir pateiks išvesties vek
 
 Naudodami įterpimo sluoksnį kaip pirmąjį sluoksnį mūsų klasifikatoriaus tinkle, galime pereiti nuo žodžių maišo prie **įterpinių maišo** modelio, kuriame pirmiausia kiekvieną žodį mūsų tekste konvertuojame į atitinkamą įterpinį, o tada apskaičiuojame tam tikrą agregavimo funkciją visiems tiems įterpiniams, pvz., `sum`, `average` arba `max`.
 
-![Vaizdas, rodantis įterpinio klasifikatorių penkiems sekos žodžiams.](../../../../../translated_images/embedding-classifier-example.b77f021a7ee67eeec8e68bfe11636c5b97d6eaa067515a129bfb1d0034b1ac5b.lt.png)
+![Vaizdas, rodantis įterpinio klasifikatorių penkiems sekos žodžiams.](../../../../../translated_images/lt/embedding-classifier-example.b77f021a7ee67eee.webp)
 
 > Vaizdas sukurtas autoriaus
 
@@ -40,7 +31,7 @@ Norėdami tai pasiekti, turime iš anksto apmokyti savo įterpimo modelį didel�
 
 CBoW yra greitesnis, o praleidimo gramų modelis yra lėtesnis, tačiau geriau reprezentuoja retus žodžius.
 
-![Vaizdas, rodantis CBoW ir praleidimo gramų algoritmus žodžių konvertavimui į vektorius.](../../../../../translated_images/example-algorithms-for-converting-words-to-vectors.fbe9207a726922f6f0f5de66427e8a6eda63809356114e28fb1fa5f4a83ebda7.lt.png)
+![Vaizdas, rodantis CBoW ir praleidimo gramų algoritmus žodžių konvertavimui į vektorius.](../../../../../translated_images/lt/example-algorithms-for-converting-words-to-vectors.fbe9207a726922f6.webp)
 
 > Vaizdas iš [šio straipsnio](https://arxiv.org/pdf/1301.3781.pdf)
 

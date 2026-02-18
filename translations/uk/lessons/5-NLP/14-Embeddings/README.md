@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "b708c9b85b833864c73c6281f1e6b96e",
-  "translation_date": "2025-09-23T15:39:29+00:00",
-  "source_file": "lessons/5-NLP/14-Embeddings/README.md",
-  "language_code": "uk"
-}
--->
 # Вбудовування
 
 ## [Тест перед лекцією](https://ff-quizzes.netlify.app/en/ai/quiz/27)
@@ -19,7 +10,7 @@ CO_OP_TRANSLATOR_METADATA:
 
 Використовуючи шар вбудовування як перший шар у нашій мережі класифікатора, ми можемо перейти від моделі "мішка слів" до моделі **мішка вбудовувань**, де спочатку кожне слово в нашому тексті перетворюється у відповідне вбудовування, а потім обчислюється певна агрегатна функція над усіма цими вбудовуваннями, така як `sum`, `average` або `max`.
 
-![Зображення, що показує класифікатор на основі вбудовувань для п'яти слів у послідовності.](../../../../../translated_images/embedding-classifier-example.b77f021a7ee67eeec8e68bfe11636c5b97d6eaa067515a129bfb1d0034b1ac5b.uk.png)
+![Зображення, що показує класифікатор на основі вбудовувань для п'яти слів у послідовності.](../../../../../translated_images/uk/embedding-classifier-example.b77f021a7ee67eee.webp)
 
 > Зображення автора
 
@@ -40,7 +31,7 @@ CO_OP_TRANSLATOR_METADATA:
 
 CBoW працює швидше, тоді як скіп-грам повільніший, але краще представляє рідковживані слова.
 
-![Зображення, що показує алгоритми CBoW і Skip-Gram для перетворення слів у вектори.](../../../../../translated_images/example-algorithms-for-converting-words-to-vectors.fbe9207a726922f6f0f5de66427e8a6eda63809356114e28fb1fa5f4a83ebda7.uk.png)
+![Зображення, що показує алгоритми CBoW і Skip-Gram для перетворення слів у вектори.](../../../../../translated_images/uk/example-algorithms-for-converting-words-to-vectors.fbe9207a726922f6.webp)
 
 > Зображення з [цієї статті](https://arxiv.org/pdf/1301.3781.pdf)
 

@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "b70fcf7fcee862990f848c679090943f",
-  "translation_date": "2025-10-03T14:54:34+00:00",
-  "source_file": "lessons/4-ComputerVision/07-ConvNets/lab/README.md",
-  "language_code": "it"
-}
--->
 # Classificazione delle Facce degli Animali Domestici
 
 Compito del laboratorio tratto dal [Curriculum AI for Beginners](https://github.com/microsoft/ai-for-beginners).
@@ -21,7 +12,7 @@ Devi addestrare una rete neurale convoluzionale per classificare le diverse razz
 
 Utilizzeremo il [Oxford-IIIT Pet Dataset](https://www.robots.ox.ac.uk/~vgg/data/pets/), che contiene immagini di 37 diverse razze di cani e gatti.
 
-![Dataset con cui lavoreremo](../../../../../../translated_images/data.50b2a9d5484bdbf0f52f5765b381cec9efe2bd296a98f007f90bedb6ac67f2a8.it.png)
+![Dataset con cui lavoreremo](../../../../../../translated_images/it/data.50b2a9d5484bdbf0.webp)
 
 Per scaricare il dataset, utilizza questo frammento di codice:
 

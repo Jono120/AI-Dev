@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "b70fcf7fcee862990f848c679090943f",
-  "translation_date": "2025-10-03T14:53:22+00:00",
-  "source_file": "lessons/4-ComputerVision/07-ConvNets/lab/README.md",
-  "language_code": "ko"
-}
--->
 # 애완동물 얼굴 분류
 
 [AI for Beginners Curriculum](https://github.com/microsoft/ai-for-beginners)에서 제공하는 실습 과제입니다.
@@ -21,7 +12,7 @@ CO_OP_TRANSLATOR_METADATA:
 
 우리는 [Oxford-IIIT Pet Dataset](https://www.robots.ox.ac.uk/~vgg/data/pets/)을 사용할 것입니다. 이 데이터셋은 37가지 다른 품종의 개와 고양이 이미지를 포함하고 있습니다.
 
-![우리가 다룰 데이터셋](../../../../../../translated_images/data.50b2a9d5484bdbf0f52f5765b381cec9efe2bd296a98f007f90bedb6ac67f2a8.ko.png)
+![우리가 다룰 데이터셋](../../../../../../translated_images/ko/data.50b2a9d5484bdbf0.webp)
 
 데이터셋을 다운로드하려면 아래 코드 스니펫을 사용하세요:
 

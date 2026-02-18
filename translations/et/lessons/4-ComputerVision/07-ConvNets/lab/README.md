@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "b70fcf7fcee862990f848c679090943f",
-  "translation_date": "2025-10-11T11:26:33+00:00",
-  "source_file": "lessons/4-ComputerVision/07-ConvNets/lab/README.md",
-  "language_code": "et"
-}
--->
 # Lemmikloomade nägude klassifikatsioon
 
 Laboriülesanne [AI for Beginners Curriculum](https://github.com/microsoft/ai-for-beginners) programmist.
@@ -21,7 +12,7 @@ Te peate treenima konvolutsioonilise närvivõrgu, et klassifitseerida erinevaid
 
 Me kasutame [Oxford-IIIT Pet Dataset](https://www.robots.ox.ac.uk/~vgg/data/pets/) andmestikku, mis sisaldab pilte 37 erinevast koerte ja kasside tõust.
 
-![Andmestik, millega töötame](../../../../../../translated_images/data.50b2a9d5484bdbf0f52f5765b381cec9efe2bd296a98f007f90bedb6ac67f2a8.et.png)
+![Andmestik, millega töötame](../../../../../../translated_images/et/data.50b2a9d5484bdbf0.webp)
 
 Andmestiku allalaadimiseks kasutage järgmist koodilõiku:
 

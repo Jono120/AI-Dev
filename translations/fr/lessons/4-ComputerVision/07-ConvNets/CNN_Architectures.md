@@ -1,23 +1,14 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "53faab85adfcebd8c10bcd71dc2fa557",
-  "translation_date": "2025-09-23T11:56:12+00:00",
-  "source_file": "lessons/4-ComputerVision/07-ConvNets/CNN_Architectures.md",
-  "language_code": "fr"
-}
--->
 # Architectures CNN Bien Connues
 
 ### VGG-16
 
 VGG-16 est un réseau qui a atteint une précision de 92,7 % dans la classification top-5 d'ImageNet en 2014. Il possède la structure de couches suivante :
 
-![Couches ImageNet](../../../../../translated_images/vgg-16-arch1.d901a5583b3a51baeaab3e768567d921e5d54befa46e1e642616c5458c934028.fr.jpg)
+![Couches ImageNet](../../../../../translated_images/fr/vgg-16-arch1.d901a5583b3a51ba.webp)
 
 Comme vous pouvez le voir, VGG suit une architecture pyramidale traditionnelle, qui est une séquence de couches de convolution et de pooling.
 
-![Pyramide ImageNet](../../../../../translated_images/vgg-16-arch.64ff2137f50dd49fdaa786e3f3a975b3f22615efd13efb19c5d22f12e01451a1.fr.jpg)
+![Pyramide ImageNet](../../../../../translated_images/fr/vgg-16-arch.64ff2137f50dd49f.webp)
 
 > Image tirée de [Researchgate](https://www.researchgate.net/figure/Vgg16-model-structure-To-get-the-VGG-NIN-model-we-replace-the-2-nd-4-th-6-th-7-th_fig2_335194493)
 
@@ -25,7 +16,7 @@ Comme vous pouvez le voir, VGG suit une architecture pyramidale traditionnelle, 
 
 ResNet est une famille de modèles proposée par Microsoft Research en 2015. L'idée principale de ResNet est d'utiliser des **blocs résiduels** :
 
-<img src="images/resnet-block.png" width="300"/>
+<img src="../../../../../translated_images/fr/resnet-block.aba4ccbcc0944434.webp" width="300"/>
 
 > Image tirée de [cet article](https://arxiv.org/pdf/1512.03385.pdf)
 
@@ -37,7 +28,7 @@ Vous pouvez également considérer ce réseau comme capable d'ajuster sa complex
 
 L'architecture Google Inception pousse cette idée un peu plus loin et construit chaque couche du réseau comme une combinaison de plusieurs chemins différents :
 
-<img src="images/inception.png" width="400"/>
+<img src="../../../../../translated_images/fr/inception.a6605b85bcbc6f52.webp" width="400"/>
 
 > Image tirée de [Researchgate](https://www.researchgate.net/figure/Inception-module-with-dimension-reductions-left-and-schema-for-Inception-ResNet-v1_fig2_355547454)
 

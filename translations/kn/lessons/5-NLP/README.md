@@ -1,15 +1,6 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "8ef02a9318257ea140ed3ed74442096d",
-  "translation_date": "2025-11-25T21:16:26+00:00",
-  "source_file": "lessons/5-NLP/README.md",
-  "language_code": "kn"
-}
--->
 # ನೈಸರ್ಗಿಕ ಭಾಷಾ ಪ್ರಕ್ರಿಯೆ
 
-![NLP ಕಾರ್ಯಗಳ ಸಾರಾಂಶವನ್ನು ಡೂಡಲ್‌ನಲ್ಲಿ](../../../../translated_images/ai-nlp.b22dcb8ca4707ceaee8576db1c5f4089c8cac2f454e9e03ea554f07fda4556b8.kn.png)
+![NLP ಕಾರ್ಯಗಳ ಸಾರಾಂಶವನ್ನು ಡೂಡಲ್‌ನಲ್ಲಿ](../../../../translated_images/kn/ai-nlp.b22dcb8ca4707cea.webp)
 
 ಈ ವಿಭಾಗದಲ್ಲಿ, ನಾವು ನ್ಯೂರಲ್ ನೆಟ್‌ವರ್ಕ್‌ಗಳನ್ನು ಬಳಸಿಕೊಂಡು **ನೈಸರ್ಗಿಕ ಭಾಷಾ ಪ್ರಕ್ರಿಯೆ (NLP)** ಸಂಬಂಧಿತ ಕಾರ್ಯಗಳನ್ನು ನಿರ್ವಹಿಸುವುದರ ಮೇಲೆ ಗಮನಹರಿಸುವೆವು. ಕಂಪ್ಯೂಟರ್‌ಗಳು ಪರಿಹರಿಸಬೇಕಾದ ಅನೇಕ NLP ಸಮಸ್ಯೆಗಳಿವೆ:
 

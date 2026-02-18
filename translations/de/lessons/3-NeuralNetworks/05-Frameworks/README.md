@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "ddd216f558a255260a9374008002c971",
-  "translation_date": "2025-09-23T12:22:07+00:00",
-  "source_file": "lessons/3-NeuralNetworks/05-Frameworks/README.md",
-  "language_code": "de"
-}
--->
 # Neuronale Netzwerk-Frameworks
 
 Wie wir bereits gelernt haben, müssen wir zwei Dinge tun, um neuronale Netzwerke effizient trainieren zu können:
@@ -58,7 +49,7 @@ Overfitting ist ein äußerst wichtiges Konzept im maschinellen Lernen, und es i
 
 Betrachten Sie das folgende Problem der Annäherung an 5 Punkte (dargestellt durch `x` in den untenstehenden Diagrammen):
 
-![linear](../../../../../translated_images/overfit1.f24b71c6f652e59e6bed7245ffbeaecc3ba320e16e2221f6832b432052c4da43.de.jpg) | ![overfit](../../../../../translated_images/overfit2.131f5800ae10ca5e41d12a411f5f705d9ee38b1b10916f284b787028dd55cc1c.de.jpg)
+![linear](../../../../../translated_images/de/overfit1.f24b71c6f652e59e.webp) | ![overfit](../../../../../translated_images/de/overfit2.131f5800ae10ca5e.webp)
 -------------------------|--------------------------
 **Lineares Modell, 2 Parameter** | **Nicht-lineares Modell, 7 Parameter**
 Trainingsfehler = 5.3 | Trainingsfehler = 0
@@ -79,7 +70,7 @@ Es ist sehr wichtig, ein korrektes Gleichgewicht zwischen der Komplexität des M
 
 Wie Sie aus dem obigen Diagramm sehen können, kann Overfitting durch einen sehr niedrigen Trainingsfehler und einen hohen Validierungsfehler erkannt werden. Normalerweise sehen wir während des Trainings, dass sowohl der Trainings- als auch der Validierungsfehler abnehmen. An einem bestimmten Punkt könnte der Validierungsfehler jedoch aufhören zu sinken und anfangen zu steigen. Dies ist ein Zeichen für Overfitting und ein Hinweis darauf, dass wir das Training an diesem Punkt wahrscheinlich stoppen sollten (oder zumindest einen Schnappschuss des Modells machen sollten).
 
-![overfitting](../../../../../translated_images/Overfitting.408ad91cd90b4371d0a81f4287e1409c359751adeb1ae450332af50e84f08c3e.de.png)
+![overfitting](../../../../../translated_images/de/Overfitting.408ad91cd90b4371.webp)
 
 ## Wie verhindert man Overfitting?
 

@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "9c592c26aca16ca085d268c732284187",
-  "translation_date": "2025-11-25T23:43:54+00:00",
-  "source_file": "lessons/X-Extras/X1-MultiModal/README.md",
-  "language_code": "kn"
-}
--->
 # ಬಹು-ಮೋಡಲ್ ನೆಟ್‌ವರ್ಕ್‌ಗಳು
 
 NLP ಕಾರ್ಯಗಳನ್ನು ಪರಿಹರಿಸಲು ಟ್ರಾನ್ಸ್‌ಫಾರ್ಮರ್ ಮಾದರಿಗಳ ಯಶಸ್ಸಿನ ನಂತರ, ಅದೇ ಅಥವಾ ಸಮಾನ ವಾಸ್ತುಶಿಲ್ಪಗಳನ್ನು ಕಂಪ್ಯೂಟರ್ ದೃಷ್ಟಿ ಕಾರ್ಯಗಳಿಗೆ ಅನ್ವಯಿಸಲಾಗಿದೆ. ದೃಷ್ಟಿ ಮತ್ತು ನೈಸರ್ಗಿಕ ಭಾಷಾ ಸಾಮರ್ಥ್ಯಗಳನ್ನು *ಸಂಯೋಜಿಸುವ* ಮಾದರಿಗಳನ್ನು ನಿರ್ಮಿಸುವಲ್ಲಿ ಹೆಚ್ಚುತ್ತಿರುವ ಆಸಕ್ತಿ ಇದೆ. ಇಂತಹ ಪ್ರಯತ್ನಗಳಲ್ಲಿ ಒಂದನ್ನು OpenAI ಮಾಡಿದ್ದು, ಅದನ್ನು CLIP ಮತ್ತು DALL.E ಎಂದು ಕರೆಯುತ್ತಾರೆ.
@@ -15,7 +6,7 @@ NLP ಕಾರ್ಯಗಳನ್ನು ಪರಿಹರಿಸಲು ಟ್ರಾ�
 
 CLIP ನ ಮುಖ್ಯ ಆಲೋಚನೆ ಎಂದರೆ ಪಠ್ಯ ಪ್ರಾಂಪ್ಟ್‌ಗಳನ್ನು ಚಿತ್ರದೊಂದಿಗೆ ಹೋಲಿಸಿ, ಚಿತ್ರವು ಪ್ರಾಂಪ್ಟ್‌ಗೆ ಎಷ್ಟು ಹೊಂದಿಕೆಯಾಗುತ್ತದೆ ಎಂದು ನಿರ್ಧರಿಸುವುದು.
 
-![CLIP ವಾಸ್ತುಶಿಲ್ಪ](../../../../../translated_images/clip-arch.b3dbf20b4e8ed8be1c38e2bc6100fd3cc257c33cda4692b301be91f791b13ea7.kn.png)
+![CLIP ವಾಸ್ತುಶಿಲ್ಪ](../../../../../translated_images/kn/clip-arch.b3dbf20b4e8ed8be.webp)
 
 > *ಚಿತ್ರ [ಈ ಬ್ಲಾಗ್ ಪೋಸ್ಟ್](https://openai.com/blog/clip/) ನಿಂದ*
 
@@ -29,7 +20,7 @@ CLIP ಮಾದರಿ/ಲೈಬ್ರರಿ [OpenAI GitHub](https://github.com/op
 
 ನಾವು ಚಿತ್ರಗಳನ್ನು, ಉದಾಹರಣೆಗೆ, ಬೆಕ್ಕುಗಳು, ನಾಯಿ ಮತ್ತು ಮಾನವರ ನಡುವೆ ವರ್ಗೀಕರಿಸಬೇಕಾದರೆ, ಈ ಸಂದರ್ಭದಲ್ಲಿ ನಾವು ಮಾದರಿಗೆ ಒಂದು ಚಿತ್ರ ಮತ್ತು ಪಠ್ಯ ಪ್ರಾಂಪ್ಟ್‌ಗಳ ಸರಣಿಯನ್ನು ನೀಡಬಹುದು: "*ಬೆಕ್ಕಿನ ಚಿತ್ರ*", "*ನಾಯಿಯ ಚಿತ್ರ*", "*ಮಾನವರ ಚಿತ್ರ*". 3 ಪ್ರಾಬಬಿಲಿಟಿಗಳ ಫಲಿತಾಂಶ ವೆಕ್ಟರ್‌ನಲ್ಲಿ ಅತ್ಯಧಿಕ ಮೌಲ್ಯದ ಸೂಚ್ಯಂಕವನ್ನು ಆಯ್ಕೆ ಮಾಡಬೇಕಾಗುತ್ತದೆ.
 
-![ಚಿತ್ರ ವರ್ಗೀಕರಣಕ್ಕೆ CLIP](../../../../../translated_images/clip-class.3af42ef0b2b19369a633df5f20ddf4f5a01d6c8ffa181e9d3a0572c19f919f72.kn.png)
+![ಚಿತ್ರ ವರ್ಗೀಕರಣಕ್ಕೆ CLIP](../../../../../translated_images/kn/clip-class.3af42ef0b2b19369.webp)
 
 > *ಚಿತ್ರ [ಈ ಬ್ಲಾಗ್ ಪೋಸ್ಟ್](https://openai.com/blog/clip/) ನಿಂದ*
 
@@ -53,13 +44,13 @@ VQGAN ಬಗ್ಗೆ ಹೆಚ್ಚಿನ ಮಾಹಿತಿಗಾಗಿ [Tami
 
 VQGAN ಮತ್ತು ಸಾಂಪ್ರದಾಯಿಕ GAN ನಡುವಿನ ಪ್ರಮುಖ ವ್ಯತ್ಯಾಸವೆಂದರೆ, GAN ಯಾವುದೇ ಇನ್‌ಪುಟ್ ವೆಕ್ಟರ್‌ನಿಂದ ಸಮರ್ಪಕ ಚಿತ್ರವನ್ನು ಉತ್ಪಾದಿಸಬಹುದು, ಆದರೆ VQGAN ಅಸಂಬದ್ಧ ಚಿತ್ರವನ್ನು ಉತ್ಪಾದಿಸುವ ಸಾಧ್ಯತೆ ಇದೆ. ಆದ್ದರಿಂದ, ಚಿತ್ರ ರಚನೆ ಪ್ರಕ್ರಿಯೆಯನ್ನು ಇನ್ನಷ್ಟು ಮಾರ್ಗದರ್ಶನ ಮಾಡಬೇಕಾಗುತ್ತದೆ, ಮತ್ತು ಅದನ್ನು CLIP ಬಳಸಿ ಮಾಡಬಹುದು.
 
-![VQGAN+CLIP ವಾಸ್ತುಶಿಲ್ಪ](../../../../../translated_images/vqgan.5027fe05051dfa3101950cfa930303f66e6478b9bd273e83766731796e462d9b.kn.png)
+![VQGAN+CLIP ವಾಸ್ತುಶಿಲ್ಪ](../../../../../translated_images/kn/vqgan.5027fe05051dfa31.webp)
 
 ಪಠ್ಯ ಪ್ರಾಂಪ್ಟ್‌ಗೆ ಹೊಂದುವ ಚಿತ್ರವನ್ನು ರಚಿಸಲು, ನಾವು ಕೆಲವು ಯಾದೃಚ್ಛಿಕ ಎನ್‌ಕೋಡಿಂಗ್ ವೆಕ್ಟರ್‌ನಿಂದ ಪ್ರಾರಂಭಿಸಿ ಅದನ್ನು VQGAN ಮೂಲಕ ಚಿತ್ರವಾಗಿ ಉತ್ಪಾದಿಸುತ್ತೇವೆ. ನಂತರ CLIP ಅನ್ನು ಬಳಸಿಕೊಂಡು ಚಿತ್ರವು ಪಠ್ಯ ಪ್ರಾಂಪ್ಟ್‌ಗೆ ಎಷ್ಟು ಹೊಂದಿಕೆಯಾಗುತ್ತದೆ ಎಂಬುದನ್ನು ತೋರಿಸುವ ಲಾಸ್ ಫಂಕ್ಷನ್ ರಚಿಸಲಾಗುತ್ತದೆ. ಗುರಿ ಈ ಲಾಸ್ ಅನ್ನು ಕನಿಷ್ಠಗೊಳಿಸುವುದು, ಬ್ಯಾಕ್ ಪ್ರೋಪಗೇಶನ್ ಬಳಸಿ ಇನ್‌ಪುಟ್ ವೆಕ್ಟರ್ ಪರಿಮಾಣಗಳನ್ನು ಸರಿಹೊಂದಿಸುವುದು.
 
 VQGAN+CLIP ಅನ್ನು ಅನುಷ್ಠಾನಗೊಳಿಸುವ ಅತ್ಯುತ್ತಮ ಲೈಬ್ರರಿ [Pixray](http://github.com/pixray/pixray)
 
-![Pixray ಮೂಲಕ ರಚಿಸಲಾದ ಚಿತ್ರ](../../../../../translated_images/a_closeup_watercolor_portrait_of_young_male_teacher_of_literature_with_a_book.2384968e9db8a0d09dc96de938b9f95bde8a7e1c721f48f286a7795bf16d56c7.kn.png) |  ![Pixray ಮೂಲಕ ರಚಿಸಲಾದ ಚಿತ್ರ](../../../../../translated_images/a_closeup_oil_portrait_of_young_female_teacher_of_computer_science_with_a_computer.e0b6495f210a439077e1c32cc8afdf714e634fe24dc78dc5aa45fd2f560b0ed5.kn.png) | ![Pixray ಮೂಲಕ ರಚಿಸಲಾದ ಚಿತ್ರ](../../../../../translated_images/a_closeup_oil_portrait_of_old_male_teacher_of_math.5362e67aa7fc2683b9d36a613b364deb7454760cd39205623fc1e3938fa133c0.kn.png)
+![Pixray ಮೂಲಕ ರಚಿಸಲಾದ ಚಿತ್ರ](../../../../../translated_images/kn/a_closeup_watercolor_portrait_of_young_male_teacher_of_literature_with_a_book.2384968e9db8a0d0.webp) |  ![Pixray ಮೂಲಕ ರಚಿಸಲಾದ ಚಿತ್ರ](../../../../../translated_images/kn/a_closeup_oil_portrait_of_young_female_teacher_of_computer_science_with_a_computer.e0b6495f210a4390.webp) | ![Pixray ಮೂಲಕ ರಚಿಸಲಾದ ಚಿತ್ರ](../../../../../translated_images/kn/a_closeup_oil_portrait_of_old_male_teacher_of_math.5362e67aa7fc2683.webp)
 ----|----|----
 ಪ್ರಾಂಪ್ಟ್ *ಪುಸ್ತಕದೊಂದಿಗೆ ಯುವ ಸಾಹಿತ್ಯ ಶಿಕ್ಷಕರ ನೀರಾವರಿ ಚಿತ್ರ* ನಿಂದ ರಚಿಸಲಾದ ಚಿತ್ರ | ಪ್ರಾಂಪ್ಟ್ *ಕಂಪ್ಯೂಟರ್ ವಿಜ್ಞಾನ ಯುವ ಶಿಕ್ಷಕಿ ಕಂಪ್ಯೂಟರ್ ಜೊತೆಗೆ ತೈಲ ಚಿತ್ರ* ನಿಂದ ರಚಿಸಲಾದ ಚಿತ್ರ | ಪ್ರಾಂಪ್ಟ್ *ಹಳೆಯ ಗಣಿತ ಶಿಕ್ಷಕ ಬ್ಲ್ಯಾಕ್ಬೋರ್ಡ್ ಮುಂದೆ ತೈಲ ಚಿತ್ರ* ನಿಂದ ರಚಿಸಲಾದ ಚಿತ್ರ
 
@@ -75,7 +66,7 @@ CLIP ಗಿಂತ ಭಿನ್ನವಾಗಿ, DALL-E ಪಠ್ಯ ಮತ್ತ�
 DALL.E 1 ಮತ್ತು 2 ನಡುವಿನ ಮುಖ್ಯ ವ್ಯತ್ಯಾಸವೆಂದರೆ, DALL.E 2 ಹೆಚ್ಚು ವಾಸ್ತವಿಕ ಚಿತ್ರಗಳು ಮತ್ತು ಕಲೆಯನ್ನು ರಚಿಸುತ್ತದೆ.
 
 DALL-E ಮೂಲಕ ರಚಿಸಲಾದ ಚಿತ್ರಗಳ ಉದಾಹರಣೆಗಳು:
-![Pixray ಮೂಲಕ ರಚಿಸಲಾದ ಚಿತ್ರ](../../../../../translated_images/DALL·E%202023-06-20%2015.56.56%20-%20a%20closeup%20watercolor%20portrait%20of%20young%20male%20teacher%20of%20literature%20with%20a%20book.6c235e8271d9ed10ce985d86aeb241a58518958647973af136912116b9518fce.kn.png) |  ![Pixray ಮೂಲಕ ರಚಿಸಲಾದ ಚಿತ್ರ](../../../../../translated_images/DALL·E%202023-06-20%2015.57.43%20-%20a%20closeup%20oil%20portrait%20of%20young%20female%20teacher%20of%20computer%20science%20with%20a%20computer.f21dc4166340b6c8b4d1cb57efd1e22127407f9b28c9ac7afe11344065369e64.kn.png) | ![Pixray ಮೂಲಕ ರಚಿಸಲಾದ ಚಿತ್ರ](../../../../../translated_images/DALL·E%202023-06-20%2015.58.42%20-%20%20a%20closeup%20oil%20portrait%20of%20old%20male%20teacher%20of%20mathematics%20in%20front%20of%20blackboard.d331c2dfbdc3f7c46aa65c0809066f5e7ed4b49609cd259852e760df21051e4a.kn.png)
+![Pixray ಮೂಲಕ ರಚಿಸಲಾದ ಚಿತ್ರ](../../../../../translated_images/kn/DALL·E%202023-06-20%2015.56.56%20-%20a%20closeup%20watercolor%20portrait%20of%20young%20male%20teacher%20of%20literature%20with%20a%20book.6c235e8271d9ed10ce985d86aeb241a58518958647973af136912116b9518fce.png) |  ![Pixray ಮೂಲಕ ರಚಿಸಲಾದ ಚಿತ್ರ](../../../../../translated_images/kn/DALL·E%202023-06-20%2015.57.43%20-%20a%20closeup%20oil%20portrait%20of%20young%20female%20teacher%20of%20computer%20science%20with%20a%20computer.f21dc4166340b6c8b4d1cb57efd1e22127407f9b28c9ac7afe11344065369e64.png) | ![Pixray ಮೂಲಕ ರಚಿಸಲಾದ ಚಿತ್ರ](../../../../../translated_images/kn/DALL·E%202023-06-20%2015.58.42%20-%20%20a%20closeup%20oil%20portrait%20of%20old%20male%20teacher%20of%20mathematics%20in%20front%20of%20blackboard.d331c2dfbdc3f7c46aa65c0809066f5e7ed4b49609cd259852e760df21051e4a.png)
 ----|----|----
 ಪ್ರಾಂಪ್ಟ್ *ಪುಸ್ತಕದೊಂದಿಗೆ ಯುವ ಸಾಹಿತ್ಯ ಶಿಕ್ಷಕರ ನೀರಾವರಿ ಚಿತ್ರ* ನಿಂದ ರಚಿಸಲಾದ ಚಿತ್ರ | ಪ್ರಾಂಪ್ಟ್ *ಕಂಪ್ಯೂಟರ್ ವಿಜ್ಞಾನ ಯುವ ಶಿಕ್ಷಕಿ ಕಂಪ್ಯೂಟರ್ ಜೊತೆಗೆ ತೈಲ ಚಿತ್ರ* ನಿಂದ ರಚಿಸಲಾದ ಚಿತ್ರ | ಪ್ರಾಂಪ್ಟ್ *ಹಳೆಯ ಗಣಿತ ಶಿಕ್ಷಕ ಬ್ಲ್ಯಾಕ್ಬೋರ್ಡ್ ಮುಂದೆ ತೈಲ ಚಿತ್ರ* ನಿಂದ ರಚಿಸಲಾದ ಚಿತ್ರ
 

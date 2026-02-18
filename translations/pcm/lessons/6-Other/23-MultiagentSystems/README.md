@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "38a1185ae3d54b180378bbd71ae3ef16",
-  "translation_date": "2025-11-18T18:46:50+00:00",
-  "source_file": "lessons/6-Other/23-MultiagentSystems/README.md",
-  "language_code": "pcm"
-}
--->
 # Multi-Agent Systems
 
 One way wey people fit take achieve intelligence na wetin dem dey call **emergent** (or **synergetic**) approach. Dis one dey base on di fact say di combined behavior of plenty simple agents fit result for di overall more complex (or intelligent) behavior of di system as one whole. For theory, e dey base on di principles of [Collective Intelligence](https://en.wikipedia.org/wiki/Collective_intelligence), [Emergentism](https://en.wikipedia.org/wiki/Global_brain) and [Evolutionary Cybernetics](https://en.wikipedia.org/wiki/Global_brain), wey talk say higher-level systems dey gain extra value if dem combine well from lower-level systems (wetin dem dey call *principle of metasystem transition*).
@@ -60,7 +51,7 @@ You fit [download](https://ccl.northwestern.edu/netlogo/download.shtml) and inst
 
 One good thing about NetLogo na say e get one library of working models wey you fit try. Go **File &rightarrow; Models Library**, and you go see plenty categories of models to choose from.
 
-<img alt="NetLogo Models Library" src="../../../../../translated_images/NetLogo-ModelLib.efe023afb4763c059704a8ac0e2cd5e51889b117e8eac02aaa5334cfe1c52c13.pcm.png" width="60%"/>
+<img alt="NetLogo Models Library" src="../../../../../translated_images/pcm/NetLogo-ModelLib.efe023afb4763c05.webp" width="60%"/>
 
 > Screenshot of di models library by Dmitry Soshnikov
 
@@ -70,7 +61,7 @@ You fit open one of di models, like **Biology &rightarrow; Flocking**.
 
 After you open di model, you go see di main NetLogo screen. Here na sample model wey dey describe di population of wolves and sheep, wey dey depend on finite resources (grass).
 
-![NetLogo Main Screen](../../../../../translated_images/NetLogo-Main.32653711ec1a01b3cab22ec0b148e64193d0b979b055285bef329d5e3d6958c5.pcm.png)
+![NetLogo Main Screen](../../../../../translated_images/pcm/NetLogo-Main.32653711ec1a01b3.webp)
 
 > Screenshot by Dmitry Soshnikov
 

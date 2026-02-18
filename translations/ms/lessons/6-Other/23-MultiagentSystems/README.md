@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "38a1185ae3d54b180378bbd71ae3ef16",
-  "translation_date": "2025-09-23T10:47:04+00:00",
-  "source_file": "lessons/6-Other/23-MultiagentSystems/README.md",
-  "language_code": "ms"
-}
--->
 # Sistem Multi-Ejen
 
 Salah satu cara untuk mencapai kecerdasan adalah melalui pendekatan **emergent** (atau **sinergi**), yang berdasarkan fakta bahawa gabungan tingkah laku banyak ejen yang agak mudah boleh menghasilkan tingkah laku sistem keseluruhan yang lebih kompleks (atau pintar). Secara teori, ini berdasarkan prinsip [Kecerdasan Kolektif](https://en.wikipedia.org/wiki/Collective_intelligence), [Emergentisme](https://en.wikipedia.org/wiki/Global_brain) dan [Sibernetik Evolusi](https://en.wikipedia.org/wiki/Global_brain), yang menyatakan bahawa sistem tahap tinggi memperoleh nilai tambah apabila digabungkan dengan betul daripada sistem tahap rendah (dikenali sebagai *prinsip peralihan metasistem*).
@@ -60,7 +51,7 @@ Anda boleh [muat turun](https://ccl.northwestern.edu/netlogo/download.shtml) dan
 
 Satu perkara hebat tentang NetLogo ialah ia mengandungi perpustakaan model yang berfungsi yang boleh anda cuba. Pergi ke **File &rightarrow; Models Library**, dan anda mempunyai banyak kategori model untuk dipilih.
 
-<img alt="NetLogo Models Library" src="images/NetLogo-ModelLib.png" width="60%"/>
+<img alt="NetLogo Models Library" src="../../../../../translated_images/ms/NetLogo-ModelLib.efe023afb4763c05.webp" width="60%"/>
 
 > Tangkapan skrin perpustakaan model oleh Dmitry Soshnikov
 
@@ -70,7 +61,7 @@ Anda boleh membuka salah satu model, contohnya **Biology &rightarrow; Flocking**
 
 Selepas membuka model, anda akan dibawa ke skrin utama NetLogo. Berikut adalah contoh model yang menerangkan populasi serigala dan kambing, dengan sumber yang terhad (rumput).
 
-![NetLogo Main Screen](../../../../../translated_images/NetLogo-Main.32653711ec1a01b3cab22ec0b148e64193d0b979b055285bef329d5e3d6958c5.ms.png)
+![NetLogo Main Screen](../../../../../translated_images/ms/NetLogo-Main.32653711ec1a01b3.webp)
 
 > Tangkapan skrin oleh Dmitry Soshnikov
 

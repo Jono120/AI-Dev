@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "e2273cc150380a5e191903cea858f021",
-  "translation_date": "2025-09-23T09:25:23+00:00",
-  "source_file": "lessons/5-NLP/16-RNN/README.md",
-  "language_code": "sv"
-}
--->
 # Rekurrenta neurala nätverk
 
 ## [Quiz före föreläsning](https://ff-quizzes.netlify.app/en/ai/quiz/31)
@@ -15,7 +6,7 @@ I tidigare avsnitt har vi använt rika semantiska representationer av text och e
 
 För att fånga betydelsen av en textsekvens behöver vi använda en annan neural nätverksarkitektur, som kallas för ett **rekurrent neuralt nätverk**, eller RNN. I RNN skickar vi vår mening genom nätverket en symbol i taget, och nätverket producerar ett **tillstånd**, som vi sedan skickar tillbaka till nätverket tillsammans med nästa symbol.
 
-![RNN](../../../../../translated_images/rnn.27f5c29c53d727b546ad3961637a267f0fe9ec5ab01f2a26a853c92fcefbb574.sv.png)
+![RNN](../../../../../translated_images/sv/rnn.27f5c29c53d727b5.webp)
 
 > Bild av författaren
 
@@ -31,7 +22,7 @@ Låt oss se hur en enkel RNN-cell är organiserad. Den tar emot det tidigare til
 
 En enkel RNN-cell har två viktmatriser inuti: en som transformerar en inmatningssymbol (vi kallar den W), och en annan som transformerar ett inmatningstillstånd (H). I detta fall beräknas nätverkets utgång som &sigma;(W&times;X<sub>i</sub>+H&times;S<sub>i-1</sub>+b), där &sigma; är aktiveringsfunktionen och b är en ytterligare bias.
 
-<img alt="RNN Cell Anatomy" src="images/rnn-anatomy.png" width="50%"/>
+<img alt="RNN Cell Anatomy" src="../../../../../translated_images/sv/rnn-anatomy.79ee3f3920b3294b.webp" width="50%"/>
 
 > Bild av författaren
 
@@ -61,7 +52,7 @@ Vi har diskuterat rekurrenta nätverk som arbetar i en riktning, från början a
 
 Ett rekurrent nätverk, antingen enkelriktat eller bidirektionellt, fångar vissa mönster inom en sekvens och kan lagra dem i en tillståndsvektor eller skicka dem till utgången. Precis som med konvolutionella nätverk kan vi bygga ett annat rekurrent lager ovanpå det första för att fånga högre nivåmönster och bygga från lågnivåmönster som extraherats av det första lagret. Detta leder oss till begreppet **flerskiktat RNN**, som består av två eller fler rekurrenta nätverk, där utgången från det föregående lagret skickas till nästa lager som inmatning.
 
-![Bild som visar ett flerskiktat Long Short Term Memory-RNN](../../../../../translated_images/multi-layer-lstm.dd975e29bb2a59fe58b429db833932d734c81f211cad2783797a9608984acb8c.sv.jpg)
+![Bild som visar ett flerskiktat Long Short Term Memory-RNN](../../../../../translated_images/sv/multi-layer-lstm.dd975e29bb2a59fe.webp)
 
 *Bild från [detta fantastiska inlägg](https://towardsdatascience.com/from-a-lstm-cell-to-a-multilayer-lstm-network-with-pytorch-2899eb5696f3) av Fernando López*
 

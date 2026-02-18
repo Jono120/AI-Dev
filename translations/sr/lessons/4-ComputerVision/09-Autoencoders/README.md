@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "1b8d9e1b3a6f1daa864b1ff3dfc3076d",
-  "translation_date": "2025-09-23T14:40:42+00:00",
-  "source_file": "lessons/4-ComputerVision/09-Autoencoders/README.md",
-  "language_code": "sr"
-}
--->
 # Аутоенкодери
 
 При тренингу CNN-а, један од проблема је то што нам је потребно много означених података. У случају класификације слика, морамо да раздвојимо слике у различите класе, што захтева ручни рад.
@@ -19,7 +10,7 @@ CO_OP_TRANSLATOR_METADATA:
 
 Пошто тренирамо аутоенкодер да ухвати што више информација из оригиналне слике ради тачне реконструкције, мрежа покушава да пронађе најбоље **уграђивање** улазних слика како би ухватила њихово значење.
 
-![Дијаграм аутоенкодера](../../../../../translated_images/autoencoder_schema.5e6fc9ad98a5eb6197f3513cf3baf4dfbe1389a6ae74daebda64de9f1c99f142.sr.jpg)
+![Дијаграм аутоенкодера](../../../../../translated_images/sr/autoencoder_schema.5e6fc9ad98a5eb61.webp)
 
 > Слика са [Keras блога](https://blog.keras.io/building-autoencoders-in-keras.html)
 
@@ -46,7 +37,7 @@ VAE је аутоенкодер који учи да предвиђа *стат�
  * Узимамо узорак вектора `sample` из дистрибуције N(z<sub>mean</sub>,exp(z<sub>log\_sigma</sub>))
  * Декодер покушава да декодира оригиналну слику користећи `sample` као улазни вектор
 
- <img src="images/vae.png" width="50%">
+ <img src="../../../../../translated_images/sr/vae.464c465a5b6a9e25.webp" width="50%">
 
 > Слика из [овог блога](https://ijdykeman.github.io/ml/2016/12/21/cvae.html) аутора Исака Дајкемана
 
@@ -57,13 +48,13 @@ VAE је аутоенкодер који учи да предвиђа *стат�
 
 Једна важна предност VAE-а је то што нам омогућава да релативно лако генеришемо нове слике, јер знамо из које дистрибуције узимамо узорке латентних вектора. На пример, ако тренирамо VAE са 2D латентним вектором на MNIST-у, можемо затим мењати компоненте латентног вектора да добијемо различите бројеве:
 
-<img alt="vaemnist" src="images/vaemnist.png" width="50%"/>
+<img alt="vaemnist" src="../../../../../translated_images/sr/vaemnist.cab9e602dc08dc50.webp" width="50%"/>
 
 > Слика аутора [Дмитрија Сошњикова](http://soshnikov.com)
 
 Приметите како се слике међусобно стапају, док почињемо да добијамо латентне векторе из различитих делова латентног параметарског простора. Такође можемо визуализовати овај простор у 2D:
 
-<img alt="vaemnist cluster" src="images/vaemnist-diag.png" width="50%"/> 
+<img alt="vaemnist cluster" src="../../../../../translated_images/sr/vaemnist-diag.694315f775d5d666.webp" width="50%"/> 
 
 > Слика аутора [Дмитрија Сошњикова](http://soshnikov.com)
 

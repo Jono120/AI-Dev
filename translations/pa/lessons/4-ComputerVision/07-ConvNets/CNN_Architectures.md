@@ -1,23 +1,14 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "53faab85adfcebd8c10bcd71dc2fa557",
-  "translation_date": "2025-09-23T07:28:22+00:00",
-  "source_file": "lessons/4-ComputerVision/07-ConvNets/CNN_Architectures.md",
-  "language_code": "pa"
-}
--->
 # ਪ੍ਰਸਿੱਧ CNN ਆਰਕੀਟੈਕਚਰਾਂ
 
 ### VGG-16
 
 VGG-16 ਇੱਕ ਨੈਟਵਰਕ ਹੈ ਜਿਸ ਨੇ 2014 ਵਿੱਚ ImageNet top-5 ਵਰਗੀਕਰਨ ਵਿੱਚ 92.7% ਸਹੀਤਾ ਹਾਸਲ ਕੀਤੀ। ਇਸ ਵਿੱਚ ਹੇਠਾਂ ਦਿੱਤੇ ਲੇਅਰ ਸਟ੍ਰਕਚਰ ਹਨ:
 
-![ImageNet Layers](../../../../../translated_images/vgg-16-arch1.d901a5583b3a51baeaab3e768567d921e5d54befa46e1e642616c5458c934028.pa.jpg)
+![ImageNet Layers](../../../../../translated_images/pa/vgg-16-arch1.d901a5583b3a51ba.webp)
 
 ਜਿਵੇਂ ਤੁਸੀਂ ਦੇਖ ਸਕਦੇ ਹੋ, VGG ਇੱਕ ਪਰੰਪਰਾਗਤ ਪਿਰਾਮਿਡ ਆਰਕੀਟੈਕਚਰ ਦੀ ਪਾਲਣਾ ਕਰਦਾ ਹੈ, ਜੋ ਕਿ ਕਨਵੋਲੂਸ਼ਨ-ਪੂਲਿੰਗ ਲੇਅਰਾਂ ਦੀ ਲੜੀ ਹੈ।
 
-![ImageNet Pyramid](../../../../../translated_images/vgg-16-arch.64ff2137f50dd49fdaa786e3f3a975b3f22615efd13efb19c5d22f12e01451a1.pa.jpg)
+![ImageNet Pyramid](../../../../../translated_images/pa/vgg-16-arch.64ff2137f50dd49f.webp)
 
 > ਚਿੱਤਰ [Researchgate](https://www.researchgate.net/figure/Vgg16-model-structure-To-get-the-VGG-NIN-model-we-replace-the-2-nd-4-th-6-th-7-th_fig2_335194493) ਤੋਂ
 
@@ -25,7 +16,7 @@ VGG-16 ਇੱਕ ਨੈਟਵਰਕ ਹੈ ਜਿਸ ਨੇ 2014 ਵਿੱਚ Im
 
 ResNet ਮਾਈਕਰੋਸਾਫਟ ਰਿਸਰਚ ਦੁਆਰਾ 2015 ਵਿੱਚ ਪ੍ਰਸਤਾਵਿਤ ਮਾਡਲਾਂ ਦਾ ਇੱਕ ਪਰਿਵਾਰ ਹੈ। ResNet ਦਾ ਮੁੱਖ ਵਿਚਾਰ **ਰੈਜ਼ੀਡੂਅਲ ਬਲਾਕ** ਵਰਤਣਾ ਹੈ:
 
-<img src="images/resnet-block.png" width="300"/>
+<img src="../../../../../translated_images/pa/resnet-block.aba4ccbcc0944434.webp" width="300"/>
 
 > ਚਿੱਤਰ [ਇਸ ਪੇਪਰ](https://arxiv.org/pdf/1512.03385.pdf) ਤੋਂ
 
@@ -37,7 +28,7 @@ ResNet ਮਾਈਕਰੋਸਾਫਟ ਰਿਸਰਚ ਦੁਆਰਾ 2015 ਵ�
 
 Google Inception ਆਰਕੀਟੈਕਚਰ ਇਸ ਵਿਚਾਰ ਨੂੰ ਇੱਕ ਕਦਮ ਅੱਗੇ ਲੈ ਜਾਂਦਾ ਹੈ, ਅਤੇ ਹਰ ਨੈਟਵਰਕ ਲੇਅਰ ਨੂੰ ਕਈ ਵੱਖ-ਵੱਖ ਪਾਥਾਂ ਦੇ ਸੰਯੋਜਨ ਵਜੋਂ ਬਣਾਉਂਦਾ ਹੈ:
 
-<img src="images/inception.png" width="400"/>
+<img src="../../../../../translated_images/pa/inception.a6605b85bcbc6f52.webp" width="400"/>
 
 > ਚਿੱਤਰ [Researchgate](https://www.researchgate.net/figure/Inception-module-with-dimension-reductions-left-and-schema-for-Inception-ResNet-v1_fig2_355547454) ਤੋਂ
 

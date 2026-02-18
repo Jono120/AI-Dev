@@ -1,19 +1,10 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "d76a7eda28de5210c8b1ba50a6216c69",
-  "translation_date": "2025-11-25T22:33:02+00:00",
-  "source_file": "lessons/4-ComputerVision/11-ObjectDetection/README.md",
-  "language_code": "te"
-}
--->
 # ఆబ్జెక్ట్ డిటెక్షన్
 
 ఇప్పటివరకు మనం చూసిన ఇమేజ్ క్లాసిఫికేషన్ మోడల్స్ ఒక చిత్రాన్ని తీసుకుని, ఉదాహరణకు MNIST సమస్యలో 'నంబర్' అనే క్లాస్ వంటి వర్గీకరణ ఫలితాన్ని ఉత్పత్తి చేసేవి. అయితే, చాలా సందర్భాల్లో మనం కేవలం ఒక చిత్రం వస్తువులను చూపిస్తుందని తెలుసుకోవడం కాకుండా, వాటి ఖచ్చితమైన స్థానం కూడా తెలుసుకోవాలనుకుంటాము. ఇదే **ఆబ్జెక్ట్ డిటెక్షన్** యొక్క ముఖ్య ఉద్దేశ్యం.
 
 ## [ప్రీ-లెక్చర్ క్విజ్](https://ff-quizzes.netlify.app/en/ai/quiz/21)
 
-![Object Detection](../../../../../translated_images/Screen_Shot_2016-11-17_at_11.14.54_AM.b4bb3769353287be1b905373ed9c858102c054b16e4595c76ec3f7bba0feb549.te.png)
+![Object Detection](../../../../../translated_images/te/Screen_Shot_2016-11-17_at_11.14.54_AM.b4bb3769353287be.webp)
 
 > చిత్రం [YOLO v2 వెబ్ సైట్](https://pjreddie.com/darknet/yolov2/) నుండి
 
@@ -25,7 +16,7 @@ CO_OP_TRANSLATOR_METADATA:
 2. ప్రతి టైల్స్‌పై ఇమేజ్ క్లాసిఫికేషన్ నడపండి.
 3. తగినంతగా అధిక యాక్టివేషన్ ఉన్న టైల్స్ ఆ వస్తువు ఉన్నట్లు భావించవచ్చు.
 
-![Naive Object Detection](../../../../../translated_images/naive-detection.e7f1ba220ccd08c68a2ea8e06a7ed75c3fcc738c2372f9e00b7f4299a8659c01.te.png)
+![Naive Object Detection](../../../../../translated_images/te/naive-detection.e7f1ba220ccd08c6.webp)
 
 > *చిత్రం [Exercise Notebook](ObjectDetection-TF.ipynb) నుండి*
 
@@ -42,7 +33,7 @@ CO_OP_TRANSLATOR_METADATA:
 * [PASCAL VOC](http://host.robots.ox.ac.uk/pascal/VOC/) - 20 తరగతులు
 * [COCO](http://cocodataset.org/#home) - Common Objects in Context. 80 తరగతులు, బౌండింగ్ బాక్స్‌లు మరియు సెగ్మెంటేషన్ మాస్కులు
 
-![COCO](../../../../../translated_images/coco-examples.71bc60380fa6cceb7caad48bd09e35b6028caabd363aa04fee89c414e0870e86.te.jpg)
+![COCO](../../../../../translated_images/te/coco-examples.71bc60380fa6cceb.webp)
 
 ## ఆబ్జెక్ట్ డిటెక్షన్ మెట్రిక్స్
 
@@ -50,7 +41,7 @@ CO_OP_TRANSLATOR_METADATA:
 
 ఇమేజ్ క్లాసిఫికేషన్‌లో అల్గోరిథం ఎంత బాగా పనిచేస్తుందో కొలవడం సులభం, కానీ ఆబ్జెక్ట్ డిటెక్షన్‌లో క్లాస్ సరైనదా మరియు అంచనా వేయబడిన బౌండింగ్ బాక్స్ స్థానం ఎంత ఖచ్చితమో రెండింటినీ కొలవాలి. రెండవదానికి, మనం **ఇంటర్సెక్షన్ ఓవర్ యూనియన్** (IoU) అనే ప్రమాణాన్ని ఉపయోగిస్తాము, ఇది రెండు బాక్స్‌లు (లేదా ఏదైనా రెండు ప్రాంతాలు) ఎంత overlap అవుతాయో కొలుస్తుంది.
 
-![IoU](../../../../../translated_images/iou_equation.9a4751d40fff4e119ecd0a7bcca4e71ab1dc83e0d4f2a0d66ff0859736f593cf.te.png)
+![IoU](../../../../../translated_images/te/iou_equation.9a4751d40fff4e11.webp)
 
 > *చిత్రం [ఈ అద్భుతమైన IoU బ్లాగ్ పోస్ట్](https://pyimagesearch.com/2016/11/07/intersection-over-union-iou-for-object-detection/) నుండి*
 
@@ -97,11 +88,11 @@ $$
 
 [R-CNN](http://islab.ulsan.ac.kr/files/announcement/513/rcnn_pami.pdf) [Selective Search](http://www.huppelen.nl/publications/selectiveSearchDraft.pdf) ఉపయోగించి ROI ప్రాంతాల హైరార్కికల్ నిర్మాణాన్ని సృష్టిస్తుంది, వాటిని CNN ఫీచర్ ఎక్స్‌ట్రాక్టర్లు మరియు SVM-క్లాసిఫయర్లకు పంపించి వస్తువు తరగతిని నిర్ణయిస్తారు, మరియు లీనియర్ రెగ్రెషన్ ద్వారా *బౌండింగ్ బాక్స్* కోఆర్డినేట్లను అంచనా వేస్తారు. [అధికారిక పేపర్](https://arxiv.org/pdf/1506.01497v1.pdf)
 
-![RCNN](../../../../../translated_images/rcnn1.cae407020dfb1d1fb572656e44f75cd6c512cc220591c116c506652c10e47f26.te.png)
+![RCNN](../../../../../translated_images/te/rcnn1.cae407020dfb1d1f.webp)
 
 > *చిత్రం van de Sande et al. ICCV’11 నుండి*
 
-![RCNN-1](../../../../../translated_images/rcnn2.2d9530bb83516484ec65b250c22dbf37d3d23244f32864ebcb91d98fe7c3112c.te.png)
+![RCNN-1](../../../../../translated_images/te/rcnn2.2d9530bb83516484.webp)
 
 > *చిత్రాలు [ఈ బ్లాగ్](https://towardsdatascience.com/r-cnn-fast-r-cnn-faster-r-cnn-yolo-object-detection-algorithms-36d53571365e) నుండి*
 
@@ -109,7 +100,7 @@ $$
 
 ఈ విధానం R-CNNకి సమానంగా ఉంటుంది, కానీ ప్రాంతాలు కన్వల్యూషన్ లేయర్లు వరుసగా వర్తించిన తర్వాత నిర్వచించబడతాయి.
 
-![FRCNN](../../../../../translated_images/f-rcnn.3cda6d9bb41888754037d2d9763e2298a96de5d9bc2a21db3147357aa5da9b1a.te.png)
+![FRCNN](../../../../../translated_images/te/f-rcnn.3cda6d9bb4188875.webp)
 
 > చిత్రం [అధికారిక పేపర్](https://www.cv-foundation.org/openaccess/content_iccv_2015/papers/Girshick_Fast_R-CNN_ICCV_2015_paper.pdf), [arXiv](https://arxiv.org/pdf/1504.08083.pdf), 2015 నుండి
 
@@ -117,7 +108,7 @@ $$
 
 ఈ విధానం ప్రధాన ఆలోచన ROIs అంచనా వేయడానికి న్యూరల్ నెట్‌వర్క్‌ను ఉపయోగించడం - దీనిని *Region Proposal Network* అంటారు. [పేపర్](https://arxiv.org/pdf/1506.01497.pdf), 2016
 
-![FasterRCNN](../../../../../translated_images/faster-rcnn.8d46c099b87ef30ab2ea26dbc4bdd85b974a57ba8eb526f65dc4cd0a4711de30.te.png)
+![FasterRCNN](../../../../../translated_images/te/faster-rcnn.8d46c099b87ef30a.webp)
 
 > చిత్రం [అధికారిక పేపర్](https://arxiv.org/pdf/1506.01497.pdf) నుండి
 
@@ -129,7 +120,7 @@ $$
 2. ఫీచర్లు **Position-Sensitive Score Map** ద్వారా ప్రాసెస్ చేయబడతాయి. $C$ తరగతులలో ప్రతి వస్తువు $k\times k$ ప్రాంతాలుగా విభజించబడుతుంది, మరియు మనం వస్తువుల భాగాలను అంచనా వేయడానికి శిక్షణ పొందుతాము.
 3. $k\times k$ ప్రాంతాల ప్రతి భాగం కోసం అన్ని నెట్‌వర్క్లు వస్తువు తరగతుల కోసం ఓటు వేస్తాయి, గరిష్ట ఓటు పొందిన వస్తువు తరగతి ఎంచుకోబడుతుంది.
 
-![r-fcn image](../../../../../translated_images/r-fcn.13eb88158b99a3da50fa2787a6be5cb310d47f0e9655cc93a1090dc7aab338d1.te.png)
+![r-fcn image](../../../../../translated_images/te/r-fcn.13eb88158b99a3da.webp)
 
 > చిత్రం [అధికారిక పేపర్](https://arxiv.org/abs/1605.06409) నుండి
 
@@ -140,7 +131,7 @@ YOLO ఒక రియల్‌టైమ్ ఒకసారి నడిపే �
  * చిత్రాన్ని $S\times S$ ప్రాంతాలుగా విభజించడం
  * ప్రతి ప్రాంతం కోసం, **CNN** $n$ సాధ్యమైన వస్తువులు, *బౌండింగ్ బాక్స్* కోఆర్డినేట్లు మరియు *confidence* = *probability* * IoU అంచనా వేయడం.
 
- ![YOLO](../../../../../translated_images/yolo.a2648ec82ee8bb4ea27537677adb482fd4b733ca1705c561b6a24a85102dced5.te.png)
+ ![YOLO](../../../../../translated_images/te/yolo.a2648ec82ee8bb4e.webp)
 
 > చిత్రం [అధికారిక పేపర్](https://arxiv.org/abs/1506.02640) నుండి
 

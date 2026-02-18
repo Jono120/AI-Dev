@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "7ba20f54a5bfcd6521018cdfb17c7c57",
-  "translation_date": "2025-09-23T14:57:57+00:00",
-  "source_file": "lessons/5-NLP/15-LanguageModeling/README.md",
-  "language_code": "hr"
-}
--->
 # Modeliranje jezika
 
 Semantičke ugrađene reprezentacije, poput Word2Vec i GloVe, zapravo su prvi korak prema **modeliranju jezika** - stvaranju modela koji na neki način *razumiju* (ili *predstavljaju*) prirodu jezika.
@@ -23,7 +14,7 @@ U našim prethodnim primjerima koristili smo unaprijed trenirane semantičke ugr
 * **Kontinuirana vreća riječi** (CBoW), gdje predviđamo srednji token $W_0$ u nizu tokena $W_{-N}$, ..., $W_N$.
 * **Skip-gram**, gdje predviđamo skup susjednih tokena {$W_{-N},\dots, W_{-1}, W_1,\dots, W_N$} iz srednjeg tokena $W_0$.
 
-![slika iz rada o pretvaranju riječi u vektore](../../../../../translated_images/example-algorithms-for-converting-words-to-vectors.fbe9207a726922f6f0f5de66427e8a6eda63809356114e28fb1fa5f4a83ebda7.hr.png)
+![slika iz rada o pretvaranju riječi u vektore](../../../../../translated_images/hr/example-algorithms-for-converting-words-to-vectors.fbe9207a726922f6.webp)
 
 > Slika iz [ovog rada](https://arxiv.org/pdf/1301.3781.pdf)
 

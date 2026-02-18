@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "b70fcf7fcee862990f848c679090943f",
-  "translation_date": "2025-10-03T14:57:43+00:00",
-  "source_file": "lessons/4-ComputerVision/07-ConvNets/lab/README.md",
-  "language_code": "ro"
-}
--->
 # Clasificarea Fețelor Animalelor de Companie
 
 Temă de laborator din [Curriculum AI pentru Începători](https://github.com/microsoft/ai-for-beginners).
@@ -21,7 +12,7 @@ Trebuie să antrenezi o rețea neuronală convoluțională pentru a clasifica di
 
 Vom folosi [Oxford-IIIT Pet Dataset](https://www.robots.ox.ac.uk/~vgg/data/pets/), care conține imagini ale 37 de rase diferite de câini și pisici.
 
-![Dataset-ul cu care vom lucra](../../../../../../translated_images/data.50b2a9d5484bdbf0f52f5765b381cec9efe2bd296a98f007f90bedb6ac67f2a8.ro.png)
+![Dataset-ul cu care vom lucra](../../../../../../translated_images/ro/data.50b2a9d5484bdbf0.webp)
 
 Pentru a descărca dataset-ul, folosește acest fragment de cod:
 

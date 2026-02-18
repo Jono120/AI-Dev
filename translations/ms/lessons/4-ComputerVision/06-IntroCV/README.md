@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "feeca98225cb420afc89415f24f63d92",
-  "translation_date": "2025-09-23T10:49:13+00:00",
-  "source_file": "lessons/4-ComputerVision/06-IntroCV/README.md",
-  "language_code": "ms"
-}
--->
 # Pengenalan kepada Penglihatan Komputer
 
 [Penglihatan Komputer](https://wikipedia.org/wiki/Computer_vision) adalah satu bidang yang bertujuan untuk membolehkan komputer memahami imej digital pada tahap tinggi. Definisi ini agak luas kerana *memahami* boleh membawa pelbagai maksud, termasuk mencari objek dalam gambar (**pengesanan objek**), memahami apa yang sedang berlaku (**pengesanan peristiwa**), menerangkan gambar dalam bentuk teks, atau membina semula pemandangan dalam 3D. Terdapat juga tugas-tugas khas berkaitan imej manusia: anggaran umur dan emosi, pengesanan dan pengenalan wajah, serta anggaran pose 3D, antara lain.
@@ -73,14 +64,14 @@ Dalam [OpenCV Notebook](OpenCV.ipynb) kami, kami memberikan beberapa contoh di m
 
 * **Pra-pemprosesan gambar buku Braille**. Kami memberi tumpuan kepada bagaimana kami boleh menggunakan thresholding, pengesanan ciri, transformasi perspektif dan manipulasi NumPy untuk memisahkan simbol Braille individu untuk pengelasan selanjutnya oleh rangkaian neural.
 
-![Imej Braille](../../../../../translated_images/braille.341962ff76b1bd7044409371d3de09ced5028132aef97344ea4b7468c1208126.ms.jpeg) | ![Imej Braille Pra-pemprosesan](../../../../../translated_images/braille-result.46530fea020b03c76aac532d7d6eeef7f6fb35b55b1001cd21627907dabef3ed.ms.png) | ![Simbol Braille](../../../../../translated_images/braille-symbols.0159185ab69d533909dc4d7d26a1971b51401c6a80eb3a5584f250ea880af88b.ms.png)
+![Imej Braille](../../../../../translated_images/ms/braille.341962ff76b1bd70.webp) | ![Imej Braille Pra-pemprosesan](../../../../../translated_images/ms/braille-result.46530fea020b03c7.webp) | ![Simbol Braille](../../../../../translated_images/ms/braille-symbols.0159185ab69d5339.webp)
 ----|-----|-----
 
 > Imej dari [OpenCV.ipynb](OpenCV.ipynb)
 
 * **Mengesan pergerakan dalam video menggunakan perbezaan bingkai**. Jika kamera tetap, maka bingkai dari suapan kamera seharusnya agak serupa antara satu sama lain. Oleh kerana bingkai diwakili sebagai array, hanya dengan menolak array tersebut untuk dua bingkai berturut-turut kita akan mendapat perbezaan piksel, yang seharusnya rendah untuk bingkai statik, dan menjadi lebih tinggi apabila terdapat pergerakan yang ketara dalam imej.
 
-![Imej bingkai video dan perbezaan bingkai](../../../../../translated_images/frame-difference.706f805491a0883c938e16447bf5eb2f7d69e812c7f743cbe7d7c7645168f81f.ms.png)
+![Imej bingkai video dan perbezaan bingkai](../../../../../translated_images/ms/frame-difference.706f805491a0883c.webp)
 
 > Imej dari [OpenCV.ipynb](OpenCV.ipynb)
 
@@ -89,7 +80,7 @@ Dalam [OpenCV Notebook](OpenCV.ipynb) kami, kami memberikan beberapa contoh di m
    - **Dense Optical Flow** mengira medan vektor yang menunjukkan untuk setiap piksel ke mana ia bergerak
    - **Sparse Optical Flow** berdasarkan mengambil beberapa ciri yang jelas dalam imej (contohnya, tepi), dan membina trajektori mereka dari bingkai ke bingkai.
 
-![Imej Optical Flow](../../../../../translated_images/optical.1f4a94464579a83a10784f3c07fe7228514714b96782edf50e70ccd59d2d8c4f.ms.png)
+![Imej Optical Flow](../../../../../translated_images/ms/optical.1f4a94464579a83a.webp)
 
 > Imej dari [OpenCV.ipynb](OpenCV.ipynb)
 
@@ -115,7 +106,7 @@ Baca lebih lanjut tentang optical flow [dalam tutorial hebat ini](https://learno
 
 Dalam makmal ini, anda akan mengambil video dengan gerakan mudah, dan matlamat anda adalah untuk mengekstrak pergerakan atas/bawah/kiri/kanan menggunakan optical flow.
 
-<img src="images/palm-movement.png" width="30%" alt="Bingkai Pergerakan Tapak Tangan"/>
+<img src="../../../../../translated_images/ms/palm-movement.341495f0e9c47da3.webp" width="30%" alt="Bingkai Pergerakan Tapak Tangan"/>
 
 ---
 

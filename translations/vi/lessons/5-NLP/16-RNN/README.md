@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "e2273cc150380a5e191903cea858f021",
-  "translation_date": "2025-09-23T10:35:48+00:00",
-  "source_file": "lessons/5-NLP/16-RNN/README.md",
-  "language_code": "vi"
-}
--->
 # Mạng Nơ-ron Tái Phục Hồi
 
 ## [Câu hỏi kiểm tra trước bài giảng](https://ff-quizzes.netlify.app/en/ai/quiz/31)
@@ -15,7 +6,7 @@ Trong các phần trước, chúng ta đã sử dụng các biểu diễn ngữ 
 
 Để nắm bắt ý nghĩa của chuỗi văn bản, chúng ta cần sử dụng một kiến trúc mạng nơ-ron khác, được gọi là **mạng nơ-ron tái phục hồi**, hay RNN. Trong RNN, chúng ta đưa câu qua mạng từng ký hiệu một, và mạng sẽ tạo ra một **trạng thái**, sau đó chúng ta đưa trạng thái này vào mạng cùng với ký hiệu tiếp theo.
 
-![RNN](../../../../../translated_images/rnn.27f5c29c53d727b546ad3961637a267f0fe9ec5ab01f2a26a853c92fcefbb574.vi.png)
+![RNN](../../../../../translated_images/vi/rnn.27f5c29c53d727b5.webp)
 
 > Hình ảnh của tác giả
 
@@ -31,7 +22,7 @@ Hãy xem cách một cell RNN đơn giản được tổ chức. Nó nhận tr�
 
 Một cell RNN đơn giản có hai ma trận trọng số bên trong: một ma trận biến đổi một ký hiệu đầu vào (gọi là W), và một ma trận khác biến đổi một trạng thái đầu vào (H). Trong trường hợp này, đầu ra của mạng được tính bằng &sigma;(W&times;X<sub>i</sub>+H&times;S<sub>i-1</sub>+b), trong đó &sigma; là hàm kích hoạt và b là bias bổ sung.
 
-<img alt="Cấu trúc RNN Cell" src="images/rnn-anatomy.png" width="50%"/>
+<img alt="Cấu trúc RNN Cell" src="../../../../../translated_images/vi/rnn-anatomy.79ee3f3920b3294b.webp" width="50%"/>
 
 > Hình ảnh của tác giả
 
@@ -61,7 +52,7 @@ Chúng ta đã thảo luận về các mạng tái phục hồi hoạt động t
 
 Một mạng tái phục hồi, dù là một chiều hay hai chiều, nắm bắt các mẫu nhất định trong một chuỗi và có thể lưu trữ chúng vào một vector trạng thái hoặc truyền vào đầu ra. Tương tự như các mạng tích chập, chúng ta có thể xây dựng một lớp tái phục hồi khác trên lớp đầu tiên để nắm bắt các mẫu cấp cao hơn và xây dựng từ các mẫu cấp thấp được trích xuất bởi lớp đầu tiên. Điều này dẫn đến khái niệm về một **RNN nhiều lớp**, bao gồm hai hoặc nhiều mạng tái phục hồi, trong đó đầu ra của lớp trước được truyền vào lớp tiếp theo làm đầu vào.
 
-![Hình ảnh minh họa một RNN LSTM nhiều lớp](../../../../../translated_images/multi-layer-lstm.dd975e29bb2a59fe58b429db833932d734c81f211cad2783797a9608984acb8c.vi.jpg)
+![Hình ảnh minh họa một RNN LSTM nhiều lớp](../../../../../translated_images/vi/multi-layer-lstm.dd975e29bb2a59fe.webp)
 
 *Hình ảnh từ [bài viết tuyệt vời này](https://towardsdatascience.com/from-a-lstm-cell-to-a-multilayer-lstm-network-with-pytorch-2899eb5696f3) của Fernando López*
 

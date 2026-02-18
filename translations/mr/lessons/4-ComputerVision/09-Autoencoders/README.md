@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "1b8d9e1b3a6f1daa864b1ff3dfc3076d",
-  "translation_date": "2025-09-23T07:06:19+00:00",
-  "source_file": "lessons/4-ComputerVision/09-Autoencoders/README.md",
-  "language_code": "mr"
-}
--->
 # ऑटोएन्कोडर्स
 
 जेव्हा CNNs प्रशिक्षण दिले जाते, तेव्हा एक समस्या म्हणजे आपल्याला मोठ्या प्रमाणात लेबल केलेल्या डेटाची आवश्यकता असते. प्रतिमेच्या वर्गीकरणाच्या बाबतीत, आपल्याला प्रतिमा वेगवेगळ्या वर्गांमध्ये विभागाव्या लागतात, जे एक मॅन्युअल काम आहे.
@@ -19,7 +10,7 @@ CO_OP_TRANSLATOR_METADATA:
 
 आम्ही ऑटोएन्कोडरला मूळ प्रतिमेतील माहिती अचूक पुनर्रचना करण्यासाठी शक्य तितकी माहिती कॅप्चर करण्यासाठी प्रशिक्षण देत असल्याने, नेटवर्क इनपुट प्रतिमांचे सर्वोत्तम **एम्बेडिंग** शोधण्याचा प्रयत्न करते.
 
-![ऑटोएन्कोडर आकृती](../../../../../translated_images/autoencoder_schema.5e6fc9ad98a5eb6197f3513cf3baf4dfbe1389a6ae74daebda64de9f1c99f142.mr.jpg)
+![ऑटोएन्कोडर आकृती](../../../../../translated_images/mr/autoencoder_schema.5e6fc9ad98a5eb61.webp)
 
 > प्रतिमा [Keras ब्लॉग](https://blog.keras.io/building-autoencoders-in-keras.html) मधून
 
@@ -46,7 +37,7 @@ VAE हा ऑटोएन्कोडर आहे जो लॅटेंट �
  * आम्ही वितरण N(z<sub>mean</sub>,exp(z<sub>log\_sigma</sub>)) मधून `sample` व्हेक्टर घेतो
  * डिकोडर `sample` इनपुट व्हेक्टर म्हणून वापरून मूळ प्रतिमा डिकोड करण्याचा प्रयत्न करतो
 
- <img src="images/vae.png" width="50%">
+ <img src="../../../../../translated_images/mr/vae.464c465a5b6a9e25.webp" width="50%">
 
 > प्रतिमा [या ब्लॉग पोस्ट](https://ijdykeman.github.io/ml/2016/12/21/cvae.html) मधून, लेखक: इसाक डायकमन
 
@@ -57,13 +48,13 @@ VAE हा ऑटोएन्कोडर आहे जो लॅटेंट �
 
 VAE चे एक महत्त्वाचे फायदे म्हणजे नवीन प्रतिमा तुलनेने सोप्या पद्धतीने तयार करणे शक्य होते, कारण आपल्याला लॅटेंट व्हेक्टर कशा वितरणातून नमुना घ्यायचा आहे हे माहित असते. उदाहरणार्थ, जर आपण MNIST वर 2D लॅटेंट व्हेक्टरसह VAE प्रशिक्षण दिले, तर आपण लॅटेंट व्हेक्टरच्या घटकांमध्ये बदल करून वेगवेगळे अंक मिळवू शकतो:
 
-<img alt="vaemnist" src="images/vaemnist.png" width="50%"/>
+<img alt="vaemnist" src="../../../../../translated_images/mr/vaemnist.cab9e602dc08dc50.webp" width="50%"/>
 
 > प्रतिमा [दिमित्री सोश्निकोव्ह](http://soshnikov.com) यांच्याकडून
 
 लक्ष द्या की प्रतिमा एकमेकांमध्ये मिसळतात, कारण आपण लॅटेंट पॅरामीटर स्पेसच्या वेगवेगळ्या भागांमधून लॅटेंट व्हेक्टर मिळवायला सुरुवात करतो. आपण या स्पेसला 2D मध्ये देखील व्हिज्युअलाइझ करू शकतो:
 
-<img alt="vaemnist cluster" src="images/vaemnist-diag.png" width="50%"/> 
+<img alt="vaemnist cluster" src="../../../../../translated_images/mr/vaemnist-diag.694315f775d5d666.webp" width="50%"/> 
 
 > प्रतिमा [दिमित्री सोश्निकोव्ह](http://soshnikov.com) यांच्याकडून
 

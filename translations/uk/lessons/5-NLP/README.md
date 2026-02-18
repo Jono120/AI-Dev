@@ -1,15 +1,6 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "8ef02a9318257ea140ed3ed74442096d",
-  "translation_date": "2025-08-25T21:30:36+00:00",
-  "source_file": "lessons/5-NLP/README.md",
-  "language_code": "uk"
-}
--->
 # Обробка природної мови
 
-![Резюме задач NLP у вигляді малюнка](../../../../translated_images/ai-nlp.b22dcb8ca4707ceaee8576db1c5f4089c8cac2f454e9e03ea554f07fda4556b8.uk.png)
+![Резюме задач NLP у вигляді малюнка](../../../../translated_images/uk/ai-nlp.b22dcb8ca4707cea.webp)
 
 У цьому розділі ми зосередимося на використанні нейронних мереж для вирішення задач, пов'язаних із **обробкою природної мови (NLP)**. Існує багато проблем NLP, які ми хочемо, щоб комп'ютери могли вирішувати:
 

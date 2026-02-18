@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "1b8d9e1b3a6f1daa864b1ff3dfc3076d",
-  "translation_date": "2025-11-25T22:24:14+00:00",
-  "source_file": "lessons/4-ComputerVision/09-Autoencoders/README.md",
-  "language_code": "ml"
-}
--->
 # ഓട്ടോഎൻകോഡറുകൾ
 
 CNN-കൾ പരിശീലിപ്പിക്കുമ്പോൾ, ഒരു പ്രശ്നം നമ്മൾക്ക് വളരെ ലേബൽ ചെയ്ത ഡാറ്റ ആവശ്യമുള്ളതാണ്. ചിത്ര വർഗ്ഗീകരണത്തിന്റെ കാര്യത്തിൽ, ചിത്രങ്ങളെ വ്യത്യസ്ത ക്ലാസുകളായി വേർതിരിക്കേണ്ടതുണ്ട്, ഇത് ഒരു മാനുവൽ ശ്രമമാണ്.
@@ -19,7 +10,7 @@ CNN-കൾ പരിശീലിപ്പിക്കുമ്പോൾ, ഒര�
 
 യഥാർത്ഥ ചിത്രത്തിൽ നിന്നുള്ള വിവരങ്ങൾ പൂർണ്ണമായി പിടിച്ചുപറ്റി കൃത്യമായി പുനഃസൃഷ്ടിക്കാൻ ഓട്ടോഎൻകോഡർ പരിശീലിപ്പിക്കുമ്പോൾ, നെറ്റ്‌വർക്ക് ഇൻപുട്ട് ചിത്രങ്ങളുടെ അർത്ഥം പിടിച്ചുപറ്റാൻ മികച്ച **എംബെഡ്ഡിംഗ്** കണ്ടെത്താൻ ശ്രമിക്കുന്നു.
 
-![AutoEncoder Diagram](../../../../../translated_images/autoencoder_schema.5e6fc9ad98a5eb6197f3513cf3baf4dfbe1389a6ae74daebda64de9f1c99f142.ml.jpg)
+![AutoEncoder Diagram](../../../../../translated_images/ml/autoencoder_schema.5e6fc9ad98a5eb61.webp)
 
 > ചിത്രം [Keras ബ്ലോഗിൽ നിന്നുള്ളത്](https://blog.keras.io/building-autoencoders-in-keras.html)
 
@@ -46,7 +37,7 @@ VAE ഒരു ഓട്ടോഎൻകോഡറാണ്, അത് ലാറ്
  * N(z<sub>mean</sub>, exp(z<sub>log_sigma</sub>)) എന്ന വിതരണത്തിൽ നിന്ന് ഒരു `sample` വെക്ടർ സാമ്പിൾ ചെയ്യുന്നു
  * ഡീകോഡർ `sample` ഉപയോഗിച്ച് യഥാർത്ഥ ചിത്രം പുനഃസൃഷ്ടിക്കാൻ ശ്രമിക്കുന്നു
 
- <img src="../../../../../translated_images/vae.464c465a5b6a9e253be65a8cb3be1724832cbde57ece3912ddc962b199472a89.ml.png" width="50%">
+ <img src="../../../../../translated_images/ml/vae.464c465a5b6a9e25.webp" width="50%">
 
 > ചിത്രം [ഈ ബ്ലോഗ് പോസ്റ്റിൽ നിന്നുള്ളത്](https://ijdykeman.github.io/ml/2016/12/21/cvae.html) - Isaak Dykeman
 
@@ -57,13 +48,13 @@ VAE ഒരു ഓട്ടോഎൻകോഡറാണ്, അത് ലാറ്
 
 VAE-കളുടെ പ്രധാന ഗുണം, നാം ലാറ്റന്റ് വെക്ടറുകൾ സാമ്പിൾ ചെയ്യേണ്ട വിതരണത്തെ അറിയുന്നതിനാൽ, പുതിയ ചിത്രങ്ങൾ സൃഷ്ടിക്കുന്നത് എളുപ്പമാണ്. ഉദാഹരണത്തിന്, 2D ലാറ്റന്റ് വെക്ടർ ഉപയോഗിച്ച് MNIST-ൽ VAE പരിശീലിപ്പിച്ചാൽ, ലാറ്റന്റ് വെക്ടറിന്റെ ഘടകങ്ങൾ മാറ്റി വ്യത്യസ്ത അക്കങ്ങൾ ലഭിക്കാം:
 
-<img alt="vaemnist" src="../../../../../translated_images/vaemnist.cab9e602dc08dc5066ce14e005889d6b53ca5bcaf16e35c28dbf8cd40c304de1.ml.png" width="50%"/>
+<img alt="vaemnist" src="../../../../../translated_images/ml/vaemnist.cab9e602dc08dc50.webp" width="50%"/>
 
 > ചിത്രം [Dmitry Soshnikov](http://soshnikov.com) എന്നവന്റെ
 
 ലാറ്റന്റ് പാരാമീറ്റർ സ്പേസിന്റെ വ്യത്യസ്ത ഭാഗങ്ങളിൽ നിന്നുള്ള ലാറ്റന്റ് വെക്ടറുകൾ ഉപയോഗിച്ച് ചിത്രങ്ങൾ എങ്ങനെ പരസ്പരം മിശ്രിതമാകുന്നു എന്ന് ശ്രദ്ധിക്കുക. നാം ഈ സ്പേസ് 2D-ൽ ദൃശ്യവൽക്കരിക്കാനും കഴിയും:
 
-<img alt="vaemnist cluster" src="../../../../../translated_images/vaemnist-diag.694315f775d5d666b02fb54f8fc7c64db65a9d126a16c2fdb8683cf9726f9ff5.ml.png" width="50%"/> 
+<img alt="vaemnist cluster" src="../../../../../translated_images/ml/vaemnist-diag.694315f775d5d666.webp" width="50%"/> 
 
 > ചിത്രം [Dmitry Soshnikov](http://soshnikov.com) എന്നവന്റെ
 

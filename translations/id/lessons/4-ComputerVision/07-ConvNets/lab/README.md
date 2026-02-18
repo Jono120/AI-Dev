@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "b70fcf7fcee862990f848c679090943f",
-  "translation_date": "2025-10-03T14:56:19+00:00",
-  "source_file": "lessons/4-ComputerVision/07-ConvNets/lab/README.md",
-  "language_code": "id"
-}
--->
 # Klasifikasi Wajah Hewan Peliharaan
 
 Tugas Lab dari [Kurikulum AI untuk Pemula](https://github.com/microsoft/ai-for-beginners).
@@ -21,7 +12,7 @@ Anda perlu melatih jaringan saraf konvolusi untuk mengklasifikasikan berbagai ra
 
 Kita akan menggunakan [Oxford-IIIT Pet Dataset](https://www.robots.ox.ac.uk/~vgg/data/pets/), yang berisi gambar dari 37 ras anjing dan kucing yang berbeda.
 
-![Dataset yang akan kita gunakan](../../../../../../translated_images/data.50b2a9d5484bdbf0f52f5765b381cec9efe2bd296a98f007f90bedb6ac67f2a8.id.png)
+![Dataset yang akan kita gunakan](../../../../../../translated_images/id/data.50b2a9d5484bdbf0.webp)
 
 Untuk mengunduh dataset, gunakan cuplikan kode berikut:
 

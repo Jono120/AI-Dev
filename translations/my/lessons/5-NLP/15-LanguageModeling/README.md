@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "7ba20f54a5bfcd6521018cdfb17c7c57",
-  "translation_date": "2025-09-23T15:24:05+00:00",
-  "source_file": "lessons/5-NLP/15-LanguageModeling/README.md",
-  "language_code": "my"
-}
--->
 # Language Modeling
 
 Semantic embeddings, Word2Vec နှင့် GloVe က **ဘာသာစကားမော်ဒယ်** ဖန်တီးခြင်းဆီသို့ ပထမအဆင့်အဖြစ် သွားရောက်နေသည်။ ၎င်းသည် ဘာသာစကား၏ သဘာဝကို *နားလည်* (သို့မဟုတ် *ကိုယ်စားပြု*) နိုင်သော မော်ဒယ်များ ဖန်တီးရန် ရည်ရွယ်သည်။
@@ -23,7 +14,7 @@ Semantic embeddings, Word2Vec နှင့် GloVe က **ဘာသာစကာ�
 * **Continuous Bag-of-Words** (CBoW)၊ token အစဉ် $W_{-N}$, ..., $W_N$ တွင် အလယ် token $W_0$ ကို ခန့်မှန်းခြင်း။
 * **Skip-gram**၊ အလယ် token $W_0$ မှ အနီးအနား token များ {$W_{-N},\dots, W_{-1}, W_1,\dots, W_N$} ကို ခန့်မှန်းခြင်း။
 
-![image from paper on converting words to vectors](../../../../../translated_images/example-algorithms-for-converting-words-to-vectors.fbe9207a726922f6f0f5de66427e8a6eda63809356114e28fb1fa5f4a83ebda7.my.png)
+![image from paper on converting words to vectors](../../../../../translated_images/my/example-algorithms-for-converting-words-to-vectors.fbe9207a726922f6.webp)
 
 > Image from [this paper](https://arxiv.org/pdf/1301.3781.pdf)
 

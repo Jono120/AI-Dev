@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "b70fcf7fcee862990f848c679090943f",
-  "translation_date": "2025-10-03T14:52:26+00:00",
-  "source_file": "lessons/4-ComputerVision/07-ConvNets/lab/README.md",
-  "language_code": "fa"
-}
--->
 # طبقه‌بندی چهره حیوانات خانگی
 
 تکلیف آزمایشگاهی از [برنامه درسی AI برای مبتدیان](https://github.com/microsoft/ai-for-beginners).
@@ -21,7 +12,7 @@ CO_OP_TRANSLATOR_METADATA:
 
 ما از [مجموعه داده حیوانات خانگی آکسفورد-IIIT](https://www.robots.ox.ac.uk/~vgg/data/pets/) استفاده خواهیم کرد که شامل تصاویر 37 نژاد مختلف از سگ‌ها و گربه‌ها است.
 
-![مجموعه داده‌ای که با آن کار خواهیم کرد](../../../../../../translated_images/data.50b2a9d5484bdbf0f52f5765b381cec9efe2bd296a98f007f90bedb6ac67f2a8.fa.png)
+![مجموعه داده‌ای که با آن کار خواهیم کرد](../../../../../../translated_images/fa/data.50b2a9d5484bdbf0.webp)
 
 برای دانلود مجموعه داده، از این قطعه کد استفاده کنید:
 

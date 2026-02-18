@@ -1,19 +1,10 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "d76a7eda28de5210c8b1ba50a6216c69",
-  "translation_date": "2025-10-11T11:22:53+00:00",
-  "source_file": "lessons/4-ComputerVision/11-ObjectDetection/README.md",
-  "language_code": "ta"
-}
--->
 # பொருள் கண்டறிதல்
 
 நாம் இதுவரை பார்த்த பட வகைப்படுத்தல் மாதிரிகள் ஒரு படத்தை எடுத்துக்கொண்டு ஒரு வகைமுறை முடிவை உருவாக்கின, உதாரணமாக MNIST பிரச்சினையில் 'எண்' வகை. ஆனால், பல சந்தர்ப்பங்களில் ஒரு படம் பொருட்களை காட்டுகிறது என்பதை மட்டும் அறிய வேண்டாம் - அதன் துல்லியமான இடத்தை கண்டறிய விரும்புகிறோம். இதுவே **பொருள் கண்டறிதல்** என்ற கருத்தின் முக்கிய நோக்கம்.
 
 ## [முன்-வகுப்பு வினாடி வினா](https://ff-quizzes.netlify.app/en/ai/quiz/21)
 
-![பொருள் கண்டறிதல்](../../../../../translated_images/Screen_Shot_2016-11-17_at_11.14.54_AM.b4bb3769353287be1b905373ed9c858102c054b16e4595c76ec3f7bba0feb549.ta.png)
+![பொருள் கண்டறிதல்](../../../../../translated_images/ta/Screen_Shot_2016-11-17_at_11.14.54_AM.b4bb3769353287be.webp)
 
 > படம் [YOLO v2 வலைத்தளத்திலிருந்து](https://pjreddie.com/darknet/yolov2/)
 
@@ -25,7 +16,7 @@ CO_OP_TRANSLATOR_METADATA:
 2. ஒவ்வொரு பகுதியிலும் பட வகைப்படுத்தலை இயக்கவும்.
 3. போதுமான அளவு செயல்பாட்டை உருவாக்கும் பகுதிகள், குறிப்பிட்ட பொருளை கொண்டதாக கருதலாம்.
 
-![எளிய பொருள் கண்டறிதல்](../../../../../translated_images/naive-detection.e7f1ba220ccd08c68a2ea8e06a7ed75c3fcc738c2372f9e00b7f4299a8659c01.ta.png)
+![எளிய பொருள் கண்டறிதல்](../../../../../translated_images/ta/naive-detection.e7f1ba220ccd08c6.webp)
 
 > *படம் [பயிற்சி நோட்புக்](ObjectDetection-TF.ipynb) இலிருந்து*
 
@@ -42,7 +33,7 @@ CO_OP_TRANSLATOR_METADATA:
 * [PASCAL VOC](http://host.robots.ox.ac.uk/pascal/VOC/) - 20 வகைகள்
 * [COCO](http://cocodataset.org/#home) - சூழலில் பொதுவான பொருட்கள். 80 வகைகள், அளவுரு பெட்டிகள் மற்றும் பிரிவுப் முகமூடிகள்
 
-![COCO](../../../../../translated_images/coco-examples.71bc60380fa6cceb7caad48bd09e35b6028caabd363aa04fee89c414e0870e86.ta.jpg)
+![COCO](../../../../../translated_images/ta/coco-examples.71bc60380fa6cceb.webp)
 
 ## பொருள் கண்டறிதல் அளவுகோல்கள்
 
@@ -50,7 +41,7 @@ CO_OP_TRANSLATOR_METADATA:
 
 பட வகைப்படுத்தலுக்கான செயல்திறனை அளவிடுவது எளிதானது, ஆனால் பொருள் கண்டறிதலுக்கான வகையின் சரியானதையும், அளவுரு பெட்டியின் துல்லியத்தையும் அளவிட வேண்டும். இதற்காக **இணைப்பு மற்றும் ஒன்றிணைவு** (IoU) என்ற அளவுகோலைப் பயன்படுத்துகிறோம், இது இரண்டு பெட்டிகள் (அல்லது இரண்டு பகுதி பகுதிகள்) எவ்வளவு நன்றாக ஒத்துப்போகின்றன என்பதை அளவிடுகிறது.
 
-![IoU](../../../../../translated_images/iou_equation.9a4751d40fff4e119ecd0a7bcca4e71ab1dc83e0d4f2a0d66ff0859736f593cf.ta.png)
+![IoU](../../../../../translated_images/ta/iou_equation.9a4751d40fff4e11.webp)
 
 > *[இந்த சிறந்த வலைப்பதிவிலிருந்து](https://pyimagesearch.com/2016/11/07/intersection-over-union-iou-for-object-detection/) IoU பற்றிய படங்கள்*
 
@@ -97,11 +88,11 @@ IoU ஒரு குறிப்பிட்ட மதிப்புக்க�
 
 [R-CNN](http://islab.ulsan.ac.kr/files/announcement/513/rcnn_pami.pdf) [Selective Search](http://www.huppelen.nl/publications/selectiveSearchDraft.pdf) பயன்படுத்தி ROI பகுதிகளின் அடுக்கமைப்பை உருவாக்குகிறது, பின்னர் CNN அம்சங்களைப் பயன்படுத்தி SVM வகைப்படுத்திகளை இயக்கி பொருள் வகையைத் தீர்மானிக்கிறது, மற்றும் *அளவுரு பெட்டியின்* கோர்டினேட்டுகளை தீர்மானிக்க நேரியல் மீள்பார்வையை (linear regression) பயன்படுத்துகிறது. [அதிகாரப்பூர்வ ஆவணம்](https://arxiv.org/pdf/1506.01497v1.pdf)
 
-![RCNN](../../../../../translated_images/rcnn1.cae407020dfb1d1fb572656e44f75cd6c512cc220591c116c506652c10e47f26.ta.png)
+![RCNN](../../../../../translated_images/ta/rcnn1.cae407020dfb1d1f.webp)
 
 > *படம் van de Sande et al. ICCV’11*
 
-![RCNN-1](../../../../../translated_images/rcnn2.2d9530bb83516484ec65b250c22dbf37d3d23244f32864ebcb91d98fe7c3112c.ta.png)
+![RCNN-1](../../../../../translated_images/ta/rcnn2.2d9530bb83516484.webp)
 
 > *படங்கள் [இந்த வலைப்பதிவிலிருந்து](https://towardsdatascience.com/r-cnn-fast-r-cnn-faster-r-cnn-yolo-object-detection-algorithms-36d53571365e)*
 
@@ -109,7 +100,7 @@ IoU ஒரு குறிப்பிட்ட மதிப்புக்க�
 
 இந்த அணுகுமுறை R-CNN போன்றது, ஆனால் பகுதிகள் குவியல் அடுக்குகள் (convolution layers) பயன்படுத்தப்பட்ட பிறகு வரையறுக்கப்படுகின்றன.
 
-![FRCNN](../../../../../translated_images/f-rcnn.3cda6d9bb41888754037d2d9763e2298a96de5d9bc2a21db3147357aa5da9b1a.ta.png)
+![FRCNN](../../../../../translated_images/ta/f-rcnn.3cda6d9bb4188875.webp)
 
 > படம் [அதிகாரப்பூர்வ ஆவணத்திலிருந்து](https://www.cv-foundation.org/openaccess/content_iccv_2015/papers/Girshick_Fast_R-CNN_ICCV_2015_paper.pdf), [arXiv](https://arxiv.org/pdf/1504.08083.pdf), 2015
 
@@ -117,7 +108,7 @@ IoU ஒரு குறிப்பிட்ட மதிப்புக்க�
 
 இந்த அணுகுமுறையின் முக்கியமான கருத்து, ROIs (Regions of Interests) கணிக்க நரம்பியல் நெட்வொர்க்கை (neural network) பயன்படுத்துவது - *Region Proposal Network* என அழைக்கப்படுகிறது. [ஆவணம்](https://arxiv.org/pdf/1506.01497.pdf), 2016
 
-![FasterRCNN](../../../../../translated_images/faster-rcnn.8d46c099b87ef30ab2ea26dbc4bdd85b974a57ba8eb526f65dc4cd0a4711de30.ta.png)
+![FasterRCNN](../../../../../translated_images/ta/faster-rcnn.8d46c099b87ef30a.webp)
 
 > படம் [அதிகாரப்பூர்வ ஆவணத்திலிருந்து](https://arxiv.org/pdf/1506.01497.pdf)
 
@@ -129,7 +120,7 @@ IoU ஒரு குறிப்பிட்ட மதிப்புக்க�
 2. **Position-Sensitive Score Map** மூலம் அம்சங்கள் செயல்படுத்தப்படுகின்றன. $C$ வகைகளிலிருந்து ஒவ்வொரு பொருளும் $k\times k$ பகுதிகளால் பிரிக்கப்படுகிறது, மற்றும் பொருளின் பகுதிகளை கணிக்க பயிற்சி அளிக்கிறோம்.
 3. $k\times k$ பகுதிகளிலிருந்து ஒவ்வொரு பகுதியும் பொருள் வகைகளுக்கு வாக்களிக்கிறது, மற்றும் அதிகபட்ச வாக்குகளைப் பெறும் பொருள் வகை தேர்ந்தெடுக்கப்படுகிறது.
 
-![r-fcn image](../../../../../translated_images/r-fcn.13eb88158b99a3da50fa2787a6be5cb310d47f0e9655cc93a1090dc7aab338d1.ta.png)
+![r-fcn image](../../../../../translated_images/ta/r-fcn.13eb88158b99a3da.webp)
 
 > படம் [அதிகாரப்பூர்வ ஆவணத்திலிருந்து](https://arxiv.org/abs/1605.06409)
 
@@ -140,7 +131,7 @@ YOLO ஒரு நேரடி ஒரு முறை அல்காரித�
  * படம் $S\times S$ பகுதிகளாகப் பிரிக்கப்படுகிறது.
  * ஒவ்வொரு பகுதிக்கும் **CNN** $n$ சாத்தியமான பொருட்கள், *அளவுரு பெட்டியின்* கோர்டினேட்டுகள் மற்றும் *நம்பகத்தன்மை*=*சாத்தியம்* * IoU கணிக்கிறது.
 
- ![YOLO](../../../../../translated_images/yolo.a2648ec82ee8bb4ea27537677adb482fd4b733ca1705c561b6a24a85102dced5.ta.png)
+ ![YOLO](../../../../../translated_images/ta/yolo.a2648ec82ee8bb4e.webp)
 
 > படம் [அதிகாரப்பூர்வ ஆவணத்திலிருந்து](https://arxiv.org/abs/1506.02640)
 

@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "1b8d9e1b3a6f1daa864b1ff3dfc3076d",
-  "translation_date": "2025-09-23T15:31:27+00:00",
-  "source_file": "lessons/4-ComputerVision/09-Autoencoders/README.md",
-  "language_code": "uk"
-}
--->
 # Автоенкодери
 
 Під час навчання CNN одна з проблем полягає в тому, що нам потрібна велика кількість даних із мітками. У випадку класифікації зображень нам потрібно розділити зображення на різні класи, що є ручною роботою.
@@ -19,7 +10,7 @@ CO_OP_TRANSLATOR_METADATA:
 
 Оскільки ми навчаємо автоенкодер захоплювати якомога більше інформації з оригінального зображення для точного відновлення, мережа намагається знайти найкраще **вбудовування** вхідних зображень, щоб передати їх зміст.
 
-![Схема автоенкодера](../../../../../translated_images/autoencoder_schema.5e6fc9ad98a5eb6197f3513cf3baf4dfbe1389a6ae74daebda64de9f1c99f142.uk.jpg)
+![Схема автоенкодера](../../../../../translated_images/uk/autoencoder_schema.5e6fc9ad98a5eb61.webp)
 
 > Зображення з [блогу Keras](https://blog.keras.io/building-autoencoders-in-keras.html)
 
@@ -46,7 +37,7 @@ VAE — це автоенкодер, який навчається прогно�
  * Ми вибираємо вектор `sample` із розподілу N(z<sub>mean</sub>,exp(z<sub>log\_sigma</sub>))
  * Декодер намагається декодувати оригінальне зображення, використовуючи `sample` як вхідний вектор
 
- <img src="images/vae.png" width="50%">
+ <img src="../../../../../translated_images/uk/vae.464c465a5b6a9e25.webp" width="50%">
 
 > Зображення з [цього блогу](https://ijdykeman.github.io/ml/2016/12/21/cvae.html) Ісаака Дайкмана
 
@@ -57,13 +48,13 @@ VAE — це автоенкодер, який навчається прогно�
 
 Однією з важливих переваг VAE є те, що вони дозволяють нам генерувати нові зображення відносно легко, оскільки ми знаємо, з якого розподілу вибирати латентні вектори. Наприклад, якщо ми навчимо VAE з 2D латентним вектором на MNIST, ми можемо змінювати компоненти латентного вектора, щоб отримати різні цифри:
 
-<img alt="vaemnist" src="images/vaemnist.png" width="50%"/>
+<img alt="vaemnist" src="../../../../../translated_images/uk/vaemnist.cab9e602dc08dc50.webp" width="50%"/>
 
 > Зображення від [Дмитра Сошникова](http://soshnikov.com)
 
 Зверніть увагу, як зображення плавно переходять одне в одне, коли ми починаємо отримувати латентні вектори з різних частин латентного простору параметрів. Ми також можемо візуалізувати цей простір у 2D:
 
-<img alt="vaemnist cluster" src="images/vaemnist-diag.png" width="50%"/> 
+<img alt="vaemnist cluster" src="../../../../../translated_images/uk/vaemnist-diag.694315f775d5d666.webp" width="50%"/> 
 
 > Зображення від [Дмитра Сошникова](http://soshnikov.com)
 

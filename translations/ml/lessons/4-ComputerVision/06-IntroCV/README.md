@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "feeca98225cb420afc89415f24f63d92",
-  "translation_date": "2025-11-25T21:57:58+00:00",
-  "source_file": "lessons/4-ComputerVision/06-IntroCV/README.md",
-  "language_code": "ml"
-}
--->
 # കമ്പ്യൂട്ടർ വിഷൻ പരിചയം
 
 [കമ്പ്യൂട്ടർ വിഷൻ](https://wikipedia.org/wiki/Computer_vision) എന്നത് ഡിജിറ്റൽ ചിത്രങ്ങളെക്കുറിച്ച് ഉയർന്ന തലത്തിലുള്ള ബോധം കമ്പ്യൂട്ടറുകൾക്ക് നൽകാനുള്ള ശാസ്ത്രശാഖയാണ്. ഇത് വളരെ വ്യാപകമായ ഒരു നിർവചനമാണ്, കാരണം *ബോധം* എന്നത് പലവിധം അർത്ഥമാക്കാം, ഉദാഹരണത്തിന് ഒരു ചിത്രത്തിൽ ഒരു വസ്തു കണ്ടെത്തൽ (**object detection**), സംഭവങ്ങൾ മനസ്സിലാക്കൽ (**event detection**), ചിത്രത്തെ വാചകത്തിൽ വിവരണം ചെയ്യൽ, അല്ലെങ്കിൽ ഒരു ദൃശ്യത്തെ 3D ആയി പുനർനിർമ്മാണം ചെയ്യൽ. മനുഷ്യ ചിത്രങ്ങളുമായി ബന്ധപ്പെട്ട പ്രത്യേക ജോലികളും ഉണ്ട്: പ്രായവും വികാരവും കണക്കാക്കൽ, മുഖം കണ്ടെത്തൽ, തിരിച്ചറിയൽ, 3D പൊസ് എസ്റ്റിമേഷൻ എന്നിവ.
@@ -75,14 +66,14 @@ OpenCV ഉപയോഗിച്ച് വീഡിയോ ഫ്രെയിമ�
 
 * **ബ്രെയിൽ പുസ്തകത്തിന്റെ ഫോട്ടോ പ്രീ-പ്രോസസ്സിംഗ്**. thresholding, ഫീച്ചർ കണ്ടെത്തൽ, perspective transformation, NumPy മാനിപ്പുലേഷനുകൾ ഉപയോഗിച്ച് വ്യക്തിഗത ബ്രെയിൽ ചിഹ്നങ്ങൾ വേർതിരിച്ച് പിന്നീട് ന്യൂറൽ നെറ്റ്വർക്കിൽ വർഗ്ഗീകരിക്കാൻ തയ്യാറാക്കൽ.
 
-![Braille Image](../../../../../translated_images/braille.341962ff76b1bd7044409371d3de09ced5028132aef97344ea4b7468c1208126.ml.jpeg) | ![Braille Image Pre-processed](../../../../../translated_images/braille-result.46530fea020b03c76aac532d7d6eeef7f6fb35b55b1001cd21627907dabef3ed.ml.png) | ![Braille Symbols](../../../../../translated_images/braille-symbols.0159185ab69d533909dc4d7d26a1971b51401c6a80eb3a5584f250ea880af88b.ml.png)
+![Braille Image](../../../../../translated_images/ml/braille.341962ff76b1bd70.webp) | ![Braille Image Pre-processed](../../../../../translated_images/ml/braille-result.46530fea020b03c7.webp) | ![Braille Symbols](../../../../../translated_images/ml/braille-symbols.0159185ab69d5339.webp)
 ----|-----|-----
 
 > ചിത്രം [OpenCV.ipynb](OpenCV.ipynb) നിന്നാണ്
 
 * **ഫ്രെയിം വ്യത്യാസം ഉപയോഗിച്ച് വീഡിയോയിൽ ചലനം കണ്ടെത്തൽ**. ക്യാമറ സ്ഥിരമാണെങ്കിൽ, ക്യാമറ ഫീഡിലെ ഫ്രെയിമുകൾ തമ്മിൽ വളരെ സമാനമായിരിക്കും. ഫ്രെയിമുകൾ അറേകളായി പ്രതിനിധീകരിക്കപ്പെടുന്നതിനാൽ, രണ്ട് തുടർച്ചയായ ഫ്രെയിമുകളുടെ അറേകൾ തമ്മിൽ വ്യത്യാസം എടുത്താൽ പിക്‌സൽ വ്യത്യാസം കിട്ടും, ഇത് സ്ഥിരമായ ഫ്രെയിമുകൾക്കായി കുറവായിരിക്കും, ചിത്രത്തിൽ വലിയ ചലനം ഉണ്ടാകുമ്പോൾ ഉയരും.
 
-![Image of video frames and frame differences](../../../../../translated_images/frame-difference.706f805491a0883c938e16447bf5eb2f7d69e812c7f743cbe7d7c7645168f81f.ml.png)
+![Image of video frames and frame differences](../../../../../translated_images/ml/frame-difference.706f805491a0883c.webp)
 
 > ചിത്രം [OpenCV.ipynb](OpenCV.ipynb) നിന്നാണ്
 
@@ -91,7 +82,7 @@ OpenCV ഉപയോഗിച്ച് വീഡിയോ ഫ്രെയിമ�
    - **Dense Optical Flow** ഓരോ പിക്‌സലും എവിടെ പോകുന്നു എന്ന് കാണിക്കുന്ന വെക്ടർ ഫീൽഡ് കണക്കാക്കുന്നു
    - **Sparse Optical Flow** ചിത്രത്തിലെ ചില വ്യത്യസ്തമായ ഫീച്ചറുകൾ (ഉദാ: അരികുകൾ) എടുത്ത്, അവയുടെ ട്രാജക്ടറി ഫ്രെയിമിൽ നിന്ന് ഫ്രെയിമിലേക്ക് നിർമ്മിക്കുന്നു.
 
-![Image of Optical Flow](../../../../../translated_images/optical.1f4a94464579a83a10784f3c07fe7228514714b96782edf50e70ccd59d2d8c4f.ml.png)
+![Image of Optical Flow](../../../../../translated_images/ml/optical.1f4a94464579a83a.webp)
 
 > ചിത്രം [OpenCV.ipynb](OpenCV.ipynb) നിന്നാണ്
 
@@ -117,7 +108,7 @@ AI ഷോയിൽ നിന്നുള്ള [ഈ വീഡിയോ](https://
 
 ഈ ലാബിൽ, ലളിതമായ ജെസ്റ്ററുകളുള്ള ഒരു വീഡിയോ എടുത്ത്, optical flow ഉപയോഗിച്ച് മുകളിൽ/താഴെ/ഇടത്തേക്ക്/വലത്തേക്ക് ചലനങ്ങൾ കണ്ടെത്തുക.
 
-<img src="../../../../../translated_images/palm-movement.341495f0e9c47da39cc1f99626822a1d20203aa33ff89a86a068f14bea133e84.ml.png" width="30%" alt="Palm Movement Frame"/>
+<img src="../../../../../translated_images/ml/palm-movement.341495f0e9c47da3.webp" width="30%" alt="Palm Movement Frame"/>
 
 ---
 

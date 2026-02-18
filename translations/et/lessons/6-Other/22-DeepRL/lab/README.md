@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "7bd8dc72040e98e35e7225e34058cd4e",
-  "translation_date": "2025-10-11T11:48:16+00:00",
-  "source_file": "lessons/6-Other/22-DeepRL/lab/README.md",
-  "language_code": "et"
-}
--->
 # Mäeauto treenimine põgenemiseks
 
 Laboriülesanne [AI algajatele õppekavast](https://github.com/microsoft/ai-for-beginners).
@@ -15,7 +6,7 @@ Laboriülesanne [AI algajatele õppekavast](https://github.com/microsoft/ai-for-
 
 Sinu eesmärk on treenida RL-agent juhtima [Mountain Car](https://www.gymlibrary.ml/environments/classic_control/mountain_car/) OpenAI keskkonnas.
 
-<img alt="Mountain Car" src="../../../../../../translated_images/mountaincar.f7b7a7f6d4f9933b31a5fb3453b9c026aa0d65f6644bb03513a955590aae1bc4.et.png" width="300"/>
+<img alt="Mountain Car" src="../../../../../../translated_images/et/mountaincar.f7b7a7f6d4f9933b.webp" width="300"/>
 
 ## Keskkond
 

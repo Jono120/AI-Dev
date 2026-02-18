@@ -1,116 +1,107 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "7d097f7fda9166ead615e4c34552381b",
-  "translation_date": "2025-10-11T11:36:43+00:00",
-  "source_file": "lessons/2-Symbolic/README.md",
-  "language_code": "et"
-}
--->
-# Teadmiste esitus ja ekspertsüsteemid
+# Teadmus Representatsioon ja Ekspertsüsteemid
 
-![Sümboolse AI sisu kokkuvõte](../../../../translated_images/ai-symbolic.715a30cb610411a6964d2e2f23f24364cb338a07cb4844c1f97084d366e586c3.et.png)
+![Sümboolse tehisintellekti sisu kokkuvõte](../../../../translated_images/et/ai-symbolic.715a30cb610411a6.webp)
 
-> Sketchnote autorilt [Tomomi Imura](https://twitter.com/girlie_mac)
+> Sketchnote autor [Tomomi Imura](https://twitter.com/girlie_mac)
 
-Tehisintellekti otsing põhineb teadmiste otsimisel, et mõista maailma sarnaselt sellele, kuidas inimesed seda teevad. Aga kuidas seda saavutada?
+Tehisintellekti otsing põhineb teadmiste otsimisel, et maailma mõtestada sarnaselt inimestega. Aga kuidas sellega alustada?
 
-## [Loengu-eelne viktoriin](https://ff-quizzes.netlify.app/en/ai/quiz/3)
+## [Eel-loengu test](https://ff-quizzes.netlify.app/en/ai/quiz/3)
 
-AI varajastel päevadel oli populaarne ülalt-alla lähenemine intelligentsete süsteemide loomisele (arutatud eelmises tunnis). Idee seisnes selles, et teadmised inimestelt tuleb masinloetavasse vormi viia ja seejärel kasutada neid probleemide automaatseks lahendamiseks. See lähenemine põhines kahel suurel ideel:
+Tehisintellekti algusaegadel oli populaarne ülalt-alla lähenemine intelligentsete süsteemide loomisele (kõnealusest eelmises peatükis). Idee seisnes teadmiste väljavõtmises inimestelt masinakõlblikuks vormiks ja selle automaatseks kasutamiseks probleemide lahendamisel. See lähenemine põhines kahel suurel ideel:
 
-* Teadmiste esitus
+* Teadmiste representatsioon
 * Järeldamine
 
-## Teadmiste esitus
+## Teadmiste Representatsioon
 
-Üks sümboolse AI olulisi mõisteid on **teadmised**. Oluline on eristada teadmisi *informatsioonist* või *andmetest*. Näiteks võib öelda, et raamatud sisaldavad teadmisi, sest nende uurimine võib muuta inimese eksperdiks. Kuid tegelikult sisaldavad raamatud *andmeid*, ja raamatute lugemise ning nende andmete integreerimise kaudu meie maailmamudelisse muudame need andmed teadmiseks.
+Sümboolse tehisintellekti üks tähtsamaid mõisteid on **teadmus**. Oluline on eristada teadmust *infost* või *andmetest*. Näiteks võib öelda, et raamatud sisaldavad teadmust, sest nende uurimisega saab ekspertiks. Kuid tegelikult sisaldavad raamatud *andmeid*, ja neid lugedes ning andmeid oma maailmamudelis integreerides muudame need teadmuseks.
 
-> ✅ **Teadmised** on midagi, mis on meie peas ja esindab meie arusaamist maailmast. Need saadakse aktiivse **õppimise** protsessi kaudu, mis integreerib saadud informatsiooni meie aktiivsesse maailmamudelisse.
+> ✅ **Teadmus** on midagi, mis asub meie peas ja peegeldab meie maailma mõistmist. Seda omandatakse aktiivse **õppimise** protsessi käigus, mis liidab saadud teabe meie aktiivse maailmamudeliga.
 
-Enamasti me ei defineeri teadmisi rangelt, vaid seostame neid teiste seotud mõistetega, kasutades [DIKW püramiidi](https://en.wikipedia.org/wiki/DIKW_pyramid). See sisaldab järgmisi mõisteid:
+Tihti ei defineerita teadmust täpselt, vaid kooskõlastatakse see teiste seotud mõistetega kasutades [DIKW püramiidi](https://en.wikipedia.org/wiki/DIKW_pyramid). See sisaldab järgmisi mõisteid:
 
-* **Andmed** on midagi, mis on esitatud füüsilises meedias, nagu kirjutatud tekst või räägitud sõnad. Andmed eksisteerivad sõltumatult inimestest ja neid saab inimestele edasi anda.
-* **Informatsioon** on see, kuidas me andmeid oma peas tõlgendame. Näiteks, kui kuuleme sõna *arvuti*, on meil mingi arusaam, mis see on.
-* **Teadmised** on informatsioon, mis on integreeritud meie maailmamudelisse. Näiteks, kui õpime, mis on arvuti, hakkame mõistma, kuidas see töötab, kui palju see maksab ja milleks seda saab kasutada. See omavahel seotud mõistete võrgustik moodustab meie teadmised.
-* **Tarkus** on veel üks tasand meie arusaamisest maailmast ja esindab *meta-teadmisi*, näiteks arusaama, kuidas ja millal teadmisi kasutada.
+* **Andmed** on midagi, mis on esitatud füüsilises kandjas, nagu kirjutatud tekst või räägitud sõnad. Andmed eksisteerivad iseseisvalt inimestest ja neid võib üle anda.
+* **Info** on see, kuidas me tõlgendame andmeid oma peas. Näiteks kui kuuleme sõna *arvuti*, siis meil on mingisugune arusaamine, mis see on.
+* **Teadmus** on info, mis integreeritakse meie maailmamudelisse. Näiteks kui me õpime, mis on arvuti, hakkame teadvustama, kuidas see töötab, kui palju maksab ja milleks seda kasutatakse. See omavahel seotud mõistete võrgustik moodustab meie teadmus.
+* **Tarkus** on veel üks tase meie maailmamõistmises, mis tähistab *meta-knowledge’i*, st teadmisi selle kohta, kuidas ja millal teadmust kasutada.
 
-<img src="../../../../translated_images/DIKW_Pyramid.94126f7d2bd8db5be71c6f1658b94bd3c85342e3cb827913b556b0414d358340.et.png" width="30%"/>
+<img src="../../../../translated_images/et/DIKW_Pyramid.94126f7d2bd8db5b.webp" width="30%"/>
 
-*Pilt [Wikipedia-st](https://commons.wikimedia.org/w/index.php?curid=37705247), autor Longlivetheux - Oma töö, CC BY-SA 4.0*
+*Pilt [Vikipeediast](https://commons.wikimedia.org/w/index.php?curid=37705247), autor Longlivetheux - enda töö, CC BY-SA 4.0*
 
-Seega on **teadmiste esitamise** probleem leida tõhus viis teadmiste esitamiseks arvutis andmete kujul, et neid automaatselt kasutada. Seda võib vaadelda spektrina:
+Seega seisneb **teadmiste representatsiooni** probleem selles, et leida mõni tõhus viis teadmiste esindamiseks arvutis andmete kujul, et neid saaks automaatselt kasutada. Seda võib vaadelda spektrina:
 
-![Teadmiste esitamise spekter](../../../../translated_images/knowledge-spectrum.b60df631852c0217e941485b79c9eee40ebd574f15f18609cec5758fcb384bf3.et.png)
+![Teadmiste representatsiooni spekter](../../../../translated_images/et/knowledge-spectrum.b60df631852c0217.webp)
 
-> Pilt autorilt [Dmitry Soshnikov](http://soshnikov.com)
+> Pilt autor Dmitry Soshnikov [http://soshnikov.com](http://soshnikov.com)
 
-* Vasakul on väga lihtsad teadmiste esitamise tüübid, mida arvutid saavad tõhusalt kasutada. Lihtsaim neist on algoritmiline, kus teadmised esitatakse arvutiprogrammi kujul. See pole aga parim viis teadmiste esitamiseks, kuna see pole paindlik. Meie peas olevad teadmised on sageli mittealgoritmilised.
-* Paremal on esitusviisid nagu loomulik tekst. See on kõige võimsam, kuid ei sobi automaatseks järeldamiseks.
+* Vasakul on väga lihtsad teadmusrepresentatsiooni tüübid, mida arvutid efektiivselt kasutada saavad. Kõige lihtsam on algoritmiline, kus teadmus on esindatud arvutiprogrammina. Kuid see pole parim viis teadmiste esindamiseks, sest see pole paindlik. Meie peas olev teadmus on sageli mitte-algoritmiline.
+* Paremal on esindused nagu loomulik tekst. See on kõige võimsam, kuid ei sobi automaatseks järeldamiseks.
 
-> ✅ Mõtle hetkeks, kuidas sa esitad teadmisi oma peas ja muudad need märkmeteks. Kas on olemas konkreetne formaat, mis aitab sul paremini meelde jätta?
+> ✅ Mõtle korra, kuidas sa esindad teadmust oma peas ja kanaldate seda märkmeteks. Kas on mingi formaat, mis sulle hästi aitab teadmiste meeldejätmisel?
 
-## Arvutite teadmiste esitamise klassifikatsioon
+## Arvuti Teadmiste Representatsiooni Klassifitseerimine
 
-Erinevaid arvutite teadmiste esitamise meetodeid saab klassifitseerida järgmistesse kategooriatesse:
+Võime erinevaid arvuti teadmusrepresentatsiooni meetodeid liigitada järgmisteks kategooriateks:
 
-* **Võrguesitused** põhinevad faktil, et meie peas on omavahel seotud mõistete võrgustik. Me võime proovida luua sama võrgustikku graafina arvutis - nn **semantiline võrgustik**.
+* **Võrgu esindused** põhinevad tõsiasjal, et meie peas on omavahel seotud mõistete võrgustik. Saame proovida sama võrku arvutis graafikuna taastada - nn **semantiline võrk**.
 
-1. **Objekt-atribuut-väärtus kolmikud** või **atribuut-väärtus paarid**. Kuna graafi saab arvutis esitada sõlmede ja servade loendina, saame semantilist võrgustikku esitada kolmikute loendina, mis sisaldavad objekte, atribuute ja väärtusi. Näiteks loome järgmised kolmikud programmeerimiskeelte kohta:
+1. **Objekt-atribuut-väärtus tripletid** ehk **atribuut-väärtus paarid**. Kuna graafikut saab arvutis esitada sõlmede ja servade nimekirjana, saame semantilise võrgu esindada tripletite nimekirjana, mis sisaldab objekte, atribuute ja väärtusi. Näiteks koostame järgmised tripletid programmeerimiskeelte kohta:
 
 Objekt | Atribuut | Väärtus
--------|----------|-------
+-------|-----------|------
 Python | on | Tüübita keel
-Python | leiutatud | Guido van Rossum
-Python | ploki süntaks | taanded
-Tüübita keel | ei sisalda | tüübimääratlusi
+Python | leiutas | Guido van Rossum
+Python | plokisüntaks | taandumine
+Tüübita keel | ei oma | tüübimääratlusi
 
-> ✅ Mõtle, kuidas kolmikuid saab kasutada teiste teadmiste tüüpide esitamiseks.
+> ✅ Mõtle, kuidas tripleteid saab kasutada teiste teadmiste esindamiseks.
 
-2. **Hierarhilised esitused** rõhutavad fakti, et me loome sageli oma peas objektide hierarhia. Näiteks teame, et kanaarilind on lind ja kõik linnud omavad tiibu. Samuti on meil mingi ettekujutus, mis värvi kanaarilinnud tavaliselt on ja milline on nende lennukiirus.
+2. **Hierarhilised esindused** rõhutavad, et me loome sageli oma peas objektide hierarhia. Näiteks teame, et kanarilind on lind ja kõik linnud omavad tiibu. Samuti on meil aimu, mis värvi kanarilind tavaliselt on ja kui kiiresti nad lendavad.
 
-   - **Raamiesitus** põhineb iga objekti või objektiklassi esitamisel **raamina**, mis sisaldab **pesi**. Pesadel on võimalikud vaikimisi väärtused, väärtuste piirangud või salvestatud protseduurid, mida saab kasutada pesa väärtuse saamiseks. Kõik raamid moodustavad hierarhia, mis sarnaneb objektide hierarhiaga objektorienteeritud programmeerimiskeeltes.
-   - **Stsenaariumid** on eriline raamide tüüp, mis esindab keerulisi olukordi, mis võivad aja jooksul areneda.
+   - **Raamistiku representatsioon** põhineb iga objekti või objekti klassi kujutamisel **raamistikuna**, mis sisaldab **pesasid**. Pesad võivad omada vaikeväärtusi, väärtusepiiranguid või salvestatud protseduure, mida saab kutsuda pesa väärtuse saamiseks. Kõik raamistikud moodustavad hierarhia, mis sarnaneb objektihierarhiaga objektorienteeritud programmeerimiskeeltes.
+   - **Stsenaariumid** on eriliik raamistikke, mis esindavad keerulisi olukordi, mis võivad ajas areneda.
 
 **Python**
 
-Pesa | Väärtus | Vaikimisi väärtus | Intervall |
------|--------|-------------------|----------|
+Pesa | Väärtus | Vaikeväärtus | Vahemik |
+-----|----------|--------------|---------|
 Nimi | Python | | |
-On | Tüübita keel | | |
-Muutuja vorm | | CamelCase | |
-Programmi pikkus | | | 5-5000 rida |
-Ploki süntaks | Taanded | | |
+On-Tüüpi | Tüübita keel | | |
+Muutuja Kirjutus | | CamelCase | |
+Programmi Pikkus | | | 5–5000 rida |
+Ploki Süntaks | Taandumine | | |
 
-3. **Protseduurilised esitused** põhinevad teadmiste esitamisel tegevuste loendina, mida saab teatud tingimuse korral täita.
-   - Tootmisreeglid on if-then laused, mis võimaldavad meil järeldusi teha. Näiteks võib arstil olla reegel, mis ütleb, et **KUI** patsiendil on kõrge palavik **VÕI** kõrge C-reaktiivse valgu tase vereanalüüsis, **SIIS** tal on põletik. Kui kohtame ühte tingimustest, saame teha järelduse põletiku kohta ja kasutada seda edasiseks järeldamiseks.
-   - Algoritme võib pidada teiseks protseduurilise esituse vormiks, kuigi neid peaaegu kunagi ei kasutata otse teadmistepõhistes süsteemides.
+3. **Proceduurilised esindused** põhinevad teadmiste kujutamisel tegevuste nimekirjana, mida saab käivitada, kui mingi tingimus täitub.
+   - Tootmisreeglid on kui-siis laused, mis võimaldavad järeldusi teha. Näiteks võib arst omada reeglit, mis ütleb, et **KUI** patsiendil on kõrge palavik **VÕI** kõrge C-reaktiivse valgu tase vereanalüüsis, **SIIS** on tal põletik. Kui kohtame üht tingimust, saame järeldada põletiku olemasolu ja kasutada seda edasises järeldamises.
+   - Algoritme võib pidada teiseks vormiks proceduurilise representatsiooni puhul, kuigi neid peaaegu kunagi teadmistepõhistes süsteemides otse ei kasutata.
 
-4. **Loogika** pakkus algselt välja Aristoteles universaalsete inimteadmiste esitamise viisina.
-   - Predikaatloogika kui matemaatiline teooria on liiga rikkalik, et olla arvutatav, seetõttu kasutatakse tavaliselt selle alamhulka, näiteks Horni klausleid, mida kasutatakse Prologis.
-   - Kirjeldav loogika on loogikasüsteemide perekond, mida kasutatakse objektide hierarhiate ja hajutatud teadmiste esituste, näiteks *semantilise veebi*, esitamiseks ja järeldamiseks.
+4. **Loogika** pakkus Aristoteles algselt universaliseeritud inimese teadmiste esindamise vahendina.
+   - Predikaatloogika kui matemaatiline teooria on liiga lai, et olla kõikehõlmav, seega kasutatakse enamasti selle alamkomplekte, näiteks Horn'-klausleid Prologis.
+   - Kirjeldav loogika on loogikasüsteemide perekond, mida kasutatakse objektide hierarhiate ja jaotatud teadmiste representatsioonide nagu *semantilise veebina* esindamiseks ja nende üle järeldamiseks.
 
 ## Ekspertsüsteemid
 
-Sümboolse AI varajased edusammud olid nn **ekspertsüsteemid** - arvutisüsteemid, mis olid loodud tegutsema eksperdina mõnes piiratud probleemivaldkonnas. Need põhinesid **teadmistebaasil**, mis oli saadud ühelt või mitmelt inimeksperdilt, ja sisaldasid **järeldusmootorit**, mis tegi selle põhjal järeldusi.
+Üks sümboolse tehisintellekti varajasi edusamme olid nn **ekspertsüsteemid** — arvutisüsteemid, mis olid loodud käituma nagu ekspert kitsas probleemivaldkonnas. Need põhinesid **teadmistebaasil**, mis oli kogutud ühelt või mitmelt inimeselt, ja sisaldasid **järeldusmootorit**, mis teostas järeldamist selle põhjal.
 
-![Inimese arhitektuur](../../../../translated_images/arch-human.5d4d35f1bba3ab1cdfda96af2f10b89574eb31e9796d0e3011cd9beda1c35112.et.png) | ![Teadmistepõhise süsteemi arhitektuur](../../../../translated_images/arch-kbs.3ec5c150b09fa8dadc2beb0931a4983c9e2b03913a89eebcc103b5bb841b0212.et.png)
+![Inimese arhitektuur](../../../../translated_images/et/arch-human.5d4d35f1bba3ab1c.webp) | ![Teadmistepõhise süsteemi arhitektuur](../../../../translated_images/et/arch-kbs.3ec5c150b09fa8da.webp)
 ---------------------------------------------|------------------------------------------------
-Lihtsustatud inimese närvisüsteemi struktuur | Teadmistepõhise süsteemi arhitektuur
+Inimese närvisüsteemi lihtsustatud struktuur | Teadmistepõhise süsteemi arhitektuur
 
-Ekspertsüsteemid on ehitatud nagu inimese järeldussüsteem, mis sisaldab **lühiajalist mälu** ja **pikaajalist mälu**. Samamoodi eristame teadmistepõhistes süsteemides järgmisi komponente:
+Ekspertsüsteemid on üles ehitatud inimese mõtlemise süsteemile sarnaselt, mis sisaldab **lühimälu** ja **pikaajalist mälu**. Samamoodi eristame teadmistepõhistes süsteemides järgmisi komponente:
 
-* **Probleemimälu**: sisaldab teadmisi praegu lahendatavast probleemist, nt patsiendi temperatuur või vererõhk, kas tal on põletik või mitte jne. Neid teadmisi nimetatakse ka **staatilisteks teadmiseks**, kuna need sisaldavad hetkeolukorra teadmist - nn *probleemi seisundit*.
-* **Teadmistebaas**: esindab pikaajalisi teadmisi probleemivaldkonna kohta. See saadakse käsitsi inimekspertidelt ja ei muutu konsultatsioonist konsultatsioonini. Kuna see võimaldab meil liikuda ühest probleemiseisundist teise, nimetatakse seda ka **dünaamiliseks teadmiseks**.
-* **Järeldusmootor**: korraldab kogu protsessi probleemiseisundi ruumis otsimiseks, vajadusel kasutajalt küsimuste küsimiseks. See vastutab ka iga seisundi jaoks sobivate reeglite leidmise eest.
+* **Probleemimälu**: sisaldab teadmisi praegu lahendatava probleemi kohta, nt patsiendi temperatuuri või vererõhku, kas tal on põletik või mitte jne. Seda nimetatakse ka **staatiliseks teadmuseks**, sest see sisaldab hetkepilti sellest, mida me probleemist parasjagu teame – nn *probleemitilanne*.
+* **Teadmistebaas**: esindab pikaajalisi teadmisi antud probleemivaldkonnas. See on käsitsi kogutud inimekspertidelt ja ei muutu konsultatsioonide vahel. Kuna see võimaldab navigeerida ühest probleemistilast teise, nimetatakse seda ka **dünaamiliseks teadmuseks**.
+* **Järeldusmootor**: juhib kogu protsessi probleemitilanne ruumis otsides, küsides kasutajalt vajadusel küsimusi. See vastutab ka õigete reeglite leidmise eest igas etapis.
 
-Näiteks vaatame järgmist ekspertsüsteemi, mis määrab looma füüsiliste omaduste põhjal:
+Näiteks oluline ekspert­süsteemi näide on looma määramine füüsiliste omaduste põhjal:
 
-![AND-OR puu](../../../../translated_images/AND-OR-Tree.5592d2c70187f283703c8e9c0d69d6a786eb370f4ace67f9a7aae5ada3d260b0.et.png)
+![JA-VÕI puu](../../../../translated_images/et/AND-OR-Tree.5592d2c70187f283.webp)
 
-> Pilt autorilt [Dmitry Soshnikov](http://soshnikov.com)
+> Pilt autor Dmitry Soshnikov [http://soshnikov.com](http://soshnikov.com)
 
-See diagramm on nn **AND-OR puu**, ja see on tootmisreeglite graafiline esitus. Puu joonistamine on kasulik eksperdilt teadmiste hankimise alguses. Teadmiste esitamiseks arvutis on mugavam kasutada reegleid:
+See diagramm on nimetatud **JA-VÕI puuks** ja see on tootmisreeglite kogumi graafiline kujutis. Puu joonistamine on kasulik alguses teadmiste väljatöötamisel eksperdilt. Teadmisi arvutis esindamiseks on mugavam kasutada reegleid:
 
 ```
 IF the animal eats meat
@@ -120,79 +111,79 @@ OR (animal has sharp teeth
 ) 
 THEN the animal is a carnivore
 ```
+  
+Võid märgata, et iga vasakpoolse tingimuse ja tegevuse osa reeglites on sisuliselt objekt-atribuut-väärtus kolmikud (OAV). **Töömälus** hoitakse komplekti OAV kolmikutest, mis vastavad hetkel lahendatavale probleemile. **Reeglimootor** otsib reegleid, mille tingimus on rahuldatud, ja rakendab neid, lisades uue kolmiku töömällu.
 
-Võite märgata, et iga tingimus reegli vasakul küljel ja tegevus on sisuliselt objekt-atribuut-väärtus (OAV) kolmikud. **Töömälus** on OAV kolmikute komplekt, mis vastab praegu lahendatavale probleemile. **Reeglimootor** otsib reegleid, mille tingimus on täidetud, ja rakendab neid, lisades töömällu uue kolmiku.
+> ✅ Kirjuta oma JA-VÕI puu mõnel sulle huvipakkuval teemal!
 
-> ✅ Joonista oma AND-OR puu teemal, mis sulle meeldib!
+### Edasi- ja Tagasi-Järeldamine
 
-### Edasi- ja tagasijäreldamine
+Ülal kirjeldatud protsessi nimetatakse **edasi-järeldamiseks**. See algab esialgsete andmetega, mis on töömälus olemas ja teeb järgmise järeldusliku tsükli:
 
-Ülal kirjeldatud protsessi nimetatakse **edasi järeldamiseks**. See algab mõne algandmega probleemi kohta, mis on töömälus, ja seejärel täidab järgmise järeldamisringi:
+1. Kui sihtatribuut on töömälus olemas – peatu ja anna tulemus
+2. Otsi välja kõik reeglid, mille tingimus on täidetud – moodusta **konfliktikomplekt**.
+3. Tee **konfliktilahendus** – vali üks reegel, mida käesoleval sammul rakendada. Konfliktilahendusstrateegiaid on mitmeid:
+   - vali teadmistebaasist esimene rakendatav reegel
+   - vali juhuslik reegel
+   - vali *täpsem* reegel, mis vastab kõige rohkem tingimustele vasakul pool
+4. Rakenda valitud reegel ja lisa uus teadmus probleemitilanne'i
+5. Korda kõiki samme alates 1
 
-1. Kui sihtatribuut on töömälus olemas - peatu ja anna tulemus
-2. Otsi kõik reeglid, mille tingimus on praegu täidetud - moodusta **konfliktikomplekt** reeglitest.
-3. Teosta **konfliktide lahendamine** - vali üks reegel, mida sellel sammul täidetakse. Võib olla erinevaid konfliktide lahendamise strateegiaid:
-   - Vali esimene rakendatav reegel teadmistebaasis
-   - Vali juhuslik reegel
-   - Vali *spetsiifilisem* reegel, st see, mis vastab kõige rohkem tingimustele reegli "vasakul küljel" (LHS)
-4. Rakenda valitud reegel ja lisa uus teadmistükk probleemiseisundisse
-5. Korda alates sammust 1.
+Mõnikord soovime aga alustada probleemist väheste teadmistega ja esitada küsimusi, mis aitavad jõuda järeldusele. Näiteks meditsiinilise diagnoosi puhul ei tee tavaliselt kohe kõiki analüüse enne patsiendi uurimist, vaid teevad vajalikke analüüse arvestades diagnoosimist.
 
-Kuid mõnel juhul võime soovida alustada probleemist teadmata ja esitada küsimusi, mis aitavad meil järelduseni jõuda. Näiteks meditsiinilise diagnoosi tegemisel ei tee me tavaliselt kõiki meditsiinilisi analüüse ette enne patsiendi diagnoosimist. Pigem tahame analüüse teha, kui otsus tuleb langetada.
+Seda protsessi saab modelleerida **tagasi-järeldamisega**. See algab **eesmärgist** – otsitu atribuudi väärtusest:
 
-Seda protsessi saab modelleerida **tagasijäreldamise** abil. Seda juhib **eesmärk** - atribuudi väärtus, mida me otsime:
+1. Vali kõik reeglid, mis võivad anda eesmärgi väärtuse (st mille “paremapoolsel” ehk RHS-l on eesmärk) – konfliktikomplekt
+1. Kui selle atribuudi kohta reegleid pole või on reegel, mis ütleb, et kasutajalt tuleb küsida, küsige väärtust kasutajalt, muul juhul:
+1. Kasuta konfliktilahendust ühe hüpoteesi valimiseks – püüa seda tõestada
+1. Korda seda protsessi kõikide reegli vasaku poole (LHS) atribuutide puhul, püüdes neid tõestada eesmärkidena
+1. Kui protsess ebaõnnestub – proovi valida muu reegel sammus 3.
 
-1. Vali kõik reeglid, mis võivad anda meile eesmärgi väärtuse (st eesmärk reegli paremal küljel (RHS)) - konfliktikomplekt
-1. Kui selle atribuudi jaoks pole reegleid või on reegel, mis ütleb, et peaksime kasutajalt väärtust küsima - küsi seda, muidu:
-1. Kasuta konfliktide lahendamise strateegiat, et valida üks reegel, mida me kasutame *hüpoteesina* - proovime seda tõestada
-1. Korda protsessi rekursiivselt kõigi reegli vasakul küljel olevate atribuutide jaoks, püüdes neid eesmärkidena tõestada
-1. Kui protsess mingil hetkel ebaõnnestub - kasuta sammus 3 teist reeglit.
+> ✅ Millistes olukordades on edasi-järeldamine sobivam? Kuidas tagasi-järeldamine?
 
-> ✅ Millistes olukordades on edasi järeldamine sobivam? Aga tagasijäreldamine?
+### Ekspertsüsteemide Rakendamine
 
-### Ekspertsüsteemide rakendamine
+Ekspertsüsteemid saab rakendada erinevatel viisidel:
 
-Ekspertsüsteeme saab rakendada erinevate tööriistade abil:
+* Otse programmeerides kõrgema taseme programmeerimiskeeles. See pole parim valik, sest teadmistepõhise süsteemi peamine eelis on teadmistest ja järeldamisest eraldamine ning probleemi eksperdil võiks olla võimalik kirjutada reegleid ilma järeldamisprotsessi detailideta mõistmata.
+* Kasutades **ekspertsüsteemi kestat**, st süsteemi, mis on spetsiaalselt loodud teadmiste sisestamiseks mingis teadmusrepresentatsiooni keeles.
 
-* Programmeerides neid otse mõnes kõrgetasemelises programmeerimiskeeles. See pole parim idee, kuna teadmistepõhise süsteemi peamine eelis on see, et teadmised on järeldusest eraldatud ja potentsiaalselt peaks probleemivaldkonna ekspert suutma reegleid kirjutada ilma järeldusprotsessi üksikasju mõistmata.
-* Kasutades **ekspertsüsteemi kesta**, st süsteemi, mis on spetsiaalselt loodud teadmiste täitmiseks, kasutades mõnda teadmiste esitamise keelt.
+## ✍️ Harjutus: Loomade Järeldamine
 
-## ✍️ Harjutus: Loomade järeldamine
+Näide edasi- ja tagasi-järeldamise ekspert­süsteemi loomise kohta leiad failist [Animals.ipynb](https://github.com/microsoft/AI-For-Beginners/blob/main/lessons/2-Symbolic/Animals.ipynb).
 
-Vaata [Animals.ipynb](https://github.com/microsoft/AI-For-Beginners/blob/main/lessons/2-Symbolic/Animals.ipynb) näidet edasi- ja tagasijäreldamise ekspertsüsteemi rakendamisest.
+> **Märkus**: See näide on suhteliselt lihtne ja annab idee, kuidas ekspert­süsteem välja näeb. Süsteemi loomisel märkad, et *intelligentne* käitumine ilmneb alles reeglite arvu jõudes ligikaudu 200+ juurde. Sel hetkel muutuvad reeglid liiga keerukaks meelde jätta ja tekib küsimus, miks süsteem teatud otsuseid teeb. Kuid oluline iseärasus teadmusbaasilistel süsteemidel on see, et nende otsuseid saab alati *selgitada* täpselt, kuidas need tehti.
 
-> **Märkus**: See näide on üsna lihtne ja annab ainult ettekujutuse, kuidas ekspertsüsteem välja näeb. Kui hakkate sellist süsteemi looma, märkate *intelligentset* käitumist alles siis, kui jõuate teatud arvu reegliteni, umbes 200+. Mingil hetkel muutuvad reeglid liiga keerukaks, et kõiki neid meeles pidada, ja siis võite hakata mõtlema, miks süsteem teeb teatud otsuseid. Kuid teadmistepõhiste süsteemide oluline omadus on see, et saate alati *selgitada*, kuidas ükskõik milline otsus tehti.
+## Ontoloogiad ja Semantiline Veeb
 
-## Ontoloogiad ja semantiline veeb
+20. sajandi lõpus algatati teadmiste representatsiooni kasutamine interneti ressursside märgistamiseks, et oleks võimalik leida ressursse väga spetsiifiliste päringute jaoks. Seda algatust kutsuti **semantiliseks veebiks** ja see toetus mitmele mõistele:
 
-20. sajandi lõpus oli algatus kasutada teadmiste esitamist Interneti ressursside märgistamiseks, et oleks võimalik leida ressursse, mis vastavad väga spetsiifilistele päringutele. Seda liikumist nimetati **semantiliseks veebiks**, ja see tugines mitmele kontseptsioonile:
+- Eriline teadmiste esindus, mis tugineb **[kirjeldavatele loogikatele](https://en.wikipedia.org/wiki/Description_logic)** (DL). See on sarnane raamistike esindamisega, sest loob objektide hierarhia omadustega, kuid omab formaalset loogilist semantikat ja järeldamist. DL-id on erineva väljendusvõime ja järeldamisalgoritmi keerukusega süsteemide perekond.
+- Hajutatud teadmiste representatsioon, kus kõik mõisted on esindatud globaalse URI identifikaatoriga, võimaldades luua teadmiste hierarhiaid, mis ulatuvad üle interneti.
+- Perekond XML-põhistest keeltest teadmiste kirjeldamiseks: RDF (Resource Description Framework), RDFS (RDF Schema), OWL (Ontology Web Language).
 
-- Eriline teadmiste esitus, mis põhineb **[kirjeldusloogikal](https://en.wikipedia.org/wiki/Description_logic)** (DL). See sarnaneb raamiesitusega, kuna loob objektide hierarhia omadustega, kuid sellel on formaalne loogiline semantika ja järeldus. DL-de perekond tasakaalustab väljendusrikkuse ja järelduse algoritmilise keerukuse vahel.
-- Hajutatud teadmiste esitus, kus kõik mõisted esitatakse globaalse URI identifikaatoriga, võimaldades luua teadmiste hierarhiaid, mis ulatuvad üle interneti.
-- XML-põhiste keelte perekond teadmiste kirjeldamiseks: RDF (Resource Description Framework), RDFS (RDF Schema), OWL (Ontology Web Language).
+Semantilises veebis on keskne mõiste **Ontoloogia**. See viitab probleemitsooni selgele spetsifikatsioonile, kasutades mõnda formaalset teadmiste esitamise meetodit. Lihtsaim ontoloogia võib olla lihtsalt objektide hierarhia probleemitsoonis, kuid keerukamad ontoloogiad sisaldavad reegleid, mida saab kasutada järeldamiseks.
 
-Semantilise veebi keskne mõiste on **ontoloogia**. See viitab probleemivaldkonna selgesõnalisele spetsifikatsioonile, kasutades mõnda formaalset teadmiste esitusviisi. Lihtsaim ontoloogia võib olla lihtsalt objektide hierarhia probleemivaldkonnas, kuid keerukamad ontoloogiad sisaldavad reegleid, mida saab kasutada järelduste tegemiseks.
+Semantilises veebis põhinevad kõik esitlused triplettidel. Iga objekt ja iga seos on unikaalselt identifitseeritud URI-ga. Näiteks, kui tahame väita fakti, et see AI õppekava töötas Dmitry Soshnikov välja 1. jaanuaril 2022 - siin on tripletid, mida saame kasutada:
 
-Semantilises veebis põhinevad kõik esitusviisid kolmikutel. Iga objekt ja iga seos on unikaalselt identifitseeritud URI abil. Näiteks, kui soovime väita, et see AI õppekava on koostanud Dmitry Soshnikov 1. jaanuaril 2022, siis siin on kolmikud, mida saame kasutada:
-
-<img src="../../../../translated_images/triplet.4b9b332587593298b31846eb5cf341d8f7e48da76e6692dbb7cf0fcf2fd5ab38.et.png" width="30%"/>
+<img src="../../../../translated_images/et/triplet.4b9b332587593298.webp" width="30%"/>
 
 ```
-http://github.com/microsoft/ai-for-beginners http://www.example.com/terms/creation-date “Jan 13, 2007”
+http://github.com/microsoft/ai-for-beginners http://www.example.com/terms/creation-date “Jan 1, 2022”
 http://github.com/microsoft/ai-for-beginners http://purl.org/dc/elements/1.1/creator http://soshnikov.com
 ```
 
-> ✅ Siin `http://www.example.com/terms/creation-date` ja `http://purl.org/dc/elements/1.1/creator` on mõned tuntud ja universaalselt aktsepteeritud URI-d, et väljendada *looja* ja *loomiskuupäeva* mõisteid.
+> ✅ Siin on `http://www.example.com/terms/creation-date` ja `http://purl.org/dc/elements/1.1/creator` tuntud ja üldtunnustatud URI-d, mis väljendavad mõisteid *looja* ja *loomise kuupäev*.
 
-Keerukamal juhul, kui soovime määratleda loojate nimekirja, saame kasutada RDF-is määratletud andmestruktuure.
+Keerukamas olukorras, kui tahame määratleda loojate nimekirja, võime kasutada mõnda RDF-is määratletud andmestruktuuri.
 
-<img src="../../../../translated_images/triplet-complex.32094972c7b4441b844bd85e683ba8eedc08af12177160f11584452698f29ace.et.png" width="40%"/>
+<img src="../../../../translated_images/et/triplet-complex.32094972c7b4441b.webp" width="40%"/>
 
-> Ülaltoodud diagrammid: [Dmitry Soshnikov](http://soshnikov.com)
+> Ülaltoodud diagrammid autorilt [Dmitry Soshnikov](http://soshnikov.com)
 
-Semantilise veebi arendamine aeglustus mingil määral otsingumootorite ja loomuliku keele töötlemise tehnikate edu tõttu, mis võimaldavad tekstist struktureeritud andmeid välja võtta. Kuid mõnes valdkonnas tehakse endiselt märkimisväärseid jõupingutusi ontoloogiate ja teadmistebaaside säilitamiseks. Mõned tähelepanuväärsed projektid:
+Semantilise veebiga seotud arendust on mingil määral aeglustanud otsingumootorite ja loomuliku keele töötlemise tehnoloogiate edu, mis võimaldavad tekstist struktureeritud andmeid eraldada. Kuid mõnes valdkonnas tehakse jätkuvalt olulist tööd ontoloogiate ja teadmistebaaside haldamiseks. Mõned silmapaistvad projektid:
 
-* [WikiData](https://wikidata.org/) on masinloetavate teadmistebaaside kogum, mis on seotud Wikipediaga. Enamik andmeid on kaevandatud Wikipedia *InfoBoxidest*, struktureeritud sisust Wikipedia lehtedel. Wikidatat saab [pärida](https://query.wikidata.org/) SPARQL-i abil, mis on semantilise veebi jaoks mõeldud päringukeel. Siin on näidis päring, mis kuvab inimeste seas populaarseimad silmavärvid:
+* [WikiData](https://wikidata.org/) on masinloetavate teadmistebaaside kogum, mis on seotud Vikipeediaga. Enamik andmeid on otsitud Vikipeedia *InfoBoxidest*, mis on Vikipeedia lehtede sees olevad struktureeritud sisutükid. WikiData-s saab SPARQL-iga, semantilise veebipäringu keelega, [päringuid esitada](https://query.wikidata.org/). Siin on näide päringust, mis kuvab inimeste seas kõige populaarsemad silmavärvid:
 
 ```sparql
 #defaultView:BubbleChart
@@ -206,49 +197,51 @@ WHERE
 GROUP BY ?eyeColorLabel
 ```
 
-* [DBpedia](https://www.dbpedia.org/) on sarnane projekt WikiDataga.
+* [DBpedia](https://www.dbpedia.org/) on veel üks sarnane ettevõtmine nagu WikiData.
 
-> ✅ Kui soovite katsetada oma ontoloogiate loomist või olemasolevate avamist, on suurepärane visuaalne ontoloogia redaktor nimega [Protégé](https://protege.stanford.edu/). Laadige see alla või kasutage seda veebis.
+> ✅ Kui soovid katsetada oma ontoloogiate loomist või olemasolevate avamist, on olemas suurepärane visuaalne ontoloogia redaktor nimega [Protégé](https://protege.stanford.edu/). Laadi see alla või kasuta veebis.
 
-<img src="../../../../translated_images/protege.274177ceeac13b38094bc425073776bb0d2525620ad6261b9d9760ebd2a8e322.et.png" width="70%"/>
+<img src="../../../../translated_images/et/protege.274177ceeac13b38.webp" width="70%"/>
 
-*Web Protégé redaktor avatud Romanovite perekonna ontoloogiaga. Ekraanipilt: Dmitry Soshnikov*
+*Veebiredaktor Protégé avatud Romanovi perekonna ontoloogiaga. Ekraanipilt Dmitry Soshnikovilt*
 
 ## ✍️ Harjutus: Perekonna ontoloogia
 
-Vaadake [FamilyOntology.ipynb](https://github.com/Ezana135/AI-For-Beginners/blob/main/lessons/2-Symbolic/FamilyOntology.ipynb) näidet semantilise veebi tehnikate kasutamisest perekondlike suhete analüüsimiseks. Võtame perekonna puu, mis on esitatud tavalises GEDCOM formaadis, ja perekondlike suhete ontoloogia ning loome graafi kõigist perekondlikest suhetest antud isikute komplekti jaoks.
+Vaata [FamilyOntology.ipynb](https://github.com/Ezana135/AI-For-Beginners/blob/main/lessons/2-Symbolic/FamilyOntology.ipynb), mis on näide semantilise veebi tehnikate kasutamisest perekonna suhete järeldamiseks. Võtame perekonnaseisu puu, mis on esitatud tavalises GEDCOM formaadis, ja perekondlike suhete ontoloogiaga ehitame graafi kõigi antud isikute suhete kohta.
 
-## Microsofti kontseptsioonigraaf
+## Microsoft Concept Graph
 
-Enamasti luuakse ontoloogiad hoolikalt käsitsi. Kuid ontoloogiaid on võimalik ka **kaevandada** struktureerimata andmetest, näiteks loomuliku keele tekstidest.
+Enamikul juhtudel luuakse ontoloogiad hoolikalt käsitsi. Kuid on võimalik ka ontoloogiate **kaevandamine** struktureerimata andmetest, näiteks loomulikus keeles tekstidest.
 
-Üks selline katse tehti Microsoft Researchi poolt ja tulemuseks oli [Microsoft Concept Graph](https://blogs.microsoft.com/ai/microsoft-researchers-release-graph-that-helps-machines-conceptualize/?WT.mc_id=academic-77998-cacaste).
+Üks selline katse tehti Microsoft Researchi poolt, mille tulemuseks oli [Microsoft Concept Graph](https://blogs.microsoft.com/ai/microsoft-researchers-release-graph-that-helps-machines-conceptualize/?WT.mc_id=academic-77998-cacaste).
 
-See on suur kogum entiteete, mis on rühmitatud `is-a` pärilikkussuhete abil. See võimaldab vastata küsimustele nagu "Mis on Microsoft?" - vastus oleks midagi sellist nagu "ettevõte tõenäosusega 0.87 ja bränd tõenäosusega 0.75".
+See on suur üksuste kogum, mis on grupeeritud pärandumissuhtes `is-a`. See võimaldab vastata küsimustele nagu "Mis on Microsoft?" - vastus oleks midagi sarnast "ettevõte tõenäosusega 0.87 ja bränd tõenäosusega 0.75".
 
-Graaf on saadaval kas REST API-na või suure allalaaditava tekstifailina, mis loetleb kõik entiteetide paarid.
+See graafik on saadaval kas REST API-na või suurena allalaaditava tekstifailina, mis loetleb kõik üksuste paarid.
 
-## ✍️ Harjutus: Kontseptsioonigraaf
+## ✍️ Harjutus: Kontseptsioonide graafik
 
-Proovige [MSConceptGraph.ipynb](https://github.com/microsoft/AI-For-Beginners/blob/main/lessons/2-Symbolic/MSConceptGraph.ipynb) märkmikku, et näha, kuidas saame kasutada Microsofti kontseptsioonigraafi uudisteartiklite rühmitamiseks mitmesse kategooriasse.
+Proovi [MSConceptGraph.ipynb](https://github.com/microsoft/AI-For-Beginners/blob/main/lessons/2-Symbolic/MSConceptGraph.ipynb) märkmikku, et näha, kuidas Microsoft Concept Graphi saab kasutada uudisteartiklite rühmitamiseks mitmesse kategooriasse.
 
 ## Kokkuvõte
 
-Tänapäeval peetakse AI-d sageli *masinõppe* või *närvivõrkude* sünonüümiks. Kuid inimene näitab ka selgesõnalist arutlemist, mis on midagi, mida närvivõrgud praegu ei käsitle. Päriselu projektides kasutatakse selgesõnalist arutlemist endiselt ülesannete täitmiseks, mis nõuavad selgitusi või süsteemi käitumise kontrollitud viisil muutmist.
+Tänapäeval peetakse AI-d sageli masinõppe või närvivõrkude sünonüümiks. Kuid inimene näitab ka otsest järeldamist, mida närvivõrgud praegu ei käsitle. Reaalsetes projektides kasutatakse otsest järeldamist endiselt ülesannete lahendamiseks, mis vajavad selgitusi või süsteemi käitumise muutmise võimalust kontrollitud viisil.
 
 ## 🚀 Väljakutse
 
-Perekonna ontoloogia märkmikus, mis on seotud selle õppetunniga, on võimalus katsetada teiste perekondlike suhetega. Proovige avastada uusi seoseid inimeste vahel perekonna puus.
+Selle õppetüki perekonna ontoloogia märkmikus on võimalus katsetada muid perekondlikke suhteid. Proovi leida uusi ühendusi inimeste vahel perekonna puus.
 
-## [Loengu järgne viktoriin](https://ff-quizzes.netlify.app/en/ai/quiz/4)
+## [Loengu järeltest](https://ff-quizzes.netlify.app/en/ai/quiz/4)
 
 ## Ülevaade ja iseseisev õpe
 
-Tehke internetis uurimistööd, et avastada valdkondi, kus inimesed on püüdnud teadmisi kvantifitseerida ja kodeerida. Vaadake Bloom'i taksonoomiat ja minge ajaloos tagasi, et õppida, kuidas inimesed püüdsid oma maailma mõista. Uurige Linnaeuse tööd organismide taksonoomia loomiseks ja jälgige, kuidas Dmitri Mendelejev lõi viisi keemiliste elementide kirjeldamiseks ja rühmitamiseks. Milliseid huvitavaid näiteid veel leiate?
+Uuri internetist, kus valdkondades on inimesed püüdnud teadmisi kvantifitseerida ja kodeerida. Vaata Bloom'i taksonoomiat ja mine ajas tagasi, et õppida, kuidas inimesed on püüdnud maailma mõista. Uuri Linnaeuse tööd organismide taksonoomia loomiseks ning jälgi, kuidas Dmitri Mendelejev lõi keemilistelementide kirjeldamiseks ja rühmitamiseks süsteemi. Milliseid teisi huvitavaid näiteid suudad leida?
 
-**Ülesanne**: [Loo ontoloogia](assignment.md)
+**Kodutöö**: [Loo ontoloogia](assignment.md)
 
 ---
 
-**Lahtiütlus**:  
-See dokument on tõlgitud tehisintellekti tõlketeenuse [Co-op Translator](https://github.com/Azure/co-op-translator) abil. Kuigi püüame tagada tõlke täpsuse, palume arvestada, et automaatsed tõlked võivad sisaldada vigu või ebatäpsusi. Algne dokument selle algses keeles tuleks lugeda autoriteetseks allikaks. Olulise teabe puhul soovitame kasutada professionaalset inimtõlget. Me ei vastuta selle tõlke kasutamisest tulenevate arusaamatuste või valede tõlgenduste eest.
+<!-- CO-OP TRANSLATOR DISCLAIMER START -->
+**Ärge usaldage täielikult**:
+See dokument on tõlgitud kasutades tehisintellekti tõlketeenust [Co-op Translator](https://github.com/Azure/co-op-translator). Kuigi püüame täpsust, palun pidage meeles, et automaatsed tõlked võivad sisaldada vigu või ebatäpsusi. Originaaldokument oma algkeeles loetakse usaldusväärseks allikaks. Olulise teabe puhul soovitatakse kasutada professionaalset inimtõlget. Me ei vastuta mis tahes arusaamatuste või valesti mõistmiste eest, mis võivad sellest tõlkest tuleneda.
+<!-- CO-OP TRANSLATOR DISCLAIMER END -->

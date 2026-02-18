@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "0ff65b4da07b23697235de2beb2a3c25",
-  "translation_date": "2025-11-18T18:15:28+00:00",
-  "source_file": "lessons/4-ComputerVision/10-GANs/README.md",
-  "language_code": "pcm"
-}
--->
 # Generative Adversarial Networks
 
 For di last section, we learn about **generative models**: models wey fit create new images wey resemble di ones wey dey di training dataset. VAE na one good example of generative model.
@@ -17,7 +8,7 @@ But, if we wan generate something wey really make sense, like painting wey get b
 
 Di main idea for GAN na to get two neural networks wey go dey train against each other:
 
-<img src="../../../../../translated_images/gan_architecture.8f3a5ab62b8d5d698a91f7668017d8e09b81c5d8e7cc99bdb23979d90a0c475e.pcm.png" width="70%"/>
+<img src="../../../../../translated_images/pcm/gan_architecture.8f3a5ab62b8d5d69.webp" width="70%"/>
 
 > Image by [Dmitry Soshnikov](http://soshnikov.com)
 
@@ -41,7 +32,7 @@ Generator small tricky pass. You fit see am as reversed discriminator. E dey sta
 
 > ✅ Because convolution layer dey work like linear filter wey dey waka through di image, deconvolution dey similar to convolution, and we fit implement am using di same layer logic.
 
-<img src="../../../../../translated_images/gan_arch_detail.46b95fd366f8e543170264fe07e516683ac3e5bb699392c35449e99590a11063.pcm.png" width="70%"/>
+<img src="../../../../../translated_images/pcm/gan_arch_detail.46b95fd366f8e543.webp" width="70%"/>
 
 > Image by [Dmitry Soshnikov](http://soshnikov.com)
 

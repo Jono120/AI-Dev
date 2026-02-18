@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "e2273cc150380a5e191903cea858f021",
-  "translation_date": "2025-09-23T14:11:16+00:00",
-  "source_file": "lessons/5-NLP/16-RNN/README.md",
-  "language_code": "sk"
-}
--->
 # Rekurentné neurónové siete
 
 ## [Kvíz pred prednáškou](https://ff-quizzes.netlify.app/en/ai/quiz/31)
@@ -15,7 +6,7 @@ V predchádzajúcich sekciách sme používali bohaté sémantické reprezentác
 
 Na zachytenie významu textovej sekvencie potrebujeme použiť inú architektúru neurónovej siete, ktorá sa nazýva **rekurentná neurónová sieť** alebo RNN. V RNN prechádzame vetou cez sieť jeden symbol po druhom a sieť produkuje určitý **stav**, ktorý následne posunieme do siete spolu s ďalším symbolom.
 
-![RNN](../../../../../translated_images/rnn.27f5c29c53d727b546ad3961637a267f0fe9ec5ab01f2a26a853c92fcefbb574.sk.png)
+![RNN](../../../../../translated_images/sk/rnn.27f5c29c53d727b5.webp)
 
 > Obrázok od autora
 
@@ -31,7 +22,7 @@ Pozrime sa, ako je organizovaná jednoduchá bunka RNN. Prijíma predchádzajúc
 
 Jednoduchá bunka RNN má vo vnútri dve matice váh: jedna transformuje vstupný symbol (nazvime ju W) a druhá transformuje vstupný stav (H). V tomto prípade sa výstup siete vypočíta ako &sigma;(W&times;X<sub>i</sub>+H&times;S<sub>i-1</sub>+b), kde &sigma; je aktivačná funkcia a b je dodatočná bias.
 
-<img alt="Anatómia bunky RNN" src="images/rnn-anatomy.png" width="50%"/>
+<img alt="Anatómia bunky RNN" src="../../../../../translated_images/sk/rnn-anatomy.79ee3f3920b3294b.webp" width="50%"/>
 
 > Obrázok od autora
 
@@ -61,7 +52,7 @@ Diskutovali sme o rekurentných sieťach, ktoré fungujú jedným smerom, od za�
 
 Rekurentná sieť, či už jednosmerná alebo obojstranná, zachytáva určité vzory v rámci sekvencie a môže ich uložiť do stavového vektora alebo preniesť do výstupu. Rovnako ako pri konvolučných sieťach, môžeme na prvú vrstvu postaviť ďalšiu rekurentnú vrstvu, aby sme zachytili vzory vyššej úrovne a stavali na vzoroch nižšej úrovne extrahovaných prvou vrstvou. To nás privádza k pojmu **viacvrstvová RNN**, ktorá pozostáva z dvoch alebo viacerých rekurentných sietí, kde výstup predchádzajúcej vrstvy je posunutý do ďalšej vrstvy ako vstup.
 
-![Obrázok zobrazujúci viacvrstvovú LSTM RNN](../../../../../translated_images/multi-layer-lstm.dd975e29bb2a59fe58b429db833932d734c81f211cad2783797a9608984acb8c.sk.jpg)
+![Obrázok zobrazujúci viacvrstvovú LSTM RNN](../../../../../translated_images/sk/multi-layer-lstm.dd975e29bb2a59fe.webp)
 
 *Obrázok z [tohto skvelého príspevku](https://towardsdatascience.com/from-a-lstm-cell-to-a-multilayer-lstm-network-with-pytorch-2899eb5696f3) od Fernanda Lópeza*
 

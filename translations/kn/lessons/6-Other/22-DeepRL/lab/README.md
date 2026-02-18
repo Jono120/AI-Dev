@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "7bd8dc72040e98e35e7225e34058cd4e",
-  "translation_date": "2025-11-25T23:40:00+00:00",
-  "source_file": "lessons/6-Other/22-DeepRL/lab/README.md",
-  "language_code": "kn"
-}
--->
 # ಪರ್ವತ ಕಾರ್ ಅನ್ನು ತಪ್ಪಿಸಲು ತರಬೇತಿ
 
 [AI for Beginners Curriculum](https://github.com/microsoft/ai-for-beginners) ನಿಂದ ಪ್ರಯೋಗಾಲಯದ ಕಾರ್ಯ.
@@ -15,7 +6,7 @@ CO_OP_TRANSLATOR_METADATA:
 
 ನಿಮ್ಮ ಗುರಿ RL ಏಜೆಂಟ್ ಅನ್ನು OpenAI ಪರಿಸರದಲ್ಲಿ [ಪರ್ವತ ಕಾರ್](https://www.gymlibrary.ml/environments/classic_control/mountain_car/) ಅನ್ನು ನಿಯಂತ್ರಿಸಲು ತರಬೇತಿ ನೀಡುವುದು.
 
-<img alt="Mountain Car" src="../../../../../../translated_images/mountaincar.f7b7a7f6d4f9933b31a5fb3453b9c026aa0d65f6644bb03513a955590aae1bc4.kn.png" width="300"/>
+<img alt="Mountain Car" src="../../../../../../translated_images/kn/mountaincar.f7b7a7f6d4f9933b.webp" width="300"/>
 
 ## ಪರಿಸರ
 

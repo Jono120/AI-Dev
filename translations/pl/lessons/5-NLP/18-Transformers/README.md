@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "f335dfcb4a993920504c387973a36957",
-  "translation_date": "2025-09-23T13:58:43+00:00",
-  "source_file": "lessons/5-NLP/18-Transformers/README.md",
-  "language_code": "pl"
-}
--->
 # Mechanizmy uwagi i modele Transformer
 
 ## [Quiz przed wykładem](https://ff-quizzes.netlify.app/en/ai/quiz/35)
@@ -20,13 +11,13 @@ W przypadku RNN, zadania sequence-to-sequence są realizowane za pomocą dwóch 
 
 **Mechanizmy uwagi** umożliwiają ważenie kontekstowego wpływu każdego wektora wejściowego na każdą prognozę wyjściową RNN. Implementuje się to poprzez tworzenie skrótów między stanami pośrednimi wejściowego RNN a wyjściowego RNN. W ten sposób, generując symbol wyjściowy y<sub>t</sub>, uwzględniamy wszystkie stany ukryte wejścia h<sub>i</sub>, z różnymi współczynnikami wagowymi &alpha;<sub>t,i</sub>.
 
-![Obraz przedstawiający model enkoder/dekoder z warstwą uwagi addytywnej](../../../../../translated_images/encoder-decoder-attention.7a726296894fb567aa2898c94b17b3289087f6705c11907df8301df9e5eeb3de.pl.png)
+![Obraz przedstawiający model enkoder/dekoder z warstwą uwagi addytywnej](../../../../../translated_images/pl/encoder-decoder-attention.7a726296894fb567.webp)
 
 > Model enkoder-dekoder z mechanizmem uwagi addytywnej w [Bahdanau et al., 2015](https://arxiv.org/pdf/1409.0473.pdf), cytowany z [tego wpisu na blogu](https://lilianweng.github.io/lil-log/2018/06/24/attention-attention.html)
 
 Macierz uwagi {&alpha;<sub>i,j</sub>} reprezentuje stopień, w jakim określone słowa wejściowe wpływają na generowanie danego słowa w sekwencji wyjściowej. Poniżej znajduje się przykład takiej macierzy:
 
-![Obraz przedstawiający przykładowe wyrównanie znalezione przez RNNsearch-50, zaczerpnięte z Bahdanau - arviz.org](../../../../../translated_images/bahdanau-fig3.09ba2d37f202a6af11de6c82d2d197830ba5f4528d9ea430eb65fd3a75065973.pl.png)
+![Obraz przedstawiający przykładowe wyrównanie znalezione przez RNNsearch-50, zaczerpnięte z Bahdanau - arviz.org](../../../../../translated_images/pl/bahdanau-fig3.09ba2d37f202a6af.webp)
 
 > Rysunek z [Bahdanau et al., 2015](https://arxiv.org/pdf/1409.0473.pdf) (Fig.3)
 
@@ -56,7 +47,7 @@ Pomysł kodowania pozycji jest następujący:
 * Osadzanie uczone, podobne do osadzania tokenów. To podejście rozważamy tutaj. Nakładamy warstwy osadzania zarówno na tokeny, jak i ich pozycje, uzyskując wektory osadzania o tych samych wymiarach, które następnie dodajemy do siebie.
 * Funkcja kodowania pozycji stałej, jak zaproponowano w oryginalnym artykule.
 
-<img src="images/pos-embedding.png" width="50%"/>
+<img src="../../../../../translated_images/pl/pos-embedding.e41ce9b6cf6078af.webp" width="50%"/>
 
 > Obraz autorstwa autora
 
@@ -66,7 +57,7 @@ Wynik, który uzyskujemy dzięki osadzaniu pozycji, osadza zarówno oryginalny t
 
 Następnie musimy wychwycić pewne wzorce w naszej sekwencji. Aby to zrobić, modele Transformer używają mechanizmu **samo-uwagi**, który w zasadzie jest uwagą zastosowaną do tej samej sekwencji jako wejście i wyjście. Zastosowanie samo-uwagi pozwala nam uwzględnić **kontekst** w zdaniu i zobaczyć, które słowa są ze sobą powiązane. Na przykład pozwala nam zobaczyć, które słowa są odniesieniami do innych, takich jak *to*, oraz uwzględnić kontekst:
 
-![](../../../../../translated_images/CoreferenceResolution.861924d6d384a7d68d8d0039d06a71a151f18a796b8b1330239d3590bd4947eb.pl.png)
+![](../../../../../translated_images/pl/CoreferenceResolution.861924d6d384a7d6.webp)
 
 > Obraz z [Bloga Google](https://research.googleblog.com/2017/08/transformer-novel-neural-network.html)
 
@@ -91,7 +82,7 @@ Ponieważ każda pozycja wejściowa jest mapowana niezależnie na każdą pozycj
 
 **BERT** (Bidirectional Encoder Representations from Transformers) to bardzo duża wielowarstwowa sieć Transformer z 12 warstwami dla *BERT-base* i 24 dla *BERT-large*. Model jest najpierw wstępnie trenowany na dużym korpusie danych tekstowych (Wikipedia + książki) za pomocą treningu niesuperwizowanego (przewidywanie zamaskowanych słów w zdaniu). Podczas wstępnego treningu model przyswaja znaczące poziomy zrozumienia języka, które można następnie wykorzystać z innymi zestawami danych za pomocą dostrajania. Ten proces nazywa się **transfer learning**.
 
-![obrazek z http://jalammar.github.io/illustrated-bert/](../../../../../translated_images/jalammarBERT-language-modeling-masked-lm.34f113ea5fec4362e39ee4381aab7cad06b5465a0b5f053a0f2aa05fbe14e746.pl.png)
+![obrazek z http://jalammar.github.io/illustrated-bert/](../../../../../translated_images/pl/jalammarBERT-language-modeling-masked-lm.34f113ea5fec4362.webp)
 
 > Źródło obrazu [tutaj](http://jalammar.github.io/illustrated-bert/)
 

@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "9c592c26aca16ca085d268c732284187",
-  "translation_date": "2025-11-25T23:40:59+00:00",
-  "source_file": "lessons/X-Extras/X1-MultiModal/README.md",
-  "language_code": "te"
-}
--->
 # బహుముఖ నెట్‌వర్క్స్
 
 NLP పనులను పరిష్కరించడంలో ట్రాన్స్‌ఫార్మర్ మోడల్స్ విజయవంతమైన తర్వాత, అదే లేదా సమానమైన నిర్మాణాలను కంప్యూటర్ విజన్ పనులకు కూడా వర్తింపజేశారు. విజన్ మరియు సహజ భాషా సామర్థ్యాలను *కలిపే* మోడల్స్ నిర్మించడంలో పెరుగుతున్న ఆసక్తి ఉంది. అలాంటి ప్రయత్నాల్లో ఒకటి OpenAI ద్వారా చేయబడింది, దాన్ని CLIP మరియు DALL.E అని పిలుస్తారు.
@@ -15,7 +6,7 @@ NLP పనులను పరిష్కరించడంలో ట్రా�
 
 CLIP యొక్క ప్రధాన ఆలోచన ఏమిటంటే, టెక్స్ట్ ప్రాంప్ట్‌లను ఒక చిత్రంతో పోల్చి, ఆ చిత్రం ప్రాంప్ట్‌కు ఎంతగా సరిపోతుందో నిర్ణయించగలగడం.
 
-![CLIP Architecture](../../../../../translated_images/clip-arch.b3dbf20b4e8ed8be1c38e2bc6100fd3cc257c33cda4692b301be91f791b13ea7.te.png)
+![CLIP Architecture](../../../../../translated_images/te/clip-arch.b3dbf20b4e8ed8be.webp)
 
 > *చిత్రం [ఈ బ్లాగ్ పోస్ట్](https://openai.com/blog/clip/) నుండి*
 
@@ -29,7 +20,7 @@ CLIP మోడల్/లైబ్రరీ [OpenAI GitHub](https://github.com/op
 
 ఉదాహరణకు, పిల్లులు, కుక్కలు మరియు మనుషుల మధ్య చిత్రాలను వర్గీకరించాలి అనుకుందాం. ఈ సందర్భంలో, మోడల్‌కు ఒక చిత్రం మరియు టెక్స్ట్ ప్రాంప్ట్‌ల సిరీస్ ఇవ్వవచ్చు: "*పిల్లి యొక్క చిత్రం*", "*కుక్క యొక్క చిత్రం*", "*మనిషి యొక్క చిత్రం*". 3 ప్రాబబిలిటీల వెక్టర్‌లో అత్యధిక విలువ ఉన్న సూచికను ఎంచుకోవడం సరిపోతుంది.
 
-![CLIP for Image Classification](../../../../../translated_images/clip-class.3af42ef0b2b19369a633df5f20ddf4f5a01d6c8ffa181e9d3a0572c19f919f72.te.png)
+![CLIP for Image Classification](../../../../../translated_images/te/clip-class.3af42ef0b2b19369.webp)
 
 > *చిత్రం [ఈ బ్లాగ్ పోస్ట్](https://openai.com/blog/clip/) నుండి*
 
@@ -53,13 +44,13 @@ VQGAN గురించి మరింత తెలుసుకోడాని
 
 VQGAN మరియు సాంప్రదాయ GAN మధ్య ముఖ్య తేడా ఏమిటంటే, సాంప్రదాయ GAN ఏ ఇన్‌పుట్ వెక్టర్ నుండి సరైన చిత్రం ఉత్పత్తి చేయగలదు, కానీ VQGAN కొన్నిసార్లు సారూప్యమైన చిత్రం కాకపోవచ్చు. అందుకే, చిత్ర సృష్టి ప్రక్రియను మరింత మార్గనిర్దేశం చేయాలి, దీని కోసం CLIP ఉపయోగించవచ్చు.
 
-![VQGAN+CLIP Architecture](../../../../../translated_images/vqgan.5027fe05051dfa3101950cfa930303f66e6478b9bd273e83766731796e462d9b.te.png)
+![VQGAN+CLIP Architecture](../../../../../translated_images/te/vqgan.5027fe05051dfa31.webp)
 
 టెక్స్ట్ ప్రాంప్ట్‌కు అనుగుణంగా చిత్రం సృష్టించడానికి, మొదట రాండమ్ ఎంకోడింగ్ వెక్టర్ తీసుకుని దాన్ని VQGAN ద్వారా చిత్రంగా మార్చుతారు. ఆ తర్వాత CLIP ఉపయోగించి ఆ చిత్రం టెక్స్ట్ ప్రాంప్ట్‌కు ఎంతగా సరిపోతుందో చూపించే లాస్ ఫంక్షన్ తయారుచేస్తారు. ఆ లాస్‌ను తగ్గించడం లక్ష్యం, బ్యాక్ ప్రొపగేషన్ ద్వారా ఇన్‌పుట్ వెక్టర్ పరామితులను సర్దుబాటు చేస్తారు.
 
 VQGAN+CLIP ను అమలు చేసే గొప్ప లైబ్రరీ [Pixray](http://github.com/pixray/pixray)
 
-![Picture produced by Pixray](../../../../../translated_images/a_closeup_watercolor_portrait_of_young_male_teacher_of_literature_with_a_book.2384968e9db8a0d09dc96de938b9f95bde8a7e1c721f48f286a7795bf16d56c7.te.png) |  ![Picture produced by pixray](../../../../../translated_images/a_closeup_oil_portrait_of_young_female_teacher_of_computer_science_with_a_computer.e0b6495f210a439077e1c32cc8afdf714e634fe24dc78dc5aa45fd2f560b0ed5.te.png) | ![Picture produced by Pixray](../../../../../translated_images/a_closeup_oil_portrait_of_old_male_teacher_of_math.5362e67aa7fc2683b9d36a613b364deb7454760cd39205623fc1e3938fa133c0.te.png)
+![Picture produced by Pixray](../../../../../translated_images/te/a_closeup_watercolor_portrait_of_young_male_teacher_of_literature_with_a_book.2384968e9db8a0d0.webp) |  ![Picture produced by pixray](../../../../../translated_images/te/a_closeup_oil_portrait_of_young_female_teacher_of_computer_science_with_a_computer.e0b6495f210a4390.webp) | ![Picture produced by Pixray](../../../../../translated_images/te/a_closeup_oil_portrait_of_old_male_teacher_of_math.5362e67aa7fc2683.webp)
 ----|----|----
 *పుస్తకం తో యువ సాహిత్య ఉపాధ్యాయుడి watercolor సమీప చిత్రము* | *కంప్యూటర్ తో యువ కంప్యూటర్ సైన్స్ ఉపాధ్యాయురాలి oil సమీప చిత్రము* | *బ్లాక్‌బోర్డ్ ముందు వృద్ధ గణితం ఉపాధ్యాయుడి oil సమీప చిత్రము*
 
@@ -75,7 +66,7 @@ CLIP తో భిన్నంగా, DALL-E టెక్స్ట్ మరి�
 DALL.E 1 మరియు 2 మధ్య ప్రధాన తేడా ఏమిటంటే, DALL.E 2 మరింత వాస్తవికమైన చిత్రాలు మరియు కళను సృష్టిస్తుంది.
 
 DALL-E తో చిత్ర సృష్టి ఉదాహరణలు:
-![Picture produced by Pixray](../../../../../translated_images/DALL·E%202023-06-20%2015.56.56%20-%20a%20closeup%20watercolor%20portrait%20of%20young%20male%20teacher%20of%20literature%20with%20a%20book.6c235e8271d9ed10ce985d86aeb241a58518958647973af136912116b9518fce.te.png) |  ![Picture produced by pixray](../../../../../translated_images/DALL·E%202023-06-20%2015.57.43%20-%20a%20closeup%20oil%20portrait%20of%20young%20female%20teacher%20of%20computer%20science%20with%20a%20computer.f21dc4166340b6c8b4d1cb57efd1e22127407f9b28c9ac7afe11344065369e64.te.png) | ![Picture produced by Pixray](../../../../../translated_images/DALL·E%202023-06-20%2015.58.42%20-%20%20a%20closeup%20oil%20portrait%20of%20old%20male%20teacher%20of%20mathematics%20in%20front%20of%20blackboard.d331c2dfbdc3f7c46aa65c0809066f5e7ed4b49609cd259852e760df21051e4a.te.png)
+![Picture produced by Pixray](../../../../../translated_images/te/DALL·E%202023-06-20%2015.56.56%20-%20a%20closeup%20watercolor%20portrait%20of%20young%20male%20teacher%20of%20literature%20with%20a%20book.6c235e8271d9ed10ce985d86aeb241a58518958647973af136912116b9518fce.png) |  ![Picture produced by pixray](../../../../../translated_images/te/DALL·E%202023-06-20%2015.57.43%20-%20a%20closeup%20oil%20portrait%20of%20young%20female%20teacher%20of%20computer%20science%20with%20a%20computer.f21dc4166340b6c8b4d1cb57efd1e22127407f9b28c9ac7afe11344065369e64.png) | ![Picture produced by Pixray](../../../../../translated_images/te/DALL·E%202023-06-20%2015.58.42%20-%20%20a%20closeup%20oil%20portrait%20of%20old%20male%20teacher%20of%20mathematics%20in%20front%20of%20blackboard.d331c2dfbdc3f7c46aa65c0809066f5e7ed4b49609cd259852e760df21051e4a.png)
 ----|----|----
 *పుస్తకం తో యువ సాహిత్య ఉపాధ్యాయుడి watercolor సమీప చిత్రము* | *కంప్యూటర్ తో యువ కంప్యూటర్ సైన్స్ ఉపాధ్యాయురాలి oil సమీప చిత్రము* | *బ్లాక్‌బోర్డ్ ముందు వృద్ధ గణితం ఉపాధ్యాయుడి oil సమీప చిత్రము*
 

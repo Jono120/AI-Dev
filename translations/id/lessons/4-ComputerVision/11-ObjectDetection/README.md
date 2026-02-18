@@ -1,19 +1,10 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "d76a7eda28de5210c8b1ba50a6216c69",
-  "translation_date": "2025-09-23T10:39:28+00:00",
-  "source_file": "lessons/4-ComputerVision/11-ObjectDetection/README.md",
-  "language_code": "id"
-}
--->
 # Deteksi Objek
 
 Model klasifikasi gambar yang telah kita bahas sejauh ini mengambil gambar dan menghasilkan hasil kategoris, seperti kelas 'angka' dalam masalah MNIST. Namun, dalam banyak kasus, kita tidak hanya ingin mengetahui bahwa sebuah gambar menggambarkan objek - kita ingin menentukan lokasi mereka secara tepat. Inilah tujuan dari **deteksi objek**.
 
 ## [Kuis sebelum pelajaran](https://ff-quizzes.netlify.app/en/ai/quiz/21)
 
-![Deteksi Objek](../../../../../translated_images/Screen_Shot_2016-11-17_at_11.14.54_AM.b4bb3769353287be1b905373ed9c858102c054b16e4595c76ec3f7bba0feb549.id.png)
+![Deteksi Objek](../../../../../translated_images/id/Screen_Shot_2016-11-17_at_11.14.54_AM.b4bb3769353287be.webp)
 
 > Gambar dari [situs web YOLO v2](https://pjreddie.com/darknet/yolov2/)
 
@@ -25,7 +16,7 @@ Misalkan kita ingin menemukan seekor kucing dalam sebuah gambar, pendekatan yang
 2. Melakukan klasifikasi gambar pada setiap ubin.
 3. Ubin yang menghasilkan aktivasi yang cukup tinggi dapat dianggap mengandung objek yang dimaksud.
 
-![Deteksi Objek Naif](../../../../../translated_images/naive-detection.e7f1ba220ccd08c68a2ea8e06a7ed75c3fcc738c2372f9e00b7f4299a8659c01.id.png)
+![Deteksi Objek Naif](../../../../../translated_images/id/naive-detection.e7f1ba220ccd08c6.webp)
 
 > *Gambar dari [Notebook Latihan](ObjectDetection-TF.ipynb)*
 
@@ -42,7 +33,7 @@ Anda mungkin menemukan dataset berikut untuk tugas ini:
 * [PASCAL VOC](http://host.robots.ox.ac.uk/pascal/VOC/) - 20 kelas
 * [COCO](http://cocodataset.org/#home) - Common Objects in Context. 80 kelas, kotak pembatas, dan masker segmentasi
 
-![COCO](../../../../../translated_images/coco-examples.71bc60380fa6cceb7caad48bd09e35b6028caabd363aa04fee89c414e0870e86.id.jpg)
+![COCO](../../../../../translated_images/id/coco-examples.71bc60380fa6cceb.webp)
 
 ## Metrik Deteksi Objek
 
@@ -50,7 +41,7 @@ Anda mungkin menemukan dataset berikut untuk tugas ini:
 
 Sementara untuk klasifikasi gambar mudah untuk mengukur seberapa baik algoritma bekerja, untuk deteksi objek kita perlu mengukur baik kebenaran kelas maupun ketepatan lokasi kotak pembatas yang dihasilkan. Untuk yang terakhir, kita menggunakan **Intersection over Union** (IoU), yang mengukur seberapa baik dua kotak (atau dua area arbitrer) saling tumpang tindih.
 
-![IoU](../../../../../translated_images/iou_equation.9a4751d40fff4e119ecd0a7bcca4e71ab1dc83e0d4f2a0d66ff0859736f593cf.id.png)
+![IoU](../../../../../translated_images/id/iou_equation.9a4751d40fff4e11.webp)
 
 > *Gambar 2 dari [blog yang sangat bagus tentang IoU](https://pyimagesearch.com/2016/11/07/intersection-over-union-iou-for-object-detection/)*
 
@@ -98,11 +89,11 @@ Ada dua kelas besar algoritma deteksi objek:
 
 [R-CNN](http://islab.ulsan.ac.kr/files/announcement/513/rcnn_pami.pdf) menggunakan [Selective Search](http://www.huppelen.nl/publications/selectiveSearchDraft.pdf) untuk menghasilkan struktur hierarkis dari wilayah ROI, yang kemudian diteruskan melalui ekstraktor fitur CNN dan pengklasifikasi SVM untuk menentukan kelas objek, serta regresi linier untuk menentukan koordinat *bounding box*. [Makalah Resmi](https://arxiv.org/pdf/1506.01497v1.pdf)
 
-![RCNN](../../../../../translated_images/rcnn1.cae407020dfb1d1fb572656e44f75cd6c512cc220591c116c506652c10e47f26.id.png)
+![RCNN](../../../../../translated_images/id/rcnn1.cae407020dfb1d1f.webp)
 
 > *Gambar dari van de Sande et al. ICCV’11*
 
-![RCNN-1](../../../../../translated_images/rcnn2.2d9530bb83516484ec65b250c22dbf37d3d23244f32864ebcb91d98fe7c3112c.id.png)
+![RCNN-1](../../../../../translated_images/id/rcnn2.2d9530bb83516484.webp)
 
 > *Gambar dari [blog ini](https://towardsdatascience.com/r-cnn-fast-r-cnn-faster-r-cnn-yolo-object-detection-algorithms-36d53571365e)
 
@@ -110,7 +101,7 @@ Ada dua kelas besar algoritma deteksi objek:
 
 Pendekatan ini mirip dengan R-CNN, tetapi wilayah didefinisikan setelah lapisan konvolusi diterapkan.
 
-![FRCNN](../../../../../translated_images/f-rcnn.3cda6d9bb41888754037d2d9763e2298a96de5d9bc2a21db3147357aa5da9b1a.id.png)
+![FRCNN](../../../../../translated_images/id/f-rcnn.3cda6d9bb4188875.webp)
 
 > Gambar dari [Makalah Resmi](https://www.cv-foundation.org/openaccess/content_iccv_2015/papers/Girshick_Fast_R-CNN_ICCV_2015_paper.pdf), [arXiv](https://arxiv.org/pdf/1504.08083.pdf), 2015
 
@@ -118,7 +109,7 @@ Pendekatan ini mirip dengan R-CNN, tetapi wilayah didefinisikan setelah lapisan 
 
 Ide utama pendekatan ini adalah menggunakan jaringan saraf untuk memprediksi ROI - yang disebut *Region Proposal Network*. [Makalah](https://arxiv.org/pdf/1506.01497.pdf), 2016
 
-![FasterRCNN](../../../../../translated_images/faster-rcnn.8d46c099b87ef30ab2ea26dbc4bdd85b974a57ba8eb526f65dc4cd0a4711de30.id.png)
+![FasterRCNN](../../../../../translated_images/id/faster-rcnn.8d46c099b87ef30a.webp)
 
 > Gambar dari [makalah resmi](https://arxiv.org/pdf/1506.01497.pdf)
 
@@ -130,7 +121,7 @@ Algoritma ini bahkan lebih cepat daripada Faster R-CNN. Ide utamanya adalah seba
 2. Fitur diproses oleh **Position-Sensitive Score Map**. Setiap objek dari $C$ kelas dibagi menjadi $k\times k$ wilayah, dan kita melatih untuk memprediksi bagian-bagian objek.
 3. Untuk setiap bagian dari wilayah $k\times k$, semua jaringan memberikan suara untuk kelas objek, dan kelas objek dengan suara maksimum dipilih.
 
-![r-fcn image](../../../../../translated_images/r-fcn.13eb88158b99a3da50fa2787a6be5cb310d47f0e9655cc93a1090dc7aab338d1.id.png)
+![r-fcn image](../../../../../translated_images/id/r-fcn.13eb88158b99a3da.webp)
 
 > Gambar dari [makalah resmi](https://arxiv.org/abs/1605.06409)
 
@@ -141,7 +132,7 @@ YOLO adalah algoritma satu kali pengolahan secara real-time. Ide utamanya adalah
  * Gambar dibagi menjadi $S\times S$ wilayah.
  * Untuk setiap wilayah, **CNN** memprediksi $n$ objek yang mungkin, koordinat *bounding box*, dan *confidence*=*probabilitas* * IoU.
 
- ![YOLO](../../../../../translated_images/yolo.a2648ec82ee8bb4ea27537677adb482fd4b733ca1705c561b6a24a85102dced5.id.png)
+ ![YOLO](../../../../../translated_images/id/yolo.a2648ec82ee8bb4e.webp)
 
 > Gambar dari [makalah resmi](https://arxiv.org/abs/1506.02640)
 

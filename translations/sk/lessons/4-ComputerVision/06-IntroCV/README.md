@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "feeca98225cb420afc89415f24f63d92",
-  "translation_date": "2025-09-23T14:03:49+00:00",
-  "source_file": "lessons/4-ComputerVision/06-IntroCV/README.md",
-  "language_code": "sk"
-}
--->
 # Úvod do počítačového videnia
 
 [Počítačové videnie](https://wikipedia.org/wiki/Computer_vision) je disciplína, ktorej cieľom je umožniť počítačom získavať vysokú úroveň porozumenia digitálnym obrázkom. Ide o pomerne širokú definíciu, pretože *porozumenie* môže znamenať mnoho rôznych vecí, vrátane nájdenia objektu na obrázku (**detekcia objektov**), pochopenia, čo sa deje (**detekcia udalostí**), opísania obrázku textom alebo rekonštrukcie scény v 3D. Existujú aj špeciálne úlohy týkajúce sa ľudských obrázkov: odhad veku a emócií, detekcia a identifikácia tváre, či odhad 3D pozície, aby sme spomenuli aspoň niektoré.
@@ -73,14 +64,14 @@ V našom [OpenCV Notebook](OpenCV.ipynb) uvádzame niekoľko príkladov, kedy sa
 
 * **Predspracovanie fotografie Braillovej knihy**. Zameriavame sa na to, ako môžeme použiť prahovanie, detekciu vlastností, perspektívnu transformáciu a manipuláciu s NumPy na oddelenie jednotlivých Braillových symbolov na ďalšiu klasifikáciu neurónovou sieťou.
 
-![Braillov obrázok](../../../../../translated_images/braille.341962ff76b1bd7044409371d3de09ced5028132aef97344ea4b7468c1208126.sk.jpeg) | ![Predspracovaný Braillov obrázok](../../../../../translated_images/braille-result.46530fea020b03c76aac532d7d6eeef7f6fb35b55b1001cd21627907dabef3ed.sk.png) | ![Braillove symboly](../../../../../translated_images/braille-symbols.0159185ab69d533909dc4d7d26a1971b51401c6a80eb3a5584f250ea880af88b.sk.png)
+![Braillov obrázok](../../../../../translated_images/sk/braille.341962ff76b1bd70.webp) | ![Predspracovaný Braillov obrázok](../../../../../translated_images/sk/braille-result.46530fea020b03c7.webp) | ![Braillove symboly](../../../../../translated_images/sk/braille-symbols.0159185ab69d5339.webp)
 ----|-----|-----
 
 > Obrázok z [OpenCV.ipynb](OpenCV.ipynb)
 
 * **Detekcia pohybu vo videu pomocou rozdielu snímok**. Ak je kamera pevná, snímky z kamery by mali byť veľmi podobné. Keďže snímky sú reprezentované ako polia, jednoduchým odčítaním týchto polí pre dve po sebe idúce snímky získame rozdiel pixelov, ktorý by mal byť nízky pre statické snímky a vyšší, keď je v obrázku výrazný pohyb.
 
-![Obrázok video snímok a rozdielov snímok](../../../../../translated_images/frame-difference.706f805491a0883c938e16447bf5eb2f7d69e812c7f743cbe7d7c7645168f81f.sk.png)
+![Obrázok video snímok a rozdielov snímok](../../../../../translated_images/sk/frame-difference.706f805491a0883c.webp)
 
 > Obrázok z [OpenCV.ipynb](OpenCV.ipynb)
 
@@ -89,7 +80,7 @@ V našom [OpenCV Notebook](OpenCV.ipynb) uvádzame niekoľko príkladov, kedy sa
    - **Hustý optický tok** vypočíta vektorové pole, ktoré ukazuje, kam sa každý pixel pohybuje.
    - **Riedky optický tok** je založený na výbere niektorých výrazných vlastností na obrázku (napr. hrany) a budovaní ich trajektórie zo snímky na snímku.
 
-![Obrázok optického toku](../../../../../translated_images/optical.1f4a94464579a83a10784f3c07fe7228514714b96782edf50e70ccd59d2d8c4f.sk.png)
+![Obrázok optického toku](../../../../../translated_images/sk/optical.1f4a94464579a83a.webp)
 
 > Obrázok z [OpenCV.ipynb](OpenCV.ipynb)
 
@@ -115,7 +106,7 @@ Prečítajte si viac o optickom toku [v tomto skvelom tutoriáli](https://learno
 
 V tomto laboratóriu natočíte video s jednoduchými gestami a vaším cieľom bude extrahovať pohyby hore/dole/vľavo/vpravo pomocou optického toku.
 
-<img src="images/palm-movement.png" width="30%" alt="Snímka pohybu dlane"/>
+<img src="../../../../../translated_images/sk/palm-movement.341495f0e9c47da3.webp" width="30%" alt="Snímka pohybu dlane"/>
 
 ---
 

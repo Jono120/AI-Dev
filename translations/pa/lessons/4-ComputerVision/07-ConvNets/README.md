@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "a560d5b845962cf33dc102266e409568",
-  "translation_date": "2025-09-23T07:27:56+00:00",
-  "source_file": "lessons/4-ComputerVision/07-ConvNets/README.md",
-  "language_code": "pa"
-}
--->
 # ਕਨਵੋਲੂਸ਼ਨਲ ਨਿਊਰਲ ਨੈਟਵਰਕਸ
 
 ਅਸੀਂ ਪਹਿਲਾਂ ਦੇਖਿਆ ਹੈ ਕਿ ਨਿਊਰਲ ਨੈਟਵਰਕਸ ਚਿੱਤਰਾਂ ਨਾਲ ਨਿਪਟਣ ਵਿੱਚ ਕਾਫ਼ੀ ਚੰਗੇ ਹਨ, ਅਤੇ ਇੱਕ-ਲੇਅਰ ਪਰਸੈਪਟ੍ਰਾਨ ਵੀ MNIST ਡੇਟਾਸੈੱਟ ਤੋਂ ਹੱਥ ਨਾਲ ਲਿਖੇ ਅੰਕਾਂ ਨੂੰ ਵਾਜਬ ਸਹੀਤਾ ਨਾਲ ਪਛਾਣ ਸਕਦਾ ਹੈ। ਹਾਲਾਂਕਿ, MNIST ਡੇਟਾਸੈੱਟ ਬਹੁਤ ਵਿਸ਼ੇਸ਼ ਹੈ, ਅਤੇ ਸਾਰੇ ਅੰਕ ਚਿੱਤਰ ਦੇ ਅੰਦਰ ਕੇਂਦਰਿਤ ਹਨ, ਜਿਸ ਨਾਲ ਕੰਮ ਸੌਖਾ ਹੋ ਜਾਂਦਾ ਹੈ।
@@ -17,14 +8,14 @@ CO_OP_TRANSLATOR_METADATA:
 
 ਪੈਟਰਨਜ਼ ਨੂੰ ਕੱਢਣ ਲਈ, ਅਸੀਂ **ਕਨਵੋਲੂਸ਼ਨਲ ਫਿਲਟਰਜ਼** ਦੀ ਧਾਰਨਾ ਦੀ ਵਰਤੋਂ ਕਰਾਂਗੇ। ਜਿਵੇਂ ਕਿ ਤੁਸੀਂ ਜਾਣਦੇ ਹੋ, ਇੱਕ ਚਿੱਤਰ ਨੂੰ 2D-ਮੈਟ੍ਰਿਕਸ ਜਾਂ ਰੰਗ ਦੀ ਗਹਿਰਾਈ ਵਾਲੇ 3D-ਟੈਂਸਰ ਦੁਆਰਾ ਦਰਸਾਇਆ ਜਾਂਦਾ ਹੈ। ਫਿਲਟਰ ਲਾਗੂ ਕਰਨ ਦਾ ਮਤਲਬ ਹੈ ਕਿ ਅਸੀਂ ਇੱਕ ਛੋਟੀ **ਫਿਲਟਰ ਕਰਨਲ** ਮੈਟ੍ਰਿਕਸ ਲੈਂਦੇ ਹਾਂ, ਅਤੇ ਮੂਲ ਚਿੱਤਰ ਵਿੱਚ ਹਰ ਪਿਕਸਲ ਲਈ ਅਸੀਂ ਪੜੋਸੀ ਬਿੰਦੂਆਂ ਨਾਲ ਵਜ਼ਨੀ ਔਸਤ ਦੀ ਗਣਨਾ ਕਰਦੇ ਹਾਂ। ਅਸੀਂ ਇਸਨੂੰ ਇਸ ਤਰ੍ਹਾਂ ਦੇਖ ਸਕਦੇ ਹਾਂ ਕਿ ਇੱਕ ਛੋਟੀ ਵਿੰਡੋ ਸਾਰੇ ਚਿੱਤਰ 'ਤੇ ਸਲਾਈਡ ਕਰ ਰਹੀ ਹੈ, ਅਤੇ ਫਿਲਟਰ ਕਰਨਲ ਮੈਟ੍ਰਿਕਸ ਵਿੱਚ ਵਜ਼ਨਾਂ ਦੇ ਅਨੁਸਾਰ ਸਾਰੇ ਪਿਕਸਲਾਂ ਨੂੰ ਔਸਤ ਕਰ ਰਹੀ ਹੈ।
 
-![ਵਰਟਿਕਲ ਐਜ ਫਿਲਟਰ](../../../../../translated_images/filter-vert.b7148390ca0bc356ddc7e55555d2481819c1e86ddde9dce4db5e71a69d6f887f.pa.png) | ![ਹੋਰਿਜ਼ਾਂਟਲ ਐਜ ਫਿਲਟਰ](../../../../../translated_images/filter-horiz.59b80ed4feb946efbe201a7fe3ca95abb3364e266e6fd90820cb893b4d3a6dda.pa.png)
+![ਵਰਟਿਕਲ ਐਜ ਫਿਲਟਰ](../../../../../translated_images/pa/filter-vert.b7148390ca0bc356.webp) | ![ਹੋਰਿਜ਼ਾਂਟਲ ਐਜ ਫਿਲਟਰ](../../../../../translated_images/pa/filter-horiz.59b80ed4feb946ef.webp)
 ----|----
 
 > ਚਿੱਤਰ: ਦਿਮਿਤਰੀ ਸੋਸ਼ਨਿਕੋਵ
 
 ਉਦਾਹਰਣ ਲਈ, ਜੇ ਅਸੀਂ MNIST ਅੰਕਾਂ 'ਤੇ 3x3 ਵਰਟਿਕਲ ਐਜ ਅਤੇ ਹੋਰਿਜ਼ਾਂਟਲ ਐਜ ਫਿਲਟਰ ਲਾਗੂ ਕਰਦੇ ਹਾਂ, ਤਾਂ ਅਸੀਂ ਹਾਈਲਾਈਟਸ (ਜਿਵੇਂ ਕਿ ਉੱਚ ਮੁੱਲ) ਪ੍ਰਾਪਤ ਕਰ ਸਕਦੇ ਹਾਂ ਜਿੱਥੇ ਮੂਲ ਚਿੱਤਰ ਵਿੱਚ ਵਰਟਿਕਲ ਅਤੇ ਹੋਰਿਜ਼ਾਂਟਲ ਐਜ ਹਨ। ਇਸ ਤਰ੍ਹਾਂ ਇਹ ਦੋ ਫਿਲਟਰ "ਐਜ" ਲੱਭਣ ਲਈ ਵਰਤੇ ਜਾ ਸਕਦੇ ਹਨ। ਇਸੇ ਤਰ੍ਹਾਂ, ਅਸੀਂ ਹੋਰ ਨੀਚਲੇ-ਸਤਰ ਦੇ ਪੈਟਰਨਜ਼ ਲੱਭਣ ਲਈ ਵੱਖ-ਵੱਖ ਫਿਲਟਰ ਡਿਜ਼ਾਈਨ ਕਰ ਸਕਦੇ ਹਾਂ:
 
-<img src="images/lmfilters.jpg" width="500" align="center"/>
+<img src="../../../../../translated_images/pa/lmfilters.ea9e4868a82cf74c.webp" width="500" align="center"/>
 
 > ਚਿੱਤਰ: [ਲਿਊਂਗ-ਮਾਲਿਕ ਫਿਲਟਰ ਬੈਂਕ](https://www.robots.ox.ac.uk/~vgg/research/texclass/filters.html)
 
@@ -38,7 +29,7 @@ CNNs ਦੇ ਕੰਮ ਕਰਨ ਦਾ ਤਰੀਕਾ ਹੇਠਾਂ ਦਿੱ
 * ਅਸੀਂ ਨੈਟਵਰਕ ਨੂੰ ਇਸ ਤਰ੍ਹਾਂ ਡਿਜ਼ਾਈਨ ਕਰ ਸਕਦੇ ਹਾਂ ਕਿ ਫਿਲਟਰਜ਼ ਆਪਣੇ ਆਪ ਸਿੱਖੇ ਜਾਣ
 * ਅਸੀਂ ਇਹੀ ਤਰੀਕਾ ਉੱਚ-ਸਤਰ ਦੇ ਫੀਚਰਜ਼ ਵਿੱਚ ਪੈਟਰਨਜ਼ ਲੱਭਣ ਲਈ ਵਰਤ ਸਕਦੇ ਹਾਂ, ਨਾ ਕਿ ਸਿਰਫ਼ ਮੂਲ ਚਿੱਤਰ ਵਿੱਚ। ਇਸ ਤਰ੍ਹਾਂ CNN ਫੀਚਰ ਕੱਢਣ ਦਾ ਕੰਮ ਫੀਚਰਜ਼ ਦੀ ਹਾਇਰਾਰਕੀ 'ਤੇ ਹੁੰਦਾ ਹੈ, ਜੋ ਨੀਚਲੇ-ਸਤਰ ਦੇ ਪਿਕਸਲ ਸੰਯੋਜਨਾਂ ਤੋਂ ਸ਼ੁਰੂ ਹੁੰਦਾ ਹੈ, ਅਤੇ ਚਿੱਤਰ ਦੇ ਹਿੱਸਿਆਂ ਦੇ ਉੱਚ-ਸਤਰ ਦੇ ਸੰਯੋਜਨ ਤੱਕ ਪਹੁੰਚਦਾ ਹੈ।
 
-![ਹਾਇਰਾਰਕਲ ਫੀਚਰ ਕੱਢਣਾ](../../../../../translated_images/FeatureExtractionCNN.d9b456cbdae7cb643fde3032b81b2940e3cf8be842e29afac3f482725ba7f95c.pa.png)
+![ਹਾਇਰਾਰਕਲ ਫੀਚਰ ਕੱਢਣਾ](../../../../../translated_images/pa/FeatureExtractionCNN.d9b456cbdae7cb64.webp)
 
 > ਚਿੱਤਰ: [ਹਿਸਲੋਪ-ਲਿੰਚ ਦੇ ਪੇਪਰ](https://www.semanticscholar.org/paper/Computer-vision-based-pedestrian-trajectory-Hislop-Lynch/26e6f74853fc9bbb7487b06dc2cf095d36c9021d) ਤੋਂ, [ਉਨ੍ਹਾਂ ਦੇ ਰਿਸਰਚ](https://dl.acm.org/doi/abs/10.1145/1553374.1553453) ਦੇ ਆਧਾਰ 'ਤੇ
 
@@ -55,9 +46,9 @@ CNNs ਦੇ ਕੰਮ ਕਰਨ ਦਾ ਤਰੀਕਾ ਹੇਠਾਂ ਦਿੱ
 
 ਉਦਾਹਰਣ ਵਜੋਂ, ਆਓ VGG-16 ਦੀ ਆਰਕੀਟੈਕਚਰ ਨੂੰ ਦੇਖੀਏ, ਇੱਕ ਨੈਟਵਰਕ ਜਿਸ ਨੇ 2014 ਵਿੱਚ ImageNet ਦੇ ਟਾਪ-5 ਵਰਗੀਕਰਨ ਵਿੱਚ 92.7% ਸਹੀਤਾ ਪ੍ਰਾਪਤ ਕੀਤੀ:
 
-![ImageNet ਲੇਅਰਜ਼](../../../../../translated_images/vgg-16-arch1.d901a5583b3a51baeaab3e768567d921e5d54befa46e1e642616c5458c934028.pa.jpg)
+![ImageNet ਲੇਅਰਜ਼](../../../../../translated_images/pa/vgg-16-arch1.d901a5583b3a51ba.webp)
 
-![ImageNet ਪਿਰਾਮਿਡ](../../../../../translated_images/vgg-16-arch.64ff2137f50dd49fdaa786e3f3a975b3f22615efd13efb19c5d22f12e01451a1.pa.jpg)
+![ImageNet ਪਿਰਾਮਿਡ](../../../../../translated_images/pa/vgg-16-arch.64ff2137f50dd49f.webp)
 
 > ਚਿੱਤਰ: [ਰਿਸਰਚਗੇਟ](https://www.researchgate.net/figure/Vgg16-model-structure-To-get-the-VGG-NIN-model-we-replace-the-2-nd-4-th-6-th-7-th_fig2_335194493) ਤੋਂ
 

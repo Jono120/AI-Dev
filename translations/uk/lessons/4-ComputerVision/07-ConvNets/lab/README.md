@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "b70fcf7fcee862990f848c679090943f",
-  "translation_date": "2025-10-03T14:58:41+00:00",
-  "source_file": "lessons/4-ComputerVision/07-ConvNets/lab/README.md",
-  "language_code": "uk"
-}
--->
 # Класифікація облич домашніх тварин
 
 Лабораторне завдання з [AI for Beginners Curriculum](https://github.com/microsoft/ai-for-beginners).
@@ -21,7 +12,7 @@ CO_OP_TRANSLATOR_METADATA:
 
 Ми будемо використовувати [Oxford-IIIT Pet Dataset](https://www.robots.ox.ac.uk/~vgg/data/pets/), який містить зображення 37 різних порід собак і котів.
 
-![Набір даних, з яким ми будемо працювати](../../../../../../translated_images/data.50b2a9d5484bdbf0f52f5765b381cec9efe2bd296a98f007f90bedb6ac67f2a8.uk.png)
+![Набір даних, з яким ми будемо працювати](../../../../../../translated_images/uk/data.50b2a9d5484bdbf0.webp)
 
 Щоб завантажити набір даних, скористайтеся цим фрагментом коду:
 

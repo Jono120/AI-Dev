@@ -1,15 +1,6 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "5fef1a0b22498d7188959e2a2cb08af7",
-  "translation_date": "2025-11-25T20:36:00+00:00",
-  "source_file": "lessons/README.md",
-  "language_code": "te"
-}
--->
 # అవలోకనం
 
-![డూడుల్‌లో అవలోకనం](../../../translated_images/ai-overview.0857791951d19500d0ef8b803d77110c738dcafc52306e6d68724742cd4af167.te.png)
+![డూడుల్‌లో అవలోకనం](../../../translated_images/te/ai-overview.0857791951d19500.webp)
 
 > స్కెచ్‌నోట్: [టోమోమీ ఇమురా](https://twitter.com/girlie_mac)
 

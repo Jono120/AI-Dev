@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "ddd216f558a255260a9374008002c971",
-  "translation_date": "2025-10-11T11:32:35+00:00",
-  "source_file": "lessons/3-NeuralNetworks/05-Frameworks/README.md",
-  "language_code": "et"
-}
--->
 # Neuraalvõrkude raamistikud
 
 Nagu me juba õppinud oleme, on neuraalvõrkude tõhusaks treenimiseks vaja teha kahte asja:
@@ -58,7 +49,7 @@ Pärast raamistikest arusaamist vaatame üle üleliigse sobitamise (overfitting)
 
 Vaatleme järgmist probleemi, kus tuleb ligikaudselt määrata 5 punkti (graafikutel tähistatud `x`-ga):
 
-![lineaarne](../../../../../translated_images/overfit1.f24b71c6f652e59e6bed7245ffbeaecc3ba320e16e2221f6832b432052c4da43.et.jpg) | ![üleliigne sobitamine](../../../../../translated_images/overfit2.131f5800ae10ca5e41d12a411f5f705d9ee38b1b10916f284b787028dd55cc1c.et.jpg)
+![lineaarne](../../../../../translated_images/et/overfit1.f24b71c6f652e59e.webp) | ![üleliigne sobitamine](../../../../../translated_images/et/overfit2.131f5800ae10ca5e.webp)
 -------------------------|--------------------------
 **Lineaarne mudel, 2 parameetrit** | **Mitte-lineaarne mudel, 7 parameetrit**
 Treeningu viga = 5.3 | Treeningu viga = 0
@@ -79,7 +70,7 @@ On väga oluline leida õige tasakaal mudeli rikkuse (parameetrite arv) ja treen
 
 Nagu ülaltoodud graafikult näha, saab üleliigset sobitamist tuvastada väga madala treeningu vea ja kõrge valideerimise vea järgi. Tavaliselt näeme treenimise ajal, kuidas treeningu ja valideerimise vead hakkavad mõlemad vähenema, kuid mingil hetkel valideerimise viga võib lõpetada vähenemise ja hakata kasvama. See on märk üleliigsest sobitamisest ja indikaator, et treenimine tuleks tõenäoliselt lõpetada (või vähemalt mudelist hetkeseis salvestada).
 
-![üleliigne sobitamine](../../../../../translated_images/Overfitting.408ad91cd90b4371d0a81f4287e1409c359751adeb1ae450332af50e84f08c3e.et.png)
+![üleliigne sobitamine](../../../../../translated_images/et/Overfitting.408ad91cd90b4371.webp)
 
 ## Kuidas vältida üleliigset sobitamist
 

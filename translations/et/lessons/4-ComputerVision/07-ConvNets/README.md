@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "a560d5b845962cf33dc102266e409568",
-  "translation_date": "2025-10-11T11:26:10+00:00",
-  "source_file": "lessons/4-ComputerVision/07-ConvNets/README.md",
-  "language_code": "et"
-}
--->
 # Konvolutsioonilised närvivõrgud
 
 Oleme varem näinud, et närvivõrgud on üsna head piltidega töötamisel ja isegi ühekihiline perceptron suudab MNIST andmestikus käsitsi kirjutatud numbreid mõistliku täpsusega ära tunda. Kuid MNIST andmestik on väga eriline, kuna kõik numbrid on pildi keskel, mis teeb ülesande lihtsamaks.
@@ -17,14 +8,14 @@ Päriselus tahame olla võimelised tuvastama objekte pildil sõltumata nende tä
 
 Mustrite leidmiseks kasutame **konvolutsioonifiltrite** mõistet. Nagu teate, on pilt esitatud 2D-maatriksina või 3D-tensorina koos värvisügavusega. Filtri rakendamine tähendab, et võtame suhteliselt väikese **filtrituuma** maatriksi ja arvutame iga originaalpildi pikseli jaoks kaalutud keskmise koos naaberpunktidega. Seda võib vaadelda kui väikest akent, mis libiseb üle kogu pildi ja keskmistab kõik pikslid vastavalt filtrituuma maatriksi kaaludele.
 
-![Vertikaalse serva filter](../../../../../translated_images/filter-vert.b7148390ca0bc356ddc7e55555d2481819c1e86ddde9dce4db5e71a69d6f887f.et.png) | ![Horisontaalse serva filter](../../../../../translated_images/filter-horiz.59b80ed4feb946efbe201a7fe3ca95abb3364e266e6fd90820cb893b4d3a6dda.et.png)
+![Vertikaalse serva filter](../../../../../translated_images/et/filter-vert.b7148390ca0bc356.webp) | ![Horisontaalse serva filter](../../../../../translated_images/et/filter-horiz.59b80ed4feb946ef.webp)
 ----|----
 
 > Pilt: Dmitry Soshnikov
 
 Näiteks, kui rakendame MNIST numbritele 3x3 vertikaalse ja horisontaalse serva filtreid, saame esile tõsta (nt kõrged väärtused) kohad, kus originaalpildil on vertikaalsed ja horisontaalsed servad. Seega saab neid kahte filtrit kasutada servade "otsimiseks". Samamoodi saame kujundada erinevaid filtreid, et otsida teisi madala taseme mustreid:
 
-<img src="../../../../../translated_images/lmfilters.ea9e4868a82cf74cdca05121b1128f0122297cf2879501cd06956beb88ff96a2.et.jpg" width="500" align="center"/>
+<img src="../../../../../translated_images/et/lmfilters.ea9e4868a82cf74c.webp" width="500" align="center"/>
 
 > Pilt: [Leung-Malik filtripank](https://www.robots.ox.ac.uk/~vgg/research/texclass/filters.html)
 
@@ -38,7 +29,7 @@ CNN-i töö põhineb järgmistel olulistel ideedel:
 * Võrgu saab kujundada nii, et filtrid treenitakse automaatselt
 * Sama lähenemist saab kasutada mustrite leidmiseks kõrgetasemelistes omadustes, mitte ainult originaalpildil. Seega töötab CNN-i omaduste tuvastamine hierarhias, alustades madala taseme pikslikombinatsioonidest kuni kõrgema taseme pildiosade kombinatsioonideni.
 
-![Hierarhiline omaduste tuvastamine](../../../../../translated_images/FeatureExtractionCNN.d9b456cbdae7cb643fde3032b81b2940e3cf8be842e29afac3f482725ba7f95c.et.png)
+![Hierarhiline omaduste tuvastamine](../../../../../translated_images/et/FeatureExtractionCNN.d9b456cbdae7cb64.webp)
 
 > Pilt: [Hislop-Lynchi artikkel](https://www.semanticscholar.org/paper/Computer-vision-based-pedestrian-trajectory-Hislop-Lynch/26e6f74853fc9bbb7487b06dc2cf095d36c9021d), põhineb [nende uurimusel](https://dl.acm.org/doi/abs/10.1145/1553374.1553453)
 
@@ -55,9 +46,9 @@ Enamik pilttöötluseks kasutatavaid CNN-e järgib nn püramiidset arhitektuuri.
 
 Näiteks vaatame VGG-16 arhitektuuri, võrku, mis saavutas 2014. aastal ImageNeti top-5 klassifikatsioonis 92,7% täpsuse:
 
-![ImageNeti kihid](../../../../../translated_images/vgg-16-arch1.d901a5583b3a51baeaab3e768567d921e5d54befa46e1e642616c5458c934028.et.jpg)
+![ImageNeti kihid](../../../../../translated_images/et/vgg-16-arch1.d901a5583b3a51ba.webp)
 
-![ImageNeti püramiid](../../../../../translated_images/vgg-16-arch.64ff2137f50dd49fdaa786e3f3a975b3f22615efd13efb19c5d22f12e01451a1.et.jpg)
+![ImageNeti püramiid](../../../../../translated_images/et/vgg-16-arch.64ff2137f50dd49f.webp)
 
 > Pilt: [Researchgate](https://www.researchgate.net/figure/Vgg16-model-structure-To-get-the-VGG-NIN-model-we-replace-the-2-nd-4-th-6-th-7-th_fig2_335194493)
 

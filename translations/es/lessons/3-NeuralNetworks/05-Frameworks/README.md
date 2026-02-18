@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "ddd216f558a255260a9374008002c971",
-  "translation_date": "2025-09-23T12:12:17+00:00",
-  "source_file": "lessons/3-NeuralNetworks/05-Frameworks/README.md",
-  "language_code": "es"
-}
--->
 # Frameworks de Redes Neuronales
 
 Como ya hemos aprendido, para entrenar redes neuronales de manera eficiente necesitamos hacer dos cosas:
@@ -58,7 +49,7 @@ El sobreajuste es un concepto extremadamente importante en el aprendizaje autom�
 
 Considera el siguiente problema de aproximar 5 puntos (representados por `x` en los gráficos a continuación):
 
-![linear](../../../../../translated_images/overfit1.f24b71c6f652e59e6bed7245ffbeaecc3ba320e16e2221f6832b432052c4da43.es.jpg) | ![overfit](../../../../../translated_images/overfit2.131f5800ae10ca5e41d12a411f5f705d9ee38b1b10916f284b787028dd55cc1c.es.jpg)
+![linear](../../../../../translated_images/es/overfit1.f24b71c6f652e59e.webp) | ![overfit](../../../../../translated_images/es/overfit2.131f5800ae10ca5e.webp)
 -------------------------|--------------------------
 **Modelo lineal, 2 parámetros** | **Modelo no lineal, 7 parámetros**
 Error de entrenamiento = 5.3 | Error de entrenamiento = 0
@@ -79,7 +70,7 @@ Es muy importante encontrar un equilibrio correcto entre la complejidad del mode
 
 Como puedes ver en el gráfico anterior, el sobreajuste puede detectarse por un error de entrenamiento muy bajo y un error de validación alto. Normalmente, durante el entrenamiento veremos que tanto el error de entrenamiento como el de validación comienzan a disminuir, y luego, en algún punto, el error de validación podría dejar de disminuir y empezar a aumentar. Esto será una señal de sobreajuste y un indicador de que probablemente deberíamos detener el entrenamiento en ese punto (o al menos hacer una instantánea del modelo).
 
-![overfitting](../../../../../translated_images/Overfitting.408ad91cd90b4371d0a81f4287e1409c359751adeb1ae450332af50e84f08c3e.es.png)
+![overfitting](../../../../../translated_images/es/Overfitting.408ad91cd90b4371.webp)
 
 ## Cómo prevenir el sobreajuste
 

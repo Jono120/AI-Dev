@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "1b8d9e1b3a6f1daa864b1ff3dfc3076d",
-  "translation_date": "2025-09-23T06:33:29+00:00",
-  "source_file": "lessons/4-ComputerVision/09-Autoencoders/README.md",
-  "language_code": "ar"
-}
--->
 # الشبكات العصبية التلقائية (Autoencoders)
 
 عند تدريب الشبكات العصبية الالتفافية (CNNs)، واحدة من المشاكل هي أننا نحتاج إلى كمية كبيرة من البيانات الموصوفة. في حالة تصنيف الصور، نحتاج إلى فصل الصور إلى فئات مختلفة، وهو جهد يدوي.
@@ -19,7 +10,7 @@ CO_OP_TRANSLATOR_METADATA:
 
 بما أننا نقوم بتدريب الشبكة العصبية التلقائية لالتقاط أكبر قدر ممكن من المعلومات من الصورة الأصلية لإعادة البناء بدقة، تحاول الشبكة العثور على أفضل **تمثيل** للصور المدخلة لالتقاط المعنى.
 
-![مخطط الشبكة العصبية التلقائية](../../../../../translated_images/autoencoder_schema.5e6fc9ad98a5eb6197f3513cf3baf4dfbe1389a6ae74daebda64de9f1c99f142.ar.jpg)
+![مخطط الشبكة العصبية التلقائية](../../../../../translated_images/ar/autoencoder_schema.5e6fc9ad98a5eb61.webp)
 
 > الصورة من [مدونة Keras](https://blog.keras.io/building-autoencoders-in-keras.html)
 
@@ -46,7 +37,7 @@ VAE هي شبكة تلقائية تتعلم التنبؤ بـ *التوزيع ا
  * نأخذ عينة `sample` من التوزيع N(z<sub>mean</sub>,exp(z<sub>log\_sigma</sub>))
  * يحاول فك التشفير فك تشفير الصورة الأصلية باستخدام `sample` كمتجه مدخل
 
- <img src="images/vae.png" width="50%">
+ <img src="../../../../../translated_images/ar/vae.464c465a5b6a9e25.webp" width="50%">
 
 > الصورة من [هذه المدونة](https://ijdykeman.github.io/ml/2016/12/21/cvae.html) بواسطة Isaak Dykeman
 
@@ -57,13 +48,13 @@ VAE هي شبكة تلقائية تتعلم التنبؤ بـ *التوزيع ا
 
 ميزة مهمة للشبكات العصبية التلقائية التباينية هي أنها تتيح لنا إنشاء صور جديدة بسهولة نسبية، لأننا نعرف التوزيع الذي يمكننا أخذ عينات منه للمتجهات الكامنة. على سبيل المثال، إذا قمنا بتدريب VAE مع متجه كامن ثنائي الأبعاد على MNIST، يمكننا بعد ذلك تغيير مكونات المتجه الكامن للحصول على أرقام مختلفة:
 
-<img alt="vaemnist" src="images/vaemnist.png" width="50%"/>
+<img alt="vaemnist" src="../../../../../translated_images/ar/vaemnist.cab9e602dc08dc50.webp" width="50%"/>
 
 > الصورة بواسطة [Dmitry Soshnikov](http://soshnikov.com)
 
 لاحظ كيف تمتزج الصور مع بعضها البعض، حيث نبدأ في الحصول على متجهات كامنة من أجزاء مختلفة من فضاء المعلمات الكامنة. يمكننا أيضًا تصور هذا الفضاء في بعدين:
 
-<img alt="vaemnist cluster" src="images/vaemnist-diag.png" width="50%"/> 
+<img alt="vaemnist cluster" src="../../../../../translated_images/ar/vaemnist-diag.694315f775d5d666.webp" width="50%"/> 
 
 > الصورة بواسطة [Dmitry Soshnikov](http://soshnikov.com)
 

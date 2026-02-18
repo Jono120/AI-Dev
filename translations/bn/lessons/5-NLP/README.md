@@ -1,15 +1,6 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "8ef02a9318257ea140ed3ed74442096d",
-  "translation_date": "2025-08-26T08:03:35+00:00",
-  "source_file": "lessons/5-NLP/README.md",
-  "language_code": "bn"
-}
--->
 # প্রাকৃতিক ভাষা প্রক্রিয়াকরণ
 
-![NLP কাজগুলোর সারাংশ একটি ডুডলে](../../../../translated_images/ai-nlp.b22dcb8ca4707ceaee8576db1c5f4089c8cac2f454e9e03ea554f07fda4556b8.bn.png)
+![NLP কাজগুলোর সারাংশ একটি ডুডলে](../../../../translated_images/bn/ai-nlp.b22dcb8ca4707cea.webp)
 
 এই অংশে, আমরা **প্রাকৃতিক ভাষা প্রক্রিয়াকরণ (NLP)** সম্পর্কিত কাজগুলো পরিচালনা করতে নিউরাল নেটওয়ার্ক ব্যবহার করার উপর মনোযোগ দেব। অনেক ধরনের NLP সমস্যা রয়েছে যা আমরা চাই কম্পিউটার সমাধান করতে সক্ষম হোক:
 

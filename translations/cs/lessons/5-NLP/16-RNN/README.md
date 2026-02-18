@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "e2273cc150380a5e191903cea858f021",
-  "translation_date": "2025-09-23T11:30:46+00:00",
-  "source_file": "lessons/5-NLP/16-RNN/README.md",
-  "language_code": "cs"
-}
--->
 # Rekurentní neuronové sítě
 
 ## [Kvíz před přednáškou](https://ff-quizzes.netlify.app/en/ai/quiz/31)
@@ -15,7 +6,7 @@ V předchozích sekcích jsme používali bohaté sémantické reprezentace text
 
 Abychom zachytili význam textové sekvence, musíme použít jinou architekturu neuronové sítě, která se nazývá **rekurentní neuronová síť** (RNN). V RNN prochází věta sítí jeden symbol po druhém a síť produkuje nějaký **stav**, který se poté předává síti spolu s dalším symbolem.
 
-![RNN](../../../../../translated_images/rnn.27f5c29c53d727b546ad3961637a267f0fe9ec5ab01f2a26a853c92fcefbb574.cs.png)
+![RNN](../../../../../translated_images/cs/rnn.27f5c29c53d727b5.webp)
 
 > Obrázek od autora
 
@@ -31,7 +22,7 @@ Podívejme se, jak je organizována jednoduchá RNN buňka. Přijímá předchoz
 
 Jednoduchá RNN buňka má uvnitř dvě váhové matice: jedna transformuje vstupní symbol (nazvěme ji W) a druhá transformuje vstupní stav (H). V tomto případě se výstup sítě vypočítá jako &sigma;(W&times;X<sub>i</sub>+H&times;S<sub>i-1</sub>+b), kde &sigma; je aktivační funkce a b je dodatečná bias.
 
-<img alt="Anatomie RNN buňky" src="images/rnn-anatomy.png" width="50%"/>
+<img alt="Anatomie RNN buňky" src="../../../../../translated_images/cs/rnn-anatomy.79ee3f3920b3294b.webp" width="50%"/>
 
 > Obrázek od autora
 
@@ -61,7 +52,7 @@ Diskutovali jsme o rekurentních sítích, které fungují jedním směrem, od z
 
 Rekurentní síť, ať už jednosměrná nebo bidirekcionální, zachycuje určité vzory v sekvenci a může je uložit do stavového vektoru nebo předat do výstupu. Stejně jako u konvolučních sítí můžeme na první vrstvu postavit další rekurentní vrstvu, která zachytí vzory na vyšší úrovni a vytvoří vzory na nižší úrovni extrahované první vrstvou. To nás vede k pojmu **vícevrstvá RNN**, která se skládá ze dvou nebo více rekurentních sítí, kde výstup předchozí vrstvy je předán další vrstvě jako vstup.
 
-![Obrázek ukazující vícevrstvou LSTM RNN](../../../../../translated_images/multi-layer-lstm.dd975e29bb2a59fe58b429db833932d734c81f211cad2783797a9608984acb8c.cs.jpg)
+![Obrázek ukazující vícevrstvou LSTM RNN](../../../../../translated_images/cs/multi-layer-lstm.dd975e29bb2a59fe.webp)
 
 *Obrázek z [tohoto skvělého příspěvku](https://towardsdatascience.com/from-a-lstm-cell-to-a-multilayer-lstm-network-with-pytorch-2899eb5696f3) od Fernanda Lópeze*
 

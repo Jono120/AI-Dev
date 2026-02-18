@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "1b8d9e1b3a6f1daa864b1ff3dfc3076d",
-  "translation_date": "2025-09-23T09:40:43+00:00",
-  "source_file": "lessons/4-ComputerVision/09-Autoencoders/README.md",
-  "language_code": "no"
-}
--->
 # Autoencodere
 
 Når vi trener CNN-er, er en av utfordringene at vi trenger mye merket data. Når det gjelder bildeklassifisering, må vi dele bilder inn i ulike klasser, noe som krever manuell innsats.
@@ -19,7 +10,7 @@ Vi kan imidlertid ønske å bruke rå (umerkede) data for å trene CNN-funksjons
 
 Siden vi trener en autoencoder til å fange så mye informasjon som mulig fra det originale bildet for nøyaktig rekonstruksjon, prøver nettverket å finne den beste **embedding** av input-bilder for å fange meningen.
 
-![AutoEncoder Diagram](../../../../../translated_images/autoencoder_schema.5e6fc9ad98a5eb6197f3513cf3baf4dfbe1389a6ae74daebda64de9f1c99f142.no.jpg)
+![AutoEncoder Diagram](../../../../../translated_images/no/autoencoder_schema.5e6fc9ad98a5eb61.webp)
 
 > Bilde fra [Keras-blogg](https://blog.keras.io/building-autoencoders-in-keras.html)
 
@@ -46,7 +37,7 @@ Oppsummert:
  * Vi tar en prøvevektor `sample` fra distribusjonen N(z<sub>mean</sub>,exp(z<sub>log\_sigma</sub>))
  * Decoder prøver å dekode det originale bildet ved å bruke `sample` som input-vektor
 
- <img src="images/vae.png" width="50%">
+ <img src="../../../../../translated_images/no/vae.464c465a5b6a9e25.webp" width="50%">
 
 > Bilde fra [denne bloggposten](https://ijdykeman.github.io/ml/2016/12/21/cvae.html) av Isaak Dykeman
 
@@ -57,13 +48,13 @@ Variasjonelle autoencodere bruker en kompleks tapsfunksjon som består av to del
 
 En viktig fordel med VAE-er er at de lar oss generere nye bilder relativt enkelt, fordi vi vet hvilken distribusjon vi skal ta latente vektorer fra. For eksempel, hvis vi trener VAE med 2D latente vektorer på MNIST, kan vi deretter variere komponentene i den latente vektoren for å få ulike sifre:
 
-<img alt="vaemnist" src="images/vaemnist.png" width="50%"/>
+<img alt="vaemnist" src="../../../../../translated_images/no/vaemnist.cab9e602dc08dc50.webp" width="50%"/>
 
 > Bilde av [Dmitry Soshnikov](http://soshnikov.com)
 
 Legg merke til hvordan bildene glir over i hverandre, ettersom vi begynner å ta latente vektorer fra ulike deler av det latente parameterrommet. Vi kan også visualisere dette rommet i 2D:
 
-<img alt="vaemnist cluster" src="images/vaemnist-diag.png" width="50%"/> 
+<img alt="vaemnist cluster" src="../../../../../translated_images/no/vaemnist-diag.694315f775d5d666.webp" width="50%"/> 
 
 > Bilde av [Dmitry Soshnikov](http://soshnikov.com)
 

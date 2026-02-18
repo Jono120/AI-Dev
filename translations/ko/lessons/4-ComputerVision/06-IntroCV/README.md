@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "feeca98225cb420afc89415f24f63d92",
-  "translation_date": "2025-09-23T13:18:50+00:00",
-  "source_file": "lessons/4-ComputerVision/06-IntroCV/README.md",
-  "language_code": "ko"
-}
--->
 # 컴퓨터 비전 소개
 
 [컴퓨터 비전](https://wikipedia.org/wiki/Computer_vision)은 디지털 이미지를 통해 컴퓨터가 고수준의 이해를 할 수 있도록 하는 학문입니다. 이 정의는 매우 광범위한데, *이해*라는 것이 사진에서 객체를 찾는 것(**객체 탐지**), 무슨 일이 일어나고 있는지 파악하는 것(**이벤트 탐지**), 사진을 텍스트로 설명하는 것, 또는 3D로 장면을 재구성하는 것 등 다양한 의미를 가질 수 있기 때문입니다. 사람의 이미지를 다루는 특별한 작업도 있습니다. 예를 들어, 나이와 감정 추정, 얼굴 탐지 및 식별, 3D 자세 추정 등이 있습니다.
@@ -73,14 +64,14 @@ OpenCV를 사용하여 비디오를 프레임별로 로드할 수도 있습니�
 
 * **점자 책 사진 전처리**. 임계값 처리, 특징 탐지, 투시 변환 및 NumPy 조작을 사용하여 개별 점자 기호를 분리하고, 이를 신경망으로 추가 분류하는 방법에 초점을 맞춥니다.
 
-![점자 이미지](../../../../../translated_images/braille.341962ff76b1bd7044409371d3de09ced5028132aef97344ea4b7468c1208126.ko.jpeg) | ![전처리된 점자 이미지](../../../../../translated_images/braille-result.46530fea020b03c76aac532d7d6eeef7f6fb35b55b1001cd21627907dabef3ed.ko.png) | ![점자 기호](../../../../../translated_images/braille-symbols.0159185ab69d533909dc4d7d26a1971b51401c6a80eb3a5584f250ea880af88b.ko.png)
+![점자 이미지](../../../../../translated_images/ko/braille.341962ff76b1bd70.webp) | ![전처리된 점자 이미지](../../../../../translated_images/ko/braille-result.46530fea020b03c7.webp) | ![점자 기호](../../../../../translated_images/ko/braille-symbols.0159185ab69d5339.webp)
 ----|-----|-----
 
 > 이미지 출처: [OpenCV.ipynb](OpenCV.ipynb)
 
 * **프레임 차이를 사용한 비디오에서의 움직임 탐지**. 카메라가 고정되어 있다면, 카메라 피드의 프레임은 서로 매우 유사해야 합니다. 프레임이 배열로 표현되므로, 두 연속 프레임의 배열을 빼면 픽셀 차이를 얻을 수 있습니다. 정적인 프레임에서는 차이가 작고, 이미지에 상당한 움직임이 있을 때 차이가 커집니다.
 
-![비디오 프레임 및 프레임 차이 이미지](../../../../../translated_images/frame-difference.706f805491a0883c938e16447bf5eb2f7d69e812c7f743cbe7d7c7645168f81f.ko.png)
+![비디오 프레임 및 프레임 차이 이미지](../../../../../translated_images/ko/frame-difference.706f805491a0883c.webp)
 
 > 이미지 출처: [OpenCV.ipynb](OpenCV.ipynb)
 
@@ -89,7 +80,7 @@ OpenCV를 사용하여 비디오를 프레임별로 로드할 수도 있습니�
    - **밀집 광학 흐름**: 각 픽셀이 어디로 이동하는지 보여주는 벡터 필드를 계산합니다.
    - **희소 광학 흐름**: 이미지에서 일부 특징적인 요소(예: 가장자리)를 선택하고, 프레임 간의 궤적을 생성합니다.
 
-![광학 흐름 이미지](../../../../../translated_images/optical.1f4a94464579a83a10784f3c07fe7228514714b96782edf50e70ccd59d2d8c4f.ko.png)
+![광학 흐름 이미지](../../../../../translated_images/ko/optical.1f4a94464579a83a.webp)
 
 > 이미지 출처: [OpenCV.ipynb](OpenCV.ipynb)
 
@@ -115,7 +106,7 @@ AI 쇼의 [이 비디오](https://docs.microsoft.com/shows/ai-show/ai-show--2021
 
 이 실습에서는 간단한 제스처가 포함된 비디오를 촬영하고, 광학 흐름을 사용하여 위/아래/왼쪽/오른쪽 움직임을 추출하는 것이 목표입니다.
 
-<img src="images/palm-movement.png" width="30%" alt="손바닥 움직임 프레임"/>
+<img src="../../../../../translated_images/ko/palm-movement.341495f0e9c47da3.webp" width="30%" alt="손바닥 움직임 프레임"/>
 
 ---
 

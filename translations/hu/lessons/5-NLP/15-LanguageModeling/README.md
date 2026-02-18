@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "7ba20f54a5bfcd6521018cdfb17c7c57",
-  "translation_date": "2025-09-23T11:17:34+00:00",
-  "source_file": "lessons/5-NLP/15-LanguageModeling/README.md",
-  "language_code": "hu"
-}
--->
 # Nyelvi Modellezés
 
 A szemantikai beágyazások, mint például a Word2Vec és a GloVe, valójában az első lépést jelentik a **nyelvi modellezés** felé – olyan modellek létrehozása felé, amelyek valamilyen módon *megértik* (vagy *reprezentálják*) a nyelv természetét.
@@ -23,7 +14,7 @@ Korábbi példáinkban előre betanított szemantikai beágyazásokat használtu
 * **Folytonos Szózsák** (CBoW), amikor a középső token-t $W_0$ jósoljuk meg egy token sorozatban $W_{-N}$, ..., $W_N$.
 * **Skip-gram**, ahol a középső token $W_0$ alapján egy szomszédos tokenek halmazát {$W_{-N},\dots, W_{-1}, W_1,\dots, W_N$} jósoljuk meg.
 
-![kép a szavak vektorokká alakításáról szóló tanulmányból](../../../../../translated_images/example-algorithms-for-converting-words-to-vectors.fbe9207a726922f6f0f5de66427e8a6eda63809356114e28fb1fa5f4a83ebda7.hu.png)
+![kép a szavak vektorokká alakításáról szóló tanulmányból](../../../../../translated_images/hu/example-algorithms-for-converting-words-to-vectors.fbe9207a726922f6.webp)
 
 > Kép [ebből a tanulmányból](https://arxiv.org/pdf/1301.3781.pdf)
 

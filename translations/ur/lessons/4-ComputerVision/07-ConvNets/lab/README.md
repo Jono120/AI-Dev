@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "b70fcf7fcee862990f848c679090943f",
-  "translation_date": "2025-10-03T14:52:35+00:00",
-  "source_file": "lessons/4-ComputerVision/07-ConvNets/lab/README.md",
-  "language_code": "ur"
-}
--->
 # پالتو جانوروں کے چہروں کی درجہ بندی
 
 [AI for Beginners Curriculum](https://github.com/microsoft/ai-for-beginners) سے لیب اسائنمنٹ۔
@@ -21,7 +12,7 @@ CO_OP_TRANSLATOR_METADATA:
 
 ہم [Oxford-IIIT Pet Dataset](https://www.robots.ox.ac.uk/~vgg/data/pets/) استعمال کریں گے، جس میں کتوں اور بلیوں کی 37 مختلف نسلوں کی تصاویر شامل ہیں۔
 
-![ہم جس ڈیٹا سیٹ سے نمٹیں گے](../../../../../../translated_images/data.50b2a9d5484bdbf0f52f5765b381cec9efe2bd296a98f007f90bedb6ac67f2a8.ur.png)
+![ہم جس ڈیٹا سیٹ سے نمٹیں گے](../../../../../../translated_images/ur/data.50b2a9d5484bdbf0.webp)
 
 ڈیٹا سیٹ ڈاؤن لوڈ کرنے کے لیے، یہ کوڈ استعمال کریں:
 

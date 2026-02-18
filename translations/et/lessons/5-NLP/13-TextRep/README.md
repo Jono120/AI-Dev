@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "dbd3f73e4139f030ecb2e20387d70fee",
-  "translation_date": "2025-10-11T11:41:12+00:00",
-  "source_file": "lessons/5-NLP/13-TextRep/README.md",
-  "language_code": "et"
-}
--->
 # Teksti esindamine tensoritena
 
 ## [Eelloengu viktoriin](https://ff-quizzes.netlify.app/en/ai/quiz/25)
@@ -25,7 +16,7 @@ Meie eesmärk on klassifitseerida uudisartikkel üheks kategooriaks, tuginedes t
 
 Kui tahame lahendada loomuliku keele töötlemise (NLP) ülesandeid närvivõrkudega, peame leidma viisi, kuidas teksti tensoritena esitada. Arvutid esindavad tekstimärke juba numbritena, mis kaardistuvad ekraanil olevate fontidega, kasutades kodeeringuid nagu ASCII või UTF-8.
 
-<img alt="Pilt, mis näitab skeemi, kuidas märk kaardistub ASCII ja binaarse esitusena" src="../../../../../translated_images/ascii-character-map.18ed6aa7f3b0a7ffeb29db95be05a245b6a20712bb2c3a9963c1ec7e9df70358.et.png" width="50%"/>
+<img alt="Pilt, mis näitab skeemi, kuidas märk kaardistub ASCII ja binaarse esitusena" src="../../../../../translated_images/et/ascii-character-map.18ed6aa7f3b0a7ff.webp" width="50%"/>
 
 > [Pildi allikas](https://www.seobility.net/en/wiki/ASCII)
 
@@ -48,7 +39,7 @@ Mõnel juhul võime kaaluda ka tri-grammide - kolme sõna kombinatsioonide - kas
 
 Tekstiklassifikatsiooni ülesannete lahendamisel peame suutma esitada teksti ühe fikseeritud suurusega vektorina, mida kasutame lõpliku tiheda klassifikaatori sisendina. Üks lihtsamaid viise seda teha on kombineerida kõik üksikud sõnaesitused, näiteks neid liites. Kui liidame iga sõna ühe-kuuma kodeeringud, saame sagedusvektori, mis näitab, mitu korda iga sõna tekstis esineb. Sellist teksti esitust nimetatakse **sõnakotiks** (BoW).
 
-<img src="../../../../../translated_images/bow.3811869cff59368d951c7a765ed20ebeaf7d10680eb602ea7c5312fb22f7b7ad.et.png" width="90%"/>
+<img src="../../../../../translated_images/et/bow.3811869cff59368d.webp" width="90%"/>
 
 > Pilt autori poolt
 

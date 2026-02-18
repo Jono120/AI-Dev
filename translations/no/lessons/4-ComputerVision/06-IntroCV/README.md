@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "feeca98225cb420afc89415f24f63d92",
-  "translation_date": "2025-09-23T09:39:44+00:00",
-  "source_file": "lessons/4-ComputerVision/06-IntroCV/README.md",
-  "language_code": "no"
-}
--->
 # Introduksjon til datamaskinsyn
 
 [Datamaskinsyn](https://wikipedia.org/wiki/Computer_vision) er et fagområde som har som mål å gi datamaskiner en høyere forståelse av digitale bilder. Dette er en ganske bred definisjon, fordi *forståelse* kan bety mange forskjellige ting, inkludert å finne et objekt på et bilde (**objektdeteksjon**), forstå hva som skjer (**hendelsesdeteksjon**), beskrive et bilde med tekst, eller rekonstruere en scene i 3D. Det finnes også spesielle oppgaver knyttet til bilder av mennesker: alders- og følelsesestimering, ansiktsdeteksjon og identifikasjon, samt 3D-posisjonsestimering, for å nevne noen.
@@ -73,14 +64,14 @@ I vår [OpenCV Notebook](OpenCV.ipynb) gir vi noen eksempler på når datamaskin
 
 * **Forhåndsbehandling av et fotografi av en Braille-bok**. Vi fokuserer på hvordan vi kan bruke terskling, funksjonsdeteksjon, perspektivtransformasjon og NumPy-manipulasjoner for å separere individuelle Braille-symboler for videre klassifisering av et nevralt nettverk.
 
-![Braille-bilde](../../../../../translated_images/braille.341962ff76b1bd7044409371d3de09ced5028132aef97344ea4b7468c1208126.no.jpeg) | ![Forhåndsbehandlet Braille-bilde](../../../../../translated_images/braille-result.46530fea020b03c76aac532d7d6eeef7f6fb35b55b1001cd21627907dabef3ed.no.png) | ![Braille-symboler](../../../../../translated_images/braille-symbols.0159185ab69d533909dc4d7d26a1971b51401c6a80eb3a5584f250ea880af88b.no.png)
+![Braille-bilde](../../../../../translated_images/no/braille.341962ff76b1bd70.webp) | ![Forhåndsbehandlet Braille-bilde](../../../../../translated_images/no/braille-result.46530fea020b03c7.webp) | ![Braille-symboler](../../../../../translated_images/no/braille-symbols.0159185ab69d5339.webp)
 ----|-----|-----
 
 > Bilde fra [OpenCV.ipynb](OpenCV.ipynb)
 
 * **Deteksjon av bevegelse i video ved hjelp av rammeforskjell**. Hvis kameraet er fast, bør rammer fra kamerafeeden være ganske like hverandre. Siden rammer er representert som arrays, vil vi ved å trekke fra disse arrayene for to påfølgende rammer få pikselforskjellen, som bør være lav for statiske rammer, og bli høyere når det er betydelig bevegelse i bildet.
 
-![Bilde av videorammer og rammeforskjeller](../../../../../translated_images/frame-difference.706f805491a0883c938e16447bf5eb2f7d69e812c7f743cbe7d7c7645168f81f.no.png)
+![Bilde av videorammer og rammeforskjeller](../../../../../translated_images/no/frame-difference.706f805491a0883c.webp)
 
 > Bilde fra [OpenCV.ipynb](OpenCV.ipynb)
 
@@ -89,7 +80,7 @@ I vår [OpenCV Notebook](OpenCV.ipynb) gir vi noen eksempler på når datamaskin
    - **Tett optisk flyt** beregner vektorfeltet som viser hvor hver piksel beveger seg.
    - **Sparsom optisk flyt** er basert på å ta noen distinkte funksjoner i bildet (f.eks. kanter) og bygge deres bane fra ramme til ramme.
 
-![Bilde av optisk flyt](../../../../../translated_images/optical.1f4a94464579a83a10784f3c07fe7228514714b96782edf50e70ccd59d2d8c4f.no.png)
+![Bilde av optisk flyt](../../../../../translated_images/no/optical.1f4a94464579a83a.webp)
 
 > Bilde fra [OpenCV.ipynb](OpenCV.ipynb)
 
@@ -115,7 +106,7 @@ Les mer om optisk flyt [i denne flotte veiledningen](https://learnopencv.com/opt
 
 I denne laben skal du ta en video med enkle bevegelser, og målet ditt er å trekke ut opp/ned/venstre/høyre bevegelser ved hjelp av optisk flyt.
 
-<img src="images/palm-movement.png" width="30%" alt="Palm Movement Frame"/>
+<img src="../../../../../translated_images/no/palm-movement.341495f0e9c47da3.webp" width="30%" alt="Palm Movement Frame"/>
 
 ---
 

@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "51be6057374d01d70e07dd5ec88ebc0d",
-  "translation_date": "2025-09-23T15:09:16+00:00",
-  "source_file": "lessons/5-NLP/17-GenerativeNetworks/README.md",
-  "language_code": "sl"
-}
--->
 # Generativne mreže
 
 ## [Predhodni kviz](https://ff-quizzes.netlify.app/en/ai/quiz/33)
@@ -19,7 +10,7 @@ V arhitekturi RNN, ki smo jo obravnavali v prejšnji enoti, je vsaka enota RNN p
 
 To omogoča različne nevronske arhitekture, prikazane na spodnji sliki:
 
-![Slika, ki prikazuje pogoste vzorce rekurentnih nevronskih mrež.](../../../../../translated_images/unreasonable-effectiveness-of-rnn.541ead816778f42dce6c42d8a56c184729aa2378d059b851be4ce12b993033df.sl.jpg)
+![Slika, ki prikazuje pogoste vzorce rekurentnih nevronskih mrež.](../../../../../translated_images/sl/unreasonable-effectiveness-of-rnn.541ead816778f42d.webp)
 
 > Slika iz blog objave [Unreasonable Effectiveness of Recurrent Neural Networks](http://karpathy.github.io/2015/05/21/rnn-effectiveness/) avtorja [Andrej Karpaty](http://karpathy.github.io/)
 
@@ -32,11 +23,11 @@ V tej enoti se bomo osredotočili na preproste generativne modele, ki nam pomaga
 
 To RNN bomo trenirali za generiranje besedila korak za korakom. Na vsakem koraku bomo vzeli zaporedje znakov dolžine `nchars` in mreži naročili, naj za vsak vhodni znak ustvari naslednji izhodni znak:
 
-![Slika, ki prikazuje primer generiranja besede 'HELLO' z RNN.](../../../../../translated_images/rnn-generate.56c54afb52f9781d63a7c16ea9c1b86cb70e6e1eae6a742b56b7b37468576b17.sl.png)
+![Slika, ki prikazuje primer generiranja besede 'HELLO' z RNN.](../../../../../translated_images/sl/rnn-generate.56c54afb52f9781d.webp)
 
 Pri generiranju besedila (med inferenco) začnemo z nekim **pozivom**, ki ga prenesemo skozi RNN celice za generiranje vmesnega stanja, nato pa se začne generiranje. Generiramo en znak naenkrat, stanje in generirani znak pa prenesemo v drugo RNN celico za generiranje naslednjega, dokler ne generiramo dovolj znakov.
 
-<img src="images/rnn-generate-inf.png" width="60%"/>
+<img src="../../../../../translated_images/sl/rnn-generate-inf.5168dc65e0370eea.webp" width="60%"/>
 
 > Slika avtorja
 

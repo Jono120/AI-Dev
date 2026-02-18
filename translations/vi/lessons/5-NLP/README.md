@@ -1,15 +1,6 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "8ef02a9318257ea140ed3ed74442096d",
-  "translation_date": "2025-08-29T12:41:19+00:00",
-  "source_file": "lessons/5-NLP/README.md",
-  "language_code": "vi"
-}
--->
 # Xử lý Ngôn ngữ Tự nhiên
 
-![Tóm tắt các nhiệm vụ NLP trong một hình vẽ](../../../../translated_images/ai-nlp.b22dcb8ca4707ceaee8576db1c5f4089c8cac2f454e9e03ea554f07fda4556b8.vi.png)
+![Tóm tắt các nhiệm vụ NLP trong một hình vẽ](../../../../translated_images/vi/ai-nlp.b22dcb8ca4707cea.webp)
 
 Trong phần này, chúng ta sẽ tập trung vào việc sử dụng Mạng Nơ-ron để xử lý các nhiệm vụ liên quan đến **Xử lý Ngôn ngữ Tự nhiên (NLP)**. Có rất nhiều vấn đề NLP mà chúng ta muốn máy tính có thể giải quyết:
 

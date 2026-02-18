@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "51be6057374d01d70e07dd5ec88ebc0d",
-  "translation_date": "2025-09-23T12:33:35+00:00",
-  "source_file": "lessons/5-NLP/17-GenerativeNetworks/README.md",
-  "language_code": "fa"
-}
--->
 # شبکه‌های مولد
 
 ## [پیش‌زمینه‌ی درس](https://ff-quizzes.netlify.app/en/ai/quiz/33)
@@ -19,7 +10,7 @@ CO_OP_TRANSLATOR_METADATA:
 
 این قابلیت امکان ایجاد معماری‌های عصبی مختلفی را فراهم می‌کند که در تصویر زیر نشان داده شده‌اند:
 
-![تصویری که الگوهای رایج شبکه‌های عصبی بازگشتی را نشان می‌دهد.](../../../../../translated_images/unreasonable-effectiveness-of-rnn.541ead816778f42dce6c42d8a56c184729aa2378d059b851be4ce12b993033df.fa.jpg)
+![تصویری که الگوهای رایج شبکه‌های عصبی بازگشتی را نشان می‌دهد.](../../../../../translated_images/fa/unreasonable-effectiveness-of-rnn.541ead816778f42d.webp)
 
 > تصویر از پست وبلاگ [Unreasonable Effectiveness of Recurrent Neural Networks](http://karpathy.github.io/2015/05/21/rnn-effectiveness/) نوشته‌ی [Andrej Karpaty](http://karpathy.github.io/)
 
@@ -32,11 +23,11 @@ CO_OP_TRANSLATOR_METADATA:
 
 ما این RNN را آموزش خواهیم داد تا متن را مرحله به مرحله تولید کند. در هر مرحله، یک دنباله از کاراکترها با طول `nchars` می‌گیریم و از شبکه می‌خواهیم کاراکتر خروجی بعدی را برای هر کاراکتر ورودی تولید کند:
 
-![تصویری که یک مثال از تولید کلمه‌ی 'HELLO' توسط RNN را نشان می‌دهد.](../../../../../translated_images/rnn-generate.56c54afb52f9781d63a7c16ea9c1b86cb70e6e1eae6a742b56b7b37468576b17.fa.png)
+![تصویری که یک مثال از تولید کلمه‌ی 'HELLO' توسط RNN را نشان می‌دهد.](../../../../../translated_images/fa/rnn-generate.56c54afb52f9781d.webp)
 
 هنگام تولید متن (در زمان استنتاج)، با یک **پیش‌زمینه** شروع می‌کنیم که از طریق سلول‌های RNN عبور داده می‌شود تا حالت میانی آن تولید شود، و سپس از این حالت تولید آغاز می‌شود. ما یک کاراکتر در هر زمان تولید می‌کنیم و حالت و کاراکتر تولید شده را به یک سلول RNN دیگر می‌دهیم تا کاراکتر بعدی را تولید کند، تا زمانی که تعداد کافی کاراکتر تولید کنیم.
 
-<img src="images/rnn-generate-inf.png" width="60%"/>
+<img src="../../../../../translated_images/fa/rnn-generate-inf.5168dc65e0370eea.webp" width="60%"/>
 
 > تصویر توسط نویسنده
 

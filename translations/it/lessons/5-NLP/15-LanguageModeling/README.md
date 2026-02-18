@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "7ba20f54a5bfcd6521018cdfb17c7c57",
-  "translation_date": "2025-09-23T08:34:42+00:00",
-  "source_file": "lessons/5-NLP/15-LanguageModeling/README.md",
-  "language_code": "it"
-}
--->
 # Modellazione del Linguaggio
 
 Gli embedding semantici, come Word2Vec e GloVe, rappresentano in realtà un primo passo verso la **modellazione del linguaggio** - la creazione di modelli che in qualche modo *comprendono* (o *rappresentano*) la natura del linguaggio.
@@ -23,7 +14,7 @@ Nei nostri esempi precedenti, abbiamo utilizzato embedding semantici pre-addestr
 * **Continuous Bag-of-Words** (CBoW), in cui si predice il token centrale $W_0$ in una sequenza di token $W_{-N}$, ..., $W_N$.
 * **Skip-gram**, in cui si predice un insieme di token vicini {$W_{-N},\dots, W_{-1}, W_1,\dots, W_N$} a partire dal token centrale $W_0$.
 
-![immagine tratta da un articolo sulla conversione di parole in vettori](../../../../../translated_images/example-algorithms-for-converting-words-to-vectors.fbe9207a726922f6f0f5de66427e8a6eda63809356114e28fb1fa5f4a83ebda7.it.png)
+![immagine tratta da un articolo sulla conversione di parole in vettori](../../../../../translated_images/it/example-algorithms-for-converting-words-to-vectors.fbe9207a726922f6.webp)
 
 > Immagine tratta da [questo articolo](https://arxiv.org/pdf/1301.3781.pdf)
 

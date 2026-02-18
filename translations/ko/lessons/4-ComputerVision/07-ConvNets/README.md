@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "a560d5b845962cf33dc102266e409568",
-  "translation_date": "2025-09-23T13:17:54+00:00",
-  "source_file": "lessons/4-ComputerVision/07-ConvNets/README.md",
-  "language_code": "ko"
-}
--->
 # 컨볼루션 신경망
 
 이전에 신경망이 이미지를 처리하는 데 매우 효과적이며, 단일 계층 퍼셉트론조차도 MNIST 데이터셋의 손글씨 숫자를 합리적인 정확도로 인식할 수 있다는 것을 살펴보았습니다. 하지만 MNIST 데이터셋은 매우 특별하며, 모든 숫자가 이미지 중앙에 위치해 있어 작업이 더 간단해집니다.
@@ -17,14 +8,14 @@ CO_OP_TRANSLATOR_METADATA:
 
 패턴을 추출하기 위해 **컨볼루션 필터**라는 개념을 사용할 것입니다. 이미지는 2D-매트릭스 또는 색상 깊이를 가진 3D-텐서로 표현됩니다. 필터를 적용한다는 것은 비교적 작은 **필터 커널** 매트릭스를 가져와 원본 이미지의 각 픽셀에 대해 이웃한 점들과 가중 평균을 계산하는 것을 의미합니다. 이를 작은 창이 전체 이미지를 슬라이딩하며 필터 커널 매트릭스의 가중치에 따라 모든 픽셀을 평균화하는 것으로 볼 수 있습니다.
 
-![수직 엣지 필터](../../../../../translated_images/filter-vert.b7148390ca0bc356ddc7e55555d2481819c1e86ddde9dce4db5e71a69d6f887f.ko.png) | ![수평 엣지 필터](../../../../../translated_images/filter-horiz.59b80ed4feb946efbe201a7fe3ca95abb3364e266e6fd90820cb893b4d3a6dda.ko.png)
+![수직 엣지 필터](../../../../../translated_images/ko/filter-vert.b7148390ca0bc356.webp) | ![수평 엣지 필터](../../../../../translated_images/ko/filter-horiz.59b80ed4feb946ef.webp)
 ----|----
 
 > 이미지 제공: Dmitry Soshnikov
 
 예를 들어, MNIST 숫자에 3x3 수직 엣지 및 수평 엣지 필터를 적용하면 원본 이미지에서 수직 및 수평 엣지가 있는 부분을 강조 표시(예: 높은 값)할 수 있습니다. 따라서 이 두 필터는 엣지를 "찾는" 데 사용할 수 있습니다. 마찬가지로, 다른 저수준 패턴을 찾기 위해 다양한 필터를 설계할 수 있습니다:
 
-<img src="images/lmfilters.jpg" width="500" align="center"/>
+<img src="../../../../../translated_images/ko/lmfilters.ea9e4868a82cf74c.webp" width="500" align="center"/>
 
 > 이미지 출처: [Leung-Malik 필터 뱅크](https://www.robots.ox.ac.uk/~vgg/research/texclass/filters.html)
 
@@ -38,7 +29,7 @@ CNN이 작동하는 방식은 다음과 같은 중요한 아이디어를 기반�
 * 필터가 자동으로 학습되도록 네트워크를 설계할 수 있다.
 * 원본 이미지뿐만 아니라 고수준 특징에서도 패턴을 찾는 데 동일한 접근 방식을 사용할 수 있다. 따라서 CNN 특징 추출은 저수준 픽셀 조합에서 시작하여 이미지 부분의 고수준 조합까지 특징의 계층 구조에서 작동한다.
 
-![계층적 특징 추출](../../../../../translated_images/FeatureExtractionCNN.d9b456cbdae7cb643fde3032b81b2940e3cf8be842e29afac3f482725ba7f95c.ko.png)
+![계층적 특징 추출](../../../../../translated_images/ko/FeatureExtractionCNN.d9b456cbdae7cb64.webp)
 
 > 이미지 출처: [Hislop-Lynch의 논문](https://www.semanticscholar.org/paper/Computer-vision-based-pedestrian-trajectory-Hislop-Lynch/26e6f74853fc9bbb7487b06dc2cf095d36c9021d), [그들의 연구](https://dl.acm.org/doi/abs/10.1145/1553374.1553453)를 기반으로 함
 
@@ -55,9 +46,9 @@ CNN이 작동하는 방식은 다음과 같은 중요한 아이디어를 기반�
 
 예를 들어, 2014년 ImageNet의 상위 5개 분류에서 92.7%의 정확도를 달성한 VGG-16 네트워크의 아키텍처를 살펴봅시다:
 
-![ImageNet 계층](../../../../../translated_images/vgg-16-arch1.d901a5583b3a51baeaab3e768567d921e5d54befa46e1e642616c5458c934028.ko.jpg)
+![ImageNet 계층](../../../../../translated_images/ko/vgg-16-arch1.d901a5583b3a51ba.webp)
 
-![ImageNet 피라미드](../../../../../translated_images/vgg-16-arch.64ff2137f50dd49fdaa786e3f3a975b3f22615efd13efb19c5d22f12e01451a1.ko.jpg)
+![ImageNet 피라미드](../../../../../translated_images/ko/vgg-16-arch.64ff2137f50dd49f.webp)
 
 > 이미지 출처: [Researchgate](https://www.researchgate.net/figure/Vgg16-model-structure-To-get-the-VGG-NIN-model-we-replace-the-2-nd-4-th-6-th-7-th_fig2_335194493)
 

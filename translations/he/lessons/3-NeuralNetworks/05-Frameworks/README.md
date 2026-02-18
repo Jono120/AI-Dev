@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "ddd216f558a255260a9374008002c971",
-  "translation_date": "2025-09-23T10:22:33+00:00",
-  "source_file": "lessons/3-NeuralNetworks/05-Frameworks/README.md",
-  "language_code": "he"
-}
--->
 # מסגרות רשתות עצביות
 
 כפי שלמדנו כבר, כדי לאמן רשתות עצביות בצורה יעילה, יש לבצע שני דברים:
@@ -58,7 +49,7 @@ Overfitting הוא מושג חשוב ביותר בלמידת מכונה, וחש�
 
 שקלו את הבעיה הבאה של התאמת 5 נקודות (מיוצגות על ידי `x` בגרפים למטה):
 
-![linear](../../../../../translated_images/overfit1.f24b71c6f652e59e6bed7245ffbeaecc3ba320e16e2221f6832b432052c4da43.he.jpg) | ![overfit](../../../../../translated_images/overfit2.131f5800ae10ca5e41d12a411f5f705d9ee38b1b10916f284b787028dd55cc1c.he.jpg)
+![linear](../../../../../translated_images/he/overfit1.f24b71c6f652e59e.webp) | ![overfit](../../../../../translated_images/he/overfit2.131f5800ae10ca5e.webp)
 -------------------------|--------------------------
 **מודל ליניארי, 2 פרמטרים** | **מודל לא ליניארי, 7 פרמטרים**
 שגיאת אימון = 5.3 | שגיאת אימון = 0
@@ -79,7 +70,7 @@ Overfitting הוא מושג חשוב ביותר בלמידת מכונה, וחש�
 
 כפי שניתן לראות מהגרף למעלה, ניתן לזהות Overfitting על ידי שגיאת אימון נמוכה מאוד ושגיאת ולידציה גבוהה. בדרך כלל במהלך האימון נראה ששגיאות האימון והוולידציה מתחילות לרדת, ואז בשלב מסוים שגיאת הוולידציה עשויה להפסיק לרדת ולהתחיל לעלות. זה יהיה סימן ל-Overfitting, ואינדיקציה לכך שכדאי להפסיק את האימון בנקודה זו (או לפחות לשמור עותק של המודל).
 
-![overfitting](../../../../../translated_images/Overfitting.408ad91cd90b4371d0a81f4287e1409c359751adeb1ae450332af50e84f08c3e.he.png)
+![overfitting](../../../../../translated_images/he/Overfitting.408ad91cd90b4371.webp)
 
 ## כיצד למנוע Overfitting
 

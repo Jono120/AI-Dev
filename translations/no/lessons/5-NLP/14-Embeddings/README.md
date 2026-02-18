@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "b708c9b85b833864c73c6281f1e6b96e",
-  "translation_date": "2025-09-23T09:47:33+00:00",
-  "source_file": "lessons/5-NLP/14-Embeddings/README.md",
-  "language_code": "no"
-}
--->
 # Innebygginger
 
 ## [Quiz før forelesning](https://ff-quizzes.netlify.app/en/ai/quiz/27)
@@ -19,7 +10,7 @@ Så, innebyggingslaget vil ta et ord som input og produsere en output-vektor med
 
 Ved å bruke et innebyggingslag som første lag i vårt klassifikatornettverk, kan vi bytte fra en bag-of-words til **embedding bag**-modell, hvor vi først konverterer hvert ord i teksten vår til tilsvarende innebygging, og deretter beregner en aggregatfunksjon over alle disse innebyggingene, som `sum`, `average` eller `max`.  
 
-![Bilde som viser en innebyggingsklassifikator for fem sekvensord.](../../../../../translated_images/embedding-classifier-example.b77f021a7ee67eeec8e68bfe11636c5b97d6eaa067515a129bfb1d0034b1ac5b.no.png)
+![Bilde som viser en innebyggingsklassifikator for fem sekvensord.](../../../../../translated_images/no/embedding-classifier-example.b77f021a7ee67eee.webp)
 
 > Bilde av forfatteren
 
@@ -40,7 +31,7 @@ For å oppnå dette må vi forhåndstrene innebyggingsmodellen vår på en stor 
 
 CBoW er raskere, mens skip-gram er tregere, men gjør en bedre jobb med å representere sjeldne ord.
 
-![Bilde som viser både CBoW- og Skip-Gram-algoritmer for å konvertere ord til vektorer.](../../../../../translated_images/example-algorithms-for-converting-words-to-vectors.fbe9207a726922f6f0f5de66427e8a6eda63809356114e28fb1fa5f4a83ebda7.no.png)
+![Bilde som viser både CBoW- og Skip-Gram-algoritmer for å konvertere ord til vektorer.](../../../../../translated_images/no/example-algorithms-for-converting-words-to-vectors.fbe9207a726922f6.webp)
 
 > Bilde fra [denne artikkelen](https://arxiv.org/pdf/1301.3781.pdf)
 

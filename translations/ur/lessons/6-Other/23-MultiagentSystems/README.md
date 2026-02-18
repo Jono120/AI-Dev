@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "38a1185ae3d54b180378bbd71ae3ef16",
-  "translation_date": "2025-09-23T06:39:52+00:00",
-  "source_file": "lessons/6-Other/23-MultiagentSystems/README.md",
-  "language_code": "ur"
-}
--->
 # ملٹی ایجنٹ سسٹمز
 
 ذہانت حاصل کرنے کے ممکنہ طریقوں میں سے ایک **ابھرتا ہوا** (یا **ہم آہنگ**) طریقہ ہے، جو اس حقیقت پر مبنی ہے کہ بہت سے نسبتاً سادہ ایجنٹس کے مشترکہ رویے کے نتیجے میں پورے نظام کا زیادہ پیچیدہ (یا ذہین) رویہ پیدا ہو سکتا ہے۔ نظریاتی طور پر، یہ [اجتماعی ذہانت](https://en.wikipedia.org/wiki/Collective_intelligence)، [ابھرتا ہوا نظریہ](https://en.wikipedia.org/wiki/Global_brain)، اور [ارتقائی سائبرنیٹکس](https://en.wikipedia.org/wiki/Global_brain) کے اصولوں پر مبنی ہے، جو بیان کرتے ہیں کہ اعلیٰ سطح کے نظام کچھ اضافی قدر حاصل کرتے ہیں جب انہیں نچلی سطح کے نظاموں سے مناسب طریقے سے جوڑا جائے (*میٹاسسٹم ٹرانزیشن کا اصول*).
@@ -60,7 +51,7 @@ ask turtles [
 
 نیٹ لوگو کی ایک بہترین بات یہ ہے کہ اس میں کام کرنے والے ماڈلز کی ایک لائبریری موجود ہے جسے آپ آزما سکتے ہیں۔ **File &rightarrow; Models Library** پر جائیں، اور آپ کے پاس ماڈلز کے انتخاب کے لیے کئی زمرے ہیں۔
 
-<img alt="NetLogo Models Library" src="images/NetLogo-ModelLib.png" width="60%"/>
+<img alt="NetLogo Models Library" src="../../../../../translated_images/ur/NetLogo-ModelLib.efe023afb4763c05.webp" width="60%"/>
 
 > دمتری سوشنیکوف کے ذریعہ ماڈلز لائبریری کا اسکرین شاٹ
 
@@ -70,7 +61,7 @@ ask turtles [
 
 ماڈل کھولنے کے بعد، آپ کو نیٹ لوگو کے مرکزی اسکرین پر لے جایا جاتا ہے۔ یہاں ایک نمونہ ماڈل ہے جو بھیڑیوں اور بھیڑوں کی آبادی کو محدود وسائل (گھاس) کے ساتھ بیان کرتا ہے۔
 
-![NetLogo Main Screen](../../../../../translated_images/NetLogo-Main.32653711ec1a01b3cab22ec0b148e64193d0b979b055285bef329d5e3d6958c5.ur.png)
+![NetLogo Main Screen](../../../../../translated_images/ur/NetLogo-Main.32653711ec1a01b3.webp)
 
 > دمتری سوشنیکوف کے ذریعہ اسکرین شاٹ
 

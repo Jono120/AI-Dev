@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "178c0b5ee5395733eb18aec51e71a0a9",
-  "translation_date": "2025-09-23T10:48:52+00:00",
-  "source_file": "lessons/4-ComputerVision/08-TransferLearning/README.md",
-  "language_code": "ms"
-}
--->
 # Rangkaian Pra-latih dan Pembelajaran Pemindahan
 
 Melatih CNN boleh mengambil masa yang lama, dan memerlukan banyak data untuk tugas tersebut. Walau bagaimanapun, sebahagian besar masa dihabiskan untuk mempelajari penapis tahap rendah terbaik yang boleh digunakan oleh rangkaian untuk mengekstrak corak daripada imej. Satu persoalan semula jadi timbul - bolehkah kita menggunakan rangkaian neural yang telah dilatih pada satu dataset dan menyesuaikannya untuk mengklasifikasikan imej yang berbeza tanpa memerlukan proses latihan penuh?
@@ -29,7 +20,7 @@ Kedua-dua Keras dan PyTorch mengandungi fungsi untuk memuatkan berat rangkaian n
 
 Berikut adalah contoh ciri-ciri yang diekstrak daripada gambar kucing oleh rangkaian VGG-16:
 
-![Ciri-ciri yang diekstrak oleh VGG-16](../../../../../translated_images/features.6291f9c7ba3a0b951af88fc9864632b9115365410765680680d30c927dd67354.ms.png)
+![Ciri-ciri yang diekstrak oleh VGG-16](../../../../../translated_images/ms/features.6291f9c7ba3a0b95.webp)
 
 ## Dataset Kucing vs. Anjing
 
@@ -48,19 +39,19 @@ Rangkaian neural pra-latih mengandungi pelbagai corak dalam "otaknya", termasuk 
 
 Satu pendekatan yang boleh kita ambil adalah bermula dengan imej rawak, dan kemudian cuba menggunakan teknik **pengoptimuman penurunan kecerunan** untuk menyesuaikan imej tersebut sedemikian rupa sehingga rangkaian mula berfikir bahawa ia adalah kucing.
 
-![Gelung Pengoptimuman Imej](../../../../../translated_images/ideal-cat-loop.999fbb8ff306e044f997032f4eef9152b453e6a990e449bbfb107de2493cc37e.ms.png)
+![Gelung Pengoptimuman Imej](../../../../../translated_images/ms/ideal-cat-loop.999fbb8ff306e044.webp)
 
 Walau bagaimanapun, jika kita melakukan ini, kita akan mendapat sesuatu yang sangat mirip dengan bunyi rawak. Ini kerana *terdapat banyak cara untuk membuat rangkaian berfikir imej input adalah kucing*, termasuk beberapa yang tidak masuk akal secara visual. Walaupun imej-imej tersebut mengandungi banyak corak yang tipikal untuk kucing, tiada apa yang menghalang mereka daripada menjadi jelas secara visual.
 
 Untuk memperbaiki hasilnya, kita boleh menambah satu lagi istilah ke dalam fungsi kehilangan, yang dipanggil **kehilangan variasi**. Ia adalah metrik yang menunjukkan betapa serupa piksel-piksel yang bersebelahan dalam imej. Meminimumkan kehilangan variasi menjadikan imej lebih licin, dan menghilangkan bunyi - dengan itu mendedahkan corak yang lebih menarik secara visual. Berikut adalah contoh imej "ideal" seperti itu, yang diklasifikasikan sebagai kucing dan zebra dengan kebarangkalian tinggi:
 
-![Kucing Ideal](../../../../../translated_images/ideal-cat.203dd4597643d6b0bd73038b87f9c0464322725e3a06ab145d25d4a861c70592.ms.png) | ![Zebra Ideal](../../../../../translated_images/ideal-zebra.7f70e8b54ee15a7a314000bb5df38a6cfe086ea04d60df4d3ef313d046b98a2b.ms.png)
+![Kucing Ideal](../../../../../translated_images/ms/ideal-cat.203dd4597643d6b0.webp) | ![Zebra Ideal](../../../../../translated_images/ms/ideal-zebra.7f70e8b54ee15a7a.webp)
 -----|-----
  *Kucing Ideal* | *Zebra Ideal*
 
 Pendekatan serupa boleh digunakan untuk melakukan apa yang dipanggil **serangan adversarial** pada rangkaian neural. Katakan kita ingin mengelirukan rangkaian neural dan membuat anjing kelihatan seperti kucing. Jika kita mengambil imej anjing, yang dikenali oleh rangkaian sebagai anjing, kita kemudian boleh mengubahnya sedikit menggunakan pengoptimuman penurunan kecerunan, sehingga rangkaian mula mengklasifikasikannya sebagai kucing:
 
-![Gambar Anjing](../../../../../translated_images/original-dog.8f68a67d2fe0911f33041c0f7fce8aa4ea919f9d3917ec4b468298522aeb6356.ms.png) | ![Gambar anjing yang diklasifikasikan sebagai kucing](../../../../../translated_images/adversarial-dog.d9fc7773b0142b89752539bfbf884118de845b3851c5162146ea0b8809fc820f.ms.png)
+![Gambar Anjing](../../../../../translated_images/ms/original-dog.8f68a67d2fe0911f.webp) | ![Gambar anjing yang diklasifikasikan sebagai kucing](../../../../../translated_images/ms/adversarial-dog.d9fc7773b0142b89.webp)
 -----|-----
 *Gambar asal anjing* | *Gambar anjing yang diklasifikasikan sebagai kucing*
 

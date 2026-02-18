@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "38a1185ae3d54b180378bbd71ae3ef16",
-  "translation_date": "2025-11-25T23:35:33+00:00",
-  "source_file": "lessons/6-Other/23-MultiagentSystems/README.md",
-  "language_code": "te"
-}
--->
 # బహుళ-ఏజెంట్ వ్యవస్థలు
 
 బుద్ధిమత్తను సాధించడానికి ఒక సాధ్యమైన మార్గం అనేది **ఎమర్జెంట్** (లేదా **సినర్జెటిక్**) దృష్టికోణం, ఇది అనేక సాపేక్షంగా సులభమైన ఏజెంట్ల సమ్మిళిత ప్రవర్తన మొత్తం వ్యవస్థ యొక్క మరింత సంక్లిష్టమైన (లేదా బుద్ధిమంతమైన) ప్రవర్తనకు దారితీస్తుందని ఆధారపడింది. స 이 సిద్ధాంతం [సమూహ బుద్ధిమత్త](https://en.wikipedia.org/wiki/Collective_intelligence), [ఎమర్జెంటిజం](https://en.wikipedia.org/wiki/Global_brain) మరియు [ఎవల్యూషనరీ సైబర్నెటిక్స్](https://en.wikipedia.org/wiki/Global_brain) సూత్రాలపై ఆధారపడి ఉంటుంది, ఇవి తక్కువ స్థాయి వ్యవస్థల నుండి సరైన రీతిలో కలిపినప్పుడు ఉన్నత స్థాయి వ్యవస్థలకు అదనపు విలువ లభిస్తుందని (ఇది *మెటాసిస్టమ్ ట్రాన్సిషన్ సూత్రం* అని పిలవబడుతుంది) చెబుతాయి.
@@ -61,7 +52,7 @@ ask turtles [
 
 నెట్‌లాగోలో ఉన్న గొప్ప విషయం ఏమిటంటే, మీరు ప్రయత్నించగల పని చేసే మోడల్స్ లైబ్రరీ ఉంది. **File → Models Library**కి వెళ్లండి, మీరు ఎన్నుకోవడానికి అనేక మోడల్స్ వర్గాలు ఉంటాయి.
 
-<img alt="NetLogo Models Library" src="../../../../../translated_images/NetLogo-ModelLib.efe023afb4763c059704a8ac0e2cd5e51889b117e8eac02aaa5334cfe1c52c13.te.png" width="60%"/>
+<img alt="NetLogo Models Library" src="../../../../../translated_images/te/NetLogo-ModelLib.efe023afb4763c05.webp" width="60%"/>
 
 > మోడల్స్ లైబ్రరీ స్క్రీన్‌షాట్ - Dmitry Soshnikov
 
@@ -71,7 +62,7 @@ ask turtles [
 
 మోడల్ తెరిచిన తర్వాత, మీరు ప్రధాన నెట్‌లాగో స్క్రీన్‌కు తీసుకువెళ్ళబడతారు. ఇక్కడ ఒక నమూనా మోడల్ ఉంది, ఇది పరిమిత వనరులు (గడ్డి) ఉన్నప్పుడు నక్కలు మరియు గొర్రెల జనాభాను వివరించేది.
 
-![NetLogo Main Screen](../../../../../translated_images/NetLogo-Main.32653711ec1a01b3cab22ec0b148e64193d0b979b055285bef329d5e3d6958c5.te.png)
+![NetLogo Main Screen](../../../../../translated_images/te/NetLogo-Main.32653711ec1a01b3.webp)
 
 > స్క్రీన్‌షాట్ - Dmitry Soshnikov
 

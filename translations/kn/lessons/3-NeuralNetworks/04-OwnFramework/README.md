@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "789d6c3fb6fc7948a470b33078a5983a",
-  "translation_date": "2025-11-25T21:43:22+00:00",
-  "source_file": "lessons/3-NeuralNetworks/04-OwnFramework/README.md",
-  "language_code": "kn"
-}
--->
 # ನ್ಯೂರಲ್ ನೆಟ್‌ವರ್ಕ್‌ಗಳಿಗೆ ಪರಿಚಯ. ಬಹು-ಪರತೆಯ ಪರ್ಸೆಪ್ಟ್ರಾನ್
 
 ಹಿಂದಿನ ವಿಭಾಗದಲ್ಲಿ, ನೀವು ಅತ್ಯಂತ ಸರಳ ನ್ಯೂರಲ್ ನೆಟ್‌ವರ್ಕ್ ಮಾದರಿ - ಒಂದು-ಪರತೆಯ ಪರ್ಸೆಪ್ಟ್ರಾನ್, ಒಂದು ರೇಖೀಯ ಎರಡು ವರ್ಗದ ವರ್ಗೀಕರಣ ಮಾದರಿಯನ್ನು ಕಲಿತಿದ್ದೀರಿ.
@@ -65,7 +56,7 @@ CO_OP_TRANSLATOR_METADATA:
 
 ಎಲ್ಲಾ ಅಭಿವ್ಯಕ್ತಿಗಳ ಎಡಭಾಗವು ಒಂದೇ ಆಗಿರುವುದರಿಂದ, ನಾವು ಲಾಸ್ ಫಂಕ್ಷನ್‌ನಿಂದ ಪ್ರಾರಂಭಿಸಿ ಗಣನಾತ್ಮಕ ಗ್ರಾಫ್ ಮೂಲಕ "ಹಿಂದಕ್ಕೆ" ಹೋಗಿ ಡೆರಿವೇಟಿವ್‌ಗಳನ್ನು ಪರಿಣಾಮಕಾರಿಯಾಗಿ ಲೆಕ್ಕಿಸಬಹುದು. ಆದ್ದರಿಂದ ಬಹು-ಪರತೆಯ ಪರ್ಸೆಪ್ಟ್ರಾನ್ ತರಬೇತಿಯ ವಿಧಾನವನ್ನು **ಬ್ಯಾಕ್‌ಪ್ರೊಪಾಗೇಶನ್** ಅಥವಾ 'ಬ್ಯಾಕ್‌ಪ್ರೊಪ್' ಎಂದು ಕರೆಯುತ್ತಾರೆ.
 
-<img alt="compute graph" src="../../../../../translated_images/ComputeGraphGrad.4626252c0de035075e5cd2b7f71b776d5e3e8f64f2dc472b4420d3fdfaf53ba8.kn.png"/>
+<img alt="compute graph" src="../../../../../translated_images/kn/ComputeGraphGrad.4626252c0de03507.webp"/>
 
 > TODO: ಚಿತ್ರ ಉಲ್ಲೇಖ
 

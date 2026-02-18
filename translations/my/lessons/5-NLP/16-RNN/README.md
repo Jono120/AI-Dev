@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "e2273cc150380a5e191903cea858f021",
-  "translation_date": "2025-09-23T15:25:46+00:00",
-  "source_file": "lessons/5-NLP/16-RNN/README.md",
-  "language_code": "my"
-}
--->
 # Recurrent Neural Networks
 
 ## [Pre-lecture quiz](https://ff-quizzes.netlify.app/en/ai/quiz/31)
@@ -15,7 +6,7 @@ CO_OP_TRANSLATOR_METADATA:
 
 စာသားအစီအစဉ်၏ အဓိပ္ပါယ်ကို ဖမ်းဆီးရန် **recurrent neural network** (RNN) ဟုခေါ်သော neural network architecture တစ်ခုကို အသုံးပြုရန် လိုအပ်သည်။ RNN တွင် ကျွန်ုပ်တို့၏ စာကြောင်းကို network အတွင်းသို့ သင်္ကေတတစ်ခုစီဖြင့် ဖြတ်သွားပြီး network သည် **state** တစ်ခုကို ထုတ်လုပ်သည်၊ ထို့နောက် ကျွန်ုပ်တို့သည် နောက်ထပ်သင်္ကေတနှင့်အတူ network သို့ ပြန်လည်ပေးပို့သည်။
 
-![RNN](../../../../../translated_images/rnn.27f5c29c53d727b546ad3961637a267f0fe9ec5ab01f2a26a853c92fcefbb574.my.png)
+![RNN](../../../../../translated_images/my/rnn.27f5c29c53d727b5.webp)
 
 > ပုံကို စာရေးသူမှ ဖန်တီးသည်
 
@@ -31,7 +22,7 @@ State vectors S<sub>0</sub>,...,S<sub>n</sub> များကို network အ�
 
 ရိုးရှင်းသော RNN cell တစ်ခုတွင် weight matrices နှစ်ခုပါဝင်သည်- input symbol ကို transform လုပ်သော W နှင့် input state ကို transform လုပ်သော H တစ်ခု။ ဤအခြေအနေတွင် network ၏ output ကို &sigma;(W&times;X<sub>i</sub>+H&times;S<sub>i-1</sub>+b) အဖြစ်တွက်ချက်သည်၊ &sigma; သည် activation function ဖြစ်ပြီး b သည် bias ဖြစ်သည်။
 
-<img alt="RNN Cell Anatomy" src="images/rnn-anatomy.png" width="50%"/>
+<img alt="RNN Cell Anatomy" src="../../../../../translated_images/my/rnn-anatomy.79ee3f3920b3294b.webp" width="50%"/>
 
 > ပုံကို စာရေးသူမှ ဖန်တီးသည်
 
@@ -61,7 +52,7 @@ State C ၏ components များကို flags အဖြစ် switch on န
 
 Recurrent network တစ်ခုသည် direction တစ်ခုဖြစ်စေ bidirectional ဖြစ်စေ sequence အတွင်း certain patterns များကို ဖမ်းဆီးပြီး state vector သို့မဟုတ် output သို့ ပေးပို့နိုင်သည်။ Convolutional networks များနှင့်တူပင်၊ ပထမ layer မှ low-level patterns များကို extract လုပ်ပြီး အဆင့်မြင့် patterns များကို ဖမ်းဆီးရန် ပထမ layer အပေါ်တွင် recurrent layer တစ်ခုတိုးတက်စေပြီး **multi-layer RNN** ကို ဖန်တီးနိုင်သည်။ Multi-layer RNN သည် recurrent networks နှစ်ခု သို့မဟုတ် အများကြီးပါဝင်ပြီး ယခင် layer ၏ output ကို နောက်တစ်ခု layer ၏ input အဖြစ် ပေးပို့သည်။
 
-![Image showing a Multilayer long-short-term-memory- RNN](../../../../../translated_images/multi-layer-lstm.dd975e29bb2a59fe58b429db833932d734c81f211cad2783797a9608984acb8c.my.jpg)
+![Image showing a Multilayer long-short-term-memory- RNN](../../../../../translated_images/my/multi-layer-lstm.dd975e29bb2a59fe.webp)
 
 *Fernando López ရေးသားသော [this wonderful post](https://towardsdatascience.com/from-a-lstm-cell-to-a-multilayer-lstm-network-with-pytorch-2899eb5696f3) မှ ပုံ*
 

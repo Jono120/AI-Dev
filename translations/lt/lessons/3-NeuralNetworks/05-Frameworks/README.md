@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "ddd216f558a255260a9374008002c971",
-  "translation_date": "2025-09-23T15:47:56+00:00",
-  "source_file": "lessons/3-NeuralNetworks/05-Frameworks/README.md",
-  "language_code": "lt"
-}
--->
 # Neuroninių tinklų karkasai
 
 Kaip jau išmokome, norint efektyviai treniruoti neuroninius tinklus, reikia atlikti du dalykus:
@@ -58,7 +49,7 @@ Per didelis pritaikymas yra itin svarbi sąvoka mašininio mokymosi srityje, ir 
 
 Apsvarstykite šią problemą, kurioje reikia aproksimuoti 5 taškus (grafikuose pažymėtus `x`):
 
-![linear](../../../../../translated_images/overfit1.f24b71c6f652e59e6bed7245ffbeaecc3ba320e16e2221f6832b432052c4da43.lt.jpg) | ![overfit](../../../../../translated_images/overfit2.131f5800ae10ca5e41d12a411f5f705d9ee38b1b10916f284b787028dd55cc1c.lt.jpg)
+![linear](../../../../../translated_images/lt/overfit1.f24b71c6f652e59e.webp) | ![overfit](../../../../../translated_images/lt/overfit2.131f5800ae10ca5e.webp)
 -------------------------|--------------------------
 **Linijinis modelis, 2 parametrai** | **Nelinijinis modelis, 7 parametrai**
 Mokymo klaida = 5.3 | Mokymo klaida = 0
@@ -79,7 +70,7 @@ Labai svarbu rasti tinkamą pusiausvyrą tarp modelio sudėtingumo (parametrų s
 
 Kaip matote iš aukščiau pateikto grafiko, per didelį pritaikymą galima aptikti pagal labai mažą mokymo klaidą ir didelę validacijos klaidą. Paprastai mokymo metu matysime, kaip tiek mokymo, tiek validacijos klaidos pradeda mažėti, o tada tam tikru momentu validacijos klaida gali nustoti mažėti ir pradėti didėti. Tai bus per didelio pritaikymo ženklas ir indikatorius, kad turėtume sustabdyti mokymą (arba bent jau išsaugoti modelio būseną).
 
-![overfitting](../../../../../translated_images/Overfitting.408ad91cd90b4371d0a81f4287e1409c359751adeb1ae450332af50e84f08c3e.lt.png)
+![overfitting](../../../../../translated_images/lt/Overfitting.408ad91cd90b4371.webp)
 
 ## Kaip išvengti per didelio pritaikymo
 

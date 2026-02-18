@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "3d53d6409f80970f7281a45dee35328a",
-  "translation_date": "2025-10-11T11:18:38+00:00",
-  "source_file": "lessons/4-ComputerVision/06-IntroCV/lab/README.md",
-  "language_code": "ta"
-}
--->
 # ஆப்டிக்கல் ஃப்ளோவை பயன்படுத்தி இயக்கங்களை கண்டறிதல்
 
 [AI for Beginners Curriculum](https://aka.ms/ai-beginners) இல் இருந்து ஆய்வக பணிக்கான ஒதுக்கீடு.
@@ -15,7 +6,7 @@ CO_OP_TRANSLATOR_METADATA:
 
 [இந்த வீடியோவை](../../../../../../lessons/4-ComputerVision/06-IntroCV/lab/palm-movement.mp4) கவனியுங்கள், இதில் ஒரு நபரின் கைப்பிடி நிலையான பின்னணியில் இடது/வலது/மேலே/கீழே நகர்கிறது.
 
-<img src="../../../../../../translated_images/palm-movement.341495f0e9c47da39cc1f99626822a1d20203aa33ff89a86a068f14bea133e84.ta.png" width="30%" alt="கை நகர்வு ஃப்ரேம்"/>
+<img src="../../../../../../translated_images/ta/palm-movement.341495f0e9c47da3.webp" width="30%" alt="கை நகர்வு ஃப்ரேம்"/>
 
 **உங்கள் இலக்கு** ஆப்டிக்கல் ஃப்ளோவை பயன்படுத்தி, வீடியோவின் எந்த பகுதிகள் மேலே/கீழே/இடது/வலது இயக்கங்களை கொண்டுள்ளன என்பதை கண்டறிய வேண்டும்.
 

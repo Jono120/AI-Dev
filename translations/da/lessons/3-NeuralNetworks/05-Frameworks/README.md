@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "ddd216f558a255260a9374008002c971",
-  "translation_date": "2025-09-23T09:34:04+00:00",
-  "source_file": "lessons/3-NeuralNetworks/05-Frameworks/README.md",
-  "language_code": "da"
-}
--->
 # Neural Netværk Frameworks
 
 Som vi allerede har lært, skal vi gøre to ting for at kunne træne neurale netværk effektivt:
@@ -58,7 +49,7 @@ Overfitting er et ekstremt vigtigt begreb inden for maskinlæring, og det er meg
 
 Overvej følgende problem med at approximere 5 punkter (repræsenteret ved `x` på graferne nedenfor):
 
-![linear](../../../../../translated_images/overfit1.f24b71c6f652e59e6bed7245ffbeaecc3ba320e16e2221f6832b432052c4da43.da.jpg) | ![overfit](../../../../../translated_images/overfit2.131f5800ae10ca5e41d12a411f5f705d9ee38b1b10916f284b787028dd55cc1c.da.jpg)
+![linear](../../../../../translated_images/da/overfit1.f24b71c6f652e59e.webp) | ![overfit](../../../../../translated_images/da/overfit2.131f5800ae10ca5e.webp)
 -------------------------|--------------------------
 **Lineær model, 2 parametre** | **Ikke-lineær model, 7 parametre**
 Træningsfejl = 5.3 | Træningsfejl = 0
@@ -79,7 +70,7 @@ Det er meget vigtigt at finde den rette balance mellem modellens kompleksitet (a
 
 Som du kan se på grafen ovenfor, kan overfitting opdages ved en meget lav træningsfejl og en høj valideringsfejl. Normalt under træning vil vi se både trænings- og valideringsfejl begynde at falde, og på et tidspunkt kan valideringsfejlen stoppe med at falde og begynde at stige. Dette vil være et tegn på overfitting og en indikator for, at vi sandsynligvis bør stoppe træningen på dette tidspunkt (eller i det mindste tage et snapshot af modellen).
 
-![overfitting](../../../../../translated_images/Overfitting.408ad91cd90b4371d0a81f4287e1409c359751adeb1ae450332af50e84f08c3e.da.png)
+![overfitting](../../../../../translated_images/da/Overfitting.408ad91cd90b4371.webp)
 
 ## Hvordan man forhindrer overfitting
 

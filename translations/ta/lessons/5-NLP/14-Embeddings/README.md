@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "b708c9b85b833864c73c6281f1e6b96e",
-  "translation_date": "2025-10-11T11:40:00+00:00",
-  "source_file": "lessons/5-NLP/14-Embeddings/README.md",
-  "language_code": "ta"
-}
--->
 # எம்பெடிங்குகள்
 
 ## [முன்-வகுப்பு வினாடி வினா](https://ff-quizzes.netlify.app/en/ai/quiz/27)
@@ -19,7 +10,7 @@ BoW அல்லது TF/IDF அடிப்படையில் வகைப�
 
 எங்கள் வகைப்பாட்டாளர் நெட்வொர்க்கில் முதல் லேயராக எம்பெடிங் லேயரைப் பயன்படுத்துவதன் மூலம், BoW மாடலிலிருந்து **embedding bag** மாடலுக்கு மாறலாம், இதில் முதலில் எங்கள் உரையில் உள்ள ஒவ்வொரு வார்த்தையையும் தொடர்புடைய எம்பெடிங்காக மாற்றி, பின்னர் அந்த எம்பெடிங்குகளின் மீது `sum`, `average` அல்லது `max` போன்ற சில தொகுப்பு செயல்பாடுகளை கணக்கிடலாம்.
 
-![ஐந்து வரிசை வார்த்தைகளுக்கான எம்பெடிங் வகைப்பாட்டாளரை காட்டும் படம்.](../../../../../translated_images/embedding-classifier-example.b77f021a7ee67eeec8e68bfe11636c5b97d6eaa067515a129bfb1d0034b1ac5b.ta.png)
+![ஐந்து வரிசை வார்த்தைகளுக்கான எம்பெடிங் வகைப்பாட்டாளரை காட்டும் படம்.](../../../../../translated_images/ta/embedding-classifier-example.b77f021a7ee67eee.webp)
 
 > படத்தை உருவாக்கியவர்
 
@@ -40,7 +31,7 @@ BoW அல்லது TF/IDF அடிப்படையில் வகைப�
 
 CBoW வேகமாக செயல்படுகிறது, ஆனால் skip-gram மெதுவாக செயல்படுகிறது, ஆனால் அரிதான வார்த்தைகளை பிரதிநிதித்துவப்படுத்த சிறந்த வேலை செய்கிறது.
 
-![வார்த்தைகளை வெக்டர்களாக மாற்ற CBoW மற்றும் Skip-Gram ஆல்கொரிதங்களை காட்டும் படம்.](../../../../../translated_images/example-algorithms-for-converting-words-to-vectors.fbe9207a726922f6f0f5de66427e8a6eda63809356114e28fb1fa5f4a83ebda7.ta.png)
+![வார்த்தைகளை வெக்டர்களாக மாற்ற CBoW மற்றும் Skip-Gram ஆல்கொரிதங்களை காட்டும் படம்.](../../../../../translated_images/ta/example-algorithms-for-converting-words-to-vectors.fbe9207a726922f6.webp)
 
 > [இந்த ஆவணத்தில்](https://arxiv.org/pdf/1301.3781.pdf) இருந்து படம்
 

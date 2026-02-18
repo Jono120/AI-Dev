@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "1b8d9e1b3a6f1daa864b1ff3dfc3076d",
-  "translation_date": "2025-09-23T12:18:32+00:00",
-  "source_file": "lessons/4-ComputerVision/09-Autoencoders/README.md",
-  "language_code": "de"
-}
--->
 # Autoencoder
 
 Beim Training von CNNs besteht eines der Probleme darin, dass wir eine große Menge an gelabelten Daten benötigen. Im Fall der Bildklassifikation müssen wir Bilder in verschiedene Klassen unterteilen, was manuell erfolgen muss.
@@ -19,7 +10,7 @@ Es kann jedoch sinnvoll sein, rohe (nicht gelabelte) Daten für das Training von
 
 Da wir einen Autoencoder trainieren, um so viele Informationen wie möglich aus dem ursprünglichen Bild zu erfassen, um eine genaue Rekonstruktion zu ermöglichen, versucht das Netzwerk, die beste **Einbettung** der Eingabebilder zu finden, um deren Bedeutung zu erfassen.
 
-![AutoEncoder Diagramm](../../../../../translated_images/autoencoder_schema.5e6fc9ad98a5eb6197f3513cf3baf4dfbe1389a6ae74daebda64de9f1c99f142.de.jpg)
+![AutoEncoder Diagramm](../../../../../translated_images/de/autoencoder_schema.5e6fc9ad98a5eb61.webp)
 
 > Bild von [Keras Blog](https://blog.keras.io/building-autoencoders-in-keras.html)
 
@@ -46,7 +37,7 @@ Zusammengefasst:
  * Wir entnehmen einen Vektor `sample` aus der Verteilung N(z<sub>mean</sub>,exp(z<sub>log\_sigma</sub>)).
  * Der Decoder versucht, das ursprüngliche Bild mithilfe von `sample` als Eingabevektor zu dekodieren.
 
- <img src="images/vae.png" width="50%">
+ <img src="../../../../../translated_images/de/vae.464c465a5b6a9e25.webp" width="50%">
 
 > Bild aus [diesem Blogbeitrag](https://ijdykeman.github.io/ml/2016/12/21/cvae.html) von Isaak Dykeman
 
@@ -57,13 +48,13 @@ Variationale Autoencoder verwenden eine komplexe Verlustfunktion, die aus zwei T
 
 Ein wichtiger Vorteil von VAEs ist, dass sie es uns ermöglichen, relativ einfach neue Bilder zu generieren, da wir wissen, aus welcher Verteilung wir latente Vektoren entnehmen müssen. Wenn wir beispielsweise einen VAE mit einem 2D-latenten Vektor auf MNIST trainieren, können wir die Komponenten des latenten Vektors variieren, um verschiedene Ziffern zu erhalten:
 
-<img alt="vaemnist" src="images/vaemnist.png" width="50%"/>
+<img alt="vaemnist" src="../../../../../translated_images/de/vaemnist.cab9e602dc08dc50.webp" width="50%"/>
 
 > Bild von [Dmitry Soshnikov](http://soshnikov.com)
 
 Beobachten Sie, wie Bilder ineinander übergehen, wenn wir beginnen, latente Vektoren aus verschiedenen Bereichen des latenten Parameterraums zu entnehmen. Wir können diesen Raum auch in 2D visualisieren:
 
-<img alt="vaemnist cluster" src="images/vaemnist-diag.png" width="50%"/> 
+<img alt="vaemnist cluster" src="../../../../../translated_images/de/vaemnist-diag.694315f775d5d666.webp" width="50%"/> 
 
 > Bild von [Dmitry Soshnikov](http://soshnikov.com)
 

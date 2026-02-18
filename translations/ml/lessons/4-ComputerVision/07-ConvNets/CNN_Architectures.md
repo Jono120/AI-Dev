@@ -1,23 +1,14 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "53faab85adfcebd8c10bcd71dc2fa557",
-  "translation_date": "2025-11-25T22:03:30+00:00",
-  "source_file": "lessons/4-ComputerVision/07-ConvNets/CNN_Architectures.md",
-  "language_code": "ml"
-}
--->
 # പ്രശസ്തമായ CNN ആർക്കിടെക്ചറുകൾ
 
 ### VGG-16
 
 VGG-16 2014-ൽ ImageNet ടോപ്പ്-5 ക്ലാസിഫിക്കേഷനിൽ 92.7% കൃത്യത നേടിയ ഒരു നെറ്റ്‌വർക്കാണ്. ഇതിന് താഴെ പറയുന്ന ലെയർ ഘടനയുണ്ട്:
 
-![ImageNet Layers](../../../../../translated_images/vgg-16-arch1.d901a5583b3a51baeaab3e768567d921e5d54befa46e1e642616c5458c934028.ml.jpg)
+![ImageNet Layers](../../../../../translated_images/ml/vgg-16-arch1.d901a5583b3a51ba.webp)
 
 നിങ്ങൾക്ക് കാണാമല്ലോ, VGG പരമ്പരാഗത പിരമിഡ് ആർക്കിടെക്ചർ പിന്തുടരുന്നു, convolution-pooling ലെയറുകളുടെ ഒരു ശ്രേണിയാണ് ഇത്.
 
-![ImageNet Pyramid](../../../../../translated_images/vgg-16-arch.64ff2137f50dd49fdaa786e3f3a975b3f22615efd13efb19c5d22f12e01451a1.ml.jpg)
+![ImageNet Pyramid](../../../../../translated_images/ml/vgg-16-arch.64ff2137f50dd49f.webp)
 
 > ചിത്രം [Researchgate](https://www.researchgate.net/figure/Vgg16-model-structure-To-get-the-VGG-NIN-model-we-replace-the-2-nd-4-th-6-th-7-th_fig2_335194493) നിന്നാണ്
 
@@ -25,7 +16,7 @@ VGG-16 2014-ൽ ImageNet ടോപ്പ്-5 ക്ലാസിഫിക്ക�
 
 ResNet മൈക്രോസോഫ്റ്റ് റിസർച്ച് 2015-ൽ നിർദ്ദേശിച്ച മോഡലുകളുടെ ഒരു കുടുംബമാണ്. ResNet-ന്റെ പ്രധാന ആശയം **residual blocks** ഉപയോഗിക്കുകയാണ്:
 
-<img src="../../../../../translated_images/resnet-block.aba4ccbcc094443477d7bee189d44fed695c852d710a702462d6b809155d959a.ml.png" width="300"/>
+<img src="../../../../../translated_images/ml/resnet-block.aba4ccbcc0944434.webp" width="300"/>
 
 > ചിത്രം [ഈ പേപ്പർ](https://arxiv.org/pdf/1512.03385.pdf) നിന്നാണ്
 
@@ -37,7 +28,7 @@ ResNet മൈക്രോസോഫ്റ്റ് റിസർച്ച് 2015-
 
 Google Inception ആർക്കിടെക്ചർ ഈ ആശയം ഒരു പടി മുന്നോട്ട് കൊണ്ടുപോകുന്നു, ഓരോ നെറ്റ്‌വർക്ക് ലെയറും പല വ്യത്യസ്ത പാതകളുടെ സംയോജനം ആയി നിർമ്മിക്കുന്നു:
 
-<img src="../../../../../translated_images/inception.a6605b85bcbc6f52490ec55e68109dd41924cba9d7e1007453b4cdf554199c8d.ml.png" width="400"/>
+<img src="../../../../../translated_images/ml/inception.a6605b85bcbc6f52.webp" width="400"/>
 
 > ചിത്രം [Researchgate](https://www.researchgate.net/figure/Inception-module-with-dimension-reductions-left-and-schema-for-Inception-ResNet-v1_fig2_355547454) നിന്നാണ്
 

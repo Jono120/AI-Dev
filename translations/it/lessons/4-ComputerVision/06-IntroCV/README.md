@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "feeca98225cb420afc89415f24f63d92",
-  "translation_date": "2025-09-23T08:29:01+00:00",
-  "source_file": "lessons/4-ComputerVision/06-IntroCV/README.md",
-  "language_code": "it"
-}
--->
 # Introduzione alla Visione Artificiale
 
 [Computer Vision](https://wikipedia.org/wiki/Computer_vision) è una disciplina il cui obiettivo è permettere ai computer di ottenere una comprensione di alto livello delle immagini digitali. Questa è una definizione piuttosto ampia, poiché *comprensione* può significare molte cose diverse, tra cui trovare un oggetto in un'immagine (**rilevamento di oggetti**), capire cosa sta accadendo (**rilevamento di eventi**), descrivere un'immagine in testo o ricostruire una scena in 3D. Ci sono anche compiti specifici legati alle immagini umane: stima dell'età e delle emozioni, rilevamento e identificazione del volto, e stima della posa 3D, solo per citarne alcuni.
@@ -73,14 +64,14 @@ Nel nostro [OpenCV Notebook](OpenCV.ipynb), forniamo alcuni esempi di quando la 
 
 * **Pre-elaborazione di una fotografia di un libro in Braille**. Ci concentriamo su come possiamo utilizzare thresholding, rilevamento delle caratteristiche, trasformazione prospettica e manipolazioni NumPy per separare i singoli simboli Braille per una successiva classificazione tramite una rete neurale.
 
-![Immagine Braille](../../../../../translated_images/braille.341962ff76b1bd7044409371d3de09ced5028132aef97344ea4b7468c1208126.it.jpeg) | ![Immagine Braille Pre-elaborata](../../../../../translated_images/braille-result.46530fea020b03c76aac532d7d6eeef7f6fb35b55b1001cd21627907dabef3ed.it.png) | ![Simboli Braille](../../../../../translated_images/braille-symbols.0159185ab69d533909dc4d7d26a1971b51401c6a80eb3a5584f250ea880af88b.it.png)
+![Immagine Braille](../../../../../translated_images/it/braille.341962ff76b1bd70.webp) | ![Immagine Braille Pre-elaborata](../../../../../translated_images/it/braille-result.46530fea020b03c7.webp) | ![Simboli Braille](../../../../../translated_images/it/braille-symbols.0159185ab69d5339.webp)
 ----|-----|-----
 
 > Immagine da [OpenCV.ipynb](OpenCV.ipynb)
 
 * **Rilevamento del movimento in video utilizzando la differenza tra fotogrammi**. Se la fotocamera è fissa, i fotogrammi del feed della fotocamera dovrebbero essere abbastanza simili tra loro. Poiché i fotogrammi sono rappresentati come array, semplicemente sottraendo questi array per due fotogrammi consecutivi otterremo la differenza dei pixel, che dovrebbe essere bassa per fotogrammi statici e diventare più alta quando c'è un movimento sostanziale nell'immagine.
 
-![Immagine dei fotogrammi video e differenze tra fotogrammi](../../../../../translated_images/frame-difference.706f805491a0883c938e16447bf5eb2f7d69e812c7f743cbe7d7c7645168f81f.it.png)
+![Immagine dei fotogrammi video e differenze tra fotogrammi](../../../../../translated_images/it/frame-difference.706f805491a0883c.webp)
 
 > Immagine da [OpenCV.ipynb](OpenCV.ipynb)
 
@@ -89,7 +80,7 @@ Nel nostro [OpenCV Notebook](OpenCV.ipynb), forniamo alcuni esempi di quando la 
    - **Dense Optical Flow** calcola il campo vettoriale che mostra per ogni pixel dove si sta muovendo.
    - **Sparse Optical Flow** si basa sull'individuazione di alcune caratteristiche distintive nell'immagine (ad esempio, bordi) e sulla costruzione della loro traiettoria da fotogramma a fotogramma.
 
-![Immagine di Optical Flow](../../../../../translated_images/optical.1f4a94464579a83a10784f3c07fe7228514714b96782edf50e70ccd59d2d8c4f.it.png)
+![Immagine di Optical Flow](../../../../../translated_images/it/optical.1f4a94464579a83a.webp)
 
 > Immagine da [OpenCV.ipynb](OpenCV.ipynb)
 
@@ -115,7 +106,7 @@ Leggi di più sull'optical flow [in questo ottimo tutorial](https://learnopencv.
 
 In questo laboratorio, registrerai un video con gesti semplici, e il tuo obiettivo sarà estrarre movimenti su/giù/sinistra/destra utilizzando optical flow.
 
-<img src="images/palm-movement.png" width="30%" alt="Fotogramma Movimento del Palmo"/>
+<img src="../../../../../translated_images/it/palm-movement.341495f0e9c47da3.webp" width="30%" alt="Fotogramma Movimento del Palmo"/>
 
 ---
 

@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "178c0b5ee5395733eb18aec51e71a0a9",
-  "translation_date": "2025-09-23T14:03:22+00:00",
-  "source_file": "lessons/4-ComputerVision/08-TransferLearning/README.md",
-  "language_code": "sk"
-}
--->
 # Predtrénované siete a transferové učenie
 
 Trénovanie CNN môže zabrať veľa času a vyžaduje si veľké množstvo dát. Avšak veľká časť času sa venuje učeniu najlepších nízkoúrovňových filtrov, ktoré sieť môže použiť na extrahovanie vzorov z obrázkov. Prirodzene sa vynára otázka - môžeme použiť neurónovú sieť trénovanú na jednom datasete a prispôsobiť ju na klasifikáciu iných obrázkov bez potreby kompletného procesu trénovania?
@@ -29,7 +20,7 @@ Keras aj PyTorch obsahujú funkcie na jednoduché načítanie predtrénovaných 
 
 Tu sú ukážkové črty extrahované z obrázku mačky pomocou siete VGG-16:
 
-![Črty extrahované VGG-16](../../../../../translated_images/features.6291f9c7ba3a0b951af88fc9864632b9115365410765680680d30c927dd67354.sk.png)
+![Črty extrahované VGG-16](../../../../../translated_images/sk/features.6291f9c7ba3a0b95.webp)
 
 ## Dataset Mačky vs. Psy
 
@@ -48,19 +39,19 @@ Predtrénovaná neurónová sieť obsahuje rôzne vzory vo svojej *pamäti*, vr�
 
 Jeden prístup, ktorý môžeme použiť, je začať s náhodným obrázkom a potom sa pokúsiť použiť techniku **optimalizácie pomocou gradientného zostupu**, aby sme upravili tento obrázok tak, že sieť začne myslieť, že je to mačka.
 
-![Optimalizačný cyklus obrázku](../../../../../translated_images/ideal-cat-loop.999fbb8ff306e044f997032f4eef9152b453e6a990e449bbfb107de2493cc37e.sk.png)
+![Optimalizačný cyklus obrázku](../../../../../translated_images/sk/ideal-cat-loop.999fbb8ff306e044.webp)
 
 Ak to však urobíme, dostaneme niečo veľmi podobné náhodnému šumu. Je to preto, že *existuje mnoho spôsobov, ako presvedčiť sieť, že vstupný obrázok je mačka*, vrátane niektorých, ktoré vizuálne nedávajú zmysel. Hoci tieto obrázky obsahujú veľa vzorov typických pre mačku, nič ich neobmedzuje, aby boli vizuálne zreteľné.
 
 Na zlepšenie výsledku môžeme do funkcie straty pridať ďalší člen, ktorý sa nazýva **variácia straty**. Je to metrika, ktorá ukazuje, ako podobné sú susedné pixely obrázku. Minimalizácia variácie straty robí obrázok hladším a zbavuje sa šumu - čím odhaľuje vizuálne príťažlivejšie vzory. Tu je príklad takýchto "ideálnych" obrázkov, ktoré sú klasifikované ako mačka a zebra s vysokou pravdepodobnosťou:
 
-![Ideálna mačka](../../../../../translated_images/ideal-cat.203dd4597643d6b0bd73038b87f9c0464322725e3a06ab145d25d4a861c70592.sk.png) | ![Ideálna zebra](../../../../../translated_images/ideal-zebra.7f70e8b54ee15a7a314000bb5df38a6cfe086ea04d60df4d3ef313d046b98a2b.sk.png)
+![Ideálna mačka](../../../../../translated_images/sk/ideal-cat.203dd4597643d6b0.webp) | ![Ideálna zebra](../../../../../translated_images/sk/ideal-zebra.7f70e8b54ee15a7a.webp)
 -----|-----
  *Ideálna mačka* | *Ideálna zebra*
 
 Podobný prístup môže byť použitý na vykonanie tzv. **adversariálnych útokov** na neurónovú sieť. Predpokladajme, že chceme oklamať neurónovú sieť a urobiť z psa mačku. Ak vezmeme obrázok psa, ktorý je sieťou rozpoznaný ako pes, môžeme ho trochu upraviť pomocou optimalizácie gradientného zostupu, až kým sieť nezačne klasifikovať obrázok ako mačku:
 
-![Obrázok psa](../../../../../translated_images/original-dog.8f68a67d2fe0911f33041c0f7fce8aa4ea919f9d3917ec4b468298522aeb6356.sk.png) | ![Obrázok psa klasifikovaný ako mačka](../../../../../translated_images/adversarial-dog.d9fc7773b0142b89752539bfbf884118de845b3851c5162146ea0b8809fc820f.sk.png)
+![Obrázok psa](../../../../../translated_images/sk/original-dog.8f68a67d2fe0911f.webp) | ![Obrázok psa klasifikovaný ako mačka](../../../../../translated_images/sk/adversarial-dog.d9fc7773b0142b89.webp)
 -----|-----
 *Pôvodný obrázok psa* | *Obrázok psa klasifikovaný ako mačka*
 

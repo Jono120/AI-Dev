@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "feeca98225cb420afc89415f24f63d92",
-  "translation_date": "2025-09-23T09:57:04+00:00",
-  "source_file": "lessons/4-ComputerVision/06-IntroCV/README.md",
-  "language_code": "fi"
-}
--->
 # Johdanto tietokonenäköön
 
 [Tietokonenäkö](https://wikipedia.org/wiki/Computer_vision) on tieteenala, jonka tavoitteena on mahdollistaa tietokoneiden saavuttaa korkeatasoinen ymmärrys digitaalisista kuvista. Tämä on varsin laaja määritelmä, sillä *ymmärrys* voi tarkoittaa monia eri asioita, kuten esineen löytämistä kuvasta (**esineentunnistus**), tapahtuman ymmärtämistä (**tapahtumantunnistus**), kuvan kuvailemista tekstillä tai kohtauksen rekonstruointia 3D-muodossa. On myös erityisiä tehtäviä, jotka liittyvät ihmiskuvien käsittelyyn: iän ja tunteiden arviointi, kasvojen tunnistus ja identifiointi sekä 3D-asennon arviointi, muutamia mainitakseni.
@@ -73,14 +64,14 @@ Ennen kuin kuva syötetään neuroverkkoon, voi olla hyödyllistä suorittaa use
 
 * **Pistekirjakuvan esikäsittely**. Keskitymme siihen, miten voimme käyttää kynnysarvoja, piirteiden tunnistusta, perspektiivimuunnoksia ja NumPy-manipulaatioita erottamaan yksittäiset pistekirjoitussymbolit, jotta ne voidaan luokitella neuroverkolla.
 
-![Pistekirjakuvan esimerkki](../../../../../translated_images/braille.341962ff76b1bd7044409371d3de09ced5028132aef97344ea4b7468c1208126.fi.jpeg) | ![Esikäsitelty pistekirjakuva](../../../../../translated_images/braille-result.46530fea020b03c76aac532d7d6eeef7f6fb35b55b1001cd21627907dabef3ed.fi.png) | ![Pistekirjoitussymbolit](../../../../../translated_images/braille-symbols.0159185ab69d533909dc4d7d26a1971b51401c6a80eb3a5584f250ea880af88b.fi.png)
+![Pistekirjakuvan esimerkki](../../../../../translated_images/fi/braille.341962ff76b1bd70.webp) | ![Esikäsitelty pistekirjakuva](../../../../../translated_images/fi/braille-result.46530fea020b03c7.webp) | ![Pistekirjoitussymbolit](../../../../../translated_images/fi/braille-symbols.0159185ab69d5339.webp)
 ----|-----|-----
 
 > Kuva [OpenCV.ipynb](OpenCV.ipynb)
 
 * **Liikkeen tunnistaminen videosta kehysten erotuksen avulla**. Jos kamera on kiinteä, kameran syötteen kehysten pitäisi olla melko samanlaisia. Koska kehykset esitetään taulukoina, kahden peräkkäisen kehyksen taulukoiden vähentämisellä saadaan pikseliero, joka on pieni staattisille kehyksille ja kasvaa merkittävästi, kun kuvassa on huomattavaa liikettä.
 
-![Kuva videokehysten ja kehysten erojen analyysistä](../../../../../translated_images/frame-difference.706f805491a0883c938e16447bf5eb2f7d69e812c7f743cbe7d7c7645168f81f.fi.png)
+![Kuva videokehysten ja kehysten erojen analyysistä](../../../../../translated_images/fi/frame-difference.706f805491a0883c.webp)
 
 > Kuva [OpenCV.ipynb](OpenCV.ipynb)
 
@@ -89,7 +80,7 @@ Ennen kuin kuva syötetään neuroverkkoon, voi olla hyödyllistä suorittaa use
    - **Tiheä optinen virtaus** laskee vektorikentän, joka näyttää jokaisen pikselin liikkeen suunnan.
    - **Harva optinen virtaus** perustuu tiettyjen erottuvien piirteiden (esim. reunojen) valintaan kuvassa ja niiden liikeradan rakentamiseen kehyksestä toiseen.
 
-![Kuva optisesta virtauksesta](../../../../../translated_images/optical.1f4a94464579a83a10784f3c07fe7228514714b96782edf50e70ccd59d2d8c4f.fi.png)
+![Kuva optisesta virtauksesta](../../../../../translated_images/fi/optical.1f4a94464579a83a.webp)
 
 > Kuva [OpenCV.ipynb](OpenCV.ipynb)
 
@@ -115,7 +106,7 @@ Lue lisää optisesta virtauksesta [tästä erinomaisesta oppaasta](https://lear
 
 Tässä laboratoriossa otat videon, jossa on yksinkertaisia eleitä, ja tavoitteesi on tunnistaa ylös/alas/vasen/oikea-liikkeet optisen virtauksen avulla.
 
-<img src="images/palm-movement.png" width="30%" alt="Kämmenen liike"/>
+<img src="../../../../../translated_images/fi/palm-movement.341495f0e9c47da3.webp" width="30%" alt="Kämmenen liike"/>
 
 ---
 

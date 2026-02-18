@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "1b8d9e1b3a6f1daa864b1ff3dfc3076d",
-  "translation_date": "2025-09-23T07:30:48+00:00",
-  "source_file": "lessons/4-ComputerVision/09-Autoencoders/README.md",
-  "language_code": "pa"
-}
--->
 # ਆਟੋਇਨਕੋਡਰ
 
 ਜਦੋਂ CNNs ਨੂੰ ਟ੍ਰੇਨ ਕੀਤਾ ਜਾਂਦਾ ਹੈ, ਇੱਕ ਮੁੱਦਾ ਇਹ ਹੈ ਕਿ ਸਾਨੂੰ ਬਹੁਤ ਸਾਰਾ ਲੇਬਲ ਕੀਤਾ ਡਾਟਾ ਚਾਹੀਦਾ ਹੈ। ਚਿੱਤਰ ਵਰਗੀਕਰਨ ਦੇ ਮਾਮਲੇ ਵਿੱਚ, ਸਾਨੂੰ ਚਿੱਤਰਾਂ ਨੂੰ ਵੱਖ-ਵੱਖ ਵਰਗਾਂ ਵਿੱਚ ਵੰਡਣਾ ਪੈਂਦਾ ਹੈ, ਜੋ ਕਿ ਇੱਕ ਮੈਨੂਅਲ ਪ੍ਰਯਾਸ ਹੈ।
@@ -19,7 +10,7 @@ CO_OP_TRANSLATOR_METADATA:
 
 ਜਦੋਂ ਅਸੀਂ ਆਟੋਇਨਕੋਡਰ ਨੂੰ ਮੂਲ ਚਿੱਤਰ ਤੋਂ ਜਿੰਨਾ ਜ਼ਿਆਦਾ ਜਾਣਕਾਰੀ ਕੈਪਚਰ ਕਰ ਸਕਦੇ ਹਾਂ ਉਸ ਲਈ ਟ੍ਰੇਨ ਕਰਦੇ ਹਾਂ, ਤਾਂ ਕਿ ਸਹੀ ਰੀਕੰਸਟ੍ਰਕਸ਼ਨ ਹੋ ਸਕੇ, ਨੈਟਵਰਕ ਇਨਪੁਟ ਚਿੱਤਰਾਂ ਦੀ **embedding** ਨੂੰ ਕੈਪਚਰ ਕਰਨ ਲਈ ਸਭ ਤੋਂ ਵਧੀਆ ਕੋਸ਼ਿਸ਼ ਕਰਦਾ ਹੈ।
 
-![AutoEncoder Diagram](../../../../../translated_images/autoencoder_schema.5e6fc9ad98a5eb6197f3513cf3baf4dfbe1389a6ae74daebda64de9f1c99f142.pa.jpg)
+![AutoEncoder Diagram](../../../../../translated_images/pa/autoencoder_schema.5e6fc9ad98a5eb61.webp)
 
 > ਚਿੱਤਰ [Keras ਬਲੌਗ](https://blog.keras.io/building-autoencoders-in-keras.html) ਤੋਂ
 
@@ -46,7 +37,7 @@ VAE ਉਹ ਆਟੋਇਨਕੋਡਰ ਹੈ ਜੋ latent ਪੈਰਾਮੀ�
 * ਅਸੀਂ distribution N(z<sub>mean</sub>,exp(z<sub>log\_sigma</sub>)) ਤੋਂ ਇੱਕ `sample` ਵੇਕਟਰ ਲੈਂਦੇ ਹਾਂ
 * ਡਿਕੋਡਰ `sample` ਨੂੰ ਇਨਪੁਟ ਵੇਕਟਰ ਵਜੋਂ ਵਰਤ ਕੇ ਮੂਲ ਚਿੱਤਰ ਨੂੰ ਡਿਕੋਡ ਕਰਨ ਦੀ ਕੋਸ਼ਿਸ਼ ਕਰਦਾ ਹੈ
 
-<img src="images/vae.png" width="50%">
+<img src="../../../../../translated_images/pa/vae.464c465a5b6a9e25.webp" width="50%">
 
 > ਚਿੱਤਰ [ਇਸ ਬਲੌਗ ਪੋਸਟ](https://ijdykeman.github.io/ml/2016/12/21/cvae.html) ਤੋਂ, ਲਿਖਿਆ ਗਿਆ Isaak Dykeman ਦੁਆਰਾ
 
@@ -57,13 +48,13 @@ Variational auto-encoders ਇੱਕ ਜਟਿਲ ਲੌਸ ਫੰਕਸ਼ਨ �
 
 VAEs ਦਾ ਇੱਕ ਮਹੱਤਵਪੂਰਨ ਫਾਇਦਾ ਇਹ ਹੈ ਕਿ ਇਹ ਸਾਨੂੰ ਨਵੇਂ ਚਿੱਤਰਾਂ ਨੂੰ ਸ نسبਤ ਆਸਾਨੀ ਨਾਲ ਬਣਾਉਣ ਦੀ ਆਗਿਆ ਦਿੰਦੇ ਹਨ, ਕਿਉਂਕਿ ਸਾਨੂੰ ਪਤਾ ਹੁੰਦਾ ਹੈ ਕਿ latent vectors ਨੂੰ ਕਿਹੜੇ distribution ਤੋਂ ਲੈਣਾ ਹੈ। ਉਦਾਹਰਨ ਵਜੋਂ, ਜੇ ਅਸੀਂ MNIST 'ਤੇ 2D latent vector ਨਾਲ VAE ਨੂੰ ਟ੍ਰੇਨ ਕਰਦੇ ਹਾਂ, ਤਾਂ ਅਸੀਂ latent vector ਦੇ ਹਿੱਸਿਆਂ ਨੂੰ ਵੱਖ-ਵੱਖ ਕਰਕੇ ਵੱਖ-ਵੱਖ ਅੰਕ ਪ੍ਰਾਪਤ ਕਰ ਸਕਦੇ ਹਾਂ:
 
-<img alt="vaemnist" src="images/vaemnist.png" width="50%"/>
+<img alt="vaemnist" src="../../../../../translated_images/pa/vaemnist.cab9e602dc08dc50.webp" width="50%"/>
 
 > ਚਿੱਤਰ [Dmitry Soshnikov](http://soshnikov.com) ਦੁਆਰਾ
 
 ਧਿਆਨ ਦਿਓ ਕਿ ਚਿੱਤਰ ਕਿਵੇਂ ਇੱਕ ਦੂਜੇ ਵਿੱਚ ਮਿਲਦੇ ਹਨ, ਜਦੋਂ ਅਸੀਂ latent parameter space ਦੇ ਵੱਖ-ਵੱਖ ਹਿੱਸਿਆਂ ਤੋਂ latent vectors ਲੈਣੇ ਸ਼ੁਰੂ ਕਰਦੇ ਹਾਂ। ਅਸੀਂ ਇਸ space ਨੂੰ 2D ਵਿੱਚ ਵੀ ਵਿਜ਼ੁਅਲਾਈਜ਼ ਕਰ ਸਕਦੇ ਹਾਂ:
 
-<img alt="vaemnist cluster" src="images/vaemnist-diag.png" width="50%"/> 
+<img alt="vaemnist cluster" src="../../../../../translated_images/pa/vaemnist-diag.694315f775d5d666.webp" width="50%"/> 
 
 > ਚਿੱਤਰ [Dmitry Soshnikov](http://soshnikov.com) ਦੁਆਰਾ
 

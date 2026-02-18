@@ -1,23 +1,14 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "53faab85adfcebd8c10bcd71dc2fa557",
-  "translation_date": "2025-09-23T11:22:25+00:00",
-  "source_file": "lessons/4-ComputerVision/07-ConvNets/CNN_Architectures.md",
-  "language_code": "cs"
-}
--->
 # Dobře známé architektury CNN
 
 ### VGG-16
 
 VGG-16 je síť, která dosáhla 92,7% přesnosti v top-5 klasifikaci ImageNet v roce 2014. Má následující strukturu vrstev:
 
-![ImageNet Layers](../../../../../translated_images/vgg-16-arch1.d901a5583b3a51baeaab3e768567d921e5d54befa46e1e642616c5458c934028.cs.jpg)
+![ImageNet Layers](../../../../../translated_images/cs/vgg-16-arch1.d901a5583b3a51ba.webp)
 
 Jak můžete vidět, VGG sleduje tradiční pyramidovou architekturu, což je sekvence vrstev konvoluce a pooling.
 
-![ImageNet Pyramid](../../../../../translated_images/vgg-16-arch.64ff2137f50dd49fdaa786e3f3a975b3f22615efd13efb19c5d22f12e01451a1.cs.jpg)
+![ImageNet Pyramid](../../../../../translated_images/cs/vgg-16-arch.64ff2137f50dd49f.webp)
 
 > Obrázek z [Researchgate](https://www.researchgate.net/figure/Vgg16-model-structure-To-get-the-VGG-NIN-model-we-replace-the-2-nd-4-th-6-th-7-th_fig2_335194493)
 
@@ -25,7 +16,7 @@ Jak můžete vidět, VGG sleduje tradiční pyramidovou architekturu, což je se
 
 ResNet je rodina modelů navržená Microsoft Research v roce 2015. Hlavní myšlenkou ResNet je použití **reziduálních bloků**:
 
-<img src="images/resnet-block.png" width="300"/>
+<img src="../../../../../translated_images/cs/resnet-block.aba4ccbcc0944434.webp" width="300"/>
 
 > Obrázek z [tohoto článku](https://arxiv.org/pdf/1512.03385.pdf)
 
@@ -37,7 +28,7 @@ Tuto síť si také můžete představit jako schopnou přizpůsobit svou složi
 
 Architektura Google Inception posouvá tuto myšlenku o krok dále a buduje každou vrstvu sítě jako kombinaci několika různých cest:
 
-<img src="images/inception.png" width="400"/>
+<img src="../../../../../translated_images/cs/inception.a6605b85bcbc6f52.webp" width="400"/>
 
 > Obrázek z [Researchgate](https://www.researchgate.net/figure/Inception-module-with-dimension-reductions-left-and-schema-for-Inception-ResNet-v1_fig2_355547454)
 

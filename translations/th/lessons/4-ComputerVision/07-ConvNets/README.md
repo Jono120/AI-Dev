@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "a560d5b845962cf33dc102266e409568",
-  "translation_date": "2025-09-23T09:03:08+00:00",
-  "source_file": "lessons/4-ComputerVision/07-ConvNets/README.md",
-  "language_code": "th"
-}
--->
 # เครือข่ายประสาทเทียมแบบคอนโวลูชัน
 
 เราเคยเห็นมาก่อนว่าเครือข่ายประสาทเทียมมีความสามารถที่ดีในการจัดการกับภาพ และแม้แต่เพอร์เซปตรอนชั้นเดียวก็สามารถจดจำตัวเลขที่เขียนด้วยมือจากชุดข้อมูล MNIST ได้ด้วยความแม่นยำที่น่าพอใจ อย่างไรก็ตาม ชุดข้อมูล MNIST มีลักษณะพิเศษที่ตัวเลขทั้งหมดถูกจัดให้อยู่ตรงกลางของภาพ ซึ่งทำให้การจำแนกง่ายขึ้น
@@ -17,14 +8,14 @@ CO_OP_TRANSLATOR_METADATA:
 
 เพื่อดึงรูปแบบเหล่านี้ออกมา เราจะใช้แนวคิดของ **ฟิลเตอร์คอนโวลูชัน** อย่างที่คุณทราบ ภาพถูกแสดงในรูปแบบเมทริกซ์ 2 มิติ หรือเทนเซอร์ 3 มิติที่มีความลึกของสี การใช้ฟิลเตอร์หมายถึงการนำเมทริกซ์ **ฟิลเตอร์เคอร์เนล** ขนาดเล็กมาใช้ และสำหรับแต่ละพิกเซลในภาพต้นฉบับ เราจะคำนวณค่าเฉลี่ยถ่วงน้ำหนักกับจุดที่อยู่ใกล้เคียง เราสามารถมองสิ่งนี้เหมือนหน้าต่างเล็ก ๆ ที่เลื่อนผ่านภาพทั้งหมด และเฉลี่ยค่าพิกเซลทั้งหมดตามน้ำหนักในเมทริกซ์ฟิลเตอร์เคอร์เนล
 
-![ฟิลเตอร์ขอบแนวตั้ง](../../../../../translated_images/filter-vert.b7148390ca0bc356ddc7e55555d2481819c1e86ddde9dce4db5e71a69d6f887f.th.png) | ![ฟิลเตอร์ขอบแนวนอน](../../../../../translated_images/filter-horiz.59b80ed4feb946efbe201a7fe3ca95abb3364e266e6fd90820cb893b4d3a6dda.th.png)
+![ฟิลเตอร์ขอบแนวตั้ง](../../../../../translated_images/th/filter-vert.b7148390ca0bc356.webp) | ![ฟิลเตอร์ขอบแนวนอน](../../../../../translated_images/th/filter-horiz.59b80ed4feb946ef.webp)
 ----|----
 
 > ภาพโดย Dmitry Soshnikov
 
 ตัวอย่างเช่น หากเราใช้ฟิลเตอร์ขอบแนวตั้งและแนวนอนขนาด 3x3 กับตัวเลขใน MNIST เราจะได้ไฮไลต์ (เช่น ค่าที่สูง) ในจุดที่มีขอบแนวตั้งและแนวนอนในภาพต้นฉบับ ดังนั้นฟิลเตอร์ทั้งสองนี้สามารถใช้เพื่อ "ค้นหา" ขอบได้ ในทำนองเดียวกัน เราสามารถออกแบบฟิลเตอร์ต่าง ๆ เพื่อค้นหารูปแบบระดับต่ำอื่น ๆ:
 
-<img src="images/lmfilters.jpg" width="500" align="center"/>
+<img src="../../../../../translated_images/th/lmfilters.ea9e4868a82cf74c.webp" width="500" align="center"/>
 
 > ภาพจาก [Leung-Malik Filter Bank](https://www.robots.ox.ac.uk/~vgg/research/texclass/filters.html)
 
@@ -38,7 +29,7 @@ CO_OP_TRANSLATOR_METADATA:
 * เราสามารถออกแบบเครือข่ายในลักษณะที่ฟิลเตอร์ถูกฝึกฝนโดยอัตโนมัติ
 * เราสามารถใช้วิธีเดียวกันนี้เพื่อค้นหารูปแบบในคุณลักษณะระดับสูง ไม่ใช่แค่ในภาพต้นฉบับ ดังนั้นการดึงคุณลักษณะของ CNN จึงทำงานในลำดับชั้นของคุณลักษณะ โดยเริ่มจากการผสมผสานพิกเซลระดับต่ำไปจนถึงการผสมผสานระดับสูงของส่วนต่าง ๆ ของภาพ
 
-![การดึงคุณลักษณะแบบลำดับชั้น](../../../../../translated_images/FeatureExtractionCNN.d9b456cbdae7cb643fde3032b81b2940e3cf8be842e29afac3f482725ba7f95c.th.png)
+![การดึงคุณลักษณะแบบลำดับชั้น](../../../../../translated_images/th/FeatureExtractionCNN.d9b456cbdae7cb64.webp)
 
 > ภาพจาก [งานวิจัยโดย Hislop-Lynch](https://www.semanticscholar.org/paper/Computer-vision-based-pedestrian-trajectory-Hislop-Lynch/26e6f74853fc9bbb7487b06dc2cf095d36c9021d) ซึ่งอ้างอิงจาก [งานวิจัยของพวกเขา](https://dl.acm.org/doi/abs/10.1145/1553374.1553453)
 
@@ -55,9 +46,9 @@ CNN ส่วนใหญ่ที่ใช้สำหรับการปร�
 
 ตัวอย่างเช่น ลองดูสถาปัตยกรรมของ VGG-16 ซึ่งเป็นเครือข่ายที่ทำได้ถึงความแม่นยำ 92.7% ในการจัดอันดับ 5 อันดับแรกของ ImageNet ในปี 2014:
 
-![ชั้นของ ImageNet](../../../../../translated_images/vgg-16-arch1.d901a5583b3a51baeaab3e768567d921e5d54befa46e1e642616c5458c934028.th.jpg)
+![ชั้นของ ImageNet](../../../../../translated_images/th/vgg-16-arch1.d901a5583b3a51ba.webp)
 
-![พีระมิดของ ImageNet](../../../../../translated_images/vgg-16-arch.64ff2137f50dd49fdaa786e3f3a975b3f22615efd13efb19c5d22f12e01451a1.th.jpg)
+![พีระมิดของ ImageNet](../../../../../translated_images/th/vgg-16-arch.64ff2137f50dd49f.webp)
 
 > ภาพจาก [Researchgate](https://www.researchgate.net/figure/Vgg16-model-structure-To-get-the-VGG-NIN-model-we-replace-the-2-nd-4-th-6-th-7-th_fig2_335194493)
 

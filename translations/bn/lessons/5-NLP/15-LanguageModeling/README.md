@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "7ba20f54a5bfcd6521018cdfb17c7c57",
-  "translation_date": "2025-09-23T07:52:42+00:00",
-  "source_file": "lessons/5-NLP/15-LanguageModeling/README.md",
-  "language_code": "bn"
-}
--->
 # ভাষা মডেলিং
 
 সেমান্টিক এম্বেডিং, যেমন Word2Vec এবং GloVe, আসলে **ভাষা মডেলিং** এর দিকে প্রথম পদক্ষেপ - এমন মডেল তৈরি করা যা কোনোভাবে ভাষার প্রকৃতি *বোঝে* (বা *প্রতিনিধিত্ব করে*)।
@@ -23,7 +14,7 @@ CO_OP_TRANSLATOR_METADATA:
 * **কন্টিনিউয়াস ব্যাগ-অফ-ওয়ার্ডস** (CBoW), যেখানে আমরা একটি টোকেন সিকোয়েন্স $W_{-N}$, ..., $W_N$ এর মধ্যে $W_0$ টোকেন পূর্বানুমান করি।
 * **স্কিপ-গ্রাম**, যেখানে আমরা মধ্যবর্তী টোকেন $W_0$ থেকে পার্শ্ববর্তী টোকেনগুলোর সেট {$W_{-N},\dots, W_{-1}, W_1,\dots, W_N$} পূর্বানুমান করি।
 
-![শব্দকে ভেক্টরে রূপান্তর করার পেপারের ছবি](../../../../../translated_images/example-algorithms-for-converting-words-to-vectors.fbe9207a726922f6f0f5de66427e8a6eda63809356114e28fb1fa5f4a83ebda7.bn.png)
+![শব্দকে ভেক্টরে রূপান্তর করার পেপারের ছবি](../../../../../translated_images/bn/example-algorithms-for-converting-words-to-vectors.fbe9207a726922f6.webp)
 
 > ছবি [এই পেপার](https://arxiv.org/pdf/1301.3781.pdf) থেকে
 

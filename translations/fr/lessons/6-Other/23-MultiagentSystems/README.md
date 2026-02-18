@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "38a1185ae3d54b180378bbd71ae3ef16",
-  "translation_date": "2025-09-23T11:54:54+00:00",
-  "source_file": "lessons/6-Other/23-MultiagentSystems/README.md",
-  "language_code": "fr"
-}
--->
 # Systèmes Multi-Agents
 
 Une des approches possibles pour atteindre l'intelligence est l'approche dite **émergente** (ou **synergétique**), qui repose sur le fait que le comportement combiné de nombreux agents relativement simples peut aboutir à un comportement global plus complexe (ou intelligent) du système dans son ensemble. Théoriquement, cela repose sur les principes de l'[Intelligence Collective](https://fr.wikipedia.org/wiki/Intelligence_collective), de l'[Émergentisme](https://fr.wikipedia.org/wiki/Cerveau_global) et de la [Cybernétique Évolutionnaire](https://fr.wikipedia.org/wiki/Cerveau_global), qui stipulent que les systèmes de niveau supérieur acquièrent une certaine valeur ajoutée lorsqu'ils sont correctement combinés à partir de systèmes de niveau inférieur (le *principe de transition méta-systémique*).
@@ -60,7 +51,7 @@ Vous pouvez [télécharger](https://ccl.northwestern.edu/netlogo/download.shtml)
 
 Un des grands avantages de NetLogo est qu'il contient une bibliothèque de modèles fonctionnels que vous pouvez essayer. Allez dans **File &rightarrow; Models Library**, et vous trouverez de nombreuses catégories de modèles à explorer.
 
-<img alt="Bibliothèque de modèles NetLogo" src="images/NetLogo-ModelLib.png" width="60%"/>
+<img alt="Bibliothèque de modèles NetLogo" src="../../../../../translated_images/fr/NetLogo-ModelLib.efe023afb4763c05.webp" width="60%"/>
 
 > Une capture d'écran de la bibliothèque de modèles par Dmitry Soshnikov
 
@@ -70,7 +61,7 @@ Vous pouvez ouvrir l'un des modèles, par exemple **Biology &rightarrow; Flockin
 
 Après avoir ouvert le modèle, vous êtes dirigé vers l'écran principal de NetLogo. Voici un exemple de modèle qui décrit la population de loups et de moutons, compte tenu de ressources limitées (herbe).
 
-![Écran principal de NetLogo](../../../../../translated_images/NetLogo-Main.32653711ec1a01b3cab22ec0b148e64193d0b979b055285bef329d5e3d6958c5.fr.png)
+![Écran principal de NetLogo](../../../../../translated_images/fr/NetLogo-Main.32653711ec1a01b3.webp)
 
 > Capture d'écran par Dmitry Soshnikov
 

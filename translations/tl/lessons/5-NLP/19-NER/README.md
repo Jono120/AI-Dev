@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "6522312ff835796ca34136a9462fafb2",
-  "translation_date": "2025-09-23T07:00:49+00:00",
-  "source_file": "lessons/5-NLP/19-NER/README.md",
-  "language_code": "tl"
-}
--->
 # Named Entity Recognition
 
 Hanggang ngayon, karamihan sa ating pokus ay nasa isang NLP task - ang classification. Gayunpaman, may iba pang mga NLP task na maaaring magawa gamit ang neural networks. Isa sa mga ito ay ang **[Named Entity Recognition](https://wikipedia.org/wiki/Named-entity_recognition)** (NER), na tumutukoy sa pagkilala ng mga partikular na entidad sa loob ng teksto, tulad ng mga lugar, pangalan ng tao, mga petsa, chemical formula, at iba pa.
@@ -17,7 +8,7 @@ Hanggang ngayon, karamihan sa ating pokus ay nasa isang NLP task - ang classific
 
 Halimbawa, nais mong gumawa ng natural language chat bot, katulad ng Amazon Alexa o Google Assistant. Ang paraan ng paggana ng mga intelligent chat bots ay ang *pag-unawa* sa nais ng user sa pamamagitan ng text classification sa input na pangungusap. Ang resulta ng classification na ito ay tinatawag na **intent**, na tumutukoy kung ano ang dapat gawin ng chat bot.
 
-<img alt="Bot NER" src="images/bot-ner.png" width="50%"/>
+<img alt="Bot NER" src="../../../../../translated_images/tl/bot-ner.4b09235dbb0ad275.webp" width="50%"/>
 
 > Larawan mula sa may-akda
 
@@ -58,7 +49,7 @@ infant | O
 
 Dahil kailangan nating bumuo ng one-to-one na kaugnayan sa pagitan ng mga token at klase, maaari tayong mag-train ng tamang **many-to-many** neural network model mula sa larawang ito:
 
-![Image showing common recurrent neural network patterns.](../../../../../translated_images/unreasonable-effectiveness-of-rnn.541ead816778f42dce6c42d8a56c184729aa2378d059b851be4ce12b993033df.tl.jpg)
+![Image showing common recurrent neural network patterns.](../../../../../translated_images/tl/unreasonable-effectiveness-of-rnn.541ead816778f42d.webp)
 
 > *Larawan mula sa [blog post na ito](http://karpathy.github.io/2015/05/21/rnn-effectiveness/) ni [Andrej Karpathy](http://karpathy.github.io/). Ang mga NER token classification models ay tumutugma sa pinakakanan na network architecture sa larawang ito.*
 

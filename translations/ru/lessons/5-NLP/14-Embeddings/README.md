@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "b708c9b85b833864c73c6281f1e6b96e",
-  "translation_date": "2025-09-23T08:04:16+00:00",
-  "source_file": "lessons/5-NLP/14-Embeddings/README.md",
-  "language_code": "ru"
-}
--->
 # Встраивания
 
 ## [Тест перед лекцией](https://ff-quizzes.netlify.app/en/ai/quiz/27)
@@ -19,7 +10,7 @@ CO_OP_TRANSLATOR_METADATA:
 
 Используя слой встраивания в качестве первого слоя в нашей сети классификатора, мы можем перейти от модели мешка слов к модели **мешка встраиваний**, где мы сначала преобразуем каждое слово в нашем тексте в соответствующее встраивание, а затем вычисляем некоторую агрегатную функцию для всех этих встраиваний, такую как `sum`, `average` или `max`.  
 
-![Изображение, показывающее классификатор на основе встраиваний для пяти слов последовательности.](../../../../../translated_images/embedding-classifier-example.b77f021a7ee67eeec8e68bfe11636c5b97d6eaa067515a129bfb1d0034b1ac5b.ru.png)
+![Изображение, показывающее классификатор на основе встраиваний для пяти слов последовательности.](../../../../../translated_images/ru/embedding-classifier-example.b77f021a7ee67eee.webp)
 
 > Изображение автора
 
@@ -40,7 +31,7 @@ CO_OP_TRANSLATOR_METADATA:
 
 CBoW работает быстрее, а пропуск-грамм медленнее, но лучше справляется с представлением редких слов.
 
-![Изображение, показывающее алгоритмы CBoW и Skip-Gram для преобразования слов в векторы.](../../../../../translated_images/example-algorithms-for-converting-words-to-vectors.fbe9207a726922f6f0f5de66427e8a6eda63809356114e28fb1fa5f4a83ebda7.ru.png)
+![Изображение, показывающее алгоритмы CBoW и Skip-Gram для преобразования слов в векторы.](../../../../../translated_images/ru/example-algorithms-for-converting-words-to-vectors.fbe9207a726922f6.webp)
 
 > Изображение из [этой статьи](https://arxiv.org/pdf/1301.3781.pdf)
 

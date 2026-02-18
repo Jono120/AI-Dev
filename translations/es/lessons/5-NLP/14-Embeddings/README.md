@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "b708c9b85b833864c73c6281f1e6b96e",
-  "translation_date": "2025-09-23T12:14:36+00:00",
-  "source_file": "lessons/5-NLP/14-Embeddings/README.md",
-  "language_code": "es"
-}
--->
 # Embeddings
 
 ## [Pre-lecture quiz](https://ff-quizzes.netlify.app/en/ai/quiz/27)
@@ -19,7 +10,7 @@ Entonces, la capa de embedding tomaría una palabra como entrada y produciría u
 
 Al usar una capa de embedding como la primera capa en nuestra red clasificadora, podemos cambiar de un modelo de bolsa de palabras a un modelo de **embedding bag**, donde primero convertimos cada palabra en nuestro texto en su correspondiente embedding, y luego calculamos alguna función de agregación sobre todos esos embeddings, como `sum`, `average` o `max`.  
 
-![Imagen que muestra un clasificador con embeddings para cinco palabras de una secuencia.](../../../../../translated_images/embedding-classifier-example.b77f021a7ee67eeec8e68bfe11636c5b97d6eaa067515a129bfb1d0034b1ac5b.es.png)
+![Imagen que muestra un clasificador con embeddings para cinco palabras de una secuencia.](../../../../../translated_images/es/embedding-classifier-example.b77f021a7ee67eee.webp)
 
 > Imagen por el autor
 
@@ -40,7 +31,7 @@ Para lograr esto, necesitamos preentrenar nuestro modelo de embedding en una gra
 
 CBoW es más rápido, mientras que skip-gram es más lento, pero hace un mejor trabajo representando palabras poco frecuentes.
 
-![Imagen que muestra los algoritmos CBoW y Skip-Gram para convertir palabras en vectores.](../../../../../translated_images/example-algorithms-for-converting-words-to-vectors.fbe9207a726922f6f0f5de66427e8a6eda63809356114e28fb1fa5f4a83ebda7.es.png)
+![Imagen que muestra los algoritmos CBoW y Skip-Gram para convertir palabras en vectores.](../../../../../translated_images/es/example-algorithms-for-converting-words-to-vectors.fbe9207a726922f6.webp)
 
 > Imagen tomada de [este artículo](https://arxiv.org/pdf/1301.3781.pdf)
 

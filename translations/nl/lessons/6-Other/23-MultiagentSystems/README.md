@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "38a1185ae3d54b180378bbd71ae3ef16",
-  "translation_date": "2025-09-23T10:05:54+00:00",
-  "source_file": "lessons/6-Other/23-MultiagentSystems/README.md",
-  "language_code": "nl"
-}
--->
 # Multi-Agent Systemen
 
 Een van de mogelijke manieren om intelligentie te bereiken is de zogenaamde **emergente** (of **synergetische**) benadering, die gebaseerd is op het feit dat het gecombineerde gedrag van veel relatief eenvoudige agenten kan resulteren in een algeheel complexer (of intelligenter) gedrag van het systeem als geheel. Theoretisch is dit gebaseerd op de principes van [Collectieve Intelligentie](https://en.wikipedia.org/wiki/Collective_intelligence), [Emergentisme](https://en.wikipedia.org/wiki/Global_brain) en [Evolutionaire Cybernetica](https://en.wikipedia.org/wiki/Global_brain), die stellen dat systemen op een hoger niveau een soort toegevoegde waarde verkrijgen wanneer ze op de juiste manier worden gecombineerd vanuit systemen op een lager niveau (het zogenaamde *principe van metasysteemtransitie*).
@@ -60,7 +51,7 @@ Je kunt [NetLogo downloaden](https://ccl.northwestern.edu/netlogo/download.shtml
 
 Een geweldig aspect van NetLogo is dat het een bibliotheek bevat met werkende modellen die je kunt proberen. Ga naar **File &rightarrow; Models Library**, en je hebt veel categorieën modellen om uit te kiezen.
 
-<img alt="NetLogo Models Library" src="images/NetLogo-ModelLib.png" width="60%"/>
+<img alt="NetLogo Models Library" src="../../../../../translated_images/nl/NetLogo-ModelLib.efe023afb4763c05.webp" width="60%"/>
 
 > Een screenshot van de modellenbibliotheek door Dmitry Soshnikov
 
@@ -70,7 +61,7 @@ Je kunt een van de modellen openen, bijvoorbeeld **Biology &rightarrow; Flocking
 
 Na het openen van het model kom je op het hoofdscherm van NetLogo. Hier is een voorbeeldmodel dat de populatie van wolven en schapen beschrijft, gegeven eindige middelen (gras).
 
-![NetLogo Main Screen](../../../../../translated_images/NetLogo-Main.32653711ec1a01b3cab22ec0b148e64193d0b979b055285bef329d5e3d6958c5.nl.png)
+![NetLogo Main Screen](../../../../../translated_images/nl/NetLogo-Main.32653711ec1a01b3.webp)
 
 > Screenshot door Dmitry Soshnikov
 

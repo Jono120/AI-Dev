@@ -1,15 +1,6 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "8ef02a9318257ea140ed3ed74442096d",
-  "translation_date": "2025-08-29T12:41:43+00:00",
-  "source_file": "lessons/5-NLP/README.md",
-  "language_code": "id"
-}
--->
 # Pemrosesan Bahasa Alami
 
-![Ringkasan tugas NLP dalam bentuk doodle](../../../../translated_images/ai-nlp.b22dcb8ca4707ceaee8576db1c5f4089c8cac2f454e9e03ea554f07fda4556b8.id.png)
+![Ringkasan tugas NLP dalam bentuk doodle](../../../../translated_images/id/ai-nlp.b22dcb8ca4707cea.webp)
 
 Di bagian ini, kita akan fokus pada penggunaan Jaringan Saraf untuk menangani tugas-tugas yang berkaitan dengan **Pemrosesan Bahasa Alami (Natural Language Processing/NLP)**. Ada banyak masalah NLP yang ingin kita selesaikan dengan bantuan komputer:
 

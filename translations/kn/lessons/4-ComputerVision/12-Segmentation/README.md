@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "6568aaae7e0e4afed4b5d74b5b223700",
-  "translation_date": "2025-11-25T22:39:50+00:00",
-  "source_file": "lessons/4-ComputerVision/12-Segmentation/README.md",
-  "language_code": "kn"
-}
--->
 # ವಿಭಾಗೀಕರಣ
 
 ನಾವು ಹಿಂದಿನ ಅಧ್ಯಾಯದಲ್ಲಿ ವಸ್ತು ಪತ್ತೆಮಾಡುವಿಕೆ (Object Detection) ಬಗ್ಗೆ ಕಲಿತಿದ್ದೇವೆ, ಇದು ಚಿತ್ರದಲ್ಲಿ ವಸ್ತುಗಳ *ಬೌಂಡಿಂಗ್ ಬಾಕ್ಸ್*ಗಳನ್ನು ಊಹಿಸುವ ಮೂಲಕ ಅವುಗಳ ಸ್ಥಳವನ್ನು ಕಂಡುಹಿಡಿಯಲು ಸಹಾಯ ಮಾಡುತ್ತದೆ. ಆದರೆ, ಕೆಲವು ಕಾರ್ಯಗಳಿಗೆ ನಮಗೆ ಬೌಂಡಿಂಗ್ ಬಾಕ್ಸ್‌ಗಳಷ್ಟೇ ಅಲ್ಲ, ಹೆಚ್ಚು ನಿಖರವಾದ ವಸ್ತು ಸ್ಥಳೀಕರಣವೂ ಬೇಕಾಗುತ್ತದೆ. ಈ ಕಾರ್ಯವನ್ನು **ವಿಭಾಗೀಕರಣ** ಎಂದು ಕರೆಯುತ್ತಾರೆ.
@@ -20,7 +11,7 @@ CO_OP_TRANSLATOR_METADATA:
 
 ಘಟಕ ವಿಭಾಗೀಕರಣದಲ್ಲಿ, ಈ ಕುರಿಗಳು ವಿಭಿನ್ನ ವಸ್ತುಗಳಾಗಿವೆ, ಆದರೆ ಸಾಮಾನ್ಯ ವಿಭಾಗೀಕರಣದಲ್ಲಿ ಎಲ್ಲಾ ಕುರಿಗಳು ಒಂದೇ ವರ್ಗದಿಂದ ಪ್ರತಿನಿಧಿಸಲಾಗುತ್ತವೆ.
 
-<img src="../../../../../translated_images/instance_vs_semantic.eee9812bebf8cd450cdef4caaed2d4dd9c6c3b671e0c65d8aef312758ebb7b89.kn.jpeg" width="50%">
+<img src="../../../../../translated_images/kn/instance_vs_semantic.eee9812bebf8cd45.webp" width="50%">
 
 > ಚಿತ್ರ [ಈ ಬ್ಲಾಗ್ ಪೋಸ್ಟ್](https://nirmalamurali.medium.com/image-classification-vs-semantic-segmentation-vs-instance-segmentation-625c33a08d50) ನಿಂದ
 
@@ -29,7 +20,7 @@ CO_OP_TRANSLATOR_METADATA:
 * **ಎನ್‌ಕೋಡರ್** ಇನ್‌ಪುಟ್ ಚಿತ್ರದಿಂದ ಲಕ್ಷಣಗಳನ್ನು ತೆಗೆದುಕೊಳ್ಳುತ್ತದೆ
 * **ಡಿಕೋಡರ್** ಆ ಲಕ್ಷಣಗಳನ್ನು **ಮಾಸ್ಕ್ ಚಿತ್ರ** ಆಗಿ ಪರಿವರ್ತಿಸುತ್ತದೆ, ಅದೇ ಗಾತ್ರ ಮತ್ತು ವರ್ಗಗಳ ಸಂಖ್ಯೆಗೆ ಹೊಂದಿಕೊಂಡ ಚಾನೆಲ್‌ಗಳೊಂದಿಗೆ.
 
-<img src="../../../../../translated_images/segm.92442f2cb42ff4fa650fee858a3a02f55cf46825d9602115130e9e95a52a8526.kn.png" width="80%">
+<img src="../../../../../translated_images/kn/segm.92442f2cb42ff4fa.webp" width="80%">
 
 > ಚಿತ್ರ [ಈ ಪ್ರಕಟಣೆಯಿಂದ](https://arxiv.org/pdf/2001.05566.pdf)
 
@@ -43,7 +34,7 @@ CO_OP_TRANSLATOR_METADATA:
 
 > ✅ ಈ ತಂತ್ರಜ್ಞಾನ ವೈದ್ಯಕೀಯ ಚಿತ್ರಣಕ್ಕೆ ವಿಶೇಷವಾಗಿ ಸೂಕ್ತವಾಗಿದೆ, ಆದರೆ ನೀವು ಇನ್ನೇನು ನೈಜ ಜಗತ್ತಿನ ಅನ್ವಯಗಳನ್ನು ಊಹಿಸಬಹುದು?
 
-<img alt="navi" src="../../../../../translated_images/navi.2f20b727910110ea593fa03a2491f2ba1b25c62c97b33c692bcf01917a1f333f.kn.png"/>
+<img alt="navi" src="../../../../../translated_images/kn/navi.2f20b727910110ea.webp"/>
 
 > ಚಿತ್ರ PH<sup>2</sup> ಡೇಟಾಬೇಸ್‌ನಿಂದ
 

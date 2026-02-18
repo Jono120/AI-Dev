@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "6522312ff835796ca34136a9462fafb2",
-  "translation_date": "2025-09-23T06:49:24+00:00",
-  "source_file": "lessons/5-NLP/19-NER/README.md",
-  "language_code": "ur"
-}
--->
 # نام شدہ ادارہ کی شناخت
 
 اب تک، ہم زیادہ تر ایک NLP کام - درجہ بندی پر توجہ مرکوز کر رہے تھے۔ تاہم، نیورل نیٹ ورکس کے ذریعے دیگر NLP کام بھی انجام دیے جا سکتے ہیں۔ ان کاموں میں سے ایک **[نام شدہ ادارہ کی شناخت](https://wikipedia.org/wiki/Named-entity_recognition)** (NER) ہے، جو متن میں مخصوص اداروں کو پہچاننے سے متعلق ہے، جیسے مقامات، افراد کے نام، تاریخ و وقت کے وقفے، کیمیائی فارمولے وغیرہ۔
@@ -17,7 +8,7 @@ CO_OP_TRANSLATOR_METADATA:
 
 فرض کریں کہ آپ ایک قدرتی زبان چیٹ بوٹ تیار کرنا چاہتے ہیں، جیسے Amazon Alexa یا Google Assistant۔ ذہین چیٹ بوٹس اس طرح کام کرتے ہیں کہ وہ صارف کی خواہش کو سمجھنے کے لیے ان پٹ جملے پر متن کی درجہ بندی کرتے ہیں۔ اس درجہ بندی کا نتیجہ **ارادہ** کہلاتا ہے، جو یہ طے کرتا ہے کہ چیٹ بوٹ کو کیا کرنا چاہیے۔
 
-<img alt="Bot NER" src="images/bot-ner.png" width="50%"/>
+<img alt="Bot NER" src="../../../../../translated_images/ur/bot-ner.4b09235dbb0ad275.webp" width="50%"/>
 
 > تصویر مصنف کی جانب سے
 
@@ -58,7 +49,7 @@ infant | O
 
 چونکہ ہمیں ٹوکنز اور کلاسز کے درمیان ایک سے ایک مطابقت پیدا کرنی ہوتی ہے، ہم اس تصویر سے ایک دائیں طرف **کئی سے کئی** نیورل نیٹ ورک ماڈل بنا سکتے ہیں:
 
-![تصویر جو عام recurrent neural network patterns کو دکھاتی ہے۔](../../../../../translated_images/unreasonable-effectiveness-of-rnn.541ead816778f42dce6c42d8a56c184729aa2378d059b851be4ce12b993033df.ur.jpg)
+![تصویر جو عام recurrent neural network patterns کو دکھاتی ہے۔](../../../../../translated_images/ur/unreasonable-effectiveness-of-rnn.541ead816778f42d.webp)
 
 > *تصویر [اس بلاگ پوسٹ](http://karpathy.github.io/2015/05/21/rnn-effectiveness/) سے لی گئی ہے، جو [Andrej Karpathy](http://karpathy.github.io/) کی جانب سے ہے۔ NER ٹوکن درجہ بندی ماڈلز اس تصویر میں دائیں طرف کے نیٹ ورک آرکیٹیکچر سے مطابقت رکھتے ہیں۔*
 

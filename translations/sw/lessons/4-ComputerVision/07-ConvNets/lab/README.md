@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "b70fcf7fcee862990f848c679090943f",
-  "translation_date": "2025-10-03T14:56:44+00:00",
-  "source_file": "lessons/4-ComputerVision/07-ConvNets/lab/README.md",
-  "language_code": "sw"
-}
--->
 # Uainishaji wa Nyuso za Wanyama Kipenzi
 
 Kazi ya Maabara kutoka [Mtaala wa AI kwa Kompyuta](https://github.com/microsoft/ai-for-beginners).
@@ -21,7 +12,7 @@ Unahitaji kufundisha mtandao wa neva wa convolutional ili kuainisha aina tofauti
 
 Tutatumia [Oxford-IIIT Pet Dataset](https://www.robots.ox.ac.uk/~vgg/data/pets/), ambayo ina picha za aina 37 tofauti za mbwa na paka.
 
-![Dataset tutakayoshughulikia](../../../../../../translated_images/data.50b2a9d5484bdbf0f52f5765b381cec9efe2bd296a98f007f90bedb6ac67f2a8.sw.png)
+![Dataset tutakayoshughulikia](../../../../../../translated_images/sw/data.50b2a9d5484bdbf0.webp)
 
 Ili kupakua dataset, tumia kipande hiki cha msimbo:
 

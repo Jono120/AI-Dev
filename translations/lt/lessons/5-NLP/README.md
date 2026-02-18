@@ -1,15 +1,6 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "8ef02a9318257ea140ed3ed74442096d",
-  "translation_date": "2025-08-31T17:55:03+00:00",
-  "source_file": "lessons/5-NLP/README.md",
-  "language_code": "lt"
-}
--->
 # Natūralios kalbos apdorojimas
 
-![NLP užduočių santrauka piešinyje](../../../../translated_images/ai-nlp.b22dcb8ca4707ceaee8576db1c5f4089c8cac2f454e9e03ea554f07fda4556b8.lt.png)
+![NLP užduočių santrauka piešinyje](../../../../translated_images/lt/ai-nlp.b22dcb8ca4707cea.webp)
 
 Šiame skyriuje mes sutelksime dėmesį į neuroninių tinklų naudojimą užduotims, susijusioms su **natūralios kalbos apdorojimu (NLP)**. Yra daugybė NLP problemų, kurias norime, kad kompiuteriai galėtų išspręsti:
 

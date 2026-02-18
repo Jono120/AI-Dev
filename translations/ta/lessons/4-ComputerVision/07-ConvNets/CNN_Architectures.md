@@ -1,23 +1,14 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "53faab85adfcebd8c10bcd71dc2fa557",
-  "translation_date": "2025-10-11T11:25:17+00:00",
-  "source_file": "lessons/4-ComputerVision/07-ConvNets/CNN_Architectures.md",
-  "language_code": "ta"
-}
--->
 # பிரபலமான CNN கட்டமைப்புகள்
 
 ### VGG-16
 
 VGG-16 என்பது 2014 ஆம் ஆண்டில் ImageNet top-5 வகைப்படுத்தலில் 92.7% துல்லியத்தை அடைந்த ஒரு நெட்வொர்க் ஆகும். இதன் அடுக்குகளின் அமைப்பு பின்வருமாறு உள்ளது:
 
-![ImageNet Layers](../../../../../translated_images/vgg-16-arch1.d901a5583b3a51baeaab3e768567d921e5d54befa46e1e642616c5458c934028.ta.jpg)
+![ImageNet Layers](../../../../../translated_images/ta/vgg-16-arch1.d901a5583b3a51ba.webp)
 
 நீங்கள் காணும் படி, VGG ஒரு பாரம்பரிய பyramிட் கட்டமைப்பை பின்பற்றுகிறது, இது கான்வல்யூஷன்-பூலிங் அடுக்குகளின் வரிசையாகும்.
 
-![ImageNet Pyramid](../../../../../translated_images/vgg-16-arch.64ff2137f50dd49fdaa786e3f3a975b3f22615efd13efb19c5d22f12e01451a1.ta.jpg)
+![ImageNet Pyramid](../../../../../translated_images/ta/vgg-16-arch.64ff2137f50dd49f.webp)
 
 > [Researchgate](https://www.researchgate.net/figure/Vgg16-model-structure-To-get-the-VGG-NIN-model-we-replace-the-2-nd-4-th-6-th-7-th_fig2_335194493) இல் இருந்து படம்
 
@@ -25,7 +16,7 @@ VGG-16 என்பது 2014 ஆம் ஆண்டில் ImageNet top-5 �
 
 ResNet என்பது 2015 ஆம் ஆண்டில் Microsoft Research மூலம் முன்மொழியப்பட்ட மாடல்களின் குடும்பமாகும். ResNet இன் முக்கிய யோசனை **மீதமுள்ள பிளாக்குகளை** பயன்படுத்துவது:
 
-<img src="../../../../../translated_images/resnet-block.aba4ccbcc094443477d7bee189d44fed695c852d710a702462d6b809155d959a.ta.png" width="300"/>
+<img src="../../../../../translated_images/ta/resnet-block.aba4ccbcc0944434.webp" width="300"/>
 
 > [இந்தக் கட்டுரையில்](https://arxiv.org/pdf/1512.03385.pdf) இருந்து படம்
 
@@ -37,7 +28,7 @@ Identity pass-through ஐ பயன்படுத்துவதற்கான
 
 Google Inception கட்டமைப்பு இந்த யோசனையை மேலும் ஒரு படி முன்னேற்றுகிறது, மேலும் ஒவ்வொரு நெட்வொர்க் அடுக்கையும் பல்வேறு பாதைகளின் கலவையாக உருவாக்குகிறது:
 
-<img src="../../../../../translated_images/inception.a6605b85bcbc6f52490ec55e68109dd41924cba9d7e1007453b4cdf554199c8d.ta.png" width="400"/>
+<img src="../../../../../translated_images/ta/inception.a6605b85bcbc6f52.webp" width="400"/>
 
 > [Researchgate](https://www.researchgate.net/figure/Inception-module-with-dimension-reductions-left-and-schema-for-Inception-ResNet-v1_fig2_355547454) இல் இருந்து படம்
 

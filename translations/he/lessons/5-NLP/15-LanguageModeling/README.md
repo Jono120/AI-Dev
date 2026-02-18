@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "7ba20f54a5bfcd6521018cdfb17c7c57",
-  "translation_date": "2025-09-23T10:23:22+00:00",
-  "source_file": "lessons/5-NLP/15-LanguageModeling/README.md",
-  "language_code": "he"
-}
--->
 # מודל שפה
 
 הטמעות סמנטיות, כמו Word2Vec ו-GloVe, הן למעשה צעד ראשון לקראת **מודל שפה** - יצירת מודלים שמבינים (או מייצגים) בצורה כלשהי את טבע השפה.
@@ -23,7 +14,7 @@ CO_OP_TRANSLATOR_METADATA:
 * **Continuous Bag-of-Words** (CBoW), שבו אנו חוזים את הטוקן האמצעי $W_0$ ברצף טוקנים $W_{-N}$, ..., $W_N$.
 * **Skip-gram**, שבו אנו חוזים סט של טוקנים סמוכים {$W_{-N},\dots, W_{-1}, W_1,\dots, W_N$} מתוך הטוקן האמצעי $W_0$.
 
-![תמונה מתוך מאמר על המרת מילים לווקטורים](../../../../../translated_images/example-algorithms-for-converting-words-to-vectors.fbe9207a726922f6f0f5de66427e8a6eda63809356114e28fb1fa5f4a83ebda7.he.png)
+![תמונה מתוך מאמר על המרת מילים לווקטורים](../../../../../translated_images/he/example-algorithms-for-converting-words-to-vectors.fbe9207a726922f6.webp)
 
 > תמונה מתוך [המאמר הזה](https://arxiv.org/pdf/1301.3781.pdf)
 

@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "ddd216f558a255260a9374008002c971",
-  "translation_date": "2025-09-23T06:47:27+00:00",
-  "source_file": "lessons/3-NeuralNetworks/05-Frameworks/README.md",
-  "language_code": "ur"
-}
--->
 # نیورل نیٹ ورک فریم ورک
 
 جیسا کہ ہم پہلے ہی سیکھ چکے ہیں، نیورل نیٹ ورکس کو مؤثر طریقے سے تربیت دینے کے لیے ہمیں دو کام کرنے کی ضرورت ہے:
@@ -58,7 +49,7 @@ High-level API| [Keras](IntroKeras.ipynb) | *PyTorch Lightning*
 
 ذیل میں 5 نقاط کو اپروکسیمیٹ کرنے کے مسئلے پر غور کریں (گراف میں `x` کے ذریعے ظاہر کیے گئے):
 
-![linear](../../../../../translated_images/overfit1.f24b71c6f652e59e6bed7245ffbeaecc3ba320e16e2221f6832b432052c4da43.ur.jpg) | ![overfit](../../../../../translated_images/overfit2.131f5800ae10ca5e41d12a411f5f705d9ee38b1b10916f284b787028dd55cc1c.ur.jpg)
+![linear](../../../../../translated_images/ur/overfit1.f24b71c6f652e59e.webp) | ![overfit](../../../../../translated_images/ur/overfit2.131f5800ae10ca5e.webp)
 -------------------------|--------------------------
 **لینیئر ماڈل، 2 پیرامیٹرز** | **نان-لینیئر ماڈل، 7 پیرامیٹرز**
 ٹریننگ ایرر = 5.3 | ٹریننگ ایرر = 0
@@ -79,7 +70,7 @@ High-level API| [Keras](IntroKeras.ipynb) | *PyTorch Lightning*
 
 جیسا کہ آپ اوپر گراف سے دیکھ سکتے ہیں، اوورفٹنگ کا پتہ بہت کم ٹریننگ ایرر اور بہت زیادہ ویلیڈیشن ایرر سے لگایا جا سکتا ہے۔ عام طور پر تربیت کے دوران ہم دیکھیں گے کہ ٹریننگ اور ویلیڈیشن ایرر دونوں کم ہونا شروع ہو جاتے ہیں، اور پھر کسی وقت ویلیڈیشن ایرر کم ہونا بند کر سکتا ہے اور بڑھنا شروع کر سکتا ہے۔ یہ اوورفٹنگ کی علامت ہوگی، اور اس بات کا اشارہ کہ ہمیں شاید اس وقت تربیت روک دینی چاہیے (یا کم از کم ماڈل کا اسنیپ شاٹ لینا چاہیے)۔
 
-![overfitting](../../../../../translated_images/Overfitting.408ad91cd90b4371d0a81f4287e1409c359751adeb1ae450332af50e84f08c3e.ur.png)
+![overfitting](../../../../../translated_images/ur/Overfitting.408ad91cd90b4371.webp)
 
 ## اوورفٹنگ کو کیسے روکا جائے؟
 

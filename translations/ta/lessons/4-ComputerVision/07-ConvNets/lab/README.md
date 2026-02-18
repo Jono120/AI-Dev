@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "b70fcf7fcee862990f848c679090943f",
-  "translation_date": "2025-10-11T11:26:25+00:00",
-  "source_file": "lessons/4-ComputerVision/07-ConvNets/lab/README.md",
-  "language_code": "ta"
-}
--->
 # செல்லப்பிராணிகளின் முகங்களை வகைப்படுத்துதல்
 
 [AI for Beginners Curriculum](https://github.com/microsoft/ai-for-beginners) இலிருந்து ஆய்வகப் பணிக்கான ஒதுக்கீடு.
@@ -21,7 +12,7 @@ CO_OP_TRANSLATOR_METADATA:
 
 37 வெவ்வேறு இனங்களுக்கான நாய்கள் மற்றும் பூனைகளின் படங்களை கொண்ட [Oxford-IIIT Pet Dataset](https://www.robots.ox.ac.uk/~vgg/data/pets/) ஐ நாம் பயன்படுத்துவோம்.
 
-![நாம் கையாளும் தரவுத்தொகுப்பு](../../../../../../translated_images/data.50b2a9d5484bdbf0f52f5765b381cec9efe2bd296a98f007f90bedb6ac67f2a8.ta.png)
+![நாம் கையாளும் தரவுத்தொகுப்பு](../../../../../../translated_images/ta/data.50b2a9d5484bdbf0.webp)
 
 தரவுத்தொகுப்பைப் பதிவிறக்க, இந்தக் குறியீட்டு துண்டைப் பயன்படுத்தவும்:
 

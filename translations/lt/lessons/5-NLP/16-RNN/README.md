@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "e2273cc150380a5e191903cea858f021",
-  "translation_date": "2025-09-23T15:50:23+00:00",
-  "source_file": "lessons/5-NLP/16-RNN/README.md",
-  "language_code": "lt"
-}
--->
 # Rekurentiniai neuroniniai tinklai
 
 ## [Prieš paskaitą: testas](https://ff-quizzes.netlify.app/en/ai/quiz/31)
@@ -15,7 +6,7 @@ Ankstesnėse dalyse naudojome turtingas semantines teksto reprezentacijas ir pap
 
 Norint užfiksuoti teksto sekos prasmę, reikia naudoti kitą neuroninio tinklo architektūrą, vadinamą **rekurentiniais neuroniniais tinklais** (RNN). RNN tinkluose sakinį perduodame per tinklą po vieną simbolį, o tinklas generuoja tam tikrą **būseną**, kurią vėliau perduodame tinklui kartu su kitu simboliu.
 
-![RNN](../../../../../translated_images/rnn.27f5c29c53d727b546ad3961637a267f0fe9ec5ab01f2a26a853c92fcefbb574.lt.png)
+![RNN](../../../../../translated_images/lt/rnn.27f5c29c53d727b5.webp)
 
 > Vaizdas sukurtas autoriaus
 
@@ -31,7 +22,7 @@ Pažvelkime, kaip organizuota paprasta RNN ląstelė. Ji priima ankstesnę būse
 
 Paprasta RNN ląstelė turi du svorio matricas viduje: viena transformuoja įvesties simbolį (vadinkime ją W), o kita transformuoja įvesties būseną (H). Tokiu atveju tinklo išvestis apskaičiuojama kaip &sigma;(W&times;X<sub>i</sub>+H&times;S<sub>i-1</sub>+b), kur &sigma; yra aktyvavimo funkcija, o b yra papildomas poslinkis.
 
-<img alt="RNN ląstelės anatomija" src="images/rnn-anatomy.png" width="50%"/>
+<img alt="RNN ląstelės anatomija" src="../../../../../translated_images/lt/rnn-anatomy.79ee3f3920b3294b.webp" width="50%"/>
 
 > Vaizdas sukurtas autoriaus
 
@@ -61,7 +52,7 @@ Aptarėme rekurentinius tinklus, kurie veikia viena kryptimi, nuo sekos pradžio
 
 Rekurentinis tinklas, nesvarbu, ar vienkryptis, ar dvikryptis, užfiksuoja tam tikrus sekos modelius ir gali juos saugoti būsenos vektoriuje arba perduoti į išvestį. Kaip ir konvoliuciniuose tinkluose, galime sukurti kitą rekurentinį sluoksnį virš pirmojo, kad užfiksuotume aukštesnio lygio modelius ir sukurtume iš žemo lygio modelių, kuriuos ištraukė pirmasis sluoksnis. Tai veda mus prie **daugiasluoksnio RNN** sąvokos, kurią sudaro du ar daugiau rekurentinių tinklų, kur ankstesnio sluoksnio išvestis perduodama kitam sluoksniui kaip įvestis.
 
-![Vaizdas, rodantis daugiasluoksnį ilgalaikės trumpalaikės atminties RNN](../../../../../translated_images/multi-layer-lstm.dd975e29bb2a59fe58b429db833932d734c81f211cad2783797a9608984acb8c.lt.jpg)
+![Vaizdas, rodantis daugiasluoksnį ilgalaikės trumpalaikės atminties RNN](../../../../../translated_images/lt/multi-layer-lstm.dd975e29bb2a59fe.webp)
 
 *Paveikslas iš [šio puikaus įrašo](https://towardsdatascience.com/from-a-lstm-cell-to-a-multilayer-lstm-network-with-pytorch-2899eb5696f3) Fernando López*
 

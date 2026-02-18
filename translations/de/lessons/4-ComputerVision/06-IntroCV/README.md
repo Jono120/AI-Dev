@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "feeca98225cb420afc89415f24f63d92",
-  "translation_date": "2025-09-23T12:17:33+00:00",
-  "source_file": "lessons/4-ComputerVision/06-IntroCV/README.md",
-  "language_code": "de"
-}
--->
 # Einführung in Computer Vision
 
 [Computer Vision](https://wikipedia.org/wiki/Computer_vision) ist ein Fachgebiet, dessen Ziel es ist, Computern ein hochentwickeltes Verständnis von digitalen Bildern zu ermöglichen. Dies ist eine recht breite Definition, da *Verständnis* viele verschiedene Dinge bedeuten kann, wie z. B. das Finden eines Objekts auf einem Bild (**Objekterkennung**), das Verstehen, was passiert (**Ereigniserkennung**), das Beschreiben eines Bildes in Text oder die Rekonstruktion einer Szene in 3D. Es gibt auch spezielle Aufgaben im Zusammenhang mit menschlichen Bildern: Alter- und Emotionserkennung, Gesichtserkennung und -identifikation sowie 3D-Pose-Schätzung, um nur einige zu nennen.
@@ -73,14 +64,14 @@ In unserem [OpenCV Notebook](OpenCV.ipynb) geben wir einige Beispiele, wann Comp
 
 * **Vorverarbeitung eines Fotos eines Braille-Buchs**. Wir konzentrieren uns darauf, wie wir Thresholding, Merkmalserkennung, perspektivische Transformation und NumPy-Manipulationen verwenden können, um einzelne Braille-Symbole für die weitere Klassifikation durch ein neuronales Netzwerk zu trennen.
 
-![Braille Bild](../../../../../translated_images/braille.341962ff76b1bd7044409371d3de09ced5028132aef97344ea4b7468c1208126.de.jpeg) | ![Braille Bild vorverarbeitet](../../../../../translated_images/braille-result.46530fea020b03c76aac532d7d6eeef7f6fb35b55b1001cd21627907dabef3ed.de.png) | ![Braille Symbole](../../../../../translated_images/braille-symbols.0159185ab69d533909dc4d7d26a1971b51401c6a80eb3a5584f250ea880af88b.de.png)
+![Braille Bild](../../../../../translated_images/de/braille.341962ff76b1bd70.webp) | ![Braille Bild vorverarbeitet](../../../../../translated_images/de/braille-result.46530fea020b03c7.webp) | ![Braille Symbole](../../../../../translated_images/de/braille-symbols.0159185ab69d5339.webp)
 ----|-----|-----
 
 > Bild aus [OpenCV.ipynb](OpenCV.ipynb)
 
 * **Bewegungserkennung in Videos durch Frame-Differenz**. Wenn die Kamera fixiert ist, sollten die Frames des Kamerafeeds ziemlich ähnlich zueinander sein. Da Frames als Arrays dargestellt werden, erhalten wir durch das Subtrahieren dieser Arrays für zwei aufeinanderfolgende Frames die Pixelunterschiede, die bei statischen Frames gering sein sollten und bei erheblicher Bewegung im Bild höher werden.
 
-![Bild von Video-Frames und Frame-Differenzen](../../../../../translated_images/frame-difference.706f805491a0883c938e16447bf5eb2f7d69e812c7f743cbe7d7c7645168f81f.de.png)
+![Bild von Video-Frames und Frame-Differenzen](../../../../../translated_images/de/frame-difference.706f805491a0883c.webp)
 
 > Bild aus [OpenCV.ipynb](OpenCV.ipynb)
 
@@ -89,7 +80,7 @@ In unserem [OpenCV Notebook](OpenCV.ipynb) geben wir einige Beispiele, wann Comp
    - **Dichter Optischer Fluss** berechnet das Vektorfeld, das zeigt, wohin sich jeder Pixel bewegt.
    - **Spärlicher Optischer Fluss** basiert darauf, einige markante Merkmale im Bild (z. B. Kanten) zu nehmen und deren Trajektorie von Frame zu Frame zu erstellen.
 
-![Bild des Optischen Flusses](../../../../../translated_images/optical.1f4a94464579a83a10784f3c07fe7228514714b96782edf50e70ccd59d2d8c4f.de.png)
+![Bild des Optischen Flusses](../../../../../translated_images/de/optical.1f4a94464579a83a.webp)
 
 > Bild aus [OpenCV.ipynb](OpenCV.ipynb)
 
@@ -115,7 +106,7 @@ Lesen Sie mehr über optischen Fluss [in diesem großartigen Tutorial](https://l
 
 In diesem Labor werden Sie ein Video mit einfachen Gesten aufnehmen, und Ihr Ziel ist es, Aufwärts-/Abwärts-/Links-/Rechts-Bewegungen mithilfe des optischen Flusses zu extrahieren.
 
-<img src="images/palm-movement.png" width="30%" alt="Palm Movement Frame"/>
+<img src="../../../../../translated_images/de/palm-movement.341495f0e9c47da3.webp" width="30%" alt="Palm Movement Frame"/>
 
 ---
 

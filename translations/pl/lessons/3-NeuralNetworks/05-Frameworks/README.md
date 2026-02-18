@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "ddd216f558a255260a9374008002c971",
-  "translation_date": "2025-09-23T13:57:32+00:00",
-  "source_file": "lessons/3-NeuralNetworks/05-Frameworks/README.md",
-  "language_code": "pl"
-}
--->
 # Frameworky Sieci Neuronowych
 
 Jak już się nauczyliśmy, aby efektywnie trenować sieci neuronowe, musimy zrobić dwie rzeczy:
@@ -58,7 +49,7 @@ Nadmierne dopasowanie to niezwykle ważne pojęcie w uczeniu maszynowym i bardzo
 
 Rozważmy następujący problem aproksymacji 5 punktów (reprezentowanych przez `x` na poniższych wykresach):
 
-![linear](../../../../../translated_images/overfit1.f24b71c6f652e59e6bed7245ffbeaecc3ba320e16e2221f6832b432052c4da43.pl.jpg) | ![overfit](../../../../../translated_images/overfit2.131f5800ae10ca5e41d12a411f5f705d9ee38b1b10916f284b787028dd55cc1c.pl.jpg)
+![linear](../../../../../translated_images/pl/overfit1.f24b71c6f652e59e.webp) | ![overfit](../../../../../translated_images/pl/overfit2.131f5800ae10ca5e.webp)
 -------------------------|--------------------------
 **Model liniowy, 2 parametry** | **Model nieliniowy, 7 parametrów**
 Błąd treningowy = 5.3 | Błąd treningowy = 0
@@ -79,7 +70,7 @@ Bardzo ważne jest znalezienie odpowiedniej równowagi między złożonością m
 
 Jak widać na powyższym wykresie, nadmierne dopasowanie można wykryć po bardzo niskim błędzie treningowym i wysokim błędzie walidacyjnym. Zazwyczaj podczas treningu widzimy, że zarówno błędy treningowe, jak i walidacyjne zaczynają się zmniejszać, a następnie w pewnym momencie błąd walidacyjny może przestać się zmniejszać i zacząć rosnąć. To będzie oznaka nadmiernego dopasowania i wskazówka, że powinniśmy prawdopodobnie zatrzymać trening w tym momencie (lub przynajmniej zrobić migawkę modelu).
 
-![overfitting](../../../../../translated_images/Overfitting.408ad91cd90b4371d0a81f4287e1409c359751adeb1ae450332af50e84f08c3e.pl.png)
+![overfitting](../../../../../translated_images/pl/Overfitting.408ad91cd90b4371.webp)
 
 ## Jak zapobiegać nadmiernemu dopasowaniu
 

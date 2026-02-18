@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "ddd216f558a255260a9374008002c971",
-  "translation_date": "2025-09-23T14:56:58+00:00",
-  "source_file": "lessons/3-NeuralNetworks/05-Frameworks/README.md",
-  "language_code": "hr"
-}
--->
 # Okviri za neuronske mreže
 
 Kao što smo već naučili, da bismo učinkovito trenirali neuronske mreže, moramo učiniti dvije stvari:
@@ -58,7 +49,7 @@ Pretreniranje je iznimno važan koncept u strojnom učenju, i vrlo je važno raz
 
 Razmotrimo sljedeći problem aproksimacije 5 točaka (prikazanih kao `x` na grafovima dolje):
 
-![linear](../../../../../translated_images/overfit1.f24b71c6f652e59e6bed7245ffbeaecc3ba320e16e2221f6832b432052c4da43.hr.jpg) | ![overfit](../../../../../translated_images/overfit2.131f5800ae10ca5e41d12a411f5f705d9ee38b1b10916f284b787028dd55cc1c.hr.jpg)
+![linear](../../../../../translated_images/hr/overfit1.f24b71c6f652e59e.webp) | ![overfit](../../../../../translated_images/hr/overfit2.131f5800ae10ca5e.webp)
 -------------------------|--------------------------
 **Linearni model, 2 parametra** | **Nelinearni model, 7 parametara**
 Pogreška na treningu = 5.3 | Pogreška na treningu = 0
@@ -79,7 +70,7 @@ Vrlo je važno pronaći ispravnu ravnotežu između složenosti modela (broja pa
 
 Kao što možete vidjeti na grafu iznad, pretreniranje se može otkriti vrlo niskom pogreškom na treningu i visokom pogreškom na validaciji. Obično tijekom treninga vidimo kako pogreške na treningu i validaciji počinju opadati, a zatim u nekom trenutku pogreška na validaciji prestaje opadati i počinje rasti. To će biti znak pretreniranja i pokazatelj da bismo trebali prestati trenirati u tom trenutku (ili barem napraviti snimku modela).
 
-![pretreniranje](../../../../../translated_images/Overfitting.408ad91cd90b4371d0a81f4287e1409c359751adeb1ae450332af50e84f08c3e.hr.png)
+![pretreniranje](../../../../../translated_images/hr/Overfitting.408ad91cd90b4371.webp)
 
 ## Kako spriječiti pretreniranje
 

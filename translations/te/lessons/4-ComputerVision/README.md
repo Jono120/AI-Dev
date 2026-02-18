@@ -1,15 +1,6 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "58a52f000089c1d8906a4daa4ab1169b",
-  "translation_date": "2025-11-25T21:10:33+00:00",
-  "source_file": "lessons/4-ComputerVision/README.md",
-  "language_code": "te"
-}
--->
 # కంప్యూటర్ విజన్
 
-![డూడిల్‌లో కంప్యూటర్ విజన్ విషయాల సారాంశం](../../../../translated_images/ai-computervision.6506ebebac3fbf76cdb78989d7d3dfea87e88285c0feaade53aa7804a22b248f.te.png)
+![డూడిల్‌లో కంప్యూటర్ విజన్ విషయాల సారాంశం](../../../../translated_images/te/ai-computervision.6506ebebac3fbf76.webp)
 
 ఈ విభాగంలో మనం నేర్చుకోబోతున్నవి:
 

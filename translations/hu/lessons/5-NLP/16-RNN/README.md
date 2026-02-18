@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "e2273cc150380a5e191903cea858f021",
-  "translation_date": "2025-09-23T11:19:18+00:00",
-  "source_file": "lessons/5-NLP/16-RNN/README.md",
-  "language_code": "hu"
-}
--->
 # Rekurrens Neurális Hálózatok
 
 ## [Előadás előtti kvíz](https://ff-quizzes.netlify.app/en/ai/quiz/31)
@@ -15,7 +6,7 @@ Az előző szekciókban gazdag szemantikai reprezentációkat használtunk a sz�
 
 Ahhoz, hogy a szövegszekvencia jelentését megragadjuk, egy másik neurális hálózati architektúrát kell használnunk, amelyet **rekurrens neurális hálózatnak** (RNN) nevezünk. Az RNN-ben mondatunkat egy szimbólumonként adjuk át a hálózaton, és a hálózat egy **állapotot** hoz létre, amelyet aztán a következő szimbólummal együtt újra átadunk a hálózatnak.
 
-![RNN](../../../../../translated_images/rnn.27f5c29c53d727b546ad3961637a267f0fe9ec5ab01f2a26a853c92fcefbb574.hu.png)
+![RNN](../../../../../translated_images/hu/rnn.27f5c29c53d727b5.webp)
 
 > Kép a szerzőtől
 
@@ -31,7 +22,7 @@ Nézzük meg, hogyan van felépítve egy egyszerű RNN cella. Elfogadja az előz
 
 Egy egyszerű RNN cellának két súlymátrixa van: az egyik átalakítja a bemeneti szimbólumot (nevezzük W-nek), a másik pedig a bemeneti állapotot (H). Ebben az esetben a hálózat kimenete &sigma;(W&times;X<sub>i</sub>+H&times;S<sub>i-1</sub>+b) formában számítódik ki, ahol &sigma; az aktivációs függvény, és b egy további bias.
 
-<img alt="RNN cella anatómiája" src="images/rnn-anatomy.png" width="50%"/>
+<img alt="RNN cella anatómiája" src="../../../../../translated_images/hu/rnn-anatomy.79ee3f3920b3294b.webp" width="50%"/>
 
 > Kép a szerzőtől
 
@@ -61,7 +52,7 @@ Olyan rekurrens hálózatokat tárgyaltunk, amelyek egy irányban működnek, a 
 
 Egy rekurrens hálózat, akár egyirányú, akár kétirányú, bizonyos mintákat ragad meg egy szekvenciában, és ezeket az állapotvektorba menti vagy a kimenetbe továbbítja. Akárcsak a konvolúciós hálózatok esetében, egy másik rekurrens réteget építhetünk az első fölé, hogy magasabb szintű mintákat ragadjunk meg, és az első réteg által kinyert alacsony szintű mintákból építkezzünk. Ez vezet minket a **többrétegű RNN** fogalmához, amely két vagy több rekurrens hálózatból áll, ahol az előző réteg kimenete bemenetként kerül a következő rétegbe.
 
-![Többrétegű hosszú-rövid távú memória RNN](../../../../../translated_images/multi-layer-lstm.dd975e29bb2a59fe58b429db833932d734c81f211cad2783797a9608984acb8c.hu.jpg)
+![Többrétegű hosszú-rövid távú memória RNN](../../../../../translated_images/hu/multi-layer-lstm.dd975e29bb2a59fe.webp)
 
 *Kép Fernando López [ezen csodálatos bejegyzéséből](https://towardsdatascience.com/from-a-lstm-cell-to-a-multilayer-lstm-network-with-pytorch-2899eb5696f3)*
 

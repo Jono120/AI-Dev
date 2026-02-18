@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "6522312ff835796ca34136a9462fafb2",
-  "translation_date": "2025-11-18T18:40:02+00:00",
-  "source_file": "lessons/5-NLP/19-NER/README.md",
-  "language_code": "pcm"
-}
--->
 # Named Entity Recognition
 
 So far, we don dey focus mostly on one NLP task - classification. But e get other NLP tasks wey neural networks fit do. One of dem na **[Named Entity Recognition](https://wikipedia.org/wiki/Named-entity_recognition)** (NER), wey dey help to sabi specific entities for text, like places, person names, date-time intervals, chemical formulae and so on.
@@ -17,7 +8,7 @@ So far, we don dey focus mostly on one NLP task - classification. But e get othe
 
 Make we say you wan build natural language chat bot, like Amazon Alexa or Google Assistant. Di way wey smart chat bots dey work na to *understand* wetin di user wan by doing text classification for di sentence wey dem type. Di result of dis classification na wetin dem dey call **intent**, wey go show wetin di chat bot suppose do.
 
-<img alt="Bot NER" src="../../../../../translated_images/bot-ner.4b09235dbb0ad2754ec1f54c8c797f902cbb0b45ac90b0cfc8287343cef8df2f.pcm.png" width="50%"/>
+<img alt="Bot NER" src="../../../../../translated_images/pcm/bot-ner.4b09235dbb0ad275.webp" width="50%"/>
 
 > Image na di author create am
 
@@ -58,7 +49,7 @@ infant | O
 
 Because we need to match tokens and classes one by one, we fit train di **many-to-many** neural network model wey dey show for dis picture:
 
-![Image showing common recurrent neural network patterns.](../../../../../translated_images/unreasonable-effectiveness-of-rnn.541ead816778f42dce6c42d8a56c184729aa2378d059b851be4ce12b993033df.pcm.jpg)
+![Image showing common recurrent neural network patterns.](../../../../../translated_images/pcm/unreasonable-effectiveness-of-rnn.541ead816778f42d.webp)
 
 > *Image na from [dis blog post](http://karpathy.github.io/2015/05/21/rnn-effectiveness/) by [Andrej Karpathy](http://karpathy.github.io/). NER token classification models na di right-most network architecture for dis picture.*
 

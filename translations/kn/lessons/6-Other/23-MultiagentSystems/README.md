@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "38a1185ae3d54b180378bbd71ae3ef16",
-  "translation_date": "2025-11-25T23:37:47+00:00",
-  "source_file": "lessons/6-Other/23-MultiagentSystems/README.md",
-  "language_code": "kn"
-}
--->
 # ಬಹು-ಏಜೆಂಟ್ ವ್ಯವಸ್ಥೆಗಳು
 
 ಬುದ್ಧಿಮತ್ತೆಯನ್ನು ಸಾಧಿಸುವ ಸಾಧ್ಯವಾದ ಮಾರ್ಗಗಳಲ್ಲಿ ಒಂದಾಗಿದೆ **ಉದ್ಭವಿಸುವ** (ಅಥವಾ **ಸಂಯೋಜಕ**) ವಿಧಾನ, ಇದು ಅನೇಕ ಸರಳ ಏಜೆಂಟ್‌ಗಳ ಸಂಯುಕ್ತ ವರ್ತನೆ ಸಂಪೂರ್ಣ ವ್ಯವಸ್ಥೆಯ ಒಟ್ಟಾರೆ ಹೆಚ್ಚು ಸಂಕೀರ್ಣ (ಅಥವಾ ಬುದ್ಧಿವಂತ) ವರ್ತನೆಗೆ ಕಾರಣವಾಗಬಹುದು ಎಂಬ ತತ್ವದ ಮೇಲೆ ಆಧಾರಿತವಾಗಿದೆ. ಸೈದ್ಧಾಂತಿಕವಾಗಿ, ಇದು [ಸಾಮೂಹಿಕ ಬುದ್ಧಿಮತ್ತೆ](https://en.wikipedia.org/wiki/Collective_intelligence), [ಉದ್ಭವವಾದಿ](https://en.wikipedia.org/wiki/Global_brain) ಮತ್ತು [ವಿಕಾಸಾತ್ಮಕ ಸೈಬರ್‌ನೆಟಿಕ್ಸ್](https://en.wikipedia.org/wiki/Global_brain) ತತ್ವಗಳ ಮೇಲೆ ಆಧಾರಿತವಾಗಿದೆ, ಇದು ಹೇಳುತ್ತದೆ ಕೆಳಮಟ್ಟದ ವ್ಯವಸ್ಥೆಗಳಿಂದ ಸರಿಯಾಗಿ ಸಂಯೋಜಿಸಿದಾಗ ಮೇಲ್ಮಟ್ಟದ ವ್ಯವಸ್ಥೆಗಳು ಕೆಲವು ಹೆಚ್ಚುವರಿ ಮೌಲ್ಯವನ್ನು ಪಡೆಯುತ್ತವೆ (ಇದನ್ನು *ಮೆಟಾಸಿಸ್ಟಮ್ ಪರಿವರ್ತನೆಯ ತತ್ವ* ಎಂದು ಕರೆಯುತ್ತಾರೆ).
@@ -60,7 +51,7 @@ ask turtles [
 
 ನೆಟ್‌ಲೋಗೋದಲ್ಲಿ ಒಂದು ಅದ್ಭುತ ವಿಷಯವೆಂದರೆ, ನೀವು ಪ್ರಯತ್ನಿಸಬಹುದಾದ ಕಾರ್ಯನಿರ್ವಹಿಸುವ ಮಾದರಿಗಳ ಗ್ರಂಥಾಲಯವಿದೆ. **File → Models Library** ಗೆ ಹೋಗಿ, ಮತ್ತು ನೀವು ಅನೇಕ ವರ್ಗಗಳ ಮಾದರಿಗಳನ್ನು ಆಯ್ಕೆಮಾಡಬಹುದು.
 
-<img alt="NetLogo Models Library" src="../../../../../translated_images/NetLogo-ModelLib.efe023afb4763c059704a8ac0e2cd5e51889b117e8eac02aaa5334cfe1c52c13.kn.png" width="60%"/>
+<img alt="NetLogo Models Library" src="../../../../../translated_images/kn/NetLogo-ModelLib.efe023afb4763c05.webp" width="60%"/>
 
 > ಡಿಮಿಟ್ರಿ ಸೋಶ್ನಿಕೋವ್ ಅವರ ಮಾದರಿ ಗ್ರಂಥಾಲಯದ ಸ್ಕ್ರೀನ್‌ಶಾಟ್
 
@@ -70,7 +61,7 @@ ask turtles [
 
 ಮಾದರಿಯನ್ನು ತೆರೆಯುವ ನಂತರ, ನೀವು ಮುಖ್ಯ ನೆಟ್‌ಲೋಗೋ ಪರದೆಗೆ ಹೋಗುತ್ತೀರಿ. ಇಲ್ಲಿ ನಾಯಿ ಮತ್ತು ಕುರಿಗಳ ಜನಸಂಖ್ಯೆಯನ್ನು ವಿವರಿಸುವ ಮಾದರಿ ಇದೆ, ನಿರ್ದಿಷ್ಟ ಸಂಪನ್ಮೂಲಗಳ (ಹುಲ್ಲು)ೊಂದಿಗೆ.
 
-![NetLogo Main Screen](../../../../../translated_images/NetLogo-Main.32653711ec1a01b3cab22ec0b148e64193d0b979b055285bef329d5e3d6958c5.kn.png)
+![NetLogo Main Screen](../../../../../translated_images/kn/NetLogo-Main.32653711ec1a01b3.webp)
 
 > ಡಿಮಿಟ್ರಿ ಸೋಶ್ನಿಕೋವ್ ಅವರ ಸ್ಕ್ರೀನ್‌ಶಾಟ್
 

@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "f335dfcb4a993920504c387973a36957",
-  "translation_date": "2025-09-23T07:23:15+00:00",
-  "source_file": "lessons/5-NLP/18-Transformers/README.md",
-  "language_code": "ne"
-}
--->
 # ध्यान मेकानिज्म र ट्रान्सफर्मरहरू
 
 ## [पाठ अघि क्विज](https://ff-quizzes.netlify.app/en/ai/quiz/35)
@@ -20,13 +11,13 @@ RNNs प्रयोग गर्दा, sequence-to-sequence दुई पु�
 
 **ध्यान मेकानिज्महरू** प्रत्येक इनपुट भेक्टरको सन्दर्भात्मक प्रभावलाई प्रत्येक RNN को आउटपुट भविष्यवाणीमा तौल दिने माध्यम प्रदान गर्छ। यसलाई कार्यान्वयन गर्ने तरिका भनेको इनपुट RNN र आउटपुट RNN का बीचमा छोटो मार्गहरू सिर्जना गर्नु हो। यस प्रकार, आउटपुट प्रतीक y<sub>t</sub> उत्पन्न गर्दा, हामी सबै इनपुट लुकाइएको अवस्थाहरू h<sub>i</sub> लाई विभिन्न तौल गुणांकहरू &alpha;<sub>t,i</sub> सहित विचार गर्नेछौं।
 
-![Image showing an encoder/decoder model with an additive attention layer](../../../../../translated_images/encoder-decoder-attention.7a726296894fb567aa2898c94b17b3289087f6705c11907df8301df9e5eeb3de.ne.png)
+![Image showing an encoder/decoder model with an additive attention layer](../../../../../translated_images/ne/encoder-decoder-attention.7a726296894fb567.webp)
 
 > [Bahdanau et al., 2015](https://arxiv.org/pdf/1409.0473.pdf) मा additive attention मेकानिज्मसहितको encoder-decoder मोडेल, [यो ब्लग पोस्ट](https://lilianweng.github.io/lil-log/2018/06/24/attention-attention.html) बाट उद्धृत।
 
 ध्यान म्याट्रिक्स {&alpha;<sub>i,j</sub>} ले इनपुट अनुक्रमका निश्चित शब्दहरूले आउटपुट अनुक्रमको कुनै शब्दको उत्पत्तिमा कति भूमिका खेल्छन् भन्ने प्रतिनिधित्व गर्दछ। तल यस्तो म्याट्रिक्सको उदाहरण छ:
 
-![Image showing a sample alignment found by RNNsearch-50, taken from Bahdanau - arviz.org](../../../../../translated_images/bahdanau-fig3.09ba2d37f202a6af11de6c82d2d197830ba5f4528d9ea430eb65fd3a75065973.ne.png)
+![Image showing a sample alignment found by RNNsearch-50, taken from Bahdanau - arviz.org](../../../../../translated_images/ne/bahdanau-fig3.09ba2d37f202a6af.webp)
 
 > [Bahdanau et al., 2015](https://arxiv.org/pdf/1409.0473.pdf) बाट चित्र (Fig.3)
 
@@ -56,7 +47,7 @@ Positional encoding को विचार निम्नानुसार छ
 * टोकन embedding जस्तै trainable embedding। यो यहाँ हामीले विचार गरेको दृष्टिकोण हो। हामी टोकनहरू र तिनका स्थितिहरूमा embedding लेयरहरू लागू गर्छौं, जसले समान आयामका embedding भेक्टरहरू उत्पादन गर्छ, जुन हामीले एकसाथ थप्छौं।
 * मूल पेपरमा प्रस्ताव गरिएको fixed position encoding function।
 
-<img src="images/pos-embedding.png" width="50%"/>
+<img src="../../../../../translated_images/ne/pos-embedding.e41ce9b6cf6078af.webp" width="50%"/>
 
 > लेखकद्वारा चित्र।
 
@@ -66,7 +57,7 @@ Positional embedding को परिणामले मूल टोकन र 
 
 अब, हामीले हाम्रो अनुक्रमभित्र केही ढाँचाहरू कब्जा गर्न आवश्यक छ। यो गर्न ट्रान्सफर्मरहरूले **self-attention** मेकानिज्म प्रयोग गर्छन्, जुन इनपुट र आउटपुटको रूपमा समान अनुक्रममा लागू गरिएको ध्यान हो। Self-attention लागू गर्दा हामी वाक्यभित्रको **सन्दर्भ**लाई विचार गर्न सक्छौं, र कुन शब्दहरू परस्पर सम्बन्धित छन् हेर्न सक्छौं। उदाहरणका लागि, यसले *it* जस्ता coreferences द्वारा उल्लेख गरिएका शब्दहरू हेर्न र सन्दर्भलाई विचार गर्न अनुमति दिन्छ:
 
-![](../../../../../translated_images/CoreferenceResolution.861924d6d384a7d68d8d0039d06a71a151f18a796b8b1330239d3590bd4947eb.ne.png)
+![](../../../../../translated_images/ne/CoreferenceResolution.861924d6d384a7d6.webp)
 
 > [Google Blog](https://research.googleblog.com/2017/08/transformer-novel-neural-network.html) बाट चित्र।
 
@@ -91,7 +82,7 @@ Encoder-decoder attention RNNs मा प्रयोग गरिएको ध�
 
 **BERT** (Bidirectional Encoder Representations from Transformers) एक धेरै ठूलो बहु-लेयर ट्रान्सफर्मर नेटवर्क हो, *BERT-base* को लागि 12 लेयरहरू, र *BERT-large* को लागि 24। मोडेललाई पहिलो पटक ठूलो पाठ डाटाको संग्रह (WikiPedia + किताबहरू) मा unsupervised प्रशिक्षण (वाक्यमा masked शब्दहरूको भविष्यवाणी गर्दै) प्रयोग गरेर प्रि-ट्रेन गरिन्छ। प्रि-ट्रेनिङको क्रममा मोडेलले भाषा बुझ्ने महत्त्वपूर्ण स्तरहरू अवशोषित गर्छ, जसलाई अन्य डाटासेटहरूसँग fine tuning गरेर उपयोग गर्न सकिन्छ। यस प्रक्रियालाई **transfer learning** भनिन्छ।
 
-![picture from http://jalammar.github.io/illustrated-bert/](../../../../../translated_images/jalammarBERT-language-modeling-masked-lm.34f113ea5fec4362e39ee4381aab7cad06b5465a0b5f053a0f2aa05fbe14e746.ne.png)
+![picture from http://jalammar.github.io/illustrated-bert/](../../../../../translated_images/ne/jalammarBERT-language-modeling-masked-lm.34f113ea5fec4362.webp)
 
 > [स्रोत](http://jalammar.github.io/illustrated-bert/)
 

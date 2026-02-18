@@ -1,15 +1,6 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "8ef02a9318257ea140ed3ed74442096d",
-  "translation_date": "2025-10-11T11:38:10+00:00",
-  "source_file": "lessons/5-NLP/README.md",
-  "language_code": "ta"
-}
--->
 # இயற்கை மொழி செயலாக்கம்
 
-![NLP பணிகளின் சுருக்கம் ஒரு ஓவியத்தில்](../../../../translated_images/ai-nlp.b22dcb8ca4707ceaee8576db1c5f4089c8cac2f454e9e03ea554f07fda4556b8.ta.png)
+![NLP பணிகளின் சுருக்கம் ஒரு ஓவியத்தில்](../../../../translated_images/ta/ai-nlp.b22dcb8ca4707cea.webp)
 
 இந்த பிரிவில், **இயற்கை மொழி செயலாக்கம் (NLP)** தொடர்பான பணிகளை கையாள நரம்பியல் வலையமைப்புகளைப் பயன்படுத்துவதில் கவனம் செலுத்துவோம். கணினிகள் தீர்க்க வேண்டிய பல NLP பிரச்சினைகள் உள்ளன:
 

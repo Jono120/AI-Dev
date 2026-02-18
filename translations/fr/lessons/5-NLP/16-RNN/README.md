@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "e2273cc150380a5e191903cea858f021",
-  "translation_date": "2025-09-23T12:04:29+00:00",
-  "source_file": "lessons/5-NLP/16-RNN/README.md",
-  "language_code": "fr"
-}
--->
 # Réseaux de Neurones Récurrents
 
 ## [Quiz avant le cours](https://ff-quizzes.netlify.app/en/ai/quiz/31)
@@ -15,7 +6,7 @@ Dans les sections précédentes, nous avons utilisé des représentations séman
 
 Pour capturer le sens d'une séquence de texte, nous devons utiliser une autre architecture de réseau de neurones, appelée **réseau de neurones récurrent**, ou RNN. Dans un RNN, nous faisons passer notre phrase à travers le réseau un symbole à la fois, et le réseau produit un certain **état**, que nous transmettons ensuite au réseau avec le symbole suivant.
 
-![RNN](../../../../../translated_images/rnn.27f5c29c53d727b546ad3961637a267f0fe9ec5ab01f2a26a853c92fcefbb574.fr.png)
+![RNN](../../../../../translated_images/fr/rnn.27f5c29c53d727b5.webp)
 
 > Image par l'auteur
 
@@ -31,7 +22,7 @@ Voyons comment une cellule RNN simple est organisée. Elle accepte l'état préc
 
 Une cellule RNN simple contient deux matrices de poids : l'une transforme un symbole d'entrée (appelons-la W), et l'autre transforme un état d'entrée (H). Dans ce cas, la sortie du réseau est calculée comme &sigma;(W&times;X<sub>i</sub>+H&times;S<sub>i-1</sub>+b), où &sigma; est la fonction d'activation et b est un biais supplémentaire.
 
-<img alt="Anatomie d'une cellule RNN" src="images/rnn-anatomy.png" width="50%"/>
+<img alt="Anatomie d'une cellule RNN" src="../../../../../translated_images/fr/rnn-anatomy.79ee3f3920b3294b.webp" width="50%"/>
 
 > Image par l'auteur
 
@@ -61,7 +52,7 @@ Nous avons discuté des réseaux récurrents qui fonctionnent dans une seule dir
 
 Un réseau récurrent, qu'il soit unidirectionnel ou bidirectionnel, capture certains motifs au sein d'une séquence et peut les stocker dans un vecteur d'état ou les transmettre en sortie. Comme pour les réseaux convolutionnels, nous pouvons construire une autre couche récurrente au-dessus de la première pour capturer des motifs de niveau supérieur et construire à partir des motifs de bas niveau extraits par la première couche. Cela nous mène à la notion de **RNN multicouche**, qui consiste en deux ou plusieurs réseaux récurrents, où la sortie de la couche précédente est transmise à la couche suivante comme entrée.
 
-![Image montrant un RNN LSTM multicouche](../../../../../translated_images/multi-layer-lstm.dd975e29bb2a59fe58b429db833932d734c81f211cad2783797a9608984acb8c.fr.jpg)
+![Image montrant un RNN LSTM multicouche](../../../../../translated_images/fr/multi-layer-lstm.dd975e29bb2a59fe.webp)
 
 *Image tirée de [cet excellent article](https://towardsdatascience.com/from-a-lstm-cell-to-a-multilayer-lstm-network-with-pytorch-2899eb5696f3) de Fernando López*
 

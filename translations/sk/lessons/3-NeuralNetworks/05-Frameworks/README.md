@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "ddd216f558a255260a9374008002c971",
-  "translation_date": "2025-09-23T14:09:06+00:00",
-  "source_file": "lessons/3-NeuralNetworks/05-Frameworks/README.md",
-  "language_code": "sk"
-}
--->
 # Frameworky pre neurónové siete
 
 Ako sme sa už naučili, na efektívne trénovanie neurónových sietí musíme urobiť dve veci:
@@ -58,7 +49,7 @@ Pretrénovanie je mimoriadne dôležitý koncept v strojovom učení, a je veľm
 
 Zvážte nasledujúci problém aproximácie 5 bodov (reprezentovaných `x` na grafoch nižšie):
 
-![linear](../../../../../translated_images/overfit1.f24b71c6f652e59e6bed7245ffbeaecc3ba320e16e2221f6832b432052c4da43.sk.jpg) | ![overfit](../../../../../translated_images/overfit2.131f5800ae10ca5e41d12a411f5f705d9ee38b1b10916f284b787028dd55cc1c.sk.jpg)
+![linear](../../../../../translated_images/sk/overfit1.f24b71c6f652e59e.webp) | ![overfit](../../../../../translated_images/sk/overfit2.131f5800ae10ca5e.webp)
 -------------------------|--------------------------
 **Lineárny model, 2 parametre** | **Nelineárny model, 7 parametrov**
 Chyba trénovania = 5.3 | Chyba trénovania = 0
@@ -79,7 +70,7 @@ Je veľmi dôležité nájsť správnu rovnováhu medzi bohatstvom modelu (poče
 
 Ako môžete vidieť na grafe vyššie, pretrénovanie možno detekovať veľmi nízkou chybou trénovania a vysokou chybou validácie. Normálne počas trénovania vidíme, že chyby trénovania aj validácie začínajú klesať, a potom v určitom bode chyba validácie môže prestať klesať a začať stúpať. Toto bude znak pretrénovania a indikátor, že by sme mali pravdepodobne zastaviť trénovanie (alebo aspoň urobiť snímku modelu).
 
-![overfitting](../../../../../translated_images/Overfitting.408ad91cd90b4371d0a81f4287e1409c359751adeb1ae450332af50e84f08c3e.sk.png)
+![overfitting](../../../../../translated_images/sk/Overfitting.408ad91cd90b4371.webp)
 
 ## Ako predísť pretrénovaniu
 

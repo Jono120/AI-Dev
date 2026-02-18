@@ -1,23 +1,14 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "53faab85adfcebd8c10bcd71dc2fa557",
-  "translation_date": "2025-09-23T14:14:49+00:00",
-  "source_file": "lessons/4-ComputerVision/07-ConvNets/CNN_Architectures.md",
-  "language_code": "ro"
-}
--->
 # Arhitecturi CNN Celebre
 
 ### VGG-16
 
 VGG-16 este o rețea care a atins o acuratețe de 92.7% în clasificarea top-5 ImageNet în 2014. Structura sa de straturi este următoarea:
 
-![Straturi ImageNet](../../../../../translated_images/vgg-16-arch1.d901a5583b3a51baeaab3e768567d921e5d54befa46e1e642616c5458c934028.ro.jpg)
+![Straturi ImageNet](../../../../../translated_images/ro/vgg-16-arch1.d901a5583b3a51ba.webp)
 
 După cum se poate observa, VGG urmează o arhitectură tradițională de tip piramidă, care constă într-o secvență de straturi de convoluție și pooling.
 
-![Piramida ImageNet](../../../../../translated_images/vgg-16-arch.64ff2137f50dd49fdaa786e3f3a975b3f22615efd13efb19c5d22f12e01451a1.ro.jpg)
+![Piramida ImageNet](../../../../../translated_images/ro/vgg-16-arch.64ff2137f50dd49f.webp)
 
 > Imagine de la [Researchgate](https://www.researchgate.net/figure/Vgg16-model-structure-To-get-the-VGG-NIN-model-we-replace-the-2-nd-4-th-6-th-7-th_fig2_335194493)
 
@@ -25,7 +16,7 @@ După cum se poate observa, VGG urmează o arhitectură tradițională de tip pi
 
 ResNet este o familie de modele propusă de Microsoft Research în 2015. Ideea principală a ResNet este utilizarea **blocurilor reziduale**:
 
-<img src="images/resnet-block.png" width="300"/>
+<img src="../../../../../translated_images/ro/resnet-block.aba4ccbcc0944434.webp" width="300"/>
 
 > Imagine din [acest articol](https://arxiv.org/pdf/1512.03385.pdf)
 
@@ -37,7 +28,7 @@ De asemenea, această rețea poate fi privită ca fiind capabilă să își ajus
 
 Arhitectura Google Inception duce această idee un pas mai departe și construiește fiecare strat al rețelei ca o combinație de mai multe căi diferite:
 
-<img src="images/inception.png" width="400"/>
+<img src="../../../../../translated_images/ro/inception.a6605b85bcbc6f52.webp" width="400"/>
 
 > Imagine de la [Researchgate](https://www.researchgate.net/figure/Inception-module-with-dimension-reductions-left-and-schema-for-Inception-ResNet-v1_fig2_355547454)
 

@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "6522312ff835796ca34136a9462fafb2",
-  "translation_date": "2025-11-25T23:18:32+00:00",
-  "source_file": "lessons/5-NLP/19-NER/README.md",
-  "language_code": "kn"
-}
--->
 # ನಾಮಿತ ಘಟಕ ಗುರುತಿಸುವಿಕೆ
 
 ಈವರೆಗೆ, ನಾವು ಮುಖ್ಯವಾಗಿ ಒಂದು NLP ಕಾರ್ಯ - ವರ್ಗೀಕರಣದ ಮೇಲೆ ಗಮನಹರಿಸಿದ್ದೇವೆ. ಆದರೆ, ನ್ಯೂರಲ್ ನೆಟ್‌ವರ್ಕ್‌ಗಳೊಂದಿಗೆ ಸಾಧಿಸಬಹುದಾದ ಇತರ NLP ಕಾರ್ಯಗಳೂ ಇವೆ. ಅವುಗಳಲ್ಲಿ ಒಂದು **[ನಾಮಿತ ಘಟಕ ಗುರುತಿಸುವಿಕೆ](https://wikipedia.org/wiki/Named-entity_recognition)** (NER), ಇದು ಪಠ್ಯದಲ್ಲಿ ನಿರ್ದಿಷ್ಟ ಘಟಕಗಳನ್ನು ಗುರುತಿಸುವುದನ್ನು ಒಳಗೊಂಡಿದೆ, ಉದಾಹರಣೆಗೆ ಸ್ಥಳಗಳು, ವ್ಯಕ್ತಿ ಹೆಸರುಗಳು, ದಿನಾಂಕ-ಸಮಯ ಅವಧಿಗಳು, ರಾಸಾಯನಿಕ ಸೂತ್ರಗಳು ಮತ್ತು ಇತ್ಯಾದಿ.
@@ -17,7 +8,7 @@ CO_OP_TRANSLATOR_METADATA:
 
 ನೀವು ಅಮೆಜಾನ್ ಅಲೆಕ್ಸಾ ಅಥವಾ ಗೂಗಲ್ ಅಸಿಸ್ಟೆಂಟ್‌ನಂತೆ ನೈಸರ್ಗಿಕ ಭಾಷೆ ಚಾಟ್ ಬಾಟ್ ಅಭಿವೃದ್ಧಿಪಡಿಸಲು ಬಯಸಿದರೆ, ಬುದ್ಧಿವಂತ ಚಾಟ್ ಬಾಟ್‌ಗಳು ಬಳಕೆದಾರನು ಏನು ಬಯಸುತ್ತಾನೆ ಎಂಬುದನ್ನು *ಅರ್ಥಮಾಡಿಕೊಳ್ಳಲು* ಇನ್‌ಪುಟ್ ವಾಕ್ಯದಲ್ಲಿ ಪಠ್ಯ ವರ್ಗೀಕರಣವನ್ನು ಮಾಡುತ್ತವೆ. ಈ ವರ್ಗೀಕರಣದ ಫಲಿತಾಂಶವನ್ನು **ಉದ್ದೇಶ** ಎಂದು ಕರೆಯುತ್ತಾರೆ, ಇದು ಚಾಟ್ ಬಾಟ್ ಏನು ಮಾಡಬೇಕು ಎಂದು ನಿರ್ಧರಿಸುತ್ತದೆ.
 
-<img alt="Bot NER" src="../../../../../translated_images/bot-ner.4b09235dbb0ad2754ec1f54c8c797f902cbb0b45ac90b0cfc8287343cef8df2f.kn.png" width="50%"/>
+<img alt="Bot NER" src="../../../../../translated_images/kn/bot-ner.4b09235dbb0ad275.webp" width="50%"/>
 
 > ಚಿತ್ರ ಲೇಖಕರಿಂದ
 
@@ -58,7 +49,7 @@ infant | O
 
 ಟೋಕನ್‌ಗಳು ಮತ್ತು ವರ್ಗಗಳ ನಡುವೆ ಒಂದರೊಂದರ ಹೊಂದಾಣಿಕೆಯನ್ನು ನಿರ್ಮಿಸಬೇಕಾಗಿರುವುದರಿಂದ, ಈ ಚಿತ್ರದಿಂದ ನಾವು ಬಲಭಾಗದ **ಬಹು-ದಿಂದ-ಬಹು** ನ್ಯೂರಲ್ ನೆಟ್‌ವರ್ಕ್ ಮಾದರಿಯನ್ನು ತರಬೇತುಗೊಳಿಸಬಹುದು:
 
-![Image showing common recurrent neural network patterns.](../../../../../translated_images/unreasonable-effectiveness-of-rnn.541ead816778f42dce6c42d8a56c184729aa2378d059b851be4ce12b993033df.kn.jpg)
+![Image showing common recurrent neural network patterns.](../../../../../translated_images/kn/unreasonable-effectiveness-of-rnn.541ead816778f42d.webp)
 
 > *ಚಿತ್ರ [ಈ ಬ್ಲಾಗ್ ಪೋಸ್ಟ್](http://karpathy.github.io/2015/05/21/rnn-effectiveness/) ನಿಂದ [ಅಂದ್ರೇಜ್ ಕಾರ್ಪಥಿ](http://karpathy.github.io/) ಅವರಿಂದ. NER ಟೋಕನ್ ವರ್ಗೀಕರಣ ಮಾದರಿಗಳು ಈ ಚಿತ್ರದಲ್ಲಿ ಬಲಭಾಗದ ನೆಟ್‌ವರ್ಕ್ ವಾಸ್ತುಶಿಲ್ಪಕ್ಕೆ ಹೊಂದಿಕೆಯಾಗುತ್ತವೆ.*
 

@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "51be6057374d01d70e07dd5ec88ebc0d",
-  "translation_date": "2025-09-23T06:48:00+00:00",
-  "source_file": "lessons/5-NLP/17-GenerativeNetworks/README.md",
-  "language_code": "ur"
-}
--->
 # جنریٹو نیٹ ورکس
 
 ## [لیکچر سے پہلے کا کوئز](https://ff-quizzes.netlify.app/en/ai/quiz/33)
@@ -19,7 +10,7 @@ CO_OP_TRANSLATOR_METADATA:
 
 یہ مختلف نیورل آرکیٹیکچرز کی اجازت دیتا ہے، جیسا کہ نیچے دی گئی تصویر میں دکھایا گیا ہے:
 
-![تصویر جو عام ریکرنٹ نیورل نیٹ ورک کے پیٹرنز دکھا رہی ہے۔](../../../../../translated_images/unreasonable-effectiveness-of-rnn.541ead816778f42dce6c42d8a56c184729aa2378d059b851be4ce12b993033df.ur.jpg)
+![تصویر جو عام ریکرنٹ نیورل نیٹ ورک کے پیٹرنز دکھا رہی ہے۔](../../../../../translated_images/ur/unreasonable-effectiveness-of-rnn.541ead816778f42d.webp)
 
 > تصویر بلاگ پوسٹ [Unreasonable Effectiveness of Recurrent Neural Networks](http://karpathy.github.io/2015/05/21/rnn-effectiveness/) سے لی گئی ہے، از [Andrej Karpaty](http://karpathy.github.io/)
 
@@ -32,11 +23,11 @@ CO_OP_TRANSLATOR_METADATA:
 
 ہم اس RNN کو متن قدم بہ قدم تخلیق کرنے کے لیے تربیت دیں گے۔ ہر قدم پر، ہم `nchars` کی لمبائی کے کریکٹرز کا ایک سیکوئنس لیں گے، اور نیٹ ورک سے ہر ان پٹ کریکٹر کے لیے اگلا آؤٹ پٹ کریکٹر پیدا کرنے کو کہیں گے:
 
-![تصویر جو 'HELLO' لفظ کے RNN تخلیق کی مثال دکھا رہی ہے۔](../../../../../translated_images/rnn-generate.56c54afb52f9781d63a7c16ea9c1b86cb70e6e1eae6a742b56b7b37468576b17.ur.png)
+![تصویر جو 'HELLO' لفظ کے RNN تخلیق کی مثال دکھا رہی ہے۔](../../../../../translated_images/ur/rnn-generate.56c54afb52f9781d.webp)
 
 جب متن تخلیق کرتے ہیں (انفرنس کے دوران)، ہم کچھ **پرومپٹ** کے ساتھ شروع کرتے ہیں، جسے RNN سیلز کے ذریعے اس کی درمیانی حالت پیدا کرنے کے لیے پاس کیا جاتا ہے، اور پھر اس حالت سے تخلیق شروع ہوتی ہے۔ ہم ایک وقت میں ایک کریکٹر تخلیق کرتے ہیں، اور حالت اور تخلیق شدہ کریکٹر کو اگلے کریکٹر تخلیق کرنے کے لیے دوسرے RNN سیل کو پاس کرتے ہیں، جب تک کہ ہم کافی کریکٹرز تخلیق نہ کر لیں۔
 
-<img src="images/rnn-generate-inf.png" width="60%"/>
+<img src="../../../../../translated_images/ur/rnn-generate-inf.5168dc65e0370eea.webp" width="60%"/>
 
 > تصویر مصنف کی جانب سے
 

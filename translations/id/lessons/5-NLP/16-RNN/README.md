@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "e2273cc150380a5e191903cea858f021",
-  "translation_date": "2025-09-23T10:45:23+00:00",
-  "source_file": "lessons/5-NLP/16-RNN/README.md",
-  "language_code": "id"
-}
--->
 # Jaringan Saraf Rekurens
 
 ## [Kuis Pra-Kuliah](https://ff-quizzes.netlify.app/en/ai/quiz/31)
@@ -15,7 +6,7 @@ Pada bagian sebelumnya, kita telah menggunakan representasi semantik yang kaya d
 
 Untuk menangkap makna dari urutan teks, kita perlu menggunakan arsitektur jaringan saraf lain yang disebut **jaringan saraf rekurens**, atau RNN. Dalam RNN, kita melewatkan kalimat kita melalui jaringan satu simbol pada satu waktu, dan jaringan menghasilkan beberapa **state**, yang kemudian kita lewati kembali ke jaringan bersama simbol berikutnya.
 
-![RNN](../../../../../translated_images/rnn.27f5c29c53d727b546ad3961637a267f0fe9ec5ab01f2a26a853c92fcefbb574.id.png)
+![RNN](../../../../../translated_images/id/rnn.27f5c29c53d727b5.webp)
 
 > Gambar oleh penulis
 
@@ -31,7 +22,7 @@ Mari kita lihat bagaimana sebuah sel RNN sederhana diorganisasi. Sel ini menerim
 
 Sebuah sel RNN sederhana memiliki dua matriks bobot di dalamnya: satu untuk mentransformasi simbol input (kita sebut W), dan satu lagi untuk mentransformasi state input (H). Dalam kasus ini, output jaringan dihitung sebagai &sigma;(W&times;X<sub>i</sub>+H&times;S<sub>i-1</sub>+b), di mana &sigma; adalah fungsi aktivasi dan b adalah bias tambahan.
 
-<img alt="Anatomi Sel RNN" src="images/rnn-anatomy.png" width="50%"/>
+<img alt="Anatomi Sel RNN" src="../../../../../translated_images/id/rnn-anatomy.79ee3f3920b3294b.webp" width="50%"/>
 
 > Gambar oleh penulis
 
@@ -61,7 +52,7 @@ Kita telah membahas jaringan rekurens yang beroperasi dalam satu arah, dari awal
 
 Jaringan rekurens, baik satu arah maupun bidirectional, menangkap pola tertentu dalam urutan, dan dapat menyimpannya ke dalam vektor state atau melewatkannya ke output. Seperti pada jaringan konvolusi, kita dapat membangun lapisan rekurens lain di atas yang pertama untuk menangkap pola tingkat tinggi dan membangun dari pola tingkat rendah yang diekstraksi oleh lapisan pertama. Ini membawa kita pada konsep **RNN multilayer** yang terdiri dari dua atau lebih jaringan rekurens, di mana output dari lapisan sebelumnya dilewatkan ke lapisan berikutnya sebagai input.
 
-![Gambar menunjukkan RNN LSTM multilayer](../../../../../translated_images/multi-layer-lstm.dd975e29bb2a59fe58b429db833932d734c81f211cad2783797a9608984acb8c.id.jpg)
+![Gambar menunjukkan RNN LSTM multilayer](../../../../../translated_images/id/multi-layer-lstm.dd975e29bb2a59fe.webp)
 
 *Gambar dari [postingan luar biasa ini](https://towardsdatascience.com/from-a-lstm-cell-to-a-multilayer-lstm-network-with-pytorch-2899eb5696f3) oleh Fernando López*
 

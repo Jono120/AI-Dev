@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "7ba20f54a5bfcd6521018cdfb17c7c57",
-  "translation_date": "2025-09-23T06:37:21+00:00",
-  "source_file": "lessons/5-NLP/15-LanguageModeling/README.md",
-  "language_code": "ar"
-}
--->
 # نمذجة اللغة
 
 التضمينات الدلالية، مثل Word2Vec وGloVe، تُعتبر في الواقع خطوة أولى نحو **نمذجة اللغة** - إنشاء نماذج تفهم (أو تمثل) طبيعة اللغة بطريقة ما.
@@ -23,7 +14,7 @@ CO_OP_TRANSLATOR_METADATA:
 * **كيس الكلمات المستمر** (CBoW)، حيث نتوقع الرمز الأوسط $W_0$ في سلسلة الرموز $W_{-N}$, ..., $W_N$.
 * **Skip-gram**، حيث نتوقع مجموعة من الرموز المجاورة {$W_{-N},\dots, W_{-1}, W_1,\dots, W_N$} من الرمز الأوسط $W_0$.
 
-![صورة من ورقة بحثية حول تحويل الكلمات إلى متجهات](../../../../../translated_images/example-algorithms-for-converting-words-to-vectors.fbe9207a726922f6f0f5de66427e8a6eda63809356114e28fb1fa5f4a83ebda7.ar.png)
+![صورة من ورقة بحثية حول تحويل الكلمات إلى متجهات](../../../../../translated_images/ar/example-algorithms-for-converting-words-to-vectors.fbe9207a726922f6.webp)
 
 > صورة مأخوذة من [هذه الورقة البحثية](https://arxiv.org/pdf/1301.3781.pdf)
 

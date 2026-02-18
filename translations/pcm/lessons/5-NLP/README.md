@@ -1,15 +1,6 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "8ef02a9318257ea140ed3ed74442096d",
-  "translation_date": "2025-11-18T18:35:10+00:00",
-  "source_file": "lessons/5-NLP/README.md",
-  "language_code": "pcm"
-}
--->
 # Natural Language Processing
 
-![Summary of NLP tasks in a doodle](../../../../translated_images/ai-nlp.b22dcb8ca4707ceaee8576db1c5f4089c8cac2f454e9e03ea554f07fda4556b8.pcm.png)
+![Summary of NLP tasks in a doodle](../../../../translated_images/pcm/ai-nlp.b22dcb8ca4707cea.webp)
 
 For dis section, we go focus on how Neural Networks fit handle tasks wey relate to **Natural Language Processing (NLP)**. Plenty NLP problems dey wey we wan make computer sabi solve:
 

@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "b708c9b85b833864c73c6281f1e6b96e",
-  "translation_date": "2025-09-23T10:14:33+00:00",
-  "source_file": "lessons/5-NLP/14-Embeddings/README.md",
-  "language_code": "nl"
-}
--->
 # Embeddings
 
 ## [Pre-lecture quiz](https://ff-quizzes.netlify.app/en/ai/quiz/27)
@@ -19,7 +10,7 @@ De embeddinglaag neemt een woord als invoer en produceert een uitvoervector met 
 
 Door een embeddinglaag als eerste laag in ons classifier-netwerk te gebruiken, kunnen we overschakelen van een bag-of-words naar een **embedding bag** model, waarbij we eerst elk woord in onze tekst omzetten in de bijbehorende embedding, en vervolgens een aggregatiefunctie berekenen over al deze embeddings, zoals `sum`, `average` of `max`.
 
-![Afbeelding die een embedding classifier toont voor vijf woorden in een reeks.](../../../../../translated_images/embedding-classifier-example.b77f021a7ee67eeec8e68bfe11636c5b97d6eaa067515a129bfb1d0034b1ac5b.nl.png)
+![Afbeelding die een embedding classifier toont voor vijf woorden in een reeks.](../../../../../translated_images/nl/embedding-classifier-example.b77f021a7ee67eee.webp)
 
 > Afbeelding door de auteur
 
@@ -40,7 +31,7 @@ Om dit te bereiken, moeten we ons embeddingmodel op een grote tekstcollectie op 
 
 CBoW is sneller, terwijl skip-gram langzamer is, maar beter presteert bij het representeren van zeldzame woorden.
 
-![Afbeelding die zowel de CBoW- als Skip-Gram-algoritmen toont om woorden naar vectoren te converteren.](../../../../../translated_images/example-algorithms-for-converting-words-to-vectors.fbe9207a726922f6f0f5de66427e8a6eda63809356114e28fb1fa5f4a83ebda7.nl.png)
+![Afbeelding die zowel de CBoW- als Skip-Gram-algoritmen toont om woorden naar vectoren te converteren.](../../../../../translated_images/nl/example-algorithms-for-converting-words-to-vectors.fbe9207a726922f6.webp)
 
 > Afbeelding uit [dit artikel](https://arxiv.org/pdf/1301.3781.pdf)
 

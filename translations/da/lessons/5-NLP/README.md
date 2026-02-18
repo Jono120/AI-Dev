@@ -1,15 +1,6 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "8ef02a9318257ea140ed3ed74442096d",
-  "translation_date": "2025-08-28T15:51:00+00:00",
-  "source_file": "lessons/5-NLP/README.md",
-  "language_code": "da"
-}
--->
 # Naturlig Sprogbehandling
 
-![Oversigt over NLP-opgaver i en doodle](../../../../translated_images/ai-nlp.b22dcb8ca4707ceaee8576db1c5f4089c8cac2f454e9e03ea554f07fda4556b8.da.png)
+![Oversigt over NLP-opgaver i en doodle](../../../../translated_images/da/ai-nlp.b22dcb8ca4707cea.webp)
 
 I denne sektion vil vi fokusere på at bruge neurale netværk til at håndtere opgaver relateret til **naturlig sprogbehandling (NLP)**. Der er mange NLP-problemer, som vi ønsker, at computere skal kunne løse:
 

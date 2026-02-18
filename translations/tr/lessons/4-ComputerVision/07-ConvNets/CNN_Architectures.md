@@ -1,23 +1,14 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "53faab85adfcebd8c10bcd71dc2fa557",
-  "translation_date": "2025-09-23T08:38:45+00:00",
-  "source_file": "lessons/4-ComputerVision/07-ConvNets/CNN_Architectures.md",
-  "language_code": "tr"
-}
--->
 # Bilinen CNN Mimarileri
 
 ### VGG-16
 
 VGG-16, 2014 yılında ImageNet top-5 sınıflandırmasında %92.7 doğruluk elde eden bir ağdır. Katman yapısı şu şekildedir:
 
-![ImageNet Katmanları](../../../../../translated_images/vgg-16-arch1.d901a5583b3a51baeaab3e768567d921e5d54befa46e1e642616c5458c934028.tr.jpg)
+![ImageNet Katmanları](../../../../../translated_images/tr/vgg-16-arch1.d901a5583b3a51ba.webp)
 
 Gördüğünüz gibi, VGG geleneksel bir piramit mimarisini takip eder; bu, bir dizi evrişim-havuzlama katmanıdır.
 
-![ImageNet Piramidi](../../../../../translated_images/vgg-16-arch.64ff2137f50dd49fdaa786e3f3a975b3f22615efd13efb19c5d22f12e01451a1.tr.jpg)
+![ImageNet Piramidi](../../../../../translated_images/tr/vgg-16-arch.64ff2137f50dd49f.webp)
 
 > Görsel [Researchgate](https://www.researchgate.net/figure/Vgg16-model-structure-To-get-the-VGG-NIN-model-we-replace-the-2-nd-4-th-6-th-7-th_fig2_335194493) kaynağından alınmıştır.
 
@@ -25,7 +16,7 @@ Gördüğünüz gibi, VGG geleneksel bir piramit mimarisini takip eder; bu, bir 
 
 ResNet, 2015 yılında Microsoft Research tarafından önerilen bir model ailesidir. ResNet'in ana fikri **artık blokları** kullanmaktır:
 
-<img src="images/resnet-block.png" width="300"/>
+<img src="../../../../../translated_images/tr/resnet-block.aba4ccbcc0944434.webp" width="300"/>
 
 > Görsel [bu makaleden](https://arxiv.org/pdf/1512.03385.pdf) alınmıştır.
 
@@ -37,7 +28,7 @@ Bu ağı, veri setine göre karmaşıklığını ayarlayabilen bir yapı olarak 
 
 Google Inception mimarisi bu fikri bir adım ileri taşır ve her ağ katmanını birkaç farklı yolun birleşimi olarak oluşturur:
 
-<img src="images/inception.png" width="400"/>
+<img src="../../../../../translated_images/tr/inception.a6605b85bcbc6f52.webp" width="400"/>
 
 > Görsel [Researchgate](https://www.researchgate.net/figure/Inception-module-with-dimension-reductions-left-and-schema-for-Inception-ResNet-v1_fig2_355547454) kaynağından alınmıştır.
 

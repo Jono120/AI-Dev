@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "b70fcf7fcee862990f848c679090943f",
-  "translation_date": "2025-10-03T14:57:52+00:00",
-  "source_file": "lessons/4-ComputerVision/07-ConvNets/lab/README.md",
-  "language_code": "bg"
-}
--->
 # Класификация на лицата на домашни любимци
 
 Лабораторно упражнение от [Учебна програма за начинаещи в AI](https://github.com/microsoft/ai-for-beginners).
@@ -21,7 +12,7 @@ CO_OP_TRANSLATOR_METADATA:
 
 Ще използваме [Oxford-IIIT Pet Dataset](https://www.robots.ox.ac.uk/~vgg/data/pets/), който съдържа изображения на 37 различни породи кучета и котки.
 
-![Наборът от данни, с който ще работим](../../../../../../translated_images/data.50b2a9d5484bdbf0f52f5765b381cec9efe2bd296a98f007f90bedb6ac67f2a8.bg.png)
+![Наборът от данни, с който ще работим](../../../../../../translated_images/bg/data.50b2a9d5484bdbf0.webp)
 
 За да изтеглите набора от данни, използвайте този кодов фрагмент:
 

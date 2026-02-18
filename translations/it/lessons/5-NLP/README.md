@@ -1,15 +1,6 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "8ef02a9318257ea140ed3ed74442096d",
-  "translation_date": "2025-08-26T06:55:02+00:00",
-  "source_file": "lessons/5-NLP/README.md",
-  "language_code": "it"
-}
--->
 # Elaborazione del Linguaggio Naturale
 
-![Riepilogo dei compiti NLP in uno schizzo](../../../../translated_images/ai-nlp.b22dcb8ca4707ceaee8576db1c5f4089c8cac2f454e9e03ea554f07fda4556b8.it.png)
+![Riepilogo dei compiti NLP in uno schizzo](../../../../translated_images/it/ai-nlp.b22dcb8ca4707cea.webp)
 
 In questa sezione ci concentreremo sull'utilizzo delle reti neurali per gestire compiti legati all'**Elaborazione del Linguaggio Naturale (NLP)**. Ci sono molti problemi di NLP che vogliamo che i computer siano in grado di risolvere:
 

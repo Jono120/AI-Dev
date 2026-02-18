@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "51be6057374d01d70e07dd5ec88ebc0d",
-  "translation_date": "2025-09-23T14:33:26+00:00",
-  "source_file": "lessons/5-NLP/17-GenerativeNetworks/README.md",
-  "language_code": "bg"
-}
--->
 # Генеративни мрежи
 
 ## [Тест преди лекцията](https://ff-quizzes.netlify.app/en/ai/quiz/33)
@@ -19,7 +10,7 @@ CO_OP_TRANSLATOR_METADATA:
 
 Това позволява различни невронни архитектури, които са показани на изображението по-долу:
 
-![Изображение, показващо общи модели на рекурентни невронни мрежи.](../../../../../translated_images/unreasonable-effectiveness-of-rnn.541ead816778f42dce6c42d8a56c184729aa2378d059b851be4ce12b993033df.bg.jpg)
+![Изображение, показващо общи модели на рекурентни невронни мрежи.](../../../../../translated_images/bg/unreasonable-effectiveness-of-rnn.541ead816778f42d.webp)
 
 > Изображение от блог пост [Unreasonable Effectiveness of Recurrent Neural Networks](http://karpathy.github.io/2015/05/21/rnn-effectiveness/) от [Андрей Карпати](http://karpathy.github.io/)
 
@@ -32,11 +23,11 @@ CO_OP_TRANSLATOR_METADATA:
 
 Ще обучим тази RNN да генерира текст стъпка по стъпка. На всяка стъпка ще вземем последователност от символи с дължина `nchars` и ще помолим мрежата да генерира следващия изходен символ за всеки входен символ:
 
-![Изображение, показващо пример за генериране на думата 'HELLO' с RNN.](../../../../../translated_images/rnn-generate.56c54afb52f9781d63a7c16ea9c1b86cb70e6e1eae6a742b56b7b37468576b17.bg.png)
+![Изображение, показващо пример за генериране на думата 'HELLO' с RNN.](../../../../../translated_images/bg/rnn-generate.56c54afb52f9781d.webp)
 
 При генериране на текст (по време на инференция) започваме с някакъв **подсказка**, която се предава през RNN клетките, за да генерира междинното си състояние, и след това от това състояние започва генерирането. Генерираме един символ наведнъж и предаваме състоянието и генерирания символ на друга RNN клетка, за да генерира следващия, докато генерираме достатъчно символи.
 
-<img src="images/rnn-generate-inf.png" width="60%"/>
+<img src="../../../../../translated_images/bg/rnn-generate-inf.5168dc65e0370eea.webp" width="60%"/>
 
 > Изображение от автора
 

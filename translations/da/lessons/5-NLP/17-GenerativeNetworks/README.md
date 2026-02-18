@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "51be6057374d01d70e07dd5ec88ebc0d",
-  "translation_date": "2025-09-23T09:34:27+00:00",
-  "source_file": "lessons/5-NLP/17-GenerativeNetworks/README.md",
-  "language_code": "da"
-}
--->
 # Generative netværk
 
 ## [Quiz før forelæsning](https://ff-quizzes.netlify.app/en/ai/quiz/33)
@@ -19,7 +10,7 @@ I RNN-arkitekturen, som vi diskuterede i den forrige enhed, producerede hver RNN
 
 Dette muliggør forskellige neurale arkitekturer, som vist på billedet nedenfor:
 
-![Billede, der viser almindelige mønstre for rekurrente neurale netværk.](../../../../../translated_images/unreasonable-effectiveness-of-rnn.541ead816778f42dce6c42d8a56c184729aa2378d059b851be4ce12b993033df.da.jpg)
+![Billede, der viser almindelige mønstre for rekurrente neurale netværk.](../../../../../translated_images/da/unreasonable-effectiveness-of-rnn.541ead816778f42d.webp)
 
 > Billede fra blogindlægget [Unreasonable Effectiveness of Recurrent Neural Networks](http://karpathy.github.io/2015/05/21/rnn-effectiveness/) af [Andrej Karpaty](http://karpathy.github.io/)
 
@@ -32,11 +23,11 @@ I denne enhed vil vi fokusere på simple generative modeller, der hjælper os me
 
 Vi vil træne denne RNN til at generere tekst trin for trin. Ved hvert trin tager vi en sekvens af tegn med længden `nchars` og beder netværket om at generere det næste outputtegn for hvert inputtegn:
 
-![Billede, der viser et eksempel på RNN-generering af ordet 'HELLO'.](../../../../../translated_images/rnn-generate.56c54afb52f9781d63a7c16ea9c1b86cb70e6e1eae6a742b56b7b37468576b17.da.png)
+![Billede, der viser et eksempel på RNN-generering af ordet 'HELLO'.](../../../../../translated_images/da/rnn-generate.56c54afb52f9781d.webp)
 
 Når vi genererer tekst (under inferens), starter vi med en **prompt**, som sendes gennem RNN-celler for at generere dens mellemliggende tilstand, og derefter starter genereringen fra denne tilstand. Vi genererer ét tegn ad gangen og sender tilstanden og det genererede tegn til en anden RNN-celle for at generere det næste, indtil vi har genereret nok tegn.
 
-<img src="images/rnn-generate-inf.png" width="60%"/>
+<img src="../../../../../translated_images/da/rnn-generate-inf.5168dc65e0370eea.webp" width="60%"/>
 
 > Billede af forfatteren
 

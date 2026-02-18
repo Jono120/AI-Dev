@@ -1,19 +1,10 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "d76a7eda28de5210c8b1ba50a6216c69",
-  "translation_date": "2025-09-23T07:05:43+00:00",
-  "source_file": "lessons/4-ComputerVision/11-ObjectDetection/README.md",
-  "language_code": "mr"
-}
--->
 # ऑब्जेक्ट डिटेक्शन
 
 आतापर्यंत आपण ज्या इमेज क्लासिफिकेशन मॉडेल्सवर काम केले आहे, त्या एका प्रतिमेवर प्रक्रिया करून एक वर्गीय निकाल देतात, जसे की MNIST समस्येमध्ये 'संख्या' वर्ग. परंतु, अनेक वेळा आपल्याला फक्त हे जाणून घ्यायचे नसते की प्रतिमेत वस्तू आहेत, तर आपल्याला त्यांच्या अचूक स्थानाचा अंदाज लावायचा असतो. **ऑब्जेक्ट डिटेक्शन** याच उद्देशासाठी आहे.
 
 ## [पूर्व-व्याख्यान क्विझ](https://ff-quizzes.netlify.app/en/ai/quiz/21)
 
-![ऑब्जेक्ट डिटेक्शन](../../../../../translated_images/Screen_Shot_2016-11-17_at_11.14.54_AM.b4bb3769353287be1b905373ed9c858102c054b16e4595c76ec3f7bba0feb549.mr.png)
+![ऑब्जेक्ट डिटेक्शन](../../../../../translated_images/mr/Screen_Shot_2016-11-17_at_11.14.54_AM.b4bb3769353287be.webp)
 
 > प्रतिमा [YOLO v2 वेबसाइट](https://pjreddie.com/darknet/yolov2/) वरून
 
@@ -25,7 +16,7 @@ CO_OP_TRANSLATOR_METADATA:
 2. प्रत्येक टाइलवर इमेज क्लासिफिकेशन चालवा.
 3. ज्या टाइल्समध्ये पुरेसे उच्च सक्रियता दिसते, त्या टाइल्समध्ये संबंधित वस्तू असल्याचे मानले जाऊ शकते.
 
-![साधा ऑब्जेक्ट डिटेक्शन](../../../../../translated_images/naive-detection.e7f1ba220ccd08c68a2ea8e06a7ed75c3fcc738c2372f9e00b7f4299a8659c01.mr.png)
+![साधा ऑब्जेक्ट डिटेक्शन](../../../../../translated_images/mr/naive-detection.e7f1ba220ccd08c6.webp)
 
 > *प्रतिमा [व्यायाम नोटबुक](ObjectDetection-TF.ipynb) मधून*
 
@@ -42,7 +33,7 @@ CO_OP_TRANSLATOR_METADATA:
 * [PASCAL VOC](http://host.robots.ox.ac.uk/pascal/VOC/) - 20 वर्ग
 * [COCO](http://cocodataset.org/#home) - कॉमन ऑब्जेक्ट्स इन कॉन्टेक्स्ट. 80 वर्ग, बॉक्सेस आणि सेगमेंटेशन मास्क
 
-![COCO](../../../../../translated_images/coco-examples.71bc60380fa6cceb7caad48bd09e35b6028caabd363aa04fee89c414e0870e86.mr.jpg)
+![COCO](../../../../../translated_images/mr/coco-examples.71bc60380fa6cceb.webp)
 
 ## ऑब्जेक्ट डिटेक्शन मेट्रिक्स
 
@@ -50,7 +41,7 @@ CO_OP_TRANSLATOR_METADATA:
 
 इमेज क्लासिफिकेशनसाठी अल्गोरिदम किती चांगले कार्य करते हे मोजणे सोपे आहे, परंतु ऑब्जेक्ट डिटेक्शनसाठी आपल्याला वर्गाची अचूकता आणि बॉक्सच्या स्थानाची अचूकता दोन्ही मोजावी लागते. यासाठी **इंटरसेक्शन ओव्हर युनियन** (IoU) वापरले जाते, जे दोन बॉक्सेस (किंवा दोन क्षेत्रे) किती चांगले ओव्हरलॅप होतात हे मोजते.
 
-![IoU](../../../../../translated_images/iou_equation.9a4751d40fff4e119ecd0a7bcca4e71ab1dc83e0d4f2a0d66ff0859736f593cf.mr.png)
+![IoU](../../../../../translated_images/mr/iou_equation.9a4751d40fff4e11.webp)
 
 > *[IoU वर उत्कृष्ट ब्लॉग पोस्ट](https://pyimagesearch.com/2016/11/07/intersection-over-union-iou-for-object-detection/) मधून आकृती 2*
 
@@ -97,11 +88,11 @@ $$
 
 [R-CNN](http://islab.ulsan.ac.kr/files/announcement/513/rcnn_pami.pdf) [Selective Search](http://www.huppelen.nl/publications/selectiveSearchDraft.pdf) वापरते ROI क्षेत्रांची संरचना तयार करण्यासाठी, जी नंतर CNN फीचर एक्स्ट्रॅक्टर्स आणि SVM-क्लासिफायर्सद्वारे वस्तूचा वर्ग निश्चित करण्यासाठी आणि *बॉक्स* समन्वय निश्चित करण्यासाठी रेषीय रेग्रेशनद्वारे प्रक्रिया केली जाते. [अधिकृत पेपर](https://arxiv.org/pdf/1506.01497v1.pdf)
 
-![RCNN](../../../../../translated_images/rcnn1.cae407020dfb1d1fb572656e44f75cd6c512cc220591c116c506652c10e47f26.mr.png)
+![RCNN](../../../../../translated_images/mr/rcnn1.cae407020dfb1d1f.webp)
 
 > *van de Sande et al. ICCV’11 मधून प्रतिमा*
 
-![RCNN-1](../../../../../translated_images/rcnn2.2d9530bb83516484ec65b250c22dbf37d3d23244f32864ebcb91d98fe7c3112c.mr.png)
+![RCNN-1](../../../../../translated_images/mr/rcnn2.2d9530bb83516484.webp)
 
 > *[या ब्लॉग](https://towardsdatascience.com/r-cnn-fast-r-cnn-faster-r-cnn-yolo-object-detection-algorithms-36d53571365e) मधून प्रतिमा*
 
@@ -109,7 +100,7 @@ $$
 
 हा दृष्टिकोन R-CNN सारखाच आहे, परंतु क्षेत्रे कॉन्व्होल्यूशन लेयर्स लागू केल्यानंतर निश्चित केली जातात.
 
-![FRCNN](../../../../../translated_images/f-rcnn.3cda6d9bb41888754037d2d9763e2298a96de5d9bc2a21db3147357aa5da9b1a.mr.png)
+![FRCNN](../../../../../translated_images/mr/f-rcnn.3cda6d9bb4188875.webp)
 
 > प्रतिमा [अधिकृत पेपर](https://www.cv-foundation.org/openaccess/content_iccv_2015/papers/Girshick_Fast_R-CNN_ICCV_2015_paper.pdf), [arXiv](https://arxiv.org/pdf/1504.08083.pdf), 2015 मधून
 
@@ -117,7 +108,7 @@ $$
 
 या दृष्टिकोनाची मुख्य कल्पना म्हणजे ROIs अंदाज लावण्यासाठी न्यूरल नेटवर्क वापरणे - ज्याला *Region Proposal Network* म्हणतात. [पेपर](https://arxiv.org/pdf/1506.01497.pdf), 2016
 
-![FasterRCNN](../../../../../translated_images/faster-rcnn.8d46c099b87ef30ab2ea26dbc4bdd85b974a57ba8eb526f65dc4cd0a4711de30.mr.png)
+![FasterRCNN](../../../../../translated_images/mr/faster-rcnn.8d46c099b87ef30a.webp)
 
 > प्रतिमा [अधिकृत पेपर](https://arxiv.org/pdf/1506.01497.pdf) मधून
 
@@ -129,7 +120,7 @@ $$
 2. फीचर्स **Position-Sensitive Score Map** द्वारे प्रक्रिया केली जातात. $C$ वर्गातील प्रत्येक वस्तू $k\times k$ क्षेत्रांमध्ये विभागली जाते, आणि वस्तूंचे भाग अंदाज लावण्यासाठी प्रशिक्षण दिले जाते.
 3. $k\times k$ क्षेत्रांमधील प्रत्येक भागासाठी सर्व नेटवर्क्स वस्तू वर्गांसाठी मतदान करतात, आणि जास्तीत जास्त मत असलेला वर्ग निवडला जातो.
 
-![r-fcn प्रतिमा](../../../../../translated_images/r-fcn.13eb88158b99a3da50fa2787a6be5cb310d47f0e9655cc93a1090dc7aab338d1.mr.png)
+![r-fcn प्रतिमा](../../../../../translated_images/mr/r-fcn.13eb88158b99a3da.webp)
 
 > प्रतिमा [अधिकृत पेपर](https://arxiv.org/abs/1605.06409) मधून
 
@@ -140,7 +131,7 @@ YOLO हा एक रिअलटाइम वन-पास अल्गोर�
  * प्रतिमा $S\times S$ क्षेत्रांमध्ये विभागली जाते.
  * प्रत्येक क्षेत्रासाठी, **CNN** $n$ शक्य वस्तू, *बॉक्स* समन्वय आणि *कॉन्फिडन्स*=*प्रोबॅबिलिटी* * IoU अंदाज लावते.
 
- ![YOLO](../../../../../translated_images/yolo.a2648ec82ee8bb4ea27537677adb482fd4b733ca1705c561b6a24a85102dced5.mr.png)
+ ![YOLO](../../../../../translated_images/mr/yolo.a2648ec82ee8bb4e.webp)
 
 > प्रतिमा [अधिकृत पेपर](https://arxiv.org/abs/1506.02640) मधून
 

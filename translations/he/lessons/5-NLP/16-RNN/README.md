@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "e2273cc150380a5e191903cea858f021",
-  "translation_date": "2025-09-23T10:24:33+00:00",
-  "source_file": "lessons/5-NLP/16-RNN/README.md",
-  "language_code": "he"
-}
--->
 # רשתות עצביות חוזרות
 
 ## [שאלון לפני ההרצאה](https://ff-quizzes.netlify.app/en/ai/quiz/31)
@@ -15,7 +6,7 @@ CO_OP_TRANSLATOR_METADATA:
 
 כדי לתפוס את המשמעות של רצף טקסט, עלינו להשתמש בארכיטקטורה אחרת של רשת עצבית, הנקראת **רשת עצבית חוזרת**, או RNN. ב-RNN, אנו מעבירים את המשפט דרך הרשת סמל אחד בכל פעם, והרשת מייצרת **מצב** מסוים, אותו אנו מעבירים שוב לרשת עם הסמל הבא.
 
-![RNN](../../../../../translated_images/rnn.27f5c29c53d727b546ad3961637a267f0fe9ec5ab01f2a26a853c92fcefbb574.he.png)
+![RNN](../../../../../translated_images/he/rnn.27f5c29c53d727b5.webp)
 
 > תמונה מאת המחבר
 
@@ -31,7 +22,7 @@ CO_OP_TRANSLATOR_METADATA:
 
 לתא RNN פשוט יש שני מטריצות משקל בפנים: אחת ממירה סמל קלט (נקרא לה W), ואחת ממירה מצב קלט (H). במקרה זה, הפלט של הרשת מחושב כ-&sigma;(W&times;X<sub>i</sub>+H&times;S<sub>i-1</sub>+b), כאשר &sigma; היא פונקציית האקטיבציה ו-b הוא הטיה נוספת.
 
-<img alt="אנטומיה של תא RNN" src="images/rnn-anatomy.png" width="50%"/>
+<img alt="אנטומיה של תא RNN" src="../../../../../translated_images/he/rnn-anatomy.79ee3f3920b3294b.webp" width="50%"/>
 
 > תמונה מאת המחבר
 
@@ -61,7 +52,7 @@ CO_OP_TRANSLATOR_METADATA:
 
 רשת חוזרת, בין אם חד-כיוונית או דו-כיוונית, תופסת דפוסים מסוימים בתוך רצף, ויכולה לאחסן אותם בוקטור מצב או להעבירם לפלט. כמו ברשתות קונבולוציה, אנו יכולים לבנות שכבה חוזרת נוספת מעל הראשונה כדי לתפוס דפוסים ברמה גבוהה יותר ולבנות מדפוסים ברמה נמוכה שנלכדו על ידי השכבה הראשונה. זה מוביל אותנו למושג של **RNN רב-שכבתי** שמורכב משתי רשתות חוזרות או יותר, כאשר הפלט של השכבה הקודמת מועבר לשכבה הבאה כקלט.
 
-![תמונה המציגה RNN רב-שכבתי מסוג LSTM](../../../../../translated_images/multi-layer-lstm.dd975e29bb2a59fe58b429db833932d734c81f211cad2783797a9608984acb8c.he.jpg)
+![תמונה המציגה RNN רב-שכבתי מסוג LSTM](../../../../../translated_images/he/multi-layer-lstm.dd975e29bb2a59fe.webp)
 
 *תמונה מתוך [הפוסט הנהדר הזה](https://towardsdatascience.com/from-a-lstm-cell-to-a-multilayer-lstm-network-with-pytorch-2899eb5696f3) מאת פרננדו לופז*
 

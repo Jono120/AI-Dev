@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "b70fcf7fcee862990f848c679090943f",
-  "translation_date": "2025-10-03T14:55:11+00:00",
-  "source_file": "lessons/4-ComputerVision/07-ConvNets/lab/README.md",
-  "language_code": "th"
-}
--->
 # การจำแนกใบหน้าสัตว์เลี้ยง
 
 งานในห้องปฏิบัติการจาก [AI for Beginners Curriculum](https://github.com/microsoft/ai-for-beginners)
@@ -21,7 +12,7 @@ CO_OP_TRANSLATOR_METADATA:
 
 เราจะใช้ [Oxford-IIIT Pet Dataset](https://www.robots.ox.ac.uk/~vgg/data/pets/) ซึ่งมีภาพของสุนัขและแมวจาก 37 สายพันธุ์ที่แตกต่างกัน
 
-![ชุดข้อมูลที่เราจะใช้](../../../../../../translated_images/data.50b2a9d5484bdbf0f52f5765b381cec9efe2bd296a98f007f90bedb6ac67f2a8.th.png)
+![ชุดข้อมูลที่เราจะใช้](../../../../../../translated_images/th/data.50b2a9d5484bdbf0.webp)
 
 เพื่อดาวน์โหลดชุดข้อมูล ให้ใช้โค้ดนี้:
 

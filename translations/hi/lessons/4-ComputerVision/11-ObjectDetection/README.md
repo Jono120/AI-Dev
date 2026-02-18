@@ -1,19 +1,10 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "d76a7eda28de5210c8b1ba50a6216c69",
-  "translation_date": "2025-09-23T13:29:38+00:00",
-  "source_file": "lessons/4-ComputerVision/11-ObjectDetection/README.md",
-  "language_code": "hi"
-}
--->
 # ऑब्जेक्ट डिटेक्शन
 
 अब तक हमने जिन इमेज क्लासिफिकेशन मॉडल्स का उपयोग किया है, वे एक इमेज लेते हैं और एक श्रेणीबद्ध परिणाम देते हैं, जैसे कि MNIST समस्या में 'नंबर' क्लास। हालांकि, कई मामलों में हम केवल यह जानना नहीं चाहते कि तस्वीर में वस्तुएं हैं - हम उनकी सटीक लोकेशन भी जानना चाहते हैं। यही **ऑब्जेक्ट डिटेक्शन** का उद्देश्य है।
 
 ## [प्री-लेक्चर क्विज़](https://ff-quizzes.netlify.app/en/ai/quiz/21)
 
-![ऑब्जेक्ट डिटेक्शन](../../../../../translated_images/Screen_Shot_2016-11-17_at_11.14.54_AM.b4bb3769353287be1b905373ed9c858102c054b16e4595c76ec3f7bba0feb549.hi.png)
+![ऑब्जेक्ट डिटेक्शन](../../../../../translated_images/hi/Screen_Shot_2016-11-17_at_11.14.54_AM.b4bb3769353287be.webp)
 
 > इमेज [YOLO v2 वेबसाइट](https://pjreddie.com/darknet/yolov2/) से
 
@@ -25,7 +16,7 @@ CO_OP_TRANSLATOR_METADATA:
 2. प्रत्येक टाइल पर इमेज क्लासिफिकेशन चलाएं।
 3. जिन टाइल्स में पर्याप्त उच्च सक्रियता होती है, उन्हें उस वस्तु को शामिल करने वाला माना जा सकता है।
 
-![साधारण ऑब्जेक्ट डिटेक्शन](../../../../../translated_images/naive-detection.e7f1ba220ccd08c68a2ea8e06a7ed75c3fcc738c2372f9e00b7f4299a8659c01.hi.png)
+![साधारण ऑब्जेक्ट डिटेक्शन](../../../../../translated_images/hi/naive-detection.e7f1ba220ccd08c6.webp)
 
 > *इमेज [एक्सरसाइज नोटबुक](ObjectDetection-TF.ipynb) से*
 
@@ -42,7 +33,7 @@ CO_OP_TRANSLATOR_METADATA:
 * [PASCAL VOC](http://host.robots.ox.ac.uk/pascal/VOC/) - 20 क्लासेस
 * [COCO](http://cocodataset.org/#home) - कॉमन ऑब्जेक्ट्स इन कॉन्टेक्स्ट। 80 क्लासेस, बॉक्स और सेगमेंटेशन मास्क्स
 
-![COCO](../../../../../translated_images/coco-examples.71bc60380fa6cceb7caad48bd09e35b6028caabd363aa04fee89c414e0870e86.hi.jpg)
+![COCO](../../../../../translated_images/hi/coco-examples.71bc60380fa6cceb.webp)
 
 ## ऑब्जेक्ट डिटेक्शन मेट्रिक्स
 
@@ -50,7 +41,7 @@ CO_OP_TRANSLATOR_METADATA:
 
 जहां इमेज क्लासिफिकेशन के लिए एल्गोरिदम के प्रदर्शन को मापना आसान है, वहीं ऑब्जेक्ट डिटेक्शन के लिए हमें क्लास की सही पहचान और बॉक्स की लोकेशन की सटीकता दोनों को मापना होता है। लोकेशन की सटीकता के लिए, हम **इंटरसेक्शन ओवर यूनियन** (IoU) का उपयोग करते हैं, जो मापता है कि दो बॉक्स (या दो क्षेत्र) कितने अच्छे से ओवरलैप करते हैं।
 
-![IoU](../../../../../translated_images/iou_equation.9a4751d40fff4e119ecd0a7bcca4e71ab1dc83e0d4f2a0d66ff0859736f593cf.hi.png)
+![IoU](../../../../../translated_images/hi/iou_equation.9a4751d40fff4e11.webp)
 
 > *फिगर 2 [इस उत्कृष्ट ब्लॉग पोस्ट](https://pyimagesearch.com/2016/11/07/intersection-over-union-iou-for-object-detection/) से*
 
@@ -98,11 +89,11 @@ $$
 
 [R-CNN](http://islab.ulsan.ac.kr/files/announcement/513/rcnn_pami.pdf) [Selective Search](http://www.huppelen.nl/publications/selectiveSearchDraft.pdf) का उपयोग करता है ताकि ROI क्षेत्रों की एक पदानुक्रमित संरचना उत्पन्न की जा सके, जिन्हें फिर CNN फीचर एक्सट्रैक्टर्स और SVM-क्लासिफायर के माध्यम से पास किया जाता है ताकि ऑब्जेक्ट क्लास निर्धारित किया जा सके, और *बॉक्स* निर्देशांक निर्धारित करने के लिए लीनियर रिग्रेशन का उपयोग किया जाता है। [आधिकारिक पेपर](https://arxiv.org/pdf/1506.01497v1.pdf)
 
-![RCNN](../../../../../translated_images/rcnn1.cae407020dfb1d1fb572656e44f75cd6c512cc220591c116c506652c10e47f26.hi.png)
+![RCNN](../../../../../translated_images/hi/rcnn1.cae407020dfb1d1f.webp)
 
 > *इमेज van de Sande et al. ICCV’11 से*
 
-![RCNN-1](../../../../../translated_images/rcnn2.2d9530bb83516484ec65b250c22dbf37d3d23244f32864ebcb91d98fe7c3112c.hi.png)
+![RCNN-1](../../../../../translated_images/hi/rcnn2.2d9530bb83516484.webp)
 
 > *इमेज [इस ब्लॉग](https://towardsdatascience.com/r-cnn-fast-r-cnn-faster-r-cnn-yolo-object-detection-algorithms-36d53571365e) से*
 
@@ -110,7 +101,7 @@ $$
 
 यह दृष्टिकोण R-CNN के समान है, लेकिन रीजन को परिभाषित किया जाता है जब कॉन्वोल्यूशन लेयर्स लागू हो चुकी होती हैं।
 
-![FRCNN](../../../../../translated_images/f-rcnn.3cda6d9bb41888754037d2d9763e2298a96de5d9bc2a21db3147357aa5da9b1a.hi.png)
+![FRCNN](../../../../../translated_images/hi/f-rcnn.3cda6d9bb4188875.webp)
 
 > इमेज [आधिकारिक पेपर](https://www.cv-foundation.org/openaccess/content_iccv_2015/papers/Girshick_Fast_R-CNN_ICCV_2015_paper.pdf), [arXiv](https://arxiv.org/pdf/1504.08083.pdf), 2015 से
 
@@ -118,7 +109,7 @@ $$
 
 इस दृष्टिकोण का मुख्य विचार है कि रीजन की भविष्यवाणी करने के लिए न्यूरल नेटवर्क का उपयोग किया जाए - जिसे *रीजन प्रपोजल नेटवर्क* कहा जाता है। [पेपर](https://arxiv.org/pdf/1506.01497.pdf), 2016
 
-![FasterRCNN](../../../../../translated_images/faster-rcnn.8d46c099b87ef30ab2ea26dbc4bdd85b974a57ba8eb526f65dc4cd0a4711de30.hi.png)
+![FasterRCNN](../../../../../translated_images/hi/faster-rcnn.8d46c099b87ef30a.webp)
 
 > इमेज [आधिकारिक पेपर](https://arxiv.org/pdf/1506.01497.pdf) से
 
@@ -130,7 +121,7 @@ $$
 2. फीचर्स को **पोजिशन-सेंसिटिव स्कोर मैप** द्वारा प्रोसेस किया जाता है। $C$ क्लासेस के प्रत्येक ऑब्जेक्ट को $k\times k$ क्षेत्रों में विभाजित किया जाता है, और हम ऑब्जेक्ट्स के भागों की भविष्यवाणी करने के लिए प्रशिक्षण देते हैं।
 3. $k\times k$ क्षेत्रों के प्रत्येक भाग के लिए सभी नेटवर्क ऑब्जेक्ट क्लासेस के लिए वोट करते हैं, और अधिकतम वोट वाले ऑब्जेक्ट क्लास को चुना जाता है।
 
-![r-fcn इमेज](../../../../../translated_images/r-fcn.13eb88158b99a3da50fa2787a6be5cb310d47f0e9655cc93a1090dc7aab338d1.hi.png)
+![r-fcn इमेज](../../../../../translated_images/hi/r-fcn.13eb88158b99a3da.webp)
 
 > इमेज [आधिकारिक पेपर](https://arxiv.org/abs/1605.06409) से
 
@@ -141,7 +132,7 @@ YOLO एक रियलटाइम वन-पास एल्गोरिद�
  * इमेज को $S\times S$ क्षेत्रों में विभाजित किया जाता है।
  * प्रत्येक क्षेत्र के लिए, **CNN** $n$ संभावित ऑब्जेक्ट्स, *बॉक्स* निर्देशांक और *कॉन्फिडेंस*=*प्रोबेबिलिटी* * IoU की भविष्यवाणी करता है।
 
- ![YOLO](../../../../../translated_images/yolo.a2648ec82ee8bb4ea27537677adb482fd4b733ca1705c561b6a24a85102dced5.hi.png)
+ ![YOLO](../../../../../translated_images/hi/yolo.a2648ec82ee8bb4e.webp)
 
 > इमेज [आधिकारिक पेपर](https://arxiv.org/abs/1506.02640) से
 

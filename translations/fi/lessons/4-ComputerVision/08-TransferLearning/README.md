@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "178c0b5ee5395733eb18aec51e71a0a9",
-  "translation_date": "2025-09-23T09:56:44+00:00",
-  "source_file": "lessons/4-ComputerVision/08-TransferLearning/README.md",
-  "language_code": "fi"
-}
--->
 # Esikoulutetut verkot ja siirtäminen oppiminen
 
 CNN:ien kouluttaminen voi viedä paljon aikaa, ja siihen tarvitaan runsaasti dataa. Suuri osa ajasta kuluu kuitenkin parhaita matalan tason suodattimia oppiessa, joita verkko voi käyttää kuvioiden tunnistamiseen kuvista. Luonnollinen kysymys herää - voimmeko käyttää yhdellä datasetillä koulutettua neuroverkkoa ja mukauttaa sen luokittelemaan erilaisia kuvia ilman täydellistä koulutusprosessia?
@@ -29,7 +20,7 @@ Sekä Keras että PyTorch sisältävät toimintoja, joilla voi helposti ladata e
 
 Tässä on esimerkki piirteistä, jotka VGG-16-verkko on tunnistanut kissan kuvasta:
 
-![Piirteet, jotka VGG-16 tunnisti](../../../../../translated_images/features.6291f9c7ba3a0b951af88fc9864632b9115365410765680680d30c927dd67354.fi.png)
+![Piirteet, jotka VGG-16 tunnisti](../../../../../translated_images/fi/features.6291f9c7ba3a0b95.webp)
 
 ## Kissojen ja koirien datasetti
 
@@ -48,19 +39,19 @@ Esikoulutettu neuroverkko sisältää erilaisia kuvioita "aivoissaan", mukaan lu
 
 Yksi lähestymistapa on aloittaa satunnaisesta kuvasta ja yrittää käyttää **gradient descent -optimointitekniikkaa** säätämään kuvaa niin, että verkko alkaa ajatella sen olevan kissa.
 
-![Kuvan optimointisilmukka](../../../../../translated_images/ideal-cat-loop.999fbb8ff306e044f997032f4eef9152b453e6a990e449bbfb107de2493cc37e.fi.png)
+![Kuvan optimointisilmukka](../../../../../translated_images/fi/ideal-cat-loop.999fbb8ff306e044.webp)
 
 Jos teemme näin, saamme jotain hyvin satunnaisen kohinan kaltaista. Tämä johtuu siitä, että *on monia tapoja saada verkko ajattelemaan, että syötekuva on kissa*, mukaan lukien sellaisia, jotka eivät ole visuaalisesti järkeviä. Vaikka nämä kuvat sisältävät paljon kissalle tyypillisiä kuvioita, mikään ei rajoita niitä olemaan visuaalisesti erottuvia.
 
 Tuloksen parantamiseksi voimme lisätä toisen termin häviöfunktioon, jota kutsutaan **variation loss** -termiksi. Se on mittari, joka osoittaa, kuinka samanlaisia kuvan vierekkäiset pikselit ovat. Variation lossin minimointi tekee kuvasta tasaisemman ja poistaa kohinaa - paljastaen visuaalisesti miellyttävämpiä kuvioita. Tässä esimerkki tällaisista "ihanteellisista" kuvista, jotka luokitellaan kissaksi ja seepraksi suurella todennäköisyydellä:
 
-![Ihanteellinen kissa](../../../../../translated_images/ideal-cat.203dd4597643d6b0bd73038b87f9c0464322725e3a06ab145d25d4a861c70592.fi.png) | ![Ihanteellinen seepra](../../../../../translated_images/ideal-zebra.7f70e8b54ee15a7a314000bb5df38a6cfe086ea04d60df4d3ef313d046b98a2b.fi.png)
+![Ihanteellinen kissa](../../../../../translated_images/fi/ideal-cat.203dd4597643d6b0.webp) | ![Ihanteellinen seepra](../../../../../translated_images/fi/ideal-zebra.7f70e8b54ee15a7a.webp)
 -----|-----
  *Ihanteellinen kissa* | *Ihanteellinen seepra*
 
 Samaa lähestymistapaa voidaan käyttää suorittamaan niin sanottuja **adversaarisia hyökkäyksiä** neuroverkkoon. Oletetaan, että haluamme huijata neuroverkkoa ja saada koiran näyttämään kissalta. Jos otamme koiran kuvan, jonka verkko tunnistaa koiraksi, voimme sitten säätää sitä hieman gradient descent -optimoinnin avulla, kunnes verkko alkaa luokitella sen kissaksi:
 
-![Koiran kuva](../../../../../translated_images/original-dog.8f68a67d2fe0911f33041c0f7fce8aa4ea919f9d3917ec4b468298522aeb6356.fi.png) | ![Kuva koirasta, joka luokitellaan kissaksi](../../../../../translated_images/adversarial-dog.d9fc7773b0142b89752539bfbf884118de845b3851c5162146ea0b8809fc820f.fi.png)
+![Koiran kuva](../../../../../translated_images/fi/original-dog.8f68a67d2fe0911f.webp) | ![Kuva koirasta, joka luokitellaan kissaksi](../../../../../translated_images/fi/adversarial-dog.d9fc7773b0142b89.webp)
 -----|-----
 *Alkuperäinen kuva koirasta* | *Kuva koirasta, joka luokitellaan kissaksi*
 

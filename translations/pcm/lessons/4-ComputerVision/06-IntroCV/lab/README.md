@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "3d53d6409f80970f7281a45dee35328a",
-  "translation_date": "2025-11-18T18:14:38+00:00",
-  "source_file": "lessons/4-ComputerVision/06-IntroCV/lab/README.md",
-  "language_code": "pcm"
-}
--->
 # Detect Movements wit Optical Flow
 
 Lab Assignment from [AI for Beginners Curriculum](https://aka.ms/ai-beginners).
@@ -15,7 +6,7 @@ Lab Assignment from [AI for Beginners Curriculum](https://aka.ms/ai-beginners).
 
 Check [dis video](../../../../../../lessons/4-ComputerVision/06-IntroCV/lab/palm-movement.mp4), wey person palm dey move go left/right/up/down for stable background.
 
-<img src="../../../../../../translated_images/palm-movement.341495f0e9c47da39cc1f99626822a1d20203aa33ff89a86a068f14bea133e84.pcm.png" width="30%" alt="Palm Movement Frame"/>
+<img src="../../../../../../translated_images/pcm/palm-movement.341495f0e9c47da3.webp" width="30%" alt="Palm Movement Frame"/>
 
 **Your goal** na to use Optical Flow take know which part of di video get up/down/left/right movements.
 

@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "a560d5b845962cf33dc102266e409568",
-  "translation_date": "2025-09-23T13:28:15+00:00",
-  "source_file": "lessons/4-ComputerVision/07-ConvNets/README.md",
-  "language_code": "hi"
-}
--->
 # कॉन्वोल्यूशनल न्यूरल नेटवर्क्स
 
 हमने पहले देखा है कि न्यूरल नेटवर्क्स इमेजेस के साथ काम करने में काफी अच्छे होते हैं, और एक-लेयर परसेप्ट्रॉन भी MNIST डेटासेट से हस्तलिखित अंकों को पहचानने में उचित सटीकता प्राप्त कर सकता है। हालांकि, MNIST डेटासेट बहुत खास है, और सभी अंक इमेज के अंदर केंद्रित होते हैं, जिससे यह कार्य सरल हो जाता है।
@@ -17,14 +8,14 @@ CO_OP_TRANSLATOR_METADATA:
 
 पैटर्न्स निकालने के लिए, हम **कॉन्वोल्यूशनल फिल्टर्स** की अवधारणा का उपयोग करेंगे। जैसा कि आप जानते हैं, एक इमेज को 2D-मैट्रिक्स या रंग गहराई के साथ 3D-टेंसर के रूप में दर्शाया जाता है। फिल्टर लागू करने का मतलब है कि हम एक अपेक्षाकृत छोटा **फिल्टर कर्नल** मैट्रिक्स लेते हैं, और मूल इमेज के प्रत्येक पिक्सल के लिए पड़ोसी बिंदुओं के साथ भारित औसत की गणना करते हैं। इसे हम ऐसे देख सकते हैं जैसे एक छोटी विंडो पूरी इमेज पर स्लाइड कर रही हो और फिल्टर कर्नल मैट्रिक्स में वज़न के अनुसार सभी पिक्सल्स को औसत कर रही हो।
 
-![वर्टिकल एज फिल्टर](../../../../../translated_images/filter-vert.b7148390ca0bc356ddc7e55555d2481819c1e86ddde9dce4db5e71a69d6f887f.hi.png) | ![हॉरिज़ॉन्टल एज फिल्टर](../../../../../translated_images/filter-horiz.59b80ed4feb946efbe201a7fe3ca95abb3364e266e6fd90820cb893b4d3a6dda.hi.png)
+![वर्टिकल एज फिल्टर](../../../../../translated_images/hi/filter-vert.b7148390ca0bc356.webp) | ![हॉरिज़ॉन्टल एज फिल्टर](../../../../../translated_images/hi/filter-horiz.59b80ed4feb946ef.webp)
 ----|----
 
 > छवि: दिमित्री सोश्निकोव द्वारा
 
 उदाहरण के लिए, यदि हम MNIST अंकों पर 3x3 वर्टिकल एज और हॉरिज़ॉन्टल एज फिल्टर्स लागू करते हैं, तो हमें हाइलाइट्स (जैसे उच्च मान) मिल सकते हैं जहां हमारी मूल इमेज में वर्टिकल और हॉरिज़ॉन्टल एजेस हैं। इस प्रकार, ये दो फिल्टर्स एजेस "ढूंढने" के लिए उपयोग किए जा सकते हैं। इसी तरह, हम अन्य लो-लेवल पैटर्न्स की तलाश के लिए अलग-अलग फिल्टर्स डिज़ाइन कर सकते हैं:
 
-<img src="images/lmfilters.jpg" width="500" align="center"/>
+<img src="../../../../../translated_images/hi/lmfilters.ea9e4868a82cf74c.webp" width="500" align="center"/>
 
 > छवि: [Leung-Malik Filter Bank](https://www.robots.ox.ac.uk/~vgg/research/texclass/filters.html)
 
@@ -38,7 +29,7 @@ CNNs जिस तरह से काम करते हैं, वह नि�
 * हम नेटवर्क को इस तरह डिज़ाइन कर सकते हैं कि फिल्टर्स स्वचालित रूप से प्रशिक्षित हों
 * हम केवल मूल इमेज में ही नहीं, बल्कि उच्च-स्तरीय फीचर्स में भी पैटर्न्स ढूंढने के लिए इसी दृष्टिकोण का उपयोग कर सकते हैं। इस प्रकार, CNN फीचर एक्सट्रैक्शन फीचर्स की एक पदानुक्रम पर काम करता है, जो लो-लेवल पिक्सल संयोजनों से शुरू होकर, इमेज के हिस्सों के उच्च-स्तरीय संयोजनों तक जाता है।
 
-![पदानुक्रमिक फीचर एक्सट्रैक्शन](../../../../../translated_images/FeatureExtractionCNN.d9b456cbdae7cb643fde3032b81b2940e3cf8be842e29afac3f482725ba7f95c.hi.png)
+![पदानुक्रमिक फीचर एक्सट्रैक्शन](../../../../../translated_images/hi/FeatureExtractionCNN.d9b456cbdae7cb64.webp)
 
 > छवि: [Hislop-Lynch के पेपर](https://www.semanticscholar.org/paper/Computer-vision-based-pedestrian-trajectory-Hislop-Lynch/26e6f74853fc9bbb7487b06dc2cf095d36c9021d) से, उनके [अनुसंधान](https://dl.acm.org/doi/abs/10.1145/1553374.1553453) पर आधारित
 
@@ -55,9 +46,9 @@ CNNs जिस तरह से काम करते हैं, वह नि�
 
 उदाहरण के लिए, आइए VGG-16 की आर्किटेक्चर पर नज़र डालें, एक नेटवर्क जिसने 2014 में ImageNet के टॉप-5 वर्गीकरण में 92.7% सटीकता प्राप्त की:
 
-![ImageNet लेयर्स](../../../../../translated_images/vgg-16-arch1.d901a5583b3a51baeaab3e768567d921e5d54befa46e1e642616c5458c934028.hi.jpg)
+![ImageNet लेयर्स](../../../../../translated_images/hi/vgg-16-arch1.d901a5583b3a51ba.webp)
 
-![ImageNet पिरामिड](../../../../../translated_images/vgg-16-arch.64ff2137f50dd49fdaa786e3f3a975b3f22615efd13efb19c5d22f12e01451a1.hi.jpg)
+![ImageNet पिरामिड](../../../../../translated_images/hi/vgg-16-arch.64ff2137f50dd49f.webp)
 
 > छवि: [Researchgate](https://www.researchgate.net/figure/Vgg16-model-structure-To-get-the-VGG-NIN-model-we-replace-the-2-nd-4-th-6-th-7-th_fig2_335194493) से
 

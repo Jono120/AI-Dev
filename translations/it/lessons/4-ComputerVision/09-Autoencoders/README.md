@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "1b8d9e1b3a6f1daa864b1ff3dfc3076d",
-  "translation_date": "2025-09-23T08:30:07+00:00",
-  "source_file": "lessons/4-ComputerVision/09-Autoencoders/README.md",
-  "language_code": "it"
-}
--->
 # Autoencoder
 
 Quando si allenano le CNN, uno dei problemi è che abbiamo bisogno di molti dati etichettati. Nel caso della classificazione delle immagini, dobbiamo separare le immagini in diverse classi, il che richiede un lavoro manuale.
@@ -19,7 +10,7 @@ Tuttavia, potremmo voler utilizzare dati grezzi (non etichettati) per allenare g
 
 Poiché stiamo allenando un autoencoder per catturare quante più informazioni possibili dall'immagine originale per una ricostruzione accurata, la rete cerca di trovare il miglior **embedding** delle immagini di input per catturarne il significato.
 
-![Diagramma AutoEncoder](../../../../../translated_images/autoencoder_schema.5e6fc9ad98a5eb6197f3513cf3baf4dfbe1389a6ae74daebda64de9f1c99f142.it.jpg)
+![Diagramma AutoEncoder](../../../../../translated_images/it/autoencoder_schema.5e6fc9ad98a5eb61.webp)
 
 > Immagine dal [blog di Keras](https://blog.keras.io/building-autoencoders-in-keras.html)
 
@@ -46,7 +37,7 @@ Riassumendo:
  * Campioniamo un vettore `sample` dalla distribuzione N(z<sub>mean</sub>,exp(z<sub>log\_sigma</sub>))
  * Il decoder cerca di decodificare l'immagine originale utilizzando `sample` come vettore di input
 
- <img src="images/vae.png" width="50%">
+ <img src="../../../../../translated_images/it/vae.464c465a5b6a9e25.webp" width="50%">
 
 > Immagine da [questo post sul blog](https://ijdykeman.github.io/ml/2016/12/21/cvae.html) di Isaak Dykeman
 
@@ -57,13 +48,13 @@ Gli autoencoder variazionali utilizzano una funzione di perdita complessa compos
 
 Un vantaggio importante dei VAE è che permettono di generare nuove immagini relativamente facilmente, perché sappiamo da quale distribuzione campionare i vettori latenti. Ad esempio, se alleniamo un VAE con un vettore latente 2D su MNIST, possiamo poi variare i componenti del vettore latente per ottenere cifre diverse:
 
-<img alt="vaemnist" src="images/vaemnist.png" width="50%"/>
+<img alt="vaemnist" src="../../../../../translated_images/it/vaemnist.cab9e602dc08dc50.webp" width="50%"/>
 
 > Immagine di [Dmitry Soshnikov](http://soshnikov.com)
 
 Osserva come le immagini si fondono l'una nell'altra, mentre iniziamo a ottenere vettori latenti da diverse porzioni dello spazio dei parametri latenti. Possiamo anche visualizzare questo spazio in 2D:
 
-<img alt="vaemnist cluster" src="images/vaemnist-diag.png" width="50%"/> 
+<img alt="vaemnist cluster" src="../../../../../translated_images/it/vaemnist-diag.694315f775d5d666.webp" width="50%"/> 
 
 > Immagine di [Dmitry Soshnikov](http://soshnikov.com)
 

@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "7ba20f54a5bfcd6521018cdfb17c7c57",
-  "translation_date": "2025-09-23T08:02:39+00:00",
-  "source_file": "lessons/5-NLP/15-LanguageModeling/README.md",
-  "language_code": "ru"
-}
--->
 # Моделирование языка
 
 Семантические векторы, такие как Word2Vec и GloVe, на самом деле являются первым шагом к **моделированию языка** — созданию моделей, которые каким-то образом *понимают* (или *представляют*) природу языка.
@@ -23,7 +14,7 @@ CO_OP_TRANSLATOR_METADATA:
 * **Непрерывный мешок слов** (Continuous Bag-of-Words, CBoW), когда мы предсказываем центральный токен $W_0$ в последовательности токенов $W_{-N}$, ..., $W_N$.
 * **Skip-gram**, где мы предсказываем набор соседних токенов {$W_{-N},\dots, W_{-1}, W_1,\dots, W_N$} на основе центрального токена $W_0$.
 
-![изображение из статьи о преобразовании слов в векторы](../../../../../translated_images/example-algorithms-for-converting-words-to-vectors.fbe9207a726922f6f0f5de66427e8a6eda63809356114e28fb1fa5f4a83ebda7.ru.png)
+![изображение из статьи о преобразовании слов в векторы](../../../../../translated_images/ru/example-algorithms-for-converting-words-to-vectors.fbe9207a726922f6.webp)
 
 > Изображение из [этой статьи](https://arxiv.org/pdf/1301.3781.pdf)
 

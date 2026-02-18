@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "1b8d9e1b3a6f1daa864b1ff3dfc3076d",
-  "translation_date": "2025-09-23T07:47:41+00:00",
-  "source_file": "lessons/4-ComputerVision/09-Autoencoders/README.md",
-  "language_code": "bn"
-}
--->
 # অটোএনকোডার
 
 CNN প্রশিক্ষণের সময় একটি বড় সমস্যা হলো প্রচুর লেবেলযুক্ত ডেটার প্রয়োজন হয়। উদাহরণস্বরূপ, ইমেজ ক্লাসিফিকেশনের ক্ষেত্রে, আমাদের ইমেজগুলোকে বিভিন্ন শ্রেণিতে ভাগ করতে হয়, যা একটি ম্যানুয়াল কাজ।
@@ -19,7 +10,7 @@ CNN প্রশিক্ষণের সময় একটি বড় সম
 
 আমরা যখন অটোএনকোডার প্রশিক্ষণ দিই, তখন এটি মূল ইমেজ থেকে যতটা সম্ভব তথ্য ধারণ করার চেষ্টা করে, যাতে সঠিকভাবে পুনর্গঠন করা যায়। নেটওয়ার্কটি ইনপুট ইমেজগুলোর সেরা **এম্বেডিং** খুঁজে বের করার চেষ্টা করে, যা অর্থপূর্ণ তথ্য ধারণ করে।
 
-![অটোএনকোডার ডায়াগ্রাম](../../../../../translated_images/autoencoder_schema.5e6fc9ad98a5eb6197f3513cf3baf4dfbe1389a6ae74daebda64de9f1c99f142.bn.jpg)
+![অটোএনকোডার ডায়াগ্রাম](../../../../../translated_images/bn/autoencoder_schema.5e6fc9ad98a5eb61.webp)
 
 > ছবি [Keras ব্লগ](https://blog.keras.io/building-autoencoders-in-keras.html) থেকে
 
@@ -46,7 +37,7 @@ VAE হলো এমন একটি অটোএনকোডার যা ল�
  * আমরা N(z<sub>mean</sub>,exp(z<sub>log\_sigma</sub>)) বিতরণ থেকে একটি `sample` ভেক্টর গ্রহণ করি
  * ডিকোডার `sample` ভেক্টর ব্যবহার করে মূল ইমেজটি ডিকোড করার চেষ্টা করে
 
- <img src="images/vae.png" width="50%">
+ <img src="../../../../../translated_images/bn/vae.464c465a5b6a9e25.webp" width="50%">
 
 > ছবি [এই ব্লগ পোস্ট](https://ijdykeman.github.io/ml/2016/12/21/cvae.html) থেকে, লেখক Isaak Dykeman
 
@@ -57,13 +48,13 @@ VAE হলো এমন একটি অটোএনকোডার যা ল�
 
 VAE-এর একটি গুরুত্বপূর্ণ সুবিধা হলো এটি নতুন ইমেজ তৈরি করতে তুলনামূলকভাবে সহজ, কারণ আমরা জানি কোন বিতরণ থেকে ল্যাটেন্ট ভেক্টরগুলো গ্রহণ করতে হবে। উদাহরণস্বরূপ, যদি আমরা MNIST-এ 2D ল্যাটেন্ট ভেক্টর দিয়ে VAE প্রশিক্ষণ দিই, তাহলে আমরা ল্যাটেন্ট ভেক্টরের উপাদানগুলো পরিবর্তন করে বিভিন্ন সংখ্যা পেতে পারি:
 
-<img alt="vaemnist" src="images/vaemnist.png" width="50%"/>
+<img alt="vaemnist" src="../../../../../translated_images/bn/vaemnist.cab9e602dc08dc50.webp" width="50%"/>
 
 > ছবি [Dmitry Soshnikov](http://soshnikov.com) দ্বারা
 
 দেখুন কীভাবে ইমেজগুলো একে অপরের সাথে মিশে যায়, যখন আমরা ল্যাটেন্ট প্যারামিটার স্পেসের বিভিন্ন অংশ থেকে ল্যাটেন্ট ভেক্টর গ্রহণ করি। আমরা এই স্পেসটি 2D-তে ভিজুয়ালাইজও করতে পারি:
 
-<img alt="vaemnist cluster" src="images/vaemnist-diag.png" width="50%"/> 
+<img alt="vaemnist cluster" src="../../../../../translated_images/bn/vaemnist-diag.694315f775d5d666.webp" width="50%"/> 
 
 > ছবি [Dmitry Soshnikov](http://soshnikov.com) দ্বারা
 

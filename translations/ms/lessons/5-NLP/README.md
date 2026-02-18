@@ -1,15 +1,6 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "8ef02a9318257ea140ed3ed74442096d",
-  "translation_date": "2025-08-29T11:58:10+00:00",
-  "source_file": "lessons/5-NLP/README.md",
-  "language_code": "ms"
-}
--->
 # Pemprosesan Bahasa Semula Jadi
 
-![Ringkasan tugas NLP dalam bentuk doodle](../../../../translated_images/ai-nlp.b22dcb8ca4707ceaee8576db1c5f4089c8cac2f454e9e03ea554f07fda4556b8.ms.png)
+![Ringkasan tugas NLP dalam bentuk doodle](../../../../translated_images/ms/ai-nlp.b22dcb8ca4707cea.webp)
 
 Dalam bahagian ini, kita akan memberi tumpuan kepada penggunaan Rangkaian Neural untuk menangani tugas-tugas berkaitan dengan **Pemprosesan Bahasa Semula Jadi (NLP)**. Terdapat banyak masalah NLP yang kita mahu komputer dapat selesaikan:
 

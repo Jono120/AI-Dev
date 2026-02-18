@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "3d53d6409f80970f7281a45dee35328a",
-  "translation_date": "2025-11-25T22:41:02+00:00",
-  "source_file": "lessons/4-ComputerVision/06-IntroCV/lab/README.md",
-  "language_code": "ml"
-}
--->
 # ഓപ്റ്റിക്കൽ ഫ്ലോ ഉപയോഗിച്ച് ചലനങ്ങൾ കണ്ടെത്തൽ
 
 [AI for Beginners Curriculum](https://aka.ms/ai-beginners) ലാബ് അസൈൻമെന്റ്.
@@ -15,7 +6,7 @@ CO_OP_TRANSLATOR_METADATA:
 
 ഒരു വ്യക്തിയുടെ കൈവിരൽ സ്ഥിരമായ പശ്ചാത്തലത്തിൽ ഇടത്തേക്ക്/വലത്തേക്ക്/മുകളിലേക്ക്/താഴേക്ക് ചലിക്കുന്ന [ഈ വീഡിയോ](../../../../../../lessons/4-ComputerVision/06-IntroCV/lab/palm-movement.mp4) പരിഗണിക്കുക.
 
-<img src="../../../../../../translated_images/palm-movement.341495f0e9c47da39cc1f99626822a1d20203aa33ff89a86a068f14bea133e84.ml.png" width="30%" alt="Palm Movement Frame"/>
+<img src="../../../../../../translated_images/ml/palm-movement.341495f0e9c47da3.webp" width="30%" alt="Palm Movement Frame"/>
 
 **നിങ്ങളുടെ ലക്ഷ്യം** ഓപ്റ്റിക്കൽ ഫ്ലോ ഉപയോഗിച്ച് വീഡിയോയിലെ ഏത് ഭാഗങ്ങളിൽ മുകളിലേക്ക്/താഴേക്ക്/ഇടത്തേക്ക്/വലത്തേക്ക് ചലനങ്ങൾ ഉണ്ടെന്ന് കണ്ടെത്താൻ കഴിയുക എന്നതാണ്.
 

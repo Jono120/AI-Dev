@@ -1,23 +1,14 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "53faab85adfcebd8c10bcd71dc2fa557",
-  "translation_date": "2025-09-23T06:52:55+00:00",
-  "source_file": "lessons/4-ComputerVision/07-ConvNets/CNN_Architectures.md",
-  "language_code": "tl"
-}
--->
 # Mga Kilalang Arkitektura ng CNN
 
 ### VGG-16
 
 Ang VGG-16 ay isang network na nakamit ang 92.7% na katumpakan sa ImageNet top-5 classification noong 2014. Ito ay may ganitong istruktura ng mga layer:
 
-![ImageNet Layers](../../../../../translated_images/vgg-16-arch1.d901a5583b3a51baeaab3e768567d921e5d54befa46e1e642616c5458c934028.tl.jpg)
+![ImageNet Layers](../../../../../translated_images/tl/vgg-16-arch1.d901a5583b3a51ba.webp)
 
 Tulad ng nakikita mo, sinusunod ng VGG ang tradisyunal na pyramid architecture, na isang sunod-sunod na convolution-pooling layers.
 
-![ImageNet Pyramid](../../../../../translated_images/vgg-16-arch.64ff2137f50dd49fdaa786e3f3a975b3f22615efd13efb19c5d22f12e01451a1.tl.jpg)
+![ImageNet Pyramid](../../../../../translated_images/tl/vgg-16-arch.64ff2137f50dd49f.webp)
 
 > Larawan mula sa [Researchgate](https://www.researchgate.net/figure/Vgg16-model-structure-To-get-the-VGG-NIN-model-we-replace-the-2-nd-4-th-6-th-7-th_fig2_335194493)
 
@@ -25,7 +16,7 @@ Tulad ng nakikita mo, sinusunod ng VGG ang tradisyunal na pyramid architecture, 
 
 Ang ResNet ay isang pamilya ng mga modelo na iminungkahi ng Microsoft Research noong 2015. Ang pangunahing ideya ng ResNet ay ang paggamit ng **residual blocks**:
 
-<img src="images/resnet-block.png" width="300"/>
+<img src="../../../../../translated_images/tl/resnet-block.aba4ccbcc0944434.webp" width="300"/>
 
 > Larawan mula sa [papel na ito](https://arxiv.org/pdf/1512.03385.pdf)
 
@@ -37,7 +28,7 @@ Maaari mo ring isipin ang network na ito bilang may kakayahang i-adjust ang comp
 
 Ang arkitektura ng Google Inception ay nagdadala ng ideyang ito sa mas mataas na antas, at binubuo ang bawat layer ng network bilang kombinasyon ng iba't ibang paths:
 
-<img src="images/inception.png" width="400"/>
+<img src="../../../../../translated_images/tl/inception.a6605b85bcbc6f52.webp" width="400"/>
 
 > Larawan mula sa [Researchgate](https://www.researchgate.net/figure/Inception-module-with-dimension-reductions-left-and-schema-for-Inception-ResNet-v1_fig2_355547454)
 

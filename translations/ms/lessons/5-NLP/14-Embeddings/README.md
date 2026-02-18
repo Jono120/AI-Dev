@@ -1,12 +1,3 @@
-<!--
-CO_OP_TRANSLATOR_METADATA:
-{
-  "original_hash": "b708c9b85b833864c73c6281f1e6b96e",
-  "translation_date": "2025-09-23T10:56:27+00:00",
-  "source_file": "lessons/5-NLP/14-Embeddings/README.md",
-  "language_code": "ms"
-}
--->
 # Pembenaman
 
 ## [Kuiz pra-kuliah](https://ff-quizzes.netlify.app/en/ai/quiz/27)
@@ -19,7 +10,7 @@ Jadi, lapisan pembenaman akan mengambil perkataan sebagai input, dan menghasilka
 
 Dengan menggunakan lapisan pembenaman sebagai lapisan pertama dalam rangkaian pengklasifikasi kita, kita boleh beralih daripada model bag-of-words kepada model **embedding bag**, di mana kita mula-mula menukar setiap perkataan dalam teks kita kepada pembenaman yang sepadan, dan kemudian mengira beberapa fungsi agregat ke atas semua pembenaman tersebut, seperti `sum`, `average` atau `max`.  
 
-![Imej menunjukkan pengklasifikasi pembenaman untuk lima perkataan dalam urutan.](../../../../../translated_images/embedding-classifier-example.b77f021a7ee67eeec8e68bfe11636c5b97d6eaa067515a129bfb1d0034b1ac5b.ms.png)
+![Imej menunjukkan pengklasifikasi pembenaman untuk lima perkataan dalam urutan.](../../../../../translated_images/ms/embedding-classifier-example.b77f021a7ee67eee.webp)
 
 > Imej oleh penulis
 
@@ -40,7 +31,7 @@ Untuk mencapai itu, kita perlu melatih model pembenaman kita terlebih dahulu pad
 
 CBoW lebih pantas, manakala skip-gram lebih perlahan tetapi lebih baik dalam mewakili perkataan yang jarang digunakan.
 
-![Imej menunjukkan kedua-dua algoritma CBoW dan Skip-Gram untuk menukar perkataan kepada vektor.](../../../../../translated_images/example-algorithms-for-converting-words-to-vectors.fbe9207a726922f6f0f5de66427e8a6eda63809356114e28fb1fa5f4a83ebda7.ms.png)
+![Imej menunjukkan kedua-dua algoritma CBoW dan Skip-Gram untuk menukar perkataan kepada vektor.](../../../../../translated_images/ms/example-algorithms-for-converting-words-to-vectors.fbe9207a726922f6.webp)
 
 > Imej daripada [kertas ini](https://arxiv.org/pdf/1301.3781.pdf)
 
